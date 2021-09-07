@@ -189,12 +189,6 @@ class S3D(nn.Module):
         self.mixed_5b = InceptionBlock(self.mixed_4f.output_dim, 256, 160, 320, 32, 128, 128)
         self.mixed_5c = InceptionBlock(self.mixed_5b.output_dim, 384, 192, 384, 48, 128, 128)
         self.fc = nn.Linear(self.mixed_5c.output_dim, num_classes)
-        # FIXME get rid of this
-        self.text_module = Sentence_Embedding(
-                               num_classes,
-                               os.path.join(os.path.dirname(__file__), token_to_word_path),
-                               word2vec_path=os.path.join(os.path.dirname(__file__), word2vec_path))
-
         if init == 'kaiming_normal':
             for m in self.modules():
                 if isinstance(m, nn.Conv3d):
@@ -212,15 +206,9 @@ class S3D(nn.Module):
       input = input.contiguous().view(B, 8 * C, T // 2, H // 2, W // 2)
       return input
 
-    def forward(self, video, text, mode='all', mixed5c=False):
-      if mode == 'all':
-          return self.forward_video(video), self.text_module(text)
-      elif mode == 'video':
-          return self.forward_video(video, mixed5c=mixed5c)
-      elif mode == 'text':
-          return self.text_module(text)
-      else:
-          raise NotImplementedError
+    def forward(self, video, mixed5c=False):
+        return self.forward_video(video, mixed5c=mixed5c)
+
 
     def forward_video(self, inputs, mixed5c=False):
       #out = {}
