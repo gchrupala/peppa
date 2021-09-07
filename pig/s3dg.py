@@ -155,69 +155,9 @@ class MaxPool3dTFPadding(th.nn.Module):
         out = self.pool(inp)
         return out
 
-class Sentence_Embedding(nn.Module):
-    def __init__(self,
-                 embd_dim,
-                 token_to_word_path,
-                 num_embeddings=66250,
-                 word_embedding_dim=300,
-                 word2vec_path='',
-                 max_words=16,
-                 output_dim=2048):
-        super(Sentence_Embedding, self).__init__()
-        if word2vec_path:
-            self.word_embd = nn.Embedding.from_pretrained(th.load(word2vec_path)) 
-        else:
-            self.word_embd = nn.Embedding(num_embeddings, word_embedding_dim)
-        self.fc1 = nn.Linear(word_embedding_dim, output_dim)
-        self.fc2 = nn.Linear(output_dim, embd_dim)
-        self.word_to_token = {}
-        self.max_words = max_words
-        token_to_word = np.load(token_to_word_path)
-        for i, t in enumerate(token_to_word):
-            self.word_to_token[t] = i + 1
-
-    def _zero_pad_tensor_token(self, tensor, size):
-        if len(tensor) >= size:
-            return tensor[:size]
-        else:
-            zero = th.zeros(size - len(tensor)).long()
-            return th.cat((tensor, zero), dim=0)
-
-    def is_cuda(self):
-        return self.fc1.bias.is_cuda
-
-    def _split_text(self, sentence):
-        w = re.findall(r"[\w']+", str(sentence))
-        return w
-
-    def _words_to_token(self, words):
-        words = [self.word_to_token[word] for word in words if word in self.word_to_token]
-        if words:
-            we = self._zero_pad_tensor_token(th.LongTensor(words), self.max_words)
-            return we
-        else:
-            return th.zeros(self.max_words).long()
-
-    def words_to_ids(self, x):
-        split_x = [self._words_to_token(self._split_text(sent)) for sent in x]
-        return th.stack(split_x, dim=0)
-
-    def forward(self, x, raw_text=False):
-        if raw_text:
-            x = self.words_to_ids(x)
-        with th.no_grad():
-            x = self.word_embd(x)
-        x = F.relu(self.fc1(x), inplace=True)
-        x = th.max(x, dim=1)[0]
-        x = self.fc2(x)
-        return x
-
-
 class S3D(nn.Module):
 
-    def __init__(self, num_classes=512, gating=True, space_to_depth=False,
-                  word2vec_path='', init='uniform', token_to_word_path='data/dict.npy'):
+    def __init__(self, num_classes=512, gating=True, space_to_depth=False, init='uniform'):
         super(S3D, self).__init__()
         self.num_classes = num_classes
         self.gating = gating
@@ -249,6 +189,7 @@ class S3D(nn.Module):
         self.mixed_5b = InceptionBlock(self.mixed_4f.output_dim, 256, 160, 320, 32, 128, 128)
         self.mixed_5c = InceptionBlock(self.mixed_5b.output_dim, 384, 192, 384, 48, 128, 128)
         self.fc = nn.Linear(self.mixed_5c.output_dim, num_classes)
+        # FIXME get rid of this
         self.text_module = Sentence_Embedding(
                                num_classes,
                                os.path.join(os.path.dirname(__file__), token_to_word_path),
