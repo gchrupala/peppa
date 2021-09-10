@@ -1,5 +1,41 @@
-from torch.utils.data import DataLoader, random_split
+import torch
+from torch.utils.data import Dataset, DataLoader
 from torchvision import datasets, transforms
+from dataclasses import dataclass
+
+@dataclass
+class Clip:
+    """Video clip with associated audio."""
+    video: torch.tensor
+    audio: torch.tensor
+
+@dataclass
+class ClipBatch
+    """Batch of video clips with associated audio."""
+    video: torch.tensor
+    audio: torch.tensor
+    
+def batch_audio(audios):
+    raise NotImplemented
+
+def batch_video(videos):
+    raise NotImplemented
+
+def collate_fn(data):
+    videos, audios = zip(* [(clip.video, clip.audio) for clip in data])
+    videos = batch_videos(videos)
+    audios = batch_audios(audios)
+    return ClipBatch(video=videos, audio=audios)
+    
+class PeppaPigDataset(Dataset):
+    def __init__(self):
+        raise NotImplemented
+
+    def __len__(self):
+        raise NotImplemented
+
+    def __getitem__(self, idx):
+        raise NotImplemented
 
 class PeppaPigData(LightningDataModule):
     def __init__(self):
