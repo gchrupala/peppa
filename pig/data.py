@@ -1,7 +1,12 @@
 import torch
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset, IterableDataset, DataLoader
 from torchvision import datasets, transforms
 from dataclasses import dataclass
+import glob
+import pig.preprocess 
+import moviepy.editor as m
+import pytorch_lightning as pl
+import logging
 
 @dataclass
 class Clip:
@@ -10,7 +15,7 @@ class Clip:
     audio: torch.tensor
 
 @dataclass
-class ClipBatch
+class ClipBatch:
     """Batch of video clips with associated audio."""
     video: torch.tensor
     audio: torch.tensor
@@ -27,7 +32,8 @@ def collate_fn(data):
     audios = batch_audios(audios)
     return ClipBatch(video=videos, audio=audios)
     
-class PeppaPigDataset(Dataset):
+
+class PeppaPigIDataset(Dataset):
     def __init__(self):
         raise NotImplemented
 
@@ -37,7 +43,33 @@ class PeppaPigDataset(Dataset):
     def __getitem__(self, idx):
         raise NotImplemented
 
-class PeppaPigData(LightningDataModule):
+
+class PeppaPigIterableDataset(IterableDataset):
+    def __init__(self, split='val', fragment_type='dialog'):
+        self.split = split
+        self.splits = dict(train = range(1, 197),
+                           val  = range(197, 203),
+                           test = range(203, 210))
+
+    def _clips(self):
+        for episode_id in self.splits[self.split]:
+            for path in sorted(glob.glob(f"data/out/dialog/{episode_id}/*.avi")):
+                video = m.VideoFileClip(path)
+                logging.info(f"Path: {path}")
+                for clip in pig.preprocess.segment(video, duration=3.2):
+                    v = torch.stack([ torch.tensor(frame/255).float()
+                                       for frame in clip.iter_frames() ])
+                    a = torch.tensor(clip.audio.to_soundarray()).float()
+                    yield Clip(video = v.permute(3, 0, 1, 2),
+                               audio = a.mean(dim=1, keepdim=True).permute(1,0))
+    def __iter__(self):
+        return iter(self._clips())
+
+def worker_init_fn(worker_id):
+    raise NotImplemented
+
+    
+class PeppaPigData(pl.LightningDataModule):
     def __init__(self):
         super().__init__()
         self.train_dims = None
@@ -45,11 +77,10 @@ class PeppaPigData(LightningDataModule):
 
     def prepare_data(self):
         # called only on 1 GPU
-        download_dataset()
-        tokenize()
-        build_vocab()
+        pig.preprocess.extract()
+        
 
-    def setup(self, stage: Optional[str] = None):
+    def setup(self, stage = None):
         # called on every GPU
         vocab = load_vocab()
         self.vocab_size = len(vocab)
