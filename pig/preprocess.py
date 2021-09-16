@@ -16,9 +16,9 @@ def extract():
     episodes = glob.glob("data/in/peppa/episodes/*.json")
     for path in episodes:
         annotation = json.load(open(path))
-        video = m.VideoFileClip(titles[annotation['title']])
-        extract_from_episode(annotation, video)
-        video.close()
+        with m.VideoFileClip(titles[annotation['title']]) as video:
+            extract_from_episode(annotation, video)
+            video.close()
         
 
 

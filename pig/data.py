@@ -47,21 +47,22 @@ class PeppaPigIDataset(Dataset):
 class PeppaPigIterableDataset(IterableDataset):
     def __init__(self, split='val', fragment_type='dialog'):
         self.split = split
+        self.fragment_type = fragment_type
         self.splits = dict(train = range(1, 197),
                            val  = range(197, 203),
                            test = range(203, 210))
 
     def _clips(self):
         for episode_id in self.splits[self.split]:
-            for path in sorted(glob.glob(f"data/out/dialog/{episode_id}/*.avi")):
-                video = m.VideoFileClip(path)
-                logging.info(f"Path: {path}")
-                for clip in pig.preprocess.segment(video, duration=3.2):
-                    v = torch.stack([ torch.tensor(frame/255).float()
-                                       for frame in clip.iter_frames() ])
-                    a = torch.tensor(clip.audio.to_soundarray()).float()
-                    yield Clip(video = v.permute(3, 0, 1, 2),
-                               audio = a.mean(dim=1, keepdim=True).permute(1,0))
+            for path in sorted(glob.glob(f"data/out/{self.fragment_type}/{episode_id}/*.avi")):
+                with m.VideoFileClip(path) as video:
+                    logging.info(f"Path: {path}")
+                    for clip in pig.preprocess.segment(video, duration=3.2):
+                        v = torch.stack([ torch.tensor(frame/255).float()
+                                          for frame in clip.iter_frames() ])
+                        a = torch.tensor(clip.audio.to_soundarray()).float()
+                        yield Clip(video = v.permute(3, 0, 1, 2),
+                                   audio = a.mean(dim=1, keepdim=True).permute(1,0))
     def __iter__(self):
         return iter(self._clips())
 
