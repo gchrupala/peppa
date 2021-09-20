@@ -45,7 +45,7 @@ def extract_from_episode(annotation, video):
     for i, clip in enumerate(narrations):
         
         logging.info(f"Writing narration {i} from episode {annotation['id']}") 
-        clip.resize(1/4).write_videofile(f"data/out/narration/{annotation['id']}/{i}.avi",
+        clip.resize((144, 180)).write_videofile(f"data/out/narration/{annotation['id']}/{i}.avi",
                                          fps=10,
                                          codec='mpeg4')
         
@@ -54,7 +54,7 @@ def segment(clip, duration=3.2):
     start = 0
     end = duration
     while end <= clip.duration:
-        yield clip.subclip(start, end)
+        clip = clip.subclip(start, end)
         start = end
         end   = end+duration
-        
+        yield clip
