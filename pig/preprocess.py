@@ -54,7 +54,7 @@ def segment(clip, duration=3.2):
     start = 0
     end = duration
     while end <= clip.duration:
-        clip = clip.subclip(start, end)
+        sub = clip.subclip(start, end)
         start = end
         end   = end+duration
-        yield clip
+        yield sub
