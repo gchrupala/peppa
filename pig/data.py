@@ -94,19 +94,40 @@ class PeppaPigIterableDataset(IterableDataset):
         for _path, items in groupby(self._clips(), key=lambda x: x.filepath):
             yield from self._positives(items)
 
-    
-def get_stats(data):
-    video_sum = torch.zeros(3).float()
-    video_count = torch.zeros(3).float()
-    audio_sum = torch.zeros(1).float()
-    audio_count = torch.zeros(1).float()
-    for batch in data:
-         video_sum   += batch.video.sum(dim=(0,2,3,4))
-         video_count += torch.ones_like(batch.video).sum(dim=(0,2,3,4))
-         audio_sum   += batch.audio.sum() 
-         audio_count += torch.ones_like(batch.audio).sum()
-    return (video_sum/video_count, audio_sum/audio_count)
-    
+@dataclass
+class Stats:
+    """Mean and standard deviation of a data sample."""
+    video_mean : torch.Tensor
+    video_std  : torch.Tensor
+    audio_mean : torch.Tensor
+    audio_std  : torch.Tensor
+            
+def get_stats(loader):
+    """Compute means and standard deviations over data points from `loader`."""
+    # Mean pass
+    video_sum = torch.zeros(1,3,1,1,1).float()
+    video_count = torch.zeros(1,3,1,1,1).float()
+    audio_sum = torch.zeros(1,1,1).float()
+    audio_count = torch.zeros(1,1,1).float()
+    for batch in loader:
+         video_sum   += batch.video.sum(dim=(0,2,3,4), keepdim=True)
+         video_count += torch.ones_like(batch.video).sum(dim=(0,2,3,4), keepdim=True)
+         audio_sum   += batch.audio.sum(dim=(0,2), keepdim=True) 
+         audio_count += torch.ones_like(batch.audio).sum(dim=(0,2), keepdim=True)
+    video_mean = video_sum/video_count
+    audio_mean = audio_sum/audio_count
+    logging.info(f"Mean video: {video_mean}\nMean audio: {audio_mean}")
+    # STD pass
+    video_sse = torch.zeros(1,3,1,1,1).float()
+    audio_sse = torch.zeros(1,1,1).float()
+    for batch in loader:
+        video_sse += ((batch.video - video_mean)**2).sum(dim=(0,2,3,4), keepdim=True)
+        audio_sse += ((batch.audio - audio_mean)**2).sum(dim=(0,2), keepdim=True)
+    return Stats(video_mean = video_mean.squeeze(),
+                 video_std  = ((video_sse/video_count) **0.5).squeeze(),
+                 audio_mean = audio_mean.squeeze(),
+                 audio_std  = ((audio_sse/audio_count) **0.5).squeeze())
+
 def worker_init_fn(worker_id):
     raise NotImplemented
 
