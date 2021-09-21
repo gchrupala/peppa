@@ -5,6 +5,7 @@ import moviepy.editor as m
 import logging
 import pandas as pd
 
+TARGET_SIZE = (180, 144)
 
 def extract():
     logging.basicConfig(level=logging.INFO)
@@ -39,13 +40,13 @@ def extract_from_episode(annotation, video):
     for i, clip in enumerate(dialogs):
         
         logging.info(f"Writing dialog {i} from episode {annotation['id']}") 
-        clip.resize(1/4).write_videofile(f"data/out/dialog/{annotation['id']}/{i}.avi",
+        clip.resize(TARGET_SIZE).write_videofile(f"data/out/dialog/{annotation['id']}/{i}.avi",
                                          fps=10,
                                          codec='mpeg4')
     for i, clip in enumerate(narrations):
         
         logging.info(f"Writing narration {i} from episode {annotation['id']}") 
-        clip.resize((144, 180)).write_videofile(f"data/out/narration/{annotation['id']}/{i}.avi",
+        clip.resize(TARGET_SIZE).write_videofile(f"data/out/narration/{annotation['id']}/{i}.avi",
                                          fps=10,
                                          codec='mpeg4')
         

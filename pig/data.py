@@ -95,7 +95,18 @@ class PeppaPigIterableDataset(IterableDataset):
             yield from self._positives(items)
 
     
-
+def get_stats(data):
+    video_sum = torch.zeros(3).float()
+    video_count = torch.zeros(3).float()
+    audio_sum = torch.zeros(1).float()
+    audio_count = torch.zeros(1).float()
+    for batch in data:
+         video_sum   += batch.video.sum(dim=(0,2,3,4))
+         video_count += torch.ones_like(batch.video).sum(dim=(0,2,3,4))
+         audio_sum   += batch.audio.sum() 
+         audio_count += torch.ones_like(batch.audio).sum()
+    return (video_sum/video_count, audio_sum/audio_count)
+    
 def worker_init_fn(worker_id):
     raise NotImplemented
 
