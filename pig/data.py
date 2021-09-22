@@ -1,6 +1,7 @@
 import torch
 from torch.utils.data import Dataset, IterableDataset, DataLoader
-from torchvision import datasets, transforms
+from torchvision.transforms import Normalize, Compose
+import pig.transforms 
 from dataclasses import dataclass
 import glob
 import pig.preprocess 
@@ -58,13 +59,17 @@ class PeppaPigIDataset(Dataset):
 
 
 class PeppaPigIterableDataset(IterableDataset):
-    def __init__(self, split='val', fragment_type='dialog', window=2):
+    def __init__(self, split='val', fragment_type='dialog', window=2, transform=None):
         self.split = split
         self.fragment_type = fragment_type
         self.window = window
         self.splits = dict(train = range(1, 197),
                            val  = range(197, 203),
                            test = range(203, 210))
+        if transform is None:
+            self.transform = lambda x: x
+        else:
+            self.transform = transform
         
     def _clips(self):
         for episode_id in self.splits[self.split]:
@@ -75,7 +80,7 @@ class PeppaPigIterableDataset(IterableDataset):
                         v = torch.stack([ torch.tensor(frame/255).float()
                                           for frame in clip.iter_frames() ])
                         a = torch.tensor(clip.audio.to_soundarray()).float()
-                        yield Clip(video = v.permute(3, 0, 1, 2),
+                        yield Clip(video = self.transform(v.permute(3, 0, 1, 2)),
                                    audio = a.mean(dim=1, keepdim=True).permute(1,0),
                                    filepath = path)        
         
@@ -116,7 +121,7 @@ def get_stats(loader):
          audio_count += torch.ones_like(batch.audio).sum(dim=(0,2), keepdim=True)
     video_mean = video_sum/video_count
     audio_mean = audio_sum/audio_count
-    logging.info(f"Mean video: {video_mean}\nMean audio: {audio_mean}")
+
     # STD pass
     video_sse = torch.zeros(1,3,1,1,1).float()
     audio_sse = torch.zeros(1,1,1).float()
@@ -131,30 +136,44 @@ def get_stats(loader):
 def worker_init_fn(worker_id):
     raise NotImplemented
 
-    
-class PeppaPigData(pl.LightningDataModule):
+
+
+class PigData(pl.LightningDataModule):
+
     def __init__(self):
         super().__init__()
+    
+    def _prepare_data(self):
+        # pig.preprocess.extract()
+        logging.info("Collecting stats on training data.")
         
+        train = PeppaPigIterableDataset(split='train', fragment_type='dialog', window=2, transform=None)
+        logging.info("Saving stats")
+        stats = get_stats(DataLoader(train, collate_fn=collate, batch_size=32))
+        torch.save(stats, "data/out/stats.pt")
 
-    def prepare_data(self):
-        # called only on 1 GPU
-        pig.preprocess.extract()
+    def setup(self, **kwargs):
+        self.stats = torch.load("data/out/stats.pt")
+        self.transform = Compose([
+            pig.transforms.SwapCT(),
+            Normalize(mean=self.stats.video_mean, std=self.stats.video_std),    
+            pig.transforms.SwapCT(),
+            ])
         
-
-    def setup(self, stage = None):
-        # called on every GPU
-        pass
-
+        logging.info("Creating train/val/test datasets")
+        self.train = PeppaPigIterableDataset(split='train', fragment_type='dialog', window=2,
+                                             transform=self.transform)
+        self.val   = PeppaPigIterableDataset(split='val', fragment_type='dialog', window=2,
+                                             transform=self.transform)
+        self.test  = PeppaPigIterableDataset(split='test', fragment_type='dialog', window=2,
+                                             transform=self.transform)
+        
 
     def train_dataloader(self):
-        transforms = ...
-        return DataLoader(self.train)
+        return DataLoader(self.train, collate_fn=collate, batch_size=32)
 
     def val_dataloader(self):
-        transforms = ...
-        return DataLoader(self.val)
+        return DataLoader(self.val, collate_fn=collate, batch_size=32)
 
     def test_dataloader(self):
-        transforms = ...
-        return DataLoader(self.test, batch_size=64)
+        return DataLoader(self.test, collate_fn=collate, batch_size=32)

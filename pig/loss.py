@@ -1,6 +1,5 @@
-
-
-
+import torch
+import torch.nn
 
 class MILNCELoss(torch.nn.Module):
     """The loss implemented is: log(pos/(2 * pos + neg)) = log(pos/(pos + neg/2)) - log(2).
