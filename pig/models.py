@@ -13,12 +13,50 @@ from pig.loss import TripletLoss
 import pig.data
 import logging
 
-class PeppaPig(pl.LightningModule):
+
+## Audio encoders
+
+class Wav2LetterEncoder(nn.Module):
+    
     def __init__(self):
         super().__init__()
-        self.video = V.r3d_18(pretrained=False, progress=False)
         self.audio = A.Wav2Letter(input_type='waveform', num_features=1, num_classes=512)
         self.audiopool = torch.nn.AdaptiveAvgPool2d((512,1))
+
+    def forward(self, x):
+        return Compose([self.audio.acoustic_model,
+                        self.audiopool,
+                        lambda x: x.squeeze(),
+                        lambda x: nn.functional.normalize(x, p=2, dim=1)
+        ])(x)
+
+
+
+## Video encoders
+class R3DEncoder(nn.Module):
+    
+    def __init__(self, pretrained=False):
+        super().__init__()
+        self.pretrained = pretrained
+        self.video = V.r3d_18(pretrained=pretrained, progress=False)
+
+    def forward(self, x):
+        return Compose([self.video.stem,
+                        self.video.layer1,
+                        self.video.layer2,
+                        self.video.layer3,
+                        self.video.layer4,
+                        self.video.avgpool,
+                        lambda x: x.flatten(1),
+                        lambda x: nn.functional.normalize(x, p=2, dim=1)
+        ])(x)
+    
+    
+class PeppaPig(pl.LightningModule):
+    def __init__(self, audio_encoder, video_encoder):
+        super().__init__()
+        self.video_encoder = video_encoder
+        self.audio_encoder = audio_encoder
         self.loss = TripletLoss(margin=0.2)
         
     def forward(self, x):
@@ -26,25 +64,17 @@ class PeppaPig(pl.LightningModule):
         raise NotImplemented
 
     def encode_video(self, x):
-        return Compose([self.video.stem,
-                        self.video.layer1,
-                        self.video.layer2,
-                        self.video.layer3,
-                        self.video.layer4,
-                        self.video.avgpool,
-                        lambda x: x.flatten(1)])(x)
+        return self.video_encoder(x)
     
     def encode_audio(self, x):
-        return self.audiopool(self.audio.acoustic_model(x)).squeeze()
+        return self.audio_encoder(x)
     
     def training_step(self, batch, batch_idx):
         # training_step defined the train loop.
         # It is independent of forward
         
         V = self.encode_video(batch.video)
-        logging.info(f"Video encoded: {V.shape}")
         A = self.encode_audio(batch.audio)
-        logging.info(f"Audio encoded: {A.shape}")
         loss = self.loss(V, A)
         # Logging to TensorBoard by default
         self.log("train_loss", loss)
@@ -52,9 +82,7 @@ class PeppaPig(pl.LightningModule):
 
     def validation_step(self, batch, batch_idx):
         V = self.encode_video(batch.video)
-        logging.info(f"Video encoded: {V.shape}")
         A = self.encode_audio(batch.audio)
-        logging.info(f"Audio encoded: {A.shape}")
         loss = self.loss(V, A)
         # Logging to TensorBoard by default
         self.log("val_loss", loss)
@@ -73,11 +101,12 @@ class PeppaPig(pl.LightningModule):
 def main():
 
     logging.getLogger().setLevel(logging.INFO)
-    data = pig.data.PigData()
+    data = pig.data.PigData(extract=False, prepare=False, normalization='kinetics')
     
-    net = PeppaPig()
+    net = PeppaPig(audio_encoder=Wav2LetterEncoder(),
+                   video_encoder=R3DEncoder(pretrained=True))
 
-    trainer = pl.Trainer(gpus=1, limit_train_batches=100, max_epochs=2, val_check_interval=10)
+    trainer = pl.Trainer(gpus=3, overfit_batches=10, log_every_n_steps=10, limit_val_batches=0)
     
     trainer.fit(net, data)
 

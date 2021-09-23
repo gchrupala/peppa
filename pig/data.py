@@ -140,20 +140,30 @@ def worker_init_fn(worker_id):
 
 class PigData(pl.LightningDataModule):
 
-    def __init__(self):
+    def __init__(self, extract=False, prepare=False, normalization='peppa'):
+        self.extract = extract
+        self.prepare = prepare
+        self.normalization = normalization
         super().__init__()
     
-    def _prepare_data(self):
-        # pig.preprocess.extract()
-        logging.info("Collecting stats on training data.")
-        
-        train = PeppaPigIterableDataset(split='train', fragment_type='dialog', window=2, transform=None)
-        logging.info("Saving stats")
-        stats = get_stats(DataLoader(train, collate_fn=collate, batch_size=32))
-        torch.save(stats, "data/out/stats.pt")
+    def prepare_data(self):
+        if self.extract:
+            logging.info("Extracting data")
+            pig.preprocess.extract()
+        if self.prepare:    
+            logging.info("Collecting stats on training data.")
+            train = PeppaPigIterableDataset(split='train', fragment_type='dialog', window=2, transform=None)
+            logging.info("Saving stats")
+            stats = get_stats(DataLoader(train, collate_fn=collate, batch_size=32))
+            torch.save(stats, "data/out/stats.pt")
 
     def setup(self, **kwargs):
-        self.stats = torch.load("data/out/stats.pt")
+        if self.normalization == 'peppa':
+            self.stats = torch.load("data/out/stats.pt")
+        elif self.normalization == 'kinetics':
+            self.stats = torch.load("data/out/kinetics-stats.pt")
+        else:
+            raise ValueError(f"Unsupported normalization type {self.normalization}")
         self.transform = Compose([
             pig.transforms.SwapCT(),
             Normalize(mean=self.stats.video_mean, std=self.stats.video_std),    
@@ -170,10 +180,10 @@ class PigData(pl.LightningDataModule):
         
 
     def train_dataloader(self):
-        return DataLoader(self.train, collate_fn=collate, batch_size=32)
+        return DataLoader(self.train, collate_fn=collate, batch_size=8)
 
     def val_dataloader(self):
-        return DataLoader(self.val, collate_fn=collate, batch_size=32)
+        return DataLoader(self.val, collate_fn=collate, batch_size=8)
 
     def test_dataloader(self):
-        return DataLoader(self.test, collate_fn=collate, batch_size=32)
+        return DataLoader(self.test, collate_fn=collate, batch_size=8)
