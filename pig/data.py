@@ -82,8 +82,8 @@ class PeppaPigIterableDataset(IterableDataset):
                         clips = pig.preprocess.segment(video, duration=3.2)
                     else:
                         raise NotImplemented
-                        #meta = json.load(open(f"data/in/peppa/episodes/{episode_id}.json"))
-                        #clips = pig.preprocess.sentences(video, meta, fragment_type=self.fragment_type)
+                        meta = json.load(open(f"data/out/{self.fragment_type}/{episode_id}/*.json"))
+                        clips = pig.preprocess.lines(video, meta)
                     for clip in clips:
                         v = torch.stack([ torch.tensor(frame/255).float()
                                           for frame in clip.iter_frames() ])
@@ -163,7 +163,7 @@ class PigData(pl.LightningDataModule):
             pig.preprocess.extract()
         if self.prepare:    
             logging.info("Collecting stats on training data.")
-            train = PeppaPigIterableDataset(split='train',
+            train = PeppaPigIterableDataset(split=self.config['train']['split'],
                                             fragment_type=self.config['train']['fragment_type'],
                                             window=self.config['train']['window'],
                                             transform=self.config['transform'])
@@ -185,25 +185,25 @@ class PigData(pl.LightningDataModule):
             ])
         
         logging.info("Creating train/val/test datasets")
-        self.train = PeppaPigIterableDataset(split='train',
+        self.train = PeppaPigIterableDataset(split=self.config['train']['split'],
                                              fragment_type=self.config['train']['fragment_type'],
                                              window=self.config['train']['window'],
                                              transform=self.config['transform'])
-        self.val   = PeppaPigIterableDataset(split='val',
+        self.val   = PeppaPigIterableDataset(split=self.config['val']['split'],
                                              fragment_type=self.config['val']['fragment_type'],
                                              window=self.config['val']['window'],
                                              transform=self.config['transform'])
-        self.test  = PeppaPigIterableDataset(split='test',
+        self.test  = PeppaPigIterableDataset(split=self.config['test']['split'],
                                              fragment_type=self.config['test']['fragment_type'],
                                              window=self.config['test']['window'],
                                              transform=self.config['transform'])
         
 
     def train_dataloader(self):
-        return DataLoader(self.train, collate_fn=collate, batch_size=8)
+        return DataLoader(self.train, collate_fn=collate, batch_size=self.config['train']['batch_size'])
 
     def val_dataloader(self):
-        return DataLoader(self.val, collate_fn=collate, batch_size=8)
+        return DataLoader(self.val, collate_fn=collate, batch_size=self.config['val']['batch_size'])
 
     def test_dataloader(self):
-        return DataLoader(self.test, collate_fn=collate, batch_size=8)
+        return DataLoader(self.test, collate_fn=collate, batch_size=self.config['test']['batch_size'])

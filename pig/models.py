@@ -32,7 +32,7 @@ class Wav2LetterEncoder(nn.Module):
     def forward(self, x):
         return Compose([self.audio.acoustic_model,
                         self.audiopool,
-                        lambda x: x.squeeze(),
+                        lambda x: x.squeeze(dim=2),
                         self.project,
                         lambda x: nn.functional.normalize(x, p=2, dim=1)
         ])(x)
@@ -49,7 +49,7 @@ class Wav2VecEncoder(nn.Module):
     def forward(self, x):
         features, _ = self.audio.extract_features(x.squeeze(dim=1))
         return Compose([self.audiopool,
-                        lambda x: x.squeeze(),
+                        lambda x: x.squeeze(dim=2),
                         self.project,
                         lambda x: nn.functional.normalize(x, p=2, dim=1)
         ])(features)
@@ -141,9 +141,12 @@ def main():
                   margin=0.2,
                   data=dict(normalization='kinetics' if video_pretrained else 'peppa',
                             transform=None,
-                            train=dict(fragment_type='dialog', window=0),
-                            val=dict(fragment_type='dialog', window=0),
-                            test=dict(fragment_type='dialog', window=0)),
+                            train=dict(split='train', fragment_type='dialog',
+                                       window=0, duration=3.2, batch_size=8),
+                            val=dict(split='val', fragment_type='narration',
+                                     window=0, duration=None, batch_size=1),
+                            test=dict(split='test', fragment_type='narration',
+                                      window=0, duration=None, batch_size=1)),
                   video=dict(pretrained=video_pretrained, project=True),
                   audio_class='Wav2VecEncoder',
                   audio = dict(path = 'data/in/wav2vec/wav2vec_small.pt')
@@ -156,8 +159,8 @@ def main():
     net = PeppaPig(config)
 
     
-    trainer = pl.Trainer(gpus=1, overfit_batches=10, log_every_n_steps=10, limit_val_batches=0)
-    #trainer = pl.Trainer(gpus=1)
+    #trainer = pl.Trainer(gpus=1, overfit_batches=10, log_every_n_steps=10, limit_val_batches=10)
+    trainer = pl.Trainer(gpus=1, val_check_interval=200)
     trainer.fit(net, data)
 
 if __name__ == '__main__':

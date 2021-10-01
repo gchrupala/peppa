@@ -57,8 +57,9 @@ def extract_from_episode(annotation, video):
         logging.info(f"Writing narration metadata {i} from episode {annotation['id']}") 
         json.dump(narrations_meta[i], open(f"data/out/narration/{annotation['id']}/{i}.json", 'w'))
         
-def sentences(clip, metadata, fragment_type='dialog'):
-    raise NotImplemented
+def lines(clip, metadata):
+    for line in metadata['subtitles']:
+        yield clip.subclip(line['begin'], line['end'])
     
     
 def segment(clip, duration=3.2):
