@@ -46,14 +46,16 @@ def extract_from_episode(annotation, video):
         clip.resize(TARGET_SIZE).write_videofile(f"data/out/dialog/{annotation['id']}/{i}.avi",
                                          fps=10,
                                          codec='mpeg4')
-        json.dump(dialogs_meta[i], f"data/out/dialog/{annotation['id']}{i}.json")
+        logging.info(f"Writing dialog {i} from episode {annotation['id']}") 
+        json.dump(dialogs_meta[i], open(f"data/out/dialog/{annotation['id']}/{i}.json", 'w'))
     for i, clip in enumerate(narrations):
         
         logging.info(f"Writing narration {i} from episode {annotation['id']}") 
         clip.resize(TARGET_SIZE).write_videofile(f"data/out/narration/{annotation['id']}/{i}.avi",
                                          fps=10,
                                          codec='mpeg4')
-        json.dump(narrations_meta[i], f"data/out/narration/{annotation['id']}{i}.json")
+        logging.info(f"Writing narration metadata {i} from episode {annotation['id']}") 
+        json.dump(narrations_meta[i], open(f"data/out/narration/{annotation['id']}/{i}.json", 'w'))
         
 def sentences(clip, metadata, fragment_type='dialog'):
     raise NotImplemented
