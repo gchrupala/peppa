@@ -7,15 +7,15 @@ from torch.utils.data import DataLoader, random_split
 import pytorch_lightning as pl
 import torchvision.models.video as V
 import torchaudio.models as A
-
+from torchaudio.models.wav2vec2.utils import import_fairseq_model
+import fairseq
 from torchvision.transforms import Compose
 from pig.loss import TripletLoss
 import pig.data
 import logging
+import sys
+import pig.util
 
-
-def identity(x):
-    return x
 ## Audio encoders
 
 class Wav2LetterEncoder(nn.Module):
@@ -27,7 +27,7 @@ class Wav2LetterEncoder(nn.Module):
         if project:
             self.project = nn.Linear(512, 512)
         else:
-            self.project = identity
+            self.project = pig.util.identity
 
     def forward(self, x):
         return Compose([self.audio.acoustic_model,
@@ -38,7 +38,23 @@ class Wav2LetterEncoder(nn.Module):
         ])(x)
 
 
+class Wav2VecEncoder(nn.Module):
+    def __init__(self, path):
+        super().__init__()
+        model, _, _ = fairseq.checkpoint_utils.load_model_ensemble_and_task([path])
+        self.audio = import_fairseq_model(model[0], num_out=28)
+        self.audiopool = torch.nn.AdaptiveAvgPool2d((512,1))
+        self.project = nn.Linear(512, 512)
 
+    def forward(self, x):
+        features, _ = self.audio.extract_features(x.squeeze(dim=1))
+        return Compose([self.audiopool,
+                        lambda x: x.squeeze(),
+                        self.project,
+                        lambda x: nn.functional.normalize(x, p=2, dim=1)
+        ])(features)
+
+        
 ## Video encoders
 class R3DEncoder(nn.Module):
     
@@ -71,9 +87,8 @@ class PeppaPig(pl.LightningModule):
         self.config = config
         self.save_hyperparameters(config)
         self.loss = TripletLoss(margin=self.config['margin'])
-        self.audio_encoder=Wav2LetterEncoder(project=self.config['audio']['project'])
-        self.video_encoder=R3DEncoder(pretrained=self.config['video']['pretrained'],
-                                      project=self.config['video']['project'])
+        self.video_encoder = R3DEncoder(**self.config['video'])
+        self.audio_encoder = get_class(config['audio_class'])(**config['audio'])
         
     def forward(self, x):
         # in lightning, forward defines the prediction/inference actions
@@ -111,25 +126,38 @@ class PeppaPig(pl.LightningModule):
         optimizer = torch.optim.Adam(self.parameters(), lr=self.config['lr'])
         return optimizer
 
+def get_class(name):
+    return getattr(sys.modules[__name__], name)
 
     
     
 def main():
 
-    logging.getLogger().setLevel(logging.INFO)
-                                      
+    logging.getLogger().setLevel(logging.WARNING)
+    
+    video_pretrained = False
+    
     config = dict(lr=1e-5,
-                  margin=0.1,
-                  video=dict(pretrained=False, project=True),
-                  audio=dict(project=True))
+                  margin=0.2,
+                  data=dict(normalization='kinetics' if video_pretrained else 'peppa',
+                            transform=None,
+                            train=dict(fragment_type='dialog', window=0),
+                            val=dict(fragment_type='dialog', window=0),
+                            test=dict(fragment_type='dialog', window=0)),
+                  video=dict(pretrained=video_pretrained, project=True),
+                  audio_class='Wav2VecEncoder',
+                  audio = dict(path = 'data/in/wav2vec/wav2vec_small.pt')
+                  #audio_class='Wav2LetterEncoder',
+                  #audio=dict(project=True)
+
+    )
                                       
-    data = pig.data.PigData(extract=False,
-                            prepare=False,
-                            normalization='kinetics' if config['video']['pretrained'] else 'peppa')
+    data = pig.data.PigData(config['data'], extract=False, prepare=False)
     net = PeppaPig(config)
 
     
-    trainer = pl.Trainer(gpus=3, overfit_batches=10, log_every_n_steps=10, limit_val_batches=0)
+    trainer = pl.Trainer(gpus=1, overfit_batches=10, log_every_n_steps=10, limit_val_batches=0)
+    #trainer = pl.Trainer(gpus=1)
     trainer.fit(net, data)
 
 if __name__ == '__main__':

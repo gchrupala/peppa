@@ -9,6 +9,7 @@ import moviepy.editor as m
 import pytorch_lightning as pl
 import logging
 from itertools import groupby
+import pig.util
 
 @dataclass
 class Clip:
@@ -59,7 +60,7 @@ class PeppaPigIDataset(Dataset):
 
 
 class PeppaPigIterableDataset(IterableDataset):
-    def __init__(self, split='val', fragment_type='dialog', window=2, transform=None):
+    def __init__(self, split='val', fragment_type='dialog', window=2, transform=None, duration=3.2):
         self.split = split
         self.fragment_type = fragment_type
         self.window = window
@@ -67,22 +68,32 @@ class PeppaPigIterableDataset(IterableDataset):
                            val  = range(197, 203),
                            test = range(203, 210))
         if transform is None:
-            self.transform = lambda x: x
+            self.transform = pig.util.identity
         else:
             self.transform = transform
+        self.duration = duration
         
     def _clips(self):
         for episode_id in self.splits[self.split]:
-            for path in sorted(glob.glob(f"data/out/{self.fragment_type}/{episode_id}/*.avi")):
+            for i, path in enumerate(sorted(glob.glob(f"data/out/{self.fragment_type}/{episode_id}/*.avi"))):
                 with m.VideoFileClip(path) as video:
                     logging.info(f"Path: {path}, size: {video.size}")
-                    for clip in pig.preprocess.segment(video, duration=3.2):
+                    if self.duration is not None:
+                        clips = pig.preprocess.segment(video, duration=3.2)
+                    else:
+                        raise NotImplemented
+                        #meta = json.load(open(f"data/in/peppa/episodes/{episode_id}.json"))
+                        #clips = pig.preprocess.sentences(video, meta, fragment_type=self.fragment_type)
+                    for clip in clips:
                         v = torch.stack([ torch.tensor(frame/255).float()
                                           for frame in clip.iter_frames() ])
                         a = torch.tensor(clip.audio.to_soundarray()).float()
                         yield Clip(video = self.transform(v.permute(3, 0, 1, 2)),
                                    audio = a.mean(dim=1, keepdim=True).permute(1,0),
-                                   filepath = path)        
+                                   filepath = path)
+
+                            
+                            
         
     def _positives(self, items):
         clips  = list(enumerate(items))
@@ -140,11 +151,11 @@ def worker_init_fn(worker_id):
 
 class PigData(pl.LightningDataModule):
 
-    def __init__(self, extract=False, prepare=False, normalization='peppa'):
+    def __init__(self, config, extract=False, prepare=False):
+        super().__init__()
         self.extract = extract
         self.prepare = prepare
-        self.normalization = normalization
-        super().__init__()
+        self.config = config
     
     def prepare_data(self):
         if self.extract:
@@ -152,15 +163,18 @@ class PigData(pl.LightningDataModule):
             pig.preprocess.extract()
         if self.prepare:    
             logging.info("Collecting stats on training data.")
-            train = PeppaPigIterableDataset(split='train', fragment_type='dialog', window=2, transform=None)
+            train = PeppaPigIterableDataset(split='train',
+                                            fragment_type=self.config['train']['fragment_type'],
+                                            window=self.config['train']['window'],
+                                            transform=self.config['transform'])
             logging.info("Saving stats")
             stats = get_stats(DataLoader(train, collate_fn=collate, batch_size=32))
             torch.save(stats, "data/out/stats.pt")
 
     def setup(self, **kwargs):
-        if self.normalization == 'peppa':
+        if self.config['normalization'] == 'peppa':
             self.stats = torch.load("data/out/stats.pt")
-        elif self.normalization == 'kinetics':
+        elif self.config['normalization'] == 'kinetics':
             self.stats = torch.load("data/out/kinetics-stats.pt")
         else:
             raise ValueError(f"Unsupported normalization type {self.normalization}")
@@ -171,12 +185,18 @@ class PigData(pl.LightningDataModule):
             ])
         
         logging.info("Creating train/val/test datasets")
-        self.train = PeppaPigIterableDataset(split='train', fragment_type='dialog', window=2,
-                                             transform=self.transform)
-        self.val   = PeppaPigIterableDataset(split='val', fragment_type='dialog', window=2,
-                                             transform=self.transform)
-        self.test  = PeppaPigIterableDataset(split='test', fragment_type='dialog', window=2,
-                                             transform=self.transform)
+        self.train = PeppaPigIterableDataset(split='train',
+                                             fragment_type=self.config['train']['fragment_type'],
+                                             window=self.config['train']['window'],
+                                             transform=self.config['transform'])
+        self.val   = PeppaPigIterableDataset(split='val',
+                                             fragment_type=self.config['val']['fragment_type'],
+                                             window=self.config['val']['window'],
+                                             transform=self.config['transform'])
+        self.test  = PeppaPigIterableDataset(split='test',
+                                             fragment_type=self.config['test']['fragment_type'],
+                                             window=self.config['test']['window'],
+                                             transform=self.config['transform'])
         
 
     def train_dataloader(self):

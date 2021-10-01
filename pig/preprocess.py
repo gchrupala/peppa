@@ -26,15 +26,18 @@ def extract():
     
 def extract_from_episode(annotation, video):
     narrations = []
+    narrations_meta = []
     dialogs = []
-    
+    dialogs_meta = []
     for segment in annotation['narrator_splits']:
         if len(segment['context']['tokenized']) > 0:
             dialogs.append(video.subclip(segment['context']['tokenized'][0]['begin'],
-                                     segment['context']['tokenized'][-1]['end']))
+                                         segment['context']['tokenized'][-1]['end']))
+            dialogs_meta.append(segment['context'])
         if len(segment['narration']['tokenized']) > 0:
             narrations.append(video.subclip(segment['narration']['tokenized'][0]['begin'],
                                             segment['narration']['tokenized'][-1]['end']))
+            narrations_meta.append(segment['narration'])
     os.makedirs(f"data/out/dialog/{annotation['id']}", exist_ok=True)
     os.makedirs(f"data/out/narration/{annotation['id']}", exist_ok=True)
     for i, clip in enumerate(dialogs):
@@ -43,14 +46,19 @@ def extract_from_episode(annotation, video):
         clip.resize(TARGET_SIZE).write_videofile(f"data/out/dialog/{annotation['id']}/{i}.avi",
                                          fps=10,
                                          codec='mpeg4')
+        json.dump(dialogs_meta[i], f"data/out/dialog/{annotation['id']}{i}.json")
     for i, clip in enumerate(narrations):
         
         logging.info(f"Writing narration {i} from episode {annotation['id']}") 
         clip.resize(TARGET_SIZE).write_videofile(f"data/out/narration/{annotation['id']}/{i}.avi",
                                          fps=10,
                                          codec='mpeg4')
+        json.dump(narrations_meta[i], f"data/out/narration/{annotation['id']}{i}.json")
         
-        
+def sentences(clip, metadata, fragment_type='dialog'):
+    raise NotImplemented
+    
+    
 def segment(clip, duration=3.2):
     start = 0
     end = duration
