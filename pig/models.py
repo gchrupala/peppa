@@ -159,8 +159,8 @@ def main():
     net = PeppaPig(config)
 
     
-    trainer = pl.Trainer(gpus=1, overfit_batches=10, log_every_n_steps=10, limit_val_batches=10)
-    #trainer = pl.Trainer(gpus=1, val_check_interval=200)
+    #trainer = pl.Trainer(gpus=1, overfit_batches=10, log_every_n_steps=10, limit_val_batches=10)
+    trainer = pl.Trainer(gpus=1, val_check_interval=100)
     trainer.fit(net, data)
 
 if __name__ == '__main__':

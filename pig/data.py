@@ -35,7 +35,7 @@ class ClipBatch:
     audio: torch.tensor
     
     
-def crop_video_batch(audio):
+def crop_audio_batch(audio):
     size = min(x.shape[1] for x in audio)
     return torch.stack([ x[:, :size] for x in audio ])
 
