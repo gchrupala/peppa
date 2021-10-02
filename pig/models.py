@@ -144,9 +144,9 @@ def main():
                             train=dict(split='train', fragment_type='dialog',
                                        window=0, duration=3.2, batch_size=8),
                             val=dict(split='val', fragment_type='narration',
-                                     window=0, duration=None, batch_size=1),
+                                     window=0, duration=None, batch_size=8),
                             test=dict(split='test', fragment_type='narration',
-                                      window=0, duration=None, batch_size=1)),
+                                      window=0, duration=None, batch_size=8)),
                   video=dict(pretrained=video_pretrained, project=True),
                   audio_class='Wav2VecEncoder',
                   audio = dict(path = 'data/in/wav2vec/wav2vec_small.pt')
@@ -159,8 +159,8 @@ def main():
     net = PeppaPig(config)
 
     
-    #trainer = pl.Trainer(gpus=1, overfit_batches=10, log_every_n_steps=10, limit_val_batches=10)
-    trainer = pl.Trainer(gpus=1, val_check_interval=200)
+    trainer = pl.Trainer(gpus=1, overfit_batches=10, log_every_n_steps=10, limit_val_batches=10)
+    #trainer = pl.Trainer(gpus=1, val_check_interval=200)
     trainer.fit(net, data)
 
 if __name__ == '__main__':

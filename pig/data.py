@@ -10,6 +10,7 @@ import pytorch_lightning as pl
 import logging
 from itertools import groupby
 import pig.util
+import torch.nn.functional as F
 
 @dataclass
 class Clip:
@@ -34,18 +35,26 @@ class ClipBatch:
     audio: torch.tensor
     
     
-def batch_audio(audio):
+def crop_video_batch(audio):
     size = min(x.shape[1] for x in audio)
     return torch.stack([ x[:, :size] for x in audio ])
 
-def batch_video(video):
+def pad_audio_batch(audio):
+    size = max(x.shape[1] for x in audio)
+    return torch.stack([ F.pad(x, (0, size-x.shape[1]), 'constant', 0) for x in audio ])
+
+def crop_video_batch(video):
     size = min(x.shape[1] for x in video)
     return torch.stack([ x[:, :size, :, :] for x in video ])
+
+def pad_video_batch(video):
+    size = max(x.shape[1] for x in video)
+    return torch.stack([ F.pad(x, (0,0, 0,0, 0,size-x.shape[1]), 'constant', 0) for x in video ])
 
                        
 def collate(data):
     video, audio = zip(*[(x.video, x.audio) for x in data])
-    return ClipBatch(video=batch_video(video), audio=batch_audio(audio))
+    return ClipBatch(video=pad_video_batch(video), audio=pad_audio_batch(audio))
 
     
 class PeppaPigIDataset(Dataset):
