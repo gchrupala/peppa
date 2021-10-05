@@ -1,5 +1,6 @@
 import torch
 import torch.nn
+from pig.util import cosine_matrix
 
 class MILNCELoss(torch.nn.Module):
     """The loss implemented is: log(pos/(2 * pos + neg)) = log(pos/(pos + neg/2)) - log(2).

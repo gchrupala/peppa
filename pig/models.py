@@ -15,6 +15,7 @@ import pig.data
 import logging
 import sys
 import pig.util
+import pig.metrics
 
 ## Audio encoders
 
@@ -108,7 +109,7 @@ class PeppaPig(pl.LightningModule):
         A = self.encode_audio(batch.audio)
         loss = self.loss(V, A)
         # Logging to TensorBoard by default
-        self.log("train_loss", loss)
+        self.log("train_loss", loss, prog_bar=True)
         return loss
 
     def validation_step(self, batch, batch_idx):
@@ -116,8 +117,15 @@ class PeppaPig(pl.LightningModule):
         A = self.encode_audio(batch.audio)
         loss = self.loss(V, A)
         # Logging to TensorBoard by default
-        self.log("val_loss", loss)
-        return loss
+        self.log("val_loss", loss, prog_bar=True)
+        return (V, A)
+
+    def validation_epoch_end(self, outputs):
+        V, A = zip(*outputs)
+        V = torch.cat(V, dim=0)
+        A = torch.cat(A, dim=0)
+        rec10 = pig.metrics.recall_at_n(V, A, correct=torch.eye(V.shape[0]), n=10)
+        self.log("val_rec10", rec10, prog_bar=True)
 
         
     #def test_step(self, batch, batch_idx):    
@@ -158,9 +166,8 @@ def main():
     data = pig.data.PigData(config['data'], extract=False, prepare=False)
     net = PeppaPig(config)
 
-    
-    #trainer = pl.Trainer(gpus=1, overfit_batches=10, log_every_n_steps=10, limit_val_batches=10)
-    trainer = pl.Trainer(gpus=1, val_check_interval=100)
+    #trainer = pl.Trainer(gpus=3, accelerator=accelerator, overfit_batches=10, log_every_n_steps=10)
+    trainer = pl.Trainer(gpus=1, val_check_interval=100, accumulate_grad_batches=8)
     trainer.fit(net, data)
 
 if __name__ == '__main__':
