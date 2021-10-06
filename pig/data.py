@@ -12,7 +12,8 @@ from itertools import groupby
 import pig.util
 import torch.nn.functional as F
 import json
-
+import random
+random.seed(123)
 
 @dataclass
 class Clip:
@@ -224,3 +225,27 @@ class PigData(pl.LightningDataModule):
 
     def test_dataloader(self):
         return DataLoader(self.test, collate_fn=collate, batch_size=self.config['test']['batch_size'])
+
+def pairs(xs):
+    if len(xs) < 2:
+        return []
+    else:
+        return [(xs[0], xs[1])] + pairs(xs[1:])
+
+@dataclass
+class Triple:
+    audio:   m.AudioFileClip
+    target:     m.VideoFileClip
+    distractor: m.VideoFileClip
+    
+def triples(clips):
+    """Generates triples of (a, v1, v2) where a is an audio clip, v1
+       matching video and v2 a distractor video, matched by duration."""
+    for size, items in groupby(clips, key=lambda x: x.duration):
+        logging.info(f"Pairing clips with duration {size}")
+        paired = pairs(sorted(items, key=lambda _: random.random()))
+        for p in paired:
+            target, distractor = random.sample(p, 2)
+            yield Triple(audio=target.audio, target=target, distractor=distractor)
+
+    
