@@ -11,13 +11,15 @@ import logging
 from itertools import groupby
 import pig.util
 import torch.nn.functional as F
+import json
+
 
 @dataclass
 class Clip:
     """Video clip with associated audio."""
     video: torch.tensor
     audio: torch.tensor
-    filepath: str
+    filename: str
 
 @dataclass
 class Pair:
@@ -26,8 +28,17 @@ class Pair:
     audio: torch.tensor
     video_idx: int
     audio_idx: int
-    filepath: str
 
+
+@dataclass
+class RawPair:
+    """Positive raw video-audio example."""
+    video: m.VideoFileClip
+    audio: m.AudioFileClip
+    video_idx: int
+    audio_idx: int
+
+    
 @dataclass
 class ClipBatch:
     """Batch of video clips with associated audio."""
@@ -69,7 +80,7 @@ class PeppaPigIDataset(Dataset):
 
 
 class PeppaPigIterableDataset(IterableDataset):
-    def __init__(self, split='val', fragment_type='dialog', window=2, transform=None, duration=3.2):
+    def __init__(self, split='val', fragment_type='dialog', window=0, transform=None, duration=3.2, raw=False):
         self.split = split
         self.fragment_type = fragment_type
         self.window = window
@@ -81,6 +92,7 @@ class PeppaPigIterableDataset(IterableDataset):
         else:
             self.transform = transform
         self.duration = duration
+        self.raw = raw
         
     def _clips(self):
         for episode_id in self.splits[self.split]:
@@ -90,16 +102,19 @@ class PeppaPigIterableDataset(IterableDataset):
                     if self.duration is not None:
                         clips = pig.preprocess.segment(video, duration=3.2)
                     else:
-                        raise NotImplemented
-                        meta = json.load(open(f"data/out/{self.fragment_type}/{episode_id}/*.json"))
+                        meta = json.load(open(f"data/out/{self.fragment_type}/{episode_id}/{i}.json"))
                         clips = pig.preprocess.lines(video, meta)
                     for clip in clips:
-                        v = torch.stack([ torch.tensor(frame/255).float()
+                        if self.raw:
+                            yield clip
+                        else:
+                            v = torch.stack([ torch.tensor(frame/255).float()
                                           for frame in clip.iter_frames() ])
-                        a = torch.tensor(clip.audio.to_soundarray()).float()
-                        yield Clip(video = self.transform(v.permute(3, 0, 1, 2)),
-                                   audio = a.mean(dim=1, keepdim=True).permute(1,0),
-                                   filepath = path)
+                            a = torch.tensor(clip.audio.to_soundarray()).float()
+                            yield Clip(video = self.transform(v.permute(3, 0, 1, 2)),
+                                       audio = a.mean(dim=1, keepdim=True).permute(1,0),
+                                       duration = clip.duration,
+                                       filename = path)
 
                             
                             
@@ -108,15 +123,14 @@ class PeppaPigIterableDataset(IterableDataset):
         clips  = list(enumerate(items))
         for i, a in clips:
             for j, b in clips:
-                if abs(j - i) <= self.window: 
-                    yield Pair(video = a.video,
-                               audio = b.audio,
-                               video_idx = i,
-                               audio_idx = j,
-                               filepath = a.filepath)
+                if abs(j - i) <= self.window:
+                    if self.raw:
+                        yield RawPair(video=a, audio=b.audio, video_idx = i, audio_idx = j)
+                    else:
+                        yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)
                     
     def __iter__(self):
-        for _path, items in groupby(self._clips(), key=lambda x: x.filepath):
+        for _path, items in groupby(self._clips(), key=lambda x: x.filename):
             yield from self._positives(items)
 
 @dataclass
@@ -194,18 +208,12 @@ class PigData(pl.LightningDataModule):
             ])
         
         logging.info("Creating train/val/test datasets")
-        self.train = PeppaPigIterableDataset(split=self.config['train']['split'],
-                                             fragment_type=self.config['train']['fragment_type'],
-                                             window=self.config['train']['window'],
-                                             transform=self.config['transform'])
-        self.val   = PeppaPigIterableDataset(split=self.config['val']['split'],
-                                             fragment_type=self.config['val']['fragment_type'],
-                                             window=self.config['val']['window'],
-                                             transform=self.config['transform'])
-        self.test  = PeppaPigIterableDataset(split=self.config['test']['split'],
-                                             fragment_type=self.config['test']['fragment_type'],
-                                             window=self.config['test']['window'],
-                                             transform=self.config['transform'])
+        self.train = PeppaPigIterableDataset(transform=self.config['transform'],
+                                             **self.config['train'])
+        self.val   = PeppaPigIterableDataset(transform=self.config['transform'],
+                                             **self.config['val'])
+        self.test  = PeppaPigIterableDataset(transform=self.config['transform'],
+                                             **self.config['test'])
         
 
     def train_dataloader(self):

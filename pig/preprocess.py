@@ -58,8 +58,19 @@ def extract_from_episode(annotation, video):
         json.dump(narrations_meta[i], open(f"data/out/narration/{annotation['id']}/{i}.json", 'w'))
         
 def lines(clip, metadata):
+    start = pd.Timedelta(metadata['subtitles'][0]['begin'])
+    logging.info(f"Extracting lines from {clip.filename}, {clip.duration} seconds")
+    logging.info(f"Time offset {start}")
     for line in metadata['subtitles']:
-        yield clip.subclip(line['begin'], line['end'])
+        logging.info(f"Line: {line}")
+        begin = (pd.Timedelta(line['begin'])-start).seconds
+        end = (pd.Timedelta(line['end'])-start).seconds
+        if begin < clip.duration:
+            yield clip.subclip(begin, end)
+        else:
+            logging.warning(f"Line {line} starts past end of clip {clip.filename}")
+            
+                           
     
     
 def segment(clip, duration=3.2):
