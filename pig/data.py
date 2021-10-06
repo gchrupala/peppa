@@ -13,6 +13,8 @@ import pig.util
 import torch.nn.functional as F
 import json
 import random
+
+
 random.seed(123)
 
 @dataclass
@@ -20,6 +22,7 @@ class Clip:
     """Video clip with associated audio."""
     video: torch.tensor
     audio: torch.tensor
+    duration: float
     filename: str
 
 @dataclass
@@ -100,11 +103,11 @@ class PeppaPigIterableDataset(IterableDataset):
             for i, path in enumerate(sorted(glob.glob(f"data/out/{self.fragment_type}/{episode_id}/*.avi"))):
                 with m.VideoFileClip(path) as video:
                     logging.info(f"Path: {path}, size: {video.size}")
-                    if self.duration is not None:
-                        clips = pig.preprocess.segment(video, duration=3.2)
-                    else:
+                    if self.duration is None:
                         meta = json.load(open(f"data/out/{self.fragment_type}/{episode_id}/{i}.json"))
                         clips = pig.preprocess.lines(video, meta)
+                    else:
+                        clips = pig.preprocess.segment(video, duration=self.duration)
                     for clip in clips:
                         if self.raw:
                             yield clip
@@ -234,9 +237,9 @@ def pairs(xs):
 
 @dataclass
 class Triple:
-    audio:   m.AudioFileClip
-    target:     m.VideoFileClip
-    distractor: m.VideoFileClip
+    audio: ...
+    target: ...
+    distractor: ...
     
 def triples(clips):
     """Generates triples of (a, v1, v2) where a is an audio clip, v1

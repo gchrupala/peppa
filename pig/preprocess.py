@@ -64,7 +64,7 @@ def lines(clip, metadata):
     for line in metadata['subtitles']:
         logging.info(f"Line: {line}")
         begin = (pd.Timedelta(line['begin'])-start).seconds
-        end = (pd.Timedelta(line['end'])-start).seconds
+        end = min(clip.duration, (pd.Timedelta(line['end'])-start).seconds)
         if begin < clip.duration:
             yield clip.subclip(begin, end)
         else:
