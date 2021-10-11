@@ -5,7 +5,7 @@ import moviepy.editor as m
 import logging
 import pandas as pd
 
-TARGET_SIZE = (180, 144)
+TARGET_SIZE = (180, 100)
 
 def extract():
     logging.basicConfig(level=logging.INFO)
