@@ -13,7 +13,7 @@ import pig.util
 import torch.nn.functional as F
 import json
 import random
-
+from typing import Union
 
 random.seed(123)
 
@@ -24,6 +24,7 @@ class Clip:
     audio: torch.tensor
     duration: float
     filename: str
+    index: Union[int, None] = None
 
 @dataclass
 class Pair:
@@ -84,7 +85,14 @@ class PeppaPigIDataset(Dataset):
 
 
 class PeppaPigIterableDataset(IterableDataset):
-    def __init__(self, split='val', fragment_type='dialog', window=0, transform=None, duration=3.2, raw=False):
+    def __init__(self,
+                 split='val',
+                 fragment_type='dialog',
+                 window=0,
+                 transform=None,
+                 duration=3.2,
+                 raw=False,
+                 triplet=False):
         self.split = split
         self.fragment_type = fragment_type
         self.window = window
@@ -97,6 +105,7 @@ class PeppaPigIterableDataset(IterableDataset):
             self.transform = transform
         self.duration = duration
         self.raw = raw
+        self.triplet = triplet
         
     def _clips(self):
         for episode_id in self.splits[self.split]:
@@ -119,10 +128,9 @@ class PeppaPigIterableDataset(IterableDataset):
                                        audio = a.mean(dim=1, keepdim=True).permute(1,0),
                                        duration = clip.duration,
                                        filename = path)
+                                       
+                                       
 
-                            
-                            
-        
     def _positives(self, items):
         clips  = list(enumerate(items))
         for i, a in clips:
@@ -131,11 +139,14 @@ class PeppaPigIterableDataset(IterableDataset):
                     if self.raw:
                         yield RawPair(video=a, audio=b.audio, video_idx = i, audio_idx = j)
                     else:
-                        yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)
-                    
+                        yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)                          
     def __iter__(self):
-        for _path, items in groupby(self._clips(), key=lambda x: x.filename):
-            yield from self._positives(items)
+        if self.triplet:
+            clips = [ Clip(**{**c.__dict__, 'index':i}) for i,c in enumerate(self._clips()) ]
+            yield from triplets(clips)
+        else:
+            for _path, items in groupby(self._clips(), key=lambda x: x.filename):
+                yield from self._positives(items)
 
 @dataclass
 class Stats:
@@ -213,21 +224,36 @@ class PigData(pl.LightningDataModule):
         
         logging.info("Creating train/val/test datasets")
         self.train = PeppaPigIterableDataset(transform=self.config['transform'],
-                                             **self.config['train'])
-        self.val   = PeppaPigIterableDataset(transform=self.config['transform'],
-                                             **self.config['val'])
+                                             **{k:v for k,v in self.config['train'].items()
+                                                if k != 'batch_size'})
+        self.val_main   = PeppaPigIterableDataset(transform=self.config['transform'],
+                                             **{k:v for k,v in self.config['val'].items()
+                                                if k != 'batch_size'})
+        self.val_triplet = PeppaPigIterableDataset(transform=self.config['transform'],
+                                                    triplet=True,
+                                                    **{k:v for k,v in self.config['val'].items()
+                                                       if k != 'batch_size'})
         self.test  = PeppaPigIterableDataset(transform=self.config['transform'],
-                                             **self.config['test'])
+                                             **{k:v for k,v in self.config['test'].items()
+                                                if k != 'batch_size'})
         
 
     def train_dataloader(self):
-        return DataLoader(self.train, collate_fn=collate, batch_size=self.config['train']['batch_size'])
+        return DataLoader(self.train, collate_fn=collate,
+                          batch_size=self.config['train']['batch_size'])
 
     def val_dataloader(self):
-        return DataLoader(self.val, collate_fn=collate, batch_size=self.config['val']['batch_size'])
-
+        
+        main = DataLoader(self.val_main, collate_fn=collate,
+                          batch_size=self.config['val']['batch_size'])
+        triplet = DataLoader(self.val_triplet, collate_fn=collate_triplets,
+                             batch_size=self.config['val']['batch_size'])
+        
+        return [ main, triplet ]
+    
     def test_dataloader(self):
-        return DataLoader(self.test, collate_fn=collate, batch_size=self.config['test']['batch_size'])
+        return DataLoader(self.test, collate_fn=collate,
+                          batch_size=self.config['test']['batch_size'])
 
 def pairs(xs):
     if len(xs) < 2:
@@ -236,19 +262,33 @@ def pairs(xs):
         return [(xs[0], xs[1])] + pairs(xs[1:])
 
 @dataclass
-class Triple:
-    audio: ...
-    target: ...
-    distractor: ...
+class Triplet:
+    anchor: ...
+    positive: ...
+    negative: ...
+
+@dataclass
+class TripletBatch:
+    anchor: ...
+    positive: ...
+    negative: ...
     
-def triples(clips):
-    """Generates triples of (a, v1, v2) where a is an audio clip, v1
+
+    
+def triplets(clips):
+    """Generates triplets of (a, v1, v2) where a is an audio clip, v1
        matching video and v2 a distractor video, matched by duration."""
     for size, items in groupby(clips, key=lambda x: x.duration):
         logging.info(f"Pairing clips with duration {size}")
         paired = pairs(sorted(items, key=lambda _: random.random()))
         for p in paired:
             target, distractor = random.sample(p, 2)
-            yield Triple(audio=target.audio, target=target, distractor=distractor)
+            yield Triplet(anchor=target.audio, positive=target.video, negative=distractor.video)
 
     
+def collate_triplets(data):
+    anchor, pos, neg = zip(*[(x.anchor, x.positive, x.negative) for x in data])
+    return TripletBatch(anchor=pad_audio_batch(anchor),
+                        positive=pad_video_batch(pos),
+                        negative=pad_video_batch(neg))
+

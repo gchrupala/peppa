@@ -112,16 +112,28 @@ class PeppaPig(pl.LightningModule):
         self.log("train_loss", loss, prog_bar=True)
         return loss
 
-    def validation_step(self, batch, batch_idx):
-        V = self.encode_video(batch.video)
-        A = self.encode_audio(batch.audio)
-        loss = self.loss(V, A)
-        # Logging to TensorBoard by default
-        self.log("val_loss", loss, prog_bar=True)
-        return (V, A)
-
+    def validation_step(self, batch, batch_idx, dataloader_idx=None):
+        if dataloader_idx == 0:
+            V = self.encode_video(batch.video)
+            A = self.encode_audio(batch.audio)
+            loss = self.loss(V, A)
+            # Logging to TensorBoard by default
+            self.log("val_loss", loss, prog_bar=True)
+            return (V, A)
+        elif dataloader_idx == 1:
+            a = self.encode_audio(batch.anchor)
+            p = self.encode_video(batch.positive)
+            n = self.encode_video(batch.negative)
+            acc3 = pig.metrics.triplet_accuracy(a, p, n)
+            self.log("val_acc3", acc3, prog_bar=True)
+            return None
+        else:
+            raise ValueError(f"Invalid dataloader index {dataloader_idx}")
+        
+        
     def validation_epoch_end(self, outputs):
-        V, A = zip(*outputs)
+        out_main, _out_triplet = outputs
+        V, A = zip(*out_main)
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)
         rec10 = pig.metrics.recall_at_n(V, A, correct=torch.eye(V.shape[0]), n=10)
@@ -166,7 +178,8 @@ def main():
     data = pig.data.PigData(config['data'], extract=False, prepare=False)
     net = PeppaPig(config)
 
-    #trainer = pl.Trainer(gpus=3, accelerator=accelerator, overfit_batches=10, log_every_n_steps=10)
+    # CAREFUL: overfit_batches USES TRAINING AS VALIDATION!!!
+    #trainer = pl.Trainer(gpus=1,  overfit_batches=10, log_every_n_steps=10)
     trainer = pl.Trainer(gpus=1, val_check_interval=100, accumulate_grad_batches=8)
     trainer.fit(net, data)
 
