@@ -14,8 +14,7 @@ import torch.nn.functional as F
 import json
 import random
 from typing import Union
-
-random.seed(123)
+import os.path
 
 @dataclass
 class Clip:
@@ -109,10 +108,11 @@ class PeppaPigIterableDataset(IterableDataset):
         
     def _clips(self):
         for episode_id in self.splits[self.split]:
-            for i, path in enumerate(sorted(glob.glob(f"data/out/{self.fragment_type}/{episode_id}/*.avi"))):
+            for path in glob.glob(f"data/out/{self.fragment_type}/{episode_id}/*.avi"):
                 with m.VideoFileClip(path) as video:
                     logging.info(f"Path: {path}, size: {video.size}")
                     if self.duration is None:
+                        i = os.path.splitext(os.path.basename(path))[0]
                         meta = json.load(open(f"data/out/{self.fragment_type}/{episode_id}/{i}.json"))
                         clips = pig.preprocess.lines(video, meta)
                     else:
@@ -142,8 +142,8 @@ class PeppaPigIterableDataset(IterableDataset):
                         yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)                          
     def __iter__(self):
         if self.triplet:
-            clips = [ Clip(**{**c.__dict__, 'index':i}) for i,c in enumerate(self._clips()) ]
-            yield from triplets(clips)
+            clips = list(self._clips())
+            yield from triplets(clips, raw=self.raw)
         else:
             for _path, items in groupby(self._clips(), key=lambda x: x.filename):
                 yield from self._positives(items)
@@ -259,7 +259,7 @@ def pairs(xs):
     if len(xs) < 2:
         return []
     else:
-        return [(xs[0], xs[1])] + pairs(xs[1:])
+        return [(xs[0], xs[1])] + pairs(xs[2:])
 
 @dataclass
 class Triplet:
@@ -275,7 +275,7 @@ class TripletBatch:
     
 
     
-def triplets(clips):
+def triplets(clips, raw=False):
     """Generates triplets of (a, v1, v2) where a is an audio clip, v1
        matching video and v2 a distractor video, matched by duration."""
     for size, items in groupby(clips, key=lambda x: x.duration):
@@ -283,7 +283,10 @@ def triplets(clips):
         paired = pairs(sorted(items, key=lambda _: random.random()))
         for p in paired:
             target, distractor = random.sample(p, 2)
-            yield Triplet(anchor=target.audio, positive=target.video, negative=distractor.video)
+            if raw:
+                yield Triplet(anchor=target.audio, positive=target, negative=distractor)
+            else:
+                yield Triplet(anchor=target.audio, positive=target.video, negative=distractor.video)
 
     
 def collate_triplets(data):
