@@ -5,9 +5,9 @@ import moviepy.editor as m
 import logging
 import pandas as pd
 
-TARGET_SIZE = (180, 100)
 
-def extract():
+
+def extract(target_size=(180, 100)):
     logging.basicConfig(level=logging.INFO)
     os.makedirs("data/out/dialog", exist_ok=True)
     os.makedirs("data/out/narration", exist_ok=True)
@@ -18,13 +18,14 @@ def extract():
     for path in episodes:
         annotation = json.load(open(path))
         with m.VideoFileClip(titles[annotation['title']]) as video:
-            extract_from_episode(annotation, video)
+            extract_from_episode(annotation, video, target_size=target_size)
             video.close()
         
 
 
     
-def extract_from_episode(annotation, video):
+def extract_from_episode(annotation, video, target_size):
+    width, height = target_size
     narrations = []
     narrations_meta = []
     dialogs = []
@@ -38,24 +39,24 @@ def extract_from_episode(annotation, video):
             narrations.append(video.subclip(segment['narration']['tokenized'][0]['begin'],
                                             segment['narration']['tokenized'][-1]['end']))
             narrations_meta.append(segment['narration'])
-    os.makedirs(f"data/out/dialog/{annotation['id']}", exist_ok=True)
-    os.makedirs(f"data/out/narration/{annotation['id']}", exist_ok=True)
+    os.makedirs(f"data/out/{width}x{height}/dialog/{annotation['id']}", exist_ok=True)
+    os.makedirs(f"data/out/{width}x{height}/narration/{annotation['id']}", exist_ok=True)
     for i, clip in enumerate(dialogs):
         
         logging.info(f"Writing dialog {i} from episode {annotation['id']}") 
-        clip.resize(TARGET_SIZE).write_videofile(f"data/out/dialog/{annotation['id']}/{i}.avi",
+        clip.resize(target_size).write_videofile(f"data/out/{width}x{height}/dialog/{annotation['id']}/{i}.avi",
                                          fps=10,
                                          codec='mpeg4')
         logging.info(f"Writing dialog {i} from episode {annotation['id']}") 
-        json.dump(dialogs_meta[i], open(f"data/out/dialog/{annotation['id']}/{i}.json", 'w'))
+        json.dump(dialogs_meta[i], open(f"data/out/{width}x{height}/dialog/{annotation['id']}/{i}.json", 'w'))
     for i, clip in enumerate(narrations):
         
         logging.info(f"Writing narration {i} from episode {annotation['id']}") 
-        clip.resize(TARGET_SIZE).write_videofile(f"data/out/narration/{annotation['id']}/{i}.avi",
+        clip.resize(target_size).write_videofile(f"data/out/{width}x{height}/narration/{annotation['id']}/{i}.avi",
                                          fps=10,
                                          codec='mpeg4')
         logging.info(f"Writing narration metadata {i} from episode {annotation['id']}") 
-        json.dump(narrations_meta[i], open(f"data/out/narration/{annotation['id']}/{i}.json", 'w'))
+        json.dump(narrations_meta[i], open(f"data/out/{width}x{height}/narration/{annotation['id']}/{i}.json", 'w'))
         
 def lines(clip, metadata):
     start = pd.Timedelta(metadata['subtitles'][0]['begin'])

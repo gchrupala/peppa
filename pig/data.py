@@ -86,13 +86,14 @@ class PeppaPigIDataset(Dataset):
 class PeppaPigIterableDataset(IterableDataset):
     def __init__(self,
                  split='val',
+                 target_size=(180, 100),
                  fragment_type='dialog',
                  window=0,
                  transform=None,
                  duration=3.2,
-                 raw=False,
                  triplet=False):
         self.split = split
+        self.target_size = target_size
         self.fragment_type = fragment_type
         self.window = window
         self.splits = dict(train = range(1, 197),
@@ -103,31 +104,28 @@ class PeppaPigIterableDataset(IterableDataset):
         else:
             self.transform = transform
         self.duration = duration
-        self.raw = raw
         self.triplet = triplet
         
     def _clips(self):
+        width,  height = self.target_size
         for episode_id in self.splits[self.split]:
-            for path in glob.glob(f"data/out/{self.fragment_type}/{episode_id}/*.avi"):
+            for path in glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi"):
                 with m.VideoFileClip(path) as video:
                     logging.info(f"Path: {path}, size: {video.size}")
                     if self.duration is None:
                         i = os.path.splitext(os.path.basename(path))[0]
-                        meta = json.load(open(f"data/out/{self.fragment_type}/{episode_id}/{i}.json"))
+                        meta = json.load(open(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/{i}.json"))
                         clips = pig.preprocess.lines(video, meta)
                     else:
                         clips = pig.preprocess.segment(video, duration=self.duration)
                     for clip in clips:
-                        if self.raw:
-                            yield clip
-                        else:
-                            v = torch.stack([ torch.tensor(frame/255).float()
+                        v = torch.stack([ torch.tensor(frame/255).float()
                                           for frame in clip.iter_frames() ])
-                            a = torch.tensor(clip.audio.to_soundarray()).float()
-                            yield Clip(video = self.transform(v.permute(3, 0, 1, 2)),
-                                       audio = a.mean(dim=1, keepdim=True).permute(1,0),
-                                       duration = clip.duration,
-                                       filename = path)
+                        a = torch.tensor(clip.audio.to_soundarray()).float()
+                        yield Clip(video = self.transform(v.permute(3, 0, 1, 2)),
+                                   audio = a.mean(dim=1, keepdim=True).permute(1,0),
+                                   duration = clip.duration,
+                                   filename = path)
                                        
                                        
 
@@ -136,14 +134,11 @@ class PeppaPigIterableDataset(IterableDataset):
         for i, a in clips:
             for j, b in clips:
                 if abs(j - i) <= self.window:
-                    if self.raw:
-                        yield RawPair(video=a, audio=b.audio, video_idx = i, audio_idx = j)
-                    else:
-                        yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)                          
+                    yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)                          
     def __iter__(self):
         if self.triplet:
             clips = list(self._clips())
-            yield from triplets(clips, raw=self.raw)
+            yield from triplets(clips)
         else:
             for _path, items in groupby(self._clips(), key=lambda x: x.filename):
                 yield from self._positives(items)
@@ -202,6 +197,7 @@ class PigData(pl.LightningDataModule):
         if self.prepare:    
             logging.info("Collecting stats on training data.")
             train = PeppaPigIterableDataset(split=self.config['train']['split'],
+                                            target_size=self.config['target_size'],
                                             fragment_type=self.config['train']['fragment_type'],
                                             window=self.config['train']['window'],
                                             transform=self.config['transform'])
@@ -224,16 +220,20 @@ class PigData(pl.LightningDataModule):
         
         logging.info("Creating train/val/test datasets")
         self.train = PeppaPigIterableDataset(transform=self.config['transform'],
+                                             target_size=self.config['target_size'],
                                              **{k:v for k,v in self.config['train'].items()
                                                 if k != 'batch_size'})
         self.val_main   = PeppaPigIterableDataset(transform=self.config['transform'],
+                                                  target_size=self.config['target_size'],
                                              **{k:v for k,v in self.config['val'].items()
                                                 if k != 'batch_size'})
         self.val_triplet = PeppaPigIterableDataset(transform=self.config['transform'],
+                                                   target_size=self.config['target_size'],
                                                     triplet=True,
                                                     **{k:v for k,v in self.config['val'].items()
                                                        if k != 'batch_size'})
         self.test  = PeppaPigIterableDataset(transform=self.config['transform'],
+                                             target_size=self.config['target_size'],
                                              **{k:v for k,v in self.config['test'].items()
                                                 if k != 'batch_size'})
         
@@ -275,7 +275,7 @@ class TripletBatch:
     
 
     
-def triplets(clips, raw=False):
+def triplets(clips):
     """Generates triplets of (a, v1, v2) where a is an audio clip, v1
        matching video and v2 a distractor video, matched by duration."""
     for size, items in groupby(clips, key=lambda x: x.duration):
@@ -283,10 +283,7 @@ def triplets(clips, raw=False):
         paired = pairs(sorted(items, key=lambda _: random.random()))
         for p in paired:
             target, distractor = random.sample(p, 2)
-            if raw:
-                yield Triplet(anchor=target.audio, positive=target, negative=distractor)
-            else:
-                yield Triplet(anchor=target.audio, positive=target.video, negative=distractor.video)
+            yield Triplet(anchor=target.audio, positive=target.video, negative=distractor.video)
 
     
 def collate_triplets(data):

@@ -160,6 +160,7 @@ def main():
     config = dict(lr=1e-5,
                   margin=0.2,
                   data=dict(normalization='kinetics' if video_pretrained else 'peppa',
+                            target_size=(180, 100),
                             transform=None,
                             train=dict(split='train', fragment_type='dialog',
                                        window=0, duration=3.2, batch_size=8),
