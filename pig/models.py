@@ -136,7 +136,8 @@ class PeppaPig(pl.LightningModule):
         V, A = zip(*out_main)
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)
-        rec10 = pig.metrics.recall_at_n(V, A, correct=torch.eye(V.shape[0]), n=10)
+        correct = torch.eye(V.shape[0], device=A.device)
+        rec10 = pig.metrics.recall_at_n(V, A, correct=correct, n=10)
         self.log("val_rec10", rec10, prog_bar=True)
 
         

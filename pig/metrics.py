@@ -6,14 +6,17 @@ def recall_at_n(candidates, references, correct, n=1):
     distances = 1-cosine_matrix(references, candidates)
     recall = []
     for j, row in enumerate(distances):
+        # ids ordered by distance
         ranked = row.argsort()
-        match = ranked[ torch.nonzero(correct[j][ranked])[:,0] ]
+        # top N ids
         topn = ranked[:n]
-        overlap = (topn.unsqueeze(dim=0) == match.unsqueeze(dim=1)).sum().item()
-        recall.append(overlap/len(match))
+        # target ids
+        target = torch.nonzero(correct[j])[:,0]
+        # overlap between top N and target
+        overlap = (topn.unsqueeze(dim=0) == target.unsqueeze(dim=1)).sum().item()
+        # proportion of correctly retrieved to target
+        recall.append(overlap/len(target))
     return torch.tensor(recall)
-        
-    
 
 def triplet_accuracy(anchor, positive, negative):
     sim_pos = F.cosine_similarity(anchor, positive)
