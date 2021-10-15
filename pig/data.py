@@ -119,17 +119,28 @@ class PeppaPigIterableDataset(IterableDataset):
                        duration = clip.duration,
                        filename = clip.filename)
 
-
+    def clip_dir(self):
+        return f"data/out/clips-{config_id(self.settings)}/"
+    
     def _cache_clips(self):
         width,  height = self.target_size
-        self.clip_dir = f"data/out/clips-{config_id(self.settings)}/"
+
         self.clip_info = {}
-        os.makedirs(self.clip_dir, exist_ok=True)
-        json.dump(self.settings, open(f"{self.clip_dir}/settings.json", "w"), indent=2)
+        os.makedirs(self.clip_dir(), exist_ok=True)
+        json.dump(self.settings, open(f"{self.clip_dir()}/settings.json", "w"), indent=2)
         for i, clip in enumerate(self._raw_clips()):
-            self.clip_info[i] = dict(path=f"{self.clip_dir}/{i}.mp4", duration=clip.duration)
-            clip.write_videofile(f"{self.clip_dir}/{i}.mp4")
-        self.clips_cached = True
+            self.clip_info[i] = dict(path=f"{self.clip_dir()}/{i}.mp4", duration=clip.duration)
+            clip.write_videofile(f"{self.clip_dir()}/{i}.mp4")
+        json.dump(self.clip_info, open(f"{self.clip_dir()}/clip_info.json", "w"), indent=2)
+        
+    def _prepare_triplets(self):
+        try:
+            self.clip_info = json.load(open(f"{self.clip_dir()}/clip_info.json"))
+        except FileNotFoundError:
+            self._cache_clips()
+        self._triplets = []
+        self._triplets = list(_triplets(self.clip_info.values(), lambda x: x['duration']))
+
         
     def _raw_clips(self):
         width,  height = self.target_size
@@ -154,9 +165,6 @@ class PeppaPigIterableDataset(IterableDataset):
                 if abs(j - i) <= self.window:
                     yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)
                     
-    def _prepare_triplets(self):
-        self._cache_clips()
-        self._triplets = list(_triplets(self.clip_info.values(), lambda x: x['duration']))
 
     def raw_triplets(self):
         """Generate duration-matched triplets of raw audio/video clips.""" 
