@@ -182,7 +182,7 @@ def main():
 
     # CAREFUL: overfit_batches USES TRAINING AS VALIDATION!!!
     #trainer = pl.Trainer(gpus=1,  overfit_batches=10, log_every_n_steps=10)
-    trainer = pl.Trainer(gpus=1, val_check_interval=100, accumulate_grad_batches=8)
+    trainer = pl.Trainer(gpus=1, val_check_interval=100, accumulate_grad_batches=8, auto_lr_find=True)
     trainer.fit(net, data)
 
 if __name__ == '__main__':
