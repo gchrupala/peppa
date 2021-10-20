@@ -15,7 +15,7 @@ def main():
     records = []
     data = D.PeppaPigIterableDataset(split='val', fragment_type='dialog', window=0,
                                      transform=None, duration=None, triplet=False)
-    data._prepare_triplets()
+    data._prepare_triplets(hard=True)
     pygame.init()
     screen = pygame.display.set_mode(size)
     font = pygame.font.SysFont("monospace", 56)
@@ -41,13 +41,13 @@ def main():
             break
         else:
             
-            # screen.fill(white)
-            # screen.blit(ear, (200, 50))
-            # pygame.display.flip()
-            # item.anchor.preview()
-            # pygame.time.wait(2000)
+            screen.fill(white)
+            screen.blit(ear, (200, 50))
+            pygame.display.flip()
+            item.anchor.preview()
+            pygame.time.wait(1000)
             
-            item.negative.audio = item.positive.audio
+            #item.negative.audio = item.positive.audio
             clips = (item.positive, item.negative)
             index = random.randint(0, 1)
             
@@ -57,7 +57,7 @@ def main():
             pygame.display.flip()
             pygame.time.wait(1000)
             
-            clips[index].resize(width=720).preview()
+            clips[index].resize(width=720).preview(audio=False)
             screen.fill(white)
             pygame.display.flip()
             pygame.time.wait(2000)
@@ -69,7 +69,7 @@ def main():
             screen.blit(two, (300, 50))
             pygame.display.flip()
             pygame.time.wait(1000)
-            clips[1-index].resize(width=720).preview()
+            clips[1-index].resize(width=720).preview(audio=False)
             screen.fill(white)
             pygame.display.flip()
 
@@ -88,8 +88,9 @@ def main():
             
 
     print(f"Correct {sum(x['correct'] == x['choice'] for x in records)} out of {len(records)}")
-    print(records)
-
+    for rec in records:
+        print(rec)
+        
 
             
             

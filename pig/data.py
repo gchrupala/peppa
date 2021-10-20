@@ -133,13 +133,16 @@ class PeppaPigIterableDataset(IterableDataset):
             clip.write_videofile(f"{self.clip_dir()}/{i}.mp4")
         json.dump(self.clip_info, open(f"{self.clip_dir()}/clip_info.json", "w"), indent=2)
         
-    def _prepare_triplets(self):
+    def _prepare_triplets(self, hard=False):
         try:
             self.clip_info = json.load(open(f"{self.clip_dir()}/clip_info.json"))
         except FileNotFoundError:
             self._cache_clips()
         self._triplets = []
-        self._triplets = list(_triplets(self.clip_info.values(), lambda x: x['duration']))
+        if hard:
+            self._triplets = list(_triplets_hard(self.clip_info.values(), lambda x: x['duration']))
+        else:
+            self._triplets = list(_triplets(self.clip_info.values(), lambda x: x['duration']))
 
         
     def _raw_clips(self):
@@ -334,10 +337,14 @@ def _triplets(clips, criterion):
             target, distractor = random.sample(p, 2)
             yield (target, distractor)
 
-def triplets(clips):
+def triplets(clips, hard=False):
     """Generates triplets of (a, v1, v2) where a is an audio clip, v1
        matching video and v2 a distractor video, matched by duration."""
-    for target, distractor in _triplets(clips, lambda x: x.duration):
+    if hard:
+        items = _triplets_hard(clips, lambda x: x.duration)
+    else:
+        items = _triplets(clips, lambda x: x.duration)
+    for target, distractor in items:
         yield Triplet(anchor=target.audio, positive=target.video, negative=distractor.video)
 
 
