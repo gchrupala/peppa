@@ -33,6 +33,8 @@ def main():
     
     que = pygame.image.load('que.png')
     que = pygame.transform.scale(que, DIGIT_SIZE)
+
+    key = pygame.image.load('key.png')
     
     for i, item in enumerate(data.raw_triplets(shuffle=True)):
         if i > 5:
@@ -76,9 +78,14 @@ def main():
             pygame.display.flip()
             choice = get_choice()
             records.append(dict(item=i, index=index, correct=index+1, choice=choice))
-            screen.fill(black)
+            screen.fill(white)
+            screen.blit(key, (100, 50))
             pygame.display.flip()
-            pygame.time.wait(500)
+            _ = get_choice()
+            
+            
+
+            
 
     print(f"Correct {sum(x['correct'] == x['choice'] for x in records)} out of {len(records)}")
     print(records)
@@ -95,4 +102,6 @@ def get_choice():
             return 1
         elif event.type == pygame.KEYDOWN and event.key == pygame.K_2:
             return 2
+        elif event.type == pygame.KEYDOWN:
+            return event.key
             
