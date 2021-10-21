@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 ## Get data
 
-TODO
+Get preprocesses video snippets from `https://surfdrive.surf.nl/files/index.php/s/S9HA9wicV7kCwet` and unpack them into `peppa/data/out`.
 
 
 ## Run
