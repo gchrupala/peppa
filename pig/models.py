@@ -40,13 +40,21 @@ class Wav2LetterEncoder(nn.Module):
 
 
 class Wav2VecEncoder(nn.Module):
-    def __init__(self, path):
+    def __init__(self, path, freeze_feature_extractor=False, freeze_encoder_layers=None):
         super().__init__()
         model, _, _ = fairseq.checkpoint_utils.load_model_ensemble_and_task([path])
         self.audio = import_fairseq_model(model[0], num_out=28)
+        if freeze_feature_extractor:
+            for param in self.audio.feature_extractor.parameters():
+                param.requires_grad = False
+        if freeze_encoder_layers is not None:
+            for index in range(0, freeze_encoder_layers+1):
+                for param in self.audio.encoder.layers[index]:
+                    param.requires_grad = False
         self.audiopool = torch.nn.AdaptiveAvgPool2d((512,1))
         self.project = nn.Linear(512, 512)
 
+        
     def forward(self, x):
         features, _ = self.audio.extract_features(x.squeeze(dim=1))
         return Compose([self.audiopool,
@@ -158,7 +166,7 @@ def main():
     
     video_pretrained = False
     
-    config = dict(lr=1e-5,
+    config = dict(lr=1e-4,
                   margin=0.2,
                   data=dict(normalization='kinetics' if video_pretrained else 'peppa',
                             target_size=(180, 100),
@@ -166,12 +174,13 @@ def main():
                             train=dict(split='train', fragment_type='dialog',
                                        window=0, duration=3.2, batch_size=8),
                             val=dict(split='val', fragment_type='narration',
-                                     window=0, duration=None, batch_size=8),
+                                     window=0, duration=None, batch_size=8,
+                                     hard_triplet=True),
                             test=dict(split='test', fragment_type='narration',
                                       window=0, duration=None, batch_size=8)),
                   video=dict(pretrained=video_pretrained, project=True),
                   audio_class='Wav2VecEncoder',
-                  audio = dict(path = 'data/in/wav2vec/wav2vec_small.pt')
+                  audio = dict(path = 'data/in/wav2vec/wav2vec_small.pt', freeze_feature_extractor=True, freeze_encoder_layers=None)
                   #audio_class='Wav2LetterEncoder',
                   #audio=dict(project=True)
 
@@ -179,10 +188,9 @@ def main():
                                       
     data = pig.data.PigData(config['data'], extract=False, prepare=False)
     net = PeppaPig(config)
+    
 
-    # CAREFUL: overfit_batches USES TRAINING AS VALIDATION!!!
-    #trainer = pl.Trainer(gpus=1,  overfit_batches=10, log_every_n_steps=10)
-    trainer = pl.Trainer(gpus=1, val_check_interval=100, accumulate_grad_batches=8, auto_lr_find=True)
+    trainer = pl.Trainer(gpus=1, val_check_interval=100, accumulate_grad_batches=8)
     trainer.fit(net, data)
 
 if __name__ == '__main__':

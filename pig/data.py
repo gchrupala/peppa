@@ -91,7 +91,8 @@ class PeppaPigIterableDataset(IterableDataset):
                  window=0,
                  transform=None,
                  duration=3.2,
-                 triplet=False
+                 triplet=False,
+                 hard_triplet=False
                  ):
         self.split = split
         self.target_size = target_size
@@ -100,6 +101,7 @@ class PeppaPigIterableDataset(IterableDataset):
         self.duration = duration
         self.settings = {**self.__dict__}
         self.triplet = triplet
+        self.hard_triplet = hard_triplet
         if transform is None:
             self.transform = pig.util.identity
         else:
@@ -182,7 +184,7 @@ class PeppaPigIterableDataset(IterableDataset):
 
     def __iter__(self):
         if self.triplet:
-            yield from triplets(self._clips())
+            yield from triplets(self._clips(), hard=self.hard_triplet)
         else:
             for _path, items in groupby(self._clips(), key=lambda x: x.filename):
                 yield from self._positives(items)                    
@@ -277,7 +279,7 @@ class PigData(pl.LightningDataModule):
                                                 if k != 'batch_size'})
         self.val_triplet = PeppaPigIterableDataset(transform=self.config['transform'],
                                                    target_size=self.config['target_size'],
-                                                    triplet=True,
+                                                   triplet=True,
                                                     **{k:v for k,v in self.config['val'].items()
                                                        if k != 'batch_size'})
         self.test  = PeppaPigIterableDataset(transform=self.config['transform'],
