@@ -166,7 +166,7 @@ def main():
     
     video_pretrained = False
     
-    config = dict(lr=1e-4,
+    config = dict(lr=1e-5,
                   margin=0.2,
                   data=dict(normalization='kinetics' if video_pretrained else 'peppa',
                             target_size=(180, 100),
