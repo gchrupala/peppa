@@ -72,20 +72,27 @@ def collate(data):
     return ClipBatch(video=pad_video_batch(video), audio=pad_audio_batch(audio))
 
     
-class PeppaPigIDataset(Dataset):
-    def __init__(self):
-        raise NotImplemented
-
+class PeppaPigDataset(Dataset):
+    def __init__(self, cache=True, **kwargs):
+        self.dataset = PeppaPigIterableDataset(**kwargs)
+        self.config_id = config_id(kwargs)
+        self.cachedir = f"data/out/items-{self.config_id}/"
+        if cache:
+            os.makedirs(self.cachedir, exist_ok=True)
+            for i, item in enumerate(self.dataset):
+                logging.info(f"Caching item {i}")
+                torch.save(item, f"{self.cachedir}/{i}.pt")
+        self.length = len(glob.glob(f"{self.cachedir}/*.pt"))
+        
     def __len__(self):
-        raise NotImplemented
+        return self.length
 
     def __getitem__(self, idx):
-        raise NotImplemented
-
+        return torch.load(f"{self.cachedir}/{idx}.pt")
 
 class PeppaPigIterableDataset(IterableDataset):
     def __init__(self,
-                 split='val',
+                 split=['val'],
                  target_size=(180, 100),
                  fragment_type='dialog',
                  window=0,
@@ -101,7 +108,10 @@ class PeppaPigIterableDataset(IterableDataset):
         self.duration = duration
         self.settings = {**self.__dict__}
         self.triplet = triplet
-        self.hard_triplet = hard_triplet
+        if hard_triplet:
+            raise NotImplementedError
+        else:
+            self.hard_triplet = hard_triplet
         if transform is None:
             self.transform = pig.util.identity
         else:
@@ -149,7 +159,8 @@ class PeppaPigIterableDataset(IterableDataset):
         
     def _raw_clips(self):
         width,  height = self.target_size
-        for episode_id in self.splits[self.split]:
+        for split in self.split:
+          for episode_id in self.splits[split]:
             for path in glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi"):
                 with m.VideoFileClip(path) as video:
                     logging.info(f"Path: {path}, size: {video.size}")
@@ -234,11 +245,13 @@ def config_id(config):
     
 class PigData(pl.LightningDataModule):
 
-    def __init__(self, config, extract=False, prepare=False):
+    def __init__(self, config, num_workers=0, extract=False, prepare=False, iterable=True, cache=True):
         super().__init__()
+        self.config = config
         self.extract = extract
         self.prepare = prepare
-        self.config = config
+        self.num_workers = num_workers
+        self.Dataset  = PeppaPigIterableDataset if iterable else lambda *args, **kwargs: PeppaPigDataset(cache=cache, *args, **kwargs)
     
     def prepare_data(self):
         if self.extract:
@@ -246,7 +259,8 @@ class PigData(pl.LightningDataModule):
             pig.preprocess.extract()
         if self.prepare:    
             logging.info("Collecting stats on training data.")
-            train = PeppaPigIterableDataset(split=self.config['train']['split'],
+            
+            train = self.Dataset(split=self.config['train']['split'],
                                             target_size=self.config['target_size'],
                                             fragment_type=self.config['train']['fragment_type'],
                                             window=self.config['train']['window'],
@@ -269,40 +283,55 @@ class PigData(pl.LightningDataModule):
             ])
         
         logging.info("Creating train/val/test datasets")
-        self.train = PeppaPigIterableDataset(transform=self.config['transform'],
-                                             target_size=self.config['target_size'],
-                                             **{k:v for k,v in self.config['train'].items()
-                                                if k != 'batch_size'})
-        self.val_main   = PeppaPigIterableDataset(transform=self.config['transform'],
-                                                  target_size=self.config['target_size'],
-                                             **{k:v for k,v in self.config['val'].items()
-                                                if k != 'batch_size'})
-        self.val_triplet = PeppaPigIterableDataset(transform=self.config['transform'],
-                                                   target_size=self.config['target_size'],
-                                                   triplet=True,
-                                                    **{k:v for k,v in self.config['val'].items()
-                                                       if k != 'batch_size'})
-        self.test  = PeppaPigIterableDataset(transform=self.config['transform'],
-                                             target_size=self.config['target_size'],
-                                             **{k:v for k,v in self.config['test'].items()
-                                                if k != 'batch_size'})
+        self.train = self.Dataset(transform=self.config['transform'],
+                                  target_size=self.config['target_size'],
+                                  split=['train'], fragment_type='dialog', 
+                                  **{k:v for k,v in self.config['train'].items()
+                                     if k != 'batch_size'})
+        self.val_main   = self.Dataset(transform=self.config['transform'],
+                                       target_size=self.config['target_size'],
+                                       split=['val'], fragment_type='dialog',
+                                       duration=3.2,
+                                       **{k:v for k,v in self.config['val'].items()
+                                          if k != 'batch_size'})
+        self.val_triplet = self.Dataset(transform=self.config['transform'],
+                                        target_size=self.config['target_size'],
+                                        triplet=True,
+                                        split=['val'], fragment_type='dialog', duration=None,
+                                        **{k:v for k,v in self.config['val'].items()
+                                           if k != 'batch_size'})
+        self.val_narration = self.Dataset(transform=self.config['transform'],
+                                          target_size=self.config['target_size'],
+                                          triplet=False,
+                                          split=['train'], fragment_type='narration',
+                                          duration=3.2,
+                                          **{k:v for k,v in self.config['val'].items()
+                                             if k != 'batch_size'})
+        self.test  = self.Dataset(transform=self.config['transform'],
+                                  target_size=self.config['target_size'],
+                                  split=['val'], fragment_type='dialog',
+                                  duration=3.2,
+                                  **{k:v for k,v in self.config['test'].items()
+                                     if k != 'batch_size'})
         
 
     def train_dataloader(self):
-        return DataLoader(self.train, collate_fn=collate,
+        return DataLoader(self.train, collate_fn=collate, num_workers=self.num_workers,
                           batch_size=self.config['train']['batch_size'])
 
     def val_dataloader(self):
         
-        main = DataLoader(self.val_main, collate_fn=collate,
+        main = DataLoader(self.val_main, collate_fn=collate, num_workers=self.num_workers,
                           batch_size=self.config['val']['batch_size'])
-        triplet = DataLoader(self.val_triplet, collate_fn=collate_triplets,
+        narration = DataLoader(self.val_narration, collate_fn=collate, num_workers=self.num_workers,
+                          batch_size=self.config['val']['batch_size'])
+        triplet = DataLoader(self.val_triplet, collate_fn=collate_triplets, num_workers=self.num_workers,
                              batch_size=self.config['val']['batch_size'])
         
-        return [ main, triplet ]
+        return [ main, triplet, narration ]
     
     def test_dataloader(self):
-        return DataLoader(self.test, collate_fn=collate,
+        return DataLoader(self.test, collate_fn=collate, num_workers=self.num_workers,
                           batch_size=self.config['test']['batch_size'])
 
 def pairs(xs):
@@ -325,16 +354,9 @@ class TripletBatch:
     
 
 
-def _triplets_hard(clips, criterion): # Hard cases, similar pairs
-    for size, items in groupby(clips, key=criterion):
-        paired = pairs(shuffled(items))
-        for p in paired:
-            target, distractor = random.sample(p, 2)
-            yield (target, distractor)
-
 def _triplets(clips, criterion): 
-    for size, items in groupby(shuffled(clips), key=criterion):
-        paired = pairs(list(items))
+    for size, items in grouped(clips, key=criterion):
+        paired = pairs(shuffled(items))
         for p in paired:
             target, distractor = random.sample(p, 2)
             yield (target, distractor)
@@ -358,3 +380,6 @@ def collate_triplets(data):
 
 def shuffled(xs):
     return sorted(xs, key=lambda _: random.random())
+
+def grouped(xs, key=lambda x: x):
+    return groupby(sorted(xs, key=key), key=key)

@@ -16,7 +16,7 @@ import logging
 import sys
 import pig.util
 import pig.metrics
-
+from pytorch_lightning.callbacks import ModelCheckpoint
 ## Audio encoders
 
 class Wav2LetterEncoder(nn.Module):
@@ -135,19 +135,33 @@ class PeppaPig(pl.LightningModule):
             acc3 = pig.metrics.triplet_accuracy(a, p, n)
             self.log("val_acc3", acc3, prog_bar=True)
             return None
+        elif dataloader_idx == 2:
+            V = self.encode_video(batch.video)
+            A = self.encode_audio(batch.audio)
+            loss = self.loss(V, A)
+            # Logging to TensorBoard by default
+            self.log("valnarr_loss", loss, prog_bar=True)
+            return (V, A)
         else:
             raise ValueError(f"Invalid dataloader index {dataloader_idx}")
         
         
     def validation_epoch_end(self, outputs):
-        out_main, _out_triplet = outputs
+        out_main, out_triplet, out_narr = outputs
         V, A = zip(*out_main)
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)
         correct = torch.eye(V.shape[0], device=A.device)
         rec10 = pig.metrics.recall_at_n(V, A, correct=correct, n=10)
         self.log("val_rec10", rec10, prog_bar=True)
+        V, A = zip(*out_narr)
+        V = torch.cat(V, dim=0)
+        A = torch.cat(A, dim=0)
+        correct = torch.eye(V.shape[0], device=A.device)
+        rec10 = pig.metrics.recall_at_n(V, A, correct=correct, n=10)
+        self.log("valnarr_rec10", rec10, prog_bar=True)
 
+        
         
     #def test_step(self, batch, batch_idx):    
     
@@ -171,13 +185,9 @@ def main():
                   data=dict(normalization='kinetics' if video_pretrained else 'peppa',
                             target_size=(180, 100),
                             transform=None,
-                            train=dict(split='train', fragment_type='dialog',
-                                       window=0, duration=3.2, batch_size=8),
-                            val=dict(split='val', fragment_type='narration',
-                                     window=0, duration=None, batch_size=8,
-                                     hard_triplet=True),
-                            test=dict(split='test', fragment_type='narration',
-                                      window=0, duration=None, batch_size=8)),
+                            train=dict(batch_size=8),
+                            val=dict(batch_size=8),
+                            test=dict(batch_size=8)),
                   video=dict(pretrained=video_pretrained, project=True),
                   audio_class='Wav2VecEncoder',
                   audio = dict(path = 'data/in/wav2vec/wav2vec_small.pt', freeze_feature_extractor=True, freeze_encoder_layers=None)
@@ -186,11 +196,11 @@ def main():
 
     )
                                       
-    data = pig.data.PigData(config['data'], extract=False, prepare=False)
+    data = pig.data.PigData(config['data'], num_workers=24, extract=False, prepare=False, iterable=False, cache=False)
     net = PeppaPig(config)
     
-
-    trainer = pl.Trainer(gpus=1, val_check_interval=100, accumulate_grad_batches=8)
+    checkpoint_callback = ModelCheckpoint(monitor="val_loss")
+    trainer = pl.Trainer(gpus=[1], accumulate_grad_batches=8, callbacks=[checkpoint_callback])
     trainer.fit(net, data)
 
 if __name__ == '__main__':
