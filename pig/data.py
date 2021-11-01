@@ -174,7 +174,7 @@ class PeppaPigIterableDataset(IterableDataset):
     def raw_triplets(self, shuffle=False):
         """Generate duration-matched triplets of raw audio/video clips."""
         if shuffle:
-            items = sorted(self._triplets, key=lambda _: random.random())
+            items = shuffled(self._triplets)
         else:
             items = self._triplets
         for (target_info, distractor_info) in items:
@@ -327,13 +327,13 @@ class TripletBatch:
 
 def _triplets_hard(clips, criterion): # Hard cases, similar pairs
     for size, items in groupby(clips, key=criterion):
-        paired = pairs(sorted(items, key=lambda _: random.random()))
+        paired = pairs(shuffled(items))
         for p in paired:
             target, distractor = random.sample(p, 2)
             yield (target, distractor)
 
 def _triplets(clips, criterion): 
-    for size, items in groupby(sorted(clips, key=lambda _: random.random()), key=criterion):
+    for size, items in groupby(shuffled(clips), key=criterion):
         paired = pairs(list(items))
         for p in paired:
             target, distractor = random.sample(p, 2)
@@ -356,3 +356,5 @@ def collate_triplets(data):
                         positive=pad_video_batch(pos),
                         negative=pad_video_batch(neg))
 
+def shuffled(xs):
+    return sorted(xs, key=lambda _: random.random())
