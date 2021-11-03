@@ -49,7 +49,7 @@ class Wav2VecEncoder(nn.Module):
                 param.requires_grad = False
         if freeze_encoder_layers is not None:
             for index in range(0, freeze_encoder_layers+1):
-                for param in self.audio.encoder.layers[index]:
+                for param in self.audio.encoder.transformer.layers[index].parameters():
                     param.requires_grad = False
         self.audiopool = torch.nn.AdaptiveAvgPool2d((512,1))
         self.project = nn.Linear(512, 512)
@@ -166,43 +166,9 @@ class PeppaPig(pl.LightningModule):
     #def test_step(self, batch, batch_idx):    
     
     def configure_optimizers(self):
-        optimizer = torch.optim.Adam(self.parameters(), lr=self.config['lr'])
+        optimizer = torch.optim.Adam(self.parameters(), **self.config['optimizer'])
         return optimizer
 
 def get_class(name):
     return getattr(sys.modules[__name__], name)
 
-    
-    
-def main():
-
-    logging.getLogger().setLevel(logging.WARNING)
-    
-    video_pretrained = False
-    
-    config = dict(lr=1e-5,
-                  margin=0.2,
-                  data=dict(normalization='kinetics' if video_pretrained else 'peppa',
-                            target_size=(180, 100),
-                            transform=None,
-                            train=dict(batch_size=8),
-                            val=dict(batch_size=8),
-                            test=dict(batch_size=8)),
-                  video=dict(pretrained=video_pretrained, project=True),
-                  audio_class='Wav2VecEncoder',
-                  audio = dict(path = 'data/in/wav2vec/wav2vec_small.pt', freeze_feature_extractor=True, freeze_encoder_layers=None)
-                  #audio_class='Wav2LetterEncoder',
-                  #audio=dict(project=True)
-
-    )
-                                      
-    data = pig.data.PigData(config['data'], num_workers=24, extract=False, prepare=False, iterable=False, cache=False)
-    net = PeppaPig(config)
-    
-    checkpoint_callback = ModelCheckpoint(monitor="val_loss")
-    trainer = pl.Trainer(gpus=[1], accumulate_grad_batches=8, callbacks=[checkpoint_callback])
-    trainer.fit(net, data)
-
-if __name__ == '__main__':
-    main()
-    

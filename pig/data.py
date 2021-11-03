@@ -245,26 +245,23 @@ def config_id(config):
     
 class PigData(pl.LightningDataModule):
 
-    def __init__(self, config, num_workers=0, extract=False, prepare=False, iterable=True, cache=True):
+    def __init__(self, config):
         super().__init__()
         self.config = config
-        self.extract = extract
-        self.prepare = prepare
-        self.num_workers = num_workers
-        self.Dataset  = PeppaPigIterableDataset if iterable else lambda *args, **kwargs: PeppaPigDataset(cache=cache, *args, **kwargs)
+        self.Dataset  = PeppaPigIterableDataset if self.config['iterable'] else lambda *args, **kwargs: PeppaPigDataset(cache=self.config['cache'], *args, **kwargs)
     
     def prepare_data(self):
-        if self.extract:
+        if self.config['extract']:
             logging.info("Extracting data")
             pig.preprocess.extract()
-        if self.prepare:    
+        if self.config['prepare']:    
             logging.info("Collecting stats on training data.")
             
             train = self.Dataset(split=self.config['train']['split'],
-                                            target_size=self.config['target_size'],
-                                            fragment_type=self.config['train']['fragment_type'],
-                                            window=self.config['train']['window'],
-                                            transform=self.config['transform'])
+                                 target_size=self.config['target_size'],
+                                 fragment_type=self.config['train']['fragment_type'],
+                                 window=self.config['train']['window'],
+                                 transform=self.config['transform'])
             logging.info("Saving stats")
             stats = get_stats(DataLoader(train, collate_fn=collate, batch_size=32))
             torch.save(stats, "data/out/stats.pt")
@@ -316,22 +313,24 @@ class PigData(pl.LightningDataModule):
         
 
     def train_dataloader(self):
-        return DataLoader(self.train, collate_fn=collate, num_workers=self.num_workers,
+        return DataLoader(self.train, collate_fn=collate, num_workers=self.config['num_workers'],
                           batch_size=self.config['train']['batch_size'])
 
     def val_dataloader(self):
         
-        main = DataLoader(self.val_main, collate_fn=collate, num_workers=self.num_workers,
+        main = DataLoader(self.val_main, collate_fn=collate, num_workers=self.config['num_workers'],
                           batch_size=self.config['val']['batch_size'])
-        narration = DataLoader(self.val_narration, collate_fn=collate, num_workers=self.num_workers,
+        narration = DataLoader(self.val_narration, collate_fn=collate,
+                               num_workers=self.config['num_workers'],
                           batch_size=self.config['val']['batch_size'])
-        triplet = DataLoader(self.val_triplet, collate_fn=collate_triplets, num_workers=self.num_workers,
+        triplet = DataLoader(self.val_triplet, collate_fn=collate_triplets,
+                             num_workers=self.config['num_workers'],
                              batch_size=self.config['val']['batch_size'])
         
         return [ main, triplet, narration ]
     
     def test_dataloader(self):
-        return DataLoader(self.test, collate_fn=collate, num_workers=self.num_workers,
+        return DataLoader(self.test, collate_fn=collate, num_workers=self.config['num_workers'],
                           batch_size=self.config['test']['batch_size'])
 
 def pairs(xs):
