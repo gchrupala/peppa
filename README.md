@@ -16,9 +16,10 @@ pip install -r requirements.txt
 
 ## Run
 
-There is no command-line interface. You can run the training code by executing the function `pig.models.main`:
+There is a rudimentary command-line interface. You can run the training code by executing the function script `run.py`, and optionally passing 
+in a configuration file.
 ```
-python -c 'import pig.models as m; m.main()'
+python run.py --config_file config.json
 ```
 
 
