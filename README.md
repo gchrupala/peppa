@@ -19,7 +19,7 @@ pip install -r requirements.txt
 There is a rudimentary command-line interface. You can run the training code by executing the function script `run.py`, and optionally passing 
 in a configuration file.
 ```
-python run.py --config_file config.json
+python run.py --config_file config.yaml
 ```
 
 
