@@ -17,6 +17,7 @@ import sys
 import pig.util
 import pig.metrics
 from pytorch_lightning.callbacks import ModelCheckpoint
+import pig.optimization as opt
 ## Audio encoders
 
 class Wav2LetterEncoder(nn.Module):
@@ -48,7 +49,7 @@ class Wav2VecEncoder(nn.Module):
             for param in self.audio.feature_extractor.parameters():
                 param.requires_grad = False
         if freeze_encoder_layers is not None:
-            for index in range(0, freeze_encoder_layers+1):
+            for index in range(0, freeze_encoder_layers):
                 for param in self.audio.encoder.transformer.layers[index].parameters():
                     param.requires_grad = False
         self.audiopool = torch.nn.AdaptiveAvgPool2d((512,1))
@@ -166,7 +167,8 @@ class PeppaPig(pl.LightningModule):
     #def test_step(self, batch, batch_idx):    
     
     def configure_optimizers(self):
-        optimizer = torch.optim.Adam(self.parameters(), **self.config['optimizer'])
+        #optimizer = torch.optim.Adam(self.parameters(), **self.config['optimizer'])
+        optimizer = opt.BertAdam(self.parameters(), **self.config['optimizer'])
         return optimizer
 
 def get_class(name):

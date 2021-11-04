@@ -4,7 +4,7 @@ import json
 import moviepy.editor as m
 import logging
 import pandas as pd
-
+import random
 
 
 def extract(target_size=(180, 100)):
@@ -63,7 +63,7 @@ def lines(clip, metadata):
     logging.info(f"Extracting lines from {clip.filename}, {clip.duration} seconds")
     logging.info(f"Time offset {start}")
     for line in metadata['subtitles']:
-        logging.info(f"Line: {line}")
+        #logging.info(f"Line: {line}")
         begin = (pd.Timedelta(line['begin'])-start).seconds
         end = min(clip.duration, (pd.Timedelta(line['end'])-start).seconds)
         if begin < clip.duration:
@@ -74,9 +74,10 @@ def lines(clip, metadata):
                            
     
     
-def segment(clip, duration=3.2):
-    start = 0
-    end = duration
+def segment(clip, duration=3.2, randomize=False):
+    offset = random.uniform(0, duration) if randomize else 0
+    start = 0 + offset
+    end = start + duration
     while end <= clip.duration:
         sub = clip.subclip(start, end)
         start = end

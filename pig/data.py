@@ -99,13 +99,15 @@ class PeppaPigIterableDataset(IterableDataset):
                  transform=None,
                  duration=3.2,
                  triplet=False,
-                 hard_triplet=False
+                 hard_triplet=False,
+                 randomize=False
                  ):
         self.split = split
         self.target_size = target_size
         self.fragment_type = fragment_type
         self.window = window
         self.duration = duration
+        self.randomize = randomize
         self.settings = {**self.__dict__}
         self.triplet = triplet
         if hard_triplet:
@@ -119,7 +121,7 @@ class PeppaPigIterableDataset(IterableDataset):
         self.splits = dict(train = range(1, 197),
                            val  = range(197, 203),
                            test = range(203, 210))
-
+        logging.info(f"Randommize clips? {self.randomize}")
         
     def _clips(self):
         for clip in self._raw_clips():
@@ -158,19 +160,21 @@ class PeppaPigIterableDataset(IterableDataset):
 
         
     def _raw_clips(self):
+        maybe_shuffled = shuffled if self.randomize else lambda x: x
         width,  height = self.target_size
         for split in self.split:
-          for episode_id in self.splits[split]:
-            for path in glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi"):
+            
+          for episode_id in maybe_shuffled(self.splits[split]):
+            for path in maybe_shuffled(glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi")):
                 with m.VideoFileClip(path) as video:
-                    logging.info(f"Path: {path}, size: {video.size}")
+                    #logging.info(f"Path: {path}, size: {video.size}")
                     if self.duration is None:
                         i = os.path.splitext(os.path.basename(path))[0]
                         meta = json.load(open(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/{i}.json"))
                         clips = pig.preprocess.lines(video, meta)
                     else:
-                        clips = pig.preprocess.segment(video, duration=self.duration)
-                    for clip in clips:
+                        clips = pig.preprocess.segment(video, duration=self.duration, randomize=self.randomize)
+                    for clip in maybe_shuffled(clips):
                         yield clip
                                        
 
@@ -248,7 +252,11 @@ class PigData(pl.LightningDataModule):
     def __init__(self, config):
         super().__init__()
         self.config = config
-        self.Dataset  = PeppaPigIterableDataset if self.config['iterable'] else lambda *args, **kwargs: PeppaPigDataset(cache=self.config['cache'], *args, **kwargs)
+        self.loader_args = ['batch_size', 'shuffle']
+        if self.config['iterable']:
+            self.Dataset = lambda *args, **kwargs: PeppaPigIterableDataset(*args, **kwargs)
+        else:
+            self.Dataset = lambda *args, **kwargs: PeppaPigDataset(cache=self.config['cache'], *args, **kwargs)
     
     def prepare_data(self):
         if self.config['extract']:
@@ -257,11 +265,11 @@ class PigData(pl.LightningDataModule):
         if self.config['prepare']:    
             logging.info("Collecting stats on training data.")
             
-            train = self.Dataset(split=self.config['train']['split'],
-                                 target_size=self.config['target_size'],
-                                 fragment_type=self.config['train']['fragment_type'],
-                                 window=self.config['train']['window'],
-                                 transform=self.config['transform'])
+            train = self.Dataset(transform=self.config['transform'],
+                                  target_size=self.config['target_size'],
+                                  split=['train'], fragment_type='dialog', 
+                                  **{k:v for k,v in self.config['train'].items()
+                                     if k not in self.loader_args})
             logging.info("Saving stats")
             stats = get_stats(DataLoader(train, collate_fn=collate, batch_size=32))
             torch.save(stats, "data/out/stats.pt")
@@ -278,43 +286,44 @@ class PigData(pl.LightningDataModule):
             Normalize(mean=self.stats.video_mean, std=self.stats.video_std),    
             pig.transforms.SwapCT(),
             ])
-        
+
         logging.info("Creating train/val/test datasets")
         self.train = self.Dataset(transform=self.config['transform'],
                                   target_size=self.config['target_size'],
                                   split=['train'], fragment_type='dialog', 
                                   **{k:v for k,v in self.config['train'].items()
-                                     if k != 'batch_size'})
+                                     if k not in self.loader_args})
         self.val_main   = self.Dataset(transform=self.config['transform'],
                                        target_size=self.config['target_size'],
                                        split=['val'], fragment_type='dialog',
                                        duration=3.2,
                                        **{k:v for k,v in self.config['val'].items()
-                                          if k != 'batch_size'})
+                                          if k not in self.loader_args})
         self.val_triplet = self.Dataset(transform=self.config['transform'],
                                         target_size=self.config['target_size'],
                                         triplet=True,
                                         split=['val'], fragment_type='dialog', duration=None,
                                         **{k:v for k,v in self.config['val'].items()
-                                           if k != 'batch_size'})
+                                           if k not in self.loader_args})
         self.val_narration = self.Dataset(transform=self.config['transform'],
                                           target_size=self.config['target_size'],
                                           triplet=False,
                                           split=['train'], fragment_type='narration',
                                           duration=3.2,
                                           **{k:v for k,v in self.config['val'].items()
-                                             if k != 'batch_size'})
+                                             if k not in self.loader_args})
         self.test  = self.Dataset(transform=self.config['transform'],
                                   target_size=self.config['target_size'],
                                   split=['val'], fragment_type='dialog',
                                   duration=3.2,
                                   **{k:v for k,v in self.config['test'].items()
-                                     if k != 'batch_size'})
+                                     if k not in self.loader_args})
         
 
     def train_dataloader(self):
         return DataLoader(self.train, collate_fn=collate, num_workers=self.config['num_workers'],
-                          batch_size=self.config['train']['batch_size'])
+                          batch_size=self.config['train']['batch_size'],
+                          shuffle=self.config['train']['shuffle'])
 
     def val_dataloader(self):
         
