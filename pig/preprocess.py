@@ -74,8 +74,8 @@ def lines(clip, metadata):
                            
     
     
-def segment(clip, duration=3.2, randomize=False):
-    offset = random.uniform(0, duration) if randomize else 0
+def segment(clip, duration=3.2, randomize=False, factor=5):
+    offset = random.uniform(0, duration/5) if randomize else 0
     start = 0 + offset
     end = start + duration
     while end <= clip.duration:
