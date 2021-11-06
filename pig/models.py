@@ -18,6 +18,42 @@ import pig.util
 import pig.metrics
 from pytorch_lightning.callbacks import ModelCheckpoint
 import pig.optimization as opt
+
+
+class Attention(nn.Module):
+    def __init__(self, in_size, hidden_size):
+        super().__init__()
+        self.hidden = nn.Linear(in_size, hidden_size)
+        self.out = nn.Linear(hidden_size, in_size)
+        self.softmax = nn.Softmax(dim=1)
+
+    def forward(self, input):
+        # calculate the attention weights
+        alpha = self.softmax(self.out(torch.tanh(self.hidden(input))))
+        # apply the weights to the input and sum over all timesteps
+        x = (alpha * input).sum(dim=1)
+        # return the resulting embedding
+        return x
+
+class AveragePool(nn.Module):
+    def __init__(self, size=512):
+        super().__init__()
+        self.pool = torch.nn.AdaptiveAvgPool2d((512,1))
+
+    def forward(self, x):
+        return self.pool(x).squeeze(dim=2)
+
+    
+class LastStep(nn.Module):
+    """Use the last time-step of the audio encoder and the embedding. """
+    # This is supposed to work similar to the use of the [CLS] token in BERT
+    def __init__(self):
+        super().__init__()
+
+    def forward(self, x):
+        return x[:,-1, :]
+        
+    
 ## Audio encoders
 
 class Wav2LetterEncoder(nn.Module):
@@ -41,7 +77,7 @@ class Wav2LetterEncoder(nn.Module):
 
 
 class Wav2VecEncoder(nn.Module):
-    def __init__(self, path, freeze_feature_extractor=False, freeze_encoder_layers=None):
+    def __init__(self, path, freeze_feature_extractor=False, freeze_encoder_layers=None, pooling='average'):
         super().__init__()
         model, _, _ = fairseq.checkpoint_utils.load_model_ensemble_and_task([path])
         self.audio = import_fairseq_model(model[0], num_out=28)
@@ -52,14 +88,20 @@ class Wav2VecEncoder(nn.Module):
             for index in range(0, freeze_encoder_layers):
                 for param in self.audio.encoder.transformer.layers[index].parameters():
                     param.requires_grad = False
-        self.audiopool = torch.nn.AdaptiveAvgPool2d((512,1))
+        if pooling == 'average':
+            self.audiopool = AveragePool(size=512)
+        elif pooling == 'attention':
+            self.audiopool = Attention(512, 128)
+        elif pooling == 'last':
+            self.audiopool = LastStep()
+        else:
+            raise ValueError(f"Invalid pooling: {pooling}")
         self.project = nn.Linear(512, 512)
 
         
     def forward(self, x):
         features, _ = self.audio.extract_features(x.squeeze(dim=1))
         return Compose([self.audiopool,
-                        lambda x: x.squeeze(dim=2),
                         self.project,
                         lambda x: nn.functional.normalize(x, p=2, dim=1)
         ])(features)
