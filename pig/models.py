@@ -176,21 +176,28 @@ class PeppaPig(pl.LightningModule):
             p = self.encode_video(batch.positive)
             n = self.encode_video(batch.negative)
             acc3 = pig.metrics.triplet_accuracy(a, p, n)
-            self.log("val_acc3", acc3, prog_bar=True)
+            self.log("val_acc3", acc3, prog_bar=False)
             return None
         elif dataloader_idx == 2:
             V = self.encode_video(batch.video)
             A = self.encode_audio(batch.audio)
             loss = self.loss(V, A)
             # Logging to TensorBoard by default
-            self.log("valnarr_loss", loss, prog_bar=True)
+            self.log("valnarr_loss", loss, prog_bar=False)
             return (V, A)
+        elif dataloader_idx == 3:
+            a = self.encode_audio(batch.anchor)
+            p = self.encode_video(batch.positive)
+            n = self.encode_video(batch.negative)
+            acc3 = pig.metrics.triplet_accuracy(a, p, n)
+            self.log("valnarr_acc3", acc3, prog_bar=True)
+            return None
         else:
             raise ValueError(f"Invalid dataloader index {dataloader_idx}")
         
         
     def validation_epoch_end(self, outputs):
-        out_main, out_triplet, out_narr = outputs
+        out_main, _, out_narr, _ = outputs
         V, A = zip(*out_main)
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)

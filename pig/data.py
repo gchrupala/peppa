@@ -312,25 +312,32 @@ class PigData(pl.LightningDataModule):
                                   split=['train'], fragment_type='dialog', 
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
-        self.val_main   = self.Dataset(transform=self.config['transform'],
+        self.val_dia   = self.Dataset(transform=self.config['transform'],
                                        target_size=self.config['target_size'],
                                        split=['val'], fragment_type='dialog',
                                        duration=3.2,
                                        **{k:v for k,v in self.config['val'].items()
                                           if k not in self.loader_args})
-        self.val_triplet = self.Dataset(transform=self.config['transform'],
+        self.val_dia3 = self.Dataset(transform=self.config['transform'],
                                         target_size=self.config['target_size'],
                                         triplet=True,
                                         split=['val'], fragment_type='dialog', duration=None,
                                         **{k:v for k,v in self.config['val'].items()
                                            if k not in self.loader_args})
-        self.val_narration = self.Dataset(transform=self.config['transform'],
+        self.val_narr = self.Dataset(transform=self.config['transform'],
                                           target_size=self.config['target_size'],
                                           triplet=False,
                                           split=['train'], fragment_type='narration',
                                           duration=3.2,
                                           **{k:v for k,v in self.config['val'].items()
                                              if k not in self.loader_args})
+        self.val_narr3 = self.Dataset(transform=self.config['transform'],
+                                        target_size=self.config['target_size'],
+                                        triplet=True,
+                                        split=['val'], fragment_type='narration', duration=None,
+                                        **{k:v for k,v in self.config['train'].items()
+                                           if k not in self.loader_args})
+
         self.test  = self.Dataset(transform=self.config['transform'],
                                   target_size=self.config['target_size'],
                                   split=['val'], fragment_type='dialog',
@@ -346,16 +353,19 @@ class PigData(pl.LightningDataModule):
 
     def val_dataloader(self):
         
-        main = DataLoader(self.val_main, collate_fn=collate, num_workers=self.config['num_workers'],
+        dia = DataLoader(self.val_dia, collate_fn=collate, num_workers=self.config['num_workers'],
                           batch_size=self.config['val']['batch_size'])
-        narration = DataLoader(self.val_narration, collate_fn=collate,
+        narr = DataLoader(self.val_narr, collate_fn=collate,
                                num_workers=self.config['num_workers'],
                           batch_size=self.config['val']['batch_size'])
-        triplet = DataLoader(self.val_triplet, collate_fn=collate_triplets,
+        dia3 = DataLoader(self.val_dia3, collate_fn=collate_triplets,
+                             num_workers=self.config['num_workers'],
+                             batch_size=self.config['val']['batch_size'])
+        narr3 = DataLoader(self.val_narr3, collate_fn=collate_triplets,
                              num_workers=self.config['num_workers'],
                              batch_size=self.config['val']['batch_size'])
         
-        return [ main, triplet, narration ]
+        return [ dia, dia3, narr, narr3 ]
     
     def test_dataloader(self):
         return DataLoader(self.test, collate_fn=collate, num_workers=self.config['num_workers'],
