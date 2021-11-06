@@ -104,18 +104,21 @@ class PeppaPigIterableDataset(IterableDataset):
                  hard_triplet=False,
                  randomize=False
                  ):
+        if type(split) is str:
+            raise ValueError("`split` should be a list of strings")
         self.split = split
         self.target_size = target_size
         self.fragment_type = fragment_type
+        if window != 0:
+            raise NotImplementedError("Window sizes other than 0 not implemented")
         self.window = window
         self.duration = duration
         self.randomize = randomize
         self.settings = {**self.__dict__}
         self.triplet = triplet
         if hard_triplet:
-            raise NotImplementedError
-        else:
-            self.hard_triplet = hard_triplet
+            raise NotImplementedError("Hard triplet not implemented")
+        self.hard_triplet = hard_triplet
         if transform is None:
             self.transform = pig.util.identity
         else:
@@ -197,7 +200,8 @@ class PeppaPigIterableDataset(IterableDataset):
         clips  = list(enumerate(items))
         for i, a in clips:
             for j, b in clips:
-                if abs(j - i) <= self.window:
+                if j == i:
+                #if abs(j - i) <= self.window:
                     yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)
                     
 
