@@ -1,0 +1,38 @@
+margin: 0.2
+data:
+  num_workers: 24
+  extract: false
+  prepare: false
+  iterable: false
+  cache: false
+  normalization: peppa
+  target_size:
+  - 180
+  - 100
+  transform: null
+  train:
+    batch_size: 8
+    shuffle: true
+  val:
+    batch_size: 8
+  test:
+    batch_size: 8
+video:
+  pretrained: false
+  project: true
+audio_class: Wav2VecEncoder
+audio:
+  path: data/in/wav2vec/wav2vec_small.pt
+  freeze_feature_extractor: true
+  freeze_encoder_layers: null
+training:
+  trainer_args:
+    gpus:
+    - 0
+    accumulate_grad_batches: 8
+  monitor: val_loss/dataloader_idx_0
+optimizer:
+  lr: 0.0001
+  warmup: 0.1
+  schedule: warmup_linear
+  t_total: 32640
