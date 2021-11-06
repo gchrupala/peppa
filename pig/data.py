@@ -1,4 +1,5 @@
 import torch
+import torch.utils
 from torch.utils.data import Dataset, IterableDataset, DataLoader
 from torchvision.transforms import Normalize, Compose
 import pig.transforms 
@@ -15,6 +16,7 @@ import json
 import random
 from typing import Union
 import os.path
+import math
 
 @dataclass
 class Clip:
@@ -162,20 +164,33 @@ class PeppaPigIterableDataset(IterableDataset):
     def _raw_clips(self):
         maybe_shuffled = shuffled if self.randomize else lambda x: x
         width,  height = self.target_size
-        for split in self.split:
-            
-          for episode_id in maybe_shuffled(self.splits[split]):
-            for path in maybe_shuffled(glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi")):
-                with m.VideoFileClip(path) as video:
-                    #logging.info(f"Path: {path}, size: {video.size}")
-                    if self.duration is None:
-                        i = os.path.splitext(os.path.basename(path))[0]
-                        meta = json.load(open(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/{i}.json"))
-                        clips = pig.preprocess.lines(video, meta)
-                    else:
-                        clips = pig.preprocess.segment(video, duration=self.duration, randomize=self.randomize)
-                    for clip in maybe_shuffled(clips):
-                        yield clip
+        paths = [ path for split in self.split \
+                       for episode_id in self.splits[split] \
+                       for path in glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi") ]
+        paths = maybe_shuffled(paths)
+        # Split data between workers
+        worker_info = torch.utils.data.get_worker_info()
+        if worker_info is None:  # single-process data loading, return the full iterator
+            first = 0
+            last = len(paths)
+        else:
+            per_worker = int(math.ceil(len(paths) / float(worker_info.num_workers)))
+            worker_id = worker_info.id
+            first = worker_id * per_worker
+            last = min(first + per_worker, len(paths))
+            logging.info(f"Workerid: {worker_id}; [{first}:{last}]")
+        # Iterate
+        for path in paths[first:last]:
+            with m.VideoFileClip(path) as video:
+            #logging.info(f"Path: {path}, size: {video.size}")
+                if self.duration is None:
+                    i = os.path.splitext(os.path.basename(path))[0]
+                    meta = json.load(open(f"{os.path.dirname(path)}/{i}.json"))
+                    clips = pig.preprocess.lines(video, meta)
+                else:
+                    clips = pig.preprocess.segment(video, duration=self.duration, randomize=self.randomize)
+                for clip in maybe_shuffled(clips):
+                    yield clip
                                        
 
     def _positives(self, items):
