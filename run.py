@@ -32,7 +32,12 @@ default_config = dict(
                                       
 )
 
-
+def get_git_commit():
+    import git
+    import os
+    repo = git.Repo(os.getcwd())
+    master = repo.head.reference
+    return master.commit.hexsha
 
 def main(args):
     logging.getLogger().setLevel(logging.INFO)
@@ -45,7 +50,7 @@ def main(args):
     for key, value in vars(args).items():
         if key in config:
             config[key] = value
-    
+    config['git_commit'] = get_git_commit()
     data = pig.data.PigData(config['data'])
     net = pig.models.PeppaPig(config)
 

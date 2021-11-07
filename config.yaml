@@ -3,7 +3,7 @@ data:
   num_workers: 12
   extract: false
   prepare: false
-  iterable: true
+  iterable: false
   cache: true
   normalization: peppa
   target_size:
@@ -12,8 +12,8 @@ data:
   transform: null
   train:
     batch_size: 8
-    randomize: true
-    shuffle: false
+    randomize: false
+    shuffle: true
   val:
     batch_size: 8
   test:
@@ -25,16 +25,17 @@ audio_class: Wav2VecEncoder
 audio:
   path: data/in/wav2vec/wav2vec_small.pt
   freeze_feature_extractor: true
-  freeze_encoder_layers: null
+  freeze_encoder_layers: 3
   pooling: attention
 training:
   trainer_args:
     gpus:
-    - 1
+    - 2
     auto_select_gpus: false
     accumulate_grad_batches: 8
+  monitor: val_loss/dataloader_idx_0
 optimizer:
   lr: 0.0001
   warmup: 0.1
   schedule: warmup_linear
-  t_total: 64000
+  t_total: 32640
