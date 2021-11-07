@@ -133,13 +133,16 @@ class PeppaPigIterableDataset(IterableDataset):
         
     def _clips(self):
         for clip in self._raw_clips():
-            v = torch.stack([ torch.tensor(frame/255).float()
-                              for frame in clip.iter_frames() ])
-            a = torch.tensor(clip.audio.to_soundarray()).float()
-            yield Clip(video = self.transform(v.permute(3, 0, 1, 2)),
-                       audio = a.mean(dim=1, keepdim=True).permute(1,0),
-                       duration = clip.duration,
-                       filename = clip.filename)
+            frames = [ torch.tensor(frame/255).float()
+                              for frame in clip.iter_frames() ]
+            if len(frames) > 0:
+                #logging.info(f"Clip has {len(frames)} frames") 
+                v = torch.stack(frames)
+                a = torch.tensor(clip.audio.to_soundarray()).float()
+                yield Clip(video = self.transform(v.permute(3, 0, 1, 2)),
+                           audio = a.mean(dim=1, keepdim=True).permute(1,0),
+                           duration = clip.duration,
+                           filename = clip.filename)
 
     def clip_dir(self):
         return f"data/out/clips-{config_id(self.settings)}/"
@@ -338,7 +341,7 @@ class PigData(pl.LightningDataModule):
                                         target_size=self.config['target_size'],
                                         triplet=True,
                                         split=['val'], fragment_type='narration', duration=None,
-                                        **{k:v for k,v in self.config['train'].items()
+                                        **{k:v for k,v in self.config['val'].items()
                                            if k not in self.loader_args})
 
 
