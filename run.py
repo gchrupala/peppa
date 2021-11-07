@@ -50,7 +50,13 @@ def main(args):
     net = pig.models.PeppaPig(config)
 
     
-    trainer = pl.Trainer(callbacks=[ModelCheckpoint(monitor=config['training']['monitor'])],
+    trainer = pl.Trainer(callbacks=[ModelCheckpoint(monitor='val_loss/dataloader_idx_0', mode='min'),
+                                    ModelCheckpoint(monitor='val_acc3/dataloader_idx_1', mode='max'),
+                                    ModelCheckpoint(monitor='valnarr_loss/dataloader_idx_2', mode='min'),
+                                    ModelCheckpoint(monitor='valnarr_acc3/dataloader_idx_3', mode='max'),
+                                    ModelCheckpoint(monitor='val_rec10', mode='max'),
+                                    ModelCheckpoint(monitor='valnarr_rec10', mode='max')
+    ],
                          **config['training']['trainer_args'])
     trainer.fit(net, data)
 

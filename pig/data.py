@@ -123,9 +123,12 @@ class PeppaPigIterableDataset(IterableDataset):
             self.transform = pig.util.identity
         else:
             self.transform = transform
-        self.splits = dict(train = range(1, 197),
-                           val  = range(197, 203),
-                           test = range(203, 210))
+        self.split_spec = dict(dialog=dict(train = range(1, 197),
+                                       val  = range(197, 203),
+                                       test = range(203, 210)),
+                           narration=dict(val=range(1, 105),
+                                          test=range(105, 210)))
+        
         logging.info(f"Randommize clips? {self.randomize}")
         
     def _clips(self):
@@ -168,7 +171,7 @@ class PeppaPigIterableDataset(IterableDataset):
         maybe_shuffled = shuffled if self.randomize else lambda x: x
         width,  height = self.target_size
         paths = [ path for split in self.split \
-                       for episode_id in self.splits[split] \
+                       for episode_id in self.split_spec[self.fragment_type][split] \
                        for path in glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi") ]
         paths = maybe_shuffled(paths)
         # Split data between workers
@@ -327,7 +330,7 @@ class PigData(pl.LightningDataModule):
         self.val_narr = self.Dataset(transform=self.config['transform'],
                                           target_size=self.config['target_size'],
                                           triplet=False,
-                                          split=['train'], fragment_type='narration',
+                                          split=['val'], fragment_type='narration',
                                           duration=3.2,
                                           **{k:v for k,v in self.config['val'].items()
                                              if k not in self.loader_args})
@@ -338,13 +341,6 @@ class PigData(pl.LightningDataModule):
                                         **{k:v for k,v in self.config['train'].items()
                                            if k not in self.loader_args})
 
-        self.test  = self.Dataset(transform=self.config['transform'],
-                                  target_size=self.config['target_size'],
-                                  split=['val'], fragment_type='dialog',
-                                  duration=3.2,
-                                  **{k:v for k,v in self.config['test'].items()
-                                     if k not in self.loader_args})
-        
 
     def train_dataloader(self):
         return DataLoader(self.train, collate_fn=collate, num_workers=self.config['num_workers'],
@@ -368,8 +364,9 @@ class PigData(pl.LightningDataModule):
         return [ dia, dia3, narr, narr3 ]
     
     def test_dataloader(self):
-        return DataLoader(self.test, collate_fn=collate, num_workers=self.config['num_workers'],
-                          batch_size=self.config['test']['batch_size'])
+        raise NotImplementedError
+        #return DataLoader(self.test, collate_fn=collate, num_workers=self.config['num_workers'],
+        #                  batch_size=self.config['test']['batch_size'])
 
 def pairs(xs):
     if len(xs) < 2:
