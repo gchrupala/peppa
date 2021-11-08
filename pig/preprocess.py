@@ -74,12 +74,19 @@ def lines(clip, metadata):
                            
     
     
-def segment(clip, duration=3.2, randomize=False, factor=1):
-    offset = random.uniform(0, duration/factor) if randomize else 0
-    start = 0 + offset
-    end = start + duration
+def segment(clip, duration=3.2, randomize=False):
+    if randomize:
+        length = max(0.2, duration + random.lognormvariate(0.0, 0.5) - 1)
+    else:
+        length = duration
+    start = 0
+    end = start + length
     while end <= clip.duration:
+        if randomize:
+            length = max(0.5, duration + random.lognormvariate(0, 0.5) - 1)
+        else:
+            length = duration
         sub = clip.subclip(start, end)
         start = end
-        end   = end+duration
+        end   = end + length
         yield sub
