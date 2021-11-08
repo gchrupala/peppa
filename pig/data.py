@@ -154,8 +154,10 @@ class PeppaPigIterableDataset(IterableDataset):
         os.makedirs(self.clip_dir(), exist_ok=True)
         json.dump(self.settings, open(f"{self.clip_dir()}/settings.json", "w"), indent=2)
         for i, clip in enumerate(self._raw_clips()):
-            self.clip_info[i] = dict(path=f"{self.clip_dir()}/{i}.mp4", duration=clip.duration)
-            clip.write_videofile(f"{self.clip_dir()}/{i}.mp4")
+            if clip.duration > 0:
+                self.clip_info[i] = dict(path=f"{self.clip_dir()}/{i}.mp4", duration=clip.duration)
+                #logging.info(f"Clip {i}: {clip.duration}s")
+                clip.write_videofile(f"{self.clip_dir()}/{i}.mp4")
         json.dump(self.clip_info, open(f"{self.clip_dir()}/clip_info.json", "w"), indent=2)
         
     def _prepare_triplets(self, hard=False):
