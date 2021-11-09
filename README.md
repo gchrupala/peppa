@@ -24,9 +24,5 @@ python run.py --config_file config.yaml
 ```
 
 ### Evaluate
-You can find saved checkpoints of trained models at xxx. You can load a checkpoint like this:
-```
-from pig.models import PeppaPig
-net = PeppaPig.load_from_checkpoint("version_0/checkpoints/epoch=48-step=7918.ckpt")
-```
-
+You can find saved checkpoints of trained models at https://surfdrive.surf.nl/files/index.php/s/gNnZ4iSoKBDsOGK. 
+See [example.py](example.py) for example code.
