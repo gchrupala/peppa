@@ -142,10 +142,18 @@ class PeppaPig(pl.LightningModule):
         self.video_encoder = R3DEncoder(**self.config['video'])
         self.audio_encoder = get_class(config['audio_class'])(**config['audio'])
         
-    def forward(self, x):
+    def forward(self, batch):
         # in lightning, forward defines the prediction/inference actions
-        raise NotImplemented
-
+        try:
+            a = self.encode_audio(batch.anchor)
+            p = self.encode_video(batch.positive)
+            n = self.encode_video(batch.negative)
+            return pig.data.TripletBatch(anchor=a, positive=p, negative=n)
+        except AttributeError:
+            V = self.encode_video(batch.video)
+            A = self.encode_audio(batch.audio)
+            return pig.data.ClipBatch(video=V, audio=A)
+        
     def encode_video(self, x):
         return self.video_encoder(x)
     
