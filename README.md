@@ -25,4 +25,4 @@ python run.py --config_file config.yaml
 
 ### Evaluate
 You can find saved checkpoints of trained models at https://surfdrive.surf.nl/files/index.php/s/gNnZ4iSoKBDsOGK. 
-See [example.py] for example code.
+See [example.py](example.py) for example code.
