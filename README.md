@@ -16,10 +16,17 @@ pip install -r requirements.txt
 
 ## Run
 
+### Train
 There is a rudimentary command-line interface. You can run the training code by executing the function script `run.py`, and optionally passing 
 in a configuration file.
 ```
 python run.py --config_file config.yaml
 ```
 
+### Evaluate
+You can find saved checkpoints of trained models at xxx. You can load a checkpoint like this:
+```
+from pig.models import PeppaPig
+net = PeppaPig.load_from_checkpoint("version_0/checkpoints/epoch=48-step=7918.ckpt")
+```
 
