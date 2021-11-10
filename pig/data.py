@@ -27,9 +27,6 @@ class Clip:
     filename: str
     index: Union[int, None] = None
     
-    def __hash__(self):
-        return hash((self.video, self.audio, self.duration, self.filename, self.index))
-    
 @dataclass
 class Pair:
     """Positive video-audio example."""
@@ -76,24 +73,26 @@ def collate(data):
     video, audio = zip(*[(x.video, x.audio) for x in data])
     return ClipBatch(video=pad_video_batch(video), audio=pad_audio_batch(audio))
 
-    
 class PeppaPigDataset(Dataset):
-    def __init__(self, cache=True, **kwargs):
+    def __init__(self, cache=True, cache_dir=None, **kwargs):
         self.dataset = PeppaPigIterableDataset(**kwargs)
         self.config_id = config_id(kwargs)
-        self.cachedir = f"data/out/items-{self.config_id}/"
+        if cache_dir is None:
+            self.cache_dir = f"data/out/items-{self.config_id}/"
+        else:
+            self.cache_dir = cache_dir
         if cache:
-            os.makedirs(self.cachedir, exist_ok=True)
+            os.makedirs(self.cache_dir, exist_ok=True)
             for i, item in enumerate(self.dataset):
                 logging.info(f"Caching item {i}")
-                torch.save(item, f"{self.cachedir}/{i}.pt")
-        self.length = len(glob.glob(f"{self.cachedir}/*.pt"))
+                torch.save(item, f"{self.cache_dir}/{i}.pt")
+        self.length = len(glob.glob(f"{self.cache_dir}/*.pt"))
         
     def __len__(self):
         return self.length
 
     def __getitem__(self, idx):
-        return torch.load(f"{self.cachedir}/{idx}.pt")
+        return torch.load(f"{self.cache_dir}/{idx}.pt")
 
 class PeppaPigIterableDataset(IterableDataset):
     def __init__(self,
@@ -319,26 +318,26 @@ class PigData(pl.LightningDataModule):
                                   split=['train'], fragment_type='dialog', 
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
-        self.val_dia   = self.Dataset(transform=self.config['transform'],
+        self.val_dia   = PeppaPigDataset(transform=self.config['transform'],
                                        target_size=self.config['target_size'],
                                        split=['val'], fragment_type='dialog',
                                        duration=3.2,
                                        **{k:v for k,v in self.config['val'].items()
                                           if k not in self.loader_args})
-        self.val_dia3 = self.Dataset(transform=self.config['transform'],
+        self.val_dia3 = PeppaPigDataset(transform=self.config['transform'],
                                         target_size=self.config['target_size'],
                                         triplet=True,
                                         split=['val'], fragment_type='dialog', duration=None,
                                         **{k:v for k,v in self.config['val'].items()
                                            if k not in self.loader_args})
-        self.val_narr = self.Dataset(transform=self.config['transform'],
+        self.val_narr = PeppaPigDataset(transform=self.config['transform'],
                                           target_size=self.config['target_size'],
                                           triplet=False,
                                           split=['val'], fragment_type='narration',
                                           duration=3.2,
                                           **{k:v for k,v in self.config['val'].items()
                                              if k not in self.loader_args})
-        self.val_narr3 = self.Dataset(transform=self.config['transform'],
+        self.val_narr3 = PeppaPigDataset(transform=self.config['transform'],
                                         target_size=self.config['target_size'],
                                         triplet=True,
                                         split=['val'], fragment_type='narration', duration=None,
