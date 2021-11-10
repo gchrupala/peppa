@@ -26,7 +26,10 @@ class Clip:
     duration: float
     filename: str
     index: Union[int, None] = None
-
+    
+    def __hash__(self):
+        return hash((self.video, self.audio, self.duration, self.filename, self.index))
+    
 @dataclass
 class Pair:
     """Positive video-audio example."""
@@ -102,7 +105,7 @@ class PeppaPigIterableDataset(IterableDataset):
                  duration=3.2,
                  triplet=False,
                  hard_triplet=False,
-                 randomize=False
+                 jitter=False
                  ):
         if type(split) is str:
             raise ValueError("`split` should be a list of strings")
@@ -113,7 +116,7 @@ class PeppaPigIterableDataset(IterableDataset):
             raise NotImplementedError("Window sizes other than 0 not implemented")
         self.window = window
         self.duration = duration
-        self.randomize = randomize
+        self.jitter = jitter
         self.settings = {**self.__dict__}
         self.triplet = triplet
         if hard_triplet:
@@ -129,7 +132,6 @@ class PeppaPigIterableDataset(IterableDataset):
                            narration=dict(val=range(1, 105),
                                           test=range(105, 210)))
         
-        logging.info(f"Randommize clips? {self.randomize}")
         
     def _clips(self):
         for clip in self._raw_clips():
@@ -173,12 +175,10 @@ class PeppaPigIterableDataset(IterableDataset):
 
         
     def _raw_clips(self):
-        maybe_shuffled = shuffled if self.randomize else lambda x: x
         width,  height = self.target_size
         paths = [ path for split in self.split \
                        for episode_id in self.split_spec[self.fragment_type][split] \
                        for path in glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi") ]
-        paths = maybe_shuffled(paths)
         # Split data between workers
         worker_info = torch.utils.data.get_worker_info()
         if worker_info is None:  # single-process data loading, return the full iterator
@@ -190,7 +190,6 @@ class PeppaPigIterableDataset(IterableDataset):
             first = worker_id * per_worker
             last = min(first + per_worker, len(paths))
             logging.info(f"Workerid: {worker_id}; [{first}:{last}]")
-        # Iterate
         for path in paths[first:last]:
             with m.VideoFileClip(path) as video:
             #logging.info(f"Path: {path}, size: {video.size}")
@@ -199,8 +198,8 @@ class PeppaPigIterableDataset(IterableDataset):
                     meta = json.load(open(f"{os.path.dirname(path)}/{i}.json"))
                     clips = pig.preprocess.lines(video, meta)
                 else:
-                    clips = pig.preprocess.segment(video, duration=self.duration, randomize=self.randomize)
-                for clip in maybe_shuffled(clips):
+                    clips = pig.preprocess.segment(video, duration=self.duration, jitter=self.jitter)
+                for clip in clips:
                     yield clip
                                        
 
@@ -384,12 +383,19 @@ class Triplet:
     anchor: ...
     positive: ...
     negative: ...
+    
+    def __hash__(self):
+        return hash((self.anchor, self.positive, self.negative))
+    
 
 @dataclass
 class TripletBatch:
     anchor: ...
     positive: ...
     negative: ...
+
+    def __hash__(self):
+        return hash((self.anchor.sum(), self.positive.sum(), self.negative.sum()))
     
 
 
@@ -399,6 +405,7 @@ def _triplets(clips, criterion):
         for p in paired:
             target, distractor = random.sample(p, 2)
             yield (target, distractor)
+
 
 def triplets(clips, hard=False):
     """Generates triplets of (a, v1, v2) where a is an audio clip, v1
@@ -416,6 +423,7 @@ def collate_triplets(data):
     return TripletBatch(anchor=pad_audio_batch(anchor),
                         positive=pad_video_batch(pos),
                         negative=pad_video_batch(neg))
+
 
 def shuffled(xs):
     return sorted(xs, key=lambda _: random.random())

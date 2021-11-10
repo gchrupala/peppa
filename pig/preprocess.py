@@ -74,15 +74,15 @@ def lines(clip, metadata):
                            
     
     
-def segment(clip, duration=3.2, randomize=False):
-    if randomize:
+def segment(clip, duration=3.2, jitter=False):
+    if jitter:
         length = max(0.2, duration + random.lognormvariate(0.0, 0.5) - 1)
     else:
         length = duration
     start = 0
     end = start + length
     while end <= clip.duration:
-        if randomize:
+        if jitter:
             length = max(0.5, duration + random.lognormvariate(0, 0.5) - 1)
         else:
             length = duration
