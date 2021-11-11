@@ -84,6 +84,7 @@ class PeppaPigDataset(Dataset):
             self.cache_dir = cache_dir
         if cache:
             os.makedirs(self.cache_dir, exist_ok=True)
+            json.dump(kwargs, open(f"{self.cache_dir}/settings.json", "w"))
             for i, item in enumerate(dataset):
                 logging.info(f"Caching item {i}")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
@@ -101,7 +102,7 @@ class PeppaPigDataset(Dataset):
             return torch.load(f"{self.cache_dir}/{idx}.pt")
 
     @classmethod
-    def load_from_dir(cls, directory):
+    def from_directory(cls, directory):
         return PeppaPigDataset(cache=False, cache_dir=directory)
     
 class PeppaPigIterableDataset(IterableDataset):
@@ -328,18 +329,23 @@ class PigData(pl.LightningDataModule):
                                   split=['train'], fragment_type='dialog', 
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
+
         self.val_dia   = PeppaPigDataset(transform=self.config['transform'],
-                                       target_size=self.config['target_size'],
-                                       split=['val'], fragment_type='dialog',
-                                       duration=3.2,
-                                       **{k:v for k,v in self.config['val'].items()
-                                          if k not in self.loader_args})
-        self.val_dia3 = PeppaPigDataset(transform=self.config['transform'],
-                                        target_size=self.config['target_size'],
-                                        triplet=True,
-                                        split=['val'], fragment_type='dialog', duration=None,
-                                        **{k:v for k,v in self.config['val'].items()
-                                           if k not in self.loader_args})
+                                             target_size=self.config['target_size'],
+                                             split=['val'], fragment_type='dialog',
+                                             duration=3.2,
+                                             **{k:v for k,v in self.config['val'].items()
+                                                if k not in self.loader_args})
+
+        if self.config['val'].get('dialog_triplet_directory') is not None:
+            self.val_dia3 = PeppaPigDataset.from_directory(self.config['val']['dialog_triplet_directory'])
+        else:
+            self.val_dia3 = PeppaPigDataset(transform=self.config['transform'],
+                                            target_size=self.config['target_size'],
+                                            triplet=True,
+                                            split=['val'], fragment_type='dialog', duration=None,
+                                            **{k:v for k,v in self.config['val'].items()
+                                               if k not in self.loader_args})
         self.val_narr = PeppaPigDataset(transform=self.config['transform'],
                                           target_size=self.config['target_size'],
                                           triplet=False,
@@ -347,12 +353,15 @@ class PigData(pl.LightningDataModule):
                                           duration=3.2,
                                           **{k:v for k,v in self.config['val'].items()
                                              if k not in self.loader_args})
-        self.val_narr3 = PeppaPigDataset(transform=self.config['transform'],
-                                        target_size=self.config['target_size'],
-                                        triplet=True,
-                                        split=['val'], fragment_type='narration', duration=None,
-                                        **{k:v for k,v in self.config['val'].items()
-                                           if k not in self.loader_args})
+        if self.config['val'].get('narration_triplet_directory') is not None:
+            self.val_dia3 = PeppaPigDataset.from_directory(self.config['val']['narration_triplet_directory'])
+        else:
+            self.val_narr3 = PeppaPigDataset(transform=self.config['transform'],
+                                             target_size=self.config['target_size'],
+                                             triplet=True,
+                                             split=['val'], fragment_type='narration', duration=None,
+                                             **{k:v for k,v in self.config['val'].items()
+                                                if k not in self.loader_args})
 
 
     def train_dataloader(self):
