@@ -5,6 +5,7 @@ from torchvision.transforms import Normalize, Compose
 import pig.transforms 
 from dataclasses import dataclass
 import glob
+import os.path
 import pig.preprocess 
 import moviepy.editor as m
 import pytorch_lightning as pl
@@ -73,27 +74,36 @@ def collate(data):
     video, audio = zip(*[(x.video, x.audio) for x in data])
     return ClipBatch(video=pad_video_batch(video), audio=pad_audio_batch(audio))
 
+
 class PeppaPigDataset(Dataset):
     def __init__(self, cache=True, cache_dir=None, **kwargs):
-        self.dataset = PeppaPigIterableDataset(**kwargs)
-        self.config_id = config_id(kwargs)
+        dataset = PeppaPigIterableDataset(**kwargs)
         if cache_dir is None:
-            self.cache_dir = f"data/out/items-{self.config_id}/"
+            self.cache_dir = f"data/out/items-{config_id(kwargs)}/"
         else:
             self.cache_dir = cache_dir
         if cache:
             os.makedirs(self.cache_dir, exist_ok=True)
-            for i, item in enumerate(self.dataset):
+            for i, item in enumerate(dataset):
                 logging.info(f"Caching item {i}")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
+        if not os.path.isdir(self.cache_dir):
+            raise FileNotFoundError(f"No such directory: {self.cache_dir}")
         self.length = len(glob.glob(f"{self.cache_dir}/*.pt"))
         
     def __len__(self):
         return self.length
 
     def __getitem__(self, idx):
-        return torch.load(f"{self.cache_dir}/{idx}.pt")
+        if idx >= self.length:
+            raise IndexError("Index out of range")
+        else:
+            return torch.load(f"{self.cache_dir}/{idx}.pt")
 
+    @classmethod
+    def load_from_dir(cls, directory):
+        return PeppaPigDataset(cache=False, cache_dir=directory)
+    
 class PeppaPigIterableDataset(IterableDataset):
     def __init__(self,
                  split=['val'],
