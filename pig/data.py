@@ -330,39 +330,43 @@ class PigData(pl.LightningDataModule):
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
 
-        self.val_dia   = PeppaPigDataset(transform=self.config['transform'],
-                                             target_size=self.config['target_size'],
-                                             split=['val'], fragment_type='dialog',
-                                             duration=3.2,
-                                             **{k:v for k,v in self.config['val'].items()
-                                                if k not in self.loader_args})
+        self.val_dia   = PeppaPigDataset(cache=self.config['cache'],
+                                         transform=self.config['transform'],
+                                         target_size=self.config['target_size'],
+                                         split=['val'], fragment_type='dialog',
+                                         duration=3.2,
+                                         **{k:v for k,v in self.config['val'].items()
+                                            if k not in self.loader_args})
 
-        if self.config['val'].get('dialog_triplet_directory') is not None:
-            self.val_dia3 = PeppaPigDataset.from_directory(self.config['val']['dialog_triplet_directory'])
+        if self.config['fixed_triplet']:
+            self.val_dia3 = PeppaPigDataset.from_directory("data/out/val_dialog_triplets")
         else:
-            self.val_dia3 = PeppaPigDataset(transform=self.config['transform'],
+            self.val_dia3 = PeppaPigDataset(cache=self.config['cache'],
+                                            transform=self.config['transform'],
                                             target_size=self.config['target_size'],
                                             triplet=True,
                                             split=['val'], fragment_type='dialog', duration=None,
                                             **{k:v for k,v in self.config['val'].items()
                                                if k not in self.loader_args})
-        self.val_narr = PeppaPigDataset(transform=self.config['transform'],
-                                          target_size=self.config['target_size'],
-                                          triplet=False,
-                                          split=['val'], fragment_type='narration',
-                                          duration=3.2,
-                                          **{k:v for k,v in self.config['val'].items()
-                                             if k not in self.loader_args})
-        if self.config['val'].get('narration_triplet_directory') is not None:
-            self.val_dia3 = PeppaPigDataset.from_directory(self.config['val']['narration_triplet_directory'])
+        self.val_narr = PeppaPigDataset(cache=self.config['cache'],
+                                        transform=self.config['transform'],
+                                        target_size=self.config['target_size'],
+                                        triplet=False,
+                                        split=['val'], fragment_type='narration',
+                                        duration=3.2,
+                                        **{k:v for k,v in self.config['val'].items()
+                                           if k not in self.loader_args})
+        if self.config['fixed_triplet']:
+            self.val_narr3 = PeppaPigDataset.from_directory("data/out/val_narration_triplets")
         else:
-            self.val_narr3 = PeppaPigDataset(transform=self.config['transform'],
+            self.val_narr3 = PeppaPigDataset(cache=self.config['cache'],
+                                             transform=self.config['transform'],
                                              target_size=self.config['target_size'],
                                              triplet=True,
                                              split=['val'], fragment_type='narration', duration=None,
                                              **{k:v for k,v in self.config['val'].items()
                                                 if k not in self.loader_args})
-
+            
 
     def train_dataloader(self):
         return DataLoader(self.train, collate_fn=collate, num_workers=self.config['num_workers'],
