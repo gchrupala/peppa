@@ -79,19 +79,32 @@ class PeppaTripletDataset(Dataset):
     def __init__(self, raw=False):
         self.raw = raw
 
-    def _cache_clips(self):
+    def cache_clips(self):
         try:
-            self.dataset.clip_info = json.load(open(f"{self.dataset.clip_dir()}/clip_info.json"))
+            self.dataset.clip_info = json.load(open(f"{self.clip_dir()}/clip_info.json"))
         except FileNotFoundError:
-            self.dataset._cache_clips()
-            
+            width,  height = self.target_size
+            self.clip_info = {}
+            os.makedirs(self.clip_dir(), exist_ok=True)
+            json.dump(self.settings, open(f"{self.clip_dir()}/settings.json", "w"), indent=2)
+            for i, clip in enumerate(self.dataset._raw_clips()):
+                if clip.duration > 0:
+                    self.clip_info[i] = dict(path=f"{self.clip_dir()}/{i}.mp4",
+                                             filename=clip.filename,
+                                             offset=clip.offset,
+                                             duration=clip.duration)
+                    #logging.info(f"Clip {i}: {clip.duration}s")
+                    clip.write_videofile(f"{self.clip_dir()}/{i}.mp4")
+            json.dump(self.clip_info, open(f"{self.clip_dir()}/clip_info.json", "w"), indent=2)
+        
+        
     def save_sample(self, sample):
         self.triplets = sample
         json.dump(self._triplets,
-                  open(f"{self.dataset.clip_dir()}/triplet_info.json", "w"), indent=2)
+                  open(f"{self.clip_dir()}/triplet_info.json", "w"), indent=2)
 
     def resample(self):
-        for info in _triplets(self.dataset.clip_info.values(), lambda x: x['duration']):
+        for info in _triplets(self.clip_info.values(), lambda x: x['duration']):
             yield info
 
     def _get_raw_item(self, idx):
@@ -203,22 +216,6 @@ class PeppaPigIterableDataset(IterableDataset):
         else:
             return self.permapath
     
-    def _cache_clips(self):
-        width,  height = self.target_size
-        self.clip_info = {}
-        os.makedirs(self.clip_dir(), exist_ok=True)
-        json.dump(self.settings, open(f"{self.clip_dir()}/settings.json", "w"), indent=2)
-        for i, clip in enumerate(self._raw_clips()):
-            if clip.duration > 0:
-                self.clip_info[i] = dict(path=f"{self.clip_dir()}/{i}.mp4",
-                                         filename=clip.filename,
-                                         offset=clip.offset,
-                                         duration=clip.duration)
-                #logging.info(f"Clip {i}: {clip.duration}s")
-                clip.write_videofile(f"{self.clip_dir()}/{i}.mp4")
-        json.dump(self.clip_info, open(f"{self.clip_dir()}/clip_info.json", "w"), indent=2)
-        
-        
     def _raw_clips(self):
         width,  height = self.target_size
         paths = [ path for split in self.split \
