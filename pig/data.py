@@ -137,10 +137,10 @@ class PeppaPigIterableDataset(IterableDataset):
         else:
             self.transform = transform
         self.split_spec = dict(dialog=dict(train = range(1, 197),
-                                       val  = range(197, 203),
-                                       test = range(203, 210)),
-                           narration=dict(val=range(1, 105),
-                                          test=range(105, 210)))
+                                           val  = range(197, 203),
+                                           test = range(203, 210)),
+                               narration=dict(val=range(1, 105),
+                                              test=range(105, 210)))
         
         
     def _clips(self):
