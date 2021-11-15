@@ -14,6 +14,7 @@ from itertools import groupby
 import pig.util
 import torch.nn.functional as F
 import json
+import pickle
 import random
 from typing import Union
 import os.path
@@ -76,64 +77,67 @@ def collate(data):
     return ClipBatch(video=pad_video_batch(video), audio=pad_audio_batch(audio))
 
 class PeppaTripletDataset(Dataset):
+
     def __init__(self, raw=False):
         self.raw = raw
-
-    def cache_clips(self):
-        try:
-            self.dataset.clip_info = json.load(open(f"{self.clip_dir()}/clip_info.json"))
-        except FileNotFoundError:
-            width,  height = self.target_size
-            self.clip_info = {}
-            os.makedirs(self.clip_dir(), exist_ok=True)
-            json.dump(self.settings, open(f"{self.clip_dir()}/settings.json", "w"), indent=2)
-            for i, clip in enumerate(self.dataset._raw_clips()):
-                if clip.duration > 0:
-                    self.clip_info[i] = dict(path=f"{self.clip_dir()}/{i}.mp4",
-                                             filename=clip.filename,
-                                             offset=clip.offset,
-                                             duration=clip.duration)
-                    #logging.info(f"Clip {i}: {clip.duration}s")
-                    clip.write_videofile(f"{self.clip_dir()}/{i}.mp4")
-            json.dump(self.clip_info, open(f"{self.clip_dir()}/clip_info.json", "w"), indent=2)
         
-        
-    def save_sample(self, sample):
-        self.triplets = sample
-        json.dump(self._triplets,
-                  open(f"{self.clip_dir()}/triplet_info.json", "w"), indent=2)
-
-    def resample(self):
-        for info in _triplets(self.clip_info.values(), lambda x: x['duration']):
-            yield info
-
-    def _get_raw_item(self, idx):
-        target_info, distractor_info = self.triplets[idx]
-        with m.VideoFileClip(target_info['path']) as target:
-            with m.VideoFileClip(distractor_info['path']) as distractor:
-                return Triplet(anchor=target.audio, positive=target, negative=distractor)
-                
-    def __getitem__(self, idx):
-        if self.raw:
-            return self._get_raw_item(idx)
-        else:
-            triplet = self._get_raw_item(idx)
-            positive = featurize_clip(triplet.positive)
-            negative = featurize_clip(triplet.negative)
-            return Triplet(anchor=positive.audio, positive=positive.video, negative=negative.video)
-            
-    def __len__(self):
-        return len(self.triplets)
-
+    @classmethod
+    def from_dataset(cls, dataset, directory, raw=False):
+        self = cls(raw=raw)
+        self.directory = directory
+        self._dataset = dataset
+        self._save_clip_info()
+        self._sample = list(self.sample())
+        self._save_sample()
+        return self
     
     @classmethod
-    def from_dataset(cls, dataset):
-        self.dataset = dataset
-        self.save_sample()
+    def load(cls, directory, raw=False):
+        self = cls(raw=raw)
+        self.directory = directory
+        self._dataset = pickle.load(open(f"{self.directory}/dataset.pkl", "rb"))
+        self._clip_info = json.load(open(f"{self.directory}/clip_info.json"))
+        self._sample = json.load(open(f"{self.directory}/sample.json"))
+        return self
+    
+    def save(self):
+        self._save_clip_info()
+        self._save_sample()
+        
+    def _save_clip_info(self):
+        os.makedirs(self.directory, exist_ok=True)
+        pickle.dump(self._dataset, open(f"{self.directory}/dataset.pkl", "wb"))
+        self._clip_info = {}
+        for i, clip in enumerate(self._dataset._raw_clips()):
+            if clip.duration > 0:
+                self._clip_info[i] = dict(path=f"{self.directory}/{i}.mp4",
+                                          filename=clip.filename,
+                                          offset=clip.offset,
+                                          duration=clip.duration)
+                clip.write_videofile(f"{self.directory}/{i}.mp4")
+        json.dump(self._clip_info, open(f"{self.directory}/clip_info.json", "w"), indent=2)
 
-    @classmethod
-    def from_directory(cls, directory):
-        raise NotImplementedError
+    def _save_sample(self):
+        json.dump(self._sample, open(f"{self.directory}/sample.json", "w"), indent=2)
+        
+    def sample(self):
+        for info in _triplets(self._clip_info.values(), lambda x: x['duration']):
+            yield info
+
+    def __getitem__(self, idx):
+        target_info, distractor_info = self._sample[idx]
+        with m.VideoFileClip(target_info['path']) as target:
+            with m.VideoFileClip(distractor_info['path']) as distractor:
+                if self.raw:
+                    return Triplet(anchor=target.audio, positive=target, negative=distractor)
+                else:
+                    positive = self._dataset.featurize(target)
+                    negative = self._dataset.featurize(distractor)
+                    return Triplet(anchor=positive.audio, positive=positive.video, negative=negative.video)
+                   
+    def __len__(self):
+        return len(self._sample)
+
     
 class PeppaPigDataset(Dataset):
     def __init__(self, cache=True, cache_dir=None, **kwargs):
@@ -162,7 +166,7 @@ class PeppaPigDataset(Dataset):
             return torch.load(f"{self.cache_dir}/{idx}.pt")
 
     @classmethod
-    def from_directory(cls, directory):
+    def load(cls, directory):
         return PeppaPigDataset(cache=False, cache_dir=directory)
     
 class PeppaPigIterableDataset(IterableDataset):
@@ -189,7 +193,7 @@ class PeppaPigIterableDataset(IterableDataset):
                                narration=dict(val=range(1, 105),
                                               test=range(105, 210)))
 
-    def featurize_clip(self, clip):
+    def featurize(self, clip):
         frames = [ torch.tensor(frame/255).float()
                    for frame in clip.iter_frames() ]
         if len(frames) > 0:
@@ -198,24 +202,17 @@ class PeppaPigIterableDataset(IterableDataset):
             return Clip(video = self.transform(v.permute(3, 0, 1, 2)),
                         audio = a.mean(dim=1, keepdim=True).permute(1,0),
                         duration = clip.duration,
-                        filename = clip.filename,
-                        offset = clip.offset)
+                        filename = clip.filename)
         else:
             raise ValueError("Clip has zero frames.")
         
     def _clips(self):
         for clip in self._raw_clips():
             try:
-                yield self._featurize_clip(clip)
+                yield self._featurize(clip)
             except ValueError(e):
                 pass
 
-    def clip_dir(self):
-        if self.permapath is None:
-            return f"data/out/clips-{config_id(self.settings)}/"
-        else:
-            return self.permapath
-    
     def _raw_clips(self):
         width,  height = self.target_size
         paths = [ path for split in self.split \
