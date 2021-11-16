@@ -12,8 +12,9 @@ import pytorch_lightning as pl
 import logging
 from itertools import groupby
 import pig.util
-import torch.nn.functional as F
+from pig.triplet import PeppaTripletDataset, collate_triplets
 import json
+import pickle
 import random
 from typing import Union
 import os.path
@@ -26,6 +27,7 @@ class Clip:
     audio: torch.tensor
     duration: float
     filename: str
+    offset: Union[float, None] = None
     index: Union[int, None] = None
     
 @dataclass
@@ -53,28 +55,13 @@ class ClipBatch:
     audio: torch.tensor
     
     
-def crop_audio_batch(audio):
-    size = min(x.shape[1] for x in audio)
-    return torch.stack([ x[:, :size] for x in audio ])
-
-def pad_audio_batch(audio):
-    size = max(x.shape[1] for x in audio)
-    return torch.stack([ F.pad(x, (0, size-x.shape[1]), 'constant', 0) for x in audio ])
-
-def crop_video_batch(video):
-    size = min(x.shape[1] for x in video)
-    return torch.stack([ x[:, :size, :, :] for x in video ])
-
-def pad_video_batch(video):
-    size = max(x.shape[1] for x in video)
-    return torch.stack([ F.pad(x, (0,0, 0,0, 0,size-x.shape[1]), 'constant', 0) for x in video ])
-
-                       
+     
 def collate(data):
     video, audio = zip(*[(x.video, x.audio) for x in data])
-    return ClipBatch(video=pad_video_batch(video), audio=pad_audio_batch(audio))
+    return ClipBatch(video=pig.util.pad_video_batch(video), audio=pig.util.pad_audio_batch(audio))
 
 
+    
 class PeppaPigDataset(Dataset):
     def __init__(self, cache=True, cache_dir=None, **kwargs):
         dataset = PeppaPigIterableDataset(**kwargs)
@@ -84,7 +71,7 @@ class PeppaPigDataset(Dataset):
             self.cache_dir = cache_dir
         if cache:
             os.makedirs(self.cache_dir, exist_ok=True)
-            json.dump(kwargs, open(f"{self.cache_dir}/settings.json", "w"))
+            pickle.dump(kwargs, open(f"{self.cache_dir}/settings.pkl", "wb"))
             for i, item in enumerate(dataset):
                 logging.info(f"Caching item {i}")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
@@ -102,88 +89,52 @@ class PeppaPigDataset(Dataset):
             return torch.load(f"{self.cache_dir}/{idx}.pt")
 
     @classmethod
-    def from_directory(cls, directory):
+    def load(cls, directory):
         return PeppaPigDataset(cache=False, cache_dir=directory)
     
 class PeppaPigIterableDataset(IterableDataset):
     def __init__(self,
                  split=['val'],
                  target_size=(180, 100),
-                 fragment_type='dialog',
-                 window=0,
                  transform=None,
+                 fragment_type='dialog',
                  duration=3.2,
-                 triplet=False,
-                 hard_triplet=False,
-                 jitter=False
+                 jitter=False,
                  ):
         if type(split) is str:
             raise ValueError("`split` should be a list of strings")
         self.split = split
         self.target_size = target_size
         self.fragment_type = fragment_type
-        if window != 0:
-            raise NotImplementedError("Window sizes other than 0 not implemented")
-        self.window = window
         self.duration = duration
         self.jitter = jitter
-        self.settings = {**self.__dict__}
-        self.triplet = triplet
-        if hard_triplet:
-            raise NotImplementedError("Hard triplet not implemented")
-        self.hard_triplet = hard_triplet
-        if transform is None:
-            self.transform = pig.util.identity
-        else:
-            self.transform = transform
+        self.transform = pig.util.identity if transform is None else transform 
         self.split_spec = dict(dialog=dict(train = range(1, 197),
                                            val  = range(197, 203),
                                            test = range(203, 210)),
                                narration=dict(val=range(1, 105),
                                               test=range(105, 210)))
-        
+
+    def featurize(self, clip):
+        frames = [ torch.tensor(frame/255).float()
+                   for frame in clip.iter_frames() ]
+        if len(frames) > 0:
+            v = torch.stack(frames)
+            a = torch.tensor(clip.audio.to_soundarray()).float()
+            return Clip(video = self.transform(v.permute(3, 0, 1, 2)),
+                        audio = a.mean(dim=1, keepdim=True).permute(1,0),
+                        duration = clip.duration,
+                        filename = clip.filename)
+        else:
+            raise ValueError("Clip has zero frames.")
         
     def _clips(self):
         for clip in self._raw_clips():
-            frames = [ torch.tensor(frame/255).float()
-                              for frame in clip.iter_frames() ]
-            if len(frames) > 0:
-                #logging.info(f"Clip has {len(frames)} frames") 
-                v = torch.stack(frames)
-                a = torch.tensor(clip.audio.to_soundarray()).float()
-                yield Clip(video = self.transform(v.permute(3, 0, 1, 2)),
-                           audio = a.mean(dim=1, keepdim=True).permute(1,0),
-                           duration = clip.duration,
-                           filename = clip.filename)
+            try:
+                yield self.featurize(clip)
+            except ValueError as e:
+                logging.warning(f"{e}")
 
-    def clip_dir(self):
-        return f"data/out/clips-{config_id(self.settings)}/"
-    
-    def _cache_clips(self):
-        width,  height = self.target_size
-
-        self.clip_info = {}
-        os.makedirs(self.clip_dir(), exist_ok=True)
-        json.dump(self.settings, open(f"{self.clip_dir()}/settings.json", "w"), indent=2)
-        for i, clip in enumerate(self._raw_clips()):
-            if clip.duration > 0:
-                self.clip_info[i] = dict(path=f"{self.clip_dir()}/{i}.mp4", duration=clip.duration)
-                #logging.info(f"Clip {i}: {clip.duration}s")
-                clip.write_videofile(f"{self.clip_dir()}/{i}.mp4")
-        json.dump(self.clip_info, open(f"{self.clip_dir()}/clip_info.json", "w"), indent=2)
-        
-    def _prepare_triplets(self, hard=False):
-        try:
-            self.clip_info = json.load(open(f"{self.clip_dir()}/clip_info.json"))
-        except FileNotFoundError:
-            self._cache_clips()
-        self._triplets = []
-        if hard:
-            self._triplets = list(_triplets_hard(self.clip_info.values(), lambda x: x['duration']))
-        else:
-            self._triplets = list(_triplets(self.clip_info.values(), lambda x: x['duration']))
-
-        
     def _raw_clips(self):
         width,  height = self.target_size
         paths = [ path for split in self.split \
@@ -222,23 +173,9 @@ class PeppaPigIterableDataset(IterableDataset):
                     yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)
                     
 
-    def raw_triplets(self, shuffle=False):
-        """Generate duration-matched triplets of raw audio/video clips."""
-        if shuffle:
-            items = shuffled(self._triplets)
-        else:
-            items = self._triplets
-        for (target_info, distractor_info) in items:
-            with m.VideoFileClip(target_info['path']) as target:
-                with m.VideoFileClip(distractor_info['path']) as distractor:
-                    yield Triplet(anchor=target.audio, positive=target, negative=distractor)
-
     def __iter__(self):
-        if self.triplet:
-            yield from triplets(self._clips(), hard=self.hard_triplet)
-        else:
-            for _path, items in groupby(self._clips(), key=lambda x: x.filename):
-                yield from self._positives(items)                    
+        for _path, items in groupby(self._clips(), key=lambda x: x.filename):
+            yield from self._positives(items)                    
 
 @dataclass
 class Stats:
@@ -280,7 +217,7 @@ def worker_init_fn(worker_id):
 def config_id(config):
     import hashlib
     sha = hashlib.sha256()
-    sha.update(json.dumps(config).encode())
+    sha.update(pickle.dumps(config))
     return sha.hexdigest()
     
 class PigData(pl.LightningDataModule):
@@ -301,9 +238,8 @@ class PigData(pl.LightningDataModule):
         if self.config['prepare']:    
             logging.info("Collecting stats on training data.")
             
-            train = self.Dataset(transform=self.config['transform'],
-                                  target_size=self.config['target_size'],
-                                  split=['train'], fragment_type='dialog', 
+            train = self.Dataset(target_size=self.config['target_size'],
+                                 split=['train'], fragment_type='dialog', 
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
             logging.info("Saving stats")
@@ -324,14 +260,14 @@ class PigData(pl.LightningDataModule):
             ])
 
         logging.info("Creating train/val/test datasets")
-        self.train = self.Dataset(transform=self.config['transform'],
-                                  target_size=self.config['target_size'],
+        self.train = self.Dataset(target_size=self.config['target_size'],
+                                  transform=self.transform,
                                   split=['train'], fragment_type='dialog', 
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
 
         self.val_dia   = PeppaPigDataset(cache=self.config['cache'],
-                                         transform=self.config['transform'],
+                                         transform=self.transform,
                                          target_size=self.config['target_size'],
                                          split=['val'], fragment_type='dialog',
                                          duration=3.2,
@@ -339,33 +275,33 @@ class PigData(pl.LightningDataModule):
                                             if k not in self.loader_args})
 
         if self.config['fixed_triplet']:
-            self.val_dia3 = PeppaPigDataset.from_directory("data/out/val_dialog_triplets")
+            self.val_dia3 = PeppaTripletDataset.load("data/out/val_dialog_triplets_v2")
         else:
-            self.val_dia3 = PeppaPigDataset(cache=self.config['cache'],
-                                            transform=self.config['transform'],
-                                            target_size=self.config['target_size'],
-                                            triplet=True,
-                                            split=['val'], fragment_type='dialog', duration=None,
-                                            **{k:v for k,v in self.config['val'].items()
-                                               if k not in self.loader_args})
-        self.val_narr = PeppaPigDataset(cache=self.config['cache'],
-                                        transform=self.config['transform'],
+            self.val_dia3 = PeppaTripletDataset.from_dataset(
+                PeppaPigIterableDataset(transform=self.transform,
                                         target_size=self.config['target_size'],
-                                        triplet=False,
+                                        split=['val'], fragment_type='dialog', duration=None,
+                                        **{k:v for k,v in self.config['val'].items()
+                                           if k not in self.loader_args}),
+                "data/out/val_dialog_triplets_v2")
+        self.val_narr = PeppaPigDataset(cache=self.config['cache'],
+                                        transform=self.transform,
+                                        target_size=self.config['target_size'],
                                         split=['val'], fragment_type='narration',
                                         duration=3.2,
                                         **{k:v for k,v in self.config['val'].items()
                                            if k not in self.loader_args})
         if self.config['fixed_triplet']:
-            self.val_narr3 = PeppaPigDataset.from_directory("data/out/val_narration_triplets")
+            self.val_narr3 = PeppaTripletDataset.load("data/out/val_narration_triplets_v2")
         else:
-            self.val_narr3 = PeppaPigDataset(cache=self.config['cache'],
-                                             transform=self.config['transform'],
-                                             target_size=self.config['target_size'],
-                                             triplet=True,
-                                             split=['val'], fragment_type='narration', duration=None,
-                                             **{k:v for k,v in self.config['val'].items()
-                                                if k not in self.loader_args})
+            self.val_narr3 = PeppaTripletDataset(
+                PeppaPigIterableDataset(
+                    transform=self.transform,
+                    target_size=self.config['target_size'],
+                    split=['val'], fragment_type='narration', duration=None,
+                    **{k:v for k,v in self.config['val'].items()
+                       if k not in self.loader_args}),
+                "data/out/val_narration_triplets_v2")
             
 
     def train_dataloader(self):
@@ -394,61 +330,3 @@ class PigData(pl.LightningDataModule):
         #return DataLoader(self.test, collate_fn=collate, num_workers=self.config['num_workers'],
         #                  batch_size=self.config['test']['batch_size'])
 
-def pairs(xs):
-    if len(xs) < 2:
-        return []
-    else:
-        return [(xs[0], xs[1])] + pairs(xs[2:])
-
-@dataclass
-class Triplet:
-    anchor: ...
-    positive: ...
-    negative: ...
-    
-    def __hash__(self):
-        return hash((self.anchor, self.positive, self.negative))
-    
-
-@dataclass
-class TripletBatch:
-    anchor: ...
-    positive: ...
-    negative: ...
-
-    def __hash__(self):
-        return hash((self.anchor.sum(), self.positive.sum(), self.negative.sum()))
-    
-
-
-def _triplets(clips, criterion): 
-    for size, items in grouped(clips, key=criterion):
-        paired = pairs(shuffled(items))
-        for p in paired:
-            target, distractor = random.sample(p, 2)
-            yield (target, distractor)
-
-
-def triplets(clips, hard=False):
-    """Generates triplets of (a, v1, v2) where a is an audio clip, v1
-       matching video and v2 a distractor video, matched by duration."""
-    if hard:
-        items = _triplets_hard(clips, lambda x: x.duration)
-    else:
-        items = _triplets(clips, lambda x: x.duration)
-    for target, distractor in items:
-        yield Triplet(anchor=target.audio, positive=target.video, negative=distractor.video)
-
-
-def collate_triplets(data):
-    anchor, pos, neg = zip(*[(x.anchor, x.positive, x.negative) for x in data])
-    return TripletBatch(anchor=pad_audio_batch(anchor),
-                        positive=pad_video_batch(pos),
-                        negative=pad_video_batch(neg))
-
-
-def shuffled(xs):
-    return sorted(xs, key=lambda _: random.random())
-
-def grouped(xs, key=lambda x: x):
-    return groupby(sorted(xs, key=key), key=key)
