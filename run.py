@@ -6,31 +6,32 @@ from pytorch_lightning.callbacks import ModelCheckpoint
 from argparse import ArgumentParser
 import yaml
 
-video_pretrained = False
-default_config = dict(
-                      margin=0.2,
-                      data=dict(num_workers=24,
-                                extract=False,
-                                prepare=False,
-                                iterable=False,
-                                cache=False,
-                                normalization='kinetics' if video_pretrained else 'peppa',
-                                target_size=(180, 100),
-                                transform=None,
-                                train=dict(batch_size=8, shuffle=True),
-                                val=dict(batch_size=8),
-                                test=dict(batch_size=8)),
-                      video=dict(pretrained=video_pretrained, project=True),
-                      audio_class='Wav2VecEncoder',
-                      audio = dict(path = 'data/in/wav2vec/wav2vec_small.pt',
-                                   freeze_feature_extractor=True,
-                                   freeze_encoder_layers=None),
-                      training = dict(trainer_args=dict(gpus=1, auto_select_gpus=True,
-                                                        accumulate_grad_batches=8),
-                                      monitor='val_loss/dataloader_idx_0'),
-                      optimizer = dict(lr=0.1e-4, warmup=0.1, schedule='warmup_linear', t_total=32640)
-                                      
-)
+
+default_config = {'margin': 0.2,
+                  'data': {'num_workers': 12,
+                           'extract': False,
+                           'prepare': False,
+                           'iterable': False,
+                           'normalization': 'kinetics',
+                           'fixed_triplet': True,
+                           'cache': False,
+                           'target_size': [180, 100],
+                           'train': {'batch_size': 8, 'jitter': False, 'shuffle': True},
+                           'val': {'batch_size': 8},
+                           'test': {'batch_size': 8}},
+                  'video': {'pretrained': True, 'project': True},
+                  'audio_class': 'Wav2VecEncoder',
+                  'audio': {'path': 'data/in/wav2vec/wav2vec_small.pt',
+                            'freeze_feature_extractor': True,
+                            'freeze_encoder_layers': 3,
+                            'pooling': 'attention'},
+                  'training': {'trainer_args': {'gpus': [1],
+                                                'auto_select_gpus': False,
+                                                'accumulate_grad_batches': 8}},
+                  'optimizer': {'lr': 0.0001,
+                                'warmup': 0.1,
+                                'schedule': 'warmup_linear',
+                                't_total': 32640}}
 
 def get_git_commit():
     import git
