@@ -67,7 +67,9 @@ def lines(clip, metadata):
         begin = (pd.Timedelta(line['begin'])-start).seconds
         end = min(clip.duration, (pd.Timedelta(line['end'])-start).seconds)
         if begin < clip.duration:
-            yield clip.subclip(begin, end)
+            sub = clip.subclip(begin, end)
+            sub.offset = begin
+            yield sub
         else:
             logging.warning(f"Line {line} starts past end of clip {clip.filename}")
             
@@ -87,6 +89,7 @@ def segment(clip, duration=3.2, jitter=False):
         else:
             length = duration
         sub = clip.subclip(start, end)
+        sub.offset = start
         start = end
         end   = end + length
         yield sub
