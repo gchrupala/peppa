@@ -12,7 +12,7 @@ import pytorch_lightning as pl
 import logging
 from itertools import groupby
 import pig.util
-import torch.nn.functional as F
+from pig.triplet import PeppaTripletDataset, collate_triplets
 import json
 import pickle
 import random
@@ -55,88 +55,11 @@ class ClipBatch:
     audio: torch.tensor
     
     
-def crop_audio_batch(audio):
-    size = min(x.shape[1] for x in audio)
-    return torch.stack([ x[:, :size] for x in audio ])
-
-def pad_audio_batch(audio):
-    size = max(x.shape[1] for x in audio)
-    return torch.stack([ F.pad(x, (0, size-x.shape[1]), 'constant', 0) for x in audio ])
-
-def crop_video_batch(video):
-    size = min(x.shape[1] for x in video)
-    return torch.stack([ x[:, :size, :, :] for x in video ])
-
-def pad_video_batch(video):
-    size = max(x.shape[1] for x in video)
-    return torch.stack([ F.pad(x, (0,0, 0,0, 0,size-x.shape[1]), 'constant', 0) for x in video ])
-
-                       
+     
 def collate(data):
     video, audio = zip(*[(x.video, x.audio) for x in data])
-    return ClipBatch(video=pad_video_batch(video), audio=pad_audio_batch(audio))
+    return ClipBatch(video=pig.util.pad_video_batch(video), audio=pig.util.pad_audio_batch(audio))
 
-class PeppaTripletDataset(Dataset):
-
-    def __init__(self, raw=False):
-        self.raw = raw
-        
-    @classmethod
-    def from_dataset(cls, dataset, directory, raw=False):
-        self = cls(raw=raw)
-        self.directory = directory
-        self._dataset = dataset
-        self._save_clip_info()
-        self._sample = list(self.sample())
-        self._save_sample()
-        return self
-    
-    @classmethod
-    def load(cls, directory, raw=False):
-        self = cls(raw=raw)
-        self.directory = directory
-        self._dataset = pickle.load(open(f"{self.directory}/dataset.pkl", "rb"))
-        self._clip_info = json.load(open(f"{self.directory}/clip_info.json"))
-        self._sample = json.load(open(f"{self.directory}/sample.json"))
-        return self
-    
-    def save(self):
-        self._save_clip_info()
-        self._save_sample()
-        
-    def _save_clip_info(self):
-        os.makedirs(self.directory, exist_ok=True)
-        pickle.dump(self._dataset, open(f"{self.directory}/dataset.pkl", "wb"))
-        self._clip_info = {}
-        for i, clip in enumerate(self._dataset._raw_clips()):
-            if clip.duration > 0:
-                self._clip_info[i] = dict(path=f"{self.directory}/{i}.mp4",
-                                          filename=clip.filename,
-                                          offset=clip.offset,
-                                          duration=clip.duration)
-                clip.write_videofile(f"{self.directory}/{i}.mp4")
-        json.dump(self._clip_info, open(f"{self.directory}/clip_info.json", "w"), indent=2)
-
-    def _save_sample(self):
-        json.dump(self._sample, open(f"{self.directory}/sample.json", "w"), indent=2)
-        
-    def sample(self):
-        for info in _triplets(self._clip_info.values(), lambda x: x['duration']):
-            yield info
-
-    def __getitem__(self, idx):
-        target_info, distractor_info = self._sample[idx]
-        with m.VideoFileClip(target_info['path']) as target:
-            with m.VideoFileClip(distractor_info['path']) as distractor:
-                if self.raw:
-                    return Triplet(anchor=target.audio, positive=target, negative=distractor)
-                else:
-                    positive = self._dataset.featurize(target)
-                    negative = self._dataset.featurize(distractor)
-                    return Triplet(anchor=positive.audio, positive=positive.video, negative=negative.video)
-                   
-    def __len__(self):
-        return len(self._sample)
 
     
 class PeppaPigDataset(Dataset):
@@ -148,7 +71,7 @@ class PeppaPigDataset(Dataset):
             self.cache_dir = cache_dir
         if cache:
             os.makedirs(self.cache_dir, exist_ok=True)
-            json.dump(kwargs, open(f"{self.cache_dir}/settings.json", "w"))
+            pickle.dump(kwargs, open(f"{self.cache_dir}/settings.pkl", "wb"))
             for i, item in enumerate(dataset):
                 logging.info(f"Caching item {i}")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
@@ -185,7 +108,6 @@ class PeppaPigIterableDataset(IterableDataset):
         self.fragment_type = fragment_type
         self.duration = duration
         self.jitter = jitter
-        self.settings = {**self.__dict__}
         self.transform = pig.util.identity if transform is None else transform 
         self.split_spec = dict(dialog=dict(train = range(1, 197),
                                            val  = range(197, 203),
@@ -209,9 +131,9 @@ class PeppaPigIterableDataset(IterableDataset):
     def _clips(self):
         for clip in self._raw_clips():
             try:
-                yield self._featurize(clip)
-            except ValueError(e):
-                pass
+                yield self.featurize(clip)
+            except ValueError as e:
+                logging.warning(f"{e}")
 
     def _raw_clips(self):
         width,  height = self.target_size
@@ -295,7 +217,7 @@ def worker_init_fn(worker_id):
 def config_id(config):
     import hashlib
     sha = hashlib.sha256()
-    sha.update(json.dumps(config).encode())
+    sha.update(pickle.dumps(config))
     return sha.hexdigest()
     
 class PigData(pl.LightningDataModule):
@@ -353,33 +275,33 @@ class PigData(pl.LightningDataModule):
                                             if k not in self.loader_args})
 
         if self.config['fixed_triplet']:
-            self.val_dia3 = PeppaPigDataset.from_directory("data/out/val_dialog_triplets")
+            self.val_dia3 = PeppaTripletDataset.load("data/out/val_dialog_triplets_v2")
         else:
-            self.val_dia3 = PeppaPigDataset(cache=self.config['cache'],
-                                            transform=self.transform,
-                                            target_size=self.config['target_size'],
-                                            triplet=True,
-                                            split=['val'], fragment_type='dialog', duration=None,
-                                            **{k:v for k,v in self.config['val'].items()
-                                               if k not in self.loader_args})
+            self.val_dia3 = PeppaTripletDataset.from_dataset(
+                PeppaPigIterableDataset(transform=self.transform,
+                                        target_size=self.config['target_size'],
+                                        split=['val'], fragment_type='dialog', duration=None,
+                                        **{k:v for k,v in self.config['val'].items()
+                                           if k not in self.loader_args}),
+                "data/out/val_dialog_triplets_v2")
         self.val_narr = PeppaPigDataset(cache=self.config['cache'],
                                         transform=self.transform,
                                         target_size=self.config['target_size'],
-                                        triplet=False,
                                         split=['val'], fragment_type='narration',
                                         duration=3.2,
                                         **{k:v for k,v in self.config['val'].items()
                                            if k not in self.loader_args})
         if self.config['fixed_triplet']:
-            self.val_narr3 = PeppaPigDataset.from_directory("data/out/val_narration_triplets")
+            self.val_narr3 = PeppaTripletDataset.load("data/out/val_narration_triplets_v2")
         else:
-            self.val_narr3 = PeppaPigDataset(cache=self.config['cache'],
-                                             transform=self.transform,
-                                             target_size=self.config['target_size'],
-                                             triplet=True,
-                                             split=['val'], fragment_type='narration', duration=None,
-                                             **{k:v for k,v in self.config['val'].items()
-                                                if k not in self.loader_args})
+            self.val_narr3 = PeppaTripletDataset(
+                PeppaPigIterableDataset(
+                    transform=self.transform,
+                    target_size=self.config['target_size'],
+                    split=['val'], fragment_type='narration', duration=None,
+                    **{k:v for k,v in self.config['val'].items()
+                       if k not in self.loader_args}),
+                "data/out/val_narration_triplets_v2")
             
 
     def train_dataloader(self):
@@ -408,58 +330,3 @@ class PigData(pl.LightningDataModule):
         #return DataLoader(self.test, collate_fn=collate, num_workers=self.config['num_workers'],
         #                  batch_size=self.config['test']['batch_size'])
 
-def pairs(xs):
-    if len(xs) < 2:
-        return []
-    else:
-        return [(xs[0], xs[1])] + pairs(xs[2:])
-
-@dataclass
-class Triplet:
-    anchor: ...
-    positive: ...
-    negative: ...
-    
-    def __hash__(self):
-        return hash((self.anchor, self.positive, self.negative))
-    
-
-@dataclass
-class TripletBatch:
-    anchor: ...
-    positive: ...
-    negative: ...
-
-    def __hash__(self):
-        return hash((self.anchor.sum(), self.positive.sum(), self.negative.sum()))
-    
-
-
-def _triplets(clips, criterion): 
-    for size, items in grouped(clips, key=criterion):
-        paired = pairs(shuffled(items))
-        for p in paired:
-            target, distractor = random.sample(p, 2)
-            yield (target, distractor)
-
-
-def triplets(clips):
-    """Generates triplets of (a, v1, v2) where a is an audio clip, v1
-       matching video and v2 a distractor video, matched by duration."""
-    items = _triplets(clips, lambda x: x.duration)
-    for target, distractor in items:
-        yield Triplet(anchor=target.audio, positive=target.video, negative=distractor.video)
-
-
-def collate_triplets(data):
-    anchor, pos, neg = zip(*[(x.anchor, x.positive, x.negative) for x in data])
-    return TripletBatch(anchor=pad_audio_batch(anchor),
-                        positive=pad_video_batch(pos),
-                        negative=pad_video_batch(neg))
-
-
-def shuffled(xs):
-    return sorted(xs, key=lambda _: random.random())
-
-def grouped(xs, key=lambda x: x):
-    return groupby(sorted(xs, key=key), key=key)

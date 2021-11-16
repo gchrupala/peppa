@@ -1,5 +1,6 @@
 
 import pig.data as D
+from pig.triplet import PeppaTripletDataset
 import logging
 import torch
 import random
@@ -9,12 +10,7 @@ torch.manual_seed(666)
 
 logging.getLogger().setLevel(logging.INFO)
 
-ds._prepare_triplets()
-
-
-# ds = D.PeppaPigDataset(cache=True, cache_dir="data/out/val_dialog_triplets", triplet=True, split=['val'], fragment_type='dialog', duration=None, jitter=False)
-# for x in ds:
-#     pass
-# ds = D.PeppaPigDataset(cache=True, cache_dir="data/out/val_narration_triplets", triplet=True, split=['val'], fragment_type='narration', duration=None, jitter=False)
-# for x in ds:
-#     pass
+ds = D.PeppaPigIterableDataset(split=['val'], fragment_type='dialog',    duration=None, jitter=False)
+PeppaTripletDataset.from_dataset(ds, "data/out/val_dialog_triplets_v2")
+ds = D.PeppaPigIterableDataset(split=['val'], fragment_type='narration', duration=None, jitter=False)
+PeppaTripletDataset.from_dataset(ds, "data/out/val_narration_triplets_v2")
