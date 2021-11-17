@@ -27,8 +27,4 @@ def pad_video_batch(video):
     return torch.stack([ F.pad(x, (0,0, 0,0, 0,size-x.shape[1]), 'constant', 0) for x in video ])
 
                   
-def speakerize(data):
-    for part in data['narrator_splits']:
-        for sub in part['context']['subtitles']:
-            sub['speaker'] = None
             
