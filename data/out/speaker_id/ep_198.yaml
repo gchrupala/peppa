@@ -509,32 +509,32 @@ narrator_splits:
     - begin: 00:01:35
       end: 00:01:38
       narrator: 0
-      speaker: null
+      speaker: Pedro
       text: '- Sorry, Madame Gazelle. I overslept.'
     - begin: 00:01:38
       end: 00:01:42
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: '- Oh, Pedro, you do like sleeping.'
     - begin: 00:01:42
       end: 00:01:45
       narrator: 0
-      speaker: null
+      speaker: Pedro
       text: '[yawning] - Yes, Madame Gazelle.'
     - begin: 00:01:45
       end: 00:01:47
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: '- To the museum.'
     - begin: 00:01:47
       end: 00:01:50
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: Nothing can stop us now.
     - begin: 00:01:50
       end: 00:01:54
       narrator: 0
-      speaker: null
+      speaker: Pedro
       text: '- Uh, Madame Gazelle, I need the toilet.'
     - begin: 00:01:54
       end: 00:01:56
@@ -1062,27 +1062,27 @@ narrator_splits:
     - begin: 00:01:59
       end: 00:02:01
       narrator: 0
-      speaker: null
+      speaker: Granddad Dog
       text: '[barking] - What will it be?'
     - begin: 00:02:01
       end: 00:02:03
       narrator: 0
-      speaker: null
+      speaker: Granddad Dog
       text: Petrol or diesel?
     - begin: 00:02:03
       end: 00:02:05
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: '- Toilet, please. [kids giggling]'
     - begin: 00:02:05
       end: 00:02:09
       narrator: 0
-      speaker: null
+      speaker: Granddad Dog
       text: '- Are you sure you wouldn''t like any petrol?'
     - begin: 00:02:09
       end: 00:02:11
       narrator: 0
-      speaker: null
+      speaker: Miss Rabbit
       text: '- No, we haven''t gone anywhere yet.'
     - begin: 00:02:11
       end: 00:02:13
@@ -1092,32 +1092,32 @@ narrator_splits:
     - begin: 00:02:14
       end: 00:02:18
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: '- Right. Next stop: the museum.'
     - begin: 00:02:18
       end: 00:02:20
       narrator: 0
-      speaker: null
+      speaker: Suzy
       text: '- Oh, where is Pedro?'
     - begin: 00:02:20
       end: 00:02:23
       narrator: 0
-      speaker: null
+      speaker: Pedro
       text: '- Petrol pumps. Interesting.'
     - begin: 00:02:23
       end: 00:02:26
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: '- Oh! Come along, Pedro!'
     - begin: 00:02:28
       end: 00:02:31
       narrator: 0
-      speaker: null
+      speaker: Granddad Dog
       text: '- Bye!'
     - begin: 00:02:31
       end: 00:02:34
       narrator: 0
-      speaker: null
+      speaker: Miss Rabbit
       text: '- I hope we get the museum before it closes.'
     tokenized:
     - begin: '0:01:58.037415'
@@ -1459,17 +1459,17 @@ narrator_splits:
     - begin: 00:02:39
       end: 00:02:44
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: '- Hello, Mr. Rabbit. We would like to see the museum, please.'
     - begin: 00:02:44
       end: 00:02:49
       narrator: 0
-      speaker: null
+      speaker: Mr Rabbit
       text: '- Hmm. We were just closing, but I can give you a quick tour.'
     - begin: 00:02:49
       end: 00:02:53
       narrator: 0
-      speaker: null
+      speaker: Mr Rabbit
       text: This is the King and Queen's Room, full of old stuff.
     - begin: 00:02:53
       end: 00:02:54
@@ -1479,12 +1479,12 @@ narrator_splits:
     - begin: 00:02:54
       end: 00:02:57
       narrator: 0
-      speaker: null
+      speaker: Pedro
       text: '- Hmm. Interesting.'
     - begin: 00:02:57
       end: 00:03:00
       narrator: 0
-      speaker: null
+      speaker: Mr Rabbit
       text: '- Here are the giant dinosaurs. All very nice.'
     - begin: 00:03:00
       end: 00:03:02
@@ -1494,12 +1494,12 @@ narrator_splits:
     - begin: 00:03:02
       end: 00:03:05
       narrator: 0
-      speaker: null
+      speaker: Pedro
       text: '- Amazing!'
     - begin: 00:03:05
       end: 00:03:08
       narrator: 0
-      speaker: null
+      speaker: Mr Rabbit
       text: '- Space rockets and all that.'
     - begin: 00:03:08
       end: 00:03:10
@@ -1509,12 +1509,12 @@ narrator_splits:
     - begin: 00:03:10
       end: 00:03:14
       narrator: 0
-      speaker: null
+      speaker: Mr Rabbit
       text: '- And through this door is the most amazing place of all.'
     - begin: 00:03:15
       end: 00:03:18
       narrator: 0
-      speaker: null
+      speaker: Mr Rabbit
       text: It's the fantastic world you live in.
     - begin: 00:03:18
       end: 00:03:20
@@ -1524,7 +1524,7 @@ narrator_splits:
     - begin: 00:03:20
       end: 00:03:22
       narrator: 0
-      speaker: null
+      speaker: Mr Rabbit
       text: '- My pleasure. Goodbye.'
     - begin: 00:03:23
       end: 00:03:27
@@ -1534,27 +1534,27 @@ narrator_splits:
     - begin: 00:03:27
       end: 00:03:29
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: '- Oh, Pedro!'
     - begin: 00:03:29
       end: 00:03:31
       narrator: 0
-      speaker: null
+      speaker: Pedro
       text: '- A mollusc.'
     - begin: 00:03:31
       end: 00:03:33
       narrator: 0
-      speaker: null
+      speaker: Pedro
       text: Very interesting.
     - begin: 00:03:33
       end: 00:03:36
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: '- Come on, Pedro. You''ll miss the bus.'
     - begin: 00:03:36
       end: 00:03:39
       narrator: 0
-      speaker: null
+      speaker: Pedro
       text: '- Where is everybody?'
     tokenized:
     - begin: '0:02:37.866893'
@@ -2201,7 +2201,7 @@ narrator_splits:
     - begin: 00:03:51
       end: 00:03:54
       narrator: 0
-      speaker: null
+      speaker: Miss Rabbit
       text: '- All together now! [all singing]'
     tokenized:
     - begin: '0:03:45.503175'
@@ -2369,22 +2369,22 @@ narrator_splits:
     - begin: 00:04:01
       end: 00:04:06
       narrator: 0
-      speaker: null
+      speaker: null  
       text: '- Oh, have you missed the bus? - Mr. Rabbit, I am a teacher.'
     - begin: 00:04:06
       end: 00:04:08
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: I need your car.
     - begin: 00:04:09
       end: 00:04:13
       narrator: 0
-      speaker: null
+      speaker: Madame Gazelle
       text: Come on, Pedro. We'll take a shortcut.
     - begin: 00:04:14
       end: 00:04:17
       narrator: 0
-      speaker: null
+      speaker: Pedro
       text: '- Hello, ducks! [quacking]'
     tokenized:
     - begin: '0:03:56.568027'

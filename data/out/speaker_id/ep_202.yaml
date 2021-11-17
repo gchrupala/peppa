@@ -1,0 +1,2391 @@
+id: '202'
+narrator_splits:
+- context:
+    subtitles:
+    - begin: 00:00:01
+      end: 00:00:03
+      narrator: 0
+      speaker: null
+      text: '[theme music]'
+    - begin: 00:00:03
+      end: 00:00:05
+      narrator: 0
+      speaker: null
+      text: '- I''m Peppa Pig. [snorts]'
+    - begin: 00:00:05
+      end: 00:00:07
+      narrator: 0
+      speaker: null
+      text: This is my little brother, George.
+    - begin: 00:00:07
+      end: 00:00:08
+      narrator: 0
+      speaker: null
+      text: '[little snort]'
+    - begin: 00:00:08
+      end: 00:00:10
+      narrator: 0
+      speaker: null
+      text: This is Mummy Pig. [loud snort]
+    - begin: 00:00:10
+      end: 00:00:13
+      narrator: 0
+      speaker: null
+      text: And this is Daddy Pig. [very loud snort and laughter]
+    - begin: 00:00:13
+      end: 00:00:16
+      narrator: 0
+      speaker: null
+      text: Peppa Pig! [snorts]
+    tokenized: []
+  dialogue_tokenized: []
+  narration:
+    subtitles:
+    - begin: 00:00:18
+      end: 00:00:21
+      narrator: 1
+      text: It is Fruit Day  at the supermarket.
+    tokenized:
+    - begin: '0:00:19.122222'
+      end: '0:00:19.401587'
+      token: it
+      token_id: 0
+    - begin: '0:00:19.401587'
+      end: '0:00:19.581179'
+      token: is
+      token_id: 1
+    - begin: '0:00:19.581179'
+      end: '0:00:19.830612'
+      token: fruit
+      token_id: 2
+    - begin: '0:00:19.900454'
+      end: '0:00:20.329478'
+      token: day
+      token_id: 3
+    - begin: '0:00:20.329478'
+      end: '0:00:20.618821'
+      token: at
+      token_id: 4
+    - begin: '0:00:20.818367'
+      end: '0:00:20.898186'
+      token: the
+      token_id: 5
+    - begin: '0:00:20.898186'
+      end: '0:00:22.055556'
+      token: supermarket
+      token_id: 6
+  narration_tokenized:
+  - it
+  - is
+  - fruit
+  - day
+  - at
+  - the
+  - supermarket
+  split_id: 1124
+- context:
+    subtitles:
+    - begin: 00:00:21
+      end: 00:00:24
+      narrator: 0
+      speaker: Daddy Pig
+      text: '- Look! It''s Mr. Potato! - Mrs. Carrot.'
+    - begin: 00:00:24
+      end: 00:00:27
+      narrator: 0
+      speaker: Peppa
+      text: '- Sweet Cranberry and Little Sprout!'
+    - begin: 00:00:27
+      end: 00:00:29
+      narrator: 0
+      speaker: null
+      text: '[squeaking] [laughter]'
+    - begin: 00:00:29
+      end: 00:00:31
+      narrator: 0
+      speaker: null
+      text: "\u266A Apple and banana "
+    - begin: 00:00:31
+      end: 00:00:34
+      narrator: 0
+      speaker: null
+      text: "\u266A Pear and pineapple too "
+    - begin: 00:00:34
+      end: 00:00:37
+      narrator: 0
+      speaker: null
+      text: "\u266A Eat five pieces of fruit a day \u266A"
+    - begin: 00:00:37
+      end: 00:00:39
+      narrator: 0
+      speaker: null
+      text: "\u266A Because they're good for you \u266A\u266A"
+    - begin: 00:00:39
+      end: 00:00:42
+      narrator: 0
+      speaker: Mr Potato
+      text: '[laughter] - Welcome to Fruit Day,'
+    - begin: 00:00:42
+      end: 00:00:47
+      narrator: 0
+      speaker: Mr Potato
+      text: where the magic of fruit never ends!
+    - begin: 00:00:47
+      end: 00:00:49
+      narrator: 0
+      speaker: null
+      text: '[music] - Wow!'
+    - begin: 00:00:49
+      end: 00:00:51
+      narrator: 0
+      speaker: Peppa
+      text: So much fruit!
+    - begin: 00:00:51
+      end: 00:00:53
+      narrator: 0
+      speaker: null
+      text: '[all]: Hello, Peppa! - Hello!'
+    - begin: 00:00:53
+      end: 00:00:56
+      narrator: 0
+      speaker: Suzy
+      text: '- We are choosing our favourite fruit.'
+    - begin: 00:00:56
+      end: 00:00:58
+      narrator: 0
+      speaker: Suzy
+      text: What's your favourite?
+    - begin: 00:00:58
+      end: 00:01:02
+      narrator: 0
+      speaker: 
+      text: '- Um... I like apples. - I like oranges.'
+    - begin: 00:01:02
+      end: 00:01:06
+      narrator: 0
+      speaker: null
+      text: '- I like bananas. - I like carrots.'
+    - begin: 00:01:06
+      end: 00:01:09
+      narrator: 0
+      speaker: null
+      text: '- Carrots are not a fruit. - Oh.'
+    - begin: 00:01:09
+      end: 00:01:12
+      narrator: 0
+      speaker: Edmond
+      text: '- Carrots are a vegetable. [trumpeting]'
+    tokenized:
+    - begin: '0:00:22.055556'
+      end: '0:00:22.634240'
+      token: look
+      token_id: 7
+    - begin: '0:00:22.634240'
+      end: '0:00:22.803855'
+      token: it's
+      token_id: 8
+    - begin: '0:00:22.803855'
+      end: '0:00:23.153061'
+      token: mr
+      token_id: 9
+    - begin: '0:00:23.153061'
+      end: '0:00:23.492290'
+      token: potato
+      token_id: 10
+    - begin: '0:00:23.492290'
+      end: '0:00:24.120862'
+      token: mrs
+      token_id: 11
+    - begin: '0:00:24.120862'
+      end: '0:00:25.437868'
+      token: carrot
+      token_id: 12
+    - begin: '0:00:25.437868'
+      end: '0:00:25.866893'
+      token: sweet
+      token_id: 13
+    - begin: '0:00:25.866893'
+      end: '0:00:26.734921'
+      token: cranberry
+      token_id: 14
+    - begin: '0:00:27.084127'
+      end: '0:00:27.463265'
+      token: and
+      token_id: 15
+    - begin: '0:00:27.533107'
+      end: '0:00:28.381179'
+      token: little
+      token_id: 16
+    - begin: '0:00:28.381179'
+      end: '0:00:28.810204'
+      token: sprout
+      token_id: 17
+    - begin: '0:00:28.989796'
+      end: '0:00:29.049660'
+      token: '*animalsound*'
+      token_id: 18
+    - begin: '0:00:29.049660'
+      end: '0:00:29.079592'
+      token: '*laugh*'
+      token_id: 19
+    - begin: '0:00:29.079592'
+      end: '0:00:29.189342'
+      token: '*music*'
+      token_id: 20
+    - begin: '0:00:29.189342'
+      end: '0:00:30.107256'
+      token: apple
+      token_id: 21
+    - begin: '0:00:30.107256'
+      end: '0:00:30.296825'
+      token: and
+      token_id: 22
+    - begin: '0:00:30.296825'
+      end: '0:00:31.164853'
+      token: banana
+      token_id: 23
+    - begin: '0:00:31.214739'
+      end: '0:00:31.633787'
+      token: '*music*'
+      token_id: 24
+    - begin: '0:00:31.633787'
+      end: '0:00:31.723583'
+      token: pear
+      token_id: 25
+    - begin: '0:00:31.723583'
+      end: '0:00:32.032880'
+      token: and
+      token_id: 26
+    - begin: '0:00:32.032880'
+      end: '0:00:32.471882'
+      token: pineapple
+      token_id: 27
+    - begin: '0:00:32.471882'
+      end: '0:00:33.519501'
+      token: too
+      token_id: 28
+    - begin: '0:00:33.519501'
+      end: '0:00:33.559410'
+      token: '*music*'
+      token_id: 29
+    - begin: '0:00:33.559410'
+      end: '0:00:33.868707'
+      token: eat
+      token_id: 30
+    - begin: '0:00:33.868707'
+      end: '0:00:34.148073'
+      token: five
+      token_id: 31
+    - begin: '0:00:34.148073'
+      end: '0:00:34.487302'
+      token: pieces
+      token_id: 32
+    - begin: '0:00:34.487302'
+      end: '0:00:34.796599'
+      token: of
+      token_id: 33
+    - begin: '0:00:34.796599'
+      end: '0:00:35.105896'
+      token: fruit
+      token_id: 34
+    - begin: '0:00:35.105896'
+      end: '0:00:35.205669'
+      token: a
+      token_id: 35
+    - begin: '0:00:35.245578'
+      end: '0:00:35.684580'
+      token: day
+      token_id: 36
+    - begin: '0:00:35.684580'
+      end: '0:00:35.724490'
+      token: '*music*'
+      token_id: 37
+    - begin: '0:00:35.724490'
+      end: '0:00:35.774376'
+      token: '*music*'
+      token_id: 38
+    - begin: '0:00:35.774376'
+      end: '0:00:36.243311'
+      token: because
+      token_id: 39
+    - begin: '0:00:36.243311'
+      end: '0:00:36.492744'
+      token: they're
+      token_id: 40
+    - begin: '0:00:36.492744'
+      end: '0:00:36.782086'
+      token: good
+      token_id: 41
+    - begin: '0:00:36.782086'
+      end: '0:00:37.011565'
+      token: for
+      token_id: 42
+    - begin: '0:00:37.011565'
+      end: '0:00:37.590249'
+      token: you
+      token_id: 43
+    - begin: '0:00:37.590249'
+      end: '0:00:39.585714'
+      token: '*music*'
+      token_id: 44
+    - begin: '0:00:39.585714'
+      end: '0:00:39.615646'
+      token: '*laugh*'
+      token_id: 45
+    - begin: '0:00:39.615646'
+      end: '0:00:40.353968'
+      token: welcome
+      token_id: 46
+    - begin: '0:00:40.353968'
+      end: '0:00:40.703175'
+      token: to
+      token_id: 47
+    - begin: '0:00:40.703175'
+      end: '0:00:41.172109'
+      token: fruit
+      token_id: 48
+    - begin: '0:00:41.172109'
+      end: '0:00:41.840590'
+      token: day
+      token_id: 49
+    - begin: '0:00:41.840590'
+      end: '0:00:42.618821'
+      token: where
+      token_id: 50
+    - begin: '0:00:42.618821'
+      end: '0:00:42.798413'
+      token: the
+      token_id: 51
+    - begin: '0:00:42.798413'
+      end: '0:00:43.407029'
+      token: magic
+      token_id: 52
+    - begin: '0:00:43.407029'
+      end: '0:00:43.596599'
+      token: of
+      token_id: 53
+    - begin: '0:00:43.596599'
+      end: '0:00:44.225170'
+      token: fruit
+      token_id: 54
+    - begin: '0:00:44.394785'
+      end: '0:00:44.933560'
+      token: never
+      token_id: 55
+    - begin: '0:00:45.013379'
+      end: '0:00:45.841497'
+      token: ends
+      token_id: 56
+    - begin: '0:00:45.841497'
+      end: '0:00:45.981179'
+      token: '*music*'
+      token_id: 57
+    - begin: '0:00:45.981179'
+      end: '0:00:46.240590'
+      token: wow
+      token_id: 58
+    - begin: '0:00:46.240590'
+      end: '0:00:46.460091'
+      token: so
+      token_id: 59
+    - begin: '0:00:46.569841'
+      end: '0:00:46.968934'
+      token: much
+      token_id: 60
+    - begin: '0:00:47.188435'
+      end: '0:00:47.358050'
+      token: fruit
+      token_id: 61
+    - begin: '0:00:47.387982'
+      end: '0:00:47.547619'
+      token: all
+      token_id: 62
+    - begin: '0:00:47.547619'
+      end: '0:00:49.792517'
+      token: hello
+      token_id: 63
+    - begin: '0:00:50.031973'
+      end: '0:00:50.331293'
+      token: peppa
+      token_id: 64
+    - begin: '0:00:50.331293'
+      end: '0:00:52.915420'
+      token: hello
+      token_id: 65
+    - begin: '0:00:52.915420'
+      end: '0:00:53.314512'
+      token: we
+      token_id: 66
+    - begin: '0:00:53.314512'
+      end: '0:00:53.474150'
+      token: are
+      token_id: 67
+    - begin: '0:00:53.474150'
+      end: '0:00:54.052834'
+      token: choosing
+      token_id: 68
+    - begin: '0:00:54.052834'
+      end: '0:00:54.242404'
+      token: our
+      token_id: 69
+    - begin: '0:00:54.242404'
+      end: '0:00:54.900907'
+      token: favourite
+      token_id: 70
+    - begin: '0:00:54.950794'
+      end: '0:00:55.319955'
+      token: fruit
+      token_id: 71
+    - begin: '0:00:55.758957'
+      end: '0:00:56.118141'
+      token: what's
+      token_id: 72
+    - begin: '0:00:56.118141'
+      end: '0:00:56.507256'
+      token: your
+      token_id: 73
+    - begin: '0:00:56.577098'
+      end: '0:00:57.065986'
+      token: favourite
+      token_id: 74
+    - begin: '0:00:57.065986'
+      end: '0:00:57.125850'
+      token: um
+      token_id: 75
+    - begin: '0:00:57.125850'
+      end: '0:00:57.155782'
+      token: i
+      token_id: 76
+    - begin: '0:00:57.724490'
+      end: '0:00:57.824263'
+      token: like
+      token_id: 77
+    - begin: '0:00:57.824263'
+      end: '0:00:58.582540'
+      token: apples
+      token_id: 78
+    - begin: '0:00:58.582540'
+      end: '0:00:58.612472'
+      token: i
+      token_id: 79
+    - begin: '0:00:58.622449'
+      end: '0:00:58.812018'
+      token: like
+      token_id: 80
+    - begin: '0:00:58.812018'
+      end: '0:00:59.999320'
+      token: oranges
+      token_id: 81
+    - begin: '0:01:00.268707'
+      end: '0:01:00.578005'
+      token: i
+      token_id: 82
+    - begin: '0:01:00.578005'
+      end: '0:01:01.066893'
+      token: like
+      token_id: 83
+    - begin: '0:01:01.066893'
+      end: '0:01:01.565760'
+      token: bananas
+      token_id: 84
+    - begin: '0:01:01.565760'
+      end: '0:01:01.605669'
+      token: i
+      token_id: 85
+    - begin: '0:01:01.605669'
+      end: '0:01:01.835147'
+      token: like
+      token_id: 86
+    - begin: '0:01:02.174376'
+      end: '0:01:03.521315'
+      token: carrots
+      token_id: 87
+    - begin: '0:01:04.030159'
+      end: '0:01:05.287302'
+      token: carrots
+      token_id: 88
+    - begin: '0:01:06.065533'
+      end: '0:01:06.424717'
+      token: are
+      token_id: 89
+    - begin: '0:01:06.564399'
+      end: '0:01:07.093197'
+      token: not
+      token_id: 90
+    - begin: '0:01:07.093197'
+      end: '0:01:07.153061'
+      token: a
+      token_id: 91
+    - begin: '0:01:07.153061'
+      end: '0:01:07.781633'
+      token: fruit
+      token_id: 92
+    - begin: '0:01:08.280499'
+      end: '0:01:08.899093'
+      token: oh
+      token_id: 93
+    - begin: '0:01:09.208390'
+      end: '0:01:10.435601'
+      token: carrots
+      token_id: 94
+    - begin: '0:01:10.435601'
+      end: '0:01:10.864626'
+      token: are
+      token_id: 95
+    - begin: '0:01:11.074150'
+      end: '0:01:11.173923'
+      token: a
+      token_id: 96
+    - begin: '0:01:11.263719'
+      end: '0:01:11.782540'
+      token: vegetable
+      token_id: 97
+  dialogue_tokenized:
+  - look
+  - it's
+  - mr
+  - potato
+  - mrs
+  - carrot
+  - sweet
+  - cranberry
+  - and
+  - little
+  - sprout
+  - '*animalsound*'
+  - '*laugh*'
+  - '*music*'
+  - apple
+  - and
+  - banana
+  - '*music*'
+  - pear
+  - and
+  - pineapple
+  - too
+  - '*music*'
+  - eat
+  - five
+  - pieces
+  - of
+  - fruit
+  - a
+  - day
+  - '*music*'
+  - '*music*'
+  - because
+  - they're
+  - good
+  - for
+  - you
+  - '*music*'
+  - '*laugh*'
+  - welcome
+  - to
+  - fruit
+  - day
+  - where
+  - the
+  - magic
+  - of
+  - fruit
+  - never
+  - ends
+  - '*music*'
+  - wow
+  - so
+  - much
+  - fruit
+  - all
+  - hello
+  - peppa
+  - hello
+  - we
+  - are
+  - choosing
+  - our
+  - favourite
+  - fruit
+  - what's
+  - your
+  - favourite
+  - um
+  - i
+  - like
+  - apples
+  - i
+  - like
+  - oranges
+  - i
+  - like
+  - bananas
+  - i
+  - like
+  - carrots
+  - carrots
+  - are
+  - not
+  - a
+  - fruit
+  - oh
+  - carrots
+  - are
+  - a
+  - vegetable
+  narration:
+    subtitles:
+    - begin: 00:01:12
+      end: 00:01:15
+      narrator: 1
+      text: Edmond is a bit  of a clever clogs.
+    tokenized:
+    - begin: '0:01:12.760317'
+      end: '0:01:13.348980'
+      token: edmond
+      token_id: 98
+    - begin: '0:01:13.378912'
+      end: '0:01:13.538549'
+      token: is
+      token_id: 99
+    - begin: '0:01:13.538549'
+      end: '0:01:13.648299'
+      token: a
+      token_id: 100
+    - begin: '0:01:13.648299'
+      end: '0:01:13.797959'
+      token: bit
+      token_id: 101
+    - begin: '0:01:13.797959'
+      end: '0:01:13.907710'
+      token: of
+      token_id: 102
+    - begin: '0:01:13.907710'
+      end: '0:01:14.007483'
+      token: a
+      token_id: 103
+    - begin: '0:01:14.037415'
+      end: '0:01:14.386621'
+      token: clever
+      token_id: 104
+    - begin: '0:01:14.386621'
+      end: '0:01:14.935374'
+      token: clogs
+      token_id: 105
+  narration_tokenized:
+  - edmond
+  - is
+  - a
+  - bit
+  - of
+  - a
+  - clever
+  - clogs
+  split_id: 1125
+- context:
+    subtitles:
+    - begin: 00:01:16
+      end: 00:01:18
+      narrator: 0
+      speaker: Emily
+      text: '- What''s your favourite fruit, George?'
+    - begin: 00:01:18
+      end: 00:01:21
+      narrator: 0
+      speaker: Emily
+      text: '- Is it bananas?'
+    - begin: 00:01:21
+      end: 00:01:22
+      narrator: 0
+      speaker: Emily
+      text: '- Or oranges?'
+    - begin: 00:01:22
+      end: 00:01:25
+      narrator: 0
+      speaker: Peppa
+      text: '- George likes strawberries the best.'
+    - begin: 00:01:25
+      end: 00:01:27
+      narrator: 0
+      speaker: George
+      text: '- Strawberry!'
+    tokenized:
+    - begin: '0:01:15.294558'
+      end: '0:01:15.733560'
+      token: what's
+      token_id: 106
+    - begin: '0:01:15.733560'
+      end: '0:01:16.082766'
+      token: your
+      token_id: 107
+    - begin: '0:01:16.082766'
+      end: '0:01:16.561678'
+      token: favourite
+      token_id: 108
+    - begin: '0:01:16.561678'
+      end: '0:01:16.930839'
+      token: fruit
+      token_id: 109
+    - begin: '0:01:16.930839'
+      end: '0:01:17.589342'
+      token: george
+      token_id: 110
+    - begin: '0:01:17.629252'
+      end: '0:01:17.689116'
+      token: is
+      token_id: 111
+    - begin: '0:01:17.689116'
+      end: '0:01:17.968481'
+      token: it
+      token_id: 112
+    - begin: '0:01:17.968481'
+      end: '0:01:19.764399'
+      token: bananas
+      token_id: 113
+    - begin: '0:01:20.273243'
+      end: '0:01:20.702268'
+      token: or
+      token_id: 114
+    - begin: '0:01:20.702268'
+      end: '0:01:21.759864'
+      token: oranges
+      token_id: 115
+    - begin: '0:01:22.348526'
+      end: '0:01:22.887302'
+      token: george
+      token_id: 116
+    - begin: '0:01:22.887302'
+      end: '0:01:23.276417'
+      token: likes
+      token_id: 117
+    - begin: '0:01:23.276417'
+      end: '0:01:24.433787'
+      token: strawberries
+      token_id: 118
+    - begin: '0:01:24.433787'
+      end: '0:01:24.673243'
+      token: the
+      token_id: 119
+    - begin: '0:01:25.471429'
+      end: '0:01:26.139909'
+      token: best
+      token_id: 120
+    - begin: '0:01:26.139909'
+      end: '0:01:26.798413'
+      token: strawberry
+      token_id: 121
+  dialogue_tokenized:
+  - what's
+  - your
+  - favourite
+  - fruit
+  - george
+  - is
+  - it
+  - bananas
+  - or
+  - oranges
+  - george
+  - likes
+  - strawberries
+  - the
+  - best
+  - strawberry
+  narration:
+    subtitles:
+    - begin: 00:01:27
+      end: 00:01:29
+      narrator: 1
+      text: George loves strawberries.
+    tokenized:
+    - begin: '0:01:26.798413'
+      end: '0:01:27.227438'
+      token: george
+      token_id: 122
+    - begin: '0:01:27.227438'
+      end: '0:01:27.686395'
+      token: loves
+      token_id: 123
+    - begin: '0:01:27.686395'
+      end: '0:01:28.424717'
+      token: strawberries
+      token_id: 124
+  narration_tokenized:
+  - george
+  - loves
+  - strawberries
+  split_id: 1126
+- context:
+    subtitles:
+    - begin: 00:01:29
+      end: 00:01:33
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- Smoothies! Get your fruit smoothies here!'
+    - begin: 00:01:33
+      end: 00:01:35
+      narrator: 0
+      speaker: null
+      text: '[laughter]'
+    - begin: 00:01:35
+      end: 00:01:39
+      narrator: 0
+      speaker: Peppa
+      text: '- Hello, Miss Rabbit! What''s a fruit smoothie?'
+    - begin: 00:01:39
+      end: 00:01:42
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- It''s a drink made from fruit. Would you like one?'
+    - begin: 00:01:42
+      end: 00:01:48
+      narrator: 0
+      speaker: Peppa
+      text: '- Yes, please. Can I have a smoothie with apples?'
+    - begin: 00:01:48
+      end: 00:01:52
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- Okay. But smoothies can have lots of different fruit in them.'
+    - begin: 00:01:52
+      end: 00:01:58
+      narrator: 0
+      speaker: Peppa
+      text: '- Okay. Apples, raspberries, bananas and more apples!'
+    - begin: 00:01:58
+      end: 00:02:00
+      narrator: 0
+      speaker: null
+      text: '[whirring]'
+    - begin: 00:02:00
+      end: 00:02:05
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- An apple-raspberry-banana- and-more-apples smoothie!'
+    - begin: 00:02:05
+      end: 00:02:07
+      narrator: 0
+      speaker: null
+      text: '[slurping]'
+    - begin: 00:02:07
+      end: 00:02:09
+      narrator: 0
+      speaker: Peppa
+      text: '- Mm! Delicious!'
+    - begin: 00:02:09
+      end: 00:02:12
+      narrator: 0
+      speaker: Danny
+      text: '- Can I have a smoothie, please? - Me too!'
+    - begin: 00:02:12
+      end: 00:02:15
+      narrator: 0
+      speaker: null
+      text: '- And me! - And me! - Of course.'
+    - begin: 00:02:15
+      end: 00:02:18
+      narrator: 0
+      speaker: Miss Rabbit
+      text: What fruit would you like in your smoothies?
+    - begin: 00:02:18
+      end: 00:02:21
+      narrator: 0
+      speaker: null
+      text: '- Uh, I don''t know. - It can be anything, Pedro.'
+    - begin: 00:02:21
+      end: 00:02:24
+      narrator: 0
+      speaker: Pedro
+      text: '- Okay. Cheese, please.'
+    - begin: 00:02:24
+      end: 00:02:27
+      narrator: 0
+      speaker: Peppa
+      text: '- Pedro, cheese isn''t a fruit.'
+    - begin: 00:02:27
+      end: 00:02:31
+      narrator: 0
+      speaker: Suzy
+      text: '- It has to be fruit or vegetables.'
+    - begin: 00:02:31
+      end: 00:02:34
+      narrator: 0
+      speaker: Pedro
+      text: '- Okay. Raspberries and blueberries'
+    - begin: 00:02:34
+      end: 00:02:37
+      narrator: 0
+      speaker: Pedro
+      text: and blackberries and gooseberries.
+    - begin: 00:02:37
+      end: 00:02:39
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- That''s more like it.'
+    - begin: 00:02:39
+      end: 00:02:44
+      narrator: 0
+      speaker: Miss Rabbit
+      text: Raspberry-and-blueberry- and-blackberry-and-gooseberry smoothies for everyone!
+    - begin: 00:02:46
+      end: 00:02:48
+      narrator: 0
+      speaker: null
+      text: '[slurping]'
+    - begin: 00:02:48
+      end: 00:02:50
+      narrator: 0
+      speaker: null
+      text: '[all]: Mm! Lovely!'
+    - begin: 00:02:50
+      end: 00:02:53
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- What do you want in your smoothie, George?'
+    - begin: 00:02:53
+      end: 00:02:55
+      narrator: 0
+      speaker: null
+      text: '- Strawberry! - George!'
+    - begin: 00:02:55
+      end: 00:03:00
+      narrator: 0
+      speaker: Peppa
+      text: A smoothie must have lots of fruit in it.
+    - begin: 00:03:00
+      end: 00:03:02
+      narrator: 0
+      speaker: Suzy
+      text: '- How about strawberries and pineapple, George?'
+    - begin: 00:03:02
+      end: 00:03:04
+      narrator: 0
+      speaker: George
+      text: '- No.'
+    - begin: 00:03:04
+      end: 00:03:08
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- Maybe George would like some dinosaur juice.'
+    - begin: 00:03:08
+      end: 00:03:10
+      narrator: 0
+      speaker: null
+      text: '- Dinosaur juice?! - Oh, yes.'
+    - begin: 00:03:10
+      end: 00:03:14
+      narrator: 0
+      speaker: Miss Rabbit
+      text: All dinosaurs like dinosaur juice.
+    - begin: 00:03:14
+      end: 00:03:16
+      narrator: 0
+      speaker: George
+      text: '[giggling] - Dinosaur.'
+    - begin: 00:03:16
+      end: 00:03:19
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- Let''s see. A bit of this, one of those,'
+    - begin: 00:03:19
+      end: 00:03:22
+      narrator: 0
+      speaker: Miss Rabbit 
+      text: a few of these, some of that.
+    - begin: 00:03:23
+      end: 00:03:25
+      narrator: 0
+      speaker: Miss Rabbit
+      text: One dinosaur juice,
+    - begin: 00:03:25
+      end: 00:03:29
+      narrator: 0
+      speaker: Miss Rabbit
+      text: just for dinosaurs and their little friends.
+    - begin: 00:03:29
+      end: 00:03:31
+      narrator: 0
+      speaker: George
+      text: '[giggling] - Dinosaur.'
+    - begin: 00:03:31
+      end: 00:03:35
+      narrator: 0
+      speaker: Peppa
+      text: '- Can I have some dinosaur juice, please, Miss Rabbit?'
+    - begin: 00:03:35
+      end: 00:03:37
+      narrator: 0
+      speaker: null
+      text: '- Me too! - And me! - And me!'
+    - begin: 00:03:37
+      end: 00:03:40
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- Okay. Dinosaur juice for everyone!'
+    - begin: 00:03:40
+      end: 00:03:42
+      narrator: 0
+      speaker: Miss Rabbit
+      text: Oh, bother.
+    - begin: 00:03:42
+      end: 00:03:44
+      narrator: 0
+      speaker: Peppa
+      text: '- What''s wrong, Miss Rabbit?'
+    - begin: 00:03:44
+      end: 00:03:48
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- I''ve forgotten what I put in the dinosaur juice.'
+    - begin: 00:03:48
+      end: 00:03:51
+      narrator: 0
+      speaker: null
+      text: '[all]: Oh. - I can tell you what was in it.'
+    - begin: 00:03:51
+      end: 00:03:53
+      narrator: 0
+      speaker: Miss Rabbit
+      text: '- Really? How?'
+    - begin: 00:03:53
+      end: 00:03:55
+      narrator: 0
+      speaker: Freddy
+      text: '- By smelling it!'
+    tokenized:
+    - begin: '0:01:28.424717'
+      end: '0:01:29.332653'
+      token: smoothies
+      token_id: 125
+    - begin: '0:01:29.332653'
+      end: '0:01:30.160771'
+      token: get
+      token_id: 126
+    - begin: '0:01:30.160771'
+      end: '0:01:30.460091'
+      token: your
+      token_id: 127
+    - begin: '0:01:30.460091'
+      end: '0:01:31.208390'
+      token: fruit
+      token_id: 128
+    - begin: '0:01:31.208390'
+      end: '0:01:32.016553'
+      token: smoothies
+      token_id: 129
+    - begin: '0:01:32.016553'
+      end: '0:01:33.124036'
+      token: here
+      token_id: 130
+    - begin: '0:01:33.124036'
+      end: '0:01:33.203855'
+      token: '*laugh*'
+      token_id: 131
+    - begin: '0:01:33.203855'
+      end: '0:01:36.137188'
+      token: hello
+      token_id: 132
+    - begin: '0:01:36.137188'
+      end: '0:01:36.376644'
+      token: miss
+      token_id: 133
+    - begin: '0:01:36.376644'
+      end: '0:01:36.656009'
+      token: rabbit
+      token_id: 134
+    - begin: '0:01:36.656009'
+      end: '0:01:37.973016'
+      token: what's
+      token_id: 135
+    - begin: '0:01:37.973016'
+      end: '0:01:38.012925'
+      token: a
+      token_id: 136
+    - begin: '0:01:38.012925'
+      end: '0:01:38.172562'
+      token: fruit
+      token_id: 137
+    - begin: '0:01:38.172562'
+      end: '0:01:38.471882'
+      token: smoothie
+      token_id: 138
+    - begin: '0:01:38.551701'
+      end: '0:01:38.801134'
+      token: it's
+      token_id: 139
+    - begin: '0:01:38.801134'
+      end: '0:01:38.880952'
+      token: a
+      token_id: 140
+    - begin: '0:01:38.880952'
+      end: '0:01:39.409751'
+      token: drink
+      token_id: 141
+    - begin: '0:01:39.409751'
+      end: '0:01:39.659184'
+      token: made
+      token_id: 142
+    - begin: '0:01:39.659184'
+      end: '0:01:39.918594'
+      token: from
+      token_id: 143
+    - begin: '0:01:39.918594'
+      end: '0:01:40.427438'
+      token: fruit
+      token_id: 144
+    - begin: '0:01:40.856463'
+      end: '0:01:41.135828'
+      token: would
+      token_id: 145
+    - begin: '0:01:41.135828'
+      end: '0:01:41.195692'
+      token: you
+      token_id: 146
+    - begin: '0:01:41.195692'
+      end: '0:01:41.375283'
+      token: like
+      token_id: 147
+    - begin: '0:01:41.375283'
+      end: '0:01:41.744444'
+      token: one
+      token_id: 148
+    - begin: '0:01:41.844218'
+      end: '0:01:42.353061'
+      token: 'yes'
+      token_id: 149
+    - begin: '0:01:42.612472'
+      end: '0:01:43.480499'
+      token: please
+      token_id: 150
+    - begin: '0:01:43.819728'
+      end: '0:01:43.999320'
+      token: can
+      token_id: 151
+    - begin: '0:01:43.999320'
+      end: '0:01:44.099093'
+      token: i
+      token_id: 152
+    - begin: '0:01:44.099093'
+      end: '0:01:44.508163'
+      token: have
+      token_id: 153
+    - begin: '0:01:44.647846'
+      end: '0:01:44.967120'
+      token: a
+      token_id: 154
+    - begin: '0:01:44.967120'
+      end: '0:01:45.316327'
+      token: smoothie
+      token_id: 155
+    - begin: '0:01:45.436054'
+      end: '0:01:45.675510'
+      token: with
+      token_id: 156
+    - begin: '0:01:46.174376'
+      end: '0:01:46.972562'
+      token: apples
+      token_id: 157
+    - begin: '0:01:47.281859'
+      end: '0:01:48.030159'
+      token: okay
+      token_id: 158
+    - begin: '0:01:48.209751'
+      end: '0:01:48.369388'
+      token: but
+      token_id: 159
+    - begin: '0:01:48.369388'
+      end: '0:01:48.948073'
+      token: smoothies
+      token_id: 160
+    - begin: '0:01:48.948073'
+      end: '0:01:49.117687'
+      token: can
+      token_id: 161
+    - begin: '0:01:49.117687'
+      end: '0:01:49.287302'
+      token: have
+      token_id: 162
+    - begin: '0:01:49.287302'
+      end: '0:01:49.586621'
+      token: lots
+      token_id: 163
+    - begin: '0:01:49.586621'
+      end: '0:01:49.716327'
+      token: of
+      token_id: 164
+    - begin: '0:01:49.716327'
+      end: '0:01:50.334921'
+      token: different
+      token_id: 165
+    - begin: '0:01:50.334921'
+      end: '0:01:50.674150'
+      token: fruit
+      token_id: 166
+    - begin: '0:01:50.674150'
+      end: '0:01:50.853741'
+      token: in
+      token_id: 167
+    - begin: '0:01:50.853741'
+      end: '0:01:51.182993'
+      token: them
+      token_id: 168
+    - begin: '0:01:51.182993'
+      end: '0:01:51.921315'
+      token: okay
+      token_id: 169
+    - begin: '0:01:52.170748'
+      end: '0:01:52.958957'
+      token: apples
+      token_id: 170
+    - begin: '0:01:53.427891'
+      end: '0:01:54.355782'
+      token: raspberries
+      token_id: 171
+    - begin: '0:01:54.774830'
+      end: '0:01:55.553061'
+      token: bananas
+      token_id: 172
+    - begin: '0:01:56.121769'
+      end: '0:01:56.351247'
+      token: and
+      token_id: 173
+    - begin: '0:01:56.351247'
+      end: '0:01:56.850113'
+      token: more
+      token_id: 174
+    - begin: '0:01:56.949887'
+      end: '0:01:57.628345'
+      token: apples
+      token_id: 175
+    - begin: '0:01:58.296825'
+      end: '0:01:59.973016'
+      token: an
+      token_id: 176
+    - begin: '0:01:59.973016'
+      end: '0:02:00.611565'
+      token: apple
+      token_id: 177
+    - begin: '0:02:00.671429'
+      end: '0:02:01.399773'
+      token: raspberry
+      token_id: 178
+    - begin: '0:02:01.399773'
+      end: '0:02:02.048299'
+      token: banana
+      token_id: 179
+    - begin: '0:02:02.187982'
+      end: '0:02:02.377551'
+      token: and
+      token_id: 180
+    - begin: '0:02:02.377551'
+      end: '0:02:02.816553'
+      token: more
+      token_id: 181
+    - begin: '0:02:02.816553'
+      end: '0:02:03.435147'
+      token: apples
+      token_id: 182
+    - begin: '0:02:03.574830'
+      end: '0:02:04.602494'
+      token: smoothie
+      token_id: 183
+    - begin: '0:02:04.602494'
+      end: '0:02:05.400680'
+      token: '*slurp*'
+      token_id: 184
+    - begin: '0:02:05.400680'
+      end: '0:02:05.540363'
+      token: mm
+      token_id: 185
+    - begin: '0:02:05.700000'
+      end: '0:02:07.885034'
+      token: delicious
+      token_id: 186
+    - begin: '0:02:08.134467'
+      end: '0:02:08.403855'
+      token: can
+      token_id: 187
+    - begin: '0:02:08.763039'
+      end: '0:02:08.832880'
+      token: i
+      token_id: 188
+    - begin: '0:02:08.832880'
+      end: '0:02:09.670975'
+      token: have
+      token_id: 189
+    - begin: '0:02:09.670975'
+      end: '0:02:09.740816'
+      token: a
+      token_id: 190
+    - begin: '0:02:09.740816'
+      end: '0:02:10.429252'
+      token: smoothie
+      token_id: 191
+    - begin: '0:02:10.429252'
+      end: '0:02:11.516780'
+      token: please
+      token_id: 192
+    - begin: '0:02:11.576644'
+      end: '0:02:11.766213'
+      token: me
+      token_id: 193
+    - begin: '0:02:11.766213'
+      end: '0:02:12.185261'
+      token: too
+      token_id: 194
+    - begin: '0:02:12.185261'
+      end: '0:02:13.073243'
+      token: and
+      token_id: 195
+    - begin: '0:02:13.073243'
+      end: '0:02:13.143084'
+      token: me
+      token_id: 196
+    - begin: '0:02:13.143084'
+      end: '0:02:13.422449'
+      token: and
+      token_id: 197
+    - begin: '0:02:13.422449'
+      end: '0:02:13.482313'
+      token: me
+      token_id: 198
+    - begin: '0:02:13.482313'
+      end: '0:02:13.562132'
+      token: of
+      token_id: 199
+    - begin: '0:02:13.562132'
+      end: '0:02:14.490023'
+      token: course
+      token_id: 200
+    - begin: '0:02:14.559864'
+      end: '0:02:14.789342'
+      token: what
+      token_id: 201
+    - begin: '0:02:14.919048'
+      end: '0:02:15.188435'
+      token: fruit
+      token_id: 202
+    - begin: '0:02:15.188435'
+      end: '0:02:15.298186'
+      token: would
+      token_id: 203
+    - begin: '0:02:15.298186'
+      end: '0:02:15.397959'
+      token: you
+      token_id: 204
+    - begin: '0:02:15.397959'
+      end: '0:02:15.617460'
+      token: like
+      token_id: 205
+    - begin: '0:02:15.617460'
+      end: '0:02:15.707256'
+      token: in
+      token_id: 206
+    - begin: '0:02:15.707256'
+      end: '0:02:16.116327'
+      token: your
+      token_id: 207
+    - begin: '0:02:16.116327'
+      end: '0:02:16.924490'
+      token: smoothies
+      token_id: 208
+    - begin: '0:02:17.193878'
+      end: '0:02:17.622902'
+      token: uh
+      token_id: 209
+    - begin: '0:02:18.041950'
+      end: '0:02:18.191610'
+      token: i
+      token_id: 210
+    - begin: '0:02:18.191610'
+      end: '0:02:18.431066'
+      token: don't
+      token_id: 211
+    - begin: '0:02:18.431066'
+      end: '0:02:18.850113'
+      token: know
+      token_id: 212
+    - begin: '0:02:18.850113'
+      end: '0:02:19.079592'
+      token: it
+      token_id: 213
+    - begin: '0:02:19.079592'
+      end: '0:02:19.279138'
+      token: can
+      token_id: 214
+    - begin: '0:02:19.279138'
+      end: '0:02:19.428798'
+      token: be
+      token_id: 215
+    - begin: '0:02:19.428798'
+      end: '0:02:19.917687'
+      token: anything
+      token_id: 216
+    - begin: '0:02:19.917687'
+      end: '0:02:20.546259'
+      token: pedro
+      token_id: 217
+    - begin: '0:02:20.765760'
+      end: '0:02:20.965306'
+      token: okay
+      token_id: 218
+    - begin: '0:02:20.965306'
+      end: '0:02:21.095011'
+      token: cheese
+      token_id: 219
+    - begin: '0:02:21.095011'
+      end: '0:02:21.404308'
+      token: please
+      token_id: 220
+    - begin: '0:02:21.763492'
+      end: '0:02:22.052834'
+      token: pedro
+      token_id: 221
+    - begin: '0:02:22.052834'
+      end: '0:02:22.292290'
+      token: cheese
+      token_id: 222
+    - begin: '0:02:22.322222'
+      end: '0:02:22.501814'
+      token: isn't
+      token_id: 223
+    - begin: '0:02:22.501814'
+      end: '0:02:22.900907'
+      token: a
+      token_id: 224
+    - begin: '0:02:23.170295'
+      end: '0:02:23.609297'
+      token: fruit
+      token_id: 225
+    - begin: '0:02:23.609297'
+      end: '0:02:23.758957'
+      token: it
+      token_id: 226
+    - begin: '0:02:23.758957'
+      end: '0:02:25.604762'
+      token: has
+      token_id: 227
+    - begin: '0:02:25.604762'
+      end: '0:02:26.073696'
+      token: to
+      token_id: 228
+    - begin: '0:02:26.193424'
+      end: '0:02:26.712245'
+      token: be
+      token_id: 229
+    - begin: '0:02:27.241043'
+      end: '0:02:28.607937'
+      token: fruit
+      token_id: 230
+    - begin: '0:02:28.677778'
+      end: '0:02:29.116780'
+      token: or
+      token_id: 231
+    - begin: '0:02:29.116780'
+      end: '0:02:30.483673'
+      token: vegetables
+      token_id: 232
+    - begin: '0:02:30.782993'
+      end: '0:02:31.271882'
+      token: okay
+      token_id: 233
+    - begin: '0:02:31.551247'
+      end: '0:02:32.928118'
+      token: raspberries
+      token_id: 234
+    - begin: '0:02:32.928118'
+      end: '0:02:33.476871'
+      token: and
+      token_id: 235
+    - begin: '0:02:33.556689'
+      end: '0:02:34.165306'
+      token: blueberries
+      token_id: 236
+    - begin: '0:02:34.215193'
+      end: '0:02:34.334921'
+      token: and
+      token_id: 237
+    - begin: '0:02:34.334921'
+      end: '0:02:34.783900'
+      token: blackberries
+      token_id: 238
+    - begin: '0:02:34.783900'
+      end: '0:02:35.023356'
+      token: and
+      token_id: 239
+    - begin: '0:02:35.023356'
+      end: '0:02:36.170748'
+      token: gooseberries
+      token_id: 240
+    - begin: '0:02:36.170748'
+      end: '0:02:36.500000'
+      token: that's
+      token_id: 241
+    - begin: '0:02:36.500000'
+      end: '0:02:36.659637'
+      token: more
+      token_id: 242
+    - begin: '0:02:36.659637'
+      end: '0:02:37.108617'
+      token: like
+      token_id: 243
+    - begin: '0:02:37.108617'
+      end: '0:02:37.926757'
+      token: it
+      token_id: 244
+    - begin: '0:02:37.926757'
+      end: '0:02:38.665079'
+      token: raspberry
+      token_id: 245
+    - begin: '0:02:38.665079'
+      end: '0:02:38.864626'
+      token: and
+      token_id: 246
+    - begin: '0:02:38.864626'
+      end: '0:02:39.612925'
+      token: blueberry
+      token_id: 247
+    - begin: '0:02:39.642857'
+      end: '0:02:39.842404'
+      token: and
+      token_id: 248
+    - begin: '0:02:39.842404'
+      end: '0:02:40.540816'
+      token: blackberry
+      token_id: 249
+    - begin: '0:02:40.540816'
+      end: '0:02:40.800227'
+      token: and
+      token_id: 250
+    - begin: '0:02:40.800227'
+      end: '0:02:41.538549'
+      token: gooseberry
+      token_id: 251
+    - begin: '0:02:41.578458'
+      end: '0:02:42.157143'
+      token: smoothies
+      token_id: 252
+    - begin: '0:02:42.157143'
+      end: '0:02:42.486395'
+      token: for
+      token_id: 253
+    - begin: '0:02:42.486395'
+      end: '0:02:42.865533'
+      token: everyone
+      token_id: 254
+    - begin: '0:02:42.865533'
+      end: '0:02:49.001587'
+      token: '*slurp*'
+      token_id: 255
+    - begin: '0:02:49.001587'
+      end: '0:02:49.071429'
+      token: all
+      token_id: 256
+    - begin: '0:02:49.071429'
+      end: '0:02:49.280952'
+      token: mm
+      token_id: 257
+    - begin: '0:02:49.280952'
+      end: '0:02:49.759864'
+      token: lovely
+      token_id: 258
+    - begin: '0:02:49.759864'
+      end: '0:02:50.119048'
+      token: what
+      token_id: 259
+    - begin: '0:02:50.119048'
+      end: '0:02:50.248753'
+      token: do
+      token_id: 260
+    - begin: '0:02:50.248753'
+      end: '0:02:50.378458'
+      token: you
+      token_id: 261
+    - begin: '0:02:50.378458'
+      end: '0:02:50.687755'
+      token: want
+      token_id: 262
+    - begin: '0:02:50.687755'
+      end: '0:02:50.807483'
+      token: in
+      token_id: 263
+    - begin: '0:02:50.807483'
+      end: '0:02:51.236508'
+      token: your
+      token_id: 264
+    - begin: '0:02:51.236508'
+      end: '0:02:51.805215'
+      token: smoothie
+      token_id: 265
+    - begin: '0:02:51.805215'
+      end: '0:02:52.593424'
+      token: george
+      token_id: 266
+    - begin: '0:02:52.832880'
+      end: '0:02:53.571202'
+      token: strawberry
+      token_id: 267
+    - begin: '0:02:53.571202'
+      end: '0:02:53.690930'
+      token: george
+      token_id: 268
+    - begin: '0:02:53.690930'
+      end: '0:02:53.750794'
+      token: a
+      token_id: 269
+    - begin: '0:02:53.750794'
+      end: '0:02:54.189796'
+      token: smoothie
+      token_id: 270
+    - begin: '0:02:54.189796'
+      end: '0:02:55.037868'
+      token: must
+      token_id: 271
+    - begin: '0:02:55.636508'
+      end: '0:02:56.584354'
+      token: have
+      token_id: 272
+    - begin: '0:02:56.843764'
+      end: '0:02:57.492290'
+      token: lots
+      token_id: 273
+    - begin: '0:02:57.552154'
+      end: '0:02:57.731746'
+      token: of
+      token_id: 274
+    - begin: '0:02:57.861451'
+      end: '0:02:58.320408'
+      token: fruit
+      token_id: 275
+    - begin: '0:02:58.320408'
+      end: '0:02:58.559864'
+      token: in
+      token_id: 276
+    - begin: '0:02:59.088662'
+      end: '0:02:59.208390'
+      token: it
+      token_id: 277
+    - begin: '0:02:59.208390'
+      end: '0:02:59.368027'
+      token: how
+      token_id: 278
+    - begin: '0:02:59.368027'
+      end: '0:02:59.717234'
+      token: about
+      token_id: 279
+    - begin: '0:02:59.717234'
+      end: '0:03:01.283673'
+      token: strawberries
+      token_id: 280
+    - begin: '0:03:01.283673'
+      end: '0:03:01.513152'
+      token: and
+      token_id: 281
+    - begin: '0:03:01.513152'
+      end: '0:03:01.902268'
+      token: pineapple
+      token_id: 282
+    - begin: '0:03:01.902268'
+      end: '0:03:02.610658'
+      token: george
+      token_id: 283
+    - begin: '0:03:02.800227'
+      end: '0:03:03.179365'
+      token: 'no'
+      token_id: 284
+    - begin: '0:03:03.837868'
+      end: '0:03:04.685941'
+      token: maybe
+      token_id: 285
+    - begin: '0:03:04.875510'
+      end: '0:03:05.214739'
+      token: george
+      token_id: 286
+    - begin: '0:03:05.214739'
+      end: '0:03:05.384354'
+      token: would
+      token_id: 287
+    - begin: '0:03:05.384354'
+      end: '0:03:05.633787'
+      token: like
+      token_id: 288
+    - begin: '0:03:05.633787'
+      end: '0:03:05.813379'
+      token: some
+      token_id: 289
+    - begin: '0:03:05.813379'
+      end: '0:03:06.671429'
+      token: dinosaur
+      token_id: 290
+    - begin: '0:03:06.671429'
+      end: '0:03:07.110431'
+      token: juice
+      token_id: 291
+    - begin: '0:03:07.379819'
+      end: '0:03:08.437415'
+      token: dinosaur
+      token_id: 292
+    - begin: '0:03:08.437415'
+      end: '0:03:09.235601'
+      token: juice
+      token_id: 293
+    - begin: '0:03:09.475057'
+      end: '0:03:09.764399'
+      token: oh
+      token_id: 294
+    - begin: '0:03:09.764399'
+      end: '0:03:09.983900'
+      token: 'yes'
+      token_id: 295
+    - begin: '0:03:09.983900'
+      end: '0:03:10.333107'
+      token: all
+      token_id: 296
+    - begin: '0:03:10.452834'
+      end: '0:03:11.729932'
+      token: dinosaurs
+      token_id: 297
+    - begin: '0:03:11.729932'
+      end: '0:03:12.049206'
+      token: like
+      token_id: 298
+    - begin: '0:03:12.049206'
+      end: '0:03:12.787528'
+      token: dinosaur
+      token_id: 299
+    - begin: '0:03:12.787528'
+      end: '0:03:13.116780'
+      token: juice
+      token_id: 300
+    - begin: '0:03:13.116780'
+      end: '0:03:13.146712'
+      token: '*giggle*'
+      token_id: 301
+    - begin: '0:03:13.316327'
+      end: '0:03:15.341723'
+      token: dinosaur
+      token_id: 302
+    - begin: '0:03:15.471429'
+      end: '0:03:15.750794'
+      token: let's
+      token_id: 303
+    - begin: '0:03:15.860544'
+      end: '0:03:16.169841'
+      token: see
+      token_id: 304
+    - begin: '0:03:16.169841'
+      end: '0:03:16.219728'
+      token: a
+      token_id: 305
+    - begin: '0:03:16.219728'
+      end: '0:03:16.828345'
+      token: bit
+      token_id: 306
+    - begin: '0:03:16.828345'
+      end: '0:03:16.888209'
+      token: of
+      token_id: 307
+    - begin: '0:03:16.948073'
+      end: '0:03:17.077778'
+      token: this
+      token_id: 308
+    - begin: '0:03:17.077778'
+      end: '0:03:17.995692'
+      token: one
+      token_id: 309
+    - begin: '0:03:17.995692'
+      end: '0:03:18.075510'
+      token: of
+      token_id: 310
+    - begin: '0:03:18.105442'
+      end: '0:03:18.484580'
+      token: those
+      token_id: 311
+    - begin: '0:03:18.534467'
+      end: '0:03:18.803855'
+      token: a
+      token_id: 312
+    - begin: '0:03:18.863719'
+      end: '0:03:19.232880'
+      token: few
+      token_id: 313
+    - begin: '0:03:19.232880'
+      end: '0:03:19.302721'
+      token: of
+      token_id: 314
+    - begin: '0:03:19.362585'
+      end: '0:03:19.901361'
+      token: these
+      token_id: 315
+    - begin: '0:03:20.250567'
+      end: '0:03:20.619728'
+      token: some
+      token_id: 316
+    - begin: '0:03:20.619728'
+      end: '0:03:20.929025'
+      token: of
+      token_id: 317
+    - begin: '0:03:21.158503'
+      end: '0:03:21.487755'
+      token: that
+      token_id: 318
+    - begin: '0:03:21.487755'
+      end: '0:03:23.163946'
+      token: one
+      token_id: 319
+    - begin: '0:03:23.163946'
+      end: '0:03:23.962132'
+      token: dinosaur
+      token_id: 320
+    - begin: '0:03:23.962132'
+      end: '0:03:24.460998'
+      token: juice
+      token_id: 321
+    - begin: '0:03:24.490930'
+      end: '0:03:24.909977'
+      token: just
+      token_id: 322
+    - begin: '0:03:24.949887'
+      end: '0:03:25.219274'
+      token: for
+      token_id: 323
+    - begin: '0:03:25.259184'
+      end: '0:03:27.404308'
+      token: dinosaurs
+      token_id: 324
+    - begin: '0:03:27.404308'
+      end: '0:03:27.963039'
+      token: and
+      token_id: 325
+    - begin: '0:03:27.963039'
+      end: '0:03:28.062812'
+      token: their
+      token_id: 326
+    - begin: '0:03:28.392063'
+      end: '0:03:28.651474'
+      token: little
+      token_id: 327
+    - begin: '0:03:28.651474'
+      end: '0:03:28.831066'
+      token: friends
+      token_id: 328
+    - begin: '0:03:28.831066'
+      end: '0:03:28.880952'
+      token: '*giggle*'
+      token_id: 329
+    - begin: '0:03:28.880952'
+      end: '0:03:30.128118'
+      token: dinosaur
+      token_id: 330
+    - begin: '0:03:30.128118'
+      end: '0:03:30.217914'
+      token: can
+      token_id: 331
+    - begin: '0:03:30.217914'
+      end: '0:03:30.257823'
+      token: i
+      token_id: 332
+    - begin: '0:03:30.686848'
+      end: '0:03:31.495011'
+      token: have
+      token_id: 333
+    - begin: '0:03:31.495011'
+      end: '0:03:31.943991'
+      token: some
+      token_id: 334
+    - begin: '0:03:31.943991'
+      end: '0:03:32.632426'
+      token: dinosaur
+      token_id: 335
+    - begin: '0:03:32.632426'
+      end: '0:03:33.081406'
+      token: juice
+      token_id: 336
+    - begin: '0:03:33.171202'
+      end: '0:03:33.680045'
+      token: please
+      token_id: 337
+    - begin: '0:03:33.680045'
+      end: '0:03:33.969388'
+      token: miss
+      token_id: 338
+    - begin: '0:03:33.969388'
+      end: '0:03:34.358503'
+      token: rabbit
+      token_id: 339
+    - begin: '0:03:34.637868'
+      end: '0:03:34.787528'
+      token: me
+      token_id: 340
+    - begin: '0:03:34.907256'
+      end: '0:03:35.086848'
+      token: too
+      token_id: 341
+    - begin: '0:03:35.086848'
+      end: '0:03:36.443764'
+      token: and
+      token_id: 342
+    - begin: '0:03:36.443764'
+      end: '0:03:36.523583'
+      token: me
+      token_id: 343
+    - begin: '0:03:36.523583'
+      end: '0:03:36.992517'
+      token: and
+      token_id: 344
+    - begin: '0:03:36.992517'
+      end: '0:03:37.132200'
+      token: me
+      token_id: 345
+    - begin: '0:03:37.132200'
+      end: '0:03:37.760771'
+      token: okay
+      token_id: 346
+    - begin: '0:03:37.760771'
+      end: '0:03:38.758503'
+      token: dinosaur
+      token_id: 347
+    - begin: '0:03:38.758503'
+      end: '0:03:39.037868'
+      token: juice
+      token_id: 348
+    - begin: '0:03:39.037868'
+      end: '0:03:39.267347'
+      token: for
+      token_id: 349
+    - begin: '0:03:39.267347'
+      end: '0:03:40.275057'
+      token: everyone
+      token_id: 350
+    - begin: '0:03:40.833787'
+      end: '0:03:41.083220'
+      token: oh
+      token_id: 351
+    - begin: '0:03:41.083220'
+      end: '0:03:41.602041'
+      token: bother
+      token_id: 352
+    - begin: '0:03:41.891383'
+      end: '0:03:42.360317'
+      token: what's
+      token_id: 353
+    - begin: '0:03:42.360317'
+      end: '0:03:42.629705'
+      token: wrong
+      token_id: 354
+    - begin: '0:03:42.629705'
+      end: '0:03:43.108617'
+      token: miss
+      token_id: 355
+    - begin: '0:03:43.108617'
+      end: '0:03:43.856916'
+      token: rabbit
+      token_id: 356
+    - begin: '0:03:44.156236'
+      end: '0:03:44.415646'
+      token: i've
+      token_id: 357
+    - begin: '0:03:44.455556'
+      end: '0:03:45.044218'
+      token: forgotten
+      token_id: 358
+    - begin: '0:03:45.044218'
+      end: '0:03:45.263719'
+      token: what
+      token_id: 359
+    - begin: '0:03:45.263719'
+      end: '0:03:45.413379'
+      token: i
+      token_id: 360
+    - begin: '0:03:45.413379'
+      end: '0:03:45.782540'
+      token: put
+      token_id: 361
+    - begin: '0:03:45.782540'
+      end: '0:03:46.181633'
+      token: in
+      token_id: 362
+    - begin: '0:03:46.181633'
+      end: '0:03:46.341270'
+      token: the
+      token_id: 363
+    - begin: '0:03:46.341270'
+      end: '0:03:46.979819'
+      token: dinosaur
+      token_id: 364
+    - begin: '0:03:46.979819'
+      end: '0:03:47.628345'
+      token: juice
+      token_id: 365
+    - begin: '0:03:47.857823'
+      end: '0:03:47.937642'
+      token: all
+      token_id: 366
+    - begin: '0:03:47.937642'
+      end: '0:03:47.967574'
+      token: oh
+      token_id: 367
+    - begin: '0:03:47.967574'
+      end: '0:03:48.017460'
+      token: i
+      token_id: 368
+    - begin: '0:03:48.017460'
+      end: '0:03:48.685941'
+      token: can
+      token_id: 369
+    - begin: '0:03:48.835601'
+      end: '0:03:49.543991'
+      token: tell
+      token_id: 370
+    - begin: '0:03:49.543991'
+      end: '0:03:49.753515'
+      token: you
+      token_id: 371
+    - begin: '0:03:49.753515'
+      end: '0:03:49.963039'
+      token: what
+      token_id: 372
+    - begin: '0:03:49.963039'
+      end: '0:03:50.062812'
+      token: was
+      token_id: 373
+    - begin: '0:03:50.062812'
+      end: '0:03:50.152608'
+      token: in
+      token_id: 374
+    - begin: '0:03:50.152608'
+      end: '0:03:50.551701'
+      token: it
+      token_id: 375
+    - begin: '0:03:50.741270'
+      end: '0:03:51.549433'
+      token: really
+      token_id: 376
+    - begin: '0:03:51.669161'
+      end: '0:03:52.397506'
+      token: how
+      token_id: 377
+    - begin: '0:03:52.397506'
+      end: '0:03:52.836508'
+      token: by
+      token_id: 378
+    - begin: '0:03:52.836508'
+      end: '0:03:53.904082'
+      token: smelling
+      token_id: 379
+    - begin: '0:03:54.353061'
+      end: '0:03:54.632426'
+      token: it
+      token_id: 380
+  dialogue_tokenized:
+  - smoothies
+  - get
+  - your
+  - fruit
+  - smoothies
+  - here
+  - '*laugh*'
+  - hello
+  - miss
+  - rabbit
+  - what's
+  - a
+  - fruit
+  - smoothie
+  - it's
+  - a
+  - drink
+  - made
+  - from
+  - fruit
+  - would
+  - you
+  - like
+  - one
+  - 'yes'
+  - please
+  - can
+  - i
+  - have
+  - a
+  - smoothie
+  - with
+  - apples
+  - okay
+  - but
+  - smoothies
+  - can
+  - have
+  - lots
+  - of
+  - different
+  - fruit
+  - in
+  - them
+  - okay
+  - apples
+  - raspberries
+  - bananas
+  - and
+  - more
+  - apples
+  - an
+  - apple
+  - raspberry
+  - banana
+  - and
+  - more
+  - apples
+  - smoothie
+  - '*slurp*'
+  - mm
+  - delicious
+  - can
+  - i
+  - have
+  - a
+  - smoothie
+  - please
+  - me
+  - too
+  - and
+  - me
+  - and
+  - me
+  - of
+  - course
+  - what
+  - fruit
+  - would
+  - you
+  - like
+  - in
+  - your
+  - smoothies
+  - uh
+  - i
+  - don't
+  - know
+  - it
+  - can
+  - be
+  - anything
+  - pedro
+  - okay
+  - cheese
+  - please
+  - pedro
+  - cheese
+  - isn't
+  - a
+  - fruit
+  - it
+  - has
+  - to
+  - be
+  - fruit
+  - or
+  - vegetables
+  - okay
+  - raspberries
+  - and
+  - blueberries
+  - and
+  - blackberries
+  - and
+  - gooseberries
+  - that's
+  - more
+  - like
+  - it
+  - raspberry
+  - and
+  - blueberry
+  - and
+  - blackberry
+  - and
+  - gooseberry
+  - smoothies
+  - for
+  - everyone
+  - '*slurp*'
+  - all
+  - mm
+  - lovely
+  - what
+  - do
+  - you
+  - want
+  - in
+  - your
+  - smoothie
+  - george
+  - strawberry
+  - george
+  - a
+  - smoothie
+  - must
+  - have
+  - lots
+  - of
+  - fruit
+  - in
+  - it
+  - how
+  - about
+  - strawberries
+  - and
+  - pineapple
+  - george
+  - 'no'
+  - maybe
+  - george
+  - would
+  - like
+  - some
+  - dinosaur
+  - juice
+  - dinosaur
+  - juice
+  - oh
+  - 'yes'
+  - all
+  - dinosaurs
+  - like
+  - dinosaur
+  - juice
+  - '*giggle*'
+  - dinosaur
+  - let's
+  - see
+  - a
+  - bit
+  - of
+  - this
+  - one
+  - of
+  - those
+  - a
+  - few
+  - of
+  - these
+  - some
+  - of
+  - that
+  - one
+  - dinosaur
+  - juice
+  - just
+  - for
+  - dinosaurs
+  - and
+  - their
+  - little
+  - friends
+  - '*giggle*'
+  - dinosaur
+  - can
+  - i
+  - have
+  - some
+  - dinosaur
+  - juice
+  - please
+  - miss
+  - rabbit
+  - me
+  - too
+  - and
+  - me
+  - and
+  - me
+  - okay
+  - dinosaur
+  - juice
+  - for
+  - everyone
+  - oh
+  - bother
+  - what's
+  - wrong
+  - miss
+  - rabbit
+  - i've
+  - forgotten
+  - what
+  - i
+  - put
+  - in
+  - the
+  - dinosaur
+  - juice
+  - all
+  - oh
+  - i
+  - can
+  - tell
+  - you
+  - what
+  - was
+  - in
+  - it
+  - really
+  - how
+  - by
+  - smelling
+  - it
+  narration:
+    subtitles:
+    - begin: 00:03:55
+      end: 00:03:59
+      narrator: 1
+      text: Freddy Fox  has a very good sense of smell.
+    tokenized:
+    - begin: '0:03:54.632426'
+      end: '0:03:54.951701'
+      token: freddy
+      token_id: 381
+    - begin: '0:03:55.001587'
+      end: '0:03:55.380726'
+      token: fox
+      token_id: 382
+    - begin: '0:03:55.380726'
+      end: '0:03:55.779819'
+      token: has
+      token_id: 383
+    - begin: '0:03:55.779819'
+      end: '0:03:56.009297'
+      token: a
+      token_id: 384
+    - begin: '0:03:56.119048'
+      end: '0:03:56.488209'
+      token: very
+      token_id: 385
+    - begin: '0:03:56.488209'
+      end: '0:03:56.657823'
+      token: good
+      token_id: 386
+    - begin: '0:03:56.657823'
+      end: '0:03:57.036961'
+      token: sense
+      token_id: 387
+    - begin: '0:03:57.036961'
+      end: '0:03:57.126757'
+      token: of
+      token_id: 388
+    - begin: '0:03:57.126757'
+      end: '0:03:57.974830'
+      token: smell
+      token_id: 389
+  narration_tokenized:
+  - freddy
+  - fox
+  - has
+  - a
+  - very
+  - good
+  - sense
+  - of
+  - smell
+  split_id: 1127
+plot: Miss Rabbit gives George a special 'dinosaur' fruit smoothie to make him healthy.
+title: Fruit
