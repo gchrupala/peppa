@@ -44,6 +44,11 @@ def speakerize_ep(path):
         speakerize_tokens(part['context'])
     return data
 
+def clean(text):
+    import re
+    pattern = r'\[[^()]*\]'
+    return re.sub(pattern, '', text)
+
 def realign(tokens=False):
     data = pd.read_csv("data/in/peppa_pig_dataset-video_list.csv", sep=';', quotechar="'",
                        names=["id", "title", "path"], index_col=0)
@@ -52,20 +57,21 @@ def realign(tokens=False):
     epids = [197, 198, 199, 200, 201, 202]
     
     for  epid in epids:
-        path = f"data/in/peppa/episodes/ep_{epid}.json"
-        annotation = json.load(open(path))
+        path = f"data/out/speaker_id/ep_{epid}.yaml"
+        annotation = yaml.safe_load(open(path))
         with m.AudioFileClip(titles[annotation['title']]) as audio:
             for i, part in enumerate(annotation['narrator_splits']):
-                os.makedirs(f"data/out/realign/ep_{epid}/", exist_ok=True)
-                tokens = part['context']['tokenized']
-                if len(tokens) > 0:
-                    transcript = ' '.join([token['token'] for token in tokens if not token['token'].startswith('*')])
-                    start = pd.Timedelta(tokens[0]['begin'])-pd.Timedelta(seconds=1)
-                    end = pd.Timedelta(tokens[-1]['end'])+pd.Timedelta(seconds=1)
-                    audiopath = f"data/out/realign/ep_{epid}/{i}.wav"
-                    audio.subclip(start.seconds, end.seconds).write_audiofile(audiopath)
-                    result = align(audiopath, transcript)
-                    json.dump(result, open(f"data/out/realign/ep_{epid}/{i}.json", "w"), indent=2)
+                for j, sub in enumerate(part['context']['subtitles']):
+                    transcript = clean(sub['text'])
+                    if len(transcript) > 0:
+                        os.makedirs(f"data/out/realign/ep_{epid}/{i}/", exist_ok=True)
+                        start = pd.Timedelta(sub['begin'])-pd.Timedelta(seconds=0.5)
+                        end = pd.Timedelta(sub['end'])+pd.Timedelta(seconds=0.5)
+                        audiopath = f"data/out/realign/ep_{epid}/{i}/{j}.wav"
+                        audio.subclip(start.seconds, end.seconds).write_audiofile(audiopath)
+                        result = align(audiopath, transcript)
+                        result['speaker'] = sub['speaker']
+                        json.dump(result, open(f"data/out/realign/ep_{epid}/{i}/{j}.json", "w"), indent=2)
 
 def featurize(tokens=False):
     data = pd.read_csv("data/in/peppa_pig_dataset-video_list.csv", sep=';', quotechar="'",
