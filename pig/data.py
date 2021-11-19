@@ -53,14 +53,73 @@ class ClipBatch:
     """Batch of video clips with associated audio."""
     video: torch.tensor
     audio: torch.tensor
-    
-    
-     
+
+
+def collate_audio(data):
+    return pig.util.pad_audio_batch(data)
+
 def collate(data):
     video, audio = zip(*[(x.video, x.audio) for x in data])
     return ClipBatch(video=pig.util.pad_video_batch(video), audio=pig.util.pad_audio_batch(audio))
 
+def featurize(clip, transformer):
+    frames = [ torch.tensor(frame/255).float()
+               for frame in clip.iter_frames() ]
+    if len(frames) > 0:
+        v = torch.stack(frames)
+        return Clip(video = transformer(v.permute(3, 0, 1, 2)),
+                    audio = featurize_audio(clip.audio),
+                    duration = clip.duration,
+                    filename = clip.filename)
+    else:
+        raise ValueError("Clip has zero frames.")
 
+def featurize_audio(clip):
+    a = torch.tensor(clip.to_soundarray()).float()
+    return a.mean(dim=1, keepdim=True).permute(1,0)
+        
+class AudioFileDataset(IterableDataset):
+
+    def __init__(self, paths):
+        self.paths = paths
+
+    def __iter__(self):
+        for path in self.paths:
+            with m.AudioFileClip(path) as clip:
+                yield featurize_audio(clip)
+
+class AudioClipDataset(IterableDataset):
+
+    def __init__(self, clips):
+        self.clips = clips
+
+    def __iter__(self):
+        for clip in self.clips:
+            yield featurize_audio(clip)
+                
+class VideoFileDataset(IterableDataset):
+
+    def __init__(self, stats, paths):
+        self.stats = stats
+        self.paths = paths
+        self.transform = Compose([
+            pig.transforms.SwapCT(),
+            Normalize(mean=self.stats.video_mean, std=self.stats.video_std),    
+            pig.transforms.SwapCT(),
+        ])
+
+    def __iter__(self):
+        for path in self.paths:
+            with m.VideoFileClip(path) as clip:
+                yield featurize(clip, self.transform)
+
+def audiofile_loader(paths, batch_size=32):
+    dataset = AudioFileDataset(paths)
+    return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
+
+def audioclip_loader(clips, batch_size=32):
+    dataset = AudioClipDataset(clips)
+    return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
     
 class PeppaPigDataset(Dataset):
     def __init__(self, cache=True, cache_dir=None, **kwargs):
@@ -116,17 +175,7 @@ class PeppaPigIterableDataset(IterableDataset):
                                               test=range(105, 210)))
 
     def featurize(self, clip):
-        frames = [ torch.tensor(frame/255).float()
-                   for frame in clip.iter_frames() ]
-        if len(frames) > 0:
-            v = torch.stack(frames)
-            a = torch.tensor(clip.audio.to_soundarray()).float()
-            return Clip(video = self.transform(v.permute(3, 0, 1, 2)),
-                        audio = a.mean(dim=1, keepdim=True).permute(1,0),
-                        duration = clip.duration,
-                        filename = clip.filename)
-        else:
-            raise ValueError("Clip has zero frames.")
+        return featurize(clip, self.transform)
         
     def _clips(self):
         for clip in self._raw_clips():
