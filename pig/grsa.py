@@ -49,14 +49,13 @@ def clean(text):
     pattern = r'\[[^()]*\]'
     return re.sub(pattern, '', text)
 
+VAL_EPIDS=range(197, 203)
+    
 def realign(tokens=False):
     data = pd.read_csv("data/in/peppa_pig_dataset-video_list.csv", sep=';', quotechar="'",
                        names=["id", "title", "path"], index_col=0)
     titles = dict(zip(data['title'], data['path'].map(lambda x: f'data/in/peppa/{x[4:]}')))
-    #episodes = glob.glob("data/out/speaker_id/*.yaml")
-    epids = [197, 198, 199, 200, 201, 202]
-    
-    for  epid in epids:
+    for epid in VAL_EPIDS:
         path = f"data/out/speaker_id/ep_{epid}.yaml"
         annotation = yaml.safe_load(open(path))
         with m.AudioFileClip(titles[annotation['title']]) as audio:
@@ -73,32 +72,6 @@ def realign(tokens=False):
                         result['speaker'] = sub['speaker']
                         json.dump(result, open(f"data/out/realign/ep_{epid}/{i}/{j}.json", "w"), indent=2)
 
-def featurize(tokens=False):
-    data = pd.read_csv("data/in/peppa_pig_dataset-video_list.csv", sep=';', quotechar="'",
-                       names=["id", "title", "path"], index_col=0)
-    titles = dict(zip(data['title'], data['path'].map(lambda x: f'data/in/peppa/{x[4:]}')))
-    #episodes = glob.glob("data/out/speaker_id/*.yaml")
-    episodes = glob.glob("data/in/peppa/episodes/ep_198.json")
-    for path in episodes:
-        #annotation = yaml.safe_load(open(path))
-        annotation = json.load(open(path))
-        print(path)
-        with m.VideoFileClip(titles[annotation['title']]) as video:
-            for part in annotation['narrator_splits']:
-                if tokens:
-                    for token in part['context']['tokenized']:
-                        if pd.Timedelta(token['end'])-pd.Timedelta(token['begin']) >= pd.Timedelta(seconds=1):
-                            clip = video.audio.subclip(t_start=token['begin'], t_end=token['end'])
-                            print(token['token'], clip.duration)
-                            clip.preview()
-                            time.sleep(2)
-                else:
-                    for line in part['context']['subtitles']:
-                        if pd.Timedelta(line['end'])-pd.Timedelta(line['begin']) >= pd.Timedelta(seconds=1):
-                            
-                            clip = video.audio.subclip(t_start=line['begin'],
-                                                       t_end=line['end'])
-                            print(line['text'])
-                            clip.preview()
-                            time.sleep(2)
+
+    
                     
