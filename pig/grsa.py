@@ -6,7 +6,6 @@ import glob
 import moviepy.editor as m
 import time
 import json
-from pig.forced_align import align
 import os
 
 def speakerize(data):
@@ -52,6 +51,7 @@ def clean(text):
 VAL_EPIDS=range(197, 203)
     
 def realign(tokens=False):
+    from pig.forced_align import align
     data = pd.read_csv("data/in/peppa_pig_dataset-video_list.csv", sep=';', quotechar="'",
                        names=["id", "title", "path"], index_col=0)
     titles = dict(zip(data['title'], data['path'].map(lambda x: f'data/in/peppa/{x[4:]}')))
