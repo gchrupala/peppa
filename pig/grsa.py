@@ -50,30 +50,38 @@ def clean(text):
     pattern = r'\[[^()]*\]'
     return re.sub(pattern, '', text)
 
-VAL_EPIDS=range(197, 203)
+VAL_EPIDS=dict(dialog=range(197, 203),
+               narration=range(1, 105))
     
-def realign(tokens=False):
+def realign(fragment_type='dialog'):
     from pig.forced_align import align
+    names = dict(narration='narration', dialog='context') 
     data = pd.read_csv("data/in/peppa_pig_dataset-video_list.csv", sep=';', quotechar="'",
                        names=["id", "title", "path"], index_col=0)
     titles = dict(zip(data['title'], data['path'].map(lambda x: f'data/in/peppa/{x[4:]}')))
-    for epid in VAL_EPIDS:
-        path = f"data/out/speaker_id/ep_{epid}.yaml"
-        annotation = yaml.safe_load(open(path))
+    for epid in VAL_EPIDS[fragment_type]:
+        if fragment_type=='dialog':
+            path = f"data/out/speaker_id/ep_{epid}.yaml"
+            annotation = yaml.safe_load(open(path))
+        else:
+            path = f"data/in/peppa/episodes/ep_{epid}.json"
+            annotation = json.load(open(path))
         with m.AudioFileClip(titles[annotation['title']]) as audio:
             for i, part in enumerate(annotation['narrator_splits']):
-                for j, sub in enumerate(part['context']['subtitles']):
+                for j, sub in enumerate(part[names[fragment_type]]['subtitles']):
                     transcript = clean(sub['text'])
                     if len(transcript) > 0:
-                        os.makedirs(f"data/out/realign/ep_{epid}/{i}/", exist_ok=True)
+                        os.makedirs(f"data/out/realign/{fragment_type}/ep_{epid}/{i}/",
+                                    exist_ok=True)
                         start = pd.Timedelta(sub['begin'])-pd.Timedelta(seconds=0.5)
                         end = pd.Timedelta(sub['end'])+pd.Timedelta(seconds=0.5)
-                        audiopath = f"data/out/realign/ep_{epid}/{i}/{j}.wav"
+                        audiopath = f"data/out/realign/{fragment_type}/ep_{epid}/{i}/{j}.wav"
                         audio.subclip(start.seconds, end.seconds).write_audiofile(audiopath)
                         result = align(audiopath, transcript)
-                        result['speaker'] = sub['speaker']
-                        json.dump(result, open(f"data/out/realign/ep_{epid}/{i}/{j}.json", "w"),
-                                  indent=2)
+                        result['speaker'] = sub.get('speaker') if fragment_type == 'dialog' else 'Narrator'
+                        json.dump(result,
+                                  open(f"data/out/realign/{fragment_type}/ep_{epid}/{i}/{j}.json",
+                                       "w"), indent=2)
 
 def meta(path):
     base = os.path.basename(path)
@@ -137,12 +145,12 @@ def normalized_distance(a, b):
     from Levenshtein import distance
     return distance(a, b) / max(len(a), len(b))
                     
-def pairwise():
+def pairwise(fragment_type='dialog'):
     from pig.models import PeppaPig
     from pig.data import audioclip_loader
     from pig.util import cosine_matrix
 
-    audio_paths = glob.glob("data/out/realign/ep_*/*/*.wav")
+    audio_paths = glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.wav")
     anno_paths  = [ meta(path) for path in audio_paths ]
 
     word_data = WordData(audio_paths, anno_paths, min_duration=0.1)
@@ -174,12 +182,13 @@ def pairwise():
                            sametype=word1.phonemes==word2.phonemes,
                            samespeaker=word1.speaker==word2.speaker,
                            sameepisode=word1.episode==word2.episode,
+                           dialog=fragment_type=='dialog',
                            durationdiff=abs(word1.duration-word2.duration),
                            similarity=sim[i, j].item())
     
                     
-def dump_data():
+def dump_data(fragment_type='dialog'):
     import pandas
     logging.getLogger().setLevel(level=logging.INFO)
-    data = pandas.DataFrame.from_records(pairwise())
-    data.to_csv("pairwise_similarities.csv", index=False, header=True)
+    data = pandas.DataFrame.from_records(pairwise(fragment_type))
+    data.to_csv(f"pairwise_similarities_{fragment_type}.csv", index=False, header=True)
