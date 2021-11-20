@@ -75,6 +75,7 @@ torch==1.9.1+cu111
 torchaudio==0.9.1
 torchmetrics==0.5.1
 torchvision==0.10.1+cu111
+torchtext==0.10.1
 tqdm==4.62.3
 traitlets==5.0.5
 typing-extensions==3.10.0.2
@@ -83,4 +84,4 @@ wcwidth==0.2.5
 Werkzeug==2.0.2
 yarl==1.7.0
 zipp==3.6.0
---find-links=https://download.pytorch.org/whl/torch_stable.html--find-links=https://download.pytorch.org/whl/torch_stable.html
+--find-links=https://download.pytorch.org/whl/torch_stable.html
