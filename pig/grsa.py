@@ -9,6 +9,7 @@ import json
 import os
 import os.path
 import torch
+import torch.nn
 
 def speakerize(data):
     for part in data['narrator_splits']:
@@ -107,7 +108,8 @@ class Word:
     speaker: str
     episode: int = None
     audio: m.AudioFileClip = None
-    
+    charngram: torch.Tensor = None
+    fasttext: torch.Tensor = None
 
 class WordData():
 
@@ -122,7 +124,7 @@ class WordData():
             and 'sil' not in [ p['phone'] for p in word['phones'] ]
 
         
-    def words(self, read_audio=True):
+    def words(self, read_audio=True, charngram=None, fasttext=None):
         for audio_path, alignment_path in self.items:
             meta = json.load(open(alignment_path))
             if read_audio:
@@ -139,7 +141,12 @@ class WordData():
                                duration= word['end']-word['start'],
                                speaker= meta['speaker'],
                                episode= episode_id(audio_path),
-                               audio= sub)
+                               audio= sub,
+                               charngram= charngram[word['alignedWord']].squeeze(dim=0) \
+                                 if charngram is not None else None,
+                               fasttext= fasttext[word['alignedWord']] \
+                                 if fasttext is not None else None)
+                               
 
 def normalized_distance(a, b):
     from Levenshtein import distance
@@ -149,7 +156,8 @@ def pairwise(fragment_type='dialog'):
     from pig.models import PeppaPig
     from pig.data import audioclip_loader
     from pig.util import cosine_matrix
-
+    from torchtext.vocab import CharNGram, FastText
+    cos = torch.nn.CosineSimilarity(dim=0, eps=1e-6)
     audio_paths = glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.wav")
     anno_paths  = [ meta(path) for path in audio_paths ]
 
@@ -164,8 +172,11 @@ def pairwise(fragment_type='dialog'):
                           for batch in loader ])
     sim = cosine_matrix(emb, emb).cpu()
     logging.info(f"Computed similarities: {sim.shape}")
-    words = [ word for word in word_data.words(read_audio=False) ]
+    words = [ word for word in word_data.words(read_audio=False,
+                                               charngram=CharNGram(),
+                                               fasttext=FastText()) ]
     for i, word1 in enumerate(words):
+        logging.info(f"Processing word {i}")
         for j, word2 in enumerate(words):
             if i < j:
                 yield dict(spelling1=word1.spelling,
@@ -179,6 +190,8 @@ def pairwise(fragment_type='dialog'):
                            speaker2=word2.speaker,
                            episode2=word2.episode,
                            distance=normalized_distance(word1.phonemes, word2.phonemes),
+                           charngramsim=cos(word1.charngram, word2.charngram).item(),
+                           fasttextsim=cos(word1.fasttext, word2.fasttext).item(),
                            sametype=word1.phonemes==word2.phonemes,
                            samespeaker=word1.speaker==word2.speaker,
                            sameepisode=word1.episode==word2.episode,
