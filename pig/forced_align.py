@@ -3,6 +3,7 @@ import gentle
 import logging
 import multiprocessing
 import pandas as pd
+import os
 
 nthreads = multiprocessing.cpu_count()
 
@@ -57,8 +58,8 @@ def realign(fragment_type='dialog'):
                         result['episode_filepath'] = titles[annotation['title']]
                         result['episode_metadata_path'] = path
                         result['episode_title'] = annotation['title']
-                        result['clipStart'] = start
-                        result['clipEnd'] = end
+                        result['clipStart'] = start.seconds
+                        result['clipEnd'] = end.seconds
                         result['partIndex'] = i
                         result['clipIndex'] = j
                         json.dump(result,
