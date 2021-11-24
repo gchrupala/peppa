@@ -25,6 +25,6 @@ python run.py --config_file config.yaml
 Example configuration files are in [lightning_logs](lightning_logs) (named `hparams.yaml`).
 
 
-### Evaluate
+### Use
 You can find saved checkpoints of trained models at https://surfdrive.surf.nl/files/index.php/s/gNnZ4iSoKBDsOGK. 
-See [example.py](example.py) for an example of how to load a model and run it on some data.
+See [example.py](example.py) for an example of how to load a model and use it to encode some audio files.
