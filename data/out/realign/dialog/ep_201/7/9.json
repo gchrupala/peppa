@@ -1,0 +1,88 @@
+{
+  "transcript": "Hmm. That's very broken.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.72,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.37,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.35,
+      "startOffset": 0,
+      "word": "Hmm"
+    },
+    {
+      "alignedWord": "that's",
+      "case": "success",
+      "end": 2.7600000000000002,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.72,
+      "startOffset": 5,
+      "word": "That's"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 12,
+      "word": "very"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 17,
+      "word": "broken"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 172,
+  "clipEnd": 175,
+  "partIndex": 7,
+  "clipIndex": 9
+}

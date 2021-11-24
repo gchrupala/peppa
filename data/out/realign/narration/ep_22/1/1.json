@@ -1,0 +1,136 @@
+{
+  "transcript": "and George brush their teeth.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 4,
+      "word": "George"
+    },
+    {
+      "alignedWord": "brush",
+      "case": "success",
+      "end": 2.26,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "sh_E"
+        }
+      ],
+      "start": 2.01,
+      "startOffset": 11,
+      "word": "brush"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 2.4299999999999997,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 17,
+      "word": "their"
+    },
+    {
+      "alignedWord": "teeth",
+      "case": "success",
+      "end": 2.8200000000000003,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "th_E"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 23,
+      "word": "teeth"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E25 - The Tooth Fairy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_22.json",
+  "episode_title": "The Tooth Fairy",
+  "clipStart": 123,
+  "clipEnd": 127,
+  "partIndex": 1,
+  "clipIndex": 1
+}

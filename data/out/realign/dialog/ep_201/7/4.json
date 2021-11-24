@@ -1,0 +1,135 @@
+{
+  "transcript": "A bull in a china shop!",
+  "words": [
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.11,
+      "endOffset": 1,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 0,
+      "word": "A"
+    },
+    {
+      "alignedWord": "bull",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 2,
+      "word": "bull"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.16,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 7,
+      "word": "in"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 3.53,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.52,
+      "startOffset": 10,
+      "word": "a"
+    },
+    {
+      "alignedWord": "china",
+      "case": "success",
+      "end": 3.57,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.53,
+      "startOffset": 12,
+      "word": "china"
+    },
+    {
+      "alignedWord": "shop",
+      "case": "success",
+      "end": 3.5999999999999996,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 3.57,
+      "startOffset": 18,
+      "word": "shop"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 159,
+  "clipEnd": 163,
+  "partIndex": 7,
+  "clipIndex": 4
+}

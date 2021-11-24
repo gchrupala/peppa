@@ -1,0 +1,160 @@
+{
+  "transcript": "It's the fantastic world you live in.",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 1.92,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 0,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.1799999999999997,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 5,
+      "word": "the"
+    },
+    {
+      "alignedWord": "fantastic",
+      "case": "success",
+      "end": 3.36,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.21,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.21,
+      "startOffset": 9,
+      "word": "fantastic"
+    },
+    {
+      "alignedWord": "world",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.36,
+      "startOffset": 19,
+      "word": "world"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 25,
+      "word": "you"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 33,
+      "startOffset": 29,
+      "word": "live"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 34,
+      "word": "in"
+    }
+  ],
+  "speaker": "Mr Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 194,
+  "clipEnd": 198,
+  "partIndex": 5,
+  "clipIndex": 11
+}

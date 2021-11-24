@@ -1,0 +1,90 @@
+{
+  "transcript": "That sounds better.",
+  "words": [
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 1.7,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 0,
+      "word": "That"
+    },
+    {
+      "alignedWord": "sounds",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 5,
+      "word": "sounds"
+    },
+    {
+      "alignedWord": "better",
+      "case": "success",
+      "end": 2.3000000000000003,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 12,
+      "word": "better"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E21 - Musical Instruments.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_16.json",
+  "episode_title": "Musical Instruments",
+  "clipStart": 114,
+  "clipEnd": 117,
+  "partIndex": 4,
+  "clipIndex": 0
+}

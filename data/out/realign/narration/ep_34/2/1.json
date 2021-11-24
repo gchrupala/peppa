@@ -1,0 +1,305 @@
+{
+  "transcript": "and he does not like lettuce and he does not like tomatoes.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.8400000000000001,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 0.9299999999999999,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 4,
+      "word": "he"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 7,
+      "word": "does"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 1.3,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 12,
+      "word": "not"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 16,
+      "word": "like"
+    },
+    {
+      "alignedWord": "lettuce",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 21,
+      "word": "lettuce"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.19,
+      "startOffset": 29,
+      "word": "and"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 2.4499999999999997,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 33,
+      "word": "he"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 36,
+      "word": "does"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 2.82,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 41,
+      "word": "not"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 3.0700000000000003,
+      "endOffset": 49,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.83,
+      "startOffset": 45,
+      "word": "like"
+    },
+    {
+      "alignedWord": "tomatoes",
+      "case": "success",
+      "end": 3.8200000000000003,
+      "endOffset": 58,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.1,
+      "startOffset": 50,
+      "word": "tomatoes"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E37- Lunch.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_34.json",
+  "episode_title": "Lunch",
+  "clipStart": 108,
+  "clipEnd": 113,
+  "partIndex": 2,
+  "clipIndex": 1
+}

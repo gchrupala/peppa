@@ -1,0 +1,140 @@
+{
+  "transcript": "he can't see things clearly.",
+  "words": [
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 1.1099999999999999,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 0,
+      "word": "he"
+    },
+    {
+      "alignedWord": "can't",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 3,
+      "word": "can't"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.57,
+      "startOffset": 9,
+      "word": "see"
+    },
+    {
+      "alignedWord": "things",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 13,
+      "word": "things"
+    },
+    {
+      "alignedWord": "clearly",
+      "case": "success",
+      "end": 2.56,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.13,
+      "startOffset": 20,
+      "word": "clearly"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E15 - Daddy Loses his Glasses.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_9.json",
+  "episode_title": "Daddy Loses his Glasses",
+  "clipStart": 52,
+  "clipEnd": 55,
+  "partIndex": 0,
+  "clipIndex": 4
+}

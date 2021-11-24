@@ -1,0 +1,82 @@
+{
+  "transcript": "Now Danny Dog.",
+  "words": [
+    {
+      "alignedWord": "now",
+      "case": "success",
+      "end": 1.06,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.21,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 0,
+      "word": "Now"
+    },
+    {
+      "alignedWord": "danny",
+      "case": "success",
+      "end": 1.4400000000000002,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 4,
+      "word": "Danny"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.7999999999999998,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 10,
+      "word": "Dog"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E03 - Emily Elephant.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_54.json",
+  "episode_title": "Emily Elephant",
+  "clipStart": 171,
+  "clipEnd": 173,
+  "partIndex": 9,
+  "clipIndex": 0
+}

@@ -1,0 +1,140 @@
+{
+  "transcript": "All their friends are invited.",
+  "words": [
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 0.59,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 0,
+      "word": "All"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 0.7999999999999999,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 4,
+      "word": "their"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.8,
+      "startOffset": 10,
+      "word": "friends"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.2,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 18,
+      "word": "are"
+    },
+    {
+      "alignedWord": "invited",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.2,
+      "startOffset": 22,
+      "word": "invited"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E34 - Fancy Dress Party.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_38.json",
+  "episode_title": "Fancy Dress Party",
+  "clipStart": 25,
+  "clipEnd": 28,
+  "partIndex": 0,
+  "clipIndex": 1
+}

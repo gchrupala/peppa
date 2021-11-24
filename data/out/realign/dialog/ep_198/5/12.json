@@ -1,0 +1,86 @@
+{
+  "transcript": ": Oh. - Thank you, Mr.Rabbit.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.55,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "thank",
+      "case": "success",
+      "end": 2.7800000000000002,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.66,
+      "startOffset": 8,
+      "word": "Thank"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 14,
+      "word": "you"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 21,
+      "startOffset": 19,
+      "word": "Mr"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 22,
+      "word": "Rabbit"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 197,
+  "clipEnd": 200,
+  "partIndex": 5,
+  "clipIndex": 12
+}

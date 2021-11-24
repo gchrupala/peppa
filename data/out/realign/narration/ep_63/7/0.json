@@ -1,0 +1,117 @@
+{
+  "transcript": "Peppa's car has disappeared.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.37,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.29,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.08,
+      "startOffset": 0,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "car",
+      "case": "success",
+      "end": 0.75,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.42,
+      "startOffset": 8,
+      "word": "car"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.94,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 12,
+      "word": "has"
+    },
+    {
+      "alignedWord": "disappeared",
+      "case": "success",
+      "end": 1.66,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 16,
+      "word": "disappeared"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E12 - Recycling.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_63.json",
+  "episode_title": "Recycling",
+  "clipStart": 249,
+  "clipEnd": 252,
+  "partIndex": 7,
+  "clipIndex": 0
+}

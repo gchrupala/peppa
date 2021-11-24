@@ -1,0 +1,148 @@
+{
+  "transcript": "- It's a mirror, George. Mirrors are shiny.",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 2,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.0999999999999996,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 7,
+      "word": "a"
+    },
+    {
+      "alignedWord": "mirror",
+      "case": "success",
+      "end": 2.5599999999999996,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.28,
+      "startOffset": 9,
+      "word": "mirror"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 3.54,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.25,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 2.85,
+      "startOffset": 17,
+      "word": "George"
+    },
+    {
+      "alignedWord": "mirrors",
+      "case": "success",
+      "end": 4.42,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 4.07,
+      "startOffset": 25,
+      "word": "Mirrors"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 33,
+      "word": "are"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 42,
+      "startOffset": 37,
+      "word": "shiny"
+    }
+  ],
+  "speaker": "Mummy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 27,
+  "clipEnd": 32,
+  "partIndex": 2,
+  "clipIndex": 0
+}

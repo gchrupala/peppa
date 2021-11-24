@@ -1,0 +1,171 @@
+{
+  "transcript": "Mr. Dinosaur is George's favourite toy.",
+  "words": [
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 0.83,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.48,
+      "startOffset": 0,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 1.2,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 4,
+      "word": "Dinosaur"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.2,
+      "startOffset": 13,
+      "word": "is"
+    },
+    {
+      "alignedWord": "george's",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.64,
+      "startOffset": 16,
+      "word": "George's"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.39,
+      "startOffset": 25,
+      "word": "favourite"
+    },
+    {
+      "alignedWord": "toy",
+      "case": "success",
+      "end": 2.84,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "oy_E"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 35,
+      "word": "toy"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E35 - Jumble Sale.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_71.json",
+  "episode_title": "Jumble Sale",
+  "clipStart": 77,
+  "clipEnd": 80,
+  "partIndex": 3,
+  "clipIndex": 0
+}

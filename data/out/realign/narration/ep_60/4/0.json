@@ -1,0 +1,178 @@
+{
+  "transcript": "The wind is blowing the ball along.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.77,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.53,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "wind",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 4,
+      "word": "wind"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.2799999999999998,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "blowing",
+      "case": "success",
+      "end": 1.6600000000000001,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.3,
+      "startOffset": 12,
+      "word": "blowing"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 20,
+      "word": "the"
+    },
+    {
+      "alignedWord": "ball",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 24,
+      "word": "ball"
+    },
+    {
+      "alignedWord": "along",
+      "case": "success",
+      "end": 2.4,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 29,
+      "word": "along"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E08 - Windy Autumn Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_60.json",
+  "episode_title": "Windy Autumn Day",
+  "clipStart": 84,
+  "clipEnd": 88,
+  "partIndex": 4,
+  "clipIndex": 0
+}

@@ -1,0 +1,241 @@
+{
+  "transcript": "Peppa and her friends are at the top of the mountain.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.92,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 10,
+      "word": "her"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 1.8199999999999998,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 14,
+      "word": "friends"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 22,
+      "word": "are"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 26,
+      "word": "at"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.18,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 29,
+      "word": "the"
+    },
+    {
+      "alignedWord": "top",
+      "case": "success",
+      "end": 2.5500000000000003,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.35,
+      "startOffset": 33,
+      "word": "top"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 2.6599999999999997,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.55,
+      "startOffset": 37,
+      "word": "of"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.7600000000000002,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.66,
+      "startOffset": 40,
+      "word": "the"
+    },
+    {
+      "alignedWord": "mountain",
+      "case": "success",
+      "end": 3.1900000000000004,
+      "endOffset": 52,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.91,
+      "startOffset": 44,
+      "word": "mountain"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E22 - School Bus Trip.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_90.json",
+  "episode_title": "School Bus Trip",
+  "clipStart": 148,
+  "clipEnd": 152,
+  "partIndex": 5,
+  "clipIndex": 0
+}

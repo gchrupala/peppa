@@ -1,0 +1,109 @@
+{
+  "transcript": "Granddad Dog's Garage sells",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.41,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.22,
+      "startOffset": 0,
+      "word": "Granddad"
+    },
+    {
+      "alignedWord": "dog's",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.64,
+      "startOffset": 9,
+      "word": "Dog's"
+    },
+    {
+      "alignedWord": "garage",
+      "case": "success",
+      "end": 1.43,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "zh_E"
+        }
+      ],
+      "start": 1.0,
+      "startOffset": 15,
+      "word": "Garage"
+    },
+    {
+      "alignedWord": "sells",
+      "case": "success",
+      "end": 1.66,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 22,
+      "word": "sells"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E26 - Granddad Dogs Garage.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_69.json",
+  "episode_title": "Granddad Dog's Garage",
+  "clipStart": 43,
+  "clipEnd": 45,
+  "partIndex": 2,
+  "clipIndex": 0
+}

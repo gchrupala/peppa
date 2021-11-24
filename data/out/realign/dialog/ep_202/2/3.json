@@ -1,0 +1,139 @@
+{
+  "transcript": "- George likes strawberries the best.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 2.27,
+      "startOffset": 2,
+      "word": "George"
+    },
+    {
+      "alignedWord": "likes",
+      "case": "success",
+      "end": 3.16,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.81,
+      "startOffset": 9,
+      "word": "likes"
+    },
+    {
+      "alignedWord": "strawberries",
+      "case": "success",
+      "end": 3.46,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.16,
+      "startOffset": 15,
+      "word": "strawberries"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.48,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.46,
+      "startOffset": 28,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 32,
+      "word": "best"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 81,
+  "clipEnd": 85,
+  "partIndex": 2,
+  "clipIndex": 3
+}

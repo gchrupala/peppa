@@ -1,0 +1,197 @@
+{
+  "transcript": "Peppa is going to her first ballet lesson.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.31,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.47,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 6,
+      "word": "is"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 1.69,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 9,
+      "word": "going"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 15,
+      "word": "to"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 18,
+      "word": "her"
+    },
+    {
+      "alignedWord": "first",
+      "case": "success",
+      "end": 1.8800000000000001,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 22,
+      "word": "first"
+    },
+    {
+      "alignedWord": "ballet",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 28,
+      "word": "ballet"
+    },
+    {
+      "alignedWord": "lesson",
+      "case": "success",
+      "end": 2.77,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 35,
+      "word": "lesson"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E24 - Ballet Lessons.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_31.json",
+  "episode_title": "Ballet Lesson",
+  "clipStart": 21,
+  "clipEnd": 26,
+  "partIndex": 0,
+  "clipIndex": 0
+}

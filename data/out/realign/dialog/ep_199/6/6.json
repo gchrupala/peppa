@@ -1,0 +1,90 @@
+{
+  "transcript": "- Like what? - Limbo!",
+  "words": [
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 3.52,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.49,
+      "startOffset": 2,
+      "word": "Like"
+    },
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 3.55,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.52,
+      "startOffset": 7,
+      "word": "what"
+    },
+    {
+      "alignedWord": "limbo",
+      "case": "success",
+      "end": 3.5999999999999996,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.55,
+      "startOffset": 15,
+      "word": "Limbo"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 194,
+  "clipEnd": 198,
+  "partIndex": 6,
+  "clipIndex": 6
+}

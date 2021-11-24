@@ -1,0 +1,109 @@
+{
+  "transcript": "Peppa's cure for hiccups",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.45,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 0,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "cure",
+      "case": "success",
+      "end": 1.72,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 8,
+      "word": "cure"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 13,
+      "word": "for"
+    },
+    {
+      "alignedWord": "hiccups",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 17,
+      "word": "hiccups"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E16 - Hiccups.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_11.json",
+  "episode_title": "Hiccups",
+  "clipStart": 145,
+  "clipEnd": 147,
+  "partIndex": 4,
+  "clipIndex": 0
+}

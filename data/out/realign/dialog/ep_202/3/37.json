@@ -1,0 +1,52 @@
+{
+  "transcript": " - Dinosaur.",
+  "words": [
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.73,
+      "startOffset": 3,
+      "word": "Dinosaur"
+    }
+  ],
+  "speaker": "George",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 208,
+  "clipEnd": 211,
+  "partIndex": 3,
+  "clipIndex": 37
+}

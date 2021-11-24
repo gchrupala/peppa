@@ -1,0 +1,268 @@
+{
+  "transcript": "And Mr. Zebra the postman has a special delivery.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.39,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.22,
+      "startOffset": 0,
+      "word": "And"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 0.74,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.4,
+      "startOffset": 4,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "zebra",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "z_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.74,
+      "startOffset": 8,
+      "word": "Zebra"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.1600000000000001,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 14,
+      "word": "the"
+    },
+    {
+      "alignedWord": "postman",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 18,
+      "word": "postman"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.95,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 26,
+      "word": "has"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 30,
+      "word": "a"
+    },
+    {
+      "alignedWord": "special",
+      "case": "success",
+      "end": 2.45,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "sh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 32,
+      "word": "special"
+    },
+    {
+      "alignedWord": "delivery",
+      "case": "success",
+      "end": 2.95,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.45,
+      "startOffset": 40,
+      "word": "delivery"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E45 - The Toy Cupboard.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_96.json",
+  "episode_title": "The Toy Cupboard",
+  "clipStart": 90,
+  "clipEnd": 94,
+  "partIndex": 3,
+  "clipIndex": 1
+}

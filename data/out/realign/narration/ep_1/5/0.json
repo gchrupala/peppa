@@ -1,0 +1,159 @@
+{
+  "transcript": "George has found a big puddle.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.6599999999999999,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.8300000000000001,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "found",
+      "case": "success",
+      "end": 1.1199999999999999,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 11,
+      "word": "found"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.2300000000000002,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 17,
+      "word": "a"
+    },
+    {
+      "alignedWord": "big",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.3,
+      "startOffset": 19,
+      "word": "big"
+    },
+    {
+      "alignedWord": "puddle",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 23,
+      "word": "puddle"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E01 - Muddy Puddles.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_1.json",
+  "episode_title": "Muddy Puddles",
+  "clipStart": 117,
+  "clipEnd": 120,
+  "partIndex": 5,
+  "clipIndex": 0
+}

@@ -1,0 +1,57 @@
+{
+  "transcript": "- Is it bananas?",
+  "words": [
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 3.32,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.3,
+      "startOffset": 2,
+      "word": "Is"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 3.34,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.32,
+      "startOffset": 5,
+      "word": "it"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 15,
+      "startOffset": 8,
+      "word": "bananas"
+    }
+  ],
+  "speaker": "Emily",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 77,
+  "clipEnd": 81,
+  "partIndex": 2,
+  "clipIndex": 1
+}

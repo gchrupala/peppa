@@ -1,0 +1,182 @@
+{
+  "transcript": "is delivering a parcel to Peppa's house. ",
+  "words": [
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 0,
+      "word": "is"
+    },
+    {
+      "alignedWord": "delivering",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 3,
+      "word": "delivering"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.51,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 14,
+      "word": "a"
+    },
+    {
+      "alignedWord": "parcel",
+      "case": "success",
+      "end": 1.95,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 16,
+      "word": "parcel"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 23,
+      "word": "to"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.38,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.29,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 26,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "house",
+      "case": "success",
+      "end": 2.81,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.39,
+      "startOffset": 34,
+      "word": "house"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E51 - Daddy's Movie Camera.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_51.json",
+  "episode_title": "Daddy's Movie Camera",
+  "clipStart": 21,
+  "clipEnd": 27,
+  "partIndex": 0,
+  "clipIndex": 1
+}

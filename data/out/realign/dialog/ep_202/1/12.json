@@ -1,0 +1,134 @@
+{
+  "transcript": "- We are choosing our favourite fruit.",
+  "words": [
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 2.35,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 2,
+      "word": "We"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.35,
+      "startOffset": 5,
+      "word": "are"
+    },
+    {
+      "alignedWord": "choosing",
+      "case": "success",
+      "end": 2.57,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 9,
+      "word": "choosing"
+    },
+    {
+      "alignedWord": "our",
+      "case": "success",
+      "end": 2.93,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.91,
+      "startOffset": 18,
+      "word": "our"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 31,
+      "startOffset": 22,
+      "word": "favourite"
+    },
+    {
+      "alignedWord": "fruit",
+      "case": "success",
+      "end": 3.29,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.25,
+      "startOffset": 32,
+      "word": "fruit"
+    }
+  ],
+  "speaker": "Suzy",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 52,
+  "clipEnd": 56,
+  "partIndex": 1,
+  "clipIndex": 12
+}

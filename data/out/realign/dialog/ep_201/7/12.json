@@ -1,0 +1,124 @@
+{
+  "transcript": "- Oh, goodie. Can we help? ",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 3.2199999999999998,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 3.17,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "goodie",
+      "case": "success",
+      "end": 3.49,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.22,
+      "startOffset": 6,
+      "word": "goodie"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 3.52,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.49,
+      "startOffset": 14,
+      "word": "Can"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 3.54,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.52,
+      "startOffset": 18,
+      "word": "we"
+    },
+    {
+      "alignedWord": "help",
+      "case": "success",
+      "end": 3.58,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 3.54,
+      "startOffset": 21,
+      "word": "help"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 179,
+  "clipEnd": 183,
+  "partIndex": 7,
+  "clipIndex": 12
+}

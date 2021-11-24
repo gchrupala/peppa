@@ -1,0 +1,144 @@
+{
+  "transcript": "George has missed cuckoo again.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "missed",
+      "case": "success",
+      "end": 2.14,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 11,
+      "word": "missed"
+    },
+    {
+      "alignedWord": "cuckoo",
+      "case": "success",
+      "end": 2.6100000000000003,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.16,
+      "startOffset": 18,
+      "word": "cuckoo"
+    },
+    {
+      "alignedWord": "again",
+      "case": "success",
+      "end": 3.44,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.24,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.69,
+      "startOffset": 25,
+      "word": "again"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E15 - Cuckoo Clock.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_82.json",
+  "episode_title": "Cuckoo Clock",
+  "clipStart": 174,
+  "clipEnd": 178,
+  "partIndex": 4,
+  "clipIndex": 0
+}

@@ -1,0 +1,202 @@
+{
+  "transcript": "-Chloe is making George a dinosaur puppet.",
+  "words": [
+    {
+      "alignedWord": "chloe",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.64,
+      "startOffset": 1,
+      "word": "Chloe"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.0,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "making",
+      "case": "success",
+      "end": 1.4300000000000002,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 10,
+      "word": "making"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 17,
+      "word": "George"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 24,
+      "word": "a"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 2.67,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 26,
+      "word": "dinosaur"
+    },
+    {
+      "alignedWord": "puppet",
+      "case": "success",
+      "end": 3.09,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.81,
+      "startOffset": 35,
+      "word": "puppet"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E42 - Chloe's Puppet Show.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_41.json",
+  "episode_title": "Chlo?'s Puppet Show",
+  "clipStart": 136,
+  "clipEnd": 140,
+  "partIndex": 4,
+  "clipIndex": 0
+}

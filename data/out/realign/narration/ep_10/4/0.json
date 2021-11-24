@@ -1,0 +1,232 @@
+{
+  "transcript": "George has thought of something he wants to grow.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.52,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.22,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.66,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "thought",
+      "case": "success",
+      "end": 0.95,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 11,
+      "word": "thought"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 1.0999999999999999,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_E"
+        }
+      ],
+      "start": 0.95,
+      "startOffset": 19,
+      "word": "of"
+    },
+    {
+      "alignedWord": "something",
+      "case": "success",
+      "end": 1.4400000000000002,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 22,
+      "word": "something"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 32,
+      "word": "he"
+    },
+    {
+      "alignedWord": "wants",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 35,
+      "word": "wants"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 41,
+      "word": "to"
+    },
+    {
+      "alignedWord": "grow",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.04,
+      "startOffset": 44,
+      "word": "grow"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E09 - Gardening.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_10.json",
+  "episode_title": "Gardening",
+  "clipStart": 259,
+  "clipEnd": 262,
+  "partIndex": 4,
+  "clipIndex": 0
+}

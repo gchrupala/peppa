@@ -1,0 +1,86 @@
+{
+  "transcript": "A sand castle.",
+  "words": [
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.9400000000000001,
+      "endOffset": 1,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 0,
+      "word": "A"
+    },
+    {
+      "alignedWord": "sand",
+      "case": "success",
+      "end": 1.2999999999999998,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 2,
+      "word": "sand"
+    },
+    {
+      "alignedWord": "castle",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 7,
+      "word": "castle"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E48 - At the Beach.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_46.json",
+  "episode_title": "At the Beach",
+  "clipStart": 227,
+  "clipEnd": 230,
+  "partIndex": 7,
+  "clipIndex": 0
+}

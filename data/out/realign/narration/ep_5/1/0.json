@@ -1,0 +1,156 @@
+{
+  "transcript": "He must quickly find somewhere",
+  "words": [
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 0.35,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.21,
+      "startOffset": 0,
+      "word": "He"
+    },
+    {
+      "alignedWord": "must",
+      "case": "success",
+      "end": 0.5599999999999999,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.35,
+      "startOffset": 3,
+      "word": "must"
+    },
+    {
+      "alignedWord": "quickly",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.57,
+      "startOffset": 8,
+      "word": "quickly"
+    },
+    {
+      "alignedWord": "find",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.0,
+      "startOffset": 16,
+      "word": "find"
+    },
+    {
+      "alignedWord": "somewhere",
+      "case": "success",
+      "end": 1.49,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 21,
+      "word": "somewhere"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E05 - Hide & Seek.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_5.json",
+  "episode_title": "Hide and Seek",
+  "clipStart": 34,
+  "clipEnd": 36,
+  "partIndex": 1,
+  "clipIndex": 0
+}

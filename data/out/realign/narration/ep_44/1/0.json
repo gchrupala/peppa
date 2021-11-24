@@ -1,0 +1,202 @@
+{
+  "transcript": "Suzy Sheep, Danny Dog, and Rebecca Rabbit",
+  "words": [
+    {
+      "alignedWord": "suzy",
+      "case": "success",
+      "end": 0.82,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 0,
+      "word": "Suzy"
+    },
+    {
+      "alignedWord": "sheep",
+      "case": "success",
+      "end": 1.03,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 5,
+      "word": "Sheep"
+    },
+    {
+      "alignedWord": "danny",
+      "case": "success",
+      "end": 1.47,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 12,
+      "word": "Danny"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 18,
+      "word": "Dog"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 23,
+      "word": "and"
+    },
+    {
+      "alignedWord": "rebecca",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 27,
+      "word": "Rebecca"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 2.56,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 35,
+      "word": "Rabbit"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E44 - The Playground.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_44.json",
+  "episode_title": "The Playground",
+  "clipStart": 32,
+  "clipEnd": 35,
+  "partIndex": 1,
+  "clipIndex": 0
+}

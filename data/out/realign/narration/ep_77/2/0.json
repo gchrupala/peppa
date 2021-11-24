@@ -1,0 +1,228 @@
+{
+  "transcript": "Mrs. Rabbit heats up the air in the balloon",
+  "words": [
+    {
+      "alignedWord": "mrs",
+      "case": "success",
+      "end": 0.3,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "Mrs"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 0.62,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 5,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "heats",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 12,
+      "word": "heats"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 18,
+      "word": "up"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.29,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 21,
+      "word": "the"
+    },
+    {
+      "alignedWord": "air",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 25,
+      "word": "air"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 29,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.6900000000000002,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 32,
+      "word": "the"
+    },
+    {
+      "alignedWord": "balloon",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 36,
+      "word": "balloon"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E36 - The Balloon Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_77.json",
+  "episode_title": "The Balloon Ride",
+  "clipStart": 96,
+  "clipEnd": 99,
+  "partIndex": 2,
+  "clipIndex": 0
+}

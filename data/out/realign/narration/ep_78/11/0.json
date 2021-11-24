@@ -1,0 +1,121 @@
+{
+  "transcript": "Peppa loves bouncy castles.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.01,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.0,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.4100000000000001,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 6,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "bouncy",
+      "case": "success",
+      "end": 1.47,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 12,
+      "word": "bouncy"
+    },
+    {
+      "alignedWord": "castles",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 19,
+      "word": "castles"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E31 - George's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_78.json",
+  "episode_title": "George's Birthday",
+  "clipStart": 256,
+  "clipEnd": 258,
+  "partIndex": 11,
+  "clipIndex": 0
+}

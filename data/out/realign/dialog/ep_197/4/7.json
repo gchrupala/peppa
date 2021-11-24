@@ -1,0 +1,231 @@
+{
+  "transcript": "- Ah, let's find some more magic, shiny things in the garden.",
+  "words": [
+    {
+      "alignedWord": "ah",
+      "case": "success",
+      "end": 3.55,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.3,
+          "phone": "aa_S"
+        }
+      ],
+      "start": 3.25,
+      "startOffset": 2,
+      "word": "Ah"
+    },
+    {
+      "alignedWord": "let's",
+      "case": "success",
+      "end": 4.07,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.85,
+      "startOffset": 6,
+      "word": "let's"
+    },
+    {
+      "alignedWord": "find",
+      "case": "success",
+      "end": 4.390000000000001,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 4.07,
+      "startOffset": 12,
+      "word": "find"
+    },
+    {
+      "alignedWord": "some",
+      "case": "success",
+      "end": 4.489999999999999,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 4.39,
+      "startOffset": 17,
+      "word": "some"
+    },
+    {
+      "alignedWord": "more",
+      "case": "success",
+      "end": 4.5200000000000005,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 4.49,
+      "startOffset": 22,
+      "word": "more"
+    },
+    {
+      "alignedWord": "magic",
+      "case": "success",
+      "end": 5.359999999999999,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_E"
+        }
+      ],
+      "start": 5.01,
+      "startOffset": 27,
+      "word": "magic"
+    },
+    {
+      "alignedWord": "shiny",
+      "case": "success",
+      "end": 5.880000000000001,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 5.36,
+      "startOffset": 34,
+      "word": "shiny"
+    },
+    {
+      "alignedWord": "things",
+      "case": "success",
+      "end": 6.42,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "z_E"
+        }
+      ],
+      "start": 5.91,
+      "startOffset": 40,
+      "word": "things"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 49,
+      "startOffset": 47,
+      "word": "in"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 53,
+      "startOffset": 50,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 60,
+      "startOffset": 54,
+      "word": "garden"
+    }
+  ],
+  "speaker": "Suzy",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 119,
+  "clipEnd": 126,
+  "partIndex": 4,
+  "clipIndex": 7
+}

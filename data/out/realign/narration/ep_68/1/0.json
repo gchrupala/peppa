@@ -1,0 +1,210 @@
+{
+  "transcript": "Without glasses, Pedro cannot see very well.",
+  "words": [
+    {
+      "alignedWord": "without",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 0,
+      "word": "Without"
+    },
+    {
+      "alignedWord": "glasses",
+      "case": "success",
+      "end": 1.64,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 8,
+      "word": "glasses"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 2.07,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 17,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "cannot",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.07,
+      "startOffset": 23,
+      "word": "cannot"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 2.7399999999999998,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 30,
+      "word": "see"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 2.97,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.74,
+      "startOffset": 34,
+      "word": "very"
+    },
+    {
+      "alignedWord": "well",
+      "case": "success",
+      "end": 3.3400000000000003,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.97,
+      "startOffset": 39,
+      "word": "well"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E25 - The Eye Test.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_68.json",
+  "episode_title": "The Eye Test",
+  "clipStart": 39,
+  "clipEnd": 43,
+  "partIndex": 1,
+  "clipIndex": 0
+}

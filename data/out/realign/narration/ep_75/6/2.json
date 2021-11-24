@@ -1,0 +1,237 @@
+{
+  "transcript": "And Grandpa Pig is doing important boat things.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.7699999999999999,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.69,
+      "startOffset": 0,
+      "word": "And"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 0.79,
+      "startOffset": 4,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 12,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 16,
+      "word": "is"
+    },
+    {
+      "alignedWord": "doing",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 19,
+      "word": "doing"
+    },
+    {
+      "alignedWord": "important",
+      "case": "success",
+      "end": 2.78,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 25,
+      "word": "important"
+    },
+    {
+      "alignedWord": "boat",
+      "case": "success",
+      "end": 2.8099999999999996,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 35,
+      "word": "boat"
+    },
+    {
+      "alignedWord": "things",
+      "case": "success",
+      "end": 3.62,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.25,
+      "startOffset": 40,
+      "word": "things"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E14 - Pirate Island.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_75.json",
+  "episode_title": "Pirate Island",
+  "clipStart": 144,
+  "clipEnd": 148,
+  "partIndex": 6,
+  "clipIndex": 2
+}

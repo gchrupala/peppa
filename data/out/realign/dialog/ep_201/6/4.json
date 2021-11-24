@@ -1,0 +1,69 @@
+{
+  "transcript": "- I've got a rivet gun.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 6,
+      "startOffset": 2,
+      "word": "I've"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 10,
+      "startOffset": 7,
+      "word": "got"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 12,
+      "startOffset": 11,
+      "word": "a"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.4,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.28,
+      "startOffset": 13,
+      "word": "rivet"
+    },
+    {
+      "alignedWord": "gun",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.42,
+      "startOffset": 19,
+      "word": "gun"
+    }
+  ],
+  "speaker": "Mr Labrador",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 122,
+  "clipEnd": 125,
+  "partIndex": 6,
+  "clipIndex": 4
+}

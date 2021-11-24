@@ -1,0 +1,201 @@
+{
+  "transcript": "Peppa and George are playing in the garden.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.84,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.4,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.97,
+      "startOffset": 10,
+      "word": "George"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.55,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.48,
+      "startOffset": 17,
+      "word": "are"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 2.86,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.55,
+      "startOffset": 21,
+      "word": "playing"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 3.0300000000000002,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.89,
+      "startOffset": 29,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.19,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.04,
+      "startOffset": 32,
+      "word": "the"
+    },
+    {
+      "alignedWord": "garden",
+      "case": "success",
+      "end": 3.4,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.34,
+      "startOffset": 36,
+      "word": "garden"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E14 - My Cousin Chloe.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_28.json",
+  "episode_title": "My Cousin Chlo?",
+  "clipStart": 21,
+  "clipEnd": 25,
+  "partIndex": 0,
+  "clipIndex": 0
+}

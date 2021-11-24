@@ -1,0 +1,78 @@
+{
+  "transcript": "Here's Granddad Dog.",
+  "words": [
+    {
+      "alignedWord": "here's",
+      "case": "success",
+      "end": 0.78,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 0,
+      "word": "Here's"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.1600000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.38,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.78,
+      "startOffset": 7,
+      "word": "Granddad"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 16,
+      "word": "Dog"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E50 - Grandpa Pig's Boat.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_48.json",
+  "episode_title": "Grandpa Pig's Boat",
+  "clipStart": 104,
+  "clipEnd": 106,
+  "partIndex": 2,
+  "clipIndex": 0
+}

@@ -1,0 +1,163 @@
+{
+  "transcript": " But if anyone catches the ball,",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 2.07,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 1,
+      "word": "But"
+    },
+    {
+      "alignedWord": "if",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "f_E"
+        }
+      ],
+      "start": 2.07,
+      "startOffset": 5,
+      "word": "if"
+    },
+    {
+      "alignedWord": "anyone",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 8,
+      "word": "anyone"
+    },
+    {
+      "alignedWord": "catches",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 15,
+      "word": "catches"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 23,
+      "word": "the"
+    },
+    {
+      "alignedWord": "ball",
+      "case": "success",
+      "end": 3.2600000000000002,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.23,
+      "startOffset": 27,
+      "word": "ball"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 132,
+  "clipEnd": 136,
+  "partIndex": 4,
+  "clipIndex": 2
+}

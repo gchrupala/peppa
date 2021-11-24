@@ -1,0 +1,162 @@
+{
+  "transcript": "In the autumn, it gets a bit",
+  "words": [
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 0.8500000000000001,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 0,
+      "word": "In"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.97,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 3,
+      "word": "the"
+    },
+    {
+      "alignedWord": "autumn",
+      "case": "success",
+      "end": 1.46,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 7,
+      "word": "autumn"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 15,
+      "word": "it"
+    },
+    {
+      "alignedWord": "gets",
+      "case": "success",
+      "end": 2.0300000000000002,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 18,
+      "word": "gets"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.0799999999999996,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 23,
+      "word": "a"
+    },
+    {
+      "alignedWord": "bit",
+      "case": "success",
+      "end": 2.25,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 25,
+      "word": "bit"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E08 - Windy Autumn Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_60.json",
+  "episode_title": "Windy Autumn Day",
+  "clipStart": 63,
+  "clipEnd": 66,
+  "partIndex": 3,
+  "clipIndex": 0
+}

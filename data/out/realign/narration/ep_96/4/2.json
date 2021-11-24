@@ -1,0 +1,178 @@
+{
+  "transcript": "Pig has not used all the pieces.",
+  "words": [
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.43000000000000005,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 0,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.6699999999999999,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.47,
+      "startOffset": 4,
+      "word": "has"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 0.9600000000000001,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 8,
+      "word": "not"
+    },
+    {
+      "alignedWord": "used",
+      "case": "success",
+      "end": 1.3,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 12,
+      "word": "used"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 1.4300000000000002,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.3,
+      "startOffset": 17,
+      "word": "all"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 21,
+      "word": "the"
+    },
+    {
+      "alignedWord": "pieces",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 25,
+      "word": "pieces"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E45 - The Toy Cupboard.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_96.json",
+  "episode_title": "The Toy Cupboard",
+  "clipStart": 190,
+  "clipEnd": 193,
+  "partIndex": 4,
+  "clipIndex": 2
+}

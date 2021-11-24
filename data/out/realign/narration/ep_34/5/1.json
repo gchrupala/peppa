@@ -1,0 +1,244 @@
+{
+  "transcript": "like the tomatoes or the lettuce or the cucumber.",
+  "words": [
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 0.22,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.13,
+      "startOffset": 0,
+      "word": "like"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.31,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.22,
+      "startOffset": 5,
+      "word": "the"
+    },
+    {
+      "alignedWord": "tomatoes",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 9,
+      "word": "tomatoes"
+    },
+    {
+      "alignedWord": "or",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 18,
+      "word": "or"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.37,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 21,
+      "word": "the"
+    },
+    {
+      "alignedWord": "lettuce",
+      "case": "success",
+      "end": 1.86,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.23,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 25,
+      "word": "lettuce"
+    },
+    {
+      "alignedWord": "or",
+      "case": "success",
+      "end": 2.16,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 33,
+      "word": "or"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.28,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 36,
+      "word": "the"
+    },
+    {
+      "alignedWord": "cucumber",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.28,
+      "startOffset": 40,
+      "word": "cucumber"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E37- Lunch.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_34.json",
+  "episode_title": "Lunch",
+  "clipStart": 188,
+  "clipEnd": 192,
+  "partIndex": 5,
+  "clipIndex": 1
+}

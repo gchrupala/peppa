@@ -1,0 +1,254 @@
+{
+  "transcript": "Danny Dog and Granddad Dog are in the traffic jam too.",
+  "words": [
+    {
+      "alignedWord": "danny",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 0,
+      "word": "Danny"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.01,
+      "startOffset": 6,
+      "word": "Dog"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 10,
+      "word": "and"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.92,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.48,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 14,
+      "word": "Granddad"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 23,
+      "word": "Dog"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "er_S"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 27,
+      "word": "are"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.38,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 31,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.51,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.38,
+      "startOffset": 34,
+      "word": "the"
+    },
+    {
+      "alignedWord": "traffic",
+      "case": "success",
+      "end": 2.88,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.52,
+      "startOffset": 38,
+      "word": "traffic"
+    },
+    {
+      "alignedWord": "jam",
+      "case": "success",
+      "end": 3.2,
+      "endOffset": 49,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.89,
+      "startOffset": 46,
+      "word": "jam"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 3.6,
+      "endOffset": 53,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.29,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.2,
+      "startOffset": 50,
+      "word": "too"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E33 - Traffic Jam.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_65.json",
+  "episode_title": "Traffic Jam",
+  "clipStart": 81,
+  "clipEnd": 85,
+  "partIndex": 3,
+  "clipIndex": 0
+}

@@ -1,0 +1,140 @@
+{
+  "transcript": "What was that strange noise?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.5900000000000001,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.32,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "was",
+      "case": "success",
+      "end": 0.72,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 5,
+      "word": "was"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 0.95,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.72,
+      "startOffset": 9,
+      "word": "that"
+    },
+    {
+      "alignedWord": "strange",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.95,
+      "startOffset": 14,
+      "word": "strange"
+    },
+    {
+      "alignedWord": "noise",
+      "case": "success",
+      "end": 1.9000000000000001,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "oy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 22,
+      "word": "noise"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E05 - Hide & Seek.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_5.json",
+  "episode_title": "Hide and Seek",
+  "clipStart": 133,
+  "clipEnd": 136,
+  "partIndex": 9,
+  "clipIndex": 0
+}

@@ -1,0 +1,32 @@
+{
+  "transcript": ": No!",
+  "words": [
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 0.42,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.34,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.07,
+      "startOffset": 2,
+      "word": "No"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 255,
+  "clipEnd": 257,
+  "partIndex": 10,
+  "clipIndex": 2
+}

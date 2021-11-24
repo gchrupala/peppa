@@ -1,0 +1,89 @@
+{
+  "transcript": "- It's not gonna work, lads. - I know!",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 3.3000000000000003,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.2,
+      "startOffset": 2,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 3.5999999999999996,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.3,
+      "startOffset": 7,
+      "word": "not"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 16,
+      "startOffset": 11,
+      "word": "gonna"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 21,
+      "startOffset": 17,
+      "word": "work"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 27,
+      "startOffset": 23,
+      "word": "lads"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 31,
+      "word": "I"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 37,
+      "startOffset": 33,
+      "word": "know"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 124,
+  "clipEnd": 128,
+  "partIndex": 6,
+  "clipIndex": 5
+}

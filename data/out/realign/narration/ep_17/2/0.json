@@ -1,0 +1,178 @@
+{
+  "transcript": "Peppa is playing at being a butterfly.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.58,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.22,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.36,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.6399999999999999,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 6,
+      "word": "is"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 9,
+      "word": "playing"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 17,
+      "word": "at"
+    },
+    {
+      "alignedWord": "being",
+      "case": "success",
+      "end": 1.61,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 20,
+      "word": "being"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.6600000000000001,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 26,
+      "word": "a"
+    },
+    {
+      "alignedWord": "butterfly",
+      "case": "success",
+      "end": 2.26,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 28,
+      "word": "butterfly"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E46 - Frogs & Worms & Butterflies.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_17.json",
+  "episode_title": "Frogs and Worms and Butterflies",
+  "clipStart": 87,
+  "clipEnd": 90,
+  "partIndex": 2,
+  "clipIndex": 0
+}

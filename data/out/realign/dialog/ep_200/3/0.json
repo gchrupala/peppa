@@ -1,0 +1,163 @@
+{
+  "transcript": "- We'd like a boat, please. - Certainly!",
+  "words": [
+    {
+      "alignedWord": "we'd",
+      "case": "success",
+      "end": 1.69,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 2,
+      "word": "We'd"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 1.89,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 7,
+      "word": "like"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 12,
+      "word": "a"
+    },
+    {
+      "alignedWord": "boat",
+      "case": "success",
+      "end": 2.41,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 14,
+      "word": "boat"
+    },
+    {
+      "alignedWord": "please",
+      "case": "success",
+      "end": 2.64,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.47,
+      "startOffset": 20,
+      "word": "please"
+    },
+    {
+      "alignedWord": "certainly",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.64,
+      "startOffset": 30,
+      "word": "Certainly"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 107,
+  "clipEnd": 110,
+  "partIndex": 3,
+  "clipIndex": 0
+}

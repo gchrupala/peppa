@@ -1,0 +1,151 @@
+{
+  "transcript": "It is George's turn to hide.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.9400000000000001,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.78,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.0999999999999999,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "george's",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 6,
+      "word": "George's"
+    },
+    {
+      "alignedWord": "turn",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 15,
+      "word": "turn"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.87,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 20,
+      "word": "to"
+    },
+    {
+      "alignedWord": "hide",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 23,
+      "word": "hide"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E05 - Hide & Seek.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_5.json",
+  "episode_title": "Hide and Seek",
+  "clipStart": 31,
+  "clipEnd": 34,
+  "partIndex": 0,
+  "clipIndex": 1
+}

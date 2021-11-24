@@ -1,0 +1,147 @@
+{
+  "transcript": "He is playing on the swing.",
+  "words": [
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 0.16999999999999998,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.02,
+      "startOffset": 0,
+      "word": "He"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.32,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.17,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 0.6799999999999999,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.32,
+      "startOffset": 6,
+      "word": "playing"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 0.79,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 14,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.91,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.79,
+      "startOffset": 17,
+      "word": "the"
+    },
+    {
+      "alignedWord": "swing",
+      "case": "success",
+      "end": 1.32,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.91,
+      "startOffset": 21,
+      "word": "swing"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E05 - Georges friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_58.json",
+  "episode_title": "George's Friend",
+  "clipStart": 45,
+  "clipEnd": 47,
+  "partIndex": 1,
+  "clipIndex": 1
+}

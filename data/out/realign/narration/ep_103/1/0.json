@@ -1,0 +1,202 @@
+{
+  "transcript": "Rebecca, Suzy, and Emily are already here.",
+  "words": [
+    {
+      "alignedWord": "rebecca",
+      "case": "success",
+      "end": 1.11,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 0,
+      "word": "Rebecca"
+    },
+    {
+      "alignedWord": "suzy",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 9,
+      "word": "Suzy"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 15,
+      "word": "and"
+    },
+    {
+      "alignedWord": "emily",
+      "case": "success",
+      "end": 2.24,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.86,
+      "startOffset": 19,
+      "word": "Emily"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.7899999999999996,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 25,
+      "word": "are"
+    },
+    {
+      "alignedWord": "already",
+      "case": "success",
+      "end": 3.09,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.79,
+      "startOffset": 29,
+      "word": "already"
+    },
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 3.29,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.16,
+      "startOffset": 37,
+      "word": "here"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E52 - Sleepover.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_103.json",
+  "episode_title": "Sleepover",
+  "clipStart": 38,
+  "clipEnd": 42,
+  "partIndex": 1,
+  "clipIndex": 0
+}

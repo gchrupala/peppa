@@ -1,0 +1,79 @@
+{
+  "transcript": "- We're canoeing! - We're pedalling.",
+  "words": [
+    {
+      "alignedWord": "we're",
+      "case": "success",
+      "end": 3.0300000000000002,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.97,
+      "startOffset": 2,
+      "word": "We're"
+    },
+    {
+      "alignedWord": "canoeing",
+      "case": "success",
+      "end": 3.54,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 3.4,
+      "startOffset": 8,
+      "word": "canoeing"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 20,
+      "word": "We're"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 35,
+      "startOffset": 26,
+      "word": "pedalling"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 141,
+  "clipEnd": 145,
+  "partIndex": 3,
+  "clipIndex": 9
+}

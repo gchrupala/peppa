@@ -1,0 +1,120 @@
+{
+  "transcript": "Peppa and George are going",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.79,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.96,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.3199999999999998,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 10,
+      "word": "George"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.3800000000000001,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 17,
+      "word": "are"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 1.65,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 21,
+      "word": "going"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E07 - Rock Pools.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_62.json",
+  "episode_title": "Rock Pools",
+  "clipStart": 23,
+  "clipEnd": 25,
+  "partIndex": 0,
+  "clipIndex": 0
+}

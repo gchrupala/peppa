@@ -1,0 +1,67 @@
+{
+  "transcript": "- Digger, digger! ",
+  "words": [
+    {
+      "alignedWord": "digger",
+      "case": "success",
+      "end": 0.24000000000000002,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.2,
+      "startOffset": 2,
+      "word": "Digger"
+    },
+    {
+      "alignedWord": "digger",
+      "case": "success",
+      "end": 0.35000000000000003,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.24000000000000002,
+      "startOffset": 10,
+      "word": "digger"
+    }
+  ],
+  "speaker": "George",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 35,
+  "clipEnd": 37,
+  "partIndex": 2,
+  "clipIndex": 0
+}

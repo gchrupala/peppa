@@ -1,0 +1,217 @@
+{
+  "transcript": "George loves his dinosaur ice lolly so much,",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.8300000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.45,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.06,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 7,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 13,
+      "word": "his"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 17,
+      "word": "dinosaur"
+    },
+    {
+      "alignedWord": "ice",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 26,
+      "word": "ice"
+    },
+    {
+      "alignedWord": "lolly",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 30,
+      "word": "lolly"
+    },
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 2.65,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 36,
+      "word": "so"
+    },
+    {
+      "alignedWord": "much",
+      "case": "success",
+      "end": 2.96,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 2.68,
+      "startOffset": 39,
+      "word": "much"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E35 - Very Hot Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_40.json",
+  "episode_title": "Very Hot Day",
+  "clipStart": 210,
+  "clipEnd": 214,
+  "partIndex": 9,
+  "clipIndex": 0
+}

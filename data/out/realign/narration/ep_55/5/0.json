@@ -1,0 +1,205 @@
+{
+  "transcript": "What has Mommy Pig seen in the garden?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.0,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 5,
+      "word": "has"
+    },
+    {
+      "alignedWord": "mommy",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 9,
+      "word": "Mommy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 15,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "seen",
+      "case": "success",
+      "end": 2.37,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 19,
+      "word": "seen"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.37,
+      "startOffset": 24,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.57,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 27,
+      "word": "the"
+    },
+    {
+      "alignedWord": "garden",
+      "case": "success",
+      "end": 3.08,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.24,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.57,
+      "startOffset": 31,
+      "word": "garden"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E04 - Pollys Holiday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_55.json",
+  "episode_title": "Polly's Holiday",
+  "clipStart": 190,
+  "clipEnd": 195,
+  "partIndex": 5,
+  "clipIndex": 0
+}

@@ -1,0 +1,156 @@
+{
+  "transcript": "George does not like cucumbers",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.96,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 1.13,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 7,
+      "word": "does"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 1.3699999999999999,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 12,
+      "word": "not"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 1.6199999999999999,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 16,
+      "word": "like"
+    },
+    {
+      "alignedWord": "cucumbers",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 21,
+      "word": "cucumbers"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E37- Lunch.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_34.json",
+  "episode_title": "Lunch",
+  "clipStart": 106,
+  "clipEnd": 109,
+  "partIndex": 2,
+  "clipIndex": 0
+}

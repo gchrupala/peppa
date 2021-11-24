@@ -1,0 +1,178 @@
+{
+  "transcript": "The letter is ready to be posted.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.48,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "letter",
+      "case": "success",
+      "end": 0.67,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.51,
+      "startOffset": 4,
+      "word": "letter"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.07,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "ready",
+      "case": "success",
+      "end": 1.35,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 14,
+      "word": "ready"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.4500000000000002,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 20,
+      "word": "to"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 1.5999999999999999,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 23,
+      "word": "be"
+    },
+    {
+      "alignedWord": "posted",
+      "case": "success",
+      "end": 2.17,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.64,
+      "startOffset": 26,
+      "word": "posted"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E19 - Zoe Zebra the Postmans Daughter.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_80.json",
+  "episode_title": "Zoe Zebra the Postman's Daughter",
+  "clipStart": 134,
+  "clipEnd": 138,
+  "partIndex": 5,
+  "clipIndex": 0
+}

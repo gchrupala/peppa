@@ -1,0 +1,186 @@
+{
+  "transcript": "at Uncle Pig and Auntie Pig's house.",
+  "words": [
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 0.27,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.25,
+      "startOffset": 0,
+      "word": "at"
+    },
+    {
+      "alignedWord": "uncle",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 3,
+      "word": "Uncle"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.85,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 9,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 13,
+      "word": "and"
+    },
+    {
+      "alignedWord": "auntie",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 17,
+      "word": "Auntie"
+    },
+    {
+      "alignedWord": "pig's",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 24,
+      "word": "Pig's"
+    },
+    {
+      "alignedWord": "house",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 30,
+      "word": "house"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E42 - Chloe's Puppet Show.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_41.json",
+  "episode_title": "Chlo?'s Puppet Show",
+  "clipStart": 57,
+  "clipEnd": 60,
+  "partIndex": 1,
+  "clipIndex": 1
+}

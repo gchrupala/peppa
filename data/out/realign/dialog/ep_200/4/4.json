@@ -1,0 +1,174 @@
+{
+  "transcript": "- Let's see who can get back first.",
+  "words": [
+    {
+      "alignedWord": "let's",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 2,
+      "word": "Let's"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 2.4099999999999997,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.21,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.05,
+      "startOffset": 8,
+      "word": "see"
+    },
+    {
+      "alignedWord": "who",
+      "case": "success",
+      "end": 2.59,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 12,
+      "word": "who"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 2.7399999999999998,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.59,
+      "startOffset": 16,
+      "word": "can"
+    },
+    {
+      "alignedWord": "get",
+      "case": "success",
+      "end": 2.93,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.74,
+      "startOffset": 20,
+      "word": "get"
+    },
+    {
+      "alignedWord": "back",
+      "case": "success",
+      "end": 3.17,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.93,
+      "startOffset": 24,
+      "word": "back"
+    },
+    {
+      "alignedWord": "first",
+      "case": "success",
+      "end": 3.5,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.2,
+      "startOffset": 29,
+      "word": "first"
+    }
+  ],
+  "speaker": "Mummy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 184,
+  "clipEnd": 188,
+  "partIndex": 4,
+  "clipIndex": 4
+}

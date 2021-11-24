@@ -1,0 +1,193 @@
+{
+  "transcript": "George is too little to catch the ball.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.77,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.38,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.89,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 10,
+      "word": "too"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 14,
+      "word": "little"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 21,
+      "word": "to"
+    },
+    {
+      "alignedWord": "catch",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 24,
+      "word": "catch"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 30,
+      "word": "the"
+    },
+    {
+      "alignedWord": "ball",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 34,
+      "word": "ball"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E48 - At the Beach.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_46.json",
+  "episode_title": "At the Beach",
+  "clipStart": 77,
+  "clipEnd": 80,
+  "partIndex": 3,
+  "clipIndex": 1
+}

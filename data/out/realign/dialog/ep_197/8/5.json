@@ -1,0 +1,122 @@
+{
+  "transcript": "How does it do that, Daddy?",
+  "words": [
+    {
+      "alignedWord": "how",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 0,
+      "word": "How"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 4,
+      "word": "does"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 9,
+      "word": "it"
+    },
+    {
+      "alignedWord": "do",
+      "case": "success",
+      "end": 2.6999999999999997,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.4899999999999998,
+      "startOffset": 12,
+      "word": "do"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 3.11,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.08,
+      "startOffset": 15,
+      "word": "that"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 21,
+      "word": "Daddy"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 206,
+  "clipEnd": 210,
+  "partIndex": 8,
+  "clipIndex": 5
+}

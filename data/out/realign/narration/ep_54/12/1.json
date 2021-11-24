@@ -1,0 +1,82 @@
+{
+  "transcript": "That was loud.",
+  "words": [
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 0.8500000000000001,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.51,
+      "startOffset": 0,
+      "word": "That"
+    },
+    {
+      "alignedWord": "was",
+      "case": "success",
+      "end": 1.11,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.88,
+      "startOffset": 5,
+      "word": "was"
+    },
+    {
+      "alignedWord": "loud",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.24,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.27,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 9,
+      "word": "loud"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E03 - Emily Elephant.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_54.json",
+  "episode_title": "Emily Elephant",
+  "clipStart": 199,
+  "clipEnd": 202,
+  "partIndex": 12,
+  "clipIndex": 1
+}

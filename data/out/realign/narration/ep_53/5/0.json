@@ -1,0 +1,179 @@
+{
+  "transcript": "George is having fun making bubbles.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.12,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "having",
+      "case": "success",
+      "end": 1.43,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 10,
+      "word": "having"
+    },
+    {
+      "alignedWord": "fun",
+      "case": "success",
+      "end": 1.72,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 17,
+      "word": "fun"
+    },
+    {
+      "alignedWord": "making",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 21,
+      "word": "making"
+    },
+    {
+      "alignedWord": "bubbles",
+      "case": "success",
+      "end": 2.3,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 28,
+      "word": "bubbles"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E01 - Bubbles.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_53.json",
+  "episode_title": "Bubbles",
+  "clipStart": 146,
+  "clipEnd": 149,
+  "partIndex": 5,
+  "clipIndex": 0
+}

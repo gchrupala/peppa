@@ -1,0 +1,193 @@
+{
+  "transcript": "will run the first part of the race,",
+  "words": [
+    {
+      "alignedWord": "will",
+      "case": "success",
+      "end": 0.24000000000000002,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.1,
+      "startOffset": 0,
+      "word": "will"
+    },
+    {
+      "alignedWord": "run",
+      "case": "success",
+      "end": 0.43,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.24,
+      "startOffset": 5,
+      "word": "run"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.54,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.43,
+      "startOffset": 9,
+      "word": "the"
+    },
+    {
+      "alignedWord": "first",
+      "case": "success",
+      "end": 0.8700000000000001,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 13,
+      "word": "first"
+    },
+    {
+      "alignedWord": "part",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 19,
+      "word": "part"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 24,
+      "word": "of"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.2999999999999998,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 27,
+      "word": "the"
+    },
+    {
+      "alignedWord": "race",
+      "case": "success",
+      "end": 1.69,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.3,
+      "startOffset": 31,
+      "word": "race"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E24 - Sports day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_67.json",
+  "episode_title": "Sports Day",
+  "clipStart": 178,
+  "clipEnd": 180,
+  "partIndex": 8,
+  "clipIndex": 1
+}

@@ -1,0 +1,132 @@
+{
+  "transcript": "What a huge, big puddle.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.8300000000000001,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.96,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "huge",
+      "case": "success",
+      "end": 1.5699999999999998,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 7,
+      "word": "huge"
+    },
+    {
+      "alignedWord": "big",
+      "case": "success",
+      "end": 1.84,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 13,
+      "word": "big"
+    },
+    {
+      "alignedWord": "puddle",
+      "case": "success",
+      "end": 2.39,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 17,
+      "word": "puddle"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E34 - Bedtime.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_66.json",
+  "episode_title": "Bedtime",
+  "clipStart": 86,
+  "clipEnd": 89,
+  "partIndex": 3,
+  "clipIndex": 0
+}

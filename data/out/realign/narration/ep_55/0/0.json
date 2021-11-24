@@ -1,0 +1,205 @@
+{
+  "transcript": "Grannie and Grandpa Pig are going on holiday.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.6799999999999999,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.38,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 0,
+      "word": "Grannie"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.75,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 8,
+      "word": "and"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 12,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 20,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.6800000000000002,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 24,
+      "word": "are"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 2.0,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.68,
+      "startOffset": 28,
+      "word": "going"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 34,
+      "word": "on"
+    },
+    {
+      "alignedWord": "holiday",
+      "case": "success",
+      "end": 2.5900000000000003,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.14,
+      "startOffset": 37,
+      "word": "holiday"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E04 - Pollys Holiday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_55.json",
+  "episode_title": "Polly's Holiday",
+  "clipStart": 20,
+  "clipEnd": 24,
+  "partIndex": 0,
+  "clipIndex": 0
+}

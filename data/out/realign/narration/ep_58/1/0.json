@@ -1,0 +1,228 @@
+{
+  "transcript": "George is a bit too little for the roundabout.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.88,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.11,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.0,
+      "startOffset": 10,
+      "word": "a"
+    },
+    {
+      "alignedWord": "bit",
+      "case": "success",
+      "end": 1.2899999999999998,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 12,
+      "word": "bit"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 16,
+      "word": "too"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 1.84,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 20,
+      "word": "little"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.84,
+      "startOffset": 27,
+      "word": "for"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 31,
+      "word": "the"
+    },
+    {
+      "alignedWord": "roundabout",
+      "case": "success",
+      "end": 2.47,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 35,
+      "word": "roundabout"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E05 - Georges friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_58.json",
+  "episode_title": "George's Friend",
+  "clipStart": 42,
+  "clipEnd": 46,
+  "partIndex": 1,
+  "clipIndex": 0
+}

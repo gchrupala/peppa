@@ -1,0 +1,155 @@
+{
+  "transcript": "He wants to be a butterfly.",
+  "words": [
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 0.8200000000000001,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 0,
+      "word": "He"
+    },
+    {
+      "alignedWord": "wants",
+      "case": "success",
+      "end": 1.01,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 3,
+      "word": "wants"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 9,
+      "word": "to"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 1.29,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 12,
+      "word": "be"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.4100000000000001,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 15,
+      "word": "a"
+    },
+    {
+      "alignedWord": "butterfly",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 17,
+      "word": "butterfly"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E46 - Frogs & Worms & Butterflies.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_17.json",
+  "episode_title": "Frogs and Worms and Butterflies",
+  "clipStart": 120,
+  "clipEnd": 123,
+  "partIndex": 4,
+  "clipIndex": 2
+}

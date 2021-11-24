@@ -1,0 +1,136 @@
+{
+  "transcript": "to play in Grannie and Grandpa's garden.",
+  "words": [
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.1300000000000001,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 0,
+      "word": "to"
+    },
+    {
+      "alignedWord": "play",
+      "case": "success",
+      "end": 1.5099999999999998,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 3,
+      "word": "play"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 8,
+      "word": "in"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.91,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 11,
+      "word": "Grannie"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 22,
+      "startOffset": 19,
+      "word": "and"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 23,
+      "word": "Grandpa's"
+    },
+    {
+      "alignedWord": "garden",
+      "case": "success",
+      "end": 3.0999999999999996,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.59,
+      "startOffset": 33,
+      "word": "garden"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E38 - Grandpa's Little Train.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_84.json",
+  "episode_title": "Grandpa's Little Train",
+  "clipStart": 20,
+  "clipEnd": 24,
+  "partIndex": 0,
+  "clipIndex": 1
+}

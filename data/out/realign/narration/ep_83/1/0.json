@@ -1,0 +1,139 @@
+{
+  "transcript": "Peppa and her family have arrived at Chloe's house.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.6600000000000001,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.57,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 10,
+      "word": "her"
+    },
+    {
+      "alignedWord": "family",
+      "case": "success",
+      "end": 2.47,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 14,
+      "word": "family"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 2.5100000000000002,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.47,
+      "startOffset": 21,
+      "word": "have"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 33,
+      "startOffset": 26,
+      "word": "arrived"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 34,
+      "word": "at"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 44,
+      "startOffset": 37,
+      "word": "Chloe's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 50,
+      "startOffset": 45,
+      "word": "house"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E39 The Baby Piggy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_83.json",
+  "episode_title": "The Baby Piggy",
+  "clipStart": 29,
+  "clipEnd": 32,
+  "partIndex": 1,
+  "clipIndex": 0
+}

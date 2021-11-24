@@ -1,0 +1,243 @@
+{
+  "transcript": "Oh, dear, the computer is not meant to do that.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 0.95,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 0,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "dear",
+      "case": "success",
+      "end": 1.3699999999999999,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.95,
+      "startOffset": 4,
+      "word": "dear"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 10,
+      "word": "the"
+    },
+    {
+      "alignedWord": "computer",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 14,
+      "word": "computer"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.41,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 23,
+      "word": "is"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 2.64,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 26,
+      "word": "not"
+    },
+    {
+      "alignedWord": "meant",
+      "case": "success",
+      "end": 2.87,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 30,
+      "word": "meant"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.9899999999999998,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.88,
+      "startOffset": 36,
+      "word": "to"
+    },
+    {
+      "alignedWord": "do",
+      "case": "success",
+      "end": 3.1700000000000004,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.99,
+      "startOffset": 39,
+      "word": "do"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 3.48,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.17,
+      "startOffset": 42,
+      "word": "that"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E07 - Mummy Pig at Work.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_7.json",
+  "episode_title": "Mummy Pig at Work",
+  "clipStart": 110,
+  "clipEnd": 115,
+  "partIndex": 4,
+  "clipIndex": 0
+}

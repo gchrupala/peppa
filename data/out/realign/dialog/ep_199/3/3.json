@@ -1,0 +1,104 @@
+{
+  "transcript": "he can stand a bit closer.",
+  "words": [
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 2.34,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.32,
+      "startOffset": 0,
+      "word": "he"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 2.3699999999999997,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.34,
+      "startOffset": 3,
+      "word": "can"
+    },
+    {
+      "alignedWord": "stand",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.37,
+      "startOffset": 7,
+      "word": "stand"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 14,
+      "startOffset": 13,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 18,
+      "startOffset": 15,
+      "word": "bit"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 19,
+      "word": "closer"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 113,
+  "clipEnd": 116,
+  "partIndex": 3,
+  "clipIndex": 3
+}

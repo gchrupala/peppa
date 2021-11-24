@@ -1,0 +1,47 @@
+{
+  "transcript": "- Oh, no!",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 2.44,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 6,
+      "word": "no"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 112,
+  "clipEnd": 115,
+  "partIndex": 6,
+  "clipIndex": 0
+}

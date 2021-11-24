@@ -1,0 +1,148 @@
+{
+  "transcript": "Grandpa Pig in his garden.",
+  "words": [
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 1.49,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 1.01,
+      "startOffset": 0,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 8,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.9000000000000001,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 12,
+      "word": "in"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 15,
+      "word": "his"
+    },
+    {
+      "alignedWord": "garden",
+      "case": "success",
+      "end": 2.3200000000000003,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 19,
+      "word": "garden"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E46 - Frogs & Worms & Butterflies.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_17.json",
+  "episode_title": "Frogs and Worms and Butterflies",
+  "clipStart": 28,
+  "clipEnd": 31,
+  "partIndex": 0,
+  "clipIndex": 1
+}

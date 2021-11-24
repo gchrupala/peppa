@@ -1,0 +1,243 @@
+{
+  "transcript": "But Mr. Bull is not very good at being quiet.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 0.44,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 0.81,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.49,
+      "startOffset": 4,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "bull",
+      "case": "success",
+      "end": 1.1800000000000002,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.81,
+      "startOffset": 8,
+      "word": "Bull"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.38,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 13,
+      "word": "is"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 16,
+      "word": "not"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 20,
+      "word": "very"
+    },
+    {
+      "alignedWord": "good",
+      "case": "success",
+      "end": 2.2199999999999998,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 25,
+      "word": "good"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 2.3200000000000003,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.22,
+      "startOffset": 30,
+      "word": "at"
+    },
+    {
+      "alignedWord": "being",
+      "case": "success",
+      "end": 2.69,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.34,
+      "startOffset": 33,
+      "word": "being"
+    },
+    {
+      "alignedWord": "quiet",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        }
+      ],
+      "start": 2.71,
+      "startOffset": 39,
+      "word": "quiet"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E12 - Recycling.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_63.json",
+  "episode_title": "Recycling",
+  "clipStart": 32,
+  "clipEnd": 35,
+  "partIndex": 1,
+  "clipIndex": 0
+}

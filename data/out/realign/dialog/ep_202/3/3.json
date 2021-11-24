@@ -1,0 +1,209 @@
+{
+  "transcript": "- It's a drink made from fruit. Would you like one?",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 1.72,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 2,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 7,
+      "word": "a"
+    },
+    {
+      "alignedWord": "drink",
+      "case": "success",
+      "end": 2.3200000000000003,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 9,
+      "word": "drink"
+    },
+    {
+      "alignedWord": "made",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.35,
+      "startOffset": 15,
+      "word": "made"
+    },
+    {
+      "alignedWord": "from",
+      "case": "success",
+      "end": 2.8200000000000003,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 20,
+      "word": "from"
+    },
+    {
+      "alignedWord": "fruit",
+      "case": "success",
+      "end": 3.4499999999999997,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.27,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.82,
+      "startOffset": 25,
+      "word": "fruit"
+    },
+    {
+      "alignedWord": "would",
+      "case": "success",
+      "end": 3.78,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.75,
+      "startOffset": 32,
+      "word": "Would"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 38,
+      "word": "you"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 46,
+      "startOffset": 42,
+      "word": "like"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 50,
+      "startOffset": 47,
+      "word": "one"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 98,
+  "clipEnd": 102,
+  "partIndex": 3,
+  "clipIndex": 3
+}

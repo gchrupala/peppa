@@ -1,0 +1,190 @@
+{
+  "transcript": "Here is Rebecca Rabbit with her mummy.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 0.35,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.13,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.51,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.35,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "rebecca",
+      "case": "success",
+      "end": 0.91,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.51,
+      "startOffset": 8,
+      "word": "Rebecca"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 16,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 1.5899999999999999,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "th_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 23,
+      "word": "with"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 28,
+      "word": "her"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 32,
+      "word": "mummy"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E11 - The Boat Pond.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_64.json",
+  "episode_title": "The Boat Pond",
+  "clipStart": 166,
+  "clipEnd": 169,
+  "partIndex": 14,
+  "clipIndex": 0
+}

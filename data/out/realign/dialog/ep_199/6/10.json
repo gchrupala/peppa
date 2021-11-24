@@ -1,0 +1,147 @@
+{
+  "transcript": "- Ho-ho! We go under the limbo pole.",
+  "words": [
+    {
+      "alignedWord": "ho",
+      "case": "success",
+      "end": 0.66,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.55,
+      "startOffset": 2,
+      "word": "Ho"
+    },
+    {
+      "alignedWord": "ho",
+      "case": "success",
+      "end": 1.9100000000000001,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 5,
+      "word": "ho"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 3.7199999999999998,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.53,
+      "startOffset": 9,
+      "word": "We"
+    },
+    {
+      "alignedWord": "go",
+      "case": "success",
+      "end": 3.74,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.72,
+      "startOffset": 12,
+      "word": "go"
+    },
+    {
+      "alignedWord": "under",
+      "case": "success",
+      "end": 3.7800000000000002,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.74,
+      "startOffset": 15,
+      "word": "under"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 21,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 30,
+      "startOffset": 25,
+      "word": "limbo"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 35,
+      "startOffset": 31,
+      "word": "pole"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 207,
+  "clipEnd": 211,
+  "partIndex": 6,
+  "clipIndex": 10
+}

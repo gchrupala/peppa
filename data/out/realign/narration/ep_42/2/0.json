@@ -1,0 +1,143 @@
+{
+  "transcript": "-Mommy Pig, Peppa, and George are",
+  "words": [
+    {
+      "alignedWord": "mommy",
+      "case": "success",
+      "end": 0.5900000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.33,
+      "startOffset": 1,
+      "word": "Mommy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.83,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 7,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.1600000000000001,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.26,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 12,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.3399999999999999,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 19,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 23,
+      "word": "George"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 30,
+      "word": "are"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E40 - Daddy Gets Fit.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_42.json",
+  "episode_title": "Daddy Gets Fit",
+  "clipStart": 123,
+  "clipEnd": 125,
+  "partIndex": 2,
+  "clipIndex": 0
+}

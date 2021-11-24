@@ -1,0 +1,40 @@
+{
+  "transcript": "Hooray!!",
+  "words": [
+    {
+      "alignedWord": "hooray",
+      "case": "success",
+      "end": 0.62,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 0,
+      "word": "Hooray"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 90,
+  "clipEnd": 92,
+  "partIndex": 1,
+  "clipIndex": 23
+}

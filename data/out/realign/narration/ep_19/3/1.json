@@ -1,0 +1,135 @@
+{
+  "transcript": "Peppa's shoes are not there, either.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.72,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.21,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.51,
+      "startOffset": 0,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "shoes",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.72,
+      "startOffset": 8,
+      "word": "shoes"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 14,
+      "word": "are"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 18,
+      "word": "not"
+    },
+    {
+      "alignedWord": "there",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 22,
+      "word": "there"
+    },
+    {
+      "alignedWord": "either",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 29,
+      "word": "either"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E23 - New Shoes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_19.json",
+  "episode_title": "New Shoes",
+  "clipStart": 64,
+  "clipEnd": 67,
+  "partIndex": 3,
+  "clipIndex": 1
+}

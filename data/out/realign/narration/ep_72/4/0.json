@@ -1,0 +1,159 @@
+{
+  "transcript": "Richard has a toy watering can.",
+  "words": [
+    {
+      "alignedWord": "richard",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 0,
+      "word": "Richard"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 8,
+      "word": "has"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.29,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 12,
+      "word": "a"
+    },
+    {
+      "alignedWord": "toy",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "oy_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 14,
+      "word": "toy"
+    },
+    {
+      "alignedWord": "watering",
+      "case": "success",
+      "end": 2.14,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 18,
+      "word": "watering"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 3.4000000000000004,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.16,
+      "startOffset": 27,
+      "word": "can"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E28 - Swimming.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_72.json",
+  "episode_title": "Swimming",
+  "clipStart": 141,
+  "clipEnd": 145,
+  "partIndex": 4,
+  "clipIndex": 0
+}

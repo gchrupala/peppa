@@ -1,0 +1,123 @@
+{
+  "transcript": "- My daddy is very good at it.",
+  "words": [
+    {
+      "alignedWord": "my",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.27,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 2,
+      "word": "My"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 3.0900000000000003,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.99,
+      "startOffset": 5,
+      "word": "daddy"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 3.11,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.09,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.76,
+      "startOffset": 14,
+      "word": "very"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 19,
+      "word": "good"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 24,
+      "word": "at"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 29,
+      "startOffset": 27,
+      "word": "it"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 180,
+  "clipEnd": 184,
+  "partIndex": 6,
+  "clipIndex": 2
+}

@@ -1,0 +1,59 @@
+{
+  "transcript": "- Me first! ",
+  "words": [
+    {
+      "alignedWord": "me",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.97,
+      "startOffset": 2,
+      "word": "Me"
+    },
+    {
+      "alignedWord": "first",
+      "case": "success",
+      "end": 2.03,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 5,
+      "word": "first"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 87,
+  "clipEnd": 91,
+  "partIndex": 1,
+  "clipIndex": 22
+}

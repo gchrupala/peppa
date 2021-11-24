@@ -1,0 +1,112 @@
+{
+  "transcript": "Peppa would like to know",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.6599999999999999,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.31,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.35,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "would",
+      "case": "success",
+      "end": 0.91,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 6,
+      "word": "would"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.91,
+      "startOffset": 12,
+      "word": "like"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.1800000000000002,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 17,
+      "word": "to"
+    },
+    {
+      "alignedWord": "know",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 20,
+      "word": "know"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E31 - Secrets.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_13.json",
+  "episode_title": "Secrets",
+  "clipStart": 184,
+  "clipEnd": 186,
+  "partIndex": 7,
+  "clipIndex": 0
+}

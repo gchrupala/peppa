@@ -1,0 +1,170 @@
+{
+  "transcript": "You'll be late for the school trip!",
+  "words": [
+    {
+      "alignedWord": "you'll",
+      "case": "success",
+      "end": 2.6500000000000004,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.49,
+      "startOffset": 0,
+      "word": "You'll"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 7,
+      "word": "be"
+    },
+    {
+      "alignedWord": "late",
+      "case": "success",
+      "end": 2.9,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.8,
+      "startOffset": 10,
+      "word": "late"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 3.38,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.36,
+      "startOffset": 15,
+      "word": "for"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.4499999999999997,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.38,
+      "startOffset": 19,
+      "word": "the"
+    },
+    {
+      "alignedWord": "school",
+      "case": "success",
+      "end": 3.6100000000000003,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.45,
+      "startOffset": 23,
+      "word": "school"
+    },
+    {
+      "alignedWord": "trip",
+      "case": "success",
+      "end": 4.0,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 3.84,
+      "startOffset": 30,
+      "word": "trip"
+    }
+  ],
+  "speaker": "Mummy Pony",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 34,
+  "clipEnd": 39,
+  "partIndex": 2,
+  "clipIndex": 1
+}

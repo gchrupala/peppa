@@ -1,0 +1,159 @@
+{
+  "transcript": "-Oh, the boat is moving backwards.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 0.91,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 1,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.38,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 5,
+      "word": "the"
+    },
+    {
+      "alignedWord": "boat",
+      "case": "success",
+      "end": 1.5999999999999999,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 9,
+      "word": "boat"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 14,
+      "word": "is"
+    },
+    {
+      "alignedWord": "moving",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 17,
+      "word": "moving"
+    },
+    {
+      "alignedWord": "backwards",
+      "case": "success",
+      "end": 2.74,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.14,
+      "startOffset": 24,
+      "word": "backwards"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E47 - Captian Daddy Pig.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_98.json",
+  "episode_title": "Captain Daddy Pig",
+  "clipStart": 53,
+  "clipEnd": 56,
+  "partIndex": 1,
+  "clipIndex": 0
+}

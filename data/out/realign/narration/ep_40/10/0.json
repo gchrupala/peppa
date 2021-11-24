@@ -1,0 +1,51 @@
+{
+  "transcript": "Oh, dear.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 0,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "dear",
+      "case": "success",
+      "end": 1.33,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 4,
+      "word": "dear"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E35 - Very Hot Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_40.json",
+  "episode_title": "Very Hot Day",
+  "clipStart": 226,
+  "clipEnd": 228,
+  "partIndex": 10,
+  "clipIndex": 0
+}

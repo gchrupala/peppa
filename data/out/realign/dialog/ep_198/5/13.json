@@ -1,0 +1,69 @@
+{
+  "transcript": "- My pleasure. Goodbye.",
+  "words": [
+    {
+      "alignedWord": "my",
+      "case": "success",
+      "end": 2.4299999999999997,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 2,
+      "word": "My"
+    },
+    {
+      "alignedWord": "pleasure",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "zh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 5,
+      "word": "pleasure"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 22,
+      "startOffset": 15,
+      "word": "Goodbye"
+    }
+  ],
+  "speaker": "Mr Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 199,
+  "clipEnd": 202,
+  "partIndex": 5,
+  "clipIndex": 13
+}

@@ -1,0 +1,194 @@
+{
+  "transcript": "wear their hats and scarves and coats.",
+  "words": [
+    {
+      "alignedWord": "wear",
+      "case": "success",
+      "end": 0.37,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.19,
+      "startOffset": 0,
+      "word": "wear"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 0.58,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.37,
+      "startOffset": 5,
+      "word": "their"
+    },
+    {
+      "alignedWord": "hats",
+      "case": "success",
+      "end": 0.74,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 11,
+      "word": "hats"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.19,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 16,
+      "word": "and"
+    },
+    {
+      "alignedWord": "scarves",
+      "case": "success",
+      "end": 1.65,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 20,
+      "word": "scarves"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.89,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 28,
+      "word": "and"
+    },
+    {
+      "alignedWord": "coats",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 32,
+      "word": "coats"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E08 - Windy Autumn Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_60.json",
+  "episode_title": "Windy Autumn Day",
+  "clipStart": 35,
+  "clipEnd": 38,
+  "partIndex": 1,
+  "clipIndex": 1
+}

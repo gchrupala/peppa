@@ -1,0 +1,244 @@
+{
+  "transcript": "Mr. Bull, the bin man, is collecting the rubbish.",
+  "words": [
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 0.6499999999999999,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.36,
+      "startOffset": 0,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "bull",
+      "case": "success",
+      "end": 0.89,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 4,
+      "word": "Bull"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.0699999999999998,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 10,
+      "word": "the"
+    },
+    {
+      "alignedWord": "bin",
+      "case": "success",
+      "end": 1.33,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 14,
+      "word": "bin"
+    },
+    {
+      "alignedWord": "man",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 18,
+      "word": "man"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 23,
+      "word": "is"
+    },
+    {
+      "alignedWord": "collecting",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 26,
+      "word": "collecting"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 37,
+      "word": "the"
+    },
+    {
+      "alignedWord": "rubbish",
+      "case": "success",
+      "end": 2.89,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "sh_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 41,
+      "word": "rubbish"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E12 - Recycling.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_63.json",
+  "episode_title": "Recycling",
+  "clipStart": 20,
+  "clipEnd": 25,
+  "partIndex": 0,
+  "clipIndex": 0
+}

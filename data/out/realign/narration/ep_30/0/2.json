@@ -1,0 +1,252 @@
+{
+  "transcript": "Granny Pig and Grandpa Pig are going to babysit.",
+  "words": [
+    {
+      "alignedWord": "granny",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 0,
+      "word": "Granny"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 7,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.96,
+      "startOffset": 11,
+      "word": "and"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 2.52,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 15,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.79,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.52,
+      "startOffset": 23,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.9899999999999998,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.86,
+      "startOffset": 27,
+      "word": "are"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 3.24,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.99,
+      "startOffset": 31,
+      "word": "going"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.33,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.24,
+      "startOffset": 37,
+      "word": "to"
+    },
+    {
+      "alignedWord": "babysit",
+      "case": "success",
+      "end": 3.71,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.33,
+      "startOffset": 40,
+      "word": "babysit"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E22 - Babysitting.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_30.json",
+  "episode_title": "Babysitting",
+  "clipStart": 27,
+  "clipEnd": 31,
+  "partIndex": 0,
+  "clipIndex": 2
+}

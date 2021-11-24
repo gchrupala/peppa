@@ -1,0 +1,138 @@
+{
+  "transcript": "- Daddy, your tummy is too big to go under the pole.",
+  "words": [
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 2.81,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.77,
+      "startOffset": 2,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "your",
+      "case": "success",
+      "end": 2.84,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.81,
+      "startOffset": 9,
+      "word": "your"
+    },
+    {
+      "alignedWord": "tummy",
+      "case": "success",
+      "end": 3.38,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.05,
+      "startOffset": 14,
+      "word": "tummy"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 22,
+      "startOffset": 20,
+      "word": "is"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 23,
+      "word": "too"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 30,
+      "startOffset": 27,
+      "word": "big"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 33,
+      "startOffset": 31,
+      "word": "to"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 34,
+      "word": "go"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 42,
+      "startOffset": 37,
+      "word": "under"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 46,
+      "startOffset": 43,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 51,
+      "startOffset": 47,
+      "word": "pole"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 230,
+  "clipEnd": 235,
+  "partIndex": 7,
+  "clipIndex": 4
+}

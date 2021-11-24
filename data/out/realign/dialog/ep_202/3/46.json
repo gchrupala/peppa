@@ -1,0 +1,86 @@
+{
+  "transcript": "- By smelling it!",
+  "words": [
+    {
+      "alignedWord": "by",
+      "case": "success",
+      "end": 0.03,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 0.01,
+      "startOffset": 2,
+      "word": "By"
+    },
+    {
+      "alignedWord": "smelling",
+      "case": "success",
+      "end": 0.26,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.03,
+      "startOffset": 5,
+      "word": "smelling"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 2.01,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 14,
+      "word": "it"
+    }
+  ],
+  "speaker": "Freddy",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 232,
+  "clipEnd": 235,
+  "partIndex": 3,
+  "clipIndex": 46
+}

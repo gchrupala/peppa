@@ -1,0 +1,169 @@
+{
+  "transcript": "Peppa and George are wearing their boots.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.09,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.0,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 10,
+      "word": "George"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 17,
+      "word": "are"
+    },
+    {
+      "alignedWord": "wearing",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 21,
+      "word": "wearing"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.97,
+      "startOffset": 29,
+      "word": "their"
+    },
+    {
+      "alignedWord": "boots",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.1799999999999997,
+      "startOffset": 35,
+      "word": "boots"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E35 - Very Hot Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_40.json",
+  "episode_title": "Very Hot Day",
+  "clipStart": 273,
+  "clipEnd": 278,
+  "partIndex": 12,
+  "clipIndex": 0
+}

@@ -1,0 +1,221 @@
+{
+  "transcript": "The parents are here to collect the children.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.47,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "parents",
+      "case": "success",
+      "end": 1.89,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 4,
+      "word": "parents"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 12,
+      "word": "are"
+    },
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.96,
+      "startOffset": 16,
+      "word": "here"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.64,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.49,
+      "startOffset": 21,
+      "word": "to"
+    },
+    {
+      "alignedWord": "collect",
+      "case": "success",
+      "end": 2.97,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.64,
+      "startOffset": 24,
+      "word": "collect"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.11,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.01,
+      "startOffset": 32,
+      "word": "the"
+    },
+    {
+      "alignedWord": "children",
+      "case": "success",
+      "end": 3.58,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.11,
+      "startOffset": 36,
+      "word": "children"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E14 - Pirate Island.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_75.json",
+  "episode_title": "Pirate Island",
+  "clipStart": 226,
+  "clipEnd": 230,
+  "partIndex": 10,
+  "clipIndex": 0
+}

@@ -1,0 +1,192 @@
+{
+  "transcript": "Peppa, Suzie and Danny are on the roundabout.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "suzie",
+      "case": "success",
+      "end": 0.6,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.26,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 7,
+      "word": "Suzie"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.78,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 13,
+      "word": "and"
+    },
+    {
+      "alignedWord": "danny",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.78,
+      "startOffset": 17,
+      "word": "Danny"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.38,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 23,
+      "word": "are"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 3.31,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.21,
+      "startOffset": 27,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.39,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.31,
+      "startOffset": 30,
+      "word": "the"
+    },
+    {
+      "alignedWord": "roundabout",
+      "case": "success",
+      "end": 3.5300000000000002,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.39,
+      "startOffset": 34,
+      "word": "roundabout"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E05 - Georges friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_58.json",
+  "episode_title": "George's Friend",
+  "clipStart": 25,
+  "clipEnd": 29,
+  "partIndex": 0,
+  "clipIndex": 1
+}

@@ -1,0 +1,213 @@
+{
+  "transcript": "- Here are the giant dinosaurs. All very nice.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.25,
+      "startOffset": 2,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "er_S"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 7,
+      "word": "are"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.48,
+      "startOffset": 11,
+      "word": "the"
+    },
+    {
+      "alignedWord": "giant",
+      "case": "success",
+      "end": 3.1399999999999997,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 15,
+      "word": "giant"
+    },
+    {
+      "alignedWord": "dinosaurs",
+      "case": "success",
+      "end": 3.67,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.18,
+      "startOffset": 21,
+      "word": "dinosaurs"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 3.73,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.67,
+      "startOffset": 32,
+      "word": "All"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.73,
+      "startOffset": 36,
+      "word": "very"
+    },
+    {
+      "alignedWord": "nice",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.77,
+      "startOffset": 41,
+      "word": "nice"
+    }
+  ],
+  "speaker": "Mr Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 176,
+  "clipEnd": 180,
+  "partIndex": 5,
+  "clipIndex": 5
+}

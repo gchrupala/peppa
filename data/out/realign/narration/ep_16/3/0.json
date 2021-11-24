@@ -1,0 +1,182 @@
+{
+  "transcript": "That does not sound quite right, either.",
+  "words": [
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 0,
+      "word": "That"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 5,
+      "word": "does"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.97,
+      "startOffset": 10,
+      "word": "not"
+    },
+    {
+      "alignedWord": "sound",
+      "case": "success",
+      "end": 2.44,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 14,
+      "word": "sound"
+    },
+    {
+      "alignedWord": "quite",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 20,
+      "word": "quite"
+    },
+    {
+      "alignedWord": "right",
+      "case": "success",
+      "end": 2.9400000000000004,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.72,
+      "startOffset": 26,
+      "word": "right"
+    },
+    {
+      "alignedWord": "either",
+      "case": "success",
+      "end": 3.3200000000000003,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "iy_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.1000000000000005,
+      "startOffset": 33,
+      "word": "either"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E21 - Musical Instruments.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_16.json",
+  "episode_title": "Musical Instruments",
+  "clipStart": 103,
+  "clipEnd": 107,
+  "partIndex": 3,
+  "clipIndex": 0
+}

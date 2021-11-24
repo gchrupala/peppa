@@ -1,0 +1,47 @@
+{
+  "transcript": "Oh no.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 2.78,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 2.77,
+      "startOffset": 0,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 3,
+      "word": "no"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E14 - Pirate Island.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_75.json",
+  "episode_title": "Pirate Island",
+  "clipStart": 184,
+  "clipEnd": 187,
+  "partIndex": 8,
+  "clipIndex": 0
+}

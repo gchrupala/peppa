@@ -1,0 +1,136 @@
+{
+  "transcript": "and fallen on the ground.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.87,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "fallen",
+      "case": "success",
+      "end": 1.49,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 4,
+      "word": "fallen"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 1.6,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 11,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.6900000000000002,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 14,
+      "word": "the"
+    },
+    {
+      "alignedWord": "ground",
+      "case": "success",
+      "end": 1.89,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 18,
+      "word": "ground"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E35 - Very Hot Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_40.json",
+  "episode_title": "Very Hot Day",
+  "clipStart": 229,
+  "clipEnd": 232,
+  "partIndex": 10,
+  "clipIndex": 2
+}

@@ -1,0 +1,105 @@
+{
+  "transcript": "This is Mummy Pig. ",
+  "words": [
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 0,
+      "word": "This"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.29,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.04,
+      "startOffset": 8,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.45,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 14,
+      "word": "Pig"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 7,
+  "clipEnd": 10,
+  "partIndex": 0,
+  "clipIndex": 4
+}

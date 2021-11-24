@@ -1,0 +1,172 @@
+{
+  "transcript": "Peppa is riding on her own without stabilisers.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.49,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.28,
+      "startOffset": 6,
+      "word": "is"
+    },
+    {
+      "alignedWord": "riding",
+      "case": "success",
+      "end": 0.85,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.49,
+      "startOffset": 9,
+      "word": "riding"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 0.97,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 16,
+      "word": "on"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.14,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.97,
+      "startOffset": 19,
+      "word": "her"
+    },
+    {
+      "alignedWord": "own",
+      "case": "success",
+      "end": 1.38,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 23,
+      "word": "own"
+    },
+    {
+      "alignedWord": "without",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 27,
+      "word": "without"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.84,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.9,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 35,
+      "word": "stabilisers"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E10 - Bicycles.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_12.json",
+  "episode_title": "Bicycles",
+  "clipStart": 192,
+  "clipEnd": 197,
+  "partIndex": 7,
+  "clipIndex": 0
+}

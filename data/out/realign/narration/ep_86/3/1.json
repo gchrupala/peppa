@@ -1,0 +1,272 @@
+{
+  "transcript": "Zoe Zebra, Candy Cat, Emily Elephant, and Pedro Pony.",
+  "words": [
+    {
+      "alignedWord": "zoe",
+      "case": "success",
+      "end": 0.38,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "z_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.1,
+      "startOffset": 0,
+      "word": "Zoe"
+    },
+    {
+      "alignedWord": "zebra",
+      "case": "success",
+      "end": 0.79,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "z_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.38,
+      "startOffset": 4,
+      "word": "Zebra"
+    },
+    {
+      "alignedWord": "candy",
+      "case": "success",
+      "end": 1.31,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 11,
+      "word": "Candy"
+    },
+    {
+      "alignedWord": "cat",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 17,
+      "word": "Cat"
+    },
+    {
+      "alignedWord": "emily",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 22,
+      "word": "Emily"
+    },
+    {
+      "alignedWord": "elephant",
+      "case": "success",
+      "end": 2.52,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.14,
+      "startOffset": 28,
+      "word": "Elephant"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 3.09,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.0,
+      "startOffset": 38,
+      "word": "and"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 3.27,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.09,
+      "startOffset": 42,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "pony",
+      "case": "success",
+      "end": 3.31,
+      "endOffset": 52,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.27,
+      "startOffset": 48,
+      "word": "Pony"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E42 - Ice Skating.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_86.json",
+  "episode_title": "Ice Skating",
+  "clipStart": 61,
+  "clipEnd": 67,
+  "partIndex": 3,
+  "clipIndex": 1
+}

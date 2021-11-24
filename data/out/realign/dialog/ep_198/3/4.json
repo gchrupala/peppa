@@ -1,0 +1,155 @@
+{
+  "transcript": "- No, Pedro, we've missed the bus.",
+  "words": [
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 2.0300000000000002,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 2,
+      "word": "No"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 2.67,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.07,
+      "startOffset": 6,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "we've",
+      "case": "success",
+      "end": 3.1999999999999997,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.84,
+      "startOffset": 13,
+      "word": "we've"
+    },
+    {
+      "alignedWord": "missed",
+      "case": "success",
+      "end": 3.4400000000000004,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.2,
+      "startOffset": 19,
+      "word": "missed"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.46,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.44,
+      "startOffset": 26,
+      "word": "the"
+    },
+    {
+      "alignedWord": "bus",
+      "case": "success",
+      "end": 3.56,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.46,
+      "startOffset": 30,
+      "word": "bus"
+    }
+  ],
+  "speaker": "Mummy Pony",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 67,
+  "clipEnd": 71,
+  "partIndex": 3,
+  "clipIndex": 4
+}

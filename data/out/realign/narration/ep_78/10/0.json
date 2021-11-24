@@ -1,0 +1,136 @@
+{
+  "transcript": "What is the last surprise?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.1599999999999997,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.07,
+      "startOffset": 8,
+      "word": "the"
+    },
+    {
+      "alignedWord": "last",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 12,
+      "word": "last"
+    },
+    {
+      "alignedWord": "surprise",
+      "case": "success",
+      "end": 3.04,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.59,
+      "startOffset": 17,
+      "word": "surprise"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E31 - George's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_78.json",
+  "episode_title": "George's Birthday",
+  "clipStart": 235,
+  "clipEnd": 239,
+  "partIndex": 10,
+  "clipIndex": 0
+}

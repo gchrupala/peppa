@@ -1,0 +1,136 @@
+{
+  "transcript": "play in the school garden.",
+  "words": [
+    {
+      "alignedWord": "play",
+      "case": "success",
+      "end": 0.17,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.14,
+      "startOffset": 0,
+      "word": "play"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 0.26,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.17,
+      "startOffset": 5,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.36,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.26,
+      "startOffset": 8,
+      "word": "the"
+    },
+    {
+      "alignedWord": "school",
+      "case": "success",
+      "end": 0.6599999999999999,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.36,
+      "startOffset": 12,
+      "word": "school"
+    },
+    {
+      "alignedWord": "garden",
+      "case": "success",
+      "end": 0.8,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 19,
+      "word": "garden"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E03 - Emily Elephant.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_54.json",
+  "episode_title": "Emily Elephant",
+  "clipStart": 149,
+  "clipEnd": 151,
+  "partIndex": 5,
+  "clipIndex": 1
+}

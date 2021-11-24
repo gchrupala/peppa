@@ -1,0 +1,166 @@
+{
+  "transcript": "- Why don't you join us, Mummy Pig?",
+  "words": [
+    {
+      "alignedWord": "why",
+      "case": "success",
+      "end": 3.34,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 3.08,
+      "startOffset": 2,
+      "word": "Why"
+    },
+    {
+      "alignedWord": "don't",
+      "case": "success",
+      "end": 3.3699999999999997,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.34,
+      "startOffset": 6,
+      "word": "don't"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 3.39,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.37,
+      "startOffset": 12,
+      "word": "you"
+    },
+    {
+      "alignedWord": "join",
+      "case": "success",
+      "end": 3.6,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "oy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.39,
+      "startOffset": 16,
+      "word": "join"
+    },
+    {
+      "alignedWord": "us",
+      "case": "success",
+      "end": 3.62,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.6,
+      "startOffset": 21,
+      "word": "us"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 3.66,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.62,
+      "startOffset": 25,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 3.8000000000000003,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_E"
+        }
+      ],
+      "start": 3.66,
+      "startOffset": 31,
+      "word": "Pig"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 70,
+  "clipEnd": 74,
+  "partIndex": 4,
+  "clipIndex": 3
+}

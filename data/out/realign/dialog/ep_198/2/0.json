@@ -1,0 +1,86 @@
+{
+  "transcript": "- Pedro! Wake up!",
+  "words": [
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 1.13,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 2,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "wake",
+      "case": "success",
+      "end": 1.16,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 9,
+      "word": "Wake"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 1.18,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 14,
+      "word": "up"
+    }
+  ],
+  "speaker": "Mummy Pony",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 32,
+  "clipEnd": 35,
+  "partIndex": 2,
+  "clipIndex": 0
+}

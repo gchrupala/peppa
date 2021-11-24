@@ -1,0 +1,57 @@
+{
+  "transcript": "- To the museum.",
+  "words": [
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 2,
+      "word": "To"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.71,
+      "startOffset": 5,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 15,
+      "startOffset": 9,
+      "word": "museum"
+    }
+  ],
+  "speaker": "Madame Gazelle",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 104,
+  "clipEnd": 107,
+  "partIndex": 3,
+  "clipIndex": 15
+}

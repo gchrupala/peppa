@@ -1,0 +1,102 @@
+{
+  "transcript": "And we need music to do it.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 3.7,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.47,
+      "startOffset": 0,
+      "word": "And"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.7,
+      "startOffset": 4,
+      "word": "we"
+    },
+    {
+      "alignedWord": "need",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.77,
+      "startOffset": 7,
+      "word": "need"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 17,
+      "startOffset": 12,
+      "word": "music"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 18,
+      "word": "to"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 21,
+      "word": "do"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 24,
+      "word": "it"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 210,
+  "clipEnd": 214,
+  "partIndex": 6,
+  "clipIndex": 11
+}

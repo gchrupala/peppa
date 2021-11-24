@@ -1,0 +1,216 @@
+{
+  "transcript": "George is going to play in the wet grass.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 1.23,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 10,
+      "word": "going"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.32,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 16,
+      "word": "to"
+    },
+    {
+      "alignedWord": "play",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 19,
+      "word": "play"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 24,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 27,
+      "word": "the"
+    },
+    {
+      "alignedWord": "wet",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 31,
+      "word": "wet"
+    },
+    {
+      "alignedWord": "grass",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.31,
+      "startOffset": 35,
+      "word": "grass"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E23 - New Shoes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_19.json",
+  "episode_title": "New Shoes",
+  "clipStart": 216,
+  "clipEnd": 220,
+  "partIndex": 10,
+  "clipIndex": 0
+}

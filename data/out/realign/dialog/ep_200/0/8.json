@@ -1,0 +1,125 @@
+{
+  "transcript": "- Boats! Boats! Get your boats here!",
+  "words": [
+    {
+      "alignedWord": "boats",
+      "case": "success",
+      "end": 0.33,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.22,
+      "startOffset": 2,
+      "word": "Boats"
+    },
+    {
+      "alignedWord": "boats",
+      "case": "success",
+      "end": 0.69,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.21,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.35,
+      "startOffset": 9,
+      "word": "Boats"
+    },
+    {
+      "alignedWord": "get",
+      "case": "success",
+      "end": 0.9199999999999999,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 16,
+      "word": "Get"
+    },
+    {
+      "alignedWord": "your",
+      "case": "success",
+      "end": 3.8000000000000003,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.6,
+      "startOffset": 20,
+      "word": "your"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 30,
+      "startOffset": 25,
+      "word": "boats"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 35,
+      "startOffset": 31,
+      "word": "here"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 21,
+  "clipEnd": 25,
+  "partIndex": 0,
+  "clipIndex": 8
+}

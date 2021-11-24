@@ -1,0 +1,220 @@
+{
+  "transcript": "It is raining and the castle has no roof.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.46,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.33,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.46,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "raining",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 6,
+      "word": "raining"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.45,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 14,
+      "word": "and"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 18,
+      "word": "the"
+    },
+    {
+      "alignedWord": "castle",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 22,
+      "word": "castle"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 29,
+      "word": "has"
+    },
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 2.6,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.31,
+      "startOffset": 33,
+      "word": "no"
+    },
+    {
+      "alignedWord": "roof",
+      "case": "success",
+      "end": 2.84,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "f_E"
+        }
+      ],
+      "start": 2.6,
+      "startOffset": 36,
+      "word": "roof"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E41 - Dens.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_88.json",
+  "episode_title": "Dens",
+  "clipStart": 228,
+  "clipEnd": 232,
+  "partIndex": 6,
+  "clipIndex": 1
+}

@@ -1,0 +1,136 @@
+{
+  "transcript": "and George brush their teeth.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.5900000000000001,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.97,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 4,
+      "word": "George"
+    },
+    {
+      "alignedWord": "brush",
+      "case": "success",
+      "end": 1.36,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "sh_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 11,
+      "word": "brush"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 17,
+      "word": "their"
+    },
+    {
+      "alignedWord": "teeth",
+      "case": "success",
+      "end": 1.9100000000000001,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "th_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 23,
+      "word": "teeth"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E34 - Bedtime.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_66.json",
+  "episode_title": "Bedtime",
+  "clipStart": 162,
+  "clipEnd": 165,
+  "partIndex": 5,
+  "clipIndex": 1
+}

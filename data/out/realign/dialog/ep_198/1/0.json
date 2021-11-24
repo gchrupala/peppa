@@ -1,0 +1,157 @@
+{
+  "transcript": "- Oh, dear! Pedro Pony is not here.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 2.3,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "dear",
+      "case": "success",
+      "end": 2.3499999999999996,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 6,
+      "word": "dear"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 3.66,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.39,
+      "startOffset": 12,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "pony",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.67,
+      "startOffset": 18,
+      "word": "Pony"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 4.58,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 4.47,
+      "startOffset": 23,
+      "word": "is"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 4.77,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_E"
+        }
+      ],
+      "start": 4.58,
+      "startOffset": 26,
+      "word": "not"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 30,
+      "word": "here"
+    }
+  ],
+  "speaker": "Madame Gazelle",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 20,
+  "clipEnd": 25,
+  "partIndex": 1,
+  "clipIndex": 0
+}

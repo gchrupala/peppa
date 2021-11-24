@@ -1,0 +1,79 @@
+{
+  "transcript": "George loves bouncy dinosaurs.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 3.5500000000000003,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 3.43,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 3.59,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.55,
+      "startOffset": 7,
+      "word": "loves"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 19,
+      "startOffset": 13,
+      "word": "bouncy"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 29,
+      "startOffset": 20,
+      "word": "dinosaurs"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E31 - George's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_78.json",
+  "episode_title": "George's Birthday",
+  "clipStart": 271,
+  "clipEnd": 275,
+  "partIndex": 12,
+  "clipIndex": 0
+}

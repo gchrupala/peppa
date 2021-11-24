@@ -1,0 +1,141 @@
+{
+  "transcript": "Grandpa Pig pick vegetables.",
+  "words": [
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 0.75,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 0,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.81,
+      "startOffset": 8,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "pick",
+      "case": "success",
+      "end": 1.4,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 12,
+      "word": "pick"
+    },
+    {
+      "alignedWord": "vegetables",
+      "case": "success",
+      "end": 2.16,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 17,
+      "word": "vegetables"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E29 - Tiny Creatures.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_73.json",
+  "episode_title": "Tiny Creatures",
+  "clipStart": 21,
+  "clipEnd": 24,
+  "partIndex": 0,
+  "clipIndex": 1
+}

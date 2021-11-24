@@ -1,0 +1,100 @@
+{
+  "transcript": "Peppa is at the optician's",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.51,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.85,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 6,
+      "word": "is"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 9,
+      "word": "at"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 12,
+      "word": "the"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.82,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 16,
+      "word": "optician's"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E25 - The Eye Test.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_68.json",
+  "episode_title": "The Eye Test",
+  "clipStart": 159,
+  "clipEnd": 163,
+  "partIndex": 2,
+  "clipIndex": 0
+}

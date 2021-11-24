@@ -1,0 +1,117 @@
+{
+  "transcript": "The mystery is solved.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.1199999999999999,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "mystery",
+      "case": "success",
+      "end": 1.7200000000000002,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 4,
+      "word": "mystery"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.14,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.22,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 12,
+      "word": "is"
+    },
+    {
+      "alignedWord": "solved",
+      "case": "success",
+      "end": 2.78,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 15,
+      "word": "solved"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E06 - Mysteries.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_57.json",
+  "episode_title": "Mysteries",
+  "clipStart": 264,
+  "clipEnd": 268,
+  "partIndex": 9,
+  "clipIndex": 0
+}

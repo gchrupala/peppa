@@ -1,0 +1,262 @@
+{
+  "transcript": "Peppa does not like secrets as much as she used to.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.89,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.64,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.91,
+      "startOffset": 6,
+      "word": "does"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 11,
+      "word": "not"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 15,
+      "word": "like"
+    },
+    {
+      "alignedWord": "secrets",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 20,
+      "word": "secrets"
+    },
+    {
+      "alignedWord": "as",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 28,
+      "word": "as"
+    },
+    {
+      "alignedWord": "much",
+      "case": "success",
+      "end": 2.43,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 2.14,
+      "startOffset": 31,
+      "word": "much"
+    },
+    {
+      "alignedWord": "as",
+      "case": "success",
+      "end": 2.54,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 36,
+      "word": "as"
+    },
+    {
+      "alignedWord": "she",
+      "case": "success",
+      "end": 2.7,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.54,
+      "startOffset": 39,
+      "word": "she"
+    },
+    {
+      "alignedWord": "used",
+      "case": "success",
+      "end": 3.0,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 43,
+      "word": "used"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.27,
+      "endOffset": 50,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.2,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.0,
+      "startOffset": 48,
+      "word": "to"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E31 - Secrets.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_13.json",
+  "episode_title": "Secrets",
+  "clipStart": 199,
+  "clipEnd": 203,
+  "partIndex": 9,
+  "clipIndex": 0
+}

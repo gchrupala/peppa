@@ -1,0 +1,147 @@
+{
+  "transcript": "going to race down the hill.",
+  "words": [
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 0.5900000000000001,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.55,
+      "startOffset": 0,
+      "word": "going"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 0.61,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 6,
+      "word": "to"
+    },
+    {
+      "alignedWord": "race",
+      "case": "success",
+      "end": 0.64,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.61,
+      "startOffset": 9,
+      "word": "race"
+    },
+    {
+      "alignedWord": "down",
+      "case": "success",
+      "end": 1.4,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 14,
+      "word": "down"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 19,
+      "word": "the"
+    },
+    {
+      "alignedWord": "hill",
+      "case": "success",
+      "end": 1.4500000000000002,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 23,
+      "word": "hill"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E40 - The Cycle Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_85.json",
+  "episode_title": "The Cycle Ride",
+  "clipStart": 183,
+  "clipEnd": 185,
+  "partIndex": 7,
+  "clipIndex": 1
+}

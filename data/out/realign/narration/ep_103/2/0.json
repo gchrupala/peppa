@@ -1,0 +1,128 @@
+{
+  "transcript": "Zoe has her toy monkey.",
+  "words": [
+    {
+      "alignedWord": "zoe",
+      "case": "success",
+      "end": 0.5800000000000001,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "z_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.46,
+      "startOffset": 0,
+      "word": "Zoe"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.84,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 4,
+      "word": "has"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 0.86,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 8,
+      "word": "her"
+    },
+    {
+      "alignedWord": "toy",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "oy_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 12,
+      "word": "toy"
+    },
+    {
+      "alignedWord": "monkey",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.3,
+      "startOffset": 16,
+      "word": "monkey"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E52 - Sleepover.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_103.json",
+  "episode_title": "Sleepover",
+  "clipStart": 48,
+  "clipEnd": 50,
+  "partIndex": 2,
+  "clipIndex": 0
+}

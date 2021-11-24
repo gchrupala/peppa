@@ -1,0 +1,216 @@
+{
+  "transcript": "-Daddy Pig is going to ride on Peppa's little.",
+  "words": [
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 0.8800000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 1,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.88,
+      "startOffset": 7,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 1.38,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 14,
+      "word": "going"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.5099999999999998,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 20,
+      "word": "to"
+    },
+    {
+      "alignedWord": "ride",
+      "case": "success",
+      "end": 1.8900000000000001,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 23,
+      "word": "ride"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 28,
+      "word": "on"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.3600000000000003,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.26,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 31,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.37,
+      "startOffset": 39,
+      "word": "little"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E40 - Daddy Gets Fit.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_42.json",
+  "episode_title": "Daddy Gets Fit",
+  "clipStart": 182,
+  "clipEnd": 185,
+  "partIndex": 3,
+  "clipIndex": 0
+}

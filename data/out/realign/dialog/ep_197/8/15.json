@@ -1,0 +1,108 @@
+{
+  "transcript": "- Daddy, where's your big tummy gone?",
+  "words": [
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 2,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "where's",
+      "case": "success",
+      "end": 3.33,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.29,
+      "startOffset": 9,
+      "word": "where's"
+    },
+    {
+      "alignedWord": "your",
+      "case": "success",
+      "end": 3.59,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.33,
+      "startOffset": 17,
+      "word": "your"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 22,
+      "word": "big"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 31,
+      "startOffset": 26,
+      "word": "tummy"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 32,
+      "word": "gone"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 234,
+  "clipEnd": 238,
+  "partIndex": 8,
+  "clipIndex": 15
+}

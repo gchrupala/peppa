@@ -1,0 +1,174 @@
+{
+  "transcript": "Next, Daddy Pig puts plaster over the bricks.",
+  "words": [
+    {
+      "alignedWord": "next",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 0,
+      "word": "Next"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.4,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 6,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 12,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "puts",
+      "case": "success",
+      "end": 1.85,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 16,
+      "word": "puts"
+    },
+    {
+      "alignedWord": "plaster",
+      "case": "success",
+      "end": 2.3200000000000003,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 21,
+      "word": "plaster"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 33,
+      "startOffset": 29,
+      "word": "over"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 37,
+      "startOffset": 34,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 44,
+      "startOffset": 38,
+      "word": "bricks"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E47 - Daddy Puts up a Picture.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_45.json",
+  "episode_title": "Daddy Puts up a Picture",
+  "clipStart": 188,
+  "clipEnd": 191,
+  "partIndex": 5,
+  "clipIndex": 0
+}

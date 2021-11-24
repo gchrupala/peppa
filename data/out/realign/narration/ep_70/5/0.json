@@ -1,0 +1,206 @@
+{
+  "transcript": "It's Mummy Rabbit with Rebecca and Richard.",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 0.49,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.23,
+      "startOffset": 0,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 0.8200000000000001,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.5,
+      "startOffset": 5,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 1.2,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 11,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "th_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 18,
+      "word": "with"
+    },
+    {
+      "alignedWord": "rebecca",
+      "case": "success",
+      "end": 1.86,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 23,
+      "word": "Rebecca"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 31,
+      "word": "and"
+    },
+    {
+      "alignedWord": "richard",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.07,
+      "startOffset": 35,
+      "word": "Richard"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E27 - Foggy Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_70.json",
+  "episode_title": "Foggy Day",
+  "clipStart": 179,
+  "clipEnd": 183,
+  "partIndex": 5,
+  "clipIndex": 0
+}

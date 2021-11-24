@@ -1,0 +1,213 @@
+{
+  "transcript": "George cannot throw the ball past Mommy Pig.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.62,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.24,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "cannot",
+      "case": "success",
+      "end": 0.95,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 7,
+      "word": "cannot"
+    },
+    {
+      "alignedWord": "throw",
+      "case": "success",
+      "end": 1.16,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.01,
+      "startOffset": 14,
+      "word": "throw"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 20,
+      "word": "the"
+    },
+    {
+      "alignedWord": "ball",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 24,
+      "word": "ball"
+    },
+    {
+      "alignedWord": "past",
+      "case": "success",
+      "end": 1.8900000000000001,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 29,
+      "word": "past"
+    },
+    {
+      "alignedWord": "mommy",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.91,
+      "startOffset": 34,
+      "word": "Mommy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.21,
+      "startOffset": 40,
+      "word": "Pig"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E33 - Piggy in the Middle.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_8.json",
+  "episode_title": "Piggy in the Middle",
+  "clipStart": 150,
+  "clipEnd": 154,
+  "partIndex": 5,
+  "clipIndex": 0
+}

@@ -1,0 +1,201 @@
+{
+  "transcript": "-George has found a spider in the sink.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.93,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 1,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.07,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 8,
+      "word": "has"
+    },
+    {
+      "alignedWord": "found",
+      "case": "success",
+      "end": 1.36,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 12,
+      "word": "found"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.4200000000000002,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 18,
+      "word": "a"
+    },
+    {
+      "alignedWord": "spider",
+      "case": "success",
+      "end": 1.92,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 20,
+      "word": "spider"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.01,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 27,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.1199999999999997,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.01,
+      "startOffset": 30,
+      "word": "the"
+    },
+    {
+      "alignedWord": "sink",
+      "case": "success",
+      "end": 2.5300000000000002,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 34,
+      "word": "sink"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E36 - Mister Skinnylegs.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_47.json",
+  "episode_title": "Mister Skinnylegs",
+  "clipStart": 94,
+  "clipEnd": 98,
+  "partIndex": 4,
+  "clipIndex": 0
+}

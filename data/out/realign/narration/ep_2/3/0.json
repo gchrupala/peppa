@@ -1,0 +1,252 @@
+{
+  "transcript": "At supper time, Mr. Dinosaur sits next to George.",
+  "words": [
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 0.9600000000000001,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.8,
+      "startOffset": 0,
+      "word": "At"
+    },
+    {
+      "alignedWord": "supper",
+      "case": "success",
+      "end": 1.24,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 3,
+      "word": "supper"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 1.5899999999999999,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 10,
+      "word": "time"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 1.92,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 16,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 2.4699999999999998,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 20,
+      "word": "Dinosaur"
+    },
+    {
+      "alignedWord": "sits",
+      "case": "success",
+      "end": 2.68,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.47,
+      "startOffset": 29,
+      "word": "sits"
+    },
+    {
+      "alignedWord": "next",
+      "case": "success",
+      "end": 3.07,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.82,
+      "startOffset": 34,
+      "word": "next"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.2,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 3.08,
+      "startOffset": 39,
+      "word": "to"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 3.6900000000000004,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 3.2,
+      "startOffset": 42,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E02 - Mr Dinosaur is Lost.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_2.json",
+  "episode_title": "Mr. Dinosaur is Lost",
+  "clipStart": 49,
+  "clipEnd": 54,
+  "partIndex": 3,
+  "clipIndex": 0
+}

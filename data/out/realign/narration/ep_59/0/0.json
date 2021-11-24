@@ -1,0 +1,116 @@
+{
+  "transcript": "Peppa and Georgie are playing",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.26,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.74,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.6,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.39,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 10,
+      "word": "Georgie"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.6400000000000001,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 18,
+      "word": "are"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 1.7999999999999998,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.64,
+      "startOffset": 22,
+      "word": "playing"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E10 - Mr Scarecrow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_59.json",
+  "episode_title": "Mr. Scarecrow",
+  "clipStart": 23,
+  "clipEnd": 25,
+  "partIndex": 0,
+  "clipIndex": 0
+}

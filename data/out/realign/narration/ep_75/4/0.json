@@ -1,0 +1,187 @@
+{
+  "transcript": "The metal detector has found something.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "metal",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 4,
+      "word": "metal"
+    },
+    {
+      "alignedWord": "detector",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 10,
+      "word": "detector"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 2.39,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.2,
+      "startOffset": 19,
+      "word": "has"
+    },
+    {
+      "alignedWord": "found",
+      "case": "success",
+      "end": 2.79,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.45,
+      "startOffset": 23,
+      "word": "found"
+    },
+    {
+      "alignedWord": "something",
+      "case": "success",
+      "end": 3.26,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.79,
+      "startOffset": 29,
+      "word": "something"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E14 - Pirate Island.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_75.json",
+  "episode_title": "Pirate Island",
+  "clipStart": 91,
+  "clipEnd": 95,
+  "partIndex": 4,
+  "clipIndex": 0
+}

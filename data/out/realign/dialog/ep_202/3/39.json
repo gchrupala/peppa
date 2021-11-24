@@ -1,0 +1,105 @@
+{
+  "transcript": "- Me too! - And me! - And me!",
+  "words": [
+    {
+      "alignedWord": "me",
+      "case": "success",
+      "end": 1.2100000000000002,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 2,
+      "word": "Me"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 5,
+      "word": "too"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.55,
+      "startOffset": 12,
+      "word": "And"
+    },
+    {
+      "alignedWord": "me",
+      "case": "success",
+      "end": 2.5999999999999996,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.58,
+      "startOffset": 16,
+      "word": "me"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 22,
+      "word": "And"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 26,
+      "word": "me"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 214,
+  "clipEnd": 217,
+  "partIndex": 3,
+  "clipIndex": 39
+}

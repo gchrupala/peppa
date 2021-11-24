@@ -1,0 +1,208 @@
+{
+  "transcript": "What a big name for such a small piggy.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "big",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.96,
+      "startOffset": 7,
+      "word": "big"
+    },
+    {
+      "alignedWord": "name",
+      "case": "success",
+      "end": 2.73,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 11,
+      "word": "name"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 2.92,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.8,
+      "startOffset": 16,
+      "word": "for"
+    },
+    {
+      "alignedWord": "such",
+      "case": "success",
+      "end": 3.17,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 2.92,
+      "startOffset": 20,
+      "word": "such"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 3.26,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.17,
+      "startOffset": 25,
+      "word": "a"
+    },
+    {
+      "alignedWord": "small",
+      "case": "success",
+      "end": 3.49,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.29,
+      "startOffset": 27,
+      "word": "small"
+    },
+    {
+      "alignedWord": "piggy",
+      "case": "success",
+      "end": 3.8000000000000003,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.74,
+      "startOffset": 33,
+      "word": "piggy"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E39 The Baby Piggy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_83.json",
+  "episode_title": "The Baby Piggy",
+  "clipStart": 104,
+  "clipEnd": 108,
+  "partIndex": 5,
+  "clipIndex": 0
+}

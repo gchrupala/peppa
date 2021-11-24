@@ -1,0 +1,156 @@
+{
+  "transcript": "There's just this funny-shaped bit left.",
+  "words": [
+    {
+      "alignedWord": "there's",
+      "case": "success",
+      "end": 2.93,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.89,
+      "startOffset": 0,
+      "word": "There's"
+    },
+    {
+      "alignedWord": "just",
+      "case": "success",
+      "end": 2.97,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.93,
+      "startOffset": 8,
+      "word": "just"
+    },
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 3.0,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.97,
+      "startOffset": 13,
+      "word": "this"
+    },
+    {
+      "alignedWord": "funny",
+      "case": "success",
+      "end": 3.37,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.33,
+      "startOffset": 18,
+      "word": "funny"
+    },
+    {
+      "alignedWord": "shaped",
+      "case": "success",
+      "end": 3.41,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.37,
+      "startOffset": 24,
+      "word": "shaped"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 31,
+      "word": "bit"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 39,
+      "startOffset": 35,
+      "word": "left"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 206,
+  "clipEnd": 210,
+  "partIndex": 9,
+  "clipIndex": 2
+}

@@ -1,0 +1,152 @@
+{
+  "transcript": "Pig cannot read his newspaper.",
+  "words": [
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.49,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 0,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "cannot",
+      "case": "success",
+      "end": 1.87,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 4,
+      "word": "cannot"
+    },
+    {
+      "alignedWord": "read",
+      "case": "success",
+      "end": 2.0700000000000003,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 11,
+      "word": "read"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 2.2199999999999998,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.07,
+      "startOffset": 16,
+      "word": "his"
+    },
+    {
+      "alignedWord": "newspaper",
+      "case": "success",
+      "end": 2.8000000000000003,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.22,
+      "startOffset": 20,
+      "word": "newspaper"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E15 - Daddy Loses his Glasses.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_9.json",
+  "episode_title": "Daddy Loses his Glasses",
+  "clipStart": 101,
+  "clipEnd": 104,
+  "partIndex": 3,
+  "clipIndex": 1
+}

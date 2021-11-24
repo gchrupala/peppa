@@ -1,0 +1,175 @@
+{
+  "transcript": "Grandpa Pig just finished in time.",
+  "words": [
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 1.35,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 0.88,
+      "startOffset": 0,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.69,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 8,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "just",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.84,
+      "startOffset": 12,
+      "word": "just"
+    },
+    {
+      "alignedWord": "finished",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "sh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 17,
+      "word": "finished"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 26,
+      "word": "in"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 2.6599999999999997,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 29,
+      "word": "time"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E26 - Treasure Hunt.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_24.json",
+  "episode_title": "Treasure Hunt",
+  "clipStart": 58,
+  "clipEnd": 61,
+  "partIndex": 2,
+  "clipIndex": 0
+}

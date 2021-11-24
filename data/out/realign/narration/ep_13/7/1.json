@@ -1,0 +1,152 @@
+{
+  "transcript": "what is inside George's box.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.65,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.43,
+      "startOffset": 0,
+      "word": "what"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.74,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "inside",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.74,
+      "startOffset": 8,
+      "word": "inside"
+    },
+    {
+      "alignedWord": "george's",
+      "case": "success",
+      "end": 1.69,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 15,
+      "word": "George's"
+    },
+    {
+      "alignedWord": "box",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 24,
+      "word": "box"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E31 - Secrets.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_13.json",
+  "episode_title": "Secrets",
+  "clipStart": 185,
+  "clipEnd": 188,
+  "partIndex": 7,
+  "clipIndex": 1
+}

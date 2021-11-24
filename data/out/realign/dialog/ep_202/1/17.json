@@ -1,0 +1,79 @@
+{
+  "transcript": "- Carrots are a vegetable. ",
+  "words": [
+    {
+      "alignedWord": "carrots",
+      "case": "success",
+      "end": 2.9299999999999997,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 2,
+      "word": "Carrots"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 3.8000000000000003,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.72,
+      "startOffset": 10,
+      "word": "are"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 15,
+      "startOffset": 14,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 16,
+      "word": "vegetable"
+    }
+  ],
+  "speaker": "Edmond",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 68,
+  "clipEnd": 72,
+  "partIndex": 1,
+  "clipIndex": 17
+}

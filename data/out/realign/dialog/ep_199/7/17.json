@@ -1,0 +1,120 @@
+{
+  "transcript": "- Wow! George can do it!",
+  "words": [
+    {
+      "alignedWord": "wow",
+      "case": "success",
+      "end": 0.39,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 0.37,
+      "startOffset": 2,
+      "word": "Wow"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.43,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.39,
+      "startOffset": 7,
+      "word": "George"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.41,
+      "startOffset": 14,
+      "word": "can"
+    },
+    {
+      "alignedWord": "do",
+      "case": "success",
+      "end": 2.4899999999999998,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 18,
+      "word": "do"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 2.5100000000000002,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.49,
+      "startOffset": 21,
+      "word": "it"
+    }
+  ],
+  "speaker": "Danny",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 266,
+  "clipEnd": 270,
+  "partIndex": 7,
+  "clipIndex": 17
+}

@@ -1,0 +1,194 @@
+{
+  "transcript": "He doesn't want to catch another cold.",
+  "words": [
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 0.7200000000000001,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 0,
+      "word": "He"
+    },
+    {
+      "alignedWord": "doesn't",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 3,
+      "word": "doesn't"
+    },
+    {
+      "alignedWord": "want",
+      "case": "success",
+      "end": 1.3,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 11,
+      "word": "want"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.4100000000000001,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 16,
+      "word": "to"
+    },
+    {
+      "alignedWord": "catch",
+      "case": "success",
+      "end": 1.65,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 19,
+      "word": "catch"
+    },
+    {
+      "alignedWord": "another",
+      "case": "success",
+      "end": 1.95,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 25,
+      "word": "another"
+    },
+    {
+      "alignedWord": "cold",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 33,
+      "word": "cold"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E32 - George Catches a Cold.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_76.json",
+  "episode_title": "George Catches a Cold",
+  "clipStart": 260,
+  "clipEnd": 263,
+  "partIndex": 12,
+  "clipIndex": 1
+}

@@ -1,0 +1,83 @@
+{
+  "transcript": "- That's the teapot's handle, Miss Rabbit.",
+  "words": [
+    {
+      "alignedWord": "that's",
+      "case": "success",
+      "end": 4.46,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.42,
+      "startOffset": 2,
+      "word": "That's"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 4.51,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 4.46,
+      "startOffset": 9,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 21,
+      "startOffset": 13,
+      "word": "teapot's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 22,
+      "word": "handle"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 30,
+      "word": "Miss"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 41,
+      "startOffset": 35,
+      "word": "Rabbit"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 212,
+  "clipEnd": 217,
+  "partIndex": 9,
+  "clipIndex": 4
+}

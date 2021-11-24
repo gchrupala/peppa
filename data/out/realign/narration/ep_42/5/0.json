@@ -1,0 +1,163 @@
+{
+  "transcript": "-Daddy Pig is going very fast.",
+  "words": [
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 0.8300000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 1,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 7,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 14,
+      "word": "going"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 1.8599999999999999,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 20,
+      "word": "very"
+    },
+    {
+      "alignedWord": "fast",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.86,
+      "startOffset": 25,
+      "word": "fast"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E40 - Daddy Gets Fit.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_42.json",
+  "episode_title": "Daddy Gets Fit",
+  "clipStart": 210,
+  "clipEnd": 213,
+  "partIndex": 5,
+  "clipIndex": 0
+}

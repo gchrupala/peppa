@@ -1,0 +1,232 @@
+{
+  "transcript": "Daddy's still in the cellar, looking for the torch.",
+  "words": [
+    {
+      "alignedWord": "daddy's",
+      "case": "success",
+      "end": 0.31000000000000005,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.17,
+      "startOffset": 0,
+      "word": "Daddy's"
+    },
+    {
+      "alignedWord": "still",
+      "case": "success",
+      "end": 0.5,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.32,
+      "startOffset": 8,
+      "word": "still"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 14,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.74,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 17,
+      "word": "the"
+    },
+    {
+      "alignedWord": "cellar",
+      "case": "success",
+      "end": 1.0899999999999999,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.74,
+      "startOffset": 21,
+      "word": "cellar"
+    },
+    {
+      "alignedWord": "looking",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 29,
+      "word": "looking"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 37,
+      "word": "for"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.9000000000000001,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 41,
+      "word": "the"
+    },
+    {
+      "alignedWord": "torch",
+      "case": "success",
+      "end": 2.41,
+      "endOffset": 50,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 45,
+      "word": "torch"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E48 - The Powercut.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_99.json",
+  "episode_title": "The Powercut",
+  "clipStart": 131,
+  "clipEnd": 134,
+  "partIndex": 5,
+  "clipIndex": 0
+}

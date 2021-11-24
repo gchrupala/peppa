@@ -1,0 +1,152 @@
+{
+  "transcript": "George looks in Daddy's slippers,",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.8099999999999998,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "looks",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 7,
+      "word": "looks"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.14,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 13,
+      "word": "in"
+    },
+    {
+      "alignedWord": "daddy's",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 16,
+      "word": "Daddy's"
+    },
+    {
+      "alignedWord": "slippers",
+      "case": "success",
+      "end": 2.69,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.54,
+      "startOffset": 24,
+      "word": "slippers"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E15 - Daddy Loses his Glasses.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_9.json",
+  "episode_title": "Daddy Loses his Glasses",
+  "clipStart": 188,
+  "clipEnd": 191,
+  "partIndex": 8,
+  "clipIndex": 0
+}

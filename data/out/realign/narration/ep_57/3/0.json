@@ -1,0 +1,133 @@
+{
+  "transcript": "The magnifying glass makes",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.28,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.17,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "magnifying",
+      "case": "success",
+      "end": 0.9,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.28,
+      "startOffset": 4,
+      "word": "magnifying"
+    },
+    {
+      "alignedWord": "glass",
+      "case": "success",
+      "end": 1.24,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 15,
+      "word": "glass"
+    },
+    {
+      "alignedWord": "makes",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 21,
+      "word": "makes"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E06 - Mysteries.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_57.json",
+  "episode_title": "Mysteries",
+  "clipStart": 93,
+  "clipEnd": 95,
+  "partIndex": 3,
+  "clipIndex": 0
+}

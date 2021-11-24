@@ -1,0 +1,71 @@
+{
+  "transcript": "- Quicker, Mummy!",
+  "words": [
+    {
+      "alignedWord": "quicker",
+      "case": "success",
+      "end": 1.92,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 2,
+      "word": "Quicker"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 2.28,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 11,
+      "word": "Mummy"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 199,
+  "clipEnd": 202,
+  "partIndex": 4,
+  "clipIndex": 9
+}

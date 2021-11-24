@@ -1,0 +1,147 @@
+{
+  "transcript": "Daddy Pig is helping Peppa practise.",
+  "words": [
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 0.42000000000000004,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.42,
+      "startOffset": 6,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.75,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 10,
+      "word": "is"
+    },
+    {
+      "alignedWord": "helping",
+      "case": "success",
+      "end": 1.1099999999999999,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 13,
+      "word": "helping"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.2400000000000002,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 21,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.91,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.5,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 27,
+      "word": "practise"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E52 - School Play.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_52.json",
+  "episode_title": "School Play",
+  "clipStart": 37,
+  "clipEnd": 40,
+  "partIndex": 1,
+  "clipIndex": 4
+}

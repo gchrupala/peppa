@@ -1,0 +1,217 @@
+{
+  "transcript": "Mr. Zebra's song has sent everyone to sleep.",
+  "words": [
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 0.6699999999999999,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.38,
+      "startOffset": 0,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.34,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 4,
+      "word": "Zebra's"
+    },
+    {
+      "alignedWord": "song",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 12,
+      "word": "song"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 17,
+      "word": "has"
+    },
+    {
+      "alignedWord": "sent",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 21,
+      "word": "sent"
+    },
+    {
+      "alignedWord": "everyone",
+      "case": "success",
+      "end": 2.69,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 26,
+      "word": "everyone"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.8800000000000003,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.72,
+      "startOffset": 35,
+      "word": "to"
+    },
+    {
+      "alignedWord": "sleep",
+      "case": "success",
+      "end": 3.17,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.88,
+      "startOffset": 38,
+      "word": "sleep"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E52 - Sleepover.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_103.json",
+  "episode_title": "Sleepover",
+  "clipStart": 274,
+  "clipEnd": 278,
+  "partIndex": 9,
+  "clipIndex": 0
+}

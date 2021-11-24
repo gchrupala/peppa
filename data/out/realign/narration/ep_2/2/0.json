@@ -1,0 +1,106 @@
+{
+  "transcript": "Sometimes, George likes",
+  "words": [
+    {
+      "alignedWord": "sometimes",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.6,
+      "startOffset": 0,
+      "word": "Sometimes"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.4400000000000002,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 11,
+      "word": "George"
+    },
+    {
+      "alignedWord": "likes",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 18,
+      "word": "likes"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E02 - Mr Dinosaur is Lost.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_2.json",
+  "episode_title": "Mr. Dinosaur is Lost",
+  "clipStart": 37,
+  "clipEnd": 39,
+  "partIndex": 2,
+  "clipIndex": 0
+}

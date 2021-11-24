@@ -1,0 +1,186 @@
+{
+  "transcript": "What a great job Mr. Rabbit has.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.26,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.07,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.41000000000000003,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ey_S"
+        }
+      ],
+      "start": 0.4,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "great",
+      "case": "success",
+      "end": 0.84,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.49,
+      "startOffset": 7,
+      "word": "great"
+    },
+    {
+      "alignedWord": "job",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 13,
+      "word": "job"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 17,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 1.84,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 21,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 2.25,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 28,
+      "word": "has"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E30 - Daddy Pigs Office.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_74.json",
+  "episode_title": "Daddy Pig's Office",
+  "clipStart": 124,
+  "clipEnd": 128,
+  "partIndex": 5,
+  "clipIndex": 0
+}

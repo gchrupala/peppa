@@ -1,0 +1,200 @@
+{
+  "transcript": "But today, they were in a hurry to get",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 0.7300000000000001,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "today",
+      "case": "success",
+      "end": 1.3599999999999999,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.32,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 4,
+      "word": "today"
+    },
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 11,
+      "word": "they"
+    },
+    {
+      "alignedWord": "were",
+      "case": "success",
+      "end": 1.7,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 16,
+      "word": "were"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 21,
+      "word": "in"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.87,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 24,
+      "word": "a"
+    },
+    {
+      "alignedWord": "hurry",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 26,
+      "word": "hurry"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 32,
+      "word": "to"
+    },
+    {
+      "alignedWord": "get",
+      "case": "success",
+      "end": 2.5,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 35,
+      "word": "get"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E03 - Polly Parrot.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_4.json",
+  "episode_title": "Polly Parrot",
+  "clipStart": 120,
+  "clipEnd": 123,
+  "partIndex": 2,
+  "clipIndex": 1
+}

@@ -1,0 +1,247 @@
+{
+  "transcript": "- Oh, have you missed the bus? - Mr. Rabbit, I am a teacher.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.42,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 6,
+      "word": "have"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 2.59,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 11,
+      "word": "you"
+    },
+    {
+      "alignedWord": "missed",
+      "case": "success",
+      "end": 2.8600000000000003,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 15,
+      "word": "missed"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.9899999999999998,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.86,
+      "startOffset": 22,
+      "word": "the"
+    },
+    {
+      "alignedWord": "bus",
+      "case": "success",
+      "end": 3.56,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.3,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.99,
+      "startOffset": 26,
+      "word": "bus"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 4.11,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.7,
+      "startOffset": 33,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 4.59,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 4.32,
+      "startOffset": 37,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 5.1,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 4.97,
+      "startOffset": 45,
+      "word": "I"
+    },
+    {
+      "alignedWord": "am",
+      "case": "success",
+      "end": 5.7,
+      "endOffset": 49,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 5.68,
+      "startOffset": 47,
+      "word": "am"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 51,
+      "startOffset": 50,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 59,
+      "startOffset": 52,
+      "word": "teacher"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 240,
+  "clipEnd": 246,
+  "partIndex": 7,
+  "clipIndex": 1
+}

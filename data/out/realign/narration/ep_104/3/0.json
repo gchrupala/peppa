@@ -1,0 +1,235 @@
+{
+  "transcript": "It is so cold, the puddle has turned to ice.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.43,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.46,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 0.97,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 6,
+      "word": "so"
+    },
+    {
+      "alignedWord": "cold",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 9,
+      "word": "cold"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.8699999999999999,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 15,
+      "word": "the"
+    },
+    {
+      "alignedWord": "puddle",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.91,
+      "startOffset": 19,
+      "word": "puddle"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 26,
+      "word": "has"
+    },
+    {
+      "alignedWord": "turned",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.48,
+      "startOffset": 30,
+      "word": "turned"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.92,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 37,
+      "word": "to"
+    },
+    {
+      "alignedWord": "ice",
+      "case": "success",
+      "end": 3.14,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.92,
+      "startOffset": 40,
+      "word": "ice"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E53 - Cold Winter Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_104.json",
+  "episode_title": "Cold Winter Day",
+  "clipStart": 51,
+  "clipEnd": 55,
+  "partIndex": 3,
+  "clipIndex": 0
+}

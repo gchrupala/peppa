@@ -1,0 +1,147 @@
+{
+  "transcript": "- Carrots are not a fruit. - Oh.",
+  "words": [
+    {
+      "alignedWord": "carrots",
+      "case": "success",
+      "end": 1.51,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 2,
+      "word": "Carrots"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 10,
+      "word": "are"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 2.94,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.73,
+      "startOffset": 14,
+      "word": "not"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 3.1199999999999997,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.11,
+      "startOffset": 18,
+      "word": "a"
+    },
+    {
+      "alignedWord": "fruit",
+      "case": "success",
+      "end": 3.48,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.12,
+      "startOffset": 20,
+      "word": "fruit"
+    },
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 3.5,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 3.49,
+      "startOffset": 29,
+      "word": "Oh"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 65,
+  "clipEnd": 69,
+  "partIndex": 1,
+  "clipIndex": 16
+}

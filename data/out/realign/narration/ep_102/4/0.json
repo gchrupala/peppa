@@ -1,0 +1,201 @@
+{
+  "transcript": "This is the office where Daddy Pig works.",
+  "words": [
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 0.7100000000000001,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.55,
+      "startOffset": 0,
+      "word": "This"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.76,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.9500000000000001,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.81,
+      "startOffset": 8,
+      "word": "the"
+    },
+    {
+      "alignedWord": "office",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 12,
+      "word": "office"
+    },
+    {
+      "alignedWord": "where",
+      "case": "success",
+      "end": 1.6199999999999999,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 19,
+      "word": "where"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 25,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 31,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "works",
+      "case": "success",
+      "end": 2.45,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 35,
+      "word": "works"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E51 - Daddy Pig's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_102.json",
+  "episode_title": "Daddy Pig's Birthday",
+  "clipStart": 111,
+  "clipEnd": 115,
+  "partIndex": 4,
+  "clipIndex": 0
+}

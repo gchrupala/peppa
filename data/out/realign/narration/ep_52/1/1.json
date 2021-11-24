@@ -1,0 +1,131 @@
+{
+  "transcript": "They have to practise at home.",
+  "words": [
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 0.71,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.61,
+      "startOffset": 0,
+      "word": "They"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 0.87,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_E"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 5,
+      "word": "have"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 10,
+      "word": "to"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.43,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 13,
+      "word": "practise"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 1.47,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 22,
+      "word": "at"
+    },
+    {
+      "alignedWord": "home",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 25,
+      "word": "home"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E52 - School Play.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_52.json",
+  "episode_title": "School Play",
+  "clipStart": 28,
+  "clipEnd": 31,
+  "partIndex": 1,
+  "clipIndex": 1
+}

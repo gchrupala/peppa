@@ -1,0 +1,124 @@
+{
+  "transcript": "but he is too little.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 0.44,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 0,
+      "word": "but"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 0.55,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 4,
+      "word": "he"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.6900000000000001,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.55,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 10,
+      "word": "too"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 14,
+      "word": "little"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E49 - Cleaning the Car.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_33.json",
+  "episode_title": "Cleaning the Car",
+  "clipStart": 102,
+  "clipEnd": 104,
+  "partIndex": 4,
+  "clipIndex": 1
+}

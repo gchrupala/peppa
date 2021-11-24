@@ -1,0 +1,186 @@
+{
+  "transcript": "down so that Teddy can be rescued.",
+  "words": [
+    {
+      "alignedWord": "down",
+      "case": "success",
+      "end": 0.75,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 0,
+      "word": "down"
+    },
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 1.07,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 5,
+      "word": "so"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 8,
+      "word": "that"
+    },
+    {
+      "alignedWord": "teddy",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 13,
+      "word": "Teddy"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 1.73,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 19,
+      "word": "can"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 1.8599999999999999,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 23,
+      "word": "be"
+    },
+    {
+      "alignedWord": "rescued",
+      "case": "success",
+      "end": 2.41,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.86,
+      "startOffset": 26,
+      "word": "rescued"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E36 - The Balloon Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_77.json",
+  "episode_title": "The Balloon Ride",
+  "clipStart": 175,
+  "clipEnd": 178,
+  "partIndex": 4,
+  "clipIndex": 1
+}

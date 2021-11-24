@@ -1,0 +1,162 @@
+{
+  "transcript": "But I think I can fix it.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 0.67,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.64,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 0.68,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 4,
+      "word": "I"
+    },
+    {
+      "alignedWord": "think",
+      "case": "success",
+      "end": 0.7200000000000001,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 6,
+      "word": "think"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 1.2400000000000002,
+      "startOffset": 12,
+      "word": "I"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 1.2800000000000002,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 14,
+      "word": "can"
+    },
+    {
+      "alignedWord": "fix",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.6600000000000001,
+      "startOffset": 18,
+      "word": "fix"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.7200000000000002,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.7000000000000002,
+      "startOffset": 22,
+      "word": "it"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 178,
+  "clipEnd": 180,
+  "partIndex": 7,
+  "clipIndex": 11
+}

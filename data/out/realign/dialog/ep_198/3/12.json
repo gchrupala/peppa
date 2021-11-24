@@ -1,0 +1,160 @@
+{
+  "transcript": "- Sorry, Madame Gazelle. I overslept.",
+  "words": [
+    {
+      "alignedWord": "sorry",
+      "case": "success",
+      "end": 2.4,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 2,
+      "word": "Sorry"
+    },
+    {
+      "alignedWord": "madame",
+      "case": "success",
+      "end": 2.83,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.4,
+      "startOffset": 9,
+      "word": "Madame"
+    },
+    {
+      "alignedWord": "gazelle",
+      "case": "success",
+      "end": 3.45,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.98,
+      "startOffset": 16,
+      "word": "Gazelle"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 3.73,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 3.72,
+      "startOffset": 25,
+      "word": "I"
+    },
+    {
+      "alignedWord": "overslept",
+      "case": "success",
+      "end": 3.8200000000000003,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.73,
+      "startOffset": 27,
+      "word": "overslept"
+    }
+  ],
+  "speaker": "Pedro",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 94,
+  "clipEnd": 98,
+  "partIndex": 3,
+  "clipIndex": 12
+}

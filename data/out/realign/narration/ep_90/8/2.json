@@ -1,0 +1,155 @@
+{
+  "transcript": "The ducks are eating too quickly.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.33,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.2,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "ducks",
+      "case": "success",
+      "end": 0.67,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.33,
+      "startOffset": 4,
+      "word": "ducks"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 0.86,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "er_S"
+        }
+      ],
+      "start": 0.72,
+      "startOffset": 10,
+      "word": "are"
+    },
+    {
+      "alignedWord": "eating",
+      "case": "success",
+      "end": 1.33,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "iy_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 14,
+      "word": "eating"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 1.6,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 21,
+      "word": "too"
+    },
+    {
+      "alignedWord": "quickly",
+      "case": "success",
+      "end": 2.18,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 25,
+      "word": "quickly"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E22 - School Bus Trip.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_90.json",
+  "episode_title": "School Bus Trip",
+  "clipStart": 225,
+  "clipEnd": 228,
+  "partIndex": 8,
+  "clipIndex": 2
+}

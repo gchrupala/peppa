@@ -1,0 +1,168 @@
+{
+  "transcript": "Peppa has found a box of old clothes.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.3800000000000001,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.26,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.5099999999999998,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 6,
+      "word": "has"
+    },
+    {
+      "alignedWord": "found",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 10,
+      "word": "found"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ey_S"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 16,
+      "word": "a"
+    },
+    {
+      "alignedWord": "box",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 18,
+      "word": "box"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 2.35,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 22,
+      "word": "of"
+    },
+    {
+      "alignedWord": "old",
+      "case": "success",
+      "end": 2.5700000000000003,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.35,
+      "startOffset": 25,
+      "word": "old"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 29,
+      "word": "clothes"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E19 - Dressing Up.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_18.json",
+  "episode_title": "Dressing Up",
+  "clipStart": 35,
+  "clipEnd": 38,
+  "partIndex": 1,
+  "clipIndex": 0
+}

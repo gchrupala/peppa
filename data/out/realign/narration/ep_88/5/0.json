@@ -1,0 +1,247 @@
+{
+  "transcript": "Granny Pig has found a flag for the girl's den.",
+  "words": [
+    {
+      "alignedWord": "granny",
+      "case": "success",
+      "end": 0.51,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.2,
+      "startOffset": 0,
+      "word": "Granny"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.79,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 7,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.93,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.79,
+      "startOffset": 11,
+      "word": "has"
+    },
+    {
+      "alignedWord": "found",
+      "case": "success",
+      "end": 1.19,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 15,
+      "word": "found"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 21,
+      "word": "a"
+    },
+    {
+      "alignedWord": "flag",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 23,
+      "word": "flag"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 28,
+      "word": "for"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 32,
+      "word": "the"
+    },
+    {
+      "alignedWord": "girl's",
+      "case": "success",
+      "end": 2.35,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 36,
+      "word": "girl's"
+    },
+    {
+      "alignedWord": "den",
+      "case": "success",
+      "end": 2.69,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.35,
+      "startOffset": 43,
+      "word": "den"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E41 - Dens.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_88.json",
+  "episode_title": "Dens",
+  "clipStart": 185,
+  "clipEnd": 189,
+  "partIndex": 5,
+  "clipIndex": 0
+}

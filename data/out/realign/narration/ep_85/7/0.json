@@ -1,0 +1,116 @@
+{
+  "transcript": "Peppa and her friends are",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.02,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.01,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.62,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 0.78,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 10,
+      "word": "her"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 1.5299999999999998,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 14,
+      "word": "friends"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.6799999999999997,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 2.67,
+      "startOffset": 22,
+      "word": "are"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E40 - The Cycle Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_85.json",
+  "episode_title": "The Cycle Ride",
+  "clipStart": 181,
+  "clipEnd": 184,
+  "partIndex": 7,
+  "clipIndex": 0
+}

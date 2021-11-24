@@ -1,0 +1,220 @@
+{
+  "transcript": "and Daddy Pig up to the very top floor.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.17,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.14,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 0.47,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.17,
+      "startOffset": 4,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.69,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.47,
+      "startOffset": 10,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 0.95,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "p_E"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 14,
+      "word": "up"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 0.95,
+      "startOffset": 17,
+      "word": "to"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 20,
+      "word": "the"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 24,
+      "word": "very"
+    },
+    {
+      "alignedWord": "top",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 29,
+      "word": "top"
+    },
+    {
+      "alignedWord": "floor",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 33,
+      "word": "floor"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E30 - Daddy Pigs Office.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_74.json",
+  "episode_title": "Daddy Pig's Office",
+  "clipStart": 77,
+  "clipEnd": 80,
+  "partIndex": 2,
+  "clipIndex": 1
+}

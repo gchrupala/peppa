@@ -1,0 +1,140 @@
+{
+  "transcript": "George doesn't like this game.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.03,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "doesn't",
+      "case": "success",
+      "end": 1.2000000000000002,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 7,
+      "word": "doesn't"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 15,
+      "word": "like"
+    },
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 1.8499999999999999,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 20,
+      "word": "this"
+    },
+    {
+      "alignedWord": "game",
+      "case": "success",
+      "end": 2.4499999999999997,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 25,
+      "word": "game"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E49 - Bouncy Ball.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_100.json",
+  "episode_title": "Bouncy Ball",
+  "clipStart": 138,
+  "clipEnd": 142,
+  "partIndex": 7,
+  "clipIndex": 0
+}

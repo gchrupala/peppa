@@ -1,0 +1,97 @@
+{
+  "transcript": "Peppa's friends are here.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.46,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 0,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 1.8699999999999999,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 8,
+      "word": "friends"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.8800000000000001,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 16,
+      "word": "are"
+    },
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 1.91,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 20,
+      "word": "here"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E16 - Pretend Friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_89.json",
+  "episode_title": "Pretend Friend",
+  "clipStart": 248,
+  "clipEnd": 251,
+  "partIndex": 10,
+  "clipIndex": 0
+}

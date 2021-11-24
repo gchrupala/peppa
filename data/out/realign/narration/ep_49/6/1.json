@@ -1,0 +1,120 @@
+{
+  "transcript": "Is that on the list?",
+  "words": [
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.6399999999999999,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.21,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.35,
+      "startOffset": 0,
+      "word": "Is"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 0.88,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 3,
+      "word": "that"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 8,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.11,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 11,
+      "word": "the"
+    },
+    {
+      "alignedWord": "list",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 15,
+      "word": "list"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E41 - Shopping.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_49.json",
+  "episode_title": "Shopping",
+  "clipStart": 245,
+  "clipEnd": 248,
+  "partIndex": 6,
+  "clipIndex": 1
+}

@@ -1,0 +1,101 @@
+{
+  "transcript": "Here are Peppa's friends--",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 0.6000000000000001,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.34,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 0.64,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "er_S"
+        }
+      ],
+      "start": 0.6,
+      "startOffset": 5,
+      "word": "are"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.03,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 9,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 1.34,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 17,
+      "word": "friends"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E34 - Fancy Dress Party.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_38.json",
+  "episode_title": "Fancy Dress Party",
+  "clipStart": 38,
+  "clipEnd": 41,
+  "partIndex": 2,
+  "clipIndex": 0
+}

@@ -1,0 +1,240 @@
+{
+  "transcript": "George has eaten his pizza but George does not",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.48,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.59,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.48,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "eaten",
+      "case": "success",
+      "end": 0.86,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "iy_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 11,
+      "word": "eaten"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 17,
+      "word": "his"
+    },
+    {
+      "alignedWord": "pizza",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 21,
+      "word": "pizza"
+    },
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 2.25,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 27,
+      "word": "but"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.55,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 2.25,
+      "startOffset": 31,
+      "word": "George"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.55,
+      "startOffset": 38,
+      "word": "does"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 2.9800000000000004,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.72,
+      "startOffset": 43,
+      "word": "not"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E37- Lunch.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_34.json",
+  "episode_title": "Lunch",
+  "clipStart": 185,
+  "clipEnd": 189,
+  "partIndex": 5,
+  "clipIndex": 0
+}

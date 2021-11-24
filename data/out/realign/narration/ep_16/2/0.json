@@ -1,0 +1,113 @@
+{
+  "transcript": "George wants to try.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.19,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.78,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "wants",
+      "case": "success",
+      "end": 1.46,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 7,
+      "word": "wants"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 13,
+      "word": "to"
+    },
+    {
+      "alignedWord": "try",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 16,
+      "word": "try"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E21 - Musical Instruments.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_16.json",
+  "episode_title": "Musical Instruments",
+  "clipStart": 95,
+  "clipEnd": 97,
+  "partIndex": 2,
+  "clipIndex": 0
+}

@@ -1,0 +1,203 @@
+{
+  "transcript": "Peppa is going to a sleepover at Zoe Zebra's house.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.7,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.38,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.9299999999999999,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 6,
+      "word": "is"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 1.26,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 9,
+      "word": "going"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.38,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 15,
+      "word": "to"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.39,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 18,
+      "word": "a"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 20,
+      "word": "sleepover"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 2.56,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.4,
+      "startOffset": 30,
+      "word": "at"
+    },
+    {
+      "alignedWord": "zoe",
+      "case": "success",
+      "end": 2.87,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "z_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.56,
+      "startOffset": 33,
+      "word": "Zoe"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.24,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.37,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.87,
+      "startOffset": 37,
+      "word": "Zebra's"
+    },
+    {
+      "alignedWord": "house",
+      "case": "success",
+      "end": 3.5999999999999996,
+      "endOffset": 50,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.26,
+      "startOffset": 45,
+      "word": "house"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E52 - Sleepover.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_103.json",
+  "episode_title": "Sleepover",
+  "clipStart": 21,
+  "clipEnd": 25,
+  "partIndex": 0,
+  "clipIndex": 1
+}

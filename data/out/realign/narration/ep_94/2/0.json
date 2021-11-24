@@ -1,0 +1,79 @@
+{
+  "transcript": "Granny and Grandpa's attic",
+  "words": [
+    {
+      "alignedWord": "granny",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 0,
+      "word": "Granny"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 7,
+      "word": "and"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 11,
+      "word": "Grandpa's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 21,
+      "word": "attic"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E23 - Granny and Grandpas Attic.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_94.json",
+  "episode_title": "Granny and Grandpa's Attic",
+  "clipStart": 72,
+  "clipEnd": 74,
+  "partIndex": 2,
+  "clipIndex": 0
+}

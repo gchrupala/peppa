@@ -1,0 +1,191 @@
+{
+  "transcript": "George does not want to be a girl baby.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 2.64,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.48,
+      "startOffset": 7,
+      "word": "does"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 2.83,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.64,
+      "startOffset": 12,
+      "word": "not"
+    },
+    {
+      "alignedWord": "want",
+      "case": "success",
+      "end": 3.2,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.83,
+      "startOffset": 16,
+      "word": "want"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.31,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 3.21,
+      "startOffset": 21,
+      "word": "to"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 3.45,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.31,
+      "startOffset": 24,
+      "word": "be"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 3.5300000000000002,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.45,
+      "startOffset": 27,
+      "word": "a"
+    },
+    {
+      "alignedWord": "girl",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        }
+      ],
+      "start": 3.53,
+      "startOffset": 29,
+      "word": "girl"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 38,
+      "startOffset": 34,
+      "word": "baby"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E39 The Baby Piggy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_83.json",
+  "episode_title": "The Baby Piggy",
+  "clipStart": 205,
+  "clipEnd": 209,
+  "partIndex": 11,
+  "clipIndex": 0
+}

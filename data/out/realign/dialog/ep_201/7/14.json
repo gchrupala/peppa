@@ -1,0 +1,159 @@
+{
+  "transcript": "- Oh, these two pieces fit together.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "these",
+      "case": "success",
+      "end": 1.7,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 6,
+      "word": "these"
+    },
+    {
+      "alignedWord": "two",
+      "case": "success",
+      "end": 1.72,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 12,
+      "word": "two"
+    },
+    {
+      "alignedWord": "pieces",
+      "case": "success",
+      "end": 1.93,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 16,
+      "word": "pieces"
+    },
+    {
+      "alignedWord": "fit",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 23,
+      "word": "fit"
+    },
+    {
+      "alignedWord": "together",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.96,
+      "startOffset": 27,
+      "word": "together"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 185,
+  "clipEnd": 188,
+  "partIndex": 7,
+  "clipIndex": 14
+}

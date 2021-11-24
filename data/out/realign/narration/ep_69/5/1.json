@@ -1,0 +1,177 @@
+{
+  "transcript": "Granddad Dog is filling Peppa's car with petrol.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.4,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 0,
+      "word": "Granddad"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 9,
+      "word": "Dog"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.57,
+      "startOffset": 13,
+      "word": "is"
+    },
+    {
+      "alignedWord": "filling",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 16,
+      "word": "filling"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.44,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.3,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.14,
+      "startOffset": 24,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "car",
+      "case": "success",
+      "end": 2.7600000000000002,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.49,
+      "startOffset": 32,
+      "word": "car"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 2.92,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "th_E"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 36,
+      "word": "with"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.5,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.46,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 3.04,
+      "startOffset": 41,
+      "word": "petrol"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E26 - Granddad Dogs Garage.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_69.json",
+  "episode_title": "Granddad Dog's Garage",
+  "clipStart": 125,
+  "clipEnd": 131,
+  "partIndex": 5,
+  "clipIndex": 1
+}

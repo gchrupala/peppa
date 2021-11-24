@@ -1,0 +1,213 @@
+{
+  "transcript": "But when Daddy Pig takes his glasses off,",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.34,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "when",
+      "case": "success",
+      "end": 1.72,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 4,
+      "word": "when"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 9,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 15,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "takes",
+      "case": "success",
+      "end": 2.5999999999999996,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 19,
+      "word": "takes"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 2.7600000000000002,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.6,
+      "startOffset": 25,
+      "word": "his"
+    },
+    {
+      "alignedWord": "glasses",
+      "case": "success",
+      "end": 3.25,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 29,
+      "word": "glasses"
+    },
+    {
+      "alignedWord": "off",
+      "case": "success",
+      "end": 3.73,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.23,
+          "phone": "f_E"
+        }
+      ],
+      "start": 3.32,
+      "startOffset": 37,
+      "word": "off"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E15 - Daddy Loses his Glasses.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_9.json",
+  "episode_title": "Daddy Loses his Glasses",
+  "clipStart": 48,
+  "clipEnd": 53,
+  "partIndex": 0,
+  "clipIndex": 3
+}

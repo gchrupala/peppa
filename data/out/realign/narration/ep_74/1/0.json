@@ -1,0 +1,209 @@
+{
+  "transcript": "This is the building where Daddy Pig works.",
+  "words": [
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 0.33999999999999997,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 0,
+      "word": "This"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.36000000000000004,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.34,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.51,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.38,
+      "startOffset": 8,
+      "word": "the"
+    },
+    {
+      "alignedWord": "building",
+      "case": "success",
+      "end": 0.9400000000000001,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 12,
+      "word": "building"
+    },
+    {
+      "alignedWord": "where",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 21,
+      "word": "where"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.3800000000000001,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 27,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 33,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "works",
+      "case": "success",
+      "end": 1.8399999999999999,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 37,
+      "word": "works"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E30 - Daddy Pigs Office.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_74.json",
+  "episode_title": "Daddy Pig's Office",
+  "clipStart": 33,
+  "clipEnd": 36,
+  "partIndex": 1,
+  "clipIndex": 0
+}

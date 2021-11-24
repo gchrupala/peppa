@@ -1,0 +1,133 @@
+{
+  "transcript": "The thunderstorm has filled",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.89,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "thunderstorm",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 4,
+      "word": "thunderstorm"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.59,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 17,
+      "word": "has"
+    },
+    {
+      "alignedWord": "filled",
+      "case": "success",
+      "end": 1.91,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 21,
+      "word": "filled"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E32 - Thunderstrom.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_32.json",
+  "episode_title": "Thunderstorm",
+  "clipStart": 260,
+  "clipEnd": 263,
+  "partIndex": 3,
+  "clipIndex": 0
+}

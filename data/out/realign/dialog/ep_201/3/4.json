@@ -1,0 +1,136 @@
+{
+  "transcript": "Lads, let's smash up this old pipe!",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.01,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.0,
+      "startOffset": 0,
+      "word": "Lads"
+    },
+    {
+      "alignedWord": "let's",
+      "case": "success",
+      "end": 4.3,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.95,
+      "startOffset": 6,
+      "word": "let's"
+    },
+    {
+      "alignedWord": "smash",
+      "case": "success",
+      "end": 4.54,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.21,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "sh_E"
+        }
+      ],
+      "start": 4.3,
+      "startOffset": 12,
+      "word": "smash"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 4.56,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 4.54,
+      "startOffset": 18,
+      "word": "up"
+    },
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 4.59,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.56,
+      "startOffset": 21,
+      "word": "this"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 29,
+      "startOffset": 26,
+      "word": "old"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 30,
+      "word": "pipe"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 52,
+  "clipEnd": 57,
+  "partIndex": 3,
+  "clipIndex": 4
+}

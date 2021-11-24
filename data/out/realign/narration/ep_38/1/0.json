@@ -1,0 +1,186 @@
+{
+  "transcript": "And George is dressed as a dinosaur.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.55,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 0,
+      "word": "And"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 4,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.1099999999999999,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "dressed",
+      "case": "success",
+      "end": 1.45,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 14,
+      "word": "dressed"
+    },
+    {
+      "alignedWord": "as",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 22,
+      "word": "as"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 25,
+      "word": "a"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 27,
+      "word": "dinosaur"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E34 - Fancy Dress Party.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_38.json",
+  "episode_title": "Fancy Dress Party",
+  "clipStart": 31,
+  "clipEnd": 34,
+  "partIndex": 1,
+  "clipIndex": 0
+}

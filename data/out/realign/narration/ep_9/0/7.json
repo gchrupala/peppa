@@ -1,0 +1,155 @@
+{
+  "transcript": "Pig knows where his glasses are.",
+  "words": [
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.03,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 0,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "knows",
+      "case": "success",
+      "end": 2.4,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 4,
+      "word": "knows"
+    },
+    {
+      "alignedWord": "where",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.41,
+      "startOffset": 10,
+      "word": "where"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.58,
+      "startOffset": 16,
+      "word": "his"
+    },
+    {
+      "alignedWord": "glasses",
+      "case": "success",
+      "end": 3.23,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 20,
+      "word": "glasses"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 3.2699999999999996,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 3.26,
+      "startOffset": 28,
+      "word": "are"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E15 - Daddy Loses his Glasses.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_9.json",
+  "episode_title": "Daddy Loses his Glasses",
+  "clipStart": 60,
+  "clipEnd": 64,
+  "partIndex": 0,
+  "clipIndex": 7
+}

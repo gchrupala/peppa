@@ -1,0 +1,113 @@
+{
+  "transcript": "because he is little. ",
+  "words": [
+    {
+      "alignedWord": "because",
+      "case": "success",
+      "end": 3.5700000000000003,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.35,
+      "startOffset": 0,
+      "word": "because"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 4.4399999999999995,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.42,
+      "startOffset": 8,
+      "word": "he"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 4.46,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 4.44,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 4.56,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 4.46,
+      "startOffset": 14,
+      "word": "little"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 274,
+  "clipEnd": 279,
+  "partIndex": 7,
+  "clipIndex": 20
+}

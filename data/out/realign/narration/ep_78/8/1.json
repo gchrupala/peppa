@@ -1,0 +1,217 @@
+{
+  "transcript": "is a visit to the museum dinosaur room.",
+  "words": [
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.88,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 0,
+      "word": "is"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 3,
+      "word": "a"
+    },
+    {
+      "alignedWord": "visit",
+      "case": "success",
+      "end": 2.32,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.96,
+      "startOffset": 5,
+      "word": "visit"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.4699999999999998,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 11,
+      "word": "to"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.5700000000000003,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.47,
+      "startOffset": 14,
+      "word": "the"
+    },
+    {
+      "alignedWord": "museum",
+      "case": "success",
+      "end": 3.13,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.57,
+      "startOffset": 18,
+      "word": "museum"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 3.64,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.14,
+      "startOffset": 25,
+      "word": "dinosaur"
+    },
+    {
+      "alignedWord": "room",
+      "case": "success",
+      "end": 3.67,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.64,
+      "startOffset": 34,
+      "word": "room"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E31 - George's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_78.json",
+  "episode_title": "George's Birthday",
+  "clipStart": 168,
+  "clipEnd": 172,
+  "partIndex": 8,
+  "clipIndex": 1
+}

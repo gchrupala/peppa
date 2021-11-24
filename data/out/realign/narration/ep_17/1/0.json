@@ -1,0 +1,137 @@
+{
+  "transcript": "What a beautiful butterfly.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.97,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.3900000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ey_S"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "beautiful",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 7,
+      "word": "beautiful"
+    },
+    {
+      "alignedWord": "butterfly",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 17,
+      "word": "butterfly"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E46 - Frogs & Worms & Butterflies.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_17.json",
+  "episode_title": "Frogs and Worms and Butterflies",
+  "clipStart": 35,
+  "clipEnd": 38,
+  "partIndex": 1,
+  "clipIndex": 0
+}

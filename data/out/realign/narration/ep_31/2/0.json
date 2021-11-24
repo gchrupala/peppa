@@ -1,0 +1,189 @@
+{
+  "transcript": "The ballet lesson is a lot of fun.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.16999999999999998,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "ballet",
+      "case": "success",
+      "end": 0.44000000000000006,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.17,
+      "startOffset": 4,
+      "word": "ballet"
+    },
+    {
+      "alignedWord": "lesson",
+      "case": "success",
+      "end": 0.8,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 11,
+      "word": "lesson"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 18,
+      "word": "is"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 21,
+      "word": "a"
+    },
+    {
+      "alignedWord": "lot",
+      "case": "success",
+      "end": 1.36,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 23,
+      "word": "lot"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 1.4300000000000002,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 27,
+      "word": "of"
+    },
+    {
+      "alignedWord": "fun",
+      "case": "success",
+      "end": 1.8000000000000003,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 30,
+      "word": "fun"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E24 - Ballet Lessons.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_31.json",
+  "episode_title": "Ballet Lesson",
+  "clipStart": 126,
+  "clipEnd": 129,
+  "partIndex": 2,
+  "clipIndex": 0
+}

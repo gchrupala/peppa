@@ -1,0 +1,162 @@
+{
+  "transcript": "The bus is stuck in the mud.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.83,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.74,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "bus",
+      "case": "success",
+      "end": 1.1199999999999999,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 4,
+      "word": "bus"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.3499999999999999,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 8,
+      "word": "is"
+    },
+    {
+      "alignedWord": "stuck",
+      "case": "success",
+      "end": 1.6900000000000002,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 11,
+      "word": "stuck"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 17,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.9000000000000001,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 20,
+      "word": "the"
+    },
+    {
+      "alignedWord": "mud",
+      "case": "success",
+      "end": 2.28,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 24,
+      "word": "mud"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E38 - Grandpa's Little Train.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_84.json",
+  "episode_title": "Grandpa's Little Train",
+  "clipStart": 210,
+  "clipEnd": 213,
+  "partIndex": 6,
+  "clipIndex": 0
+}

@@ -1,0 +1,211 @@
+{
+  "transcript": "- I've forgotten what I put in the dinosaur juice.",
+  "words": [
+    {
+      "alignedWord": "i've",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 2,
+      "word": "I've"
+    },
+    {
+      "alignedWord": "forgotten",
+      "case": "success",
+      "end": 2.6799999999999997,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 7,
+      "word": "forgotten"
+    },
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 3.0999999999999996,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.84,
+      "startOffset": 17,
+      "word": "what"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 3.34,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 3.27,
+      "startOffset": 22,
+      "word": "I"
+    },
+    {
+      "alignedWord": "put",
+      "case": "success",
+      "end": 3.5999999999999996,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.34,
+      "startOffset": 24,
+      "word": "put"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 3.97,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.95,
+      "startOffset": 28,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 4.0600000000000005,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.97,
+      "startOffset": 31,
+      "word": "the"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.21,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ao_I"
+        }
+      ],
+      "start": 4.06,
+      "startOffset": 35,
+      "word": "dinosaur"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 49,
+      "startOffset": 44,
+      "word": "juice"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 223,
+  "clipEnd": 228,
+  "partIndex": 3,
+  "clipIndex": 43
+}

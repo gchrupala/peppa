@@ -1,0 +1,128 @@
+{
+  "transcript": "Peppa loves catching the ball.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.8499999999999999,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 6,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "catching",
+      "case": "success",
+      "end": 2.43,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 12,
+      "word": "catching"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.56,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 21,
+      "word": "the"
+    },
+    {
+      "alignedWord": "ball",
+      "case": "success",
+      "end": 3.15,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.0,
+      "startOffset": 25,
+      "word": "ball"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E33 - Piggy in the Middle.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_8.json",
+  "episode_title": "Piggy in the Middle",
+  "clipStart": 268,
+  "clipEnd": 272,
+  "partIndex": 7,
+  "clipIndex": 0
+}

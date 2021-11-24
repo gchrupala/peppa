@@ -1,0 +1,59 @@
+{
+  "transcript": "Well done.",
+  "words": [
+    {
+      "alignedWord": "well",
+      "case": "success",
+      "end": 2.03,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 0,
+      "word": "Well"
+    },
+    {
+      "alignedWord": "done",
+      "case": "success",
+      "end": 2.0599999999999996,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 5,
+      "word": "done"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 107,
+  "clipEnd": 110,
+  "partIndex": 3,
+  "clipIndex": 1
+}

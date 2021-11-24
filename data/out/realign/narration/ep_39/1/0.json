@@ -1,0 +1,231 @@
+{
+  "transcript": "Peppa wanted to see the room full of things that",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.83,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.69,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "wanted",
+      "case": "success",
+      "end": 1.16,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 6,
+      "word": "wanted"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 13,
+      "word": "to"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 16,
+      "word": "see"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 20,
+      "word": "the"
+    },
+    {
+      "alignedWord": "room",
+      "case": "success",
+      "end": 1.85,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 24,
+      "word": "room"
+    },
+    {
+      "alignedWord": "full",
+      "case": "success",
+      "end": 2.0,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 29,
+      "word": "full"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 34,
+      "word": "of"
+    },
+    {
+      "alignedWord": "things",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 37,
+      "word": "things"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 2.5,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 44,
+      "word": "that"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E30 - The Museum.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_39.json",
+  "episode_title": "The Museum",
+  "clipStart": 77,
+  "clipEnd": 80,
+  "partIndex": 1,
+  "clipIndex": 0
+}

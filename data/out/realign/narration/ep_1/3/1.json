@@ -1,0 +1,40 @@
+{
+  "transcript": "George.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.5700000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.04,
+      "startOffset": 0,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E01 - Muddy Puddles.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_1.json",
+  "episode_title": "Muddy Puddles",
+  "clipStart": 92,
+  "clipEnd": 93,
+  "partIndex": 3,
+  "clipIndex": 1
+}

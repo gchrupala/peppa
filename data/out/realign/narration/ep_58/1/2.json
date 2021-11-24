@@ -1,0 +1,287 @@
+{
+  "transcript": "Here is Rebecca Rabbit with her little brother, Richard Rabbit.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 1.1800000000000002,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.4500000000000002,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "rebecca",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 8,
+      "word": "Rebecca"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 2.2800000000000002,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 16,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 2.81,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "th_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 23,
+      "word": "with"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 2.92,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.81,
+      "startOffset": 28,
+      "word": "her"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 3.16,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.92,
+      "startOffset": 32,
+      "word": "little"
+    },
+    {
+      "alignedWord": "brother",
+      "case": "success",
+      "end": 3.5900000000000003,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.16,
+      "startOffset": 39,
+      "word": "brother"
+    },
+    {
+      "alignedWord": "richard",
+      "case": "success",
+      "end": 4.32,
+      "endOffset": 55,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.98,
+      "startOffset": 48,
+      "word": "Richard"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 4.58,
+      "endOffset": 62,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 4.38,
+      "startOffset": 56,
+      "word": "Rabbit"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E05 - Georges friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_58.json",
+  "episode_title": "George's Friend",
+  "clipStart": 49,
+  "clipEnd": 55,
+  "partIndex": 1,
+  "clipIndex": 2
+}

@@ -1,0 +1,172 @@
+{
+  "transcript": "They use buckets to make the castle's turrets.",
+  "words": [
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 0,
+      "word": "They"
+    },
+    {
+      "alignedWord": "use",
+      "case": "success",
+      "end": 1.4100000000000001,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 5,
+      "word": "use"
+    },
+    {
+      "alignedWord": "buckets",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 9,
+      "word": "buckets"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.18,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 17,
+      "word": "to"
+    },
+    {
+      "alignedWord": "make",
+      "case": "success",
+      "end": 2.4000000000000004,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 20,
+      "word": "make"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.52,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.4,
+      "startOffset": 25,
+      "word": "the"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.52,
+      "startOffset": 29,
+      "word": "castle's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 45,
+      "startOffset": 38,
+      "word": "turrets"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E14 - Pirate Island.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_75.json",
+  "episode_title": "Pirate Island",
+  "clipStart": 166,
+  "clipEnd": 169,
+  "partIndex": 7,
+  "clipIndex": 3
+}

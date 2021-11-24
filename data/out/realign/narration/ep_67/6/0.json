@@ -1,0 +1,197 @@
+{
+  "transcript": "George has jumped as far as he can.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.19,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "jumped",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 11,
+      "word": "jumped"
+    },
+    {
+      "alignedWord": "as",
+      "case": "success",
+      "end": 1.85,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 18,
+      "word": "as"
+    },
+    {
+      "alignedWord": "far",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.86,
+      "startOffset": 21,
+      "word": "far"
+    },
+    {
+      "alignedWord": "as",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.2,
+      "startOffset": 25,
+      "word": "as"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 2.43,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 28,
+      "word": "he"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 2.85,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 31,
+      "word": "can"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E24 - Sports day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_67.json",
+  "episode_title": "Sports Day",
+  "clipStart": 113,
+  "clipEnd": 117,
+  "partIndex": 6,
+  "clipIndex": 0
+}

@@ -1,0 +1,19 @@
+{
+  "transcript": " - Rrrr!",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 7,
+      "startOffset": 3,
+      "word": "Rrrr"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 224,
+  "clipEnd": 227,
+  "partIndex": 8,
+  "clipIndex": 11
+}

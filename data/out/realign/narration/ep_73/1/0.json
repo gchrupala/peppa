@@ -1,0 +1,117 @@
+{
+  "transcript": "All of Peppa's friends are here.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 3,
+      "startOffset": 0,
+      "word": "All"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 6,
+      "startOffset": 4,
+      "word": "of"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.76,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.72,
+      "startOffset": 7,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 15,
+      "word": "friends"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 23,
+      "word": "are"
+    },
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.13,
+      "startOffset": 27,
+      "word": "here"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E29 - Tiny Creatures.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_73.json",
+  "episode_title": "Tiny Creatures",
+  "clipStart": 126,
+  "clipEnd": 129,
+  "partIndex": 1,
+  "clipIndex": 0
+}

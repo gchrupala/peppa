@@ -1,0 +1,248 @@
+{
+  "transcript": "Mr. Rabbit and Mrs. Cat work with Daddy Pig.",
+  "words": [
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 0.8700000000000001,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.55,
+      "startOffset": 0,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 4,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 11,
+      "word": "and"
+    },
+    {
+      "alignedWord": "mrs",
+      "case": "success",
+      "end": 1.6400000000000001,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 15,
+      "word": "Mrs"
+    },
+    {
+      "alignedWord": "cat",
+      "case": "success",
+      "end": 1.93,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.64,
+      "startOffset": 20,
+      "word": "Cat"
+    },
+    {
+      "alignedWord": "work",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 24,
+      "word": "work"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "dh_E"
+        }
+      ],
+      "start": 2.31,
+      "startOffset": 29,
+      "word": "with"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.48,
+      "startOffset": 34,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 3.1799999999999997,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.8,
+      "startOffset": 40,
+      "word": "Pig"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E30 - Daddy Pigs Office.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_74.json",
+  "episode_title": "Daddy Pig's Office",
+  "clipStart": 93,
+  "clipEnd": 97,
+  "partIndex": 4,
+  "clipIndex": 0
+}

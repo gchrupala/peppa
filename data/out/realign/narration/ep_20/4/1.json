@@ -1,0 +1,164 @@
+{
+  "transcript": "Everyone loves bouncing on the bouncy castle.",
+  "words": [
+    {
+      "alignedWord": "everyone",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 0,
+      "word": "Everyone"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 3.07,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.03,
+      "startOffset": 9,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "bouncing",
+      "case": "success",
+      "end": 3.36,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 3.07,
+      "startOffset": 15,
+      "word": "bouncing"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 3.4899999999999998,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.36,
+      "startOffset": 24,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 27,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 37,
+      "startOffset": 31,
+      "word": "bouncy"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 44,
+      "startOffset": 38,
+      "word": "castle"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E20 - The School Fete.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_20.json",
+  "episode_title": "The School Fete",
+  "clipStart": 278,
+  "clipEnd": 282,
+  "partIndex": 4,
+  "clipIndex": 1
+}

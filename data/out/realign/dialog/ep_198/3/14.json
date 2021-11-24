@@ -1,0 +1,73 @@
+{
+  "transcript": " - Yes, Madame Gazelle.",
+  "words": [
+    {
+      "alignedWord": "yes",
+      "case": "success",
+      "end": 3.6199999999999997,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.3,
+      "startOffset": 3,
+      "word": "Yes"
+    },
+    {
+      "alignedWord": "madame",
+      "case": "success",
+      "end": 3.8000000000000003,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.66,
+      "startOffset": 8,
+      "word": "Madame"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 22,
+      "startOffset": 15,
+      "word": "Gazelle"
+    }
+  ],
+  "speaker": "Pedro",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 101,
+  "clipEnd": 105,
+  "partIndex": 3,
+  "clipIndex": 14
+}

@@ -1,0 +1,148 @@
+{
+  "transcript": "Granny Pig and Grandpa Pig",
+  "words": [
+    {
+      "alignedWord": "granny",
+      "case": "success",
+      "end": 0.72,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.49,
+      "startOffset": 0,
+      "word": "Granny"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.9099999999999999,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.72,
+      "startOffset": 7,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.91,
+      "startOffset": 11,
+      "word": "and"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 1.46,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 15,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 23,
+      "word": "Pig"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E50 - Grandpa Pig's Boat.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_48.json",
+  "episode_title": "Grandpa Pig's Boat",
+  "clipStart": 20,
+  "clipEnd": 22,
+  "partIndex": 0,
+  "clipIndex": 0
+}

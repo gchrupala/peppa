@@ -1,0 +1,191 @@
+{
+  "transcript": "The telescope makes everything look bigger.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.94,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "telescope",
+      "case": "success",
+      "end": 1.49,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_E"
+        }
+      ],
+      "start": 0.95,
+      "startOffset": 4,
+      "word": "telescope"
+    },
+    {
+      "alignedWord": "makes",
+      "case": "success",
+      "end": 1.72,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 14,
+      "word": "makes"
+    },
+    {
+      "alignedWord": "everything",
+      "case": "success",
+      "end": 2.16,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 20,
+      "word": "everything"
+    },
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 2.34,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 31,
+      "word": "look"
+    },
+    {
+      "alignedWord": "bigger",
+      "case": "success",
+      "end": 2.7399999999999998,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.38,
+      "startOffset": 36,
+      "word": "bigger"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E28 - Windy castle.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_27.json",
+  "episode_title": "Windy Castle",
+  "clipStart": 244,
+  "clipEnd": 248,
+  "partIndex": 4,
+  "clipIndex": 0
+}

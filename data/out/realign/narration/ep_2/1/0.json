@@ -1,0 +1,137 @@
+{
+  "transcript": "George loves Mr. Dinosaur",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.33,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 7,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 13,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 2.38,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 17,
+      "word": "Dinosaur"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E02 - Mr Dinosaur is Lost.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_2.json",
+  "episode_title": "Mr. Dinosaur is Lost",
+  "clipStart": 32,
+  "clipEnd": 35,
+  "partIndex": 1,
+  "clipIndex": 0
+}

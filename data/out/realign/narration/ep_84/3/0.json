@@ -1,0 +1,181 @@
+{
+  "transcript": "Mrs Rabbit is driving the school bus.",
+  "words": [
+    {
+      "alignedWord": "mrs",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 0,
+      "word": "Mrs"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 1.4000000000000001,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 4,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.66,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "driving",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 14,
+      "word": "driving"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.1399999999999997,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.05,
+      "startOffset": 22,
+      "word": "the"
+    },
+    {
+      "alignedWord": "school",
+      "case": "success",
+      "end": 2.43,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.14,
+      "startOffset": 26,
+      "word": "school"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 33,
+      "word": "bus"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E38 - Grandpa's Little Train.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_84.json",
+  "episode_title": "Grandpa's Little Train",
+  "clipStart": 139,
+  "clipEnd": 142,
+  "partIndex": 3,
+  "clipIndex": 0
+}

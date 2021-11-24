@@ -1,0 +1,183 @@
+{
+  "transcript": "George loves jumping in muddy puddles.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.8600000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.46,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.19,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 7,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "jumping",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 13,
+      "word": "jumping"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 21,
+      "word": "in"
+    },
+    {
+      "alignedWord": "muddy",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 24,
+      "word": "muddy"
+    },
+    {
+      "alignedWord": "puddles",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 30,
+      "word": "puddles"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E23 - New Shoes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_19.json",
+  "episode_title": "New Shoes",
+  "clipStart": 233,
+  "clipEnd": 238,
+  "partIndex": 12,
+  "clipIndex": 0
+}

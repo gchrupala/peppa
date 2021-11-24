@@ -1,0 +1,82 @@
+{
+  "transcript": "- Is it magic?",
+  "words": [
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 2,
+      "word": "Is"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 5,
+      "word": "it"
+    },
+    {
+      "alignedWord": "magic",
+      "case": "success",
+      "end": 1.6,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 8,
+      "word": "magic"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 90,
+  "clipEnd": 93,
+  "partIndex": 3,
+  "clipIndex": 9
+}

@@ -1,0 +1,116 @@
+{
+  "transcript": "What a lot of noise.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.7,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.71,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ey_S"
+        }
+      ],
+      "start": 0.7,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "lot",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.03,
+      "startOffset": 7,
+      "word": "lot"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 1.38,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 11,
+      "word": "of"
+    },
+    {
+      "alignedWord": "noise",
+      "case": "success",
+      "end": 1.69,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.23,
+          "phone": "oy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 14,
+      "word": "noise"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E03 - Emily Elephant.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_54.json",
+  "episode_title": "Emily Elephant",
+  "clipStart": 153,
+  "clipEnd": 155,
+  "partIndex": 6,
+  "clipIndex": 0
+}

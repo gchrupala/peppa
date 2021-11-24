@@ -1,0 +1,124 @@
+{
+  "transcript": "are playing on the slide.",
+  "words": [
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 0.97,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 0,
+      "word": "are"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 1.26,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.97,
+      "startOffset": 4,
+      "word": "playing"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 1.4,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 12,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 15,
+      "word": "the"
+    },
+    {
+      "alignedWord": "slide",
+      "case": "success",
+      "end": 1.46,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 19,
+      "word": "slide"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E44 - The Playground.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_44.json",
+  "episode_title": "The Playground",
+  "clipStart": 34,
+  "clipEnd": 37,
+  "partIndex": 1,
+  "clipIndex": 1
+}

@@ -1,0 +1,52 @@
+{
+  "transcript": "spaghetti.",
+  "words": [
+    {
+      "alignedWord": "spaghetti",
+      "case": "success",
+      "end": 0.32,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.25,
+      "startOffset": 0,
+      "word": "spaghetti"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E25 - The Tooth Fairy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_22.json",
+  "episode_title": "The Tooth Fairy",
+  "clipStart": 29,
+  "clipEnd": 30,
+  "partIndex": 0,
+  "clipIndex": 1
+}

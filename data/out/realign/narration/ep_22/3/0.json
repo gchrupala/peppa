@@ -1,0 +1,235 @@
+{
+  "transcript": "The tooth fairy is taking a long time to arrive.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.24,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "tooth",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "th_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 4,
+      "word": "tooth"
+    },
+    {
+      "alignedWord": "fairy",
+      "case": "success",
+      "end": 1.88,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 10,
+      "word": "fairy"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 16,
+      "word": "is"
+    },
+    {
+      "alignedWord": "taking",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 19,
+      "word": "taking"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.4699999999999998,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 26,
+      "word": "a"
+    },
+    {
+      "alignedWord": "long",
+      "case": "success",
+      "end": 3.07,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.32,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.48,
+      "startOffset": 28,
+      "word": "long"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 3.58,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.23,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.14,
+      "startOffset": 33,
+      "word": "time"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.7,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.6,
+      "startOffset": 38,
+      "word": "to"
+    },
+    {
+      "alignedWord": "arrive",
+      "case": "success",
+      "end": 4.23,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "er_B"
+        },
+        {
+          "duration": 0.24,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "v_E"
+        }
+      ],
+      "start": 3.7,
+      "startOffset": 41,
+      "word": "arrive"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E25 - The Tooth Fairy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_22.json",
+  "episode_title": "The Tooth Fairy",
+  "clipStart": 177,
+  "clipEnd": 182,
+  "partIndex": 3,
+  "clipIndex": 0
+}

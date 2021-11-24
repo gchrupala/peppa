@@ -1,0 +1,164 @@
+{
+  "transcript": "important work on her computer.",
+  "words": [
+    {
+      "alignedWord": "important",
+      "case": "success",
+      "end": 1.3199999999999998,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 0,
+      "word": "important"
+    },
+    {
+      "alignedWord": "work",
+      "case": "success",
+      "end": 1.59,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 10,
+      "word": "work"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 15,
+      "word": "on"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.95,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 18,
+      "word": "her"
+    },
+    {
+      "alignedWord": "computer",
+      "case": "success",
+      "end": 2.38,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 22,
+      "word": "computer"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E48 - The Powercut.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_99.json",
+  "episode_title": "The Powercut",
+  "clipStart": 32,
+  "clipEnd": 35,
+  "partIndex": 1,
+  "clipIndex": 4
+}

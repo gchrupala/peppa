@@ -1,0 +1,167 @@
+{
+  "transcript": "George wants to blow bubbles, too.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.3,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "wants",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.3,
+      "startOffset": 7,
+      "word": "wants"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.6500000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 13,
+      "word": "to"
+    },
+    {
+      "alignedWord": "blow",
+      "case": "success",
+      "end": 1.8699999999999999,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 16,
+      "word": "blow"
+    },
+    {
+      "alignedWord": "bubbles",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 21,
+      "word": "bubbles"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 2.22,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.2,
+      "startOffset": 30,
+      "word": "too"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E01 - Bubbles.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_53.json",
+  "episode_title": "Bubbles",
+  "clipStart": 48,
+  "clipEnd": 51,
+  "partIndex": 2,
+  "clipIndex": 0
+}

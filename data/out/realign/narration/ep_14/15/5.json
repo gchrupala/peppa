@@ -1,0 +1,216 @@
+{
+  "transcript": "is just as much fun as flying the kite.",
+  "words": [
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.41000000000000003,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.25,
+      "startOffset": 0,
+      "word": "is"
+    },
+    {
+      "alignedWord": "just",
+      "case": "success",
+      "end": 0.8500000000000001,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 3,
+      "word": "just"
+    },
+    {
+      "alignedWord": "as",
+      "case": "success",
+      "end": 0.96,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 8,
+      "word": "as"
+    },
+    {
+      "alignedWord": "much",
+      "case": "success",
+      "end": 1.18,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 11,
+      "word": "much"
+    },
+    {
+      "alignedWord": "fun",
+      "case": "success",
+      "end": 1.43,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 16,
+      "word": "fun"
+    },
+    {
+      "alignedWord": "as",
+      "case": "success",
+      "end": 1.6199999999999999,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 20,
+      "word": "as"
+    },
+    {
+      "alignedWord": "flying",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 23,
+      "word": "flying"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.24,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 30,
+      "word": "the"
+    },
+    {
+      "alignedWord": "kite",
+      "case": "success",
+      "end": 2.5100000000000002,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.24,
+      "startOffset": 34,
+      "word": "kite"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E13 - Flying a Kite.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_14.json",
+  "episode_title": "Flying a Kite",
+  "clipStart": 281,
+  "clipEnd": 284,
+  "partIndex": 15,
+  "clipIndex": 5
+}

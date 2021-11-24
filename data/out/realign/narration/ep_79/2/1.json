@@ -1,0 +1,147 @@
+{
+  "transcript": "Peppa and George love playing in the long grass.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.91,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.5,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 10,
+      "word": "George"
+    },
+    {
+      "alignedWord": "love",
+      "case": "success",
+      "end": 2.8899999999999997,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.86,
+      "startOffset": 17,
+      "word": "love"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 3.46,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 3.01,
+      "startOffset": 22,
+      "word": "playing"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 30,
+      "word": "in"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 33,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 41,
+      "startOffset": 37,
+      "word": "long"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 47,
+      "startOffset": 42,
+      "word": "grass"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E17 - The Long Grass.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_79.json",
+  "episode_title": "The Long Grass",
+  "clipStart": 50,
+  "clipEnd": 54,
+  "partIndex": 2,
+  "clipIndex": 1
+}

@@ -1,0 +1,166 @@
+{
+  "transcript": "Here is granddad dog with Danny dog.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 0.76,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.47,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.94,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.5099999999999998,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.57,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 8,
+      "word": "granddad"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 17,
+      "word": "dog"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 2.1999999999999997,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "th_E"
+        }
+      ],
+      "start": 2.01,
+      "startOffset": 21,
+      "word": "with"
+    },
+    {
+      "alignedWord": "danny",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.21,
+      "startOffset": 26,
+      "word": "Danny"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 2.99,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.58,
+      "startOffset": 32,
+      "word": "dog"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E38 - Grandpa's Little Train.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_84.json",
+  "episode_title": "Grandpa's Little Train",
+  "clipStart": 103,
+  "clipEnd": 108,
+  "partIndex": 2,
+  "clipIndex": 0
+}

@@ -1,0 +1,86 @@
+{
+  "transcript": "George is better.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.0999999999999999,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.69,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.33,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "better",
+      "case": "success",
+      "end": 1.73,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 10,
+      "word": "better"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E32 - George Catches a Cold.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_76.json",
+  "episode_title": "George Catches a Cold",
+  "clipStart": 249,
+  "clipEnd": 251,
+  "partIndex": 11,
+  "clipIndex": 2
+}

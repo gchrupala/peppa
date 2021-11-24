@@ -1,0 +1,86 @@
+{
+  "transcript": "It is morning.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.27,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.46,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.27,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "morning",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.46,
+      "startOffset": 6,
+      "word": "morning"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E45 - The Toy Cupboard.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_96.json",
+  "episode_title": "The Toy Cupboard",
+  "clipStart": 89,
+  "clipEnd": 91,
+  "partIndex": 3,
+  "clipIndex": 0
+}

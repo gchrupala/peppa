@@ -1,0 +1,137 @@
+{
+  "transcript": "George loves painting with his hands.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.18,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 7,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "painting",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 13,
+      "word": "painting"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 2.6799999999999997,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "th_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 22,
+      "word": "with"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 30,
+      "startOffset": 27,
+      "word": "his"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 31,
+      "word": "hands"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E37 - Painting.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_81.json",
+  "episode_title": "Painting",
+  "clipStart": 53,
+  "clipEnd": 56,
+  "partIndex": 2,
+  "clipIndex": 0
+}

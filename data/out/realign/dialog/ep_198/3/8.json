@@ -1,0 +1,36 @@
+{
+  "transcript": " - Look!",
+  "words": [
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 3,
+      "word": "Look"
+    }
+  ],
+  "speaker": "Suzy",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 81,
+  "clipEnd": 84,
+  "partIndex": 3,
+  "clipIndex": 8
+}

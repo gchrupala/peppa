@@ -1,0 +1,186 @@
+{
+  "transcript": "The wind has blown George's hat off.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "wind",
+      "case": "success",
+      "end": 1.5599999999999998,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 4,
+      "word": "wind"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 9,
+      "word": "has"
+    },
+    {
+      "alignedWord": "blown",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 13,
+      "word": "blown"
+    },
+    {
+      "alignedWord": "george's",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.13,
+      "startOffset": 19,
+      "word": "George's"
+    },
+    {
+      "alignedWord": "hat",
+      "case": "success",
+      "end": 2.86,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.54,
+      "startOffset": 28,
+      "word": "hat"
+    },
+    {
+      "alignedWord": "off",
+      "case": "success",
+      "end": 2.98,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "f_E"
+        }
+      ],
+      "start": 2.86,
+      "startOffset": 32,
+      "word": "off"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E08 - Windy Autumn Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_60.json",
+  "episode_title": "Windy Autumn Day",
+  "clipStart": 127,
+  "clipEnd": 131,
+  "partIndex": 6,
+  "clipIndex": 1
+}

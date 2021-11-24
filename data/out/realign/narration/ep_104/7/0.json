@@ -1,0 +1,132 @@
+{
+  "transcript": "The ice is very slippery.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.84,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "ice",
+      "case": "success",
+      "end": 1.14,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.21,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 4,
+      "word": "ice"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.3199999999999998,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 8,
+      "word": "is"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 11,
+      "word": "very"
+    },
+    {
+      "alignedWord": "slippery",
+      "case": "success",
+      "end": 2.19,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 16,
+      "word": "slippery"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E53 - Cold Winter Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_104.json",
+  "episode_title": "Cold Winter Day",
+  "clipStart": 110,
+  "clipEnd": 115,
+  "partIndex": 7,
+  "clipIndex": 0
+}

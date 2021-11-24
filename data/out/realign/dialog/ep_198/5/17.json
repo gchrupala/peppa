@@ -1,0 +1,87 @@
+{
+  "transcript": "Very interesting.",
+  "words": [
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 1.37,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 0,
+      "word": "Very"
+    },
+    {
+      "alignedWord": "interesting",
+      "case": "success",
+      "end": 2.69,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 5,
+      "word": "interesting"
+    }
+  ],
+  "speaker": "Pedro",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 210,
+  "clipEnd": 213,
+  "partIndex": 5,
+  "clipIndex": 17
+}

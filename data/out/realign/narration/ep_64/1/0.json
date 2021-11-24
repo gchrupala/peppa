@@ -1,0 +1,67 @@
+{
+  "transcript": "Here are Peppa, George,",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 4,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 8,
+      "startOffset": 5,
+      "word": "are"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.73,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.36,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.37,
+      "startOffset": 9,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.8,
+      "startOffset": 16,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E11 - The Boat Pond.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_64.json",
+  "episode_title": "The Boat Pond",
+  "clipStart": 27,
+  "clipEnd": 29,
+  "partIndex": 1,
+  "clipIndex": 0
+}

@@ -1,0 +1,205 @@
+{
+  "transcript": "George is very proud to have clean teeth.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 1.6300000000000001,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 10,
+      "word": "very"
+    },
+    {
+      "alignedWord": "proud",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 15,
+      "word": "proud"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 21,
+      "word": "to"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.5,
+      "startOffset": 24,
+      "word": "have"
+    },
+    {
+      "alignedWord": "clean",
+      "case": "success",
+      "end": 2.84,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.53,
+      "startOffset": 29,
+      "word": "clean"
+    },
+    {
+      "alignedWord": "teeth",
+      "case": "success",
+      "end": 3.06,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "th_E"
+        }
+      ],
+      "start": 2.84,
+      "startOffset": 35,
+      "word": "teeth"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E18 - The Dentist.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_87.json",
+  "episode_title": "The Dentist",
+  "clipStart": 210,
+  "clipEnd": 214,
+  "partIndex": 7,
+  "clipIndex": 0
+}

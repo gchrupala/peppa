@@ -1,0 +1,166 @@
+{
+  "transcript": "but the glass are not there, either.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 1.6800000000000002,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 0,
+      "word": "but"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.68,
+      "startOffset": 4,
+      "word": "the"
+    },
+    {
+      "alignedWord": "glass",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 8,
+      "word": "glass"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "er_S"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 14,
+      "word": "are"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.32,
+      "startOffset": 18,
+      "word": "not"
+    },
+    {
+      "alignedWord": "there",
+      "case": "success",
+      "end": 2.85,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.58,
+      "startOffset": 22,
+      "word": "there"
+    },
+    {
+      "alignedWord": "either",
+      "case": "success",
+      "end": 3.24,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.92,
+      "startOffset": 29,
+      "word": "either"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E15 - Daddy Loses his Glasses.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_9.json",
+  "episode_title": "Daddy Loses his Glasses",
+  "clipStart": 190,
+  "clipEnd": 194,
+  "partIndex": 8,
+  "clipIndex": 1
+}

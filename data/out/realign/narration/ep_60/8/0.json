@@ -1,0 +1,216 @@
+{
+  "transcript": "The wind is strong enough to hold Peppa up.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.42000000000000004,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.28,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "wind",
+      "case": "success",
+      "end": 0.73,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.42,
+      "startOffset": 4,
+      "word": "wind"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.87,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "strong",
+      "case": "success",
+      "end": 1.3,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 12,
+      "word": "strong"
+    },
+    {
+      "alignedWord": "enough",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "f_E"
+        }
+      ],
+      "start": 1.3,
+      "startOffset": 19,
+      "word": "enough"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.6800000000000002,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 26,
+      "word": "to"
+    },
+    {
+      "alignedWord": "hold",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.68,
+      "startOffset": 29,
+      "word": "hold"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.32,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 3.13,
+      "startOffset": 34,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 4.58,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 4.51,
+      "startOffset": 40,
+      "word": "up"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E08 - Windy Autumn Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_60.json",
+  "episode_title": "Windy Autumn Day",
+  "clipStart": 201,
+  "clipEnd": 206,
+  "partIndex": 8,
+  "clipIndex": 0
+}

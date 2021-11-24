@@ -1,0 +1,135 @@
+{
+  "transcript": "George has found where Peppa was hiding.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.43999999999999995,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.29,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.51,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 16,
+      "startOffset": 11,
+      "word": "found"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 22,
+      "startOffset": 17,
+      "word": "where"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 23,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "was",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 29,
+      "word": "was"
+    },
+    {
+      "alignedWord": "hiding",
+      "case": "success",
+      "end": 2.25,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 33,
+      "word": "hiding"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E05 - Hide & Seek.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_5.json",
+  "episode_title": "Hide and Seek",
+  "clipStart": 158,
+  "clipEnd": 161,
+  "partIndex": 11,
+  "clipIndex": 0
+}

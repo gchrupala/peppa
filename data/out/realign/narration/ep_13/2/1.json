@@ -1,0 +1,205 @@
+{
+  "transcript": "some secret things to put in the box.",
+  "words": [
+    {
+      "alignedWord": "some",
+      "case": "success",
+      "end": 0.73,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 0,
+      "word": "some"
+    },
+    {
+      "alignedWord": "secret",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.79,
+      "startOffset": 5,
+      "word": "secret"
+    },
+    {
+      "alignedWord": "things",
+      "case": "success",
+      "end": 1.5299999999999998,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 12,
+      "word": "things"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.65,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 19,
+      "word": "to"
+    },
+    {
+      "alignedWord": "put",
+      "case": "success",
+      "end": 1.8499999999999999,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 22,
+      "word": "put"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.9100000000000001,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 26,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.91,
+      "startOffset": 29,
+      "word": "the"
+    },
+    {
+      "alignedWord": "box",
+      "case": "success",
+      "end": 2.03,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 33,
+      "word": "box"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E31 - Secrets.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_13.json",
+  "episode_title": "Secrets",
+  "clipStart": 82,
+  "clipEnd": 86,
+  "partIndex": 2,
+  "clipIndex": 1
+}

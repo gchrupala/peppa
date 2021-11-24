@@ -1,0 +1,145 @@
+{
+  "transcript": "Susie takes George's temperature.",
+  "words": [
+    {
+      "alignedWord": "susie",
+      "case": "success",
+      "end": 0.75,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.24,
+      "startOffset": 0,
+      "word": "Susie"
+    },
+    {
+      "alignedWord": "takes",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 6,
+      "word": "takes"
+    },
+    {
+      "alignedWord": "george's",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 12,
+      "word": "George's"
+    },
+    {
+      "alignedWord": "temperature",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 21,
+      "word": "temperature"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E04 - Best Friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_3.json",
+  "episode_title": "Best Friend",
+  "clipStart": 201,
+  "clipEnd": 205,
+  "partIndex": 11,
+  "clipIndex": 0
+}

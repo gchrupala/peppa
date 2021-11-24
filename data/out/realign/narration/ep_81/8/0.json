@@ -1,0 +1,186 @@
+{
+  "transcript": "The ducks are running through Daddy's paint.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.54,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.43,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "ducks",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 4,
+      "word": "ducks"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.2000000000000002,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 10,
+      "word": "are"
+    },
+    {
+      "alignedWord": "running",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 14,
+      "word": "running"
+    },
+    {
+      "alignedWord": "through",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.57,
+      "startOffset": 22,
+      "word": "through"
+    },
+    {
+      "alignedWord": "daddy's",
+      "case": "success",
+      "end": 2.27,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 30,
+      "word": "Daddy's"
+    },
+    {
+      "alignedWord": "paint",
+      "case": "success",
+      "end": 2.5300000000000002,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 38,
+      "word": "paint"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E37 - Painting.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_81.json",
+  "episode_title": "Painting",
+  "clipStart": 236,
+  "clipEnd": 239,
+  "partIndex": 8,
+  "clipIndex": 0
+}

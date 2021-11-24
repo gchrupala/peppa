@@ -1,0 +1,201 @@
+{
+  "transcript": "And Mummy Pig is in her study doing",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.81,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.53,
+      "startOffset": 0,
+      "word": "And"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 1.16,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 4,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 10,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 14,
+      "word": "is"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.7799999999999998,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 17,
+      "word": "in"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 20,
+      "word": "her"
+    },
+    {
+      "alignedWord": "study",
+      "case": "success",
+      "end": 2.4299999999999997,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 24,
+      "word": "study"
+    },
+    {
+      "alignedWord": "doing",
+      "case": "success",
+      "end": 2.69,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.48,
+      "startOffset": 30,
+      "word": "doing"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E48 - The Powercut.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_99.json",
+  "episode_title": "The Powercut",
+  "clipStart": 30,
+  "clipEnd": 33,
+  "partIndex": 1,
+  "clipIndex": 3
+}

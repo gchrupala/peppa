@@ -1,0 +1,138 @@
+{
+  "transcript": "- Stop the bus! Pedro is here!",
+  "words": [
+    {
+      "alignedWord": "stop",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.0,
+      "startOffset": 2,
+      "word": "Stop"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.06,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 7,
+      "word": "the"
+    },
+    {
+      "alignedWord": "bus",
+      "case": "success",
+      "end": 2.16,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 11,
+      "word": "bus"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 3.81,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.7600000000000002,
+      "startOffset": 16,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 3.85,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.81,
+      "startOffset": 22,
+      "word": "is"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 29,
+      "startOffset": 25,
+      "word": "here"
+    }
+  ],
+  "speaker": "Mummy Pony",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 89,
+  "clipEnd": 93,
+  "partIndex": 3,
+  "clipIndex": 11
+}

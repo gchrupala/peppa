@@ -1,0 +1,216 @@
+{
+  "transcript": "- Uh, I don't know. - It can be anything, Pedro.",
+  "words": [
+    {
+      "alignedWord": "uh",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.5,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 2,
+      "word": "Uh"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 1.96,
+      "startOffset": 6,
+      "word": "I"
+    },
+    {
+      "alignedWord": "don't",
+      "case": "success",
+      "end": 2.3200000000000003,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.16,
+      "startOffset": 8,
+      "word": "don't"
+    },
+    {
+      "alignedWord": "know",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 14,
+      "word": "know"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 3.03,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.88,
+      "startOffset": 22,
+      "word": "It"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 3.1799999999999997,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.03,
+      "startOffset": 25,
+      "word": "can"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 3.35,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.18,
+      "startOffset": 29,
+      "word": "be"
+    },
+    {
+      "alignedWord": "anything",
+      "case": "success",
+      "end": 3.65,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 3.35,
+      "startOffset": 32,
+      "word": "anything"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 3.6999999999999997,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.65,
+      "startOffset": 42,
+      "word": "Pedro"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 137,
+  "clipEnd": 141,
+  "partIndex": 3,
+  "clipIndex": 14
+}

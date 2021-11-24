@@ -1,0 +1,86 @@
+{
+  "transcript": "It is morning.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "morning",
+      "case": "success",
+      "end": 2.07,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 6,
+      "word": "morning"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E32 - George Catches a Cold.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_76.json",
+  "episode_title": "George Catches a Cold",
+  "clipStart": 237,
+  "clipEnd": 240,
+  "partIndex": 11,
+  "clipIndex": 0
+}

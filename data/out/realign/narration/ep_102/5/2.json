@@ -1,0 +1,244 @@
+{
+  "transcript": "I wonder what Daddy Pig's birthday surprise can be?",
+  "words": [
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 0.32999999999999996,
+      "endOffset": 1,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "I"
+    },
+    {
+      "alignedWord": "wonder",
+      "case": "success",
+      "end": 0.8,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.42,
+      "startOffset": 2,
+      "word": "wonder"
+    },
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.97,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 9,
+      "word": "what"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.36,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 14,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig's",
+      "case": "success",
+      "end": 1.7,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 20,
+      "word": "Pig's"
+    },
+    {
+      "alignedWord": "birthday",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 26,
+      "word": "birthday"
+    },
+    {
+      "alignedWord": "surprise",
+      "case": "success",
+      "end": 2.67,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.16,
+      "startOffset": 35,
+      "word": "surprise"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 2.7399999999999998,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.67,
+      "startOffset": 44,
+      "word": "can"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 2.8000000000000003,
+      "endOffset": 50,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.74,
+      "startOffset": 48,
+      "word": "be"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E51 - Daddy Pig's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_102.json",
+  "episode_title": "Daddy Pig's Birthday",
+  "clipStart": 168,
+  "clipEnd": 172,
+  "partIndex": 5,
+  "clipIndex": 2
+}

@@ -1,0 +1,140 @@
+{
+  "transcript": "- Hello, Mr. Bull. What's up?",
+  "words": [
+    {
+      "alignedWord": "hello",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.19,
+      "startOffset": 2,
+      "word": "Hello"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 9,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "bull",
+      "case": "success",
+      "end": 2.7399999999999998,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.71,
+      "startOffset": 13,
+      "word": "Bull"
+    },
+    {
+      "alignedWord": "what's",
+      "case": "success",
+      "end": 2.7800000000000002,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.74,
+      "startOffset": 19,
+      "word": "What's"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 26,
+      "word": "up"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 39,
+  "clipEnd": 42,
+  "partIndex": 3,
+  "clipIndex": 0
+}

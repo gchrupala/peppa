@@ -1,0 +1,163 @@
+{
+  "transcript": "and George to her birthday party.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.3499999999999999,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.6900000000000002,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 4,
+      "word": "George"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 11,
+      "word": "to"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 14,
+      "word": "her"
+    },
+    {
+      "alignedWord": "birthday",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 18,
+      "word": "birthday"
+    },
+    {
+      "alignedWord": "party",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.58,
+      "startOffset": 27,
+      "word": "party"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E19 - Zoe Zebra the Postmans Daughter.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_80.json",
+  "episode_title": "Zoe Zebra the Postman's Daughter",
+  "clipStart": 90,
+  "clipEnd": 94,
+  "partIndex": 3,
+  "clipIndex": 1
+}

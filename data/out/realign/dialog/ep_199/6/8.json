@@ -1,0 +1,141 @@
+{
+  "transcript": "- I'll show you. - I know! You jump over it!",
+  "words": [
+    {
+      "alignedWord": "i'll",
+      "case": "success",
+      "end": 2.7700000000000005,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.49,
+      "startOffset": 2,
+      "word": "I'll"
+    },
+    {
+      "alignedWord": "show",
+      "case": "success",
+      "end": 3.19,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.24,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.8,
+      "startOffset": 7,
+      "word": "show"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 3.59,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.3,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.19,
+      "startOffset": 12,
+      "word": "you"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 3.5999999999999996,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 3.59,
+      "startOffset": 19,
+      "word": "I"
+    },
+    {
+      "alignedWord": "know",
+      "case": "success",
+      "end": 4.16,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 4.04,
+      "startOffset": 21,
+      "word": "know"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 4.31,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 4.29,
+      "startOffset": 27,
+      "word": "You"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 35,
+      "startOffset": 31,
+      "word": "jump"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 40,
+      "startOffset": 36,
+      "word": "over"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 43,
+      "startOffset": 41,
+      "word": "it"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 200,
+  "clipEnd": 205,
+  "partIndex": 6,
+  "clipIndex": 8
+}

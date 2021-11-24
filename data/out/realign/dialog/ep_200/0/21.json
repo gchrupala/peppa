@@ -1,0 +1,145 @@
+{
+  "transcript": "- No. How do we start the engine?",
+  "words": [
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 2.76,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.6,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 2,
+      "word": "No"
+    },
+    {
+      "alignedWord": "how",
+      "case": "success",
+      "end": 3.1,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 2.91,
+      "startOffset": 6,
+      "word": "How"
+    },
+    {
+      "alignedWord": "do",
+      "case": "success",
+      "end": 3.21,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.1,
+      "startOffset": 10,
+      "word": "do"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 3.38,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.21,
+      "startOffset": 13,
+      "word": "we"
+    },
+    {
+      "alignedWord": "start",
+      "case": "success",
+      "end": 3.76,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.38,
+      "startOffset": 16,
+      "word": "start"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.76,
+      "startOffset": 22,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 26,
+      "word": "engine"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 60,
+  "clipEnd": 64,
+  "partIndex": 0,
+  "clipIndex": 21
+}

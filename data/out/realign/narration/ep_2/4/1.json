@@ -1,0 +1,152 @@
+{
+  "transcript": "his bath with Mr. Dinosaur.",
+  "words": [
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 1.14,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 0,
+      "word": "his"
+    },
+    {
+      "alignedWord": "bath",
+      "case": "success",
+      "end": 1.46,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "th_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 4,
+      "word": "bath"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 1.5899999999999999,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "th_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 9,
+      "word": "with"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 14,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 18,
+      "word": "Dinosaur"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E02 - Mr Dinosaur is Lost.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_2.json",
+  "episode_title": "Mr. Dinosaur is Lost",
+  "clipStart": 66,
+  "clipEnd": 70,
+  "partIndex": 4,
+  "clipIndex": 1
+}

@@ -1,0 +1,170 @@
+{
+  "transcript": "It is nearly home time and all",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.53,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.8,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "nearly",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.8,
+      "startOffset": 6,
+      "word": "nearly"
+    },
+    {
+      "alignedWord": "home",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 13,
+      "word": "home"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 1.8900000000000001,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 18,
+      "word": "time"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.3,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 23,
+      "word": "and"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 2.55,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.31,
+      "startOffset": 27,
+      "word": "all"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E09 - The Time Capsule.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_61.json",
+  "episode_title": "The Time Capsule",
+  "clipStart": 136,
+  "clipEnd": 139,
+  "partIndex": 1,
+  "clipIndex": 0
+}

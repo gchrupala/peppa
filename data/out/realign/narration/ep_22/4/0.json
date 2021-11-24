@@ -1,0 +1,101 @@
+{
+  "transcript": "What is that noise?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 8,
+      "word": "that"
+    },
+    {
+      "alignedWord": "noise",
+      "case": "success",
+      "end": 2.79,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.27,
+          "phone": "oy_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 13,
+      "word": "noise"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E25 - The Tooth Fairy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_22.json",
+  "episode_title": "The Tooth Fairy",
+  "clipStart": 185,
+  "clipEnd": 188,
+  "partIndex": 4,
+  "clipIndex": 0
+}

@@ -1,0 +1,212 @@
+{
+  "transcript": "Here comes Daddy Pig with two beakers of juice.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 2.01,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "comes",
+      "case": "success",
+      "end": 2.2699999999999996,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.01,
+      "startOffset": 5,
+      "word": "comes"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 2.57,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.27,
+      "startOffset": 11,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.9499999999999997,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.57,
+      "startOffset": 17,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 3.32,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "th_E"
+        }
+      ],
+      "start": 3.07,
+      "startOffset": 21,
+      "word": "with"
+    },
+    {
+      "alignedWord": "two",
+      "case": "success",
+      "end": 3.54,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.35,
+      "startOffset": 26,
+      "word": "two"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.9699999999999998,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.38,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 3.59,
+      "startOffset": 30,
+      "word": "beakers"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 4.13,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_E"
+        }
+      ],
+      "start": 3.98,
+      "startOffset": 38,
+      "word": "of"
+    },
+    {
+      "alignedWord": "juice",
+      "case": "success",
+      "end": 4.42,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.15,
+      "startOffset": 41,
+      "word": "juice"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E16 - Hiccups.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_11.json",
+  "episode_title": "Hiccups",
+  "clipStart": 239,
+  "clipEnd": 244,
+  "partIndex": 6,
+  "clipIndex": 1
+}

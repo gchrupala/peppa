@@ -1,0 +1,216 @@
+{
+  "transcript": "Peppa and George love it when the post arrives.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.01,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.0,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.39,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.36,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.07,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 10,
+      "word": "George"
+    },
+    {
+      "alignedWord": "love",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 17,
+      "word": "love"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 22,
+      "word": "it"
+    },
+    {
+      "alignedWord": "when",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 25,
+      "word": "when"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.85,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 30,
+      "word": "the"
+    },
+    {
+      "alignedWord": "post",
+      "case": "success",
+      "end": 2.24,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 34,
+      "word": "post"
+    },
+    {
+      "alignedWord": "arrives",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "er_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.24,
+      "startOffset": 39,
+      "word": "arrives"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E21 - Pen Pal.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_93.json",
+  "episode_title": "Pen Pal",
+  "clipStart": 56,
+  "clipEnd": 59,
+  "partIndex": 2,
+  "clipIndex": 0
+}

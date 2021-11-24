@@ -1,0 +1,167 @@
+{
+  "transcript": "what is inside Peppa's secret box.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.79,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.6,
+      "startOffset": 0,
+      "word": "what"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.89,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.79,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "inside",
+      "case": "success",
+      "end": 1.4500000000000002,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 8,
+      "word": "inside"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.29,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 15,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "secret",
+      "case": "success",
+      "end": 2.18,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 23,
+      "word": "secret"
+    },
+    {
+      "alignedWord": "box",
+      "case": "success",
+      "end": 2.66,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 30,
+      "word": "box"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E31 - Secrets.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_13.json",
+  "episode_title": "Secrets",
+  "clipStart": 97,
+  "clipEnd": 101,
+  "partIndex": 3,
+  "clipIndex": 1
+}

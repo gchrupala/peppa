@@ -1,0 +1,51 @@
+{
+  "transcript": "Peppa Pig! ",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.02,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.01,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.6699999999999999,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.26,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 6,
+      "word": "Pig"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 12,
+  "clipEnd": 15,
+  "partIndex": 0,
+  "clipIndex": 6
+}

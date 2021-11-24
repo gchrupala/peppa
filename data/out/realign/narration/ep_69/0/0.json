@@ -1,0 +1,124 @@
+{
+  "transcript": "This is Granddad Dog's Garage.",
+  "words": [
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 0.52,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 0,
+      "word": "This"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.72,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.43,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.72,
+      "startOffset": 8,
+      "word": "Granddad"
+    },
+    {
+      "alignedWord": "dog's",
+      "case": "success",
+      "end": 1.49,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 17,
+      "word": "Dog's"
+    },
+    {
+      "alignedWord": "garage",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "zh_E"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 23,
+      "word": "Garage"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E26 - Granddad Dogs Garage.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_69.json",
+  "episode_title": "Granddad Dog's Garage",
+  "clipStart": 20,
+  "clipEnd": 24,
+  "partIndex": 0,
+  "clipIndex": 0
+}

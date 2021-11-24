@@ -1,0 +1,166 @@
+{
+  "transcript": "And Daddy Pig tidies up the tools.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 0,
+      "word": "And"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.33,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 4,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 10,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 14,
+      "word": "tidies"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 21,
+      "word": "up"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.2600000000000002,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.16,
+      "startOffset": 24,
+      "word": "the"
+    },
+    {
+      "alignedWord": "tools",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 28,
+      "word": "tools"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E47 - Daddy Puts up a Picture.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_45.json",
+  "episode_title": "Daddy Puts up a Picture",
+  "clipStart": 223,
+  "clipEnd": 227,
+  "partIndex": 10,
+  "clipIndex": 0
+}

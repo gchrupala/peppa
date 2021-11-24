@@ -1,0 +1,213 @@
+{
+  "transcript": "In the wintertime, the trees loose their leaves.",
+  "words": [
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 0.89,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 0,
+      "word": "In"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 3,
+      "word": "the"
+    },
+    {
+      "alignedWord": "wintertime",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 7,
+      "word": "wintertime"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.6700000000000002,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 19,
+      "word": "the"
+    },
+    {
+      "alignedWord": "trees",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 23,
+      "word": "trees"
+    },
+    {
+      "alignedWord": "loose",
+      "case": "success",
+      "end": 2.41,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 29,
+      "word": "loose"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 2.59,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 35,
+      "word": "their"
+    },
+    {
+      "alignedWord": "leaves",
+      "case": "success",
+      "end": 3.05,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.59,
+      "startOffset": 41,
+      "word": "leaves"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E53 - Cold Winter Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_104.json",
+  "episode_title": "Cold Winter Day",
+  "clipStart": 34,
+  "clipEnd": 40,
+  "partIndex": 1,
+  "clipIndex": 0
+}

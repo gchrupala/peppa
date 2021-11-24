@@ -1,0 +1,106 @@
+{
+  "transcript": "- Oops. I'll just get the ball back.",
+  "words": [
+    {
+      "alignedWord": "oops",
+      "case": "success",
+      "end": 3.33,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "uw_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.29,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.8,
+      "startOffset": 2,
+      "word": "Oops"
+    },
+    {
+      "alignedWord": "i'll",
+      "case": "success",
+      "end": 3.76,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.73,
+      "startOffset": 8,
+      "word": "I'll"
+    },
+    {
+      "alignedWord": "just",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.76,
+      "startOffset": 13,
+      "word": "just"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 21,
+      "startOffset": 18,
+      "word": "get"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 22,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 30,
+      "startOffset": 26,
+      "word": "ball"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 35,
+      "startOffset": 31,
+      "word": "back"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 157,
+  "clipEnd": 161,
+  "partIndex": 5,
+  "clipIndex": 3
+}

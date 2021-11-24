@@ -1,0 +1,67 @@
+{
+  "transcript": "- I've got an idea.",
+  "words": [
+    {
+      "alignedWord": "i've",
+      "case": "success",
+      "end": 2.77,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 2,
+      "word": "I've"
+    },
+    {
+      "alignedWord": "got",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.77,
+      "startOffset": 7,
+      "word": "got"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 13,
+      "startOffset": 11,
+      "word": "an"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 18,
+      "startOffset": 14,
+      "word": "idea"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 53,
+  "clipEnd": 56,
+  "partIndex": 1,
+  "clipIndex": 11
+}

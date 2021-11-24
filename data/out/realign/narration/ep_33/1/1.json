@@ -1,0 +1,97 @@
+{
+  "transcript": "to wash the car.",
+  "words": [
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 0.62,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 0,
+      "word": "to"
+    },
+    {
+      "alignedWord": "wash",
+      "case": "success",
+      "end": 0.86,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "sh_E"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 3,
+      "word": "wash"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 8,
+      "word": "the"
+    },
+    {
+      "alignedWord": "car",
+      "case": "success",
+      "end": 1.24,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 12,
+      "word": "car"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E49 - Cleaning the Car.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_33.json",
+  "episode_title": "Cleaning the Car",
+  "clipStart": 84,
+  "clipEnd": 88,
+  "partIndex": 1,
+  "clipIndex": 1
+}

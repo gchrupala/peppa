@@ -1,0 +1,32 @@
+{
+  "transcript": " - Wow!",
+  "words": [
+    {
+      "alignedWord": "wow",
+      "case": "success",
+      "end": 1.9000000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 1.86,
+      "startOffset": 3,
+      "word": "Wow"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 46,
+  "clipEnd": 49,
+  "partIndex": 1,
+  "clipIndex": 9
+}

@@ -1,0 +1,178 @@
+{
+  "transcript": "Here is Peppa's best friend, Suzy Sheep.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.74,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.1800000000000002,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.6500000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.31,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.34,
+      "startOffset": 8,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "best",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 16,
+      "word": "best"
+    },
+    {
+      "alignedWord": "friend",
+      "case": "success",
+      "end": 2.32,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 21,
+      "word": "friend"
+    },
+    {
+      "alignedWord": "suzy",
+      "case": "success",
+      "end": 2.92,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.57,
+      "startOffset": 29,
+      "word": "Suzy"
+    },
+    {
+      "alignedWord": "sheep",
+      "case": "success",
+      "end": 3.2,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.92,
+      "startOffset": 34,
+      "word": "Sheep"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E49 - Bouncy Ball.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_100.json",
+  "episode_title": "Bouncy Ball",
+  "clipStart": 46,
+  "clipEnd": 50,
+  "partIndex": 2,
+  "clipIndex": 0
+}

@@ -1,0 +1,113 @@
+{
+  "transcript": "- Dinosaur juice?! - Oh, yes.",
+  "words": [
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 0.58,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 2,
+      "word": "Dinosaur"
+    },
+    {
+      "alignedWord": "juice",
+      "case": "success",
+      "end": 1.23,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.27,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 11,
+      "word": "juice"
+    },
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 1.36,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 21,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "yes",
+      "case": "success",
+      "end": 2.0,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 25,
+      "word": "yes"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 187,
+  "clipEnd": 190,
+  "partIndex": 3,
+  "clipIndex": 30
+}

@@ -1,0 +1,194 @@
+{
+  "transcript": "Daddy Pig's lawnmower is not very good.",
+  "words": [
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 0.8500000000000001,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.53,
+      "startOffset": 0,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig's",
+      "case": "success",
+      "end": 1.12,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 6,
+      "word": "Pig's"
+    },
+    {
+      "alignedWord": "lawnmower",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 12,
+      "word": "lawnmower"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.91,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 22,
+      "word": "is"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 2.35,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 25,
+      "word": "not"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 2.68,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.41,
+      "startOffset": 29,
+      "word": "very"
+    },
+    {
+      "alignedWord": "good",
+      "case": "success",
+      "end": 2.99,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.68,
+      "startOffset": 34,
+      "word": "good"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E17 - The Long Grass.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_79.json",
+  "episode_title": "The Long Grass",
+  "clipStart": 136,
+  "clipEnd": 140,
+  "partIndex": 6,
+  "clipIndex": 0
+}

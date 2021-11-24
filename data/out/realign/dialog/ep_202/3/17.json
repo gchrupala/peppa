@@ -1,0 +1,186 @@
+{
+  "transcript": "- It has to be fruit or vegetables.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.03,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.01,
+      "startOffset": 2,
+      "word": "It"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.51,
+      "startOffset": 5,
+      "word": "has"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 9,
+      "word": "to"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 2.78,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.71,
+      "startOffset": 12,
+      "word": "be"
+    },
+    {
+      "alignedWord": "fruit",
+      "case": "success",
+      "end": 3.23,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.98,
+      "startOffset": 15,
+      "word": "fruit"
+    },
+    {
+      "alignedWord": "or",
+      "case": "success",
+      "end": 3.74,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.6,
+      "startOffset": 21,
+      "word": "or"
+    },
+    {
+      "alignedWord": "vegetables",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 4.46,
+      "startOffset": 24,
+      "word": "vegetables"
+    }
+  ],
+  "speaker": "Suzy",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 146,
+  "clipEnd": 151,
+  "partIndex": 3,
+  "clipIndex": 17
+}

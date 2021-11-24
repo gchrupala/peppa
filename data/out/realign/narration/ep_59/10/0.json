@@ -1,0 +1,155 @@
+{
+  "transcript": "George paints the eyes and nose.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.52,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.13,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "paints",
+      "case": "success",
+      "end": 0.94,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.57,
+      "startOffset": 7,
+      "word": "paints"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.0999999999999999,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 14,
+      "word": "the"
+    },
+    {
+      "alignedWord": "eyes",
+      "case": "success",
+      "end": 1.5999999999999999,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 18,
+      "word": "eyes"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 23,
+      "word": "and"
+    },
+    {
+      "alignedWord": "nose",
+      "case": "success",
+      "end": 2.5300000000000002,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.2,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 27,
+      "word": "nose"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E10 - Mr Scarecrow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_59.json",
+  "episode_title": "Mr. Scarecrow",
+  "clipStart": 205,
+  "clipEnd": 209,
+  "partIndex": 10,
+  "clipIndex": 0
+}

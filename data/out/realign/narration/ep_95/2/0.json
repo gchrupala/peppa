@@ -1,0 +1,51 @@
+{
+  "transcript": "Oh, dear.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 1.4,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 0,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "dear",
+      "case": "success",
+      "end": 1.88,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 4,
+      "word": "dear"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E44 - The Quarrel.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_95.json",
+  "episode_title": "The Quarrel",
+  "clipStart": 52,
+  "clipEnd": 55,
+  "partIndex": 2,
+  "clipIndex": 0
+}

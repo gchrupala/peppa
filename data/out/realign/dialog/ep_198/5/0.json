@@ -1,0 +1,278 @@
+{
+  "transcript": "- Hello, Mr. Rabbit. We would like to see the museum, please.",
+  "words": [
+    {
+      "alignedWord": "hello",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 2,
+      "word": "Hello"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 2.89,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 9,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 2.94,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.89,
+      "startOffset": 13,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 3.93,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.77,
+      "startOffset": 21,
+      "word": "We"
+    },
+    {
+      "alignedWord": "would",
+      "case": "success",
+      "end": 4.15,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.93,
+      "startOffset": 24,
+      "word": "would"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 4.34,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 4.16,
+      "startOffset": 30,
+      "word": "like"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 4.64,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 4.59,
+      "startOffset": 35,
+      "word": "to"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 4.97,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.76,
+      "startOffset": 38,
+      "word": "see"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 5.02,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 4.97,
+      "startOffset": 42,
+      "word": "the"
+    },
+    {
+      "alignedWord": "museum",
+      "case": "success",
+      "end": 5.739999999999999,
+      "endOffset": 52,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "m_E"
+        }
+      ],
+      "start": 5.06,
+      "startOffset": 46,
+      "word": "museum"
+    },
+    {
+      "alignedWord": "please",
+      "case": "success",
+      "end": 5.8,
+      "endOffset": 60,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "p_B"
+        }
+      ],
+      "start": 5.75,
+      "startOffset": 54,
+      "word": "please"
+    }
+  ],
+  "speaker": "Madame Gazelle",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 158,
+  "clipEnd": 164,
+  "partIndex": 5,
+  "clipIndex": 0
+}

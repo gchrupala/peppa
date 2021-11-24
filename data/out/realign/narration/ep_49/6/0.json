@@ -1,0 +1,71 @@
+{
+  "transcript": "Chocolate cake?",
+  "words": [
+    {
+      "alignedWord": "chocolate",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 0,
+      "word": "Chocolate"
+    },
+    {
+      "alignedWord": "cake",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 10,
+      "word": "cake"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E41 - Shopping.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_49.json",
+  "episode_title": "Shopping",
+  "clipStart": 243,
+  "clipEnd": 246,
+  "partIndex": 6,
+  "clipIndex": 0
+}

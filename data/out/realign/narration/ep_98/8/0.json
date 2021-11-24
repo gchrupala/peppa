@@ -1,0 +1,47 @@
+{
+  "transcript": "-Oh no!",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 1,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.31,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 4,
+      "word": "no"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E47 - Captian Daddy Pig.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_98.json",
+  "episode_title": "Captain Daddy Pig",
+  "clipStart": 195,
+  "clipEnd": 198,
+  "partIndex": 8,
+  "clipIndex": 0
+}

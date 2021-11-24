@@ -1,0 +1,132 @@
+{
+  "transcript": "Pig are wearing their boots.",
+  "words": [
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.52,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.27,
+      "startOffset": 0,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 0.67,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "er_S"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 4,
+      "word": "are"
+    },
+    {
+      "alignedWord": "wearing",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 8,
+      "word": "wearing"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 1.19,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 16,
+      "word": "their"
+    },
+    {
+      "alignedWord": "boots",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.5899999999999999,
+      "startOffset": 22,
+      "word": "boots"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E51 - Daddy Pig's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_102.json",
+  "episode_title": "Daddy Pig's Birthday",
+  "clipStart": 225,
+  "clipEnd": 227,
+  "partIndex": 7,
+  "clipIndex": 1
+}

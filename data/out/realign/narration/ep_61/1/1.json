@@ -1,0 +1,121 @@
+{
+  "transcript": "the parents have arrived.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 0,
+      "word": "the"
+    },
+    {
+      "alignedWord": "parents",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 4,
+      "word": "parents"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 1.2400000000000002,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 12,
+      "word": "have"
+    },
+    {
+      "alignedWord": "arrived",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "er_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 17,
+      "word": "arrived"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E09 - The Time Capsule.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_61.json",
+  "episode_title": "The Time Capsule",
+  "clipStart": 138,
+  "clipEnd": 141,
+  "partIndex": 1,
+  "clipIndex": 1
+}

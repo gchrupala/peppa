@@ -1,0 +1,167 @@
+{
+  "transcript": "George wants to wash the windows",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.8200000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "wants",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 7,
+      "word": "wants"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 13,
+      "word": "to"
+    },
+    {
+      "alignedWord": "wash",
+      "case": "success",
+      "end": 1.3499999999999999,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "sh_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 16,
+      "word": "wash"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.4300000000000002,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 21,
+      "word": "the"
+    },
+    {
+      "alignedWord": "windows",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 25,
+      "word": "windows"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E49 - Cleaning the Car.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_33.json",
+  "episode_title": "Cleaning the Car",
+  "clipStart": 99,
+  "clipEnd": 103,
+  "partIndex": 4,
+  "clipIndex": 0
+}

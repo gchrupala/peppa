@@ -1,0 +1,251 @@
+{
+  "transcript": "Mommy Pig has a lot of important work to do.",
+  "words": [
+    {
+      "alignedWord": "mommy",
+      "case": "success",
+      "end": 0.5800000000000001,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.28,
+      "startOffset": 0,
+      "word": "Mommy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.8699999999999999,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 6,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.06,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 10,
+      "word": "has"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.1300000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 14,
+      "word": "a"
+    },
+    {
+      "alignedWord": "lot",
+      "case": "success",
+      "end": 1.3099999999999998,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 16,
+      "word": "lot"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 1.4000000000000001,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 20,
+      "word": "of"
+    },
+    {
+      "alignedWord": "important",
+      "case": "success",
+      "end": 1.88,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 23,
+      "word": "important"
+    },
+    {
+      "alignedWord": "work",
+      "case": "success",
+      "end": 2.1799999999999997,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.91,
+      "startOffset": 33,
+      "word": "work"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.56,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.2,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 38,
+      "word": "to"
+    },
+    {
+      "alignedWord": "do",
+      "case": "success",
+      "end": 4.76,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 4.74,
+      "startOffset": 41,
+      "word": "do"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E07 - Mummy Pig at Work.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_7.json",
+  "episode_title": "Mummy Pig at Work",
+  "clipStart": 55,
+  "clipEnd": 60,
+  "partIndex": 2,
+  "clipIndex": 0
+}

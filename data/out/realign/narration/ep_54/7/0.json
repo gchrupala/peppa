@@ -1,0 +1,109 @@
+{
+  "transcript": "That was quite loud.",
+  "words": [
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 0.62,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.36,
+      "startOffset": 0,
+      "word": "That"
+    },
+    {
+      "alignedWord": "was",
+      "case": "success",
+      "end": 0.8,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 5,
+      "word": "was"
+    },
+    {
+      "alignedWord": "quite",
+      "case": "success",
+      "end": 1.11,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.8,
+      "startOffset": 9,
+      "word": "quite"
+    },
+    {
+      "alignedWord": "loud",
+      "case": "success",
+      "end": 1.4200000000000002,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 15,
+      "word": "loud"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E03 - Emily Elephant.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_54.json",
+  "episode_title": "Emily Elephant",
+  "clipStart": 163,
+  "clipEnd": 166,
+  "partIndex": 7,
+  "clipIndex": 0
+}

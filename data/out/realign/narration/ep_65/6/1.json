@@ -1,0 +1,216 @@
+{
+  "transcript": "But Peppa and her family are still not here.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 0.35,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.73,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.29,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 4,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.92,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 10,
+      "word": "and"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 14,
+      "word": "her"
+    },
+    {
+      "alignedWord": "family",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 18,
+      "word": "family"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.6400000000000001,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 25,
+      "word": "are"
+    },
+    {
+      "alignedWord": "still",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 29,
+      "word": "still"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 35,
+      "word": "not"
+    },
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 2.6300000000000003,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.24,
+      "startOffset": 39,
+      "word": "here"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E33 - Traffic Jam.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_65.json",
+  "episode_title": "Traffic Jam",
+  "clipStart": 199,
+  "clipEnd": 202,
+  "partIndex": 6,
+  "clipIndex": 1
+}

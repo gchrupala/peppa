@@ -1,0 +1,143 @@
+{
+  "transcript": "- No, we're looking at the sky.",
+  "words": [
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 2.5500000000000003,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.37,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 2,
+      "word": "No"
+    },
+    {
+      "alignedWord": "we're",
+      "case": "success",
+      "end": 2.87,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.83,
+      "startOffset": 6,
+      "word": "we're"
+    },
+    {
+      "alignedWord": "looking",
+      "case": "success",
+      "end": 3.3400000000000003,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.93,
+      "startOffset": 12,
+      "word": "looking"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 3.53,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.34,
+      "startOffset": 20,
+      "word": "at"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.6599999999999997,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.53,
+      "startOffset": 23,
+      "word": "the"
+    },
+    {
+      "alignedWord": "sky",
+      "case": "success",
+      "end": 3.8000000000000003,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 3.66,
+      "startOffset": 27,
+      "word": "sky"
+    }
+  ],
+  "speaker": "Suzy",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 146,
+  "clipEnd": 150,
+  "partIndex": 6,
+  "clipIndex": 1
+}

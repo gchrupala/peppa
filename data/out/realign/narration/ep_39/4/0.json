@@ -1,0 +1,183 @@
+{
+  "transcript": "George imagines being a big dinosaur.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "imagines",
+      "case": "success",
+      "end": 1.64,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 7,
+      "word": "imagines"
+    },
+    {
+      "alignedWord": "being",
+      "case": "success",
+      "end": 2.07,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 16,
+      "word": "being"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.26,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.07,
+      "startOffset": 22,
+      "word": "a"
+    },
+    {
+      "alignedWord": "big",
+      "case": "success",
+      "end": 2.76,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.34,
+      "startOffset": 24,
+      "word": "big"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 3.37,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.83,
+      "startOffset": 28,
+      "word": "dinosaur"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E30 - The Museum.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_39.json",
+  "episode_title": "The Museum",
+  "clipStart": 230,
+  "clipEnd": 234,
+  "partIndex": 4,
+  "clipIndex": 0
+}

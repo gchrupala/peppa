@@ -1,0 +1,200 @@
+{
+  "transcript": "Now it's Chloe's turn to be the sly fox.",
+  "words": [
+    {
+      "alignedWord": "now",
+      "case": "success",
+      "end": 1.6,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 0,
+      "word": "Now"
+    },
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 4,
+      "word": "it's"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.36,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 9,
+      "word": "Chloe's"
+    },
+    {
+      "alignedWord": "turn",
+      "case": "success",
+      "end": 2.4099999999999997,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 17,
+      "word": "turn"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.55,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 22,
+      "word": "to"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 2.65,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.55,
+      "startOffset": 25,
+      "word": "be"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.67,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 28,
+      "word": "the"
+    },
+    {
+      "alignedWord": "sly",
+      "case": "success",
+      "end": 2.6999999999999997,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 2.67,
+      "startOffset": 32,
+      "word": "sly"
+    },
+    {
+      "alignedWord": "fox",
+      "case": "success",
+      "end": 2.74,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 36,
+      "word": "fox"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E14 - My Cousin Chloe.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_28.json",
+  "episode_title": "My Cousin Chlo?",
+  "clipStart": 181,
+  "clipEnd": 184,
+  "partIndex": 5,
+  "clipIndex": 0
+}

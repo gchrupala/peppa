@@ -1,0 +1,151 @@
+{
+  "transcript": "Pepper and George love their treehouse.",
+  "words": [
+    {
+      "alignedWord": "pepper",
+      "case": "success",
+      "end": 0.29,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.21,
+      "startOffset": 0,
+      "word": "Pepper"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.74,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 7,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.78,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.74,
+      "startOffset": 11,
+      "word": "George"
+    },
+    {
+      "alignedWord": "love",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_E"
+        }
+      ],
+      "start": 0.78,
+      "startOffset": 18,
+      "word": "love"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 1.43,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 23,
+      "word": "their"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.68,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 29,
+      "word": "treehouse"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E39 - The Tree House.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_37.json",
+  "episode_title": "The Tree House",
+  "clipStart": 82,
+  "clipEnd": 85,
+  "partIndex": 1,
+  "clipIndex": 0
+}

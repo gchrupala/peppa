@@ -1,0 +1,98 @@
+{
+  "transcript": "George is frightened.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.34,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "frightened",
+      "case": "success",
+      "end": 1.6600000000000001,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 10,
+      "word": "frightened"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E51 - Daddy's Movie Camera.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_51.json",
+  "episode_title": "Daddy's Movie Camera",
+  "clipStart": 218,
+  "clipEnd": 221,
+  "partIndex": 2,
+  "clipIndex": 1
+}

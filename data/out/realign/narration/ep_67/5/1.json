@@ -1,0 +1,174 @@
+{
+  "transcript": "to see who can jump the furthest.",
+  "words": [
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 0.26,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 0,
+      "word": "to"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 0.95,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 3,
+      "word": "see"
+    },
+    {
+      "alignedWord": "who",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 7,
+      "word": "who"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 1.3399999999999999,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 11,
+      "word": "can"
+    },
+    {
+      "alignedWord": "jump",
+      "case": "success",
+      "end": 1.6700000000000002,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.34,
+      "startOffset": 15,
+      "word": "jump"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.8199999999999998,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.68,
+      "startOffset": 20,
+      "word": "the"
+    },
+    {
+      "alignedWord": "furthest",
+      "case": "success",
+      "end": 2.45,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 24,
+      "word": "furthest"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E24 - Sports day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_67.json",
+  "episode_title": "Sports Day",
+  "clipStart": 98,
+  "clipEnd": 101,
+  "partIndex": 5,
+  "clipIndex": 1
+}

@@ -1,0 +1,194 @@
+{
+  "transcript": "at Granny Pig and Grandpa Pig's house.",
+  "words": [
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 0.84,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 0,
+      "word": "at"
+    },
+    {
+      "alignedWord": "granny",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 3,
+      "word": "Granny"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.45,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 10,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 14,
+      "word": "and"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 18,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig's",
+      "case": "success",
+      "end": 2.39,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 26,
+      "word": "Pig's"
+    },
+    {
+      "alignedWord": "house",
+      "case": "success",
+      "end": 2.8000000000000003,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.39,
+      "startOffset": 32,
+      "word": "house"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E09 - Gardening.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_10.json",
+  "episode_title": "Gardening",
+  "clipStart": 24,
+  "clipEnd": 28,
+  "partIndex": 0,
+  "clipIndex": 1
+}

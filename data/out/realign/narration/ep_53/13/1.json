@@ -1,0 +1,129 @@
+{
+  "transcript": "in muddy, bubbly puddles.",
+  "words": [
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.1099999999999999,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.95,
+      "startOffset": 0,
+      "word": "in"
+    },
+    {
+      "alignedWord": "muddy",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 3,
+      "word": "muddy"
+    },
+    {
+      "alignedWord": "bubbly",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 10,
+      "word": "bubbly"
+    },
+    {
+      "alignedWord": "puddles",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 17,
+      "word": "puddles"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E01 - Bubbles.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_53.json",
+  "episode_title": "Bubbles",
+  "clipStart": 277,
+  "clipEnd": 281,
+  "partIndex": 13,
+  "clipIndex": 1
+}

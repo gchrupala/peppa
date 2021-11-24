@@ -1,0 +1,71 @@
+{
+  "transcript": "It is Peppa's birthday.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 2,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.9099999999999999,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.34,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.57,
+      "startOffset": 6,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "birthday",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 14,
+      "word": "birthday"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E43 - My Birthday Party.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_50.json",
+  "episode_title": "My Birthday Party",
+  "clipStart": 22,
+  "clipEnd": 26,
+  "partIndex": 0,
+  "clipIndex": 0
+}

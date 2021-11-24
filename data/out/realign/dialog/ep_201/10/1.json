@@ -1,0 +1,213 @@
+{
+  "transcript": "- What do you think, lads? Can we have a hole outside Miss Rabbit's shop?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 3.17,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.91,
+      "startOffset": 2,
+      "word": "What"
+    },
+    {
+      "alignedWord": "do",
+      "case": "success",
+      "end": 3.21,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.17,
+      "startOffset": 7,
+      "word": "do"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 3.34,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.21,
+      "startOffset": 10,
+      "word": "you"
+    },
+    {
+      "alignedWord": "think",
+      "case": "success",
+      "end": 3.5999999999999996,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.34,
+      "startOffset": 14,
+      "word": "think"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 4.22,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.61,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 3.61,
+      "startOffset": 21,
+      "word": "lads"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 4.7,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.59,
+      "startOffset": 27,
+      "word": "Can"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 4.86,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.7,
+      "startOffset": 31,
+      "word": "we"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 5.800000000000001,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.94,
+          "phone": "sil"
+        }
+      ],
+      "start": 4.86,
+      "startOffset": 34,
+      "word": "have"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 40,
+      "startOffset": 39,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 45,
+      "startOffset": 41,
+      "word": "hole"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 53,
+      "startOffset": 46,
+      "word": "outside"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 58,
+      "startOffset": 54,
+      "word": "Miss"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 67,
+      "startOffset": 59,
+      "word": "Rabbit's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 72,
+      "startOffset": 68,
+      "word": "shop"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 250,
+  "clipEnd": 256,
+  "partIndex": 10,
+  "clipIndex": 1
+}

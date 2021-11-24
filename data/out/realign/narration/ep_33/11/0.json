@@ -1,0 +1,109 @@
+{
+  "transcript": "Oh, more funny faces.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 0.93,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.4,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 0.53,
+      "startOffset": 0,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "more",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 4,
+      "word": "more"
+    },
+    {
+      "alignedWord": "funny",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 9,
+      "word": "funny"
+    },
+    {
+      "alignedWord": "faces",
+      "case": "success",
+      "end": 2.17,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 15,
+      "word": "faces"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E49 - Cleaning the Car.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_33.json",
+  "episode_title": "Cleaning the Car",
+  "clipStart": 225,
+  "clipEnd": 229,
+  "partIndex": 11,
+  "clipIndex": 0
+}

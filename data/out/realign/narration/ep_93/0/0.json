@@ -1,0 +1,208 @@
+{
+  "transcript": "Peppa and her friends are at their play group.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.45,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 10,
+      "word": "her"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 14,
+      "word": "friends"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.27,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "er_S"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 22,
+      "word": "are"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 2.43,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.27,
+      "startOffset": 26,
+      "word": "at"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 2.64,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 29,
+      "word": "their"
+    },
+    {
+      "alignedWord": "play",
+      "case": "success",
+      "end": 2.9299999999999997,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 35,
+      "word": "play"
+    },
+    {
+      "alignedWord": "group",
+      "case": "success",
+      "end": 3.24,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.93,
+      "startOffset": 40,
+      "word": "group"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E21 - Pen Pal.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_93.json",
+  "episode_title": "Pen Pal",
+  "clipStart": 18,
+  "clipEnd": 22,
+  "partIndex": 0,
+  "clipIndex": 0
+}

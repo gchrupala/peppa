@@ -1,0 +1,77 @@
+{
+  "transcript": "Richard likes George.",
+  "words": [
+    {
+      "alignedWord": "richard",
+      "case": "success",
+      "end": 1.45,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 0,
+      "word": "Richard"
+    },
+    {
+      "alignedWord": "likes",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.54,
+      "startOffset": 8,
+      "word": "likes"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 14,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E05 - Georges friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_58.json",
+  "episode_title": "George's Friend",
+  "clipStart": 274,
+  "clipEnd": 277,
+  "partIndex": 14,
+  "clipIndex": 1
+}

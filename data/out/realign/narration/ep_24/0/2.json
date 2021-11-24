@@ -1,0 +1,173 @@
+{
+  "transcript": "Granny Pig is drawing the treasure map.",
+  "words": [
+    {
+      "alignedWord": "granny",
+      "case": "success",
+      "end": 2.27,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 0,
+      "word": "Granny"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.5300000000000002,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.27,
+      "startOffset": 7,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.68,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.56,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "drawing",
+      "case": "success",
+      "end": 2.73,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.68,
+      "startOffset": 14,
+      "word": "drawing"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.73,
+      "startOffset": 22,
+      "word": "the"
+    },
+    {
+      "alignedWord": "treasure",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "zh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 26,
+      "word": "treasure"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 38,
+      "startOffset": 35,
+      "word": "map"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E26 - Treasure Hunt.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_24.json",
+  "episode_title": "Treasure Hunt",
+  "clipStart": 26,
+  "clipEnd": 29,
+  "partIndex": 0,
+  "clipIndex": 2
+}

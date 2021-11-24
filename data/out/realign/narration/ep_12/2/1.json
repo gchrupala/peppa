@@ -1,0 +1,214 @@
+{
+  "transcript": "and Rebecca Rabbit, are riding their bicycles.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.27,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.14,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "rebecca",
+      "case": "success",
+      "end": 0.66,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.27,
+      "startOffset": 4,
+      "word": "Rebecca"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 12,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.2899999999999998,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 20,
+      "word": "are"
+    },
+    {
+      "alignedWord": "riding",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 24,
+      "word": "riding"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 1.88,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 31,
+      "word": "their"
+    },
+    {
+      "alignedWord": "bicycles",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 37,
+      "word": "bicycles"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E10 - Bicycles.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_12.json",
+  "episode_title": "Bicycles",
+  "clipStart": 51,
+  "clipEnd": 55,
+  "partIndex": 2,
+  "clipIndex": 1
+}

@@ -1,0 +1,212 @@
+{
+  "transcript": "Now that it is windy, the kite can fly.",
+  "words": [
+    {
+      "alignedWord": "now",
+      "case": "success",
+      "end": 0.71,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 0.45,
+      "startOffset": 0,
+      "word": "Now"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 0.84,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 4,
+      "word": "that"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.9299999999999999,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 9,
+      "word": "it"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.07,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 12,
+      "word": "is"
+    },
+    {
+      "alignedWord": "windy",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 15,
+      "word": "windy"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 22,
+      "word": "the"
+    },
+    {
+      "alignedWord": "kite",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.84,
+      "startOffset": 26,
+      "word": "kite"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 2.35,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 31,
+      "word": "can"
+    },
+    {
+      "alignedWord": "fly",
+      "case": "success",
+      "end": 2.79,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.23,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 2.35,
+      "startOffset": 35,
+      "word": "fly"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E13 - Flying a Kite.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_14.json",
+  "episode_title": "Flying a Kite",
+  "clipStart": 91,
+  "clipEnd": 95,
+  "partIndex": 6,
+  "clipIndex": 0
+}

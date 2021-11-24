@@ -1,0 +1,113 @@
+{
+  "transcript": "- Oh, hello, Mrs. Pony.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 2.4299999999999997,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "hello",
+      "case": "success",
+      "end": 3.0999999999999996,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.01,
+      "startOffset": 6,
+      "word": "hello"
+    },
+    {
+      "alignedWord": "mrs",
+      "case": "success",
+      "end": 3.75,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.39,
+      "startOffset": 13,
+      "word": "Mrs"
+    },
+    {
+      "alignedWord": "pony",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.75,
+      "startOffset": 18,
+      "word": "Pony"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 86,
+  "clipEnd": 90,
+  "partIndex": 3,
+  "clipIndex": 10
+}

@@ -1,0 +1,182 @@
+{
+  "transcript": "The bubble mixture is all used up.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.14,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.0,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "bubble",
+      "case": "success",
+      "end": 0.42000000000000004,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.14,
+      "startOffset": 4,
+      "word": "bubble"
+    },
+    {
+      "alignedWord": "mixture",
+      "case": "success",
+      "end": 0.77,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.43,
+      "startOffset": 11,
+      "word": "mixture"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.88,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 19,
+      "word": "is"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.88,
+      "startOffset": 22,
+      "word": "all"
+    },
+    {
+      "alignedWord": "used",
+      "case": "success",
+      "end": 1.3900000000000001,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 26,
+      "word": "used"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 31,
+      "word": "up"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E01 - Bubbles.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_53.json",
+  "episode_title": "Bubbles",
+  "clipStart": 159,
+  "clipEnd": 161,
+  "partIndex": 7,
+  "clipIndex": 1
+}

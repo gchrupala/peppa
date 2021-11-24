@@ -1,0 +1,260 @@
+{
+  "transcript": "Everyone loves jumping up and down in muddy puddles.",
+  "words": [
+    {
+      "alignedWord": "everyone",
+      "case": "success",
+      "end": 1.0899999999999999,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.6,
+      "startOffset": 0,
+      "word": "Everyone"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.43,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 9,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "jumping",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 15,
+      "word": "jumping"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 1.8800000000000001,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 23,
+      "word": "up"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 26,
+      "word": "and"
+    },
+    {
+      "alignedWord": "down",
+      "case": "success",
+      "end": 2.22,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 30,
+      "word": "down"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.32,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 35,
+      "word": "in"
+    },
+    {
+      "alignedWord": "muddy",
+      "case": "success",
+      "end": 2.6,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 38,
+      "word": "muddy"
+    },
+    {
+      "alignedWord": "puddles",
+      "case": "success",
+      "end": 2.95,
+      "endOffset": 51,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.66,
+      "startOffset": 44,
+      "word": "puddles"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E32 - Thunderstrom.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_32.json",
+  "episode_title": "Thunderstorm",
+  "clipStart": 269,
+  "clipEnd": 273,
+  "partIndex": 5,
+  "clipIndex": 0
+}

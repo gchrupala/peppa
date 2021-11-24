@@ -1,0 +1,190 @@
+{
+  "transcript": "Chloe Pig his Peppa and George's cousin.",
+  "words": [
+    {
+      "alignedWord": "chloe",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 0,
+      "word": "Chloe"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.41,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 6,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 1.5499999999999998,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 10,
+      "word": "his"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.8900000000000001,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.29,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 14,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.91,
+      "startOffset": 20,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george's",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.05,
+      "startOffset": 24,
+      "word": "George's"
+    },
+    {
+      "alignedWord": "cousin",
+      "case": "success",
+      "end": 2.9,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 33,
+      "word": "cousin"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E42 - Chloe's Puppet Show.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_41.json",
+  "episode_title": "Chlo?'s Puppet Show",
+  "clipStart": 68,
+  "clipEnd": 72,
+  "partIndex": 2,
+  "clipIndex": 1
+}

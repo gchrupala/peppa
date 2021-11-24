@@ -1,0 +1,192 @@
+{
+  "transcript": "- Come on, Pedro. We don't want to miss the bus!",
+  "words": [
+    {
+      "alignedWord": "come",
+      "case": "success",
+      "end": 1.93,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 2,
+      "word": "Come"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 2.2399999999999998,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.07,
+      "startOffset": 7,
+      "word": "on"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 2.65,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 11,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 3.28,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.11,
+      "startOffset": 18,
+      "word": "We"
+    },
+    {
+      "alignedWord": "don't",
+      "case": "success",
+      "end": 3.4899999999999998,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.28,
+      "startOffset": 21,
+      "word": "don't"
+    },
+    {
+      "alignedWord": "want",
+      "case": "success",
+      "end": 3.58,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.49,
+      "startOffset": 27,
+      "word": "want"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.74,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 3.62,
+      "startOffset": 32,
+      "word": "to"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 39,
+      "startOffset": 35,
+      "word": "miss"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 43,
+      "startOffset": 40,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 47,
+      "startOffset": 44,
+      "word": "bus"
+    }
+  ],
+  "speaker": "Mummy Pony",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 40,
+  "clipEnd": 44,
+  "partIndex": 2,
+  "clipIndex": 3
+}

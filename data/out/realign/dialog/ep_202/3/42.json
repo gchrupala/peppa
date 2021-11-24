@@ -1,0 +1,117 @@
+{
+  "transcript": "- What's wrong, Miss Rabbit?",
+  "words": [
+    {
+      "alignedWord": "what's",
+      "case": "success",
+      "end": 2.1999999999999997,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 2,
+      "word": "What's"
+    },
+    {
+      "alignedWord": "wrong",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.2,
+      "startOffset": 9,
+      "word": "wrong"
+    },
+    {
+      "alignedWord": "miss",
+      "case": "success",
+      "end": 2.78,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 16,
+      "word": "Miss"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 2.83,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.7800000000000002,
+      "startOffset": 21,
+      "word": "Rabbit"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 221,
+  "clipEnd": 224,
+  "partIndex": 3,
+  "clipIndex": 42
+}

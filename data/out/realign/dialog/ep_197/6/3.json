@@ -1,0 +1,105 @@
+{
+  "transcript": " - Look at this spoon.",
+  "words": [
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 0.8,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 3,
+      "word": "Look"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 0.8200000000000001,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.8,
+      "startOffset": 8,
+      "word": "at"
+    },
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 0.9299999999999999,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 11,
+      "word": "this"
+    },
+    {
+      "alignedWord": "spoon",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 16,
+      "word": "spoon"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 152,
+  "clipEnd": 155,
+  "partIndex": 6,
+  "clipIndex": 3
+}

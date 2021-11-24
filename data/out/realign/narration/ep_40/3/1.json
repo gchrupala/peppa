@@ -1,0 +1,110 @@
+{
+  "transcript": "their swimming costumes.",
+  "words": [
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 0.71,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 0,
+      "word": "their"
+    },
+    {
+      "alignedWord": "swimming",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 6,
+      "word": "swimming"
+    },
+    {
+      "alignedWord": "costumes",
+      "case": "success",
+      "end": 1.51,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 15,
+      "word": "costumes"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E35 - Very Hot Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_40.json",
+  "episode_title": "Very Hot Day",
+  "clipStart": 65,
+  "clipEnd": 68,
+  "partIndex": 3,
+  "clipIndex": 1
+}

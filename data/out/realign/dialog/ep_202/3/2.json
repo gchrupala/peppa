@@ -1,0 +1,169 @@
+{
+  "transcript": "- Hello, Miss Rabbit! What's a fruit smoothie?",
+  "words": [
+    {
+      "alignedWord": "hello",
+      "case": "success",
+      "end": 0.2,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 2,
+      "word": "Hello"
+    },
+    {
+      "alignedWord": "miss",
+      "case": "success",
+      "end": 0.36,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 9,
+      "word": "Miss"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 0.41,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.36,
+      "startOffset": 14,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "what's",
+      "case": "success",
+      "end": 3.56,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.36,
+      "startOffset": 22,
+      "word": "What's"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 3.57,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.56,
+      "startOffset": 29,
+      "word": "a"
+    },
+    {
+      "alignedWord": "fruit",
+      "case": "success",
+      "end": 3.94,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.7600000000000002,
+      "startOffset": 31,
+      "word": "fruit"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 45,
+      "startOffset": 37,
+      "word": "smoothie"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 94,
+  "clipEnd": 99,
+  "partIndex": 3,
+  "clipIndex": 2
+}

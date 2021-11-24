@@ -1,0 +1,129 @@
+{
+  "transcript": "What a splendid picnic.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.47,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.48,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.47,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "splendid",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.48,
+      "startOffset": 7,
+      "word": "splendid"
+    },
+    {
+      "alignedWord": "picnic",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 16,
+      "word": "picnic"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E02 - Teddys day out.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_56.json",
+  "episode_title": "Teddy's Day Out",
+  "clipStart": 129,
+  "clipEnd": 133,
+  "partIndex": 4,
+  "clipIndex": 0
+}

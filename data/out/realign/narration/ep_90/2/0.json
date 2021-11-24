@@ -1,0 +1,159 @@
+{
+  "transcript": "Miss Rabbit is the bus driver.",
+  "words": [
+    {
+      "alignedWord": "miss",
+      "case": "success",
+      "end": 0.66,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.45,
+      "startOffset": 0,
+      "word": "Miss"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 0.9400000000000001,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 5,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.2600000000000002,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 12,
+      "word": "is"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.36,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 15,
+      "word": "the"
+    },
+    {
+      "alignedWord": "bus",
+      "case": "success",
+      "end": 1.6,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 19,
+      "word": "bus"
+    },
+    {
+      "alignedWord": "driver",
+      "case": "success",
+      "end": 1.9100000000000001,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 23,
+      "word": "driver"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E22 - School Bus Trip.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_90.json",
+  "episode_title": "School Bus Trip",
+  "clipStart": 71,
+  "clipEnd": 74,
+  "partIndex": 2,
+  "clipIndex": 0
+}

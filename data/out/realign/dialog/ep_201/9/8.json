@@ -1,0 +1,216 @@
+{
+  "transcript": "- Ho-ho! I am very good at smashing things.",
+  "words": [
+    {
+      "alignedWord": "ho",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 2,
+      "word": "Ho"
+    },
+    {
+      "alignedWord": "ho",
+      "case": "success",
+      "end": 2.84,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.31,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 5,
+      "word": "ho"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 3.19,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 3.13,
+      "startOffset": 9,
+      "word": "I"
+    },
+    {
+      "alignedWord": "am",
+      "case": "success",
+      "end": 3.4899999999999998,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.22,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.19,
+      "startOffset": 11,
+      "word": "am"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 3.65,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.5,
+      "startOffset": 14,
+      "word": "very"
+    },
+    {
+      "alignedWord": "good",
+      "case": "success",
+      "end": 3.6799999999999997,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.65,
+      "startOffset": 19,
+      "word": "good"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 3.7,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.68,
+      "startOffset": 24,
+      "word": "at"
+    },
+    {
+      "alignedWord": "smashing",
+      "case": "success",
+      "end": 3.7600000000000002,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "sh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 3.7,
+      "startOffset": 27,
+      "word": "smashing"
+    },
+    {
+      "alignedWord": "things",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.76,
+      "startOffset": 36,
+      "word": "things"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 225,
+  "clipEnd": 229,
+  "partIndex": 9,
+  "clipIndex": 8
+}

@@ -1,0 +1,151 @@
+{
+  "transcript": "It has been raining all night,",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.27,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.39,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.27,
+      "startOffset": 3,
+      "word": "has"
+    },
+    {
+      "alignedWord": "been",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.39,
+      "startOffset": 7,
+      "word": "been"
+    },
+    {
+      "alignedWord": "raining",
+      "case": "success",
+      "end": 0.97,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 12,
+      "word": "raining"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 1.1199999999999999,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.97,
+      "startOffset": 20,
+      "word": "all"
+    },
+    {
+      "alignedWord": "night",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 24,
+      "word": "night"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E23 - New Shoes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_19.json",
+  "episode_title": "New Shoes",
+  "clipStart": 201,
+  "clipEnd": 203,
+  "partIndex": 9,
+  "clipIndex": 0
+}

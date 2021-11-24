@@ -1,0 +1,251 @@
+{
+  "transcript": "Here are Granny Pig and Grandpa Pig in their car.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 0.76,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 0.89,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "er_S"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 5,
+      "word": "are"
+    },
+    {
+      "alignedWord": "granny",
+      "case": "success",
+      "end": 1.29,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 9,
+      "word": "Granny"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 16,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 20,
+      "word": "and"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 24,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.34,
+      "startOffset": 32,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.7800000000000002,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 36,
+      "word": "in"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 3.06,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.84,
+      "startOffset": 39,
+      "word": "their"
+    },
+    {
+      "alignedWord": "car",
+      "case": "success",
+      "end": 4.86,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 4.83,
+      "startOffset": 45,
+      "word": "car"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E26 - Granddad Dogs Garage.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_69.json",
+  "episode_title": "Granddad Dog's Garage",
+  "clipStart": 201,
+  "clipEnd": 206,
+  "partIndex": 8,
+  "clipIndex": 0
+}

@@ -1,0 +1,105 @@
+{
+  "transcript": "They are best friends.",
+  "words": [
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 0.67,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 0,
+      "word": "They"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 0.78,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "er_S"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 5,
+      "word": "are"
+    },
+    {
+      "alignedWord": "best",
+      "case": "success",
+      "end": 1.18,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 9,
+      "word": "best"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 1.73,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 14,
+      "word": "friends"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E04 - Best Friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_3.json",
+  "episode_title": "Best Friend",
+  "clipStart": 48,
+  "clipEnd": 51,
+  "partIndex": 1,
+  "clipIndex": 2
+}

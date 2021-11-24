@@ -1,0 +1,82 @@
+{
+  "transcript": "- Maybe we're early.",
+  "words": [
+    {
+      "alignedWord": "maybe",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 2,
+      "word": "Maybe"
+    },
+    {
+      "alignedWord": "we're",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 8,
+      "word": "we're"
+    },
+    {
+      "alignedWord": "early",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 14,
+      "word": "early"
+    }
+  ],
+  "speaker": "Pedro",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 65,
+  "clipEnd": 68,
+  "partIndex": 3,
+  "clipIndex": 3
+}

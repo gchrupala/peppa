@@ -1,0 +1,163 @@
+{
+  "transcript": "This first pancake is for George.",
+  "words": [
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 0.28,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.07,
+      "startOffset": 0,
+      "word": "This"
+    },
+    {
+      "alignedWord": "first",
+      "case": "success",
+      "end": 0.56,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.28,
+      "startOffset": 5,
+      "word": "first"
+    },
+    {
+      "alignedWord": "pancake",
+      "case": "success",
+      "end": 1.03,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 11,
+      "word": "pancake"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.1800000000000002,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 19,
+      "word": "is"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 1.29,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 22,
+      "word": "for"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 26,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E29 - Pancakes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_29.json",
+  "episode_title": "Pancakes",
+  "clipStart": 124,
+  "clipEnd": 127,
+  "partIndex": 4,
+  "clipIndex": 0
+}

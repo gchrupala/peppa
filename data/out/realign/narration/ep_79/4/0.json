@@ -1,0 +1,168 @@
+{
+  "transcript": "The ball is lost in the long grass.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.23,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "ball",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 4,
+      "word": "ball"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "lost",
+      "case": "success",
+      "end": 2.25,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 12,
+      "word": "lost"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.25,
+      "startOffset": 17,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.43,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 20,
+      "word": "the"
+    },
+    {
+      "alignedWord": "long",
+      "case": "success",
+      "end": 2.7399999999999998,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 24,
+      "word": "long"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 29,
+      "word": "grass"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E17 - The Long Grass.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_79.json",
+  "episode_title": "The Long Grass",
+  "clipStart": 95,
+  "clipEnd": 98,
+  "partIndex": 4,
+  "clipIndex": 0
+}

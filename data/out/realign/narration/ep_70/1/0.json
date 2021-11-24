@@ -1,0 +1,148 @@
+{
+  "transcript": "The playground is quite close.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.27,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "playground",
+      "case": "success",
+      "end": 0.72,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.27,
+      "startOffset": 4,
+      "word": "playground"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.83,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.72,
+      "startOffset": 15,
+      "word": "is"
+    },
+    {
+      "alignedWord": "quite",
+      "case": "success",
+      "end": 1.0899999999999999,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 18,
+      "word": "quite"
+    },
+    {
+      "alignedWord": "close",
+      "case": "success",
+      "end": 1.4300000000000002,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 24,
+      "word": "close"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E27 - Foggy Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_70.json",
+  "episode_title": "Foggy Day",
+  "clipStart": 33,
+  "clipEnd": 37,
+  "partIndex": 1,
+  "clipIndex": 0
+}

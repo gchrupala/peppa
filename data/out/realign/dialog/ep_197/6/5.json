@@ -1,0 +1,107 @@
+{
+  "transcript": "Whoa! Now I'm upside down.",
+  "words": [
+    {
+      "alignedWord": "whoa",
+      "case": "success",
+      "end": 0.27,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.19,
+      "startOffset": 0,
+      "word": "Whoa"
+    },
+    {
+      "alignedWord": "now",
+      "case": "success",
+      "end": 0.7200000000000001,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 6,
+      "word": "Now"
+    },
+    {
+      "alignedWord": "i'm",
+      "case": "success",
+      "end": 4.01,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.87,
+      "startOffset": 10,
+      "word": "I'm"
+    },
+    {
+      "alignedWord": "upside",
+      "case": "success",
+      "end": 4.63,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "d_E"
+        }
+      ],
+      "start": 4.4799999999999995,
+      "startOffset": 14,
+      "word": "upside"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 21,
+      "word": "down"
+    }
+  ],
+  "speaker": "Pedro",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 157,
+  "clipEnd": 162,
+  "partIndex": 6,
+  "clipIndex": 5
+}

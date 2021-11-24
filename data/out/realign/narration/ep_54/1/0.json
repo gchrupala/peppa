@@ -1,0 +1,289 @@
+{
+  "transcript": "The children each have their own hook to hang their coats on.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.24,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "children",
+      "case": "success",
+      "end": 0.6599999999999999,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.24,
+      "startOffset": 4,
+      "word": "children"
+    },
+    {
+      "alignedWord": "each",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "iy_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 13,
+      "word": "each"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "v_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 18,
+      "word": "have"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 1.35,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 23,
+      "word": "their"
+    },
+    {
+      "alignedWord": "own",
+      "case": "success",
+      "end": 1.66,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 29,
+      "word": "own"
+    },
+    {
+      "alignedWord": "hook",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 33,
+      "word": "hook"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.14,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 38,
+      "word": "to"
+    },
+    {
+      "alignedWord": "hang",
+      "case": "success",
+      "end": 2.3400000000000003,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.14,
+      "startOffset": 41,
+      "word": "hang"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 2.5,
+      "endOffset": 51,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.34,
+      "startOffset": 46,
+      "word": "their"
+    },
+    {
+      "alignedWord": "coats",
+      "case": "success",
+      "end": 2.88,
+      "endOffset": 57,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.54,
+      "startOffset": 52,
+      "word": "coats"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 2.98,
+      "endOffset": 60,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.88,
+      "startOffset": 58,
+      "word": "on"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E03 - Emily Elephant.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_54.json",
+  "episode_title": "Emily Elephant",
+  "clipStart": 27,
+  "clipEnd": 33,
+  "partIndex": 1,
+  "clipIndex": 0
+}

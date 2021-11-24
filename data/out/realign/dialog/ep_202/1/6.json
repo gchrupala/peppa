@@ -1,0 +1,128 @@
+{
+  "transcript": "\u266a Because they're good for you \u266a\u266a",
+  "words": [
+    {
+      "alignedWord": "because",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 2,
+      "word": "Because"
+    },
+    {
+      "alignedWord": "they're",
+      "case": "success",
+      "end": 1.39,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 10,
+      "word": "they're"
+    },
+    {
+      "alignedWord": "good",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 18,
+      "word": "good"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 23,
+      "word": "for"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 27,
+      "word": "you"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 36,
+  "clipEnd": 39,
+  "partIndex": 1,
+  "clipIndex": 6
+}

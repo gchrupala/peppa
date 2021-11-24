@@ -1,0 +1,157 @@
+{
+  "transcript": "- An apple-raspberry-banana- and-more-apples smoothie!",
+  "words": [
+    {
+      "alignedWord": "an",
+      "case": "success",
+      "end": 4.42,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.18,
+      "startOffset": 2,
+      "word": "An"
+    },
+    {
+      "alignedWord": "apple",
+      "case": "success",
+      "end": 5.16,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "l_E"
+        }
+      ],
+      "start": 4.83,
+      "startOffset": 5,
+      "word": "apple"
+    },
+    {
+      "alignedWord": "raspberry",
+      "case": "success",
+      "end": 5.28,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 5.21,
+      "startOffset": 11,
+      "word": "raspberry"
+    },
+    {
+      "alignedWord": "banana",
+      "case": "success",
+      "end": 5.34,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 5.28,
+      "startOffset": 21,
+      "word": "banana"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 29,
+      "word": "and"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 37,
+      "startOffset": 33,
+      "word": "more"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 44,
+      "startOffset": 38,
+      "word": "apples"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 53,
+      "startOffset": 45,
+      "word": "smoothie"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 119,
+  "clipEnd": 125,
+  "partIndex": 3,
+  "clipIndex": 8
+}

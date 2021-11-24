@@ -1,0 +1,113 @@
+{
+  "transcript": "even grown up girls.",
+  "words": [
+    {
+      "alignedWord": "even",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "iy_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 0,
+      "word": "even"
+    },
+    {
+      "alignedWord": "grown",
+      "case": "success",
+      "end": 1.9500000000000002,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 5,
+      "word": "grown"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 11,
+      "word": "up"
+    },
+    {
+      "alignedWord": "girls",
+      "case": "success",
+      "end": 2.4899999999999998,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.13,
+      "startOffset": 14,
+      "word": "girls"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E14 - My Cousin Chloe.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_28.json",
+  "episode_title": "My Cousin Chlo?",
+  "clipStart": 282,
+  "clipEnd": 285,
+  "partIndex": 10,
+  "clipIndex": 3
+}

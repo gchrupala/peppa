@@ -1,0 +1,113 @@
+{
+  "transcript": "- Good idea, Mummy Pig!",
+  "words": [
+    {
+      "alignedWord": "good",
+      "case": "success",
+      "end": 3.69,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.66,
+      "startOffset": 2,
+      "word": "Good"
+    },
+    {
+      "alignedWord": "idea",
+      "case": "success",
+      "end": 3.73,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.69,
+      "startOffset": 7,
+      "word": "idea"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.73,
+      "startOffset": 13,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_E"
+        }
+      ],
+      "start": 3.77,
+      "startOffset": 19,
+      "word": "Pig"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 131,
+  "clipEnd": 135,
+  "partIndex": 6,
+  "clipIndex": 7
+}

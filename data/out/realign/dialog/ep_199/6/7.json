@@ -1,0 +1,159 @@
+{
+  "transcript": "- What's limbo when it's at home?",
+  "words": [
+    {
+      "alignedWord": "what's",
+      "case": "success",
+      "end": 0.6000000000000001,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 2,
+      "word": "What's"
+    },
+    {
+      "alignedWord": "limbo",
+      "case": "success",
+      "end": 1.68,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 9,
+      "word": "limbo"
+    },
+    {
+      "alignedWord": "when",
+      "case": "success",
+      "end": 2.89,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.37,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.5,
+      "startOffset": 15,
+      "word": "when"
+    },
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 3.4000000000000004,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.37,
+      "startOffset": 20,
+      "word": "it's"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 3.42,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.4000000000000004,
+      "startOffset": 25,
+      "word": "at"
+    },
+    {
+      "alignedWord": "home",
+      "case": "success",
+      "end": 3.45,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.42,
+      "startOffset": 28,
+      "word": "home"
+    }
+  ],
+  "speaker": "Suzy",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 197,
+  "clipEnd": 201,
+  "partIndex": 6,
+  "clipIndex": 7
+}

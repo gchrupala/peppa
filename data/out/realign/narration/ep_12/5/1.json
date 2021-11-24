@@ -1,0 +1,86 @@
+{
+  "transcript": "off Peppa's bicycle.",
+  "words": [
+    {
+      "alignedWord": "off",
+      "case": "success",
+      "end": 0.6699999999999999,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "f_E"
+        }
+      ],
+      "start": 0.38,
+      "startOffset": 0,
+      "word": "off"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.31,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 4,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "bicycle",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 12,
+      "word": "bicycle"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E10 - Bicycles.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_12.json",
+  "episode_title": "Bicycles",
+  "clipStart": 148,
+  "clipEnd": 151,
+  "partIndex": 5,
+  "clipIndex": 1
+}

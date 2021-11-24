@@ -1,0 +1,28 @@
+{
+  "transcript": "Oh. ",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 0.02,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 0.01,
+      "startOffset": 0,
+      "word": "Oh"
+    }
+  ],
+  "speaker": "Captain Dog",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 229,
+  "clipEnd": 232,
+  "partIndex": 5,
+  "clipIndex": 3
+}

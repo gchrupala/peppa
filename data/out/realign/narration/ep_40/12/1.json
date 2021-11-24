@@ -1,0 +1,283 @@
+{
+  "transcript": "Peppa and George love the hot day, but most of all, the love",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.8899999999999999,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.24,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 10,
+      "word": "George"
+    },
+    {
+      "alignedWord": "love",
+      "case": "success",
+      "end": 1.6300000000000001,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 17,
+      "word": "love"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.69,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 22,
+      "word": "the"
+    },
+    {
+      "alignedWord": "hot",
+      "case": "success",
+      "end": 1.8699999999999999,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 26,
+      "word": "hot"
+    },
+    {
+      "alignedWord": "day",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 30,
+      "word": "day"
+    },
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 2.26,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 35,
+      "word": "but"
+    },
+    {
+      "alignedWord": "most",
+      "case": "success",
+      "end": 3.0700000000000003,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.79,
+      "startOffset": 39,
+      "word": "most"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 3.09,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 3.07,
+      "startOffset": 44,
+      "word": "of"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 3.4499999999999997,
+      "endOffset": 50,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.15,
+      "startOffset": 47,
+      "word": "all"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 4.0,
+      "endOffset": 55,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.98,
+      "startOffset": 52,
+      "word": "the"
+    },
+    {
+      "alignedWord": "love",
+      "case": "success",
+      "end": 4.23,
+      "endOffset": 60,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_E"
+        }
+      ],
+      "start": 4.0,
+      "startOffset": 56,
+      "word": "love"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E35 - Very Hot Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_40.json",
+  "episode_title": "Very Hot Day",
+  "clipStart": 277,
+  "clipEnd": 282,
+  "partIndex": 12,
+  "clipIndex": 1
+}

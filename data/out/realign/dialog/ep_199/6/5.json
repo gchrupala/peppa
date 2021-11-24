@@ -1,0 +1,127 @@
+{
+  "transcript": "- Uh... maybe it's time for a different garden game.",
+  "words": [
+    {
+      "alignedWord": "uh",
+      "case": "success",
+      "end": 3.79,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.71,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.08,
+      "startOffset": 2,
+      "word": "Uh"
+    },
+    {
+      "alignedWord": "maybe",
+      "case": "success",
+      "end": 4.37,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.9,
+      "startOffset": 8,
+      "word": "maybe"
+    },
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 4.5600000000000005,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.37,
+      "startOffset": 14,
+      "word": "it's"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ay_I"
+        }
+      ],
+      "start": 4.56,
+      "startOffset": 19,
+      "word": "time"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 27,
+      "startOffset": 24,
+      "word": "for"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 29,
+      "startOffset": 28,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 39,
+      "startOffset": 30,
+      "word": "different"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 46,
+      "startOffset": 40,
+      "word": "garden"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 51,
+      "startOffset": 47,
+      "word": "game"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 190,
+  "clipEnd": 195,
+  "partIndex": 6,
+  "clipIndex": 5
+}

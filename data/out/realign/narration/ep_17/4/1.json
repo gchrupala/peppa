@@ -1,0 +1,189 @@
+{
+  "transcript": "George does not want to be a worm.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.79,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.45,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 0.93,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.79,
+      "startOffset": 7,
+      "word": "does"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 12,
+      "word": "not"
+    },
+    {
+      "alignedWord": "want",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 16,
+      "word": "want"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.4200000000000002,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 21,
+      "word": "to"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 2.77,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 24,
+      "word": "be"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.7800000000000002,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ey_S"
+        }
+      ],
+      "start": 2.7700000000000005,
+      "startOffset": 27,
+      "word": "a"
+    },
+    {
+      "alignedWord": "worm",
+      "case": "success",
+      "end": 2.8100000000000005,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.7800000000000002,
+      "startOffset": 29,
+      "word": "worm"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E46 - Frogs & Worms & Butterflies.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_17.json",
+  "episode_title": "Frogs and Worms and Butterflies",
+  "clipStart": 118,
+  "clipEnd": 121,
+  "partIndex": 4,
+  "clipIndex": 1
+}

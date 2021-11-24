@@ -1,0 +1,159 @@
+{
+  "transcript": "having such fun being wriggly worms.",
+  "words": [
+    {
+      "alignedWord": "having",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 0,
+      "word": "having"
+    },
+    {
+      "alignedWord": "such",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 7,
+      "word": "such"
+    },
+    {
+      "alignedWord": "fun",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 12,
+      "word": "fun"
+    },
+    {
+      "alignedWord": "being",
+      "case": "success",
+      "end": 2.8000000000000003,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.49,
+      "startOffset": 16,
+      "word": "being"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.2600000000000002,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.45,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.81,
+      "startOffset": 22,
+      "word": "wriggly"
+    },
+    {
+      "alignedWord": "worms",
+      "case": "success",
+      "end": 3.53,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.26,
+      "startOffset": 30,
+      "word": "worms"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E46 - Frogs & Worms & Butterflies.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_17.json",
+  "episode_title": "Frogs and Worms and Butterflies",
+  "clipStart": 152,
+  "clipEnd": 157,
+  "partIndex": 5,
+  "clipIndex": 1
+}

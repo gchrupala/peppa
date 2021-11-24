@@ -1,0 +1,140 @@
+{
+  "transcript": "Everyone in the whole world",
+  "words": [
+    {
+      "alignedWord": "everyone",
+      "case": "success",
+      "end": 1.7,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 0,
+      "word": "Everyone"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 9,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.9300000000000002,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 12,
+      "word": "the"
+    },
+    {
+      "alignedWord": "whole",
+      "case": "success",
+      "end": 2.32,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 16,
+      "word": "whole"
+    },
+    {
+      "alignedWord": "world",
+      "case": "success",
+      "end": 2.79,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.47,
+      "startOffset": 22,
+      "word": "world"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E21 - Pen Pal.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_93.json",
+  "episode_title": "Pen Pal",
+  "clipStart": 279,
+  "clipEnd": 282,
+  "partIndex": 9,
+  "clipIndex": 0
+}

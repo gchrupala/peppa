@@ -1,0 +1,251 @@
+{
+  "transcript": "How does that work? - It's a funny magic mirror spoon.",
+  "words": [
+    {
+      "alignedWord": "how",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 0,
+      "word": "How"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 1.8800000000000001,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 4,
+      "word": "does"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 2.67,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.64,
+      "startOffset": 9,
+      "word": "that"
+    },
+    {
+      "alignedWord": "work",
+      "case": "success",
+      "end": 2.92,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.23,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.67,
+      "startOffset": 14,
+      "word": "work"
+    },
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 3.52,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.49,
+      "startOffset": 22,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 3.53,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.52,
+      "startOffset": 27,
+      "word": "a"
+    },
+    {
+      "alignedWord": "funny",
+      "case": "success",
+      "end": 3.84,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.53,
+      "startOffset": 29,
+      "word": "funny"
+    },
+    {
+      "alignedWord": "magic",
+      "case": "success",
+      "end": 4.33,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 4.0,
+      "startOffset": 35,
+      "word": "magic"
+    },
+    {
+      "alignedWord": "mirror",
+      "case": "success",
+      "end": 4.44,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 4.4,
+      "startOffset": 41,
+      "word": "mirror"
+    },
+    {
+      "alignedWord": "spoon",
+      "case": "success",
+      "end": 4.48,
+      "endOffset": 53,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.44,
+      "startOffset": 48,
+      "word": "spoon"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 161,
+  "clipEnd": 166,
+  "partIndex": 6,
+  "clipIndex": 6
+}

@@ -1,0 +1,134 @@
+{
+  "transcript": "- Oooh. What's happened to my body?",
+  "words": [
+    {
+      "alignedWord": "oooh",
+      "case": "success",
+      "end": 2.9899999999999998,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "uw_S"
+        }
+      ],
+      "start": 2.92,
+      "startOffset": 2,
+      "word": "Oooh"
+    },
+    {
+      "alignedWord": "what's",
+      "case": "success",
+      "end": 3.4,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.35,
+      "startOffset": 8,
+      "word": "What's"
+    },
+    {
+      "alignedWord": "happened",
+      "case": "success",
+      "end": 3.9299999999999997,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.81,
+      "startOffset": 15,
+      "word": "happened"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 4.78,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 4.71,
+      "startOffset": 24,
+      "word": "to"
+    },
+    {
+      "alignedWord": "my",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 4.779999999999999,
+      "startOffset": 27,
+      "word": "my"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 30,
+      "word": "body"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 192,
+  "clipEnd": 197,
+  "partIndex": 8,
+  "clipIndex": 0
+}

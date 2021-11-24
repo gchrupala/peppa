@@ -1,0 +1,283 @@
+{
+  "transcript": "After many days, Grandpa Pig finds a tiny plant growing.",
+  "words": [
+    {
+      "alignedWord": "after",
+      "case": "success",
+      "end": 0.22000000000000003,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.14,
+      "startOffset": 0,
+      "word": "After"
+    },
+    {
+      "alignedWord": "many",
+      "case": "success",
+      "end": 0.49,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.22,
+      "startOffset": 6,
+      "word": "many"
+    },
+    {
+      "alignedWord": "days",
+      "case": "success",
+      "end": 0.85,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.49,
+      "startOffset": 11,
+      "word": "days"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 1.35,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 17,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 25,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "finds",
+      "case": "success",
+      "end": 1.95,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.64,
+      "startOffset": 29,
+      "word": "finds"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 35,
+      "word": "a"
+    },
+    {
+      "alignedWord": "tiny",
+      "case": "success",
+      "end": 2.52,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 37,
+      "word": "tiny"
+    },
+    {
+      "alignedWord": "plant",
+      "case": "success",
+      "end": 2.84,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.52,
+      "startOffset": 42,
+      "word": "plant"
+    },
+    {
+      "alignedWord": "growing",
+      "case": "success",
+      "end": 3.19,
+      "endOffset": 55,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.9899999999999998,
+      "startOffset": 48,
+      "word": "growing"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E09 - Gardening.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_10.json",
+  "episode_title": "Gardening",
+  "clipStart": 196,
+  "clipEnd": 201,
+  "partIndex": 2,
+  "clipIndex": 1
+}

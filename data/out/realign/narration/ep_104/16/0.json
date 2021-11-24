@@ -1,0 +1,178 @@
+{
+  "transcript": "George does not think it is funny.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.49,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 0.69,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.49,
+      "startOffset": 7,
+      "word": "does"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.69,
+      "startOffset": 12,
+      "word": "not"
+    },
+    {
+      "alignedWord": "think",
+      "case": "success",
+      "end": 1.3,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 16,
+      "word": "think"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.4000000000000001,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.3,
+      "startOffset": 22,
+      "word": "it"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.5599999999999998,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 25,
+      "word": "is"
+    },
+    {
+      "alignedWord": "funny",
+      "case": "success",
+      "end": 1.92,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 28,
+      "word": "funny"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E53 - Cold Winter Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_104.json",
+  "episode_title": "Cold Winter Day",
+  "clipStart": 194,
+  "clipEnd": 197,
+  "partIndex": 16,
+  "clipIndex": 0
+}

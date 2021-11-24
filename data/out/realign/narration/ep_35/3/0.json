@@ -1,0 +1,128 @@
+{
+  "transcript": "Mummy Pig, Peppa, and George",
+  "words": [
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 1.19,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 0,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 6,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.8900000000000001,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.34,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 11,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.92,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 18,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.2199999999999998,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 22,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E08 - Camping.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_35.json",
+  "episode_title": "Camping",
+  "clipStart": 217,
+  "clipEnd": 220,
+  "partIndex": 3,
+  "clipIndex": 0
+}

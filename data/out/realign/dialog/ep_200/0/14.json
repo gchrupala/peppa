@@ -1,0 +1,212 @@
+{
+  "transcript": "- And I've for pedalos. - They look nice and relaxing.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 2,
+      "word": "And"
+    },
+    {
+      "alignedWord": "i've",
+      "case": "success",
+      "end": 2.27,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 6,
+      "word": "I've"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 11,
+      "word": "for"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.36,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.75,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 15,
+      "word": "pedalos"
+    },
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 3.61,
+      "startOffset": 26,
+      "word": "They"
+    },
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 3.97,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.89,
+      "startOffset": 31,
+      "word": "look"
+    },
+    {
+      "alignedWord": "nice",
+      "case": "success",
+      "end": 4.27,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.0,
+      "startOffset": 36,
+      "word": "nice"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 4.369999999999999,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 4.27,
+      "startOffset": 41,
+      "word": "and"
+    },
+    {
+      "alignedWord": "relaxing",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 53,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        }
+      ],
+      "start": 4.37,
+      "startOffset": 45,
+      "word": "relaxing"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 40,
+  "clipEnd": 45,
+  "partIndex": 0,
+  "clipIndex": 14
+}

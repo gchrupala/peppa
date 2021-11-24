@@ -1,0 +1,178 @@
+{
+  "transcript": "- Let's see. A bit of this, one of those,",
+  "words": [
+    {
+      "alignedWord": "let's",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 2,
+      "word": "Let's"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.27,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 8,
+      "word": "see"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.5100000000000002,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.47,
+      "startOffset": 13,
+      "word": "A"
+    },
+    {
+      "alignedWord": "bit",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.51,
+      "startOffset": 15,
+      "word": "bit"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 2.9,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.71,
+      "startOffset": 19,
+      "word": "of"
+    },
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 3.17,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.9,
+      "startOffset": 22,
+      "word": "this"
+    },
+    {
+      "alignedWord": "one",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.61,
+      "startOffset": 28,
+      "word": "one"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 32,
+      "word": "of"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 40,
+      "startOffset": 35,
+      "word": "those"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 195,
+  "clipEnd": 199,
+  "partIndex": 3,
+  "clipIndex": 33
+}

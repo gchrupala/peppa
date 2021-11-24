@@ -1,0 +1,254 @@
+{
+  "transcript": "He's taking Danny Dog out for a day on the river.",
+  "words": [
+    {
+      "alignedWord": "he's",
+      "case": "success",
+      "end": 0.6,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.57,
+      "startOffset": 0,
+      "word": "He's"
+    },
+    {
+      "alignedWord": "taking",
+      "case": "success",
+      "end": 1.35,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.03,
+      "startOffset": 5,
+      "word": "taking"
+    },
+    {
+      "alignedWord": "danny",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 12,
+      "word": "Danny"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.89,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 18,
+      "word": "Dog"
+    },
+    {
+      "alignedWord": "out",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "aw_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 22,
+      "word": "out"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 2.1599999999999997,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.05,
+      "startOffset": 26,
+      "word": "for"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.24,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.16,
+      "startOffset": 30,
+      "word": "a"
+    },
+    {
+      "alignedWord": "day",
+      "case": "success",
+      "end": 2.4200000000000004,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.24,
+      "startOffset": 32,
+      "word": "day"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 36,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.53,
+      "startOffset": 39,
+      "word": "the"
+    },
+    {
+      "alignedWord": "river",
+      "case": "success",
+      "end": 2.9299999999999997,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 43,
+      "word": "river"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E50 - Grandpa Pig's Boat.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_48.json",
+  "episode_title": "Grandpa Pig's Boat",
+  "clipStart": 105,
+  "clipEnd": 109,
+  "partIndex": 2,
+  "clipIndex": 1
+}

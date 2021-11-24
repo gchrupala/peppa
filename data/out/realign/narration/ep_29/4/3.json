@@ -1,0 +1,124 @@
+{
+  "transcript": "This pancake is for Peppa.",
+  "words": [
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 0.31,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 0,
+      "word": "This"
+    },
+    {
+      "alignedWord": "pancake",
+      "case": "success",
+      "end": 0.76,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 5,
+      "word": "pancake"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.9,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 13,
+      "word": "is"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 0.96,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 16,
+      "word": "for"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.2,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.24,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 20,
+      "word": "Peppa"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E29 - Pancakes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_29.json",
+  "episode_title": "Pancakes",
+  "clipStart": 136,
+  "clipEnd": 140,
+  "partIndex": 4,
+  "clipIndex": 3
+}

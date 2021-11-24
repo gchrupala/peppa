@@ -1,0 +1,94 @@
+{
+  "transcript": "- Hello, Miss Rabbit.",
+  "words": [
+    {
+      "alignedWord": "hello",
+      "case": "success",
+      "end": 0.5900000000000001,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.55,
+      "startOffset": 2,
+      "word": "Hello"
+    },
+    {
+      "alignedWord": "miss",
+      "case": "success",
+      "end": 1.43,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 9,
+      "word": "Miss"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 14,
+      "word": "Rabbit"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 162,
+  "clipEnd": 165,
+  "partIndex": 7,
+  "clipIndex": 5
+}

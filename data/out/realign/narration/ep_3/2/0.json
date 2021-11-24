@@ -1,0 +1,132 @@
+{
+  "transcript": "George wants to play too.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.55,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "wants",
+      "case": "success",
+      "end": 1.3,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 7,
+      "word": "wants"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.4000000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.3,
+      "startOffset": 13,
+      "word": "to"
+    },
+    {
+      "alignedWord": "play",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 16,
+      "word": "play"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.3,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 21,
+      "word": "too"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E04 - Best Friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_3.json",
+  "episode_title": "Best Friend",
+  "clipStart": 63,
+  "clipEnd": 66,
+  "partIndex": 2,
+  "clipIndex": 0
+}

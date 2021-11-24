@@ -1,0 +1,107 @@
+{
+  "transcript": "How does that work, Daddy?",
+  "words": [
+    {
+      "alignedWord": "how",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 0,
+      "word": "How"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 2.19,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.13,
+      "startOffset": 4,
+      "word": "does"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 2.44,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.38,
+      "startOffset": 9,
+      "word": "that"
+    },
+    {
+      "alignedWord": "work",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.5,
+      "startOffset": 14,
+      "word": "work"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 20,
+      "word": "Daddy"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 81,
+  "clipEnd": 84,
+  "partIndex": 3,
+  "clipIndex": 5
+}

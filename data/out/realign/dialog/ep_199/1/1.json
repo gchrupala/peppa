@@ -1,0 +1,133 @@
+{
+  "transcript": "- But there's lots to do in the garden.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 3.6999999999999997,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.53,
+      "startOffset": 2,
+      "word": "But"
+    },
+    {
+      "alignedWord": "there's",
+      "case": "success",
+      "end": 3.74,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.7,
+      "startOffset": 6,
+      "word": "there's"
+    },
+    {
+      "alignedWord": "lots",
+      "case": "success",
+      "end": 3.7800000000000002,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.74,
+      "startOffset": 14,
+      "word": "lots"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 19,
+      "word": "to"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 24,
+      "startOffset": 22,
+      "word": "do"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 27,
+      "startOffset": 25,
+      "word": "in"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 31,
+      "startOffset": 28,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 38,
+      "startOffset": 32,
+      "word": "garden"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 24,
+  "clipEnd": 28,
+  "partIndex": 1,
+  "clipIndex": 1
+}

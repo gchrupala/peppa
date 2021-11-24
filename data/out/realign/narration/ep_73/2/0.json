@@ -1,0 +1,141 @@
+{
+  "transcript": "Rebecca Rabbit likes carrots.",
+  "words": [
+    {
+      "alignedWord": "rebecca",
+      "case": "success",
+      "end": 0.22999999999999998,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "Rebecca"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 0.5800000000000001,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.24,
+      "startOffset": 8,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "likes",
+      "case": "success",
+      "end": 0.95,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 15,
+      "word": "likes"
+    },
+    {
+      "alignedWord": "carrots",
+      "case": "success",
+      "end": 1.5299999999999998,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.24,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.95,
+      "startOffset": 21,
+      "word": "carrots"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E29 - Tiny Creatures.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_73.json",
+  "episode_title": "Tiny Creatures",
+  "clipStart": 174,
+  "clipEnd": 176,
+  "partIndex": 2,
+  "clipIndex": 0
+}

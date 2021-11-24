@@ -1,0 +1,97 @@
+{
+  "transcript": "What can it be?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 1.07,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 5,
+      "word": "can"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.6400000000000001,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 9,
+      "word": "it"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.29,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.68,
+      "startOffset": 12,
+      "word": "be"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E05 - Hide & Seek.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_5.json",
+  "episode_title": "Hide and Seek",
+  "clipStart": 147,
+  "clipEnd": 151,
+  "partIndex": 10,
+  "clipIndex": 1
+}

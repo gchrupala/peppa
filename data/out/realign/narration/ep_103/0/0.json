@@ -1,0 +1,97 @@
+{
+  "transcript": "It is night time.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.13,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "night",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 6,
+      "word": "night"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 12,
+      "word": "time"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E52 - Sleepover.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_103.json",
+  "episode_title": "Sleepover",
+  "clipStart": 19,
+  "clipEnd": 22,
+  "partIndex": 0,
+  "clipIndex": 0
+}

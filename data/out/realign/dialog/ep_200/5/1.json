@@ -1,0 +1,269 @@
+{
+  "transcript": "- How long will that take? - I don't know. It could be weeks.",
+  "words": [
+    {
+      "alignedWord": "how",
+      "case": "success",
+      "end": 3.21,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.33,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 2.77,
+      "startOffset": 2,
+      "word": "How"
+    },
+    {
+      "alignedWord": "long",
+      "case": "success",
+      "end": 3.4299999999999997,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 3.4,
+      "startOffset": 6,
+      "word": "long"
+    },
+    {
+      "alignedWord": "will",
+      "case": "success",
+      "end": 3.46,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.43,
+      "startOffset": 11,
+      "word": "will"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 3.4899999999999998,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.46,
+      "startOffset": 16,
+      "word": "that"
+    },
+    {
+      "alignedWord": "take",
+      "case": "success",
+      "end": 3.52,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.49,
+      "startOffset": 21,
+      "word": "take"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 3.63,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 3.53,
+      "startOffset": 29,
+      "word": "I"
+    },
+    {
+      "alignedWord": "don't",
+      "case": "success",
+      "end": 3.78,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.63,
+      "startOffset": 31,
+      "word": "don't"
+    },
+    {
+      "alignedWord": "know",
+      "case": "success",
+      "end": 4.24,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.42,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 37,
+      "word": "know"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 4.55,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 4.38,
+      "startOffset": 43,
+      "word": "It"
+    },
+    {
+      "alignedWord": "could",
+      "case": "success",
+      "end": 4.62,
+      "endOffset": 51,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 4.55,
+      "startOffset": 46,
+      "word": "could"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 4.64,
+      "endOffset": 54,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.62,
+      "startOffset": 52,
+      "word": "be"
+    },
+    {
+      "alignedWord": "weeks",
+      "case": "success",
+      "end": 4.68,
+      "endOffset": 60,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.64,
+      "startOffset": 55,
+      "word": "weeks"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 218,
+  "clipEnd": 223,
+  "partIndex": 5,
+  "clipIndex": 1
+}

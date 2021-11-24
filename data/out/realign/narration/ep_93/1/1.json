@@ -1,0 +1,195 @@
+{
+  "transcript": "Mr. Zebra the postman is delivering",
+  "words": [
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 0,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "zebra",
+      "case": "success",
+      "end": 1.8099999999999998,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "z_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 4,
+      "word": "Zebra"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.9300000000000002,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 10,
+      "word": "the"
+    },
+    {
+      "alignedWord": "postman",
+      "case": "success",
+      "end": 2.41,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 14,
+      "word": "postman"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.52,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.41,
+      "startOffset": 22,
+      "word": "is"
+    },
+    {
+      "alignedWord": "delivering",
+      "case": "success",
+      "end": 2.66,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.52,
+      "startOffset": 25,
+      "word": "delivering"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E21 - Pen Pal.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_93.json",
+  "episode_title": "Pen Pal",
+  "clipStart": 50,
+  "clipEnd": 53,
+  "partIndex": 1,
+  "clipIndex": 1
+}

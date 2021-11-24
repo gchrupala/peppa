@@ -1,0 +1,92 @@
+{
+  "transcript": "Peppa loves playing Catch.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.34,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 6,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 12,
+      "word": "playing"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 20,
+      "word": "Catch"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E14 - My Cousin Chloe.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_28.json",
+  "episode_title": "My Cousin Chlo?",
+  "clipStart": 78,
+  "clipEnd": 80,
+  "partIndex": 2,
+  "clipIndex": 0
+}

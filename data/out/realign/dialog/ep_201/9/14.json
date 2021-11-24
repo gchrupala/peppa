@@ -1,0 +1,86 @@
+{
+  "transcript": "- Look, a pothole.",
+  "words": [
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 2.51,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 2,
+      "word": "Look"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.57,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.56,
+      "startOffset": 8,
+      "word": "a"
+    },
+    {
+      "alignedWord": "pothole",
+      "case": "success",
+      "end": 2.79,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "hh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.57,
+      "startOffset": 10,
+      "word": "pothole"
+    }
+  ],
+  "speaker": "Mr Labrador",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 243,
+  "clipEnd": 246,
+  "partIndex": 9,
+  "clipIndex": 14
+}

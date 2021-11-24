@@ -1,0 +1,118 @@
+{
+  "transcript": "Everyone loves pancakes.",
+  "words": [
+    {
+      "alignedWord": "everyone",
+      "case": "success",
+      "end": 0.66,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.17,
+      "startOffset": 0,
+      "word": "Everyone"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 9,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "pancakes",
+      "case": "success",
+      "end": 1.73,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 15,
+      "word": "pancakes"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E29 - Pancakes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_29.json",
+  "episode_title": "Pancakes",
+  "clipStart": 39,
+  "clipEnd": 42,
+  "partIndex": 1,
+  "clipIndex": 0
+}

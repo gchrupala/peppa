@@ -1,0 +1,148 @@
+{
+  "transcript": " And George has the newspapers.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 1,
+      "word": "And"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 5,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 12,
+      "word": "has"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.44,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 16,
+      "word": "the"
+    },
+    {
+      "alignedWord": "newspapers",
+      "case": "success",
+      "end": 3.24,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 20,
+      "word": "newspapers"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E12 - Recycling.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_63.json",
+  "episode_title": "Recycling",
+  "clipStart": 154,
+  "clipEnd": 158,
+  "partIndex": 4,
+  "clipIndex": 2
+}

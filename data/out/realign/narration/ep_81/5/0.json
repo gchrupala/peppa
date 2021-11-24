@@ -1,0 +1,175 @@
+{
+  "transcript": "Mixing blue and yellow makes green.",
+  "words": [
+    {
+      "alignedWord": "mixing",
+      "case": "success",
+      "end": 0.48,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.42,
+      "startOffset": 0,
+      "word": "Mixing"
+    },
+    {
+      "alignedWord": "blue",
+      "case": "success",
+      "end": 0.51,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 0.48,
+      "startOffset": 7,
+      "word": "blue"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.56,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.51,
+      "startOffset": 12,
+      "word": "and"
+    },
+    {
+      "alignedWord": "yellow",
+      "case": "success",
+      "end": 0.6000000000000001,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 16,
+      "word": "yellow"
+    },
+    {
+      "alignedWord": "makes",
+      "case": "success",
+      "end": 0.95,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.61,
+      "startOffset": 23,
+      "word": "makes"
+    },
+    {
+      "alignedWord": "green",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 29,
+      "word": "green"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E37 - Painting.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_81.json",
+  "episode_title": "Painting",
+  "clipStart": 175,
+  "clipEnd": 179,
+  "partIndex": 5,
+  "clipIndex": 0
+}

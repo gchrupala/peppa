@@ -1,0 +1,92 @@
+{
+  "transcript": "- I've got sailing boats.",
+  "words": [
+    {
+      "alignedWord": "i've",
+      "case": "success",
+      "end": 2.1399999999999997,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 2,
+      "word": "I've"
+    },
+    {
+      "alignedWord": "got",
+      "case": "success",
+      "end": 2.4000000000000004,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.14,
+      "startOffset": 7,
+      "word": "got"
+    },
+    {
+      "alignedWord": "sailing",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.4,
+      "startOffset": 11,
+      "word": "sailing"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 24,
+      "startOffset": 19,
+      "word": "boats"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 35,
+  "clipEnd": 38,
+  "partIndex": 0,
+  "clipIndex": 12
+}

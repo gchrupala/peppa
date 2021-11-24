@@ -1,0 +1,108 @@
+{
+  "transcript": "grandpa's boat for the day.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.8500000000000001,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.78,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.07,
+      "startOffset": 0,
+      "word": "grandpa's"
+    },
+    {
+      "alignedWord": "boat",
+      "case": "success",
+      "end": 1.12,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.88,
+      "startOffset": 10,
+      "word": "boat"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 1.2400000000000002,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 15,
+      "word": "for"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.36,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 19,
+      "word": "the"
+    },
+    {
+      "alignedWord": "day",
+      "case": "success",
+      "end": 1.6800000000000002,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 23,
+      "word": "day"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E47 - Captian Daddy Pig.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_98.json",
+  "episode_title": "Captain Daddy Pig",
+  "clipStart": 21,
+  "clipEnd": 23,
+  "partIndex": 0,
+  "clipIndex": 1
+}

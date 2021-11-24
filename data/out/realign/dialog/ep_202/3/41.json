@@ -1,0 +1,55 @@
+{
+  "transcript": "Oh, bother.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 2.76,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 0,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "bother",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 4,
+      "word": "bother"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 219,
+  "clipEnd": 222,
+  "partIndex": 3,
+  "clipIndex": 41
+}

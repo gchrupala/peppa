@@ -1,0 +1,101 @@
+{
+  "transcript": "- Aye-aye, Captain Dad. ",
+  "words": [
+    {
+      "alignedWord": "aye",
+      "case": "success",
+      "end": 0.62,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 0.61,
+      "startOffset": 2,
+      "word": "Aye"
+    },
+    {
+      "alignedWord": "aye",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 6,
+      "word": "aye"
+    },
+    {
+      "alignedWord": "captain",
+      "case": "success",
+      "end": 2.86,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 11,
+      "word": "Captain"
+    },
+    {
+      "alignedWord": "dad",
+      "case": "success",
+      "end": 2.8899999999999997,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.86,
+      "startOffset": 19,
+      "word": "Dad"
+    }
+  ],
+  "speaker": "Danny",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 132,
+  "clipEnd": 136,
+  "partIndex": 3,
+  "clipIndex": 7
+}

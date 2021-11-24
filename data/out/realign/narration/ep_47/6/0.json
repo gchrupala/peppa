@@ -1,0 +1,117 @@
+{
+  "transcript": "The spider likes George.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.06,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "spider",
+      "case": "success",
+      "end": 1.4500000000000002,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 4,
+      "word": "spider"
+    },
+    {
+      "alignedWord": "likes",
+      "case": "success",
+      "end": 1.72,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 11,
+      "word": "likes"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.19,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 17,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E36 - Mister Skinnylegs.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_47.json",
+  "episode_title": "Mister Skinnylegs",
+  "clipStart": 108,
+  "clipEnd": 113,
+  "partIndex": 6,
+  "clipIndex": 0
+}

@@ -1,0 +1,251 @@
+{
+  "transcript": "The wind is strong enough to hold up Daddy Pig!",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.81,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "wind",
+      "case": "success",
+      "end": 1.4100000000000001,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 4,
+      "word": "wind"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "strong",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 12,
+      "word": "strong"
+    },
+    {
+      "alignedWord": "enough",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "f_E"
+        }
+      ],
+      "start": 1.96,
+      "startOffset": 19,
+      "word": "enough"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.3200000000000003,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.2,
+      "startOffset": 26,
+      "word": "to"
+    },
+    {
+      "alignedWord": "hold",
+      "case": "success",
+      "end": 2.5999999999999996,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.32,
+      "startOffset": 29,
+      "word": "hold"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 2.74,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.6,
+      "startOffset": 34,
+      "word": "up"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 3.23,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.94,
+      "startOffset": 37,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 3.5,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_E"
+        }
+      ],
+      "start": 3.28,
+      "startOffset": 43,
+      "word": "Pig"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E08 - Windy Autumn Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_60.json",
+  "episode_title": "Windy Autumn Day",
+  "clipStart": 217,
+  "clipEnd": 221,
+  "partIndex": 9,
+  "clipIndex": 0
+}

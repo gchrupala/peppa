@@ -1,0 +1,243 @@
+{
+  "transcript": "The bus has arrived at the foot of the mountains.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.1800000000000002,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "bus",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 4,
+      "word": "bus"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.65,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 8,
+      "word": "has"
+    },
+    {
+      "alignedWord": "arrived",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "er_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 12,
+      "word": "arrived"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 20,
+      "word": "at"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 23,
+      "word": "the"
+    },
+    {
+      "alignedWord": "foot",
+      "case": "success",
+      "end": 2.76,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.53,
+      "startOffset": 27,
+      "word": "foot"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 2.7899999999999996,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 32,
+      "word": "of"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.96,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.85,
+      "startOffset": 35,
+      "word": "the"
+    },
+    {
+      "alignedWord": "mountains",
+      "case": "success",
+      "end": 3.55,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.96,
+      "startOffset": 39,
+      "word": "mountains"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E22 - School Bus Trip.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_90.json",
+  "episode_title": "School Bus Trip",
+  "clipStart": 131,
+  "clipEnd": 136,
+  "partIndex": 3,
+  "clipIndex": 0
+}

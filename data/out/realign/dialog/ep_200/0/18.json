@@ -1,0 +1,170 @@
+{
+  "transcript": "...it's time to bring the boat back.",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 1.91,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 3,
+      "word": "it's"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.91,
+      "startOffset": 8,
+      "word": "time"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.4,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 13,
+      "word": "to"
+    },
+    {
+      "alignedWord": "bring",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 16,
+      "word": "bring"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.65,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 22,
+      "word": "the"
+    },
+    {
+      "alignedWord": "boat",
+      "case": "success",
+      "end": 2.6799999999999997,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 26,
+      "word": "boat"
+    },
+    {
+      "alignedWord": "back",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.68,
+      "startOffset": 31,
+      "word": "back"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 53,
+  "clipEnd": 56,
+  "partIndex": 0,
+  "clipIndex": 18
+}

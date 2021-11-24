@@ -1,0 +1,186 @@
+{
+  "transcript": "You have to paddle a canoe. That's hard work.",
+  "words": [
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 0,
+      "word": "You"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 4,
+      "word": "have"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.97,
+      "startOffset": 9,
+      "word": "to"
+    },
+    {
+      "alignedWord": "paddle",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.21,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 12,
+      "word": "paddle"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.6999999999999997,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 19,
+      "word": "a"
+    },
+    {
+      "alignedWord": "canoe",
+      "case": "success",
+      "end": 3.2600000000000002,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.32,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 21,
+      "word": "canoe"
+    },
+    {
+      "alignedWord": "that's",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.44,
+      "startOffset": 28,
+      "word": "That's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 39,
+      "startOffset": 35,
+      "word": "hard"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 44,
+      "startOffset": 40,
+      "word": "work"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 32,
+  "clipEnd": 36,
+  "partIndex": 0,
+  "clipIndex": 11
+}

@@ -1,0 +1,106 @@
+{
+  "transcript": "George likes splashing.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.66,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "likes",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 7,
+      "word": "likes"
+    },
+    {
+      "alignedWord": "splashing",
+      "case": "success",
+      "end": 1.61,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "sh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 13,
+      "word": "splashing"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E34 - Bedtime.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_66.json",
+  "episode_title": "Bedtime",
+  "clipStart": 140,
+  "clipEnd": 144,
+  "partIndex": 4,
+  "clipIndex": 2
+}

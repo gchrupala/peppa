@@ -1,0 +1,227 @@
+{
+  "transcript": "Granddad Dog is towing Peppa's car back to his garage.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.2,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.5,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.7,
+      "startOffset": 0,
+      "word": "Granddad"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 9,
+      "word": "Dog"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.65,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 13,
+      "word": "is"
+    },
+    {
+      "alignedWord": "towing",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 16,
+      "word": "towing"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.4499999999999997,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.13,
+      "startOffset": 23,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "car",
+      "case": "success",
+      "end": 2.9299999999999997,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.53,
+      "startOffset": 31,
+      "word": "car"
+    },
+    {
+      "alignedWord": "back",
+      "case": "success",
+      "end": 3.16,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.96,
+      "startOffset": 35,
+      "word": "back"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.33,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 3.21,
+      "startOffset": 40,
+      "word": "to"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 3.5500000000000003,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.33,
+      "startOffset": 43,
+      "word": "his"
+    },
+    {
+      "alignedWord": "garage",
+      "case": "success",
+      "end": 4.04,
+      "endOffset": 53,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "zh_E"
+        }
+      ],
+      "start": 3.55,
+      "startOffset": 47,
+      "word": "garage"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E26 - Granddad Dogs Garage.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_69.json",
+  "episode_title": "Granddad Dog's Garage",
+  "clipStart": 115,
+  "clipEnd": 120,
+  "partIndex": 5,
+  "clipIndex": 0
+}

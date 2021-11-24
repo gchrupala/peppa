@@ -1,0 +1,178 @@
+{
+  "transcript": "She has her own letters to deliver.",
+  "words": [
+    {
+      "alignedWord": "she",
+      "case": "success",
+      "end": 0.6799999999999999,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.41,
+      "startOffset": 0,
+      "word": "She"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 4,
+      "word": "has"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 8,
+      "word": "her"
+    },
+    {
+      "alignedWord": "own",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 12,
+      "word": "own"
+    },
+    {
+      "alignedWord": "letters",
+      "case": "success",
+      "end": 1.87,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 16,
+      "word": "letters"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 24,
+      "word": "to"
+    },
+    {
+      "alignedWord": "deliver",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 27,
+      "word": "deliver"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E19 - Zoe Zebra the Postmans Daughter.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_80.json",
+  "episode_title": "Zoe Zebra the Postman's Daughter",
+  "clipStart": 32,
+  "clipEnd": 35,
+  "partIndex": 1,
+  "clipIndex": 1
+}

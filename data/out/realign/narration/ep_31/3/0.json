@@ -1,0 +1,90 @@
+{
+  "transcript": "Peppa loves dancing.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.2400000000000002,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 6,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "dancing",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 12,
+      "word": "dancing"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E24 - Ballet Lessons.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_31.json",
+  "episode_title": "Ballet Lesson",
+  "clipStart": 158,
+  "clipEnd": 161,
+  "partIndex": 3,
+  "clipIndex": 0
+}

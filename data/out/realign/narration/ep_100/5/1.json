@@ -1,0 +1,174 @@
+{
+  "transcript": "but George feels a bit left out.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 0,
+      "word": "but"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.34,
+      "startOffset": 4,
+      "word": "George"
+    },
+    {
+      "alignedWord": "feels",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 11,
+      "word": "feels"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.2199999999999998,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 17,
+      "word": "a"
+    },
+    {
+      "alignedWord": "bit",
+      "case": "success",
+      "end": 2.37,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.22,
+      "startOffset": 19,
+      "word": "bit"
+    },
+    {
+      "alignedWord": "left",
+      "case": "success",
+      "end": 2.7600000000000002,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 23,
+      "word": "left"
+    },
+    {
+      "alignedWord": "out",
+      "case": "success",
+      "end": 2.92,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "aw_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 28,
+      "word": "out"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E49 - Bouncy Ball.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_100.json",
+  "episode_title": "Bouncy Ball",
+  "clipStart": 78,
+  "clipEnd": 82,
+  "partIndex": 5,
+  "clipIndex": 1
+}

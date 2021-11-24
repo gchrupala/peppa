@@ -1,0 +1,231 @@
+{
+  "transcript": "So Peppa and George have to have sun cream on.",
+  "words": [
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 0,
+      "word": "So"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.29,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 3,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 9,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.9300000000000002,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.57,
+      "startOffset": 13,
+      "word": "George"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 20,
+      "word": "have"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 25,
+      "word": "to"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 2.41,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.21,
+      "startOffset": 28,
+      "word": "have"
+    },
+    {
+      "alignedWord": "sun",
+      "case": "success",
+      "end": 2.6500000000000004,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.41,
+      "startOffset": 33,
+      "word": "sun"
+    },
+    {
+      "alignedWord": "cream",
+      "case": "success",
+      "end": 2.9000000000000004,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.66,
+      "startOffset": 37,
+      "word": "cream"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 3.11,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.9,
+      "startOffset": 43,
+      "word": "on"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E48 - At the Beach.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_46.json",
+  "episode_title": "At the Beach",
+  "clipStart": 51,
+  "clipEnd": 55,
+  "partIndex": 1,
+  "clipIndex": 1
+}

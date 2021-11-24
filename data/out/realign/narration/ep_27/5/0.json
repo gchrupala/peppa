@@ -1,0 +1,198 @@
+{
+  "transcript": "George is waving at Granny and Grandpa.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.5700000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.23,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.71,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.57,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "waving",
+      "case": "success",
+      "end": 1.18,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 10,
+      "word": "waving"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 17,
+      "word": "at"
+    },
+    {
+      "alignedWord": "granny",
+      "case": "success",
+      "end": 1.7200000000000002,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.34,
+      "startOffset": 20,
+      "word": "Granny"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.85,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 27,
+      "word": "and"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 31,
+      "word": "Grandpa"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E28 - Windy castle.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_27.json",
+  "episode_title": "Windy Castle",
+  "clipStart": 256,
+  "clipEnd": 259,
+  "partIndex": 5,
+  "clipIndex": 0
+}

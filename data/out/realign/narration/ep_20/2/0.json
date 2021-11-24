@@ -1,0 +1,209 @@
+{
+  "transcript": "What is Daddy Pig doing with the balloons?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.61,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.9400000000000002,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 8,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 14,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "doing",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 18,
+      "word": "doing"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "th_E"
+        }
+      ],
+      "start": 2.53,
+      "startOffset": 24,
+      "word": "with"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.8600000000000003,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.64,
+      "startOffset": 29,
+      "word": "the"
+    },
+    {
+      "alignedWord": "balloons",
+      "case": "success",
+      "end": 4.75,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 4.48,
+      "startOffset": 33,
+      "word": "balloons"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E20 - The School Fete.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_20.json",
+  "episode_title": "The School Fete",
+  "clipStart": 247,
+  "clipEnd": 252,
+  "partIndex": 2,
+  "clipIndex": 0
+}

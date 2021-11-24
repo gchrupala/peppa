@@ -1,0 +1,143 @@
+{
+  "transcript": "- We're going to win the race! ",
+  "words": [
+    {
+      "alignedWord": "we're",
+      "case": "success",
+      "end": 4.0,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.98,
+      "startOffset": 2,
+      "word": "We're"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 4.04,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.0,
+      "startOffset": 8,
+      "word": "going"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 4.06,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 4.04,
+      "startOffset": 14,
+      "word": "to"
+    },
+    {
+      "alignedWord": "win",
+      "case": "success",
+      "end": 4.09,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.06,
+      "startOffset": 17,
+      "word": "win"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 4.32,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 4.3,
+      "startOffset": 21,
+      "word": "the"
+    },
+    {
+      "alignedWord": "race",
+      "case": "success",
+      "end": 4.3999999999999995,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.32,
+      "startOffset": 25,
+      "word": "race"
+    }
+  ],
+  "speaker": "Edmond",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 244,
+  "clipEnd": 249,
+  "partIndex": 7,
+  "clipIndex": 1
+}

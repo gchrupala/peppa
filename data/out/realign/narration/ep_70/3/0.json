@@ -1,0 +1,178 @@
+{
+  "transcript": "Daddy Pig has walked into a tree.",
+  "words": [
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.12,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 0,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.4000000000000001,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 6,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.4,
+      "startOffset": 10,
+      "word": "has"
+    },
+    {
+      "alignedWord": "walked",
+      "case": "success",
+      "end": 1.87,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 14,
+      "word": "walked"
+    },
+    {
+      "alignedWord": "into",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 21,
+      "word": "into"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 26,
+      "word": "a"
+    },
+    {
+      "alignedWord": "tree",
+      "case": "success",
+      "end": 2.7199999999999998,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.32,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.13,
+      "startOffset": 28,
+      "word": "tree"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E27 - Foggy Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_70.json",
+  "episode_title": "Foggy Day",
+  "clipStart": 99,
+  "clipEnd": 103,
+  "partIndex": 3,
+  "clipIndex": 0
+}

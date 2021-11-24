@@ -1,0 +1,148 @@
+{
+  "transcript": "together to light the campfire.",
+  "words": [
+    {
+      "alignedWord": "together",
+      "case": "success",
+      "end": 1.33,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 0,
+      "word": "together"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.5699999999999998,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 9,
+      "word": "to"
+    },
+    {
+      "alignedWord": "light",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 12,
+      "word": "light"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 18,
+      "word": "the"
+    },
+    {
+      "alignedWord": "campfire",
+      "case": "success",
+      "end": 2.56,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 22,
+      "word": "campfire"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E08 - Camping.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_35.json",
+  "episode_title": "Camping",
+  "clipStart": 124,
+  "clipEnd": 127,
+  "partIndex": 2,
+  "clipIndex": 1
+}

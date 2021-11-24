@@ -1,0 +1,210 @@
+{
+  "transcript": "Peppa has got a carrot to make the snowman's nose.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.4,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.2,
+      "startOffset": 6,
+      "word": "has"
+    },
+    {
+      "alignedWord": "got",
+      "case": "success",
+      "end": 0.56,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.4,
+      "startOffset": 10,
+      "word": "got"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.6300000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ey_S"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 14,
+      "word": "a"
+    },
+    {
+      "alignedWord": "carrot",
+      "case": "success",
+      "end": 1.1099999999999999,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 16,
+      "word": "carrot"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 23,
+      "word": "to"
+    },
+    {
+      "alignedWord": "make",
+      "case": "success",
+      "end": 2.4200000000000004,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.2,
+      "startOffset": 26,
+      "word": "make"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.55,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 31,
+      "word": "the"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.2,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.6,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.6,
+      "startOffset": 35,
+      "word": "snowman's"
+    },
+    {
+      "alignedWord": "nose",
+      "case": "success",
+      "end": 3.69,
+      "endOffset": 49,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.21,
+      "startOffset": 45,
+      "word": "nose"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E12 - Snow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_26.json",
+  "episode_title": "Snow",
+  "clipStart": 195,
+  "clipEnd": 200,
+  "partIndex": 10,
+  "clipIndex": 0
+}

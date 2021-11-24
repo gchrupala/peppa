@@ -1,0 +1,108 @@
+{
+  "transcript": "- It will take as long as it takes!",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 4.71,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_E"
+        }
+      ],
+      "start": 4.55,
+      "startOffset": 2,
+      "word": "It"
+    },
+    {
+      "alignedWord": "will",
+      "case": "success",
+      "end": 4.7700000000000005,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 4.74,
+      "startOffset": 5,
+      "word": "will"
+    },
+    {
+      "alignedWord": "take",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 4.77,
+      "startOffset": 10,
+      "word": "take"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 17,
+      "startOffset": 15,
+      "word": "as"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 22,
+      "startOffset": 18,
+      "word": "long"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 23,
+      "word": "as"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 26,
+      "word": "it"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 29,
+      "word": "takes"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 46,
+  "clipEnd": 51,
+  "partIndex": 3,
+  "clipIndex": 2
+}

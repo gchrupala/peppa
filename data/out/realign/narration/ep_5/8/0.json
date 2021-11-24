@@ -1,0 +1,128 @@
+{
+  "transcript": "Peppa isn't under the bed.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.77,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.33,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "isn't",
+      "case": "success",
+      "end": 1.1199999999999999,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 6,
+      "word": "isn't"
+    },
+    {
+      "alignedWord": "under",
+      "case": "success",
+      "end": 1.34,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 12,
+      "word": "under"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.4300000000000002,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.34,
+      "startOffset": 18,
+      "word": "the"
+    },
+    {
+      "alignedWord": "bed",
+      "case": "success",
+      "end": 1.8199999999999998,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 22,
+      "word": "bed"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E05 - Hide & Seek.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_5.json",
+  "episode_title": "Hide and Seek",
+  "clipStart": 128,
+  "clipEnd": 132,
+  "partIndex": 8,
+  "clipIndex": 0
+}

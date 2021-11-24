@@ -1,0 +1,236 @@
+{
+  "transcript": "- Roll up, roll up! See my amazing wobbly mirrors!",
+  "words": [
+    {
+      "alignedWord": "roll",
+      "case": "success",
+      "end": 1.6400000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.27,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 2,
+      "word": "Roll"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 2.25,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.16,
+      "startOffset": 7,
+      "word": "up"
+    },
+    {
+      "alignedWord": "roll",
+      "case": "success",
+      "end": 2.44,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.28,
+      "startOffset": 11,
+      "word": "roll"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 3.11,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_E"
+        }
+      ],
+      "start": 3.01,
+      "startOffset": 16,
+      "word": "up"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 3.6300000000000003,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.41,
+      "startOffset": 20,
+      "word": "See"
+    },
+    {
+      "alignedWord": "my",
+      "case": "success",
+      "end": 3.85,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 3.63,
+      "startOffset": 24,
+      "word": "my"
+    },
+    {
+      "alignedWord": "amazing",
+      "case": "success",
+      "end": 4.54,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 3.85,
+      "startOffset": 27,
+      "word": "amazing"
+    },
+    {
+      "alignedWord": "wobbly",
+      "case": "success",
+      "end": 4.6,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.54,
+      "startOffset": 35,
+      "word": "wobbly"
+    },
+    {
+      "alignedWord": "mirrors",
+      "case": "success",
+      "end": 4.6499999999999995,
+      "endOffset": 49,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 4.6,
+      "startOffset": 42,
+      "word": "mirrors"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 183,
+  "clipEnd": 188,
+  "partIndex": 7,
+  "clipIndex": 0
+}

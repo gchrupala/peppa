@@ -1,0 +1,132 @@
+{
+  "transcript": "The ducks want more food.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.7,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.68,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "ducks",
+      "case": "success",
+      "end": 1.8599999999999999,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 4,
+      "word": "ducks"
+    },
+    {
+      "alignedWord": "want",
+      "case": "success",
+      "end": 2.28,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.07,
+      "startOffset": 10,
+      "word": "want"
+    },
+    {
+      "alignedWord": "more",
+      "case": "success",
+      "end": 2.4099999999999997,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 15,
+      "word": "more"
+    },
+    {
+      "alignedWord": "food",
+      "case": "success",
+      "end": 3.0,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.5999999999999996,
+      "startOffset": 20,
+      "word": "food"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E17 - Picnic.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_15.json",
+  "episode_title": "Picnic",
+  "clipStart": 151,
+  "clipEnd": 155,
+  "partIndex": 2,
+  "clipIndex": 0
+}

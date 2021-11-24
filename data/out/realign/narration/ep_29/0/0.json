@@ -1,0 +1,143 @@
+{
+  "transcript": "It is tea time and Mummy",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.4,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.54,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.4,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "tea",
+      "case": "success",
+      "end": 0.78,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 6,
+      "word": "tea"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 1.1600000000000001,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "m_E"
+        }
+      ],
+      "start": 0.78,
+      "startOffset": 10,
+      "word": "time"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.4600000000000002,
+      "startOffset": 15,
+      "word": "and"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 1.7600000000000002,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.6600000000000001,
+      "startOffset": 19,
+      "word": "Mummy"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E29 - Pancakes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_29.json",
+  "episode_title": "Pancakes",
+  "clipStart": 24,
+  "clipEnd": 26,
+  "partIndex": 0,
+  "clipIndex": 0
+}

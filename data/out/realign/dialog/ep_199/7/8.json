@@ -1,0 +1,97 @@
+{
+  "transcript": "- And me! - And me!",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.48,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.45,
+      "startOffset": 2,
+      "word": "And"
+    },
+    {
+      "alignedWord": "me",
+      "case": "success",
+      "end": 0.5,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.48,
+      "startOffset": 6,
+      "word": "me"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.92,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 12,
+      "word": "And"
+    },
+    {
+      "alignedWord": "me",
+      "case": "success",
+      "end": 0.94,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.9199999999999999,
+      "startOffset": 16,
+      "word": "me"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 241,
+  "clipEnd": 244,
+  "partIndex": 7,
+  "clipIndex": 8
+}

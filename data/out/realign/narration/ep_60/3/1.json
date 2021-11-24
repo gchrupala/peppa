@@ -1,0 +1,155 @@
+{
+  "transcript": "colder and the leaves change colour.",
+  "words": [
+    {
+      "alignedWord": "colder",
+      "case": "success",
+      "end": 0.78,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 0,
+      "word": "colder"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.1800000000000002,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 7,
+      "word": "and"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.3199999999999998,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 11,
+      "word": "the"
+    },
+    {
+      "alignedWord": "leaves",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 15,
+      "word": "leaves"
+    },
+    {
+      "alignedWord": "change",
+      "case": "success",
+      "end": 2.0,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 22,
+      "word": "change"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.0399999999999996,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 29,
+      "word": "colour"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E08 - Windy Autumn Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_60.json",
+  "episode_title": "Windy Autumn Day",
+  "clipStart": 65,
+  "clipEnd": 68,
+  "partIndex": 3,
+  "clipIndex": 1
+}

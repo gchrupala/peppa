@@ -1,0 +1,225 @@
+{
+  "transcript": "Here is Rebecca Rabbit with her little brother,",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.02,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "rebecca",
+      "case": "success",
+      "end": 1.5499999999999998,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 8,
+      "word": "Rebecca"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.57,
+      "startOffset": 16,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 2.5,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "th_E"
+        }
+      ],
+      "start": 2.31,
+      "startOffset": 23,
+      "word": "with"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 2.6,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.5,
+      "startOffset": 28,
+      "word": "her"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 2.85,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.6,
+      "startOffset": 32,
+      "word": "little"
+    },
+    {
+      "alignedWord": "brother",
+      "case": "success",
+      "end": 3.23,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.85,
+      "startOffset": 39,
+      "word": "brother"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E28 - Swimming.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_72.json",
+  "episode_title": "Swimming",
+  "clipStart": 98,
+  "clipEnd": 102,
+  "partIndex": 3,
+  "clipIndex": 0
+}

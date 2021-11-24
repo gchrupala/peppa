@@ -1,0 +1,301 @@
+{
+  "transcript": "The snowman looks very happy, but maybe he is a bit cold.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.74,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "snowman",
+      "case": "success",
+      "end": 1.24,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.74,
+      "startOffset": 4,
+      "word": "snowman"
+    },
+    {
+      "alignedWord": "looks",
+      "case": "success",
+      "end": 1.51,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 12,
+      "word": "looks"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 1.84,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 18,
+      "word": "very"
+    },
+    {
+      "alignedWord": "happy",
+      "case": "success",
+      "end": 2.25,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.84,
+      "startOffset": 23,
+      "word": "happy"
+    },
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 3.18,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.99,
+      "startOffset": 30,
+      "word": "but"
+    },
+    {
+      "alignedWord": "maybe",
+      "case": "success",
+      "end": 3.74,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.21,
+      "startOffset": 34,
+      "word": "maybe"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 3.95,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.77,
+      "startOffset": 40,
+      "word": "he"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 4.07,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.95,
+      "startOffset": 43,
+      "word": "is"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 4.13,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 4.07,
+      "startOffset": 46,
+      "word": "a"
+    },
+    {
+      "alignedWord": "bit",
+      "case": "success",
+      "end": 4.4399999999999995,
+      "endOffset": 51,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_E"
+        }
+      ],
+      "start": 4.13,
+      "startOffset": 48,
+      "word": "bit"
+    },
+    {
+      "alignedWord": "cold",
+      "case": "success",
+      "end": 4.95,
+      "endOffset": 56,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "d_E"
+        }
+      ],
+      "start": 4.44,
+      "startOffset": 52,
+      "word": "cold"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E12 - Snow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_26.json",
+  "episode_title": "Snow",
+  "clipStart": 200,
+  "clipEnd": 206,
+  "partIndex": 11,
+  "clipIndex": 0
+}

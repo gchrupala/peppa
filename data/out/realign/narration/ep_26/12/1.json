@@ -1,0 +1,182 @@
+{
+  "transcript": "to keep the snowman nice and warm.",
+  "words": [
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.01,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 0,
+      "word": "to"
+    },
+    {
+      "alignedWord": "keep",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.01,
+      "startOffset": 3,
+      "word": "keep"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.35,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 8,
+      "word": "the"
+    },
+    {
+      "alignedWord": "snowman",
+      "case": "success",
+      "end": 1.92,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 12,
+      "word": "snowman"
+    },
+    {
+      "alignedWord": "nice",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.07,
+      "startOffset": 20,
+      "word": "nice"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 3.59,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.51,
+      "startOffset": 25,
+      "word": "and"
+    },
+    {
+      "alignedWord": "warm",
+      "case": "success",
+      "end": 3.63,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.59,
+      "startOffset": 29,
+      "word": "warm"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E12 - Snow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_26.json",
+  "episode_title": "Snow",
+  "clipStart": 215,
+  "clipEnd": 219,
+  "partIndex": 12,
+  "clipIndex": 1
+}

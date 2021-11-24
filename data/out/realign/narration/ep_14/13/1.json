@@ -1,0 +1,144 @@
+{
+  "transcript": "Everyone is covered in mud.",
+  "words": [
+    {
+      "alignedWord": "everyone",
+      "case": "success",
+      "end": 0.22000000000000003,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.14,
+      "startOffset": 0,
+      "word": "Everyone"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.36,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.22,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "covered",
+      "case": "success",
+      "end": 0.71,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.4,
+      "startOffset": 12,
+      "word": "covered"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 0.85,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 20,
+      "word": "in"
+    },
+    {
+      "alignedWord": "mud",
+      "case": "success",
+      "end": 1.2,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 23,
+      "word": "mud"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E13 - Flying a Kite.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_14.json",
+  "episode_title": "Flying a Kite",
+  "clipStart": 228,
+  "clipEnd": 230,
+  "partIndex": 13,
+  "clipIndex": 1
+}

@@ -1,0 +1,139 @@
+{
+  "transcript": "to splash around in a pedalo.",
+  "words": [
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 0,
+      "word": "to"
+    },
+    {
+      "alignedWord": "splash",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.26,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "sh_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 3,
+      "word": "splash"
+    },
+    {
+      "alignedWord": "around",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "er_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.2,
+      "startOffset": 10,
+      "word": "around"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.89,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 17,
+      "word": "in"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 3.04,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.89,
+      "startOffset": 20,
+      "word": "a"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.73,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.38,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 3.35,
+      "startOffset": 22,
+      "word": "pedalo"
+    }
+  ],
+  "speaker": "Captain Dog",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 117,
+  "clipEnd": 121,
+  "partIndex": 3,
+  "clipIndex": 3
+}

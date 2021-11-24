@@ -1,0 +1,116 @@
+{
+  "transcript": "- Oooh! How does that work?",
+  "words": [
+    {
+      "alignedWord": "oooh",
+      "case": "success",
+      "end": 1.88,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "uw_S"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 2,
+      "word": "Oooh"
+    },
+    {
+      "alignedWord": "how",
+      "case": "success",
+      "end": 2.93,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 2.91,
+      "startOffset": 8,
+      "word": "How"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 2.96,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.93,
+      "startOffset": 12,
+      "word": "does"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 2.9899999999999998,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.96,
+      "startOffset": 17,
+      "word": "that"
+    },
+    {
+      "alignedWord": "work",
+      "case": "success",
+      "end": 3.02,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.99,
+      "startOffset": 22,
+      "word": "work"
+    }
+  ],
+  "speaker": "Suzy",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 113,
+  "clipEnd": 117,
+  "partIndex": 4,
+  "clipIndex": 5
+}

@@ -1,0 +1,86 @@
+{
+  "transcript": "Lunch is ready.",
+  "words": [
+    {
+      "alignedWord": "lunch",
+      "case": "success",
+      "end": 1.18,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 0,
+      "word": "Lunch"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.3299999999999998,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 6,
+      "word": "is"
+    },
+    {
+      "alignedWord": "ready",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 9,
+      "word": "ready"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E33 - Traffic Jam.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_65.json",
+  "episode_title": "Traffic Jam",
+  "clipStart": 197,
+  "clipEnd": 200,
+  "partIndex": 6,
+  "clipIndex": 0
+}

@@ -1,0 +1,108 @@
+{
+  "transcript": "\u266a Bing bong bingly bongly boo \u266a\u266a",
+  "words": [
+    {
+      "alignedWord": "bing",
+      "case": "success",
+      "end": 0.7,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 2,
+      "word": "Bing"
+    },
+    {
+      "alignedWord": "bong",
+      "case": "success",
+      "end": 1.1099999999999999,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.25,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.7,
+      "startOffset": 7,
+      "word": "bong"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.28,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.68,
+      "startOffset": 12,
+      "word": "bingly"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.48,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.14,
+      "startOffset": 19,
+      "word": "bongly"
+    },
+    {
+      "alignedWord": "boo",
+      "case": "success",
+      "end": 2.64,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 26,
+      "word": "boo"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 228,
+  "clipEnd": 231,
+  "partIndex": 6,
+  "clipIndex": 1
+}

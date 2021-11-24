@@ -1,0 +1,74 @@
+{
+  "transcript": "- Look at me! ",
+  "words": [
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 1.07,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 2,
+      "word": "Look"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 7,
+      "word": "at"
+    },
+    {
+      "alignedWord": "me",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 10,
+      "word": "me"
+    }
+  ],
+  "speaker": "Danny",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 220,
+  "clipEnd": 223,
+  "partIndex": 8,
+  "clipIndex": 9
+}

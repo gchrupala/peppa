@@ -1,0 +1,73 @@
+{
+  "transcript": "sit in a garden chair,",
+  "words": [
+    {
+      "alignedWord": "sit",
+      "case": "success",
+      "end": 2.7800000000000002,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 0,
+      "word": "sit"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 4,
+      "word": "in"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 8,
+      "startOffset": 7,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 15,
+      "startOffset": 9,
+      "word": "garden"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 21,
+      "startOffset": 16,
+      "word": "chair"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 30,
+  "clipEnd": 33,
+  "partIndex": 1,
+  "clipIndex": 3
+}

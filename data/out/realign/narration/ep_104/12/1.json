@@ -1,0 +1,128 @@
+{
+  "transcript": "Peppa has caught a snowflake.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.87,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 6,
+      "word": "has"
+    },
+    {
+      "alignedWord": "caught",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 10,
+      "word": "caught"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.6500000000000001,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.57,
+      "startOffset": 17,
+      "word": "a"
+    },
+    {
+      "alignedWord": "snowflake",
+      "case": "success",
+      "end": 2.26,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 19,
+      "word": "snowflake"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E53 - Cold Winter Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_104.json",
+  "episode_title": "Cold Winter Day",
+  "clipStart": 144,
+  "clipEnd": 147,
+  "partIndex": 12,
+  "clipIndex": 1
+}

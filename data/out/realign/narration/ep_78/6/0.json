@@ -1,0 +1,102 @@
+{
+  "transcript": "The family have arrived at the museum.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.2800000000000002,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "family",
+      "case": "success",
+      "end": 2.6999999999999997,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.28,
+      "startOffset": 4,
+      "word": "family"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 2.8000000000000003,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "sil"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 11,
+      "word": "have"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 16,
+      "word": "arrived"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 24,
+      "word": "at"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 30,
+      "startOffset": 27,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 37,
+      "startOffset": 31,
+      "word": "museum"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E31 - George's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_78.json",
+  "episode_title": "George's Birthday",
+  "clipStart": 144,
+  "clipEnd": 147,
+  "partIndex": 6,
+  "clipIndex": 0
+}

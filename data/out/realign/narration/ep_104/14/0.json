@@ -1,0 +1,163 @@
+{
+  "transcript": "Peppa's friends are tobogganing on the big hill.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 7,
+      "startOffset": 0,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 0.5,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.33,
+      "startOffset": 8,
+      "word": "friends"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 0.52,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.5,
+      "startOffset": 16,
+      "word": "are"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 31,
+      "startOffset": 20,
+      "word": "tobogganing"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 0.89,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 32,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.23,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 35,
+      "word": "the"
+    },
+    {
+      "alignedWord": "big",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 39,
+      "word": "big"
+    },
+    {
+      "alignedWord": "hill",
+      "case": "success",
+      "end": 2.47,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 43,
+      "word": "hill"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E53 - Cold Winter Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_104.json",
+  "episode_title": "Cold Winter Day",
+  "clipStart": 176,
+  "clipEnd": 180,
+  "partIndex": 14,
+  "clipIndex": 0
+}

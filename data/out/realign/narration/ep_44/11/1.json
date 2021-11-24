@@ -1,0 +1,173 @@
+{
+  "transcript": "It is a bit too high for George.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.31,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.43,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.5,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.43,
+      "startOffset": 6,
+      "word": "a"
+    },
+    {
+      "alignedWord": "bit",
+      "case": "success",
+      "end": 0.73,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.5,
+      "startOffset": 8,
+      "word": "bit"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 1.1300000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 0.8,
+      "startOffset": 12,
+      "word": "too"
+    },
+    {
+      "alignedWord": "high",
+      "case": "success",
+      "end": 1.4899999999999998,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.23,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 16,
+      "word": "high"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 21,
+      "word": "for"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.1100000000000003,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 25,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E44 - The Playground.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_44.json",
+  "episode_title": "The Playground",
+  "clipStart": 216,
+  "clipEnd": 219,
+  "partIndex": 11,
+  "clipIndex": 1
+}

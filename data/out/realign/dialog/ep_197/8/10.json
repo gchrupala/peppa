@@ -1,0 +1,109 @@
+{
+  "transcript": "I've gone all squishy!",
+  "words": [
+    {
+      "alignedWord": "i've",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 0,
+      "word": "I've"
+    },
+    {
+      "alignedWord": "gone",
+      "case": "success",
+      "end": 1.95,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 5,
+      "word": "gone"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 2.27,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.25,
+      "startOffset": 10,
+      "word": "all"
+    },
+    {
+      "alignedWord": "squishy",
+      "case": "success",
+      "end": 2.4299999999999997,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "sh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.27,
+      "startOffset": 14,
+      "word": "squishy"
+    }
+  ],
+  "speaker": "Danny",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 222,
+  "clipEnd": 225,
+  "partIndex": 8,
+  "clipIndex": 10
+}

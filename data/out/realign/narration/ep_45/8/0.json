@@ -1,0 +1,204 @@
+{
+  "transcript": "But look at all the mess they have made.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 1.0899999999999999,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 4,
+      "word": "look"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 1.6300000000000001,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 9,
+      "word": "at"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 1.93,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 12,
+      "word": "all"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 16,
+      "word": "the"
+    },
+    {
+      "alignedWord": "mess",
+      "case": "success",
+      "end": 2.5599999999999996,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 20,
+      "word": "mess"
+    },
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.56,
+      "startOffset": 25,
+      "word": "they"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 2.91,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.72,
+      "startOffset": 30,
+      "word": "have"
+    },
+    {
+      "alignedWord": "made",
+      "case": "success",
+      "end": 3.27,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.91,
+      "startOffset": 35,
+      "word": "made"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E47 - Daddy Puts up a Picture.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_45.json",
+  "episode_title": "Daddy Puts up a Picture",
+  "clipStart": 210,
+  "clipEnd": 214,
+  "partIndex": 8,
+  "clipIndex": 0
+}

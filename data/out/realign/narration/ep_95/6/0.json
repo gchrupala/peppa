@@ -1,0 +1,112 @@
+{
+  "transcript": "George is on the seesaw",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.88,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.88,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 10,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.2200000000000002,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 13,
+      "word": "the"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.31,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 17,
+      "word": "seesaw"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E44 - The Quarrel.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_95.json",
+  "episode_title": "The Quarrel",
+  "clipStart": 151,
+  "clipEnd": 153,
+  "partIndex": 6,
+  "clipIndex": 0
+}

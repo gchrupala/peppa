@@ -1,0 +1,71 @@
+{
+  "transcript": ": Whew! - Well done, Peppa.",
+  "words": [
+    {
+      "alignedWord": "whew",
+      "case": "success",
+      "end": 2.89,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.72,
+      "startOffset": 2,
+      "word": "Whew"
+    },
+    {
+      "alignedWord": "well",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.67,
+      "startOffset": 10,
+      "word": "Well"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 19,
+      "startOffset": 15,
+      "word": "done"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 21,
+      "word": "Peppa"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 231,
+  "clipEnd": 235,
+  "partIndex": 9,
+  "clipIndex": 10
+}

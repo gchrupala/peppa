@@ -1,0 +1,281 @@
+{
+  "transcript": "Peppa is putting her tooth under the pillow for the tooth fairy.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.88,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 6,
+      "word": "is"
+    },
+    {
+      "alignedWord": "putting",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 9,
+      "word": "putting"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 2.28,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 17,
+      "word": "her"
+    },
+    {
+      "alignedWord": "tooth",
+      "case": "success",
+      "end": 2.59,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "th_E"
+        }
+      ],
+      "start": 2.31,
+      "startOffset": 21,
+      "word": "tooth"
+    },
+    {
+      "alignedWord": "under",
+      "case": "success",
+      "end": 2.92,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 27,
+      "word": "under"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.02,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.92,
+      "startOffset": 33,
+      "word": "the"
+    },
+    {
+      "alignedWord": "pillow",
+      "case": "success",
+      "end": 3.39,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.02,
+      "startOffset": 37,
+      "word": "pillow"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 3.83,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.67,
+      "startOffset": 44,
+      "word": "for"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.93,
+      "endOffset": 51,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.83,
+      "startOffset": 48,
+      "word": "the"
+    },
+    {
+      "alignedWord": "tooth",
+      "case": "success",
+      "end": 4.18,
+      "endOffset": 57,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "th_E"
+        }
+      ],
+      "start": 3.93,
+      "startOffset": 52,
+      "word": "tooth"
+    },
+    {
+      "alignedWord": "fairy",
+      "case": "success",
+      "end": 4.62,
+      "endOffset": 63,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.18,
+      "startOffset": 58,
+      "word": "fairy"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E25 - The Tooth Fairy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_22.json",
+  "episode_title": "The Tooth Fairy",
+  "clipStart": 138,
+  "clipEnd": 143,
+  "partIndex": 2,
+  "clipIndex": 1
+}

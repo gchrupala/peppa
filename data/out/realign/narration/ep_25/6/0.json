@@ -1,0 +1,254 @@
+{
+  "transcript": "Dr. Brown Bear is here to see if Peppa is better.",
+  "words": [
+    {
+      "alignedWord": "dr",
+      "case": "success",
+      "end": 0.68,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.4,
+      "startOffset": 0,
+      "word": "Dr"
+    },
+    {
+      "alignedWord": "brown",
+      "case": "success",
+      "end": 0.9600000000000001,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 4,
+      "word": "Brown"
+    },
+    {
+      "alignedWord": "bear",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 10,
+      "word": "Bear"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.2999999999999998,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 15,
+      "word": "is"
+    },
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.3,
+      "startOffset": 18,
+      "word": "here"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.8800000000000001,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 23,
+      "word": "to"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 26,
+      "word": "see"
+    },
+    {
+      "alignedWord": "if",
+      "case": "success",
+      "end": 2.1999999999999997,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "f_E"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 30,
+      "word": "if"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.56,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.31,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.25,
+      "startOffset": 33,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.56,
+      "startOffset": 39,
+      "word": "is"
+    },
+    {
+      "alignedWord": "better",
+      "case": "success",
+      "end": 3.02,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 42,
+      "word": "better"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E27 - Not Very Well.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_25.json",
+  "episode_title": "Not Very Well",
+  "clipStart": 231,
+  "clipEnd": 235,
+  "partIndex": 6,
+  "clipIndex": 0
+}

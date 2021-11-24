@@ -1,0 +1,115 @@
+{
+  "transcript": "- Right. Next stop: the museum.",
+  "words": [
+    {
+      "alignedWord": "right",
+      "case": "success",
+      "end": 3.21,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.31,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.88,
+      "startOffset": 2,
+      "word": "Right"
+    },
+    {
+      "alignedWord": "next",
+      "case": "success",
+      "end": 3.71,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.32,
+      "startOffset": 9,
+      "word": "Next"
+    },
+    {
+      "alignedWord": "stop",
+      "case": "success",
+      "end": 3.7800000000000002,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 3.74,
+      "startOffset": 14,
+      "word": "stop"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 4.43,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 4.25,
+      "startOffset": 20,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 30,
+      "startOffset": 24,
+      "word": "museum"
+    }
+  ],
+  "speaker": "Madame Gazelle",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 133,
+  "clipEnd": 138,
+  "partIndex": 4,
+  "clipIndex": 6
+}

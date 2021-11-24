@@ -1,0 +1,148 @@
+{
+  "transcript": "the ducks want pretend cake.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.65,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.51,
+      "startOffset": 0,
+      "word": "the"
+    },
+    {
+      "alignedWord": "ducks",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 4,
+      "word": "ducks"
+    },
+    {
+      "alignedWord": "want",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 10,
+      "word": "want"
+    },
+    {
+      "alignedWord": "pretend",
+      "case": "success",
+      "end": 1.8399999999999999,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 15,
+      "word": "pretend"
+    },
+    {
+      "alignedWord": "cake",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 23,
+      "word": "cake"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E02 - Teddys day out.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_56.json",
+  "episode_title": "Teddy's Day Out",
+  "clipStart": 175,
+  "clipEnd": 178,
+  "partIndex": 5,
+  "clipIndex": 1
+}

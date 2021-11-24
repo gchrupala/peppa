@@ -1,0 +1,69 @@
+{
+  "transcript": "- Okay, let's go.",
+  "words": [
+    {
+      "alignedWord": "okay",
+      "case": "success",
+      "end": 2.37,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.26,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.23,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 2,
+      "word": "Okay"
+    },
+    {
+      "alignedWord": "let's",
+      "case": "success",
+      "end": 2.7800000000000002,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.74,
+      "startOffset": 8,
+      "word": "let's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 16,
+      "startOffset": 14,
+      "word": "go"
+    }
+  ],
+  "speaker": "Madame Gazelle",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 54,
+  "clipEnd": 57,
+  "partIndex": 3,
+  "clipIndex": 1
+}

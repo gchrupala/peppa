@@ -1,0 +1,190 @@
+{
+  "transcript": "Suzy has made up a pretend friend.",
+  "words": [
+    {
+      "alignedWord": "suzy",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 0,
+      "word": "Suzy"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 5,
+      "word": "has"
+    },
+    {
+      "alignedWord": "made",
+      "case": "success",
+      "end": 1.9300000000000002,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 9,
+      "word": "made"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 2.16,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 14,
+      "word": "up"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.32,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 17,
+      "word": "a"
+    },
+    {
+      "alignedWord": "pretend",
+      "case": "success",
+      "end": 2.9699999999999998,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.32,
+      "startOffset": 19,
+      "word": "pretend"
+    },
+    {
+      "alignedWord": "friend",
+      "case": "success",
+      "end": 3.52,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.98,
+      "startOffset": 27,
+      "word": "friend"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E16 - Pretend Friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_89.json",
+  "episode_title": "Pretend Friend",
+  "clipStart": 36,
+  "clipEnd": 40,
+  "partIndex": 1,
+  "clipIndex": 0
+}

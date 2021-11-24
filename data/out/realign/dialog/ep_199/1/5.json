@@ -1,0 +1,148 @@
+{
+  "transcript": "- But those are things for a daddy to do!",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 2.5799999999999996,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.55,
+      "startOffset": 2,
+      "word": "But"
+    },
+    {
+      "alignedWord": "those",
+      "case": "success",
+      "end": 3.21,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.11,
+      "startOffset": 6,
+      "word": "those"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 3.36,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.21,
+      "startOffset": 12,
+      "word": "are"
+    },
+    {
+      "alignedWord": "things",
+      "case": "success",
+      "end": 3.78,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.42,
+      "startOffset": 16,
+      "word": "things"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 23,
+      "word": "for"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 27,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 29,
+      "word": "daddy"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 37,
+      "startOffset": 35,
+      "word": "to"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 40,
+      "startOffset": 38,
+      "word": "do"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 35,
+  "clipEnd": 39,
+  "partIndex": 1,
+  "clipIndex": 5
+}

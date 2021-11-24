@@ -1,0 +1,73 @@
+{
+  "transcript": "George likes cookies.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "likes",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 7,
+      "word": "likes"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 13,
+      "word": "cookies"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E39 The Baby Piggy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_83.json",
+  "episode_title": "The Baby Piggy",
+  "clipStart": 219,
+  "clipEnd": 222,
+  "partIndex": 12,
+  "clipIndex": 0
+}

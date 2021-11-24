@@ -1,0 +1,46 @@
+{
+  "transcript": "Pink, pink!",
+  "words": [
+    {
+      "alignedWord": "pink",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 0,
+      "word": "Pink"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 10,
+      "startOffset": 6,
+      "word": "pink"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E18 - The Dentist.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_87.json",
+  "episode_title": "The Dentist",
+  "clipStart": 255,
+  "clipEnd": 257,
+  "partIndex": 9,
+  "clipIndex": 1
+}

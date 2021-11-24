@@ -1,0 +1,49 @@
+{
+  "transcript": "Daddy, we're looking for shiny things",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Daddy"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 12,
+      "startOffset": 7,
+      "word": "we're"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 13,
+      "word": "looking"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 24,
+      "startOffset": 21,
+      "word": "for"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 30,
+      "startOffset": 25,
+      "word": "shiny"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 37,
+      "startOffset": 31,
+      "word": "things"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 52,
+  "clipEnd": 57,
+  "partIndex": 2,
+  "clipIndex": 7
+}

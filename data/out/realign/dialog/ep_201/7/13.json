@@ -1,0 +1,74 @@
+{
+  "transcript": "- Of course, Peppa. ",
+  "words": [
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 3.0700000000000003,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.87,
+      "startOffset": 2,
+      "word": "Of"
+    },
+    {
+      "alignedWord": "course",
+      "case": "success",
+      "end": 3.52,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.07,
+      "startOffset": 5,
+      "word": "course"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.74,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.22,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 3.52,
+      "startOffset": 13,
+      "word": "Peppa"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 182,
+  "clipEnd": 186,
+  "partIndex": 7,
+  "clipIndex": 13
+}

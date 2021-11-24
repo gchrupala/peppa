@@ -1,0 +1,120 @@
+{
+  "transcript": "It's time to go home.",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 0.31,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 0.6799999999999999,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 5,
+      "word": "time"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 10,
+      "word": "to"
+    },
+    {
+      "alignedWord": "go",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 13,
+      "word": "go"
+    },
+    {
+      "alignedWord": "home",
+      "case": "success",
+      "end": 1.2,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 16,
+      "word": "home"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E11 - The Boat Pond.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_64.json",
+  "episode_title": "The Boat Pond",
+  "clipStart": 270,
+  "clipEnd": 272,
+  "partIndex": 21,
+  "clipIndex": 0
+}

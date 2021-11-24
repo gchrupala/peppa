@@ -1,0 +1,132 @@
+{
+  "transcript": "-Peppa has found the picnic.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.8999999999999999,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.33,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.57,
+      "startOffset": 1,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "found",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 11,
+      "word": "found"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.6300000000000001,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 17,
+      "word": "the"
+    },
+    {
+      "alignedWord": "picnic",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 21,
+      "word": "picnic"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E47 - Captian Daddy Pig.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_98.json",
+  "episode_title": "Captain Daddy Pig",
+  "clipStart": 131,
+  "clipEnd": 134,
+  "partIndex": 4,
+  "clipIndex": 0
+}

@@ -1,0 +1,187 @@
+{
+  "transcript": "Dr. Elephant uses a little mirror",
+  "words": [
+    {
+      "alignedWord": "dr",
+      "case": "success",
+      "end": 1.06,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.7,
+      "startOffset": 0,
+      "word": "Dr"
+    },
+    {
+      "alignedWord": "elephant",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 4,
+      "word": "Elephant"
+    },
+    {
+      "alignedWord": "uses",
+      "case": "success",
+      "end": 2.0,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 13,
+      "word": "uses"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 18,
+      "word": "a"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.09,
+      "startOffset": 20,
+      "word": "little"
+    },
+    {
+      "alignedWord": "mirror",
+      "case": "success",
+      "end": 2.6599999999999997,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.32,
+      "startOffset": 27,
+      "word": "mirror"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E18 - The Dentist.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_87.json",
+  "episode_title": "The Dentist",
+  "clipStart": 115,
+  "clipEnd": 118,
+  "partIndex": 3,
+  "clipIndex": 0
+}

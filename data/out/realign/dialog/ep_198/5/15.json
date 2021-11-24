@@ -1,0 +1,59 @@
+{
+  "transcript": "- Oh, Pedro!",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 2.2199999999999998,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 2.73,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.64,
+      "startOffset": 6,
+      "word": "Pedro"
+    }
+  ],
+  "speaker": "Madame Gazelle",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 206,
+  "clipEnd": 209,
+  "partIndex": 5,
+  "clipIndex": 15
+}

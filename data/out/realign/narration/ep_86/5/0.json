@@ -1,0 +1,175 @@
+{
+  "transcript": "George has never ice skated before,",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.08,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.04,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.11,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.08,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "never",
+      "case": "success",
+      "end": 0.15,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.11,
+      "startOffset": 11,
+      "word": "never"
+    },
+    {
+      "alignedWord": "ice",
+      "case": "success",
+      "end": 0.32999999999999996,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 17,
+      "word": "ice"
+    },
+    {
+      "alignedWord": "skated",
+      "case": "success",
+      "end": 0.6799999999999999,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.33,
+      "startOffset": 21,
+      "word": "skated"
+    },
+    {
+      "alignedWord": "before",
+      "case": "success",
+      "end": 1.1300000000000001,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 28,
+      "word": "before"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E42 - Ice Skating.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_86.json",
+  "episode_title": "Ice Skating",
+  "clipStart": 124,
+  "clipEnd": 126,
+  "partIndex": 5,
+  "clipIndex": 0
+}

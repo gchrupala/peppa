@@ -1,0 +1,80 @@
+{
+  "transcript": "Peppa plays the drum.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.6500000000000001,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.29,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "plays",
+      "case": "success",
+      "end": 1.69,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 6,
+      "word": "plays"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 12,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 16,
+      "word": "drum"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E21 - Musical Instruments.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_16.json",
+  "episode_title": "Musical Instruments",
+  "clipStart": 234,
+  "clipEnd": 236,
+  "partIndex": 12,
+  "clipIndex": 0
+}

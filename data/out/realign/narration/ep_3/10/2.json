@@ -1,0 +1,144 @@
+{
+  "transcript": " Peppa listens to George's chest.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.79,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.54,
+      "startOffset": 1,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "listens",
+      "case": "success",
+      "end": 3.17,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.8,
+      "startOffset": 7,
+      "word": "listens"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.3200000000000003,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 3.18,
+      "startOffset": 15,
+      "word": "to"
+    },
+    {
+      "alignedWord": "george's",
+      "case": "success",
+      "end": 3.75,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.32,
+      "startOffset": 18,
+      "word": "George's"
+    },
+    {
+      "alignedWord": "chest",
+      "case": "success",
+      "end": 4.24,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.77,
+      "startOffset": 27,
+      "word": "chest"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E04 - Best Friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_3.json",
+  "episode_title": "Best Friend",
+  "clipStart": 179,
+  "clipEnd": 185,
+  "partIndex": 10,
+  "clipIndex": 2
+}

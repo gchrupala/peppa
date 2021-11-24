@@ -1,0 +1,143 @@
+{
+  "transcript": "are going out for the evening.",
+  "words": [
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.69,
+      "startOffset": 0,
+      "word": "are"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 4,
+      "word": "going"
+    },
+    {
+      "alignedWord": "out",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "aw_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 10,
+      "word": "out"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 2.39,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 14,
+      "word": "for"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.5300000000000002,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.39,
+      "startOffset": 18,
+      "word": "the"
+    },
+    {
+      "alignedWord": "evening",
+      "case": "success",
+      "end": 2.7199999999999998,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "iy_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.53,
+      "startOffset": 22,
+      "word": "evening"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E22 - Babysitting.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_30.json",
+  "episode_title": "Babysitting",
+  "clipStart": 25,
+  "clipEnd": 28,
+  "partIndex": 0,
+  "clipIndex": 1
+}

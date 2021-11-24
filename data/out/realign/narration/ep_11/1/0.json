@@ -1,0 +1,171 @@
+{
+  "transcript": "George drank his juice too quickly.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.6199999999999999,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "drank",
+      "case": "success",
+      "end": 1.89,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 7,
+      "word": "drank"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 13,
+      "word": "his"
+    },
+    {
+      "alignedWord": "juice",
+      "case": "success",
+      "end": 2.3600000000000003,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 17,
+      "word": "juice"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 23,
+      "word": "too"
+    },
+    {
+      "alignedWord": "quickly",
+      "case": "success",
+      "end": 2.8000000000000003,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 27,
+      "word": "quickly"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E16 - Hiccups.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_11.json",
+  "episode_title": "Hiccups",
+  "clipStart": 60,
+  "clipEnd": 63,
+  "partIndex": 1,
+  "clipIndex": 0
+}

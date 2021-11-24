@@ -1,0 +1,113 @@
+{
+  "transcript": "The little fish, Teddy,",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.87,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 4,
+      "word": "little"
+    },
+    {
+      "alignedWord": "fish",
+      "case": "success",
+      "end": 1.6500000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.28,
+          "phone": "sh_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 11,
+      "word": "fish"
+    },
+    {
+      "alignedWord": "teddy",
+      "case": "success",
+      "end": 2.5199999999999996,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.05,
+      "startOffset": 17,
+      "word": "Teddy"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E06 - Mysteries.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_57.json",
+  "episode_title": "Mysteries",
+  "clipStart": 159,
+  "clipEnd": 162,
+  "partIndex": 6,
+  "clipIndex": 0
+}

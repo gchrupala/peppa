@@ -1,0 +1,151 @@
+{
+  "transcript": "The pegs hold the tent up.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.58,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.47,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "pegs",
+      "case": "success",
+      "end": 0.95,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 4,
+      "word": "pegs"
+    },
+    {
+      "alignedWord": "hold",
+      "case": "success",
+      "end": 1.3499999999999999,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 9,
+      "word": "hold"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 14,
+      "word": "the"
+    },
+    {
+      "alignedWord": "tent",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 18,
+      "word": "tent"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 2.0700000000000003,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.86,
+      "startOffset": 23,
+      "word": "up"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E08 - Camping.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_35.json",
+  "episode_title": "Camping",
+  "clipStart": 57,
+  "clipEnd": 61,
+  "partIndex": 1,
+  "clipIndex": 0
+}

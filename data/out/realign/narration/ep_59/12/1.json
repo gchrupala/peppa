@@ -1,0 +1,148 @@
+{
+  "transcript": "for Grandpa Pig's flower seeds.",
+  "words": [
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 0.52,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.41,
+      "startOffset": 0,
+      "word": "for"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 1.01,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 4,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig's",
+      "case": "success",
+      "end": 1.34,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 12,
+      "word": "Pig's"
+    },
+    {
+      "alignedWord": "flower",
+      "case": "success",
+      "end": 1.6300000000000001,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.34,
+      "startOffset": 18,
+      "word": "flower"
+    },
+    {
+      "alignedWord": "seeds",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 25,
+      "word": "seeds"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E10 - Mr Scarecrow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_59.json",
+  "episode_title": "Mr. Scarecrow",
+  "clipStart": 218,
+  "clipEnd": 220,
+  "partIndex": 12,
+  "clipIndex": 1
+}

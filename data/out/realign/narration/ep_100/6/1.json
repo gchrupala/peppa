@@ -1,0 +1,277 @@
+{
+  "transcript": "He has to collect the ball when it is hit too far.",
+  "words": [
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 0.36,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.14,
+      "startOffset": 0,
+      "word": "He"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.56,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.36,
+      "startOffset": 3,
+      "word": "has"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 0.67,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 7,
+      "word": "to"
+    },
+    {
+      "alignedWord": "collect",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 10,
+      "word": "collect"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.13,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.01,
+      "startOffset": 18,
+      "word": "the"
+    },
+    {
+      "alignedWord": "ball",
+      "case": "success",
+      "end": 1.5399999999999998,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.28,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 22,
+      "word": "ball"
+    },
+    {
+      "alignedWord": "when",
+      "case": "success",
+      "end": 1.93,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 27,
+      "word": "when"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 32,
+      "word": "it"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.17,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 35,
+      "word": "is"
+    },
+    {
+      "alignedWord": "hit",
+      "case": "success",
+      "end": 2.4,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 38,
+      "word": "hit"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 2.7,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 42,
+      "word": "too"
+    },
+    {
+      "alignedWord": "far",
+      "case": "success",
+      "end": 3.1500000000000004,
+      "endOffset": 49,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 46,
+      "word": "far"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E49 - Bouncy Ball.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_100.json",
+  "episode_title": "Bouncy Ball",
+  "clipStart": 102,
+  "clipEnd": 106,
+  "partIndex": 6,
+  "clipIndex": 1
+}

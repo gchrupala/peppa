@@ -1,0 +1,126 @@
+{
+  "transcript": "They are all wearing their boots.",
+  "words": [
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 1.31,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 0,
+      "word": "They"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.32,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 5,
+      "word": "are"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 9,
+      "word": "all"
+    },
+    {
+      "alignedWord": "wearing",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 13,
+      "word": "wearing"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 21,
+      "word": "their"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 27,
+      "word": "boots"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E16 - Pretend Friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_89.json",
+  "episode_title": "Pretend Friend",
+  "clipStart": 250,
+  "clipEnd": 252,
+  "partIndex": 10,
+  "clipIndex": 1
+}

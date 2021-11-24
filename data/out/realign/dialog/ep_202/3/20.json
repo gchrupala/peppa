@@ -1,0 +1,105 @@
+{
+  "transcript": "- That's more like it.",
+  "words": [
+    {
+      "alignedWord": "that's",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 2,
+      "word": "That's"
+    },
+    {
+      "alignedWord": "more",
+      "case": "success",
+      "end": 1.6199999999999999,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 9,
+      "word": "more"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 14,
+      "word": "like"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 2.35,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.04,
+      "startOffset": 19,
+      "word": "it"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 156,
+  "clipEnd": 159,
+  "partIndex": 3,
+  "clipIndex": 20
+}

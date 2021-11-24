@@ -1,0 +1,178 @@
+{
+  "transcript": "What is Mummy Pig planning to do?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.47,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.9099999999999999,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.22,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 8,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.49,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 14,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "planning",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 18,
+      "word": "planning"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 27,
+      "word": "to"
+    },
+    {
+      "alignedWord": "do",
+      "case": "success",
+      "end": 2.5100000000000002,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.36,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.06,
+      "startOffset": 30,
+      "word": "do"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E29 - Pancakes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_29.json",
+  "episode_title": "Pancakes",
+  "clipStart": 226,
+  "clipEnd": 230,
+  "partIndex": 7,
+  "clipIndex": 0
+}

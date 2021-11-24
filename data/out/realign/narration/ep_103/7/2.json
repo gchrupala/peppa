@@ -1,0 +1,170 @@
+{
+  "transcript": "-Zoe's baby twin sister's Zuzu and Zaza",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.76,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.43,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.33,
+      "startOffset": 1,
+      "word": "Zoe's"
+    },
+    {
+      "alignedWord": "baby",
+      "case": "success",
+      "end": 1.14,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 7,
+      "word": "baby"
+    },
+    {
+      "alignedWord": "twin",
+      "case": "success",
+      "end": 1.38,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.2,
+      "startOffset": 12,
+      "word": "twin"
+    },
+    {
+      "alignedWord": "sister's",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 17,
+      "word": "sister's"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.42,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 26,
+      "word": "Zuzu"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.76,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.59,
+      "startOffset": 31,
+      "word": "and"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.2399999999999998,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.48,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 35,
+      "word": "Zaza"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E52 - Sleepover.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_103.json",
+  "episode_title": "Sleepover",
+  "clipStart": 91,
+  "clipEnd": 95,
+  "partIndex": 7,
+  "clipIndex": 2
+}

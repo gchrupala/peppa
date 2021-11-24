@@ -1,0 +1,128 @@
+{
+  "transcript": "waiting for their check up.",
+  "words": [
+    {
+      "alignedWord": "waiting",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.72,
+      "startOffset": 0,
+      "word": "waiting"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 8,
+      "word": "for"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 1.45,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 12,
+      "word": "their"
+    },
+    {
+      "alignedWord": "check",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 18,
+      "word": "check"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 2.0,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 24,
+      "word": "up"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E18 - The Dentist.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_87.json",
+  "episode_title": "The Dentist",
+  "clipStart": 63,
+  "clipEnd": 67,
+  "partIndex": 2,
+  "clipIndex": 1
+}

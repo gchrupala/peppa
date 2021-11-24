@@ -1,0 +1,101 @@
+{
+  "transcript": "What a funny face.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 1.2,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.2,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "funny",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 7,
+      "word": "funny"
+    },
+    {
+      "alignedWord": "face",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 13,
+      "word": "face"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E49 - Cleaning the Car.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_33.json",
+  "episode_title": "Cleaning the Car",
+  "clipStart": 222,
+  "clipEnd": 225,
+  "partIndex": 10,
+  "clipIndex": 0
+}

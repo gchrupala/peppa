@@ -1,0 +1,140 @@
+{
+  "transcript": "Nobody can go under that.",
+  "words": [
+    {
+      "alignedWord": "nobody",
+      "case": "success",
+      "end": 1.11,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 0,
+      "word": "Nobody"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 1.2400000000000002,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 7,
+      "word": "can"
+    },
+    {
+      "alignedWord": "go",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 11,
+      "word": "go"
+    },
+    {
+      "alignedWord": "under",
+      "case": "success",
+      "end": 3.74,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.7,
+      "startOffset": 14,
+      "word": "under"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.74,
+      "startOffset": 20,
+      "word": "that"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 260,
+  "clipEnd": 264,
+  "partIndex": 7,
+  "clipIndex": 15
+}

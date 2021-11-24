@@ -1,0 +1,152 @@
+{
+  "transcript": "racing to Daddy Pig's pumpkin.",
+  "words": [
+    {
+      "alignedWord": "racing",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.6,
+      "startOffset": 0,
+      "word": "racing"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 7,
+      "word": "to"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 10,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig's",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 16,
+      "word": "Pig's"
+    },
+    {
+      "alignedWord": "pumpkin",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 22,
+      "word": "pumpkin"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E10 - Bicycles.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_12.json",
+  "episode_title": "Bicycles",
+  "clipStart": 79,
+  "clipEnd": 82,
+  "partIndex": 3,
+  "clipIndex": 1
+}

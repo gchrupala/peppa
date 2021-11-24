@@ -1,0 +1,160 @@
+{
+  "transcript": "enjoying playing with Polly Parrot.",
+  "words": [
+    {
+      "alignedWord": "enjoying",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "oy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 0,
+      "word": "enjoying"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 9,
+      "word": "playing"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "th_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 17,
+      "word": "with"
+    },
+    {
+      "alignedWord": "polly",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 22,
+      "word": "Polly"
+    },
+    {
+      "alignedWord": "parrot",
+      "case": "success",
+      "end": 2.4699999999999998,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.19,
+      "startOffset": 28,
+      "word": "Parrot"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E03 - Polly Parrot.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_4.json",
+  "episode_title": "Polly Parrot",
+  "clipStart": 176,
+  "clipEnd": 179,
+  "partIndex": 4,
+  "clipIndex": 1
+}

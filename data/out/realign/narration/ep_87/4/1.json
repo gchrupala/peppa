@@ -1,0 +1,151 @@
+{
+  "transcript": "when your mouth is wide open.",
+  "words": [
+    {
+      "alignedWord": "when",
+      "case": "success",
+      "end": 0.75,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 0,
+      "word": "when"
+    },
+    {
+      "alignedWord": "your",
+      "case": "success",
+      "end": 0.9,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 5,
+      "word": "your"
+    },
+    {
+      "alignedWord": "mouth",
+      "case": "success",
+      "end": 1.24,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "th_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 10,
+      "word": "mouth"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.37,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 16,
+      "word": "is"
+    },
+    {
+      "alignedWord": "wide",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 19,
+      "word": "wide"
+    },
+    {
+      "alignedWord": "open",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 24,
+      "word": "open"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E18 - The Dentist.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_87.json",
+  "episode_title": "The Dentist",
+  "clipStart": 126,
+  "clipEnd": 129,
+  "partIndex": 4,
+  "clipIndex": 1
+}

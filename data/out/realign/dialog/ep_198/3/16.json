@@ -1,0 +1,132 @@
+{
+  "transcript": "Nothing can stop us now.",
+  "words": [
+    {
+      "alignedWord": "nothing",
+      "case": "success",
+      "end": 2.5100000000000002,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 0,
+      "word": "Nothing"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 2.76,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.52,
+      "startOffset": 8,
+      "word": "can"
+    },
+    {
+      "alignedWord": "stop",
+      "case": "success",
+      "end": 3.16,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.85,
+      "startOffset": 12,
+      "word": "stop"
+    },
+    {
+      "alignedWord": "us",
+      "case": "success",
+      "end": 3.2800000000000002,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.16,
+      "startOffset": 17,
+      "word": "us"
+    },
+    {
+      "alignedWord": "now",
+      "case": "success",
+      "end": 3.6399999999999997,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.21,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 3.32,
+      "startOffset": 20,
+      "word": "now"
+    }
+  ],
+  "speaker": "Madame Gazelle",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 106,
+  "clipEnd": 110,
+  "partIndex": 3,
+  "clipIndex": 16
+}

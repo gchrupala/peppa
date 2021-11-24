@@ -1,0 +1,129 @@
+{
+  "transcript": "Mr. Zebra, the postman,",
+  "words": [
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 0.9,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.55,
+      "startOffset": 0,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "zebra",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "z_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 4,
+      "word": "Zebra"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.34,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 11,
+      "word": "the"
+    },
+    {
+      "alignedWord": "postman",
+      "case": "success",
+      "end": 1.6700000000000002,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.34,
+      "startOffset": 15,
+      "word": "postman"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E19 - Zoe Zebra the Postmans Daughter.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_80.json",
+  "episode_title": "Zoe Zebra the Postman's Daughter",
+  "clipStart": 22,
+  "clipEnd": 24,
+  "partIndex": 0,
+  "clipIndex": 0
+}

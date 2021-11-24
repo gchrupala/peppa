@@ -1,0 +1,140 @@
+{
+  "transcript": "George has found Pedro's glasses.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.44999999999999996,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.1,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.64,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.45,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "found",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.64,
+      "startOffset": 11,
+      "word": "found"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.5299999999999998,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.39,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 17,
+      "word": "Pedro's"
+    },
+    {
+      "alignedWord": "glasses",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.9699999999999998,
+      "startOffset": 25,
+      "word": "glasses"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E25 - The Eye Test.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_68.json",
+  "episode_title": "The Eye Test",
+  "clipStart": 46,
+  "clipEnd": 49,
+  "partIndex": 1,
+  "clipIndex": 1
+}

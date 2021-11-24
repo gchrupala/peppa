@@ -1,0 +1,139 @@
+{
+  "transcript": "Peppa and Mommy Pig are home.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.44,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.25,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.55,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "mommy",
+      "case": "success",
+      "end": 0.86,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 10,
+      "word": "Mommy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 16,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.32,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 20,
+      "word": "are"
+    },
+    {
+      "alignedWord": "home",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 24,
+      "word": "home"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E24 - Ballet Lessons.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_31.json",
+  "episode_title": "Ballet Lesson",
+  "clipStart": 196,
+  "clipEnd": 198,
+  "partIndex": 4,
+  "clipIndex": 0
+}

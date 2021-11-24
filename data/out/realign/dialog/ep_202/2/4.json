@@ -1,0 +1,56 @@
+{
+  "transcript": "- Strawberry!",
+  "words": [
+    {
+      "alignedWord": "strawberry",
+      "case": "success",
+      "end": 1.45,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 2,
+      "word": "Strawberry"
+    }
+  ],
+  "speaker": "George",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 84,
+  "clipEnd": 87,
+  "partIndex": 2,
+  "clipIndex": 4
+}

@@ -1,0 +1,79 @@
+{
+  "transcript": "- No trouble, Mr. Bull. ",
+  "words": [
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 2,
+      "word": "No"
+    },
+    {
+      "alignedWord": "trouble",
+      "case": "success",
+      "end": 3.57,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.09,
+      "startOffset": 5,
+      "word": "trouble"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 16,
+      "startOffset": 14,
+      "word": "Mr"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 22,
+      "startOffset": 18,
+      "word": "Bull"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 237,
+  "clipEnd": 241,
+  "partIndex": 9,
+  "clipIndex": 12
+}

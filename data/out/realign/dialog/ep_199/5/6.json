@@ -1,0 +1,133 @@
+{
+  "transcript": "- Yes, but please play more carefully in future.",
+  "words": [
+    {
+      "alignedWord": "yes",
+      "case": "success",
+      "end": 3.44,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.4,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.71,
+      "startOffset": 2,
+      "word": "Yes"
+    },
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 3.89,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.64,
+      "startOffset": 7,
+      "word": "but"
+    },
+    {
+      "alignedWord": "please",
+      "case": "success",
+      "end": 4.3500000000000005,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.91,
+      "startOffset": 11,
+      "word": "please"
+    },
+    {
+      "alignedWord": "play",
+      "case": "success",
+      "end": 4.71,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 4.4,
+      "startOffset": 18,
+      "word": "play"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 27,
+      "startOffset": 23,
+      "word": "more"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 37,
+      "startOffset": 28,
+      "word": "carefully"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 40,
+      "startOffset": 38,
+      "word": "in"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 47,
+      "startOffset": 41,
+      "word": "future"
+    }
+  ],
+  "speaker": "Mummy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 166,
+  "clipEnd": 171,
+  "partIndex": 5,
+  "clipIndex": 6
+}

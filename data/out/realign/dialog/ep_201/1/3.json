@@ -1,0 +1,40 @@
+{
+  "transcript": "- Stop!!! ",
+  "words": [
+    {
+      "alignedWord": "stop",
+      "case": "success",
+      "end": 2.8000000000000003,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.68,
+      "startOffset": 2,
+      "word": "Stop"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 29,
+  "clipEnd": 32,
+  "partIndex": 1,
+  "clipIndex": 3
+}

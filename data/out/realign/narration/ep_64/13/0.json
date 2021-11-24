@@ -1,0 +1,152 @@
+{
+  "transcript": "What a fantastic paddle boat.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.73,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.52,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.85,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "fantastic",
+      "case": "success",
+      "end": 1.69,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 7,
+      "word": "fantastic"
+    },
+    {
+      "alignedWord": "paddle",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 17,
+      "word": "paddle"
+    },
+    {
+      "alignedWord": "boat",
+      "case": "success",
+      "end": 2.25,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.22,
+      "startOffset": 24,
+      "word": "boat"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E11 - The Boat Pond.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_64.json",
+  "episode_title": "The Boat Pond",
+  "clipStart": 159,
+  "clipEnd": 162,
+  "partIndex": 13,
+  "clipIndex": 0
+}

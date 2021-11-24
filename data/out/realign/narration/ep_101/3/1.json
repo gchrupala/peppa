@@ -1,0 +1,162 @@
+{
+  "transcript": "have been in the car at night.",
+  "words": [
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 0.2,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 0.17,
+      "startOffset": 0,
+      "word": "have"
+    },
+    {
+      "alignedWord": "been",
+      "case": "success",
+      "end": 0.43,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.21,
+      "startOffset": 5,
+      "word": "been"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 0.54,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.43,
+      "startOffset": 10,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.65,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 13,
+      "word": "the"
+    },
+    {
+      "alignedWord": "car",
+      "case": "success",
+      "end": 0.94,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 17,
+      "word": "car"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 1.0699999999999998,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 21,
+      "word": "at"
+    },
+    {
+      "alignedWord": "night",
+      "case": "success",
+      "end": 1.33,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 24,
+      "word": "night"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E50 - Stars.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_101.json",
+  "episode_title": "Stars",
+  "clipStart": 156,
+  "clipEnd": 158,
+  "partIndex": 3,
+  "clipIndex": 1
+}

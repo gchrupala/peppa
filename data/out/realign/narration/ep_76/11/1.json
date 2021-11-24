@@ -1,0 +1,144 @@
+{
+  "transcript": "George has slept very well.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.7999999999999998,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 2.0,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "slept",
+      "case": "success",
+      "end": 2.35,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 11,
+      "word": "slept"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 2.77,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 17,
+      "word": "very"
+    },
+    {
+      "alignedWord": "well",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.77,
+      "startOffset": 22,
+      "word": "well"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E32 - George Catches a Cold.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_76.json",
+  "episode_title": "George Catches a Cold",
+  "clipStart": 239,
+  "clipEnd": 242,
+  "partIndex": 11,
+  "clipIndex": 1
+}

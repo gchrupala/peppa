@@ -1,0 +1,120 @@
+{
+  "transcript": "What a lot of mud.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 1.19,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "lot",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 7,
+      "word": "lot"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 11,
+      "word": "of"
+    },
+    {
+      "alignedWord": "mud",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.68,
+      "startOffset": 14,
+      "word": "mud"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E38 - Grandpa's Little Train.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_84.json",
+  "episode_title": "Grandpa's Little Train",
+  "clipStart": 193,
+  "clipEnd": 196,
+  "partIndex": 5,
+  "clipIndex": 0
+}

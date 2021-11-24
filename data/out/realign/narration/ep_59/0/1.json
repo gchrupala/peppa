@@ -1,0 +1,198 @@
+{
+  "transcript": "at Granny and Grandpa Pig's house today.",
+  "words": [
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 0,
+      "word": "at"
+    },
+    {
+      "alignedWord": "granny",
+      "case": "success",
+      "end": 1.46,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 3,
+      "word": "Granny"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.5899999999999999,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 10,
+      "word": "and"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 14,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig's",
+      "case": "success",
+      "end": 2.45,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 22,
+      "word": "Pig's"
+    },
+    {
+      "alignedWord": "house",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.45,
+      "startOffset": 28,
+      "word": "house"
+    },
+    {
+      "alignedWord": "today",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.71,
+      "startOffset": 34,
+      "word": "today"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E10 - Mr Scarecrow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_59.json",
+  "episode_title": "Mr. Scarecrow",
+  "clipStart": 24,
+  "clipEnd": 27,
+  "partIndex": 0,
+  "clipIndex": 1
+}

@@ -1,0 +1,196 @@
+{
+  "transcript": "-Peppa and George love feeding bread to ducks.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 6,
+      "startOffset": 1,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.23,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 7,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 11,
+      "word": "George"
+    },
+    {
+      "alignedWord": "love",
+      "case": "success",
+      "end": 1.8299999999999998,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.68,
+      "startOffset": 18,
+      "word": "love"
+    },
+    {
+      "alignedWord": "feeding",
+      "case": "success",
+      "end": 2.34,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 23,
+      "word": "feeding"
+    },
+    {
+      "alignedWord": "bread",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.34,
+      "startOffset": 31,
+      "word": "bread"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 37,
+      "word": "to"
+    },
+    {
+      "alignedWord": "ducks",
+      "case": "success",
+      "end": 2.99,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 40,
+      "word": "ducks"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E47 - Captian Daddy Pig.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_98.json",
+  "episode_title": "Captain Daddy Pig",
+  "clipStart": 146,
+  "clipEnd": 150,
+  "partIndex": 5,
+  "clipIndex": 0
+}

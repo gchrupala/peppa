@@ -1,0 +1,133 @@
+{
+  "transcript": "George can skate beautifully.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.08,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.04,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 0.11,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.08,
+      "startOffset": 7,
+      "word": "can"
+    },
+    {
+      "alignedWord": "skate",
+      "case": "success",
+      "end": 0.42,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.11,
+      "startOffset": 11,
+      "word": "skate"
+    },
+    {
+      "alignedWord": "beautifully",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.53,
+      "startOffset": 17,
+      "word": "beautifully"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E42 - Ice Skating.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_86.json",
+  "episode_title": "Ice Skating",
+  "clipStart": 229,
+  "clipEnd": 231,
+  "partIndex": 6,
+  "clipIndex": 1
+}

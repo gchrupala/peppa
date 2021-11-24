@@ -1,0 +1,125 @@
+{
+  "transcript": "Here is Emily Elephant.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 0.39,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.05,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.52,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.39,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "emily",
+      "case": "success",
+      "end": 0.9000000000000001,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 8,
+      "word": "Emily"
+    },
+    {
+      "alignedWord": "elephant",
+      "case": "success",
+      "end": 1.49,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 14,
+      "word": "Elephant"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E44 - The Quarrel.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_95.json",
+  "episode_title": "The Quarrel",
+  "clipStart": 169,
+  "clipEnd": 171,
+  "partIndex": 9,
+  "clipIndex": 0
+}

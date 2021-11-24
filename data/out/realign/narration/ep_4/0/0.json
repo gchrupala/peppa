@@ -1,0 +1,119 @@
+{
+  "transcript": "Pepper and her family are",
+  "words": [
+    {
+      "alignedWord": "pepper",
+      "case": "success",
+      "end": 1.6300000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 0,
+      "word": "Pepper"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 7,
+      "word": "and"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.87,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 11,
+      "word": "her"
+    },
+    {
+      "alignedWord": "family",
+      "case": "success",
+      "end": 2.3200000000000003,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 15,
+      "word": "family"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 22,
+      "word": "are"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E03 - Polly Parrot.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_4.json",
+  "episode_title": "Polly Parrot",
+  "clipStart": 27,
+  "clipEnd": 30,
+  "partIndex": 0,
+  "clipIndex": 0
+}

@@ -1,0 +1,128 @@
+{
+  "transcript": "George has caught a cold.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "caught",
+      "case": "success",
+      "end": 2.3,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 11,
+      "word": "caught"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.3899999999999997,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ey_S"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 18,
+      "word": "a"
+    },
+    {
+      "alignedWord": "cold",
+      "case": "success",
+      "end": 2.7,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 20,
+      "word": "cold"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E32 - George Catches a Cold.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_76.json",
+  "episode_title": "George Catches a Cold",
+  "clipStart": 80,
+  "clipEnd": 83,
+  "partIndex": 5,
+  "clipIndex": 0
+}

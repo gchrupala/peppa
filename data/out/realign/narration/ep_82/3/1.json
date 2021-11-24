@@ -1,0 +1,147 @@
+{
+  "transcript": "He is waiting to see cuckoo.",
+  "words": [
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 0.77,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 0,
+      "word": "He"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.92,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "waiting",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 6,
+      "word": "waiting"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.37,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 14,
+      "word": "to"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 17,
+      "word": "see"
+    },
+    {
+      "alignedWord": "cuckoo",
+      "case": "success",
+      "end": 2.0999999999999996,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.23,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 21,
+      "word": "cuckoo"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E15 - Cuckoo Clock.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_82.json",
+  "episode_title": "Cuckoo Clock",
+  "clipStart": 151,
+  "clipEnd": 156,
+  "partIndex": 3,
+  "clipIndex": 1
+}

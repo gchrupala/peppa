@@ -1,0 +1,197 @@
+{
+  "transcript": "Mr. Pony is going to test Peppa's eyes.",
+  "words": [
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 0.53,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.24,
+      "startOffset": 0,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "pony",
+      "case": "success",
+      "end": 0.92,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.53,
+      "startOffset": 4,
+      "word": "Pony"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.07,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 1.29,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 12,
+      "word": "going"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.3900000000000001,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 18,
+      "word": "to"
+    },
+    {
+      "alignedWord": "test",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 21,
+      "word": "test"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.17,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.36,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 26,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "eyes",
+      "case": "success",
+      "end": 2.55,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.17,
+      "startOffset": 34,
+      "word": "eyes"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E25 - The Eye Test.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_68.json",
+  "episode_title": "The Eye Test",
+  "clipStart": 179,
+  "clipEnd": 183,
+  "partIndex": 4,
+  "clipIndex": 0
+}

@@ -1,0 +1,228 @@
+{
+  "transcript": "Oh dear, George has forgotten to close the door.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 1.23,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 0,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "dear",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 3,
+      "word": "dear"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.37,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 9,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 2.49,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.37,
+      "startOffset": 16,
+      "word": "has"
+    },
+    {
+      "alignedWord": "forgotten",
+      "case": "success",
+      "end": 2.99,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.49,
+      "startOffset": 20,
+      "word": "forgotten"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.1100000000000003,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.99,
+      "startOffset": 30,
+      "word": "to"
+    },
+    {
+      "alignedWord": "close",
+      "case": "success",
+      "end": 3.36,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.11,
+      "startOffset": 33,
+      "word": "close"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.52,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.41,
+      "startOffset": 39,
+      "word": "the"
+    },
+    {
+      "alignedWord": "door",
+      "case": "success",
+      "end": 3.68,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.52,
+      "startOffset": 43,
+      "word": "door"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E04 - Pollys Holiday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_55.json",
+  "episode_title": "Polly's Holiday",
+  "clipStart": 139,
+  "clipEnd": 143,
+  "partIndex": 3,
+  "clipIndex": 0
+}

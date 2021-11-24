@@ -1,0 +1,74 @@
+{
+  "transcript": "- We'll all go! ",
+  "words": [
+    {
+      "alignedWord": "we'll",
+      "case": "success",
+      "end": 0.54,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.51,
+      "startOffset": 2,
+      "word": "We'll"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 0.6900000000000001,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 8,
+      "word": "all"
+    },
+    {
+      "alignedWord": "go",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.77,
+      "startOffset": 12,
+      "word": "go"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 138,
+  "clipEnd": 142,
+  "partIndex": 6,
+  "clipIndex": 10
+}

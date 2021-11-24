@@ -1,0 +1,116 @@
+{
+  "transcript": "Oh, the noise is George.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 0,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.9900000000000002,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.86,
+      "startOffset": 4,
+      "word": "the"
+    },
+    {
+      "alignedWord": "noise",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "oy_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 8,
+      "word": "noise"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.47,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 14,
+      "word": "is"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.65,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 2.5,
+      "startOffset": 17,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E25 - The Tooth Fairy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_22.json",
+  "episode_title": "The Tooth Fairy",
+  "clipStart": 195,
+  "clipEnd": 198,
+  "partIndex": 5,
+  "clipIndex": 0
+}

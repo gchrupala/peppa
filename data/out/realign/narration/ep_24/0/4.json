@@ -1,0 +1,182 @@
+{
+  "transcript": "in a secret place in the garden.",
+  "words": [
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 0,
+      "word": "in"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 3,
+      "word": "a"
+    },
+    {
+      "alignedWord": "secret",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 5,
+      "word": "secret"
+    },
+    {
+      "alignedWord": "place",
+      "case": "success",
+      "end": 2.55,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.25,
+      "startOffset": 12,
+      "word": "place"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.8400000000000003,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 18,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.96,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.84,
+      "startOffset": 21,
+      "word": "the"
+    },
+    {
+      "alignedWord": "garden",
+      "case": "success",
+      "end": 3.4,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.96,
+      "startOffset": 25,
+      "word": "garden"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E26 - Treasure Hunt.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_24.json",
+  "episode_title": "Treasure Hunt",
+  "clipStart": 33,
+  "clipEnd": 37,
+  "partIndex": 0,
+  "clipIndex": 4
+}

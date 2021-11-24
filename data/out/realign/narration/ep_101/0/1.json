@@ -1,0 +1,293 @@
+{
+  "transcript": "Mummy Pig, Daddy Pig, and Peppa are having mugs of hot milk.",
+  "words": [
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 0.65,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.37,
+      "startOffset": 0,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 0.91,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 6,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.37,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 11,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.6600000000000001,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 17,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.89,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 22,
+      "word": "and"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.35,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.46,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 26,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.65,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "er_S"
+        }
+      ],
+      "start": 2.57,
+      "startOffset": 32,
+      "word": "are"
+    },
+    {
+      "alignedWord": "having",
+      "case": "success",
+      "end": 3.0,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.66,
+      "startOffset": 36,
+      "word": "having"
+    },
+    {
+      "alignedWord": "mugs",
+      "case": "success",
+      "end": 3.29,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.0,
+      "startOffset": 43,
+      "word": "mugs"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 3.43,
+      "endOffset": 50,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_E"
+        }
+      ],
+      "start": 3.29,
+      "startOffset": 48,
+      "word": "of"
+    },
+    {
+      "alignedWord": "hot",
+      "case": "success",
+      "end": 3.64,
+      "endOffset": 54,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.43,
+      "startOffset": 51,
+      "word": "hot"
+    },
+    {
+      "alignedWord": "milk",
+      "case": "success",
+      "end": 4.09,
+      "endOffset": 59,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.7,
+      "startOffset": 55,
+      "word": "milk"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E50 - Stars.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_101.json",
+  "episode_title": "Stars",
+  "clipStart": 24,
+  "clipEnd": 29,
+  "partIndex": 0,
+  "clipIndex": 1
+}

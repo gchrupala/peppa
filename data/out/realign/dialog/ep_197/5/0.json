@@ -1,0 +1,155 @@
+{
+  "transcript": "- Ooh, it's shiny enough to see our faces!",
+  "words": [
+    {
+      "alignedWord": "ooh",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "uw_S"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 2,
+      "word": "Ooh"
+    },
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 3.0100000000000002,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.83,
+      "startOffset": 7,
+      "word": "it's"
+    },
+    {
+      "alignedWord": "shiny",
+      "case": "success",
+      "end": 3.4299999999999997,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.01,
+      "startOffset": 12,
+      "word": "shiny"
+    },
+    {
+      "alignedWord": "enough",
+      "case": "success",
+      "end": 4.14,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "f_E"
+        }
+      ],
+      "start": 3.76,
+      "startOffset": 18,
+      "word": "enough"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 4.35,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 4.14,
+      "startOffset": 25,
+      "word": "to"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 4.569999999999999,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.35,
+      "startOffset": 28,
+      "word": "see"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 35,
+      "startOffset": 32,
+      "word": "our"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 41,
+      "startOffset": 36,
+      "word": "faces"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 131,
+  "clipEnd": 136,
+  "partIndex": 5,
+  "clipIndex": 0
+}

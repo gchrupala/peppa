@@ -1,0 +1,93 @@
+{
+  "transcript": "It is home time for Peppa's friends.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 2,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 10,
+      "startOffset": 6,
+      "word": "home"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 15,
+      "startOffset": 11,
+      "word": "time"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 19,
+      "startOffset": 16,
+      "word": "for"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.6300000000000001,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 20,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 1.68,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 28,
+      "word": "friends"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E40 - The Cycle Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_85.json",
+  "episode_title": "The Cycle Ride",
+  "clipStart": 242,
+  "clipEnd": 245,
+  "partIndex": 9,
+  "clipIndex": 0
+}

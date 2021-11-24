@@ -1,0 +1,151 @@
+{
+  "transcript": "Here is Peppa's friend, Susie Sheep.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.3099999999999998,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.7399999999999998,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.35,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 8,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "friend",
+      "case": "success",
+      "end": 2.14,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 16,
+      "word": "friend"
+    },
+    {
+      "alignedWord": "susie",
+      "case": "success",
+      "end": 2.58,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 24,
+      "word": "Susie"
+    },
+    {
+      "alignedWord": "sheep",
+      "case": "success",
+      "end": 3.0100000000000002,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.58,
+      "startOffset": 30,
+      "word": "Sheep"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E11 - The Boat Pond.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_64.json",
+  "episode_title": "The Boat Pond",
+  "clipStart": 105,
+  "clipEnd": 109,
+  "partIndex": 9,
+  "clipIndex": 0
+}

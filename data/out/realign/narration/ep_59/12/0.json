@@ -1,0 +1,136 @@
+{
+  "transcript": "The little birds are looking",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.27,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 0.52,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.27,
+      "startOffset": 4,
+      "word": "little"
+    },
+    {
+      "alignedWord": "birds",
+      "case": "success",
+      "end": 0.8400000000000001,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 11,
+      "word": "birds"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "er_S"
+        }
+      ],
+      "start": 0.91,
+      "startOffset": 17,
+      "word": "are"
+    },
+    {
+      "alignedWord": "looking",
+      "case": "success",
+      "end": 1.4000000000000001,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 21,
+      "word": "looking"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E10 - Mr Scarecrow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_59.json",
+  "episode_title": "Mr. Scarecrow",
+  "clipStart": 217,
+  "clipEnd": 219,
+  "partIndex": 12,
+  "clipIndex": 0
+}

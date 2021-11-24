@@ -1,0 +1,136 @@
+{
+  "transcript": "(CHUCKLING) The new car has",
+  "words": [
+    {
+      "alignedWord": "chuckling",
+      "case": "success",
+      "end": 0.27,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 1,
+      "word": "CHUCKLING"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.65,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.51,
+      "startOffset": 12,
+      "word": "The"
+    },
+    {
+      "alignedWord": "new",
+      "case": "success",
+      "end": 0.93,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 16,
+      "word": "new"
+    },
+    {
+      "alignedWord": "car",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.2,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 20,
+      "word": "car"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.61,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 24,
+      "word": "has"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E11 - The New Car.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_23.json",
+  "episode_title": "The New Car",
+  "clipStart": 206,
+  "clipEnd": 208,
+  "partIndex": 5,
+  "clipIndex": 0
+}

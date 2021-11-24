@@ -1,0 +1,232 @@
+{
+  "transcript": "The ball bounces very well on the short grass.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.97,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "ball",
+      "case": "success",
+      "end": 1.4300000000000002,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 4,
+      "word": "ball"
+    },
+    {
+      "alignedWord": "bounces",
+      "case": "success",
+      "end": 1.95,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 9,
+      "word": "bounces"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 2.2399999999999998,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 17,
+      "word": "very"
+    },
+    {
+      "alignedWord": "well",
+      "case": "success",
+      "end": 2.54,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.24,
+      "startOffset": 22,
+      "word": "well"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.54,
+      "startOffset": 27,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.73,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 30,
+      "word": "the"
+    },
+    {
+      "alignedWord": "short",
+      "case": "success",
+      "end": 3.12,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.73,
+      "startOffset": 34,
+      "word": "short"
+    },
+    {
+      "alignedWord": "grass",
+      "case": "success",
+      "end": 3.6500000000000004,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.24,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.12,
+      "startOffset": 40,
+      "word": "grass"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E17 - The Long Grass.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_79.json",
+  "episode_title": "The Long Grass",
+  "clipStart": 269,
+  "clipEnd": 274,
+  "partIndex": 9,
+  "clipIndex": 0
+}

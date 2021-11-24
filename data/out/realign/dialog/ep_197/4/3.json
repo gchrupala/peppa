@@ -1,0 +1,111 @@
+{
+  "transcript": "- It's a shiny spoon. Look!",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 2,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.51,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.5,
+      "startOffset": 7,
+      "word": "a"
+    },
+    {
+      "alignedWord": "shiny",
+      "case": "success",
+      "end": 2.73,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.51,
+      "startOffset": 9,
+      "word": "shiny"
+    },
+    {
+      "alignedWord": "spoon",
+      "case": "success",
+      "end": 3.7800000000000002,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.28,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.2,
+      "startOffset": 15,
+      "word": "spoon"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 22,
+      "word": "Look"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 106,
+  "clipEnd": 110,
+  "partIndex": 4,
+  "clipIndex": 3
+}

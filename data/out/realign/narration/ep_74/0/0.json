@@ -1,0 +1,136 @@
+{
+  "transcript": "TODAY is a special treat.",
+  "words": [
+    {
+      "alignedWord": "today",
+      "case": "success",
+      "end": 0.57,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.23,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "TODAY"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.73,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 6,
+      "word": "is"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.84,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ey_S"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 9,
+      "word": "a"
+    },
+    {
+      "alignedWord": "special",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "sh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 11,
+      "word": "special"
+    },
+    {
+      "alignedWord": "treat",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 19,
+      "word": "treat"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E30 - Daddy Pigs Office.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_74.json",
+  "episode_title": "Daddy Pig's Office",
+  "clipStart": 20,
+  "clipEnd": 23,
+  "partIndex": 0,
+  "clipIndex": 0
+}

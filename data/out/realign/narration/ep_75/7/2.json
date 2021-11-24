@@ -1,0 +1,178 @@
+{
+  "transcript": "They need lots and lots of sand.",
+  "words": [
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 0,
+      "word": "They"
+    },
+    {
+      "alignedWord": "need",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.0,
+      "startOffset": 5,
+      "word": "need"
+    },
+    {
+      "alignedWord": "lots",
+      "case": "success",
+      "end": 1.4900000000000002,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 10,
+      "word": "lots"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.92,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 15,
+      "word": "and"
+    },
+    {
+      "alignedWord": "lots",
+      "case": "success",
+      "end": 2.37,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.24,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 19,
+      "word": "lots"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 2.49,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.37,
+      "startOffset": 24,
+      "word": "of"
+    },
+    {
+      "alignedWord": "sand",
+      "case": "success",
+      "end": 3.02,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 27,
+      "word": "sand"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E14 - Pirate Island.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_75.json",
+  "episode_title": "Pirate Island",
+  "clipStart": 163,
+  "clipEnd": 167,
+  "partIndex": 7,
+  "clipIndex": 2
+}

@@ -1,0 +1,201 @@
+{
+  "transcript": "But if Peppa turns and sees someone move,",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "if",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "f_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 4,
+      "word": "if"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.26,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 7,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "turns",
+      "case": "success",
+      "end": 2.65,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 13,
+      "word": "turns"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.79,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 19,
+      "word": "and"
+    },
+    {
+      "alignedWord": "sees",
+      "case": "success",
+      "end": 2.99,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.79,
+      "startOffset": 23,
+      "word": "sees"
+    },
+    {
+      "alignedWord": "someone",
+      "case": "success",
+      "end": 3.38,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.0,
+      "startOffset": 28,
+      "word": "someone"
+    },
+    {
+      "alignedWord": "move",
+      "case": "success",
+      "end": 3.63,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 3.38,
+      "startOffset": 36,
+      "word": "move"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E14 - My Cousin Chloe.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_28.json",
+  "episode_title": "My Cousin Chlo?",
+  "clipStart": 161,
+  "clipEnd": 165,
+  "partIndex": 4,
+  "clipIndex": 2
+}

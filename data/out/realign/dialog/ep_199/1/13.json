@@ -1,0 +1,140 @@
+{
+  "transcript": "- What are garden games? - I don't know.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 2.51,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 2,
+      "word": "What"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 3.15,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 3.14,
+      "startOffset": 7,
+      "word": "are"
+    },
+    {
+      "alignedWord": "garden",
+      "case": "success",
+      "end": 3.29,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.15,
+      "startOffset": 11,
+      "word": "garden"
+    },
+    {
+      "alignedWord": "games",
+      "case": "success",
+      "end": 3.79,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.31,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.29,
+      "startOffset": 18,
+      "word": "games"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 3.79,
+      "startOffset": 27,
+      "word": "I"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 29,
+      "word": "don't"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 39,
+      "startOffset": 35,
+      "word": "know"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 59,
+  "clipEnd": 63,
+  "partIndex": 1,
+  "clipIndex": 13
+}
