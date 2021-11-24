@@ -20,6 +20,12 @@ from typing import Union
 import os.path
 import math
 
+SPLIT_SPEC = {'dialog': {'train': range(1, 197),
+                         'val': range(197, 203),
+                         'test': range(203, 210)},
+              'narration': {'val': range(1, 105), 'test': range(105, 210)}}
+
+
 @dataclass
 class Clip:
     """Video clip with associated audio."""
@@ -168,11 +174,7 @@ class PeppaPigIterableDataset(IterableDataset):
         self.duration = duration
         self.jitter = jitter
         self.transform = pig.util.identity if transform is None else transform 
-        self.split_spec = dict(dialog=dict(train = range(1, 197),
-                                           val  = range(197, 203),
-                                           test = range(203, 210)),
-                               narration=dict(val=range(1, 105),
-                                              test=range(105, 210)))
+        self.split_spec = SPLIT_SPEC
 
     def featurize(self, clip):
         return featurize(clip, self.transform)
