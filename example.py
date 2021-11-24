@@ -1,27 +1,15 @@
 import torch
-import pig.models as M
-import pig.data as D
-from pig.metrics import triplet_accuracy
-import pytorch_lightning as pl
-import random
-random.seed(123)
-torch.manual_seed(123)
+from pig.models import PeppaPig
+from pig.data import audiofile_loader
+import glob
 
-ds = D.PeppaPigDataset(cache=True, triplet=True, split=['val'], fragment_type='dialog', duration=None, jitter=False)
+net = PeppaPig.load_from_checkpoint("lightning_logs/version_31/checkpoints/epoch=101-step=17645-v1.ckpt")
+net.eval()
+net.cuda()
+with torch.no_grad():
+    audio_paths = glob.glob(f"data/out/realign/narration/ep_1/0/*.wav")
+    loader = audiofile_loader(audio_paths)
+    emb = torch.cat([ net.encode_audio(batch.to(net.device)).squeeze(dim=1)
+                          for batch in loader ])
 
-net = M.PeppaPig.load_from_checkpoint("lightning_logs/version_1/checkpoints/epoch=40-step=7092.ckpt")
-trainer = pl.Trainer(gpus=[0], logger=False)
-
-
-# 1
-loader = D.DataLoader(ds, collate_fn=D.collate_triplets, batch_size=8, shuffle=False)
-encoded = trainer.predict(net, loader)
-acc = torch.cat([ triplet_accuracy(b.anchor, b.positive, b.negative)
-                  for b in encoded ])
-
-
-
-
-
-
-        
+print(f"Audio embedding tensor with shape: {emb.shape}")
