@@ -20,6 +20,6 @@ Each word consists of:
  
  Each phoneme has the following information:
  
- - phone: ARPA symbol for the phoneme, followed by the underscore and a tag indicating phoneme position. ARPA symbols are mapped to IPA in [../../../pig/ipa.py].
+ - phone: ARPA symbol for the phoneme, followed by the underscore and a tag indicating phoneme position. ARPA symbols are mapped to IPA in [../../../pig/ipa.py](../../../pig/ipa.py)
  - duration: duration in seconds.
  
