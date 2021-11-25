@@ -46,13 +46,6 @@ def speakerize_ep(path):
         speakerize_tokens(part['context'])
     return data
 
-def clean(text):
-    import re
-    pattern = r'\[[^()]*\]'
-    return re.sub(pattern, '', text)
-
-    
-
 def meta(path):
     base = os.path.basename(path)
     bare = os.path.splitext(base)[0]
@@ -77,8 +70,8 @@ class Word:
     speaker: str
     episode: int = None
     audio: m.AudioFileClip = None
-    charngram: torch.Tensor = None
-    fasttext: torch.Tensor = None
+    embedding: torch.tensor = None
+    embedding_init: torch.tensor = None
     glove: torch.Tensor = None
 
 class WordData():
@@ -94,10 +87,7 @@ class WordData():
             and 'sil' not in [ p['phone'] for p in word['phones'] ]
 
         
-    def words(self, read_audio=True,
-              charngram=None,
-              fasttext=None,
-              glove=None):
+    def words(self, read_audio=True,  glove=None):
         for audio_path, alignment_path in self.items:
             meta = json.load(open(alignment_path))
             if read_audio:
@@ -115,10 +105,6 @@ class WordData():
                                speaker= meta['speaker'],
                                episode= episode_id(audio_path),
                                audio= sub,
-                               charngram= charngram[word['alignedWord']].squeeze(dim=0) \
-                                 if charngram is not None else None,
-                               fasttext= fasttext[word['alignedWord']] \
-                                 if fasttext is not None else None,
                                glove= glove[word['alignedWord']] \
                                  if glove is not None else None)
                                
@@ -131,7 +117,7 @@ def pairwise(fragment_type='dialog'):
     from pig.models import PeppaPig
     from pig.data import audioclip_loader
     from pig.util import cosine_matrix
-    from torchtext.vocab import CharNGram, FastText, GloVe
+    from torchtext.vocab import GloVe
     cos = torch.nn.CosineSimilarity(dim=0, eps=1e-6)
     audio_paths = glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.wav")
     anno_paths  = [ meta(path) for path in audio_paths ]
@@ -139,18 +125,27 @@ def pairwise(fragment_type='dialog'):
     word_data = WordData(audio_paths, anno_paths, min_duration=0.1)
     
     net = PeppaPig.load_from_checkpoint("lightning_logs/version_31/checkpoints/epoch=101-step=17645-v1.ckpt")
+    net_init = PeppaPig(net.config)
     net.eval()
     net.cuda()
+    net_init.eval()
+    net_init.cuda()
     with torch.no_grad():
         loader = audioclip_loader(word.audio for word in word_data.words(read_audio=True))
-        emb = torch.cat([ net.encode_audio(batch.to(net.device)).squeeze(dim=1)
-                          for batch in loader ])
+        emb, emb_init = zip(*[ (net.encode_audio(batch.to(net.device)).squeeze(dim=1),
+                                net_init.encode_audio(batch.to(net_init.device)).squeeze(dim=1))
+                               for batch in loader ])
+    emb = torch.cat(emb)
+    emb_init = torch.cat(emb_init)
     sim = cosine_matrix(emb, emb).cpu()
+    sim_init = cosine_matrix(emb_init, emb_init).cpu()
     logging.info(f"Computed similarities: {sim.shape}")
     words = [ word for word in word_data.words(read_audio=False,
-                                               #charngram=CharNGram(),
-                                               fasttext=FastText(),
                                                glove=GloVe(name='840B', dim=300)  ) ]
+    for i,word in enumerate(words):
+        word.embedding = emb[i]
+        word.embedding_init = emb_init[i]
+    torch.save(dict(model_config=net.config, words=words), f"words_{fragment_type}.pt")
     for i, word1 in enumerate(words):
         logging.info(f"Processing word {i}")
         for j, word2 in enumerate(words):
@@ -166,20 +161,18 @@ def pairwise(fragment_type='dialog'):
                            speaker2=word2.speaker,
                            episode2=word2.episode,
                            distance=normalized_distance(word1.phonemes, word2.phonemes),
-                           #charngramsim=cos(word1.charngram, word2.charngram).item(),
-                           fasttextsim=cos(word1.fasttext, word2.fasttext).item(),
                            glovesim=cos(word1.glove, word2.glove).item(),
                            sametype=word1.phonemes==word2.phonemes,
-                           samespeaker=word1.speaker==word2.speaker,
+                           samespeaker=None if word1.speaker is None or word2.speaker is None else word1.speaker==word2.speaker,
                            sameepisode=word1.episode==word2.episode,
                            dialog=fragment_type=='dialog',
                            durationdiff=abs(word1.duration-word2.duration),
-                           similarity=sim[i, j].item())
-    
+                           similarity=sim[i, j].item(),
+                           similarity_init=sim_init[i, j].item())
                     
 def dump_data():
     for fragment_type in ['dialog', 'narration']:
         import pandas
         logging.getLogger().setLevel(level=logging.INFO)
         data = pandas.DataFrame.from_records(pairwise(fragment_type))
-        data.to_csv(f"pairwise_similarities_{fragment_type}.csv", index=False, header=True)
+        data.to_csv(f"pairwise_similarities_{fragment_type}.csv", index=False, header=True, na_rep="NA")
