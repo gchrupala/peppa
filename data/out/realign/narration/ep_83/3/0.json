@@ -1,0 +1,201 @@
+{
+  "transcript": "The new cousin is a tiny baby piggy.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.5500000000000003,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.45,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "new",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.55,
+      "startOffset": 4,
+      "word": "new"
+    },
+    {
+      "alignedWord": "cousin",
+      "case": "success",
+      "end": 3.16,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.83,
+      "startOffset": 8,
+      "word": "cousin"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 3.4000000000000004,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.24,
+      "startOffset": 15,
+      "word": "is"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 3.4899999999999998,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.4,
+      "startOffset": 18,
+      "word": "a"
+    },
+    {
+      "alignedWord": "tiny",
+      "case": "success",
+      "end": 4.15,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.62,
+      "startOffset": 20,
+      "word": "tiny"
+    },
+    {
+      "alignedWord": "baby",
+      "case": "success",
+      "end": 4.5600000000000005,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.19,
+      "startOffset": 25,
+      "word": "baby"
+    },
+    {
+      "alignedWord": "piggy",
+      "case": "success",
+      "end": 4.68,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.56,
+      "startOffset": 30,
+      "word": "piggy"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E39 The Baby Piggy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_83.json",
+  "episode_title": "The Baby Piggy",
+  "clipStart": 43,
+  "clipEnd": 48,
+  "partIndex": 3,
+  "clipIndex": 0
+}

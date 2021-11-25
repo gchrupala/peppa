@@ -1,0 +1,130 @@
+{
+  "transcript": "Uh... can we have our ball back, please?",
+  "words": [
+    {
+      "alignedWord": "uh",
+      "case": "success",
+      "end": 3.75,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.59,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.16,
+      "startOffset": 0,
+      "word": "Uh"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 4.45,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.23,
+      "startOffset": 6,
+      "word": "can"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 4.57,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.45,
+      "startOffset": 10,
+      "word": "we"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 4.78,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_E"
+        }
+      ],
+      "start": 4.58,
+      "startOffset": 13,
+      "word": "have"
+    },
+    {
+      "alignedWord": "our",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 4.78,
+      "startOffset": 18,
+      "word": "our"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 22,
+      "word": "ball"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 31,
+      "startOffset": 27,
+      "word": "back"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 39,
+      "startOffset": 33,
+      "word": "please"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 162,
+  "clipEnd": 167,
+  "partIndex": 5,
+  "clipIndex": 5
+}

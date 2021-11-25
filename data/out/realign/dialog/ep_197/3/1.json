@@ -1,0 +1,124 @@
+{
+  "transcript": "- Now turn the spoon around.",
+  "words": [
+    {
+      "alignedWord": "now",
+      "case": "success",
+      "end": 2.41,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.54,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 2,
+      "word": "Now"
+    },
+    {
+      "alignedWord": "turn",
+      "case": "success",
+      "end": 2.85,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 6,
+      "word": "turn"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.07,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.05,
+      "startOffset": 11,
+      "word": "the"
+    },
+    {
+      "alignedWord": "spoon",
+      "case": "success",
+      "end": 3.3099999999999996,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.07,
+      "startOffset": 15,
+      "word": "spoon"
+    },
+    {
+      "alignedWord": "around",
+      "case": "success",
+      "end": 3.7199999999999998,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.29,
+          "phone": "er_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.32,
+      "startOffset": 21,
+      "word": "around"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 70,
+  "clipEnd": 74,
+  "partIndex": 3,
+  "clipIndex": 1
+}

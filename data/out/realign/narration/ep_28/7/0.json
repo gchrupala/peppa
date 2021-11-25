@@ -1,0 +1,76 @@
+{
+  "transcript": "Peppa's favourite game is",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 7,
+      "startOffset": 0,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.32,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.0,
+      "startOffset": 8,
+      "word": "favourite"
+    },
+    {
+      "alignedWord": "game",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 18,
+      "word": "game"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 23,
+      "word": "is"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E14 - My Cousin Chloe.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_28.json",
+  "episode_title": "My Cousin Chlo?",
+  "clipStart": 224,
+  "clipEnd": 226,
+  "partIndex": 7,
+  "clipIndex": 0
+}

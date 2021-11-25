@@ -1,0 +1,213 @@
+{
+  "transcript": "Here are Peppa's friends-- Candy Cat, Suzie Sheep, Danny Dog,",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 1.65,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 5,
+      "word": "are"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.8800000000000001,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 9,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 2.39,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 17,
+      "word": "friends"
+    },
+    {
+      "alignedWord": "candy",
+      "case": "success",
+      "end": 3.3000000000000003,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.12,
+      "startOffset": 27,
+      "word": "Candy"
+    },
+    {
+      "alignedWord": "cat",
+      "case": "success",
+      "end": 3.3299999999999996,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.3,
+      "startOffset": 33,
+      "word": "Cat"
+    },
+    {
+      "alignedWord": "suzie",
+      "case": "success",
+      "end": 3.96,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.76,
+      "startOffset": 38,
+      "word": "Suzie"
+    },
+    {
+      "alignedWord": "sheep",
+      "case": "success",
+      "end": 4.26,
+      "endOffset": 49,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_E"
+        }
+      ],
+      "start": 4.01,
+      "startOffset": 44,
+      "word": "Sheep"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 56,
+      "startOffset": 51,
+      "word": "Danny"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 60,
+      "startOffset": 57,
+      "word": "Dog"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E20 - The School Fete.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_20.json",
+  "episode_title": "The School Fete",
+  "clipStart": 25,
+  "clipEnd": 30,
+  "partIndex": 0,
+  "clipIndex": 2
+}

@@ -1,0 +1,51 @@
+{
+  "transcript": "Oh, dear.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 0.85,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 0,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "dear",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 4,
+      "word": "dear"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E48 - At the Beach.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_46.json",
+  "episode_title": "At the Beach",
+  "clipStart": 76,
+  "clipEnd": 78,
+  "partIndex": 3,
+  "clipIndex": 0
+}

@@ -1,0 +1,171 @@
+{
+  "transcript": "Grandad Dog has fixed the car.",
+  "words": [
+    {
+      "alignedWord": "grandad",
+      "case": "success",
+      "end": 0.87,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.49,
+      "startOffset": 0,
+      "word": "Grandad"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.24,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.88,
+      "startOffset": 8,
+      "word": "Dog"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 12,
+      "word": "has"
+    },
+    {
+      "alignedWord": "fixed",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 16,
+      "word": "fixed"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 22,
+      "word": "the"
+    },
+    {
+      "alignedWord": "car",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 26,
+      "word": "car"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E11 - The New Car.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_23.json",
+  "episode_title": "The New Car",
+  "clipStart": 248,
+  "clipEnd": 253,
+  "partIndex": 7,
+  "clipIndex": 0
+}

@@ -1,0 +1,194 @@
+{
+  "transcript": "The rain is washing the footprints away.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "rain",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 4,
+      "word": "rain"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.5999999999999999,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "washing",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "sh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 12,
+      "word": "washing"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 20,
+      "word": "the"
+    },
+    {
+      "alignedWord": "footprints",
+      "case": "success",
+      "end": 2.6500000000000004,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 24,
+      "word": "footprints"
+    },
+    {
+      "alignedWord": "away",
+      "case": "success",
+      "end": 3.23,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.32,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.65,
+      "startOffset": 35,
+      "word": "away"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E20 - Nature Trail.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_92.json",
+  "episode_title": "Nature Trail",
+  "clipStart": 230,
+  "clipEnd": 234,
+  "partIndex": 8,
+  "clipIndex": 0
+}

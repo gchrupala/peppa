@@ -1,0 +1,296 @@
+{
+  "transcript": "- Hmm. We were just closing, but I can give you a quick tour.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.6,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 2,
+      "word": "Hmm"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.4,
+      "startOffset": 7,
+      "word": "We"
+    },
+    {
+      "alignedWord": "were",
+      "case": "success",
+      "end": 2.9000000000000004,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 10,
+      "word": "were"
+    },
+    {
+      "alignedWord": "just",
+      "case": "success",
+      "end": 3.13,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.9,
+      "startOffset": 15,
+      "word": "just"
+    },
+    {
+      "alignedWord": "closing",
+      "case": "success",
+      "end": 3.74,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 3.19,
+      "startOffset": 20,
+      "word": "closing"
+    },
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 4.17,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.99,
+      "startOffset": 29,
+      "word": "but"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 4.32,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 4.17,
+      "startOffset": 33,
+      "word": "I"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 4.67,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.36,
+      "startOffset": 35,
+      "word": "can"
+    },
+    {
+      "alignedWord": "give",
+      "case": "success",
+      "end": 4.77,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "v_E"
+        }
+      ],
+      "start": 4.67,
+      "startOffset": 39,
+      "word": "give"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 4.9799999999999995,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 4.77,
+      "startOffset": 44,
+      "word": "you"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 5.130000000000001,
+      "endOffset": 49,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 4.98,
+      "startOffset": 48,
+      "word": "a"
+    },
+    {
+      "alignedWord": "quick",
+      "case": "success",
+      "end": 5.52,
+      "endOffset": 55,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "k_E"
+        }
+      ],
+      "start": 5.17,
+      "startOffset": 50,
+      "word": "quick"
+    },
+    {
+      "alignedWord": "tour",
+      "case": "success",
+      "end": 5.7,
+      "endOffset": 60,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 5.54,
+      "startOffset": 56,
+      "word": "tour"
+    }
+  ],
+  "speaker": "Mr Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 163,
+  "clipEnd": 169,
+  "partIndex": 5,
+  "clipIndex": 1
+}

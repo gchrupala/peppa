@@ -1,0 +1,125 @@
+{
+  "transcript": "George still has hiccups.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.14,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "still",
+      "case": "success",
+      "end": 2.56,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 7,
+      "word": "still"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 2.72,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.56,
+      "startOffset": 13,
+      "word": "has"
+    },
+    {
+      "alignedWord": "hiccups",
+      "case": "success",
+      "end": 2.7800000000000002,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.72,
+      "startOffset": 17,
+      "word": "hiccups"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E16 - Hiccups.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_11.json",
+  "episode_title": "Hiccups",
+  "clipStart": 190,
+  "clipEnd": 193,
+  "partIndex": 5,
+  "clipIndex": 1
+}

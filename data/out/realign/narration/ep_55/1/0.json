@@ -1,0 +1,206 @@
+{
+  "transcript": "Polly Parrot copies everything that is said.",
+  "words": [
+    {
+      "alignedWord": "polly",
+      "case": "success",
+      "end": 1.26,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 0,
+      "word": "Polly"
+    },
+    {
+      "alignedWord": "parrot",
+      "case": "success",
+      "end": 1.5599999999999998,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 6,
+      "word": "Parrot"
+    },
+    {
+      "alignedWord": "copies",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 13,
+      "word": "copies"
+    },
+    {
+      "alignedWord": "everything",
+      "case": "success",
+      "end": 2.86,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 20,
+      "word": "everything"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 2.96,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.92,
+      "startOffset": 31,
+      "word": "that"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 3.07,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.96,
+      "startOffset": 36,
+      "word": "is"
+    },
+    {
+      "alignedWord": "said",
+      "case": "success",
+      "end": 3.48,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.12,
+      "startOffset": 39,
+      "word": "said"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E04 - Pollys Holiday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_55.json",
+  "episode_title": "Polly's Holiday",
+  "clipStart": 46,
+  "clipEnd": 50,
+  "partIndex": 1,
+  "clipIndex": 0
+}

@@ -1,0 +1,217 @@
+{
+  "transcript": "Granddad Dog is Grandpa Pig's very best friend.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.46,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 0,
+      "word": "Granddad"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.4100000000000001,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 9,
+      "word": "Dog"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.5499999999999998,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 13,
+      "word": "is"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 16,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig's",
+      "case": "success",
+      "end": 2.43,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 24,
+      "word": "Pig's"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 2.81,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.49,
+      "startOffset": 30,
+      "word": "very"
+    },
+    {
+      "alignedWord": "best",
+      "case": "success",
+      "end": 3.04,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.83,
+      "startOffset": 35,
+      "word": "best"
+    },
+    {
+      "alignedWord": "friend",
+      "case": "success",
+      "end": 3.5,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.16,
+      "startOffset": 40,
+      "word": "friend"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E50 - Grandpa Pig's Boat.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_48.json",
+  "episode_title": "Grandpa Pig's Boat",
+  "clipStart": 259,
+  "clipEnd": 263,
+  "partIndex": 5,
+  "clipIndex": 0
+}

@@ -1,0 +1,232 @@
+{
+  "transcript": "It is George's first time at the swimming pool.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.48000000000000004,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.34,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.64,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.48,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "george's",
+      "case": "success",
+      "end": 1.2000000000000002,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 6,
+      "word": "George's"
+    },
+    {
+      "alignedWord": "first",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 15,
+      "word": "first"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 1.9300000000000002,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 21,
+      "word": "time"
+    },
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 26,
+      "word": "at"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 29,
+      "word": "the"
+    },
+    {
+      "alignedWord": "swimming",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 33,
+      "word": "swimming"
+    },
+    {
+      "alignedWord": "pool",
+      "case": "success",
+      "end": 2.79,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 42,
+      "word": "pool"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E28 - Swimming.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_72.json",
+  "episode_title": "Swimming",
+  "clipStart": 69,
+  "clipEnd": 73,
+  "partIndex": 2,
+  "clipIndex": 0
+}

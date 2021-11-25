@@ -1,0 +1,128 @@
+{
+  "transcript": "dancing to their favourite song.",
+  "words": [
+    {
+      "alignedWord": "dancing",
+      "case": "success",
+      "end": 1.02,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 0,
+      "word": "dancing"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.1700000000000002,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 8,
+      "word": "to"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 1.2,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 11,
+      "word": "their"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.51,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.2,
+      "startOffset": 17,
+      "word": "favourite"
+    },
+    {
+      "alignedWord": "song",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 27,
+      "word": "song"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E48 - The Powercut.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_99.json",
+  "episode_title": "The Powercut",
+  "clipStart": 23,
+  "clipEnd": 27,
+  "partIndex": 1,
+  "clipIndex": 1
+}

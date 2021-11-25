@@ -1,0 +1,189 @@
+{
+  "transcript": "so Peppa and George could look after her.",
+  "words": [
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 0.87,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 0,
+      "word": "so"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.28,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 3,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.3699999999999999,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 9,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.7200000000000002,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 13,
+      "word": "George"
+    },
+    {
+      "alignedWord": "could",
+      "case": "success",
+      "end": 1.8699999999999999,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 20,
+      "word": "could"
+    },
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 26,
+      "word": "look"
+    },
+    {
+      "alignedWord": "after",
+      "case": "success",
+      "end": 2.34,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.2399999999999998,
+      "startOffset": 31,
+      "word": "after"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.34,
+      "startOffset": 37,
+      "word": "her"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E04 - Pollys Holiday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_55.json",
+  "episode_title": "Polly's Holiday",
+  "clipStart": 25,
+  "clipEnd": 28,
+  "partIndex": 0,
+  "clipIndex": 2
+}

@@ -1,0 +1,259 @@
+{
+  "transcript": "And the children's parents are here to pick them up.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 0,
+      "word": "And"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.07,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 4,
+      "word": "the"
+    },
+    {
+      "alignedWord": "children's",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 8,
+      "word": "children's"
+    },
+    {
+      "alignedWord": "parents",
+      "case": "success",
+      "end": 1.89,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 19,
+      "word": "parents"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 27,
+      "word": "are"
+    },
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 2.4000000000000004,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 31,
+      "word": "here"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.54,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 36,
+      "word": "to"
+    },
+    {
+      "alignedWord": "pick",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 43,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.59,
+      "startOffset": 39,
+      "word": "pick"
+    },
+    {
+      "alignedWord": "them",
+      "case": "success",
+      "end": 2.88,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 44,
+      "word": "them"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 3.12,
+      "endOffset": 51,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "p_E"
+        }
+      ],
+      "start": 2.88,
+      "startOffset": 49,
+      "word": "up"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E06 - The Playgroup.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_6.json",
+  "episode_title": "The Playgroup",
+  "clipStart": 248,
+  "clipEnd": 253,
+  "partIndex": 4,
+  "clipIndex": 1
+}

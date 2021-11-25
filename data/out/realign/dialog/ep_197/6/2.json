@@ -1,0 +1,158 @@
+{
+  "transcript": "- But the sky is in the sky.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 0.54,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.51,
+      "startOffset": 2,
+      "word": "But"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.66,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 6,
+      "word": "the"
+    },
+    {
+      "alignedWord": "sky",
+      "case": "success",
+      "end": 0.89,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 0.66,
+      "startOffset": 10,
+      "word": "sky"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 14,
+      "word": "is"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.23,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 17,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 20,
+      "word": "the"
+    },
+    {
+      "alignedWord": "sky",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.35,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 24,
+      "word": "sky"
+    }
+  ],
+  "speaker": "Pedro",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 149,
+  "clipEnd": 153,
+  "partIndex": 6,
+  "clipIndex": 2
+}

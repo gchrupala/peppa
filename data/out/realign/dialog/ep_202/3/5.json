@@ -1,0 +1,257 @@
+{
+  "transcript": "- Okay. But smoothies can have lots of different fruit in them.",
+  "words": [
+    {
+      "alignedWord": "okay",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.42,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 2,
+      "word": "Okay"
+    },
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 8,
+      "word": "But"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.85,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.52,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 12,
+      "word": "smoothies"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 3.04,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.89,
+      "startOffset": 22,
+      "word": "can"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 3.22,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_E"
+        }
+      ],
+      "start": 3.04,
+      "startOffset": 26,
+      "word": "have"
+    },
+    {
+      "alignedWord": "lots",
+      "case": "success",
+      "end": 3.49,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.22,
+      "startOffset": 31,
+      "word": "lots"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 3.64,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_E"
+        }
+      ],
+      "start": 3.49,
+      "startOffset": 36,
+      "word": "of"
+    },
+    {
+      "alignedWord": "different",
+      "case": "success",
+      "end": 4.23,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.69,
+      "startOffset": 39,
+      "word": "different"
+    },
+    {
+      "alignedWord": "fruit",
+      "case": "success",
+      "end": 4.57,
+      "endOffset": 54,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 4.24,
+      "startOffset": 49,
+      "word": "fruit"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 4.800000000000001,
+      "endOffset": 57,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.57,
+      "startOffset": 55,
+      "word": "in"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 62,
+      "startOffset": 58,
+      "word": "them"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 107,
+  "clipEnd": 112,
+  "partIndex": 3,
+  "clipIndex": 5
+}

@@ -1,0 +1,133 @@
+{
+  "transcript": "Mr. Zebra, the postman,",
+  "words": [
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 0.62,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.4,
+      "startOffset": 0,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "zebra",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "z_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 4,
+      "word": "Zebra"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.13,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.01,
+      "startOffset": 11,
+      "word": "the"
+    },
+    {
+      "alignedWord": "postman",
+      "case": "success",
+      "end": 1.5799999999999998,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 15,
+      "word": "postman"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E51 - Daddy's Movie Camera.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_51.json",
+  "episode_title": "Daddy's Movie Camera",
+  "clipStart": 20,
+  "clipEnd": 22,
+  "partIndex": 0,
+  "clipIndex": 0
+}

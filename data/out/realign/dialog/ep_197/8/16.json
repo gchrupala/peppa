@@ -1,0 +1,67 @@
+{
+  "transcript": "- What tummy? ",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.27,
+      "startOffset": 2,
+      "word": "What"
+    },
+    {
+      "alignedWord": "tummy",
+      "case": "success",
+      "end": 3.27,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 7,
+      "word": "tummy"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 237,
+  "clipEnd": 241,
+  "partIndex": 8,
+  "clipIndex": 16
+}

@@ -1,0 +1,205 @@
+{
+  "transcript": "All the children have parts in the play.",
+  "words": [
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 0.71,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.5,
+      "startOffset": 0,
+      "word": "All"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.78,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 4,
+      "word": "the"
+    },
+    {
+      "alignedWord": "children",
+      "case": "success",
+      "end": 1.13,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.78,
+      "startOffset": 8,
+      "word": "children"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 1.3599999999999999,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 17,
+      "word": "have"
+    },
+    {
+      "alignedWord": "parts",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 22,
+      "word": "parts"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 28,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.8900000000000001,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 31,
+      "word": "the"
+    },
+    {
+      "alignedWord": "play",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.24,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 35,
+      "word": "play"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E52 - School Play.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_52.json",
+  "episode_title": "School Play",
+  "clipStart": 26,
+  "clipEnd": 29,
+  "partIndex": 1,
+  "clipIndex": 0
+}

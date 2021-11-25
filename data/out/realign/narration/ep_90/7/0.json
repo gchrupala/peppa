@@ -1,0 +1,85 @@
+{
+  "transcript": "Peppa loves picnics.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.5799999999999998,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 6,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "picnics",
+      "case": "success",
+      "end": 2.14,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 12,
+      "word": "picnics"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E22 - School Bus Trip.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_90.json",
+  "episode_title": "School Bus Trip",
+  "clipStart": 199,
+  "clipEnd": 202,
+  "partIndex": 7,
+  "clipIndex": 0
+}

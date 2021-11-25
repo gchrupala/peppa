@@ -1,0 +1,263 @@
+{
+  "transcript": "Candy Cat and Pedro Pony are on the climbing frame.",
+  "words": [
+    {
+      "alignedWord": "candy",
+      "case": "success",
+      "end": 0.53,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.19,
+      "startOffset": 0,
+      "word": "Candy"
+    },
+    {
+      "alignedWord": "cat",
+      "case": "success",
+      "end": 0.79,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.55,
+      "startOffset": 6,
+      "word": "Cat"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.9400000000000001,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.79,
+      "startOffset": 10,
+      "word": "and"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 1.3199999999999998,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 14,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "pony",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 20,
+      "word": "Pony"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 2.03,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 25,
+      "word": "are"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 29,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.2199999999999998,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.13,
+      "startOffset": 32,
+      "word": "the"
+    },
+    {
+      "alignedWord": "climbing",
+      "case": "success",
+      "end": 2.6100000000000003,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.22,
+      "startOffset": 36,
+      "word": "climbing"
+    },
+    {
+      "alignedWord": "frame",
+      "case": "success",
+      "end": 2.94,
+      "endOffset": 50,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 45,
+      "word": "frame"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E44 - The Playground.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_44.json",
+  "episode_title": "The Playground",
+  "clipStart": 26,
+  "clipEnd": 30,
+  "partIndex": 0,
+  "clipIndex": 2
+}

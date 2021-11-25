@@ -1,0 +1,67 @@
+{
+  "transcript": "- Or oranges?",
+  "words": [
+    {
+      "alignedWord": "or",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 2,
+      "word": "Or"
+    },
+    {
+      "alignedWord": "oranges",
+      "case": "success",
+      "end": 1.34,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 5,
+      "word": "oranges"
+    }
+  ],
+  "speaker": "Emily",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 80,
+  "clipEnd": 82,
+  "partIndex": 2,
+  "clipIndex": 2
+}

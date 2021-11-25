@@ -1,0 +1,128 @@
+{
+  "transcript": "\u266a I hope he doesn't break \u266a",
+  "words": [
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 2.6100000000000003,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 2.47,
+      "startOffset": 2,
+      "word": "I"
+    },
+    {
+      "alignedWord": "hope",
+      "case": "success",
+      "end": 3.05,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 3.02,
+      "startOffset": 4,
+      "word": "hope"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 3.19,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.05,
+      "startOffset": 9,
+      "word": "he"
+    },
+    {
+      "alignedWord": "doesn't",
+      "case": "success",
+      "end": 3.71,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.2,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.19,
+      "startOffset": 12,
+      "word": "doesn't"
+    },
+    {
+      "alignedWord": "break",
+      "case": "success",
+      "end": 3.75,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.71,
+      "startOffset": 20,
+      "word": "break"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 81,
+  "clipEnd": 85,
+  "partIndex": 0,
+  "clipIndex": 28
+}

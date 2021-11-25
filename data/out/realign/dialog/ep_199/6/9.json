@@ -1,0 +1,102 @@
+{
+  "transcript": "- It's much too high to jump over.",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 2.86,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 2,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "much",
+      "case": "success",
+      "end": 3.25,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 3.09,
+      "startOffset": 7,
+      "word": "much"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 3.36,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.25,
+      "startOffset": 12,
+      "word": "too"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 16,
+      "word": "high"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 21,
+      "word": "to"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 24,
+      "word": "jump"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 33,
+      "startOffset": 29,
+      "word": "over"
+    }
+  ],
+  "speaker": "Danny",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 204,
+  "clipEnd": 208,
+  "partIndex": 6,
+  "clipIndex": 9
+}

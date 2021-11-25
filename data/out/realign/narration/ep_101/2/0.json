@@ -1,0 +1,259 @@
+{
+  "transcript": "At night, George likes to listen to his space mobile.",
+  "words": [
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 0.12000000000000001,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.1,
+      "startOffset": 0,
+      "word": "At"
+    },
+    {
+      "alignedWord": "night",
+      "case": "success",
+      "end": 0.27,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.12,
+      "startOffset": 3,
+      "word": "night"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.86,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.49,
+      "startOffset": 10,
+      "word": "George"
+    },
+    {
+      "alignedWord": "likes",
+      "case": "success",
+      "end": 1.1099999999999999,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 17,
+      "word": "likes"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.23,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 23,
+      "word": "to"
+    },
+    {
+      "alignedWord": "listen",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 26,
+      "word": "listen"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 33,
+      "word": "to"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 36,
+      "word": "his"
+    },
+    {
+      "alignedWord": "space",
+      "case": "success",
+      "end": 2.3899999999999997,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.91,
+      "startOffset": 40,
+      "word": "space"
+    },
+    {
+      "alignedWord": "mobile",
+      "case": "success",
+      "end": 2.8600000000000003,
+      "endOffset": 52,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.39,
+      "startOffset": 46,
+      "word": "mobile"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E50 - Stars.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_101.json",
+  "episode_title": "Stars",
+  "clipStart": 57,
+  "clipEnd": 62,
+  "partIndex": 2,
+  "clipIndex": 0
+}

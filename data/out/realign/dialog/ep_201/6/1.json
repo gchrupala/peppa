@@ -1,0 +1,139 @@
+{
+  "transcript": "- I put it down too hard.",
+  "words": [
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 0.16,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 2,
+      "word": "I"
+    },
+    {
+      "alignedWord": "put",
+      "case": "success",
+      "end": 0.19,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 4,
+      "word": "put"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.3,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.19,
+      "startOffset": 8,
+      "word": "it"
+    },
+    {
+      "alignedWord": "down",
+      "case": "success",
+      "end": 2.6099999999999994,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.5799999999999996,
+      "startOffset": 11,
+      "word": "down"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 16,
+      "word": "too"
+    },
+    {
+      "alignedWord": "hard",
+      "case": "success",
+      "end": 2.6999999999999997,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 20,
+      "word": "hard"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 114,
+  "clipEnd": 117,
+  "partIndex": 6,
+  "clipIndex": 1
+}

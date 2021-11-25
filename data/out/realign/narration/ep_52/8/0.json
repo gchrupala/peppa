@@ -1,0 +1,51 @@
+{
+  "transcript": "Oh, dear.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 0.15000000000000002,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 0.14,
+      "startOffset": 0,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "dear",
+      "case": "success",
+      "end": 0.26,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 4,
+      "word": "dear"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E52 - School Play.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_52.json",
+  "episode_title": "School Play",
+  "clipStart": 183,
+  "clipEnd": 184,
+  "partIndex": 8,
+  "clipIndex": 0
+}

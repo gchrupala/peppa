@@ -1,0 +1,162 @@
+{
+  "transcript": "- Look! It's Mr. Potato! - Mrs. Carrot.",
+  "words": [
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 1.6300000000000001,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 2,
+      "word": "Look"
+    },
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 8,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 2.3699999999999997,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.05,
+      "startOffset": 13,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "potato",
+      "case": "success",
+      "end": 3.42,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.45,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.37,
+      "startOffset": 17,
+      "word": "Potato"
+    },
+    {
+      "alignedWord": "mrs",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.48,
+      "startOffset": 27,
+      "word": "Mrs"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 38,
+      "startOffset": 32,
+      "word": "Carrot"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 20,
+  "clipEnd": 24,
+  "partIndex": 1,
+  "clipIndex": 0
+}

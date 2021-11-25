@@ -1,0 +1,63 @@
+{
+  "transcript": "- Uh... yes, it's magic.",
+  "words": [
+    {
+      "alignedWord": "uh",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.49,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 2,
+      "word": "Uh"
+    },
+    {
+      "alignedWord": "yes",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.23,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.29,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.1,
+      "startOffset": 8,
+      "word": "yes"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 17,
+      "startOffset": 13,
+      "word": "it's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 18,
+      "word": "magic"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 92,
+  "clipEnd": 95,
+  "partIndex": 3,
+  "clipIndex": 10
+}

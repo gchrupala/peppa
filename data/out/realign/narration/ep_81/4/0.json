@@ -1,0 +1,132 @@
+{
+  "transcript": "What is Daddy Pig doing?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.29,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 5,
+      "word": "is"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 8,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.7000000000000002,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 14,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "doing",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 18,
+      "word": "doing"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E37 - Painting.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_81.json",
+  "episode_title": "Painting",
+  "clipStart": 76,
+  "clipEnd": 78,
+  "partIndex": 4,
+  "clipIndex": 0
+}

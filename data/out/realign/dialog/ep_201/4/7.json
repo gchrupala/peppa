@@ -1,0 +1,121 @@
+{
+  "transcript": "- That's a nice teapot, Mr. Bull.",
+  "words": [
+    {
+      "alignedWord": "that's",
+      "case": "success",
+      "end": 0.43,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.39,
+      "startOffset": 2,
+      "word": "That's"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.12,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.28,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 9,
+      "word": "a"
+    },
+    {
+      "alignedWord": "nice",
+      "case": "success",
+      "end": 3.37,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.24,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.94,
+      "startOffset": 11,
+      "word": "nice"
+    },
+    {
+      "alignedWord": "teapot",
+      "case": "success",
+      "end": 3.79,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.41,
+      "startOffset": 16,
+      "word": "teapot"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 24,
+      "word": "Mr"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 28,
+      "word": "Bull"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 82,
+  "clipEnd": 86,
+  "partIndex": 4,
+  "clipIndex": 7
+}

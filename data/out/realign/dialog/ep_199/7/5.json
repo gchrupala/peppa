@@ -1,0 +1,126 @@
+{
+  "transcript": "- My tummy is not too big.",
+  "words": [
+    {
+      "alignedWord": "my",
+      "case": "success",
+      "end": 2.18,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 2.16,
+      "startOffset": 2,
+      "word": "My"
+    },
+    {
+      "alignedWord": "tummy",
+      "case": "success",
+      "end": 2.22,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 5,
+      "word": "tummy"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.24,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.22,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 2.27,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.24,
+      "startOffset": 14,
+      "word": "not"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.27,
+      "startOffset": 18,
+      "word": "too"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 22,
+      "word": "big"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 234,
+  "clipEnd": 237,
+  "partIndex": 7,
+  "clipIndex": 5
+}

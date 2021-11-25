@@ -1,0 +1,167 @@
+{
+  "transcript": "Richard Rabbit has scored a goal.",
+  "words": [
+    {
+      "alignedWord": "richard",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 0,
+      "word": "Richard"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 1.36,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 8,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 15,
+      "word": "has"
+    },
+    {
+      "alignedWord": "scored",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 19,
+      "word": "scored"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.96,
+      "startOffset": 26,
+      "word": "a"
+    },
+    {
+      "alignedWord": "goal",
+      "case": "success",
+      "end": 2.27,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.04,
+      "startOffset": 28,
+      "word": "goal"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E49 - Bouncy Ball.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_100.json",
+  "episode_title": "Bouncy Ball",
+  "clipStart": 187,
+  "clipEnd": 190,
+  "partIndex": 10,
+  "clipIndex": 0
+}

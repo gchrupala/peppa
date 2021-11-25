@@ -1,0 +1,148 @@
+{
+  "transcript": "in Mummy and Daddy's bedroom.",
+  "words": [
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 0.71,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.69,
+      "startOffset": 0,
+      "word": "in"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 3,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.41,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 9,
+      "word": "and"
+    },
+    {
+      "alignedWord": "daddy's",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 13,
+      "word": "Daddy's"
+    },
+    {
+      "alignedWord": "bedroom",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 21,
+      "word": "bedroom"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E19 - Dressing Up.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_18.json",
+  "episode_title": "Dressing Up",
+  "clipStart": 27,
+  "clipEnd": 29,
+  "partIndex": 0,
+  "clipIndex": 1
+}

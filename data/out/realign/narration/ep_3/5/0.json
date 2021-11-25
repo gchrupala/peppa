@@ -1,0 +1,186 @@
+{
+  "transcript": "George doesn't like playing on his own.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.67,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "doesn't",
+      "case": "success",
+      "end": 0.9,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 7,
+      "word": "doesn't"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 15,
+      "word": "like"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 1.5699999999999998,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 20,
+      "word": "playing"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 1.6500000000000001,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.57,
+      "startOffset": 28,
+      "word": "on"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 1.84,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 31,
+      "word": "his"
+    },
+    {
+      "alignedWord": "own",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.84,
+      "startOffset": 35,
+      "word": "own"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E04 - Best Friend.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_3.json",
+  "episode_title": "Best Friend",
+  "clipStart": 114,
+  "clipEnd": 117,
+  "partIndex": 5,
+  "clipIndex": 0
+}

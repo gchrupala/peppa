@@ -1,0 +1,140 @@
+{
+  "transcript": "Peppa loves playing tea parties.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.62,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.46,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "loves",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 6,
+      "word": "loves"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 1.3900000000000001,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 12,
+      "word": "playing"
+    },
+    {
+      "alignedWord": "tea",
+      "case": "success",
+      "end": 1.5899999999999999,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 20,
+      "word": "tea"
+    },
+    {
+      "alignedWord": "parties",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 24,
+      "word": "parties"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E36 - Mister Skinnylegs.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_47.json",
+  "episode_title": "Mister Skinnylegs",
+  "clipStart": 112,
+  "clipEnd": 115,
+  "partIndex": 6,
+  "clipIndex": 1
+}

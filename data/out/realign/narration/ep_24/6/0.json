@@ -1,0 +1,181 @@
+{
+  "transcript": "Peppa has found the next clue-- a key.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.93,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 6,
+      "word": "has"
+    },
+    {
+      "alignedWord": "found",
+      "case": "success",
+      "end": 2.25,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 10,
+      "word": "found"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.32,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.25,
+      "startOffset": 16,
+      "word": "the"
+    },
+    {
+      "alignedWord": "next",
+      "case": "success",
+      "end": 2.6399999999999997,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.32,
+      "startOffset": 20,
+      "word": "next"
+    },
+    {
+      "alignedWord": "clue",
+      "case": "success",
+      "end": 2.96,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.64,
+      "startOffset": 25,
+      "word": "clue"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 3.43,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.31,
+      "startOffset": 32,
+      "word": "a"
+    },
+    {
+      "alignedWord": "key",
+      "case": "success",
+      "end": 3.6500000000000004,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.43,
+      "startOffset": 34,
+      "word": "key"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E26 - Treasure Hunt.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_24.json",
+  "episode_title": "Treasure Hunt",
+  "clipStart": 194,
+  "clipEnd": 198,
+  "partIndex": 6,
+  "clipIndex": 0
+}

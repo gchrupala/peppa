@@ -1,0 +1,120 @@
+{
+  "transcript": "- When I ring this bell... ",
+  "words": [
+    {
+      "alignedWord": "when",
+      "case": "success",
+      "end": 1.39,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 2,
+      "word": "When"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 1.47,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 7,
+      "word": "I"
+    },
+    {
+      "alignedWord": "ring",
+      "case": "success",
+      "end": 1.73,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 9,
+      "word": "ring"
+    },
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 14,
+      "word": "this"
+    },
+    {
+      "alignedWord": "bell",
+      "case": "success",
+      "end": 2.56,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.39,
+      "startOffset": 19,
+      "word": "bell"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 51,
+  "clipEnd": 54,
+  "partIndex": 0,
+  "clipIndex": 17
+}

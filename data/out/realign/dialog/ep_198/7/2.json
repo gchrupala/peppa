@@ -1,0 +1,80 @@
+{
+  "transcript": "I need your car.",
+  "words": [
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 1,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 0,
+      "word": "I"
+    },
+    {
+      "alignedWord": "need",
+      "case": "success",
+      "end": 2.28,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 2,
+      "word": "need"
+    },
+    {
+      "alignedWord": "your",
+      "case": "success",
+      "end": 2.4699999999999998,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.28,
+      "startOffset": 7,
+      "word": "your"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 15,
+      "startOffset": 12,
+      "word": "car"
+    }
+  ],
+  "speaker": "Madame Gazelle",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 245,
+  "clipEnd": 248,
+  "partIndex": 7,
+  "clipIndex": 2
+}

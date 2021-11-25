@@ -1,0 +1,59 @@
+{
+  "transcript": "- Really? How?",
+  "words": [
+    {
+      "alignedWord": "really",
+      "case": "success",
+      "end": 2.28,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 2,
+      "word": "Really"
+    },
+    {
+      "alignedWord": "how",
+      "case": "success",
+      "end": 2.72,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 2.6,
+      "startOffset": 10,
+      "word": "How"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 230,
+  "clipEnd": 233,
+  "partIndex": 3,
+  "clipIndex": 45
+}

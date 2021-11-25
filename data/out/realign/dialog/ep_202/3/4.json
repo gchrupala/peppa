@@ -1,0 +1,208 @@
+{
+  "transcript": "- Yes, please. Can I have a smoothie with apples?",
+  "words": [
+    {
+      "alignedWord": "yes",
+      "case": "success",
+      "end": 2.45,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.21,
+      "startOffset": 2,
+      "word": "Yes"
+    },
+    {
+      "alignedWord": "please",
+      "case": "success",
+      "end": 3.55,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.36,
+      "startOffset": 7,
+      "word": "please"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 3.9600000000000004,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.74,
+      "startOffset": 15,
+      "word": "Can"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 4.01,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 3.96,
+      "startOffset": 19,
+      "word": "I"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 5.02,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 4.92,
+      "startOffset": 21,
+      "word": "have"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 5.199999999999999,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "ey_S"
+        }
+      ],
+      "start": 5.02,
+      "startOffset": 26,
+      "word": "a"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 5.21,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 5.2,
+      "startOffset": 28,
+      "word": "smoothie"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 6.75,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "dh_E"
+        }
+      ],
+      "start": 6.72,
+      "startOffset": 37,
+      "word": "with"
+    },
+    {
+      "alignedWord": "apples",
+      "case": "success",
+      "end": 6.8,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 6.75,
+      "startOffset": 42,
+      "word": "apples"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 101,
+  "clipEnd": 108,
+  "partIndex": 3,
+  "clipIndex": 4
+}

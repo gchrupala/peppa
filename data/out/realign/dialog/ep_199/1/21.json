@@ -1,0 +1,238 @@
+{
+  "transcript": "and try and knock the skittles over by rolling this heavy ball.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 3.0,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "try",
+      "case": "success",
+      "end": 3.25,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 3.01,
+      "startOffset": 4,
+      "word": "try"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 3.3499999999999996,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.26,
+      "startOffset": 8,
+      "word": "and"
+    },
+    {
+      "alignedWord": "knock",
+      "case": "success",
+      "end": 3.69,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.36,
+      "startOffset": 12,
+      "word": "knock"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.82,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.69,
+      "startOffset": 18,
+      "word": "the"
+    },
+    {
+      "alignedWord": "skittles",
+      "case": "success",
+      "end": 4.22,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.82,
+      "startOffset": 22,
+      "word": "skittles"
+    },
+    {
+      "alignedWord": "over",
+      "case": "success",
+      "end": 4.46,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 4.22,
+      "startOffset": 31,
+      "word": "over"
+    },
+    {
+      "alignedWord": "by",
+      "case": "success",
+      "end": 4.67,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 4.46,
+      "startOffset": 36,
+      "word": "by"
+    },
+    {
+      "alignedWord": "rolling",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "r_B"
+        }
+      ],
+      "start": 4.68,
+      "startOffset": 39,
+      "word": "rolling"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 51,
+      "startOffset": 47,
+      "word": "this"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 57,
+      "startOffset": 52,
+      "word": "heavy"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 62,
+      "startOffset": 58,
+      "word": "ball"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 83,
+  "clipEnd": 88,
+  "partIndex": 1,
+  "clipIndex": 21
+}

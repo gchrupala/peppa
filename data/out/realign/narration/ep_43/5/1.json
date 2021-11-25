@@ -1,0 +1,136 @@
+{
+  "transcript": "The room is untidy, again.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.25,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "room",
+      "case": "success",
+      "end": 1.32,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 4,
+      "word": "room"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.4500000000000002,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "untidy",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 12,
+      "word": "untidy"
+    },
+    {
+      "alignedWord": "again",
+      "case": "success",
+      "end": 2.43,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 20,
+      "word": "again"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E45 - Tidying Up.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_43.json",
+  "episode_title": "Tidying Up",
+  "clipStart": 273,
+  "clipEnd": 276,
+  "partIndex": 5,
+  "clipIndex": 1
+}

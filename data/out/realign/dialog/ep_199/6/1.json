@@ -1,0 +1,81 @@
+{
+  "transcript": "- We're playing Bat and Ball.",
+  "words": [
+    {
+      "alignedWord": "we're",
+      "case": "success",
+      "end": 0.85,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.64,
+      "startOffset": 2,
+      "word": "We're"
+    },
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 2.26,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 8,
+      "word": "playing"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 19,
+      "startOffset": 16,
+      "word": "Bat"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 20,
+      "word": "and"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 24,
+      "word": "Ball"
+    }
+  ],
+  "speaker": "Suzy",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 178,
+  "clipEnd": 181,
+  "partIndex": 6,
+  "clipIndex": 1
+}

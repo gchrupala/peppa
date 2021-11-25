@@ -1,0 +1,140 @@
+{
+  "transcript": "they must wear life jackets.",
+  "words": [
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 0.27999999999999997,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.24,
+      "startOffset": 0,
+      "word": "they"
+    },
+    {
+      "alignedWord": "must",
+      "case": "success",
+      "end": 0.5900000000000001,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.28,
+      "startOffset": 5,
+      "word": "must"
+    },
+    {
+      "alignedWord": "wear",
+      "case": "success",
+      "end": 0.8099999999999999,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 10,
+      "word": "wear"
+    },
+    {
+      "alignedWord": "life",
+      "case": "success",
+      "end": 1.11,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "f_E"
+        }
+      ],
+      "start": 0.81,
+      "startOffset": 15,
+      "word": "life"
+    },
+    {
+      "alignedWord": "jackets",
+      "case": "success",
+      "end": 1.6800000000000002,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 20,
+      "word": "jackets"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E50 - Grandpa Pig's Boat.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_48.json",
+  "episode_title": "Grandpa Pig's Boat",
+  "clipStart": 34,
+  "clipEnd": 37,
+  "partIndex": 1,
+  "clipIndex": 1
+}

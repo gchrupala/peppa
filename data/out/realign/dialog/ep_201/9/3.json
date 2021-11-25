@@ -1,0 +1,101 @@
+{
+  "transcript": "Where does that go? ",
+  "words": [
+    {
+      "alignedWord": "where",
+      "case": "success",
+      "end": 3.6199999999999997,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.53,
+      "startOffset": 0,
+      "word": "Where"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 3.75,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.72,
+      "startOffset": 6,
+      "word": "does"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 3.78,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.75,
+      "startOffset": 11,
+      "word": "that"
+    },
+    {
+      "alignedWord": "go",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 16,
+      "word": "go"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 209,
+  "clipEnd": 213,
+  "partIndex": 9,
+  "clipIndex": 3
+}

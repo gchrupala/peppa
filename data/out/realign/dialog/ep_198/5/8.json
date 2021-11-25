@@ -1,0 +1,140 @@
+{
+  "transcript": "- Space rockets and all that.",
+  "words": [
+    {
+      "alignedWord": "space",
+      "case": "success",
+      "end": 2.41,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.23,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.32,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 2,
+      "word": "Space"
+    },
+    {
+      "alignedWord": "rockets",
+      "case": "success",
+      "end": 3.23,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.48,
+      "startOffset": 8,
+      "word": "rockets"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 3.4699999999999998,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.44,
+      "startOffset": 16,
+      "word": "and"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 3.79,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.56,
+      "startOffset": 20,
+      "word": "all"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 3.8200000000000003,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.79,
+      "startOffset": 24,
+      "word": "that"
+    }
+  ],
+  "speaker": "Mr Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 184,
+  "clipEnd": 188,
+  "partIndex": 5,
+  "clipIndex": 8
+}

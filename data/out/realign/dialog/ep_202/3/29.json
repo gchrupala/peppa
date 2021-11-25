@@ -1,0 +1,198 @@
+{
+  "transcript": "- Maybe George would like some dinosaur juice.",
+  "words": [
+    {
+      "alignedWord": "maybe",
+      "case": "success",
+      "end": 2.64,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.24,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.34,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 2,
+      "word": "Maybe"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 3.16,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 8,
+      "word": "George"
+    },
+    {
+      "alignedWord": "would",
+      "case": "success",
+      "end": 3.31,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.16,
+      "startOffset": 15,
+      "word": "would"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 3.58,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.31,
+      "startOffset": 21,
+      "word": "like"
+    },
+    {
+      "alignedWord": "some",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.58,
+      "startOffset": 26,
+      "word": "some"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 4.58,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.23,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.81,
+      "startOffset": 31,
+      "word": "dinosaur"
+    },
+    {
+      "alignedWord": "juice",
+      "case": "success",
+      "end": 4.62,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.58,
+      "startOffset": 40,
+      "word": "juice"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 183,
+  "clipEnd": 188,
+  "partIndex": 3,
+  "clipIndex": 29
+}

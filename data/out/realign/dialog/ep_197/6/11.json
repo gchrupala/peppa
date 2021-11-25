@@ -1,0 +1,74 @@
+{
+  "transcript": "- At the fair!",
+  "words": [
+    {
+      "alignedWord": "at",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 2,
+      "word": "At"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.22,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.2,
+      "startOffset": 5,
+      "word": "the"
+    },
+    {
+      "alignedWord": "fair",
+      "case": "success",
+      "end": 2.29,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.22,
+      "startOffset": 9,
+      "word": "fair"
+    }
+  ],
+  "speaker": "Danny",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 177,
+  "clipEnd": 180,
+  "partIndex": 6,
+  "clipIndex": 11
+}

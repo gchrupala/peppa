@@ -1,0 +1,209 @@
+{
+  "transcript": "a Jack-in-the-box, and Mr. Dinosaur.",
+  "words": [
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.96,
+      "endOffset": 1,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 0,
+      "word": "a"
+    },
+    {
+      "alignedWord": "jack",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 2,
+      "word": "Jack"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.37,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.27,
+      "startOffset": 7,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.4700000000000002,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 10,
+      "word": "the"
+    },
+    {
+      "alignedWord": "box",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 14,
+      "word": "box"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.35,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.13,
+      "startOffset": 19,
+      "word": "and"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 2.6999999999999997,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 23,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 3.12,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 27,
+      "word": "Dinosaur"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E06 - Mysteries.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_57.json",
+  "episode_title": "Mysteries",
+  "clipStart": 161,
+  "clipEnd": 165,
+  "partIndex": 6,
+  "clipIndex": 1
+}

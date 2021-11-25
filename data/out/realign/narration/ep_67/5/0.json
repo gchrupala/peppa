@@ -1,0 +1,117 @@
+{
+  "transcript": "George and Richard have",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.67,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.7000000000000001,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 7,
+      "word": "and"
+    },
+    {
+      "alignedWord": "richard",
+      "case": "success",
+      "end": 1.35,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.95,
+      "startOffset": 11,
+      "word": "Richard"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 19,
+      "word": "have"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E24 - Sports day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_67.json",
+  "episode_title": "Sports Day",
+  "clipStart": 97,
+  "clipEnd": 99,
+  "partIndex": 5,
+  "clipIndex": 0
+}

@@ -1,0 +1,55 @@
+{
+  "transcript": "- Caught it! ",
+  "words": [
+    {
+      "alignedWord": "caught",
+      "case": "success",
+      "end": 0.25,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.13,
+      "startOffset": 2,
+      "word": "Caught"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.27,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.25,
+      "startOffset": 9,
+      "word": "it"
+    }
+  ],
+  "speaker": "Suzy",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 140,
+  "clipEnd": 143,
+  "partIndex": 4,
+  "clipIndex": 5
+}

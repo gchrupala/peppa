@@ -1,0 +1,193 @@
+{
+  "transcript": "No one is looking where they are going.",
+  "words": [
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 0.31,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.21,
+      "startOffset": 0,
+      "word": "No"
+    },
+    {
+      "alignedWord": "one",
+      "case": "success",
+      "end": 0.53,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.37,
+      "startOffset": 3,
+      "word": "one"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.63,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.53,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "looking",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 10,
+      "word": "looking"
+    },
+    {
+      "alignedWord": "where",
+      "case": "success",
+      "end": 1.2200000000000002,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 18,
+      "word": "where"
+    },
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 1.3699999999999999,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 24,
+      "word": "they"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.4500000000000002,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 29,
+      "word": "are"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 33,
+      "word": "going"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E36 - The Balloon Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_77.json",
+  "episode_title": "The Balloon Ride",
+  "clipStart": 199,
+  "clipEnd": 202,
+  "partIndex": 6,
+  "clipIndex": 1
+}

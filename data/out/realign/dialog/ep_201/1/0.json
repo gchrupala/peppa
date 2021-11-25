@@ -1,0 +1,93 @@
+{
+  "transcript": " - I love our car!",
+  "words": [
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 1.72,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 3,
+      "word": "I"
+    },
+    {
+      "alignedWord": "love",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 5,
+      "word": "love"
+    },
+    {
+      "alignedWord": "our",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 10,
+      "word": "our"
+    },
+    {
+      "alignedWord": "car",
+      "case": "success",
+      "end": 1.95,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 14,
+      "word": "car"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 21,
+  "clipEnd": 25,
+  "partIndex": 1,
+  "clipIndex": 0
+}

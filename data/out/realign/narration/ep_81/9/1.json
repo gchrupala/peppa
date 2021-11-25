@@ -1,0 +1,179 @@
+{
+  "transcript": "The ducks have made paint footprints",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.85,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.61,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "ducks",
+      "case": "success",
+      "end": 1.24,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 4,
+      "word": "ducks"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 1.39,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 10,
+      "word": "have"
+    },
+    {
+      "alignedWord": "made",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 15,
+      "word": "made"
+    },
+    {
+      "alignedWord": "paint",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 20,
+      "word": "paint"
+    },
+    {
+      "alignedWord": "footprints",
+      "case": "success",
+      "end": 2.59,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 26,
+      "word": "footprints"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E37 - Painting.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_81.json",
+  "episode_title": "Painting",
+  "clipStart": 249,
+  "clipEnd": 252,
+  "partIndex": 9,
+  "clipIndex": 1
+}

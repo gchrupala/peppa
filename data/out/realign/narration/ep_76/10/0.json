@@ -1,0 +1,248 @@
+{
+  "transcript": "The warm milk makes George feel very, very sleepy.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "warm",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 4,
+      "word": "warm"
+    },
+    {
+      "alignedWord": "milk",
+      "case": "success",
+      "end": 2.4299999999999997,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.05,
+      "startOffset": 9,
+      "word": "milk"
+    },
+    {
+      "alignedWord": "makes",
+      "case": "success",
+      "end": 2.6900000000000004,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 14,
+      "word": "makes"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 3.05,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 2.69,
+      "startOffset": 20,
+      "word": "George"
+    },
+    {
+      "alignedWord": "feel",
+      "case": "success",
+      "end": 3.34,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.06,
+      "startOffset": 27,
+      "word": "feel"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 3.85,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.35,
+      "startOffset": 32,
+      "word": "very"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 4.25,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.9,
+      "startOffset": 38,
+      "word": "very"
+    },
+    {
+      "alignedWord": "sleepy",
+      "case": "success",
+      "end": 4.77,
+      "endOffset": 49,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.25,
+      "startOffset": 43,
+      "word": "sleepy"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E32 - George Catches a Cold.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_76.json",
+  "episode_title": "George Catches a Cold",
+  "clipStart": 218,
+  "clipEnd": 224,
+  "partIndex": 10,
+  "clipIndex": 0
+}

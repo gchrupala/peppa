@@ -1,0 +1,83 @@
+{
+  "transcript": "- Strawberry! - George!",
+  "words": [
+    {
+      "alignedWord": "strawberry",
+      "case": "success",
+      "end": 0.74,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 2,
+      "word": "Strawberry"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.34,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.28,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.74,
+      "startOffset": 16,
+      "word": "George"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 172,
+  "clipEnd": 175,
+  "partIndex": 3,
+  "clipIndex": 25
+}

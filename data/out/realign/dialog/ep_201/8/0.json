@@ -1,0 +1,151 @@
+{
+  "transcript": "- Well done, Peppa. I'll glue those bits together.",
+  "words": [
+    {
+      "alignedWord": "well",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 2,
+      "word": "Well"
+    },
+    {
+      "alignedWord": "done",
+      "case": "success",
+      "end": 2.89,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.49,
+      "startOffset": 7,
+      "word": "done"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.3899999999999997,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.47,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.92,
+      "startOffset": 13,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "i'll",
+      "case": "success",
+      "end": 3.74,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.72,
+      "startOffset": 20,
+      "word": "I'll"
+    },
+    {
+      "alignedWord": "glue",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.74,
+      "startOffset": 25,
+      "word": "glue"
+    },
+    {
+      "alignedWord": "those",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.77,
+      "startOffset": 30,
+      "word": "those"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 40,
+      "startOffset": 36,
+      "word": "bits"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 49,
+      "startOffset": 41,
+      "word": "together"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 193,
+  "clipEnd": 197,
+  "partIndex": 8,
+  "clipIndex": 0
+}

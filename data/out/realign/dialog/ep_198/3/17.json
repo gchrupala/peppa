@@ -1,0 +1,73 @@
+{
+  "transcript": "- Uh, Madame Gazelle, I need the toilet.",
+  "words": [
+    {
+      "alignedWord": "uh",
+      "case": "success",
+      "end": 1.6800000000000002,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 2,
+      "word": "Uh"
+    },
+    {
+      "alignedWord": "madame",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 3.12,
+          "phone": "sil"
+        }
+      ],
+      "start": 1.68,
+      "startOffset": 6,
+      "word": "Madame"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 13,
+      "word": "Gazelle"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 22,
+      "word": "I"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 24,
+      "word": "need"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 29,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 39,
+      "startOffset": 33,
+      "word": "toilet"
+    }
+  ],
+  "speaker": "Pedro",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 109,
+  "clipEnd": 114,
+  "partIndex": 3,
+  "clipIndex": 17
+}

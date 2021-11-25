@@ -1,0 +1,190 @@
+{
+  "transcript": "The sky is getting darker and darker.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.6699999999999999,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.57,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "sky",
+      "case": "success",
+      "end": 1.1400000000000001,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.28,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 4,
+      "word": "sky"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 8,
+      "word": "is"
+    },
+    {
+      "alignedWord": "getting",
+      "case": "success",
+      "end": 1.59,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 11,
+      "word": "getting"
+    },
+    {
+      "alignedWord": "darker",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 19,
+      "word": "darker"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 26,
+      "word": "and"
+    },
+    {
+      "alignedWord": "darker",
+      "case": "success",
+      "end": 2.39,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 30,
+      "word": "darker"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E32 - Thunderstrom.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_32.json",
+  "episode_title": "Thunderstorm",
+  "clipStart": 93,
+  "clipEnd": 97,
+  "partIndex": 1,
+  "clipIndex": 0
+}

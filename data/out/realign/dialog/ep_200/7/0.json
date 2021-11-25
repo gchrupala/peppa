@@ -1,0 +1,102 @@
+{
+  "transcript": "- Pedal faster, Mummy! ",
+  "words": [
+    {
+      "alignedWord": "pedal",
+      "case": "success",
+      "end": 3.32,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.21,
+      "startOffset": 2,
+      "word": "Pedal"
+    },
+    {
+      "alignedWord": "faster",
+      "case": "success",
+      "end": 3.3699999999999997,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.32,
+      "startOffset": 8,
+      "word": "faster"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 3.7,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.44,
+      "startOffset": 16,
+      "word": "Mummy"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 241,
+  "clipEnd": 245,
+  "partIndex": 7,
+  "clipIndex": 0
+}

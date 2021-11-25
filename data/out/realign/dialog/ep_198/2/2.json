@@ -1,0 +1,63 @@
+{
+  "transcript": "- Okay, Mummy.",
+  "words": [
+    {
+      "alignedWord": "okay",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 2,
+      "word": "Okay"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.48,
+      "startOffset": 8,
+      "word": "Mummy"
+    }
+  ],
+  "speaker": "Pedro",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 38,
+  "clipEnd": 41,
+  "partIndex": 2,
+  "clipIndex": 2
+}

@@ -1,0 +1,358 @@
+{
+  "transcript": "It is early morning, so Mr. Bull tries to be as quiet as he can.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.36,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.21,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.49,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.36,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "early",
+      "case": "success",
+      "end": 0.85,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "er_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 6,
+      "word": "early"
+    },
+    {
+      "alignedWord": "morning",
+      "case": "success",
+      "end": 1.31,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 12,
+      "word": "morning"
+    },
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 21,
+      "word": "so"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 2.14,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.84,
+      "startOffset": 24,
+      "word": "Mr"
+    },
+    {
+      "alignedWord": "bull",
+      "case": "success",
+      "end": 2.5900000000000003,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.14,
+      "startOffset": 28,
+      "word": "Bull"
+    },
+    {
+      "alignedWord": "tries",
+      "case": "success",
+      "end": 2.88,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.6,
+      "startOffset": 33,
+      "word": "tries"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.9899999999999998,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.88,
+      "startOffset": 39,
+      "word": "to"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 3.1900000000000004,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.99,
+      "startOffset": 42,
+      "word": "be"
+    },
+    {
+      "alignedWord": "as",
+      "case": "success",
+      "end": 3.38,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.21,
+      "startOffset": 45,
+      "word": "as"
+    },
+    {
+      "alignedWord": "quiet",
+      "case": "success",
+      "end": 3.91,
+      "endOffset": 53,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.38,
+      "startOffset": 48,
+      "word": "quiet"
+    },
+    {
+      "alignedWord": "as",
+      "case": "success",
+      "end": 4.04,
+      "endOffset": 56,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.91,
+      "startOffset": 54,
+      "word": "as"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 4.2,
+      "endOffset": 59,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.04,
+      "startOffset": 57,
+      "word": "he"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 4.58,
+      "endOffset": 63,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.2,
+      "startOffset": 60,
+      "word": "can"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E12 - Recycling.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_63.json",
+  "episode_title": "Recycling",
+  "clipStart": 24,
+  "clipEnd": 30,
+  "partIndex": 0,
+  "clipIndex": 1
+}

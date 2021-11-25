@@ -1,0 +1,82 @@
+{
+  "transcript": ": Hello, Peppa! - Hello!",
+  "words": [
+    {
+      "alignedWord": "hello",
+      "case": "success",
+      "end": 1.2,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 2,
+      "word": "Hello"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 9,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "hello",
+      "case": "success",
+      "end": 1.64,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 18,
+      "word": "Hello"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 50,
+  "clipEnd": 53,
+  "partIndex": 1,
+  "clipIndex": 11
+}

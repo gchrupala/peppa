@@ -1,0 +1,79 @@
+{
+  "transcript": "- My turn. - It's very hard, Suzy.",
+  "words": [
+    {
+      "alignedWord": "my",
+      "case": "success",
+      "end": 4.199999999999999,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 4.18,
+      "startOffset": 2,
+      "word": "My"
+    },
+    {
+      "alignedWord": "turn",
+      "case": "success",
+      "end": 4.26,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.2,
+      "startOffset": 5,
+      "word": "turn"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 17,
+      "startOffset": 13,
+      "word": "It's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 22,
+      "startOffset": 18,
+      "word": "very"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 27,
+      "startOffset": 23,
+      "word": "hard"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 33,
+      "startOffset": 29,
+      "word": "Suzy"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 94,
+  "clipEnd": 99,
+  "partIndex": 2,
+  "clipIndex": 0
+}

@@ -1,0 +1,148 @@
+{
+  "transcript": "Grandad Dog runs the garage.",
+  "words": [
+    {
+      "alignedWord": "grandad",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 0,
+      "word": "Grandad"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 1.6,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 8,
+      "word": "Dog"
+    },
+    {
+      "alignedWord": "runs",
+      "case": "success",
+      "end": 1.87,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 12,
+      "word": "runs"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.9800000000000002,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 17,
+      "word": "the"
+    },
+    {
+      "alignedWord": "garage",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "zh_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 21,
+      "word": "garage"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E11 - The New Car.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_23.json",
+  "episode_title": "The New Car",
+  "clipStart": 86,
+  "clipEnd": 89,
+  "partIndex": 3,
+  "clipIndex": 0
+}

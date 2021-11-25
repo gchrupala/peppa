@@ -1,0 +1,238 @@
+{
+  "transcript": "- Do I know how to work it?! I'm Captain Dog! Ruff!",
+  "words": [
+    {
+      "alignedWord": "do",
+      "case": "success",
+      "end": 1.51,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 2,
+      "word": "Do"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 5,
+      "word": "I"
+    },
+    {
+      "alignedWord": "know",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 7,
+      "word": "know"
+    },
+    {
+      "alignedWord": "how",
+      "case": "success",
+      "end": 2.41,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 2.15,
+      "startOffset": 12,
+      "word": "how"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.46,
+      "startOffset": 16,
+      "word": "to"
+    },
+    {
+      "alignedWord": "work",
+      "case": "success",
+      "end": 2.96,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 19,
+      "word": "work"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 3.14,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.96,
+      "startOffset": 24,
+      "word": "it"
+    },
+    {
+      "alignedWord": "i'm",
+      "case": "success",
+      "end": 4.18,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.28,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.89,
+      "startOffset": 29,
+      "word": "I'm"
+    },
+    {
+      "alignedWord": "captain",
+      "case": "success",
+      "end": 5.039999999999999,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.24,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.27,
+      "startOffset": 33,
+      "word": "Captain"
+    },
+    {
+      "alignedWord": "dog",
+      "case": "success",
+      "end": 5.62,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.27,
+          "phone": "g_E"
+        }
+      ],
+      "start": 5.05,
+      "startOffset": 41,
+      "word": "Dog"
+    },
+    {
+      "alignedWord": "ruff",
+      "case": "success",
+      "end": 5.8,
+      "endOffset": 50,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "r_B"
+        }
+      ],
+      "start": 5.72,
+      "startOffset": 46,
+      "word": "Ruff"
+    }
+  ],
+  "speaker": "Captain Dog",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 124,
+  "clipEnd": 130,
+  "partIndex": 3,
+  "clipIndex": 5
+}

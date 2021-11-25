@@ -1,0 +1,152 @@
+{
+  "transcript": "Zoe, Suzie, Rebecca, and Richard.",
+  "words": [
+    {
+      "alignedWord": "zoe",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "z_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 0,
+      "word": "Zoe"
+    },
+    {
+      "alignedWord": "suzie",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 5,
+      "word": "Suzie"
+    },
+    {
+      "alignedWord": "rebecca",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.97,
+      "startOffset": 12,
+      "word": "Rebecca"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.74,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.64,
+      "startOffset": 21,
+      "word": "and"
+    },
+    {
+      "alignedWord": "richard",
+      "case": "success",
+      "end": 3.08,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.74,
+      "startOffset": 25,
+      "word": "Richard"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E41 - Dens.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_88.json",
+  "episode_title": "Dens",
+  "clipStart": 30,
+  "clipEnd": 35,
+  "partIndex": 2,
+  "clipIndex": 1
+}

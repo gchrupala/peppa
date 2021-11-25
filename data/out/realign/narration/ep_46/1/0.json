@@ -1,0 +1,124 @@
+{
+  "transcript": "The sun is very hot.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.44000000000000006,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.28,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "sun",
+      "case": "success",
+      "end": 0.75,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 4,
+      "word": "sun"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 8,
+      "word": "is"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 1.3900000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 11,
+      "word": "very"
+    },
+    {
+      "alignedWord": "hot",
+      "case": "success",
+      "end": 1.73,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 16,
+      "word": "hot"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E48 - At the Beach.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_46.json",
+  "episode_title": "At the Beach",
+  "clipStart": 50,
+  "clipEnd": 52,
+  "partIndex": 1,
+  "clipIndex": 0
+}

@@ -1,0 +1,96 @@
+{
+  "transcript": "\u266a Bong bing boo Bing bong bing \u266a",
+  "words": [
+    {
+      "alignedWord": "bong",
+      "case": "success",
+      "end": 3.04,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.97,
+      "startOffset": 2,
+      "word": "Bong"
+    },
+    {
+      "alignedWord": "bing",
+      "case": "success",
+      "end": 3.71,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.28,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 3.28,
+      "startOffset": 7,
+      "word": "bing"
+    },
+    {
+      "alignedWord": "boo",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.71,
+      "startOffset": 12,
+      "word": "boo"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 16,
+      "word": "Bing"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 25,
+      "startOffset": 21,
+      "word": "bong"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 30,
+      "startOffset": 26,
+      "word": "bing"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 225,
+  "clipEnd": 229,
+  "partIndex": 6,
+  "clipIndex": 0
+}

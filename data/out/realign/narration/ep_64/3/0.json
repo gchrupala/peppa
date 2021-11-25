@@ -1,0 +1,130 @@
+{
+  "transcript": "Peppa has brought her toy boat.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.44,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.24,
+      "startOffset": 6,
+      "word": "has"
+    },
+    {
+      "alignedWord": "brought",
+      "case": "success",
+      "end": 0.75,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 10,
+      "word": "brought"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 0.9,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.75,
+      "startOffset": 18,
+      "word": "her"
+    },
+    {
+      "alignedWord": "toy",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "oy_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 22,
+      "word": "toy"
+    },
+    {
+      "alignedWord": "boat",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.25,
+      "startOffset": 26,
+      "word": "boat"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E11 - The Boat Pond.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_64.json",
+  "episode_title": "The Boat Pond",
+  "clipStart": 42,
+  "clipEnd": 45,
+  "partIndex": 3,
+  "clipIndex": 0
+}

@@ -1,0 +1,155 @@
+{
+  "transcript": "and gloves are on the snowman.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.58,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.47,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "gloves",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 4,
+      "word": "gloves"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 11,
+      "word": "are"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 1.6099999999999999,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 15,
+      "word": "on"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 18,
+      "word": "the"
+    },
+    {
+      "alignedWord": "snowman",
+      "case": "success",
+      "end": 2.55,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 22,
+      "word": "snowman"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E12 - Snow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_26.json",
+  "episode_title": "Snow",
+  "clipStart": 268,
+  "clipEnd": 271,
+  "partIndex": 16,
+  "clipIndex": 1
+}

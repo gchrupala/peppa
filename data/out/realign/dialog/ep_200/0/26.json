@@ -1,0 +1,159 @@
+{
+  "transcript": "\u266a Riding in a pedalo on a sunny lake \u266a",
+  "words": [
+    {
+      "alignedWord": "riding",
+      "case": "success",
+      "end": 2.9299999999999997,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.69,
+      "startOffset": 2,
+      "word": "Riding"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.95,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.93,
+      "startOffset": 9,
+      "word": "in"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 13,
+      "startOffset": 12,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 14,
+      "word": "pedalo"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 4.69,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.37,
+      "startOffset": 21,
+      "word": "on"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 4.7299999999999995,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 4.72,
+      "startOffset": 24,
+      "word": "a"
+    },
+    {
+      "alignedWord": "sunny",
+      "case": "success",
+      "end": 4.7700000000000005,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.73,
+      "startOffset": 26,
+      "word": "sunny"
+    },
+    {
+      "alignedWord": "lake",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 4.77,
+      "startOffset": 32,
+      "word": "lake"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 75,
+  "clipEnd": 80,
+  "partIndex": 0,
+  "clipIndex": 26
+}

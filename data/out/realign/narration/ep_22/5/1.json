@@ -1,0 +1,155 @@
+{
+  "transcript": "He was so tired he has fallen asleep.",
+  "words": [
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 1.49,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.33,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 0,
+      "word": "He"
+    },
+    {
+      "alignedWord": "was",
+      "case": "success",
+      "end": 1.68,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 3,
+      "word": "was"
+    },
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 7,
+      "word": "so"
+    },
+    {
+      "alignedWord": "tired",
+      "case": "success",
+      "end": 2.44,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 10,
+      "word": "tired"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 2.64,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 16,
+      "word": "he"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 2.8000000000000003,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.64,
+      "startOffset": 19,
+      "word": "has"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 29,
+      "startOffset": 23,
+      "word": "fallen"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 36,
+      "startOffset": 30,
+      "word": "asleep"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E25 - The Tooth Fairy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_22.json",
+  "episode_title": "The Tooth Fairy",
+  "clipStart": 197,
+  "clipEnd": 200,
+  "partIndex": 5,
+  "clipIndex": 1
+}

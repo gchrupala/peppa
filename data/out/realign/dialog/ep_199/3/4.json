@@ -1,0 +1,28 @@
+{
+  "transcript": "- Oh.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 0.41000000000000003,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.26,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 2,
+      "word": "Oh"
+    }
+  ],
+  "speaker": "George",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 115,
+  "clipEnd": 118,
+  "partIndex": 3,
+  "clipIndex": 4
+}

@@ -1,0 +1,171 @@
+{
+  "transcript": "Mummy and Daddy have their tandem.",
+  "words": [
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 0.19,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.22,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.19,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 0.62,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.22,
+      "startOffset": 10,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "v_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 16,
+      "word": "have"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 1.23,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 21,
+      "word": "their"
+    },
+    {
+      "alignedWord": "tandem",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 27,
+      "word": "tandem"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E40 - The Cycle Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_85.json",
+  "episode_title": "The Cycle Ride",
+  "clipStart": 39,
+  "clipEnd": 42,
+  "partIndex": 3,
+  "clipIndex": 0
+}

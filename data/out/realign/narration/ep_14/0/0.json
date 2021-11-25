@@ -1,0 +1,139 @@
+{
+  "transcript": "It is a bright, sunny day.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.11,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.01,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.1900000000000002,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 6,
+      "word": "a"
+    },
+    {
+      "alignedWord": "bright",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.19,
+      "startOffset": 8,
+      "word": "bright"
+    },
+    {
+      "alignedWord": "sunny",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 16,
+      "word": "sunny"
+    },
+    {
+      "alignedWord": "day",
+      "case": "success",
+      "end": 2.38,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.27,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 22,
+      "word": "day"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E13 - Flying a Kite.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_14.json",
+  "episode_title": "Flying a Kite",
+  "clipStart": 24,
+  "clipEnd": 28,
+  "partIndex": 0,
+  "clipIndex": 0
+}

@@ -1,0 +1,202 @@
+{
+  "transcript": "Everyone climbs down from the big balloon.",
+  "words": [
+    {
+      "alignedWord": "everyone",
+      "case": "success",
+      "end": 1.24,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.69,
+      "startOffset": 0,
+      "word": "Everyone"
+    },
+    {
+      "alignedWord": "climbs",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 9,
+      "word": "climbs"
+    },
+    {
+      "alignedWord": "down",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.84,
+      "startOffset": 16,
+      "word": "down"
+    },
+    {
+      "alignedWord": "from",
+      "case": "success",
+      "end": 2.35,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.21,
+      "startOffset": 21,
+      "word": "from"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.35,
+      "startOffset": 26,
+      "word": "the"
+    },
+    {
+      "alignedWord": "big",
+      "case": "success",
+      "end": 2.67,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "g_E"
+        }
+      ],
+      "start": 2.51,
+      "startOffset": 30,
+      "word": "big"
+    },
+    {
+      "alignedWord": "balloon",
+      "case": "success",
+      "end": 3.06,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 34,
+      "word": "balloon"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E36 - The Balloon Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_77.json",
+  "episode_title": "The Balloon Ride",
+  "clipStart": 251,
+  "clipEnd": 255,
+  "partIndex": 7,
+  "clipIndex": 0
+}

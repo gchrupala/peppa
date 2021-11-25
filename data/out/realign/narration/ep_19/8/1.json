@@ -1,0 +1,273 @@
+{
+  "transcript": "Peppa wants to keep her new shoes on even for her bath.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.72,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.62,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "wants",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 6,
+      "word": "wants"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.1500000000000001,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.05,
+      "startOffset": 12,
+      "word": "to"
+    },
+    {
+      "alignedWord": "keep",
+      "case": "success",
+      "end": 1.3599999999999999,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.15,
+      "startOffset": 15,
+      "word": "keep"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.4400000000000002,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 20,
+      "word": "her"
+    },
+    {
+      "alignedWord": "new",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 24,
+      "word": "new"
+    },
+    {
+      "alignedWord": "shoes",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 28,
+      "word": "shoes"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 34,
+      "word": "on"
+    },
+    {
+      "alignedWord": "even",
+      "case": "success",
+      "end": 2.98,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "iy_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.58,
+      "startOffset": 37,
+      "word": "even"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 3.11,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.98,
+      "startOffset": 42,
+      "word": "for"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 3.2399999999999998,
+      "endOffset": 49,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.11,
+      "startOffset": 46,
+      "word": "her"
+    },
+    {
+      "alignedWord": "bath",
+      "case": "success",
+      "end": 3.67,
+      "endOffset": 54,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "th_E"
+        }
+      ],
+      "start": 3.38,
+      "startOffset": 50,
+      "word": "bath"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E23 - New Shoes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_19.json",
+  "episode_title": "New Shoes",
+  "clipStart": 161,
+  "clipEnd": 165,
+  "partIndex": 8,
+  "clipIndex": 1
+}

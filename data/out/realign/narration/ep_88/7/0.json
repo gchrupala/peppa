@@ -1,0 +1,109 @@
+{
+  "transcript": "The rain has stopped.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.14,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.0,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "rain",
+      "case": "success",
+      "end": 0.58,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 4,
+      "word": "rain"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.86,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 9,
+      "word": "has"
+    },
+    {
+      "alignedWord": "stopped",
+      "case": "success",
+      "end": 1.01,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 13,
+      "word": "stopped"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E41 - Dens.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_88.json",
+  "episode_title": "Dens",
+  "clipStart": 247,
+  "clipEnd": 250,
+  "partIndex": 7,
+  "clipIndex": 0
+}

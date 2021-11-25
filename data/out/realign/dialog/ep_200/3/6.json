@@ -1,0 +1,178 @@
+{
+  "transcript": "Come on, Danny. All aboard! Full sail!",
+  "words": [
+    {
+      "alignedWord": "come",
+      "case": "success",
+      "end": 1.5,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 0,
+      "word": "Come"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 1.73,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.5,
+      "startOffset": 5,
+      "word": "on"
+    },
+    {
+      "alignedWord": "danny",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 9,
+      "word": "Danny"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.3,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 16,
+      "word": "All"
+    },
+    {
+      "alignedWord": "aboard",
+      "case": "success",
+      "end": 3.0300000000000002,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.75,
+      "startOffset": 20,
+      "word": "aboard"
+    },
+    {
+      "alignedWord": "full",
+      "case": "success",
+      "end": 3.4499999999999997,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.42,
+      "startOffset": 28,
+      "word": "Full"
+    },
+    {
+      "alignedWord": "sail",
+      "case": "success",
+      "end": 3.62,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.45,
+      "startOffset": 33,
+      "word": "sail"
+    }
+  ],
+  "speaker": "Captain Dog",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 129,
+  "clipEnd": 133,
+  "partIndex": 3,
+  "clipIndex": 6
+}

@@ -1,0 +1,200 @@
+{
+  "transcript": "so well he can see his face in it.",
+  "words": [
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 1.03,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 0,
+      "word": "so"
+    },
+    {
+      "alignedWord": "well",
+      "case": "success",
+      "end": 1.33,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 3,
+      "word": "well"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 1.4900000000000002,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 8,
+      "word": "he"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 11,
+      "word": "can"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 1.92,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 15,
+      "word": "see"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 2.09,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 19,
+      "word": "his"
+    },
+    {
+      "alignedWord": "face",
+      "case": "success",
+      "end": 2.37,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 23,
+      "word": "face"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.37,
+      "startOffset": 28,
+      "word": "in"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.48,
+      "startOffset": 31,
+      "word": "it"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E49 - Cleaning the Car.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_33.json",
+  "episode_title": "Cleaning the Car",
+  "clipStart": 216,
+  "clipEnd": 221,
+  "partIndex": 9,
+  "clipIndex": 1
+}

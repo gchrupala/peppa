@@ -1,0 +1,70 @@
+{
+  "transcript": "So does Peppa.",
+  "words": [
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 0.73,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.38,
+      "startOffset": 0,
+      "word": "So"
+    },
+    {
+      "alignedWord": "does",
+      "case": "success",
+      "end": 0.9199999999999999,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 3,
+      "word": "does"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.35,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 8,
+      "word": "Peppa"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E41 - Shopping.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_49.json",
+  "episode_title": "Shopping",
+  "clipStart": 37,
+  "clipEnd": 39,
+  "partIndex": 3,
+  "clipIndex": 0
+}

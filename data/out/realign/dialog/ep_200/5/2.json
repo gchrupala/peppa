@@ -1,0 +1,351 @@
+{
+  "transcript": "- Can't we use the engine? - Oh, you don't have engines on sailing boats, Danny.",
+  "words": [
+    {
+      "alignedWord": "can't",
+      "case": "success",
+      "end": 3.6799999999999997,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.51,
+      "startOffset": 2,
+      "word": "Can't"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 3.7,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.68,
+      "startOffset": 8,
+      "word": "we"
+    },
+    {
+      "alignedWord": "use",
+      "case": "success",
+      "end": 3.73,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.7,
+      "startOffset": 11,
+      "word": "use"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.75,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.73,
+      "startOffset": 15,
+      "word": "the"
+    },
+    {
+      "alignedWord": "engine",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.75,
+      "startOffset": 19,
+      "word": "engine"
+    },
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 4.62,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.42,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 4.2,
+      "startOffset": 29,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 5.05,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 4.83,
+      "startOffset": 33,
+      "word": "you"
+    },
+    {
+      "alignedWord": "don't",
+      "case": "success",
+      "end": 5.34,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 5.05,
+      "startOffset": 37,
+      "word": "don't"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 5.58,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_E"
+        }
+      ],
+      "start": 5.34,
+      "startOffset": 43,
+      "word": "have"
+    },
+    {
+      "alignedWord": "engines",
+      "case": "success",
+      "end": 6.359999999999999,
+      "endOffset": 55,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_E"
+        }
+      ],
+      "start": 5.63,
+      "startOffset": 48,
+      "word": "engines"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 6.550000000000001,
+      "endOffset": 58,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "n_E"
+        }
+      ],
+      "start": 6.36,
+      "startOffset": 56,
+      "word": "on"
+    },
+    {
+      "alignedWord": "sailing",
+      "case": "success",
+      "end": 7.08,
+      "endOffset": 66,
+      "phones": [
+        {
+          "duration": 0.22,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 6.55,
+      "startOffset": 59,
+      "word": "sailing"
+    },
+    {
+      "alignedWord": "boats",
+      "case": "success",
+      "end": 7.48,
+      "endOffset": 72,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "s_E"
+        }
+      ],
+      "start": 7.08,
+      "startOffset": 67,
+      "word": "boats"
+    },
+    {
+      "alignedWord": "danny",
+      "case": "success",
+      "end": 7.7,
+      "endOffset": 79,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 7.51,
+      "startOffset": 74,
+      "word": "Danny"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 222,
+  "clipEnd": 230,
+  "partIndex": 5,
+  "clipIndex": 2
+}

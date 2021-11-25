@@ -1,0 +1,94 @@
+{
+  "transcript": "- Hello! - Hello, Suzy.",
+  "words": [
+    {
+      "alignedWord": "hello",
+      "case": "success",
+      "end": 2.4,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 2,
+      "word": "Hello"
+    },
+    {
+      "alignedWord": "hello",
+      "case": "success",
+      "end": 2.72,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.68,
+      "startOffset": 11,
+      "word": "Hello"
+    },
+    {
+      "alignedWord": "suzy",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 18,
+      "word": "Suzy"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 38,
+  "clipEnd": 42,
+  "partIndex": 1,
+  "clipIndex": 6
+}

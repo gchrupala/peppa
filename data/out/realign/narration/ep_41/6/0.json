@@ -1,0 +1,178 @@
+{
+  "transcript": "-The puppet show is about to begin.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.45999999999999996,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.37,
+      "startOffset": 1,
+      "word": "The"
+    },
+    {
+      "alignedWord": "puppet",
+      "case": "success",
+      "end": 0.8,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.46,
+      "startOffset": 5,
+      "word": "puppet"
+    },
+    {
+      "alignedWord": "show",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.8,
+      "startOffset": 12,
+      "word": "show"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.38,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 17,
+      "word": "is"
+    },
+    {
+      "alignedWord": "about",
+      "case": "success",
+      "end": 1.63,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 20,
+      "word": "about"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.9100000000000001,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 26,
+      "word": "to"
+    },
+    {
+      "alignedWord": "begin",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.91,
+      "startOffset": 29,
+      "word": "begin"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E42 - Chloe's Puppet Show.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_41.json",
+  "episode_title": "Chlo?'s Puppet Show",
+  "clipStart": 198,
+  "clipEnd": 201,
+  "partIndex": 6,
+  "clipIndex": 0
+}

@@ -1,0 +1,170 @@
+{
+  "transcript": "to make it rise into this sky.",
+  "words": [
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 0.21,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 0.09,
+      "startOffset": 0,
+      "word": "to"
+    },
+    {
+      "alignedWord": "make",
+      "case": "success",
+      "end": 0.42,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.21,
+      "startOffset": 3,
+      "word": "make"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.56,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.42,
+      "startOffset": 8,
+      "word": "it"
+    },
+    {
+      "alignedWord": "rise",
+      "case": "success",
+      "end": 0.9400000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 11,
+      "word": "rise"
+    },
+    {
+      "alignedWord": "into",
+      "case": "success",
+      "end": 1.14,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 16,
+      "word": "into"
+    },
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 1.2799999999999998,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 21,
+      "word": "this"
+    },
+    {
+      "alignedWord": "sky",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.3,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 26,
+      "word": "sky"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E36 - The Balloon Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_77.json",
+  "episode_title": "The Balloon Ride",
+  "clipStart": 98,
+  "clipEnd": 101,
+  "partIndex": 2,
+  "clipIndex": 1
+}

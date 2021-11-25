@@ -1,0 +1,83 @@
+{
+  "transcript": "The parents have arrived",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.96,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "parents",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 4,
+      "word": "parents"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 16,
+      "startOffset": 12,
+      "word": "have"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 24,
+      "startOffset": 17,
+      "word": "arrived"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E35 - Jumble Sale.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_71.json",
+  "episode_title": "Jumble Sale",
+  "clipStart": 47,
+  "clipEnd": 49,
+  "partIndex": 1,
+  "clipIndex": 0
+}

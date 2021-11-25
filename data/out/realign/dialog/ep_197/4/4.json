@@ -1,0 +1,166 @@
+{
+  "transcript": "I can make you go upside down. ",
+  "words": [
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 2.06,
+      "endOffset": 1,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 0,
+      "word": "I"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 2.46,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.27,
+      "startOffset": 2,
+      "word": "can"
+    },
+    {
+      "alignedWord": "make",
+      "case": "success",
+      "end": 2.7600000000000002,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.47,
+      "startOffset": 6,
+      "word": "make"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 2.9299999999999997,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 11,
+      "word": "you"
+    },
+    {
+      "alignedWord": "go",
+      "case": "success",
+      "end": 3.16,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.93,
+      "startOffset": 15,
+      "word": "go"
+    },
+    {
+      "alignedWord": "upside",
+      "case": "success",
+      "end": 3.9,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.27,
+      "startOffset": 18,
+      "word": "upside"
+    },
+    {
+      "alignedWord": "down",
+      "case": "success",
+      "end": 3.9299999999999997,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.9,
+      "startOffset": 25,
+      "word": "down"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 109,
+  "clipEnd": 114,
+  "partIndex": 4,
+  "clipIndex": 4
+}

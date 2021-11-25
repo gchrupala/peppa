@@ -1,0 +1,170 @@
+{
+  "transcript": ": We could go there for our picnic.",
+  "words": [
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.84,
+      "startOffset": 2,
+      "word": "We"
+    },
+    {
+      "alignedWord": "could",
+      "case": "success",
+      "end": 2.18,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 5,
+      "word": "could"
+    },
+    {
+      "alignedWord": "go",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 11,
+      "word": "go"
+    },
+    {
+      "alignedWord": "there",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 14,
+      "word": "there"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 2.7199999999999998,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 20,
+      "word": "for"
+    },
+    {
+      "alignedWord": "our",
+      "case": "success",
+      "end": 2.74,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.72,
+      "startOffset": 24,
+      "word": "our"
+    },
+    {
+      "alignedWord": "picnic",
+      "case": "success",
+      "end": 2.8000000000000003,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.74,
+      "startOffset": 28,
+      "word": "picnic"
+    }
+  ],
+  "speaker": "Mummy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 148,
+  "clipEnd": 151,
+  "partIndex": 3,
+  "clipIndex": 12
+}

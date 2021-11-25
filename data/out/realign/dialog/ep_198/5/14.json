@@ -1,0 +1,209 @@
+{
+  "transcript": "- Right. Time to go, children. - Where is Pedro?",
+  "words": [
+    {
+      "alignedWord": "right",
+      "case": "success",
+      "end": 2.92,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.46,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.43,
+      "startOffset": 2,
+      "word": "Right"
+    },
+    {
+      "alignedWord": "time",
+      "case": "success",
+      "end": 3.39,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.0,
+      "startOffset": 9,
+      "word": "Time"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.5100000000000002,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.39,
+      "startOffset": 14,
+      "word": "to"
+    },
+    {
+      "alignedWord": "go",
+      "case": "success",
+      "end": 3.75,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.51,
+      "startOffset": 17,
+      "word": "go"
+    },
+    {
+      "alignedWord": "children",
+      "case": "success",
+      "end": 3.99,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.75,
+      "startOffset": 21,
+      "word": "children"
+    },
+    {
+      "alignedWord": "where",
+      "case": "success",
+      "end": 4.0200000000000005,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.99,
+      "startOffset": 33,
+      "word": "Where"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 4.039999999999999,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 4.02,
+      "startOffset": 39,
+      "word": "is"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 4.12,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 4.04,
+      "startOffset": 42,
+      "word": "Pedro"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 202,
+  "clipEnd": 207,
+  "partIndex": 5,
+  "clipIndex": 14
+}

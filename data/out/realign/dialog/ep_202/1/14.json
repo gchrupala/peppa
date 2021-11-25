@@ -1,0 +1,178 @@
+{
+  "transcript": "- Um... I like apples. - I like oranges.",
+  "words": [
+    {
+      "alignedWord": "um",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.33,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 2,
+      "word": "Um"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 3.08,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 2.96,
+      "startOffset": 8,
+      "word": "I"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 3.3099999999999996,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.28,
+      "startOffset": 10,
+      "word": "like"
+    },
+    {
+      "alignedWord": "apples",
+      "case": "success",
+      "end": 4.0600000000000005,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.33,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.23,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.31,
+      "startOffset": 15,
+      "word": "apples"
+    },
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 4.260000000000001,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 4.19,
+      "startOffset": 25,
+      "word": "I"
+    },
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 4.7299999999999995,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 4.56,
+      "startOffset": 27,
+      "word": "like"
+    },
+    {
+      "alignedWord": "oranges",
+      "case": "success",
+      "end": 4.800000000000001,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 4.73,
+      "startOffset": 32,
+      "word": "oranges"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 57,
+  "clipEnd": 62,
+  "partIndex": 1,
+  "clipIndex": 14
+}

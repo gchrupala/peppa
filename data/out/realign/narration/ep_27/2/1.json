@@ -1,0 +1,189 @@
+{
+  "transcript": "and others have to guess what it is.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.14,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.97,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "others",
+      "case": "success",
+      "end": 1.6400000000000001,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.32,
+      "startOffset": 4,
+      "word": "others"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 1.8199999999999998,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 11,
+      "word": "have"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.9300000000000002,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 16,
+      "word": "to"
+    },
+    {
+      "alignedWord": "guess",
+      "case": "success",
+      "end": 2.2199999999999998,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.93,
+      "startOffset": 19,
+      "word": "guess"
+    },
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 25,
+      "word": "what"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 30,
+      "word": "it"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.8299999999999996,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.53,
+      "startOffset": 33,
+      "word": "is"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E28 - Windy castle.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_27.json",
+  "episode_title": "Windy Castle",
+  "clipStart": 83,
+  "clipEnd": 87,
+  "partIndex": 2,
+  "clipIndex": 1
+}

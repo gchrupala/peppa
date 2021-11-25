@@ -1,0 +1,83 @@
+{
+  "transcript": "- That's my face. It looks funny.",
+  "words": [
+    {
+      "alignedWord": "that's",
+      "case": "success",
+      "end": 3.53,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.48,
+      "startOffset": 2,
+      "word": "That's"
+    },
+    {
+      "alignedWord": "my",
+      "case": "success",
+      "end": 3.55,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 3.53,
+      "startOffset": 9,
+      "word": "my"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 16,
+      "startOffset": 12,
+      "word": "face"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 18,
+      "word": "It"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 21,
+      "word": "looks"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 27,
+      "word": "funny"
+    }
+  ],
+  "speaker": "Pedro",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 154,
+  "clipEnd": 158,
+  "partIndex": 6,
+  "clipIndex": 4
+}

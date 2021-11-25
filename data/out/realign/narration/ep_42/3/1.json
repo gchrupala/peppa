@@ -1,0 +1,52 @@
+{
+  "transcript": "Bicycle",
+  "words": [
+    {
+      "alignedWord": "bicycle",
+      "case": "success",
+      "end": 1.1600000000000001,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.6,
+      "startOffset": 0,
+      "word": "Bicycle"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E40 - Daddy Gets Fit.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_42.json",
+  "episode_title": "Daddy Gets Fit",
+  "clipStart": 184,
+  "clipEnd": 186,
+  "partIndex": 3,
+  "clipIndex": 1
+}

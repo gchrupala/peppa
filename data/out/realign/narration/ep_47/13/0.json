@@ -1,0 +1,92 @@
+{
+  "transcript": "Peppa likes Mr. Skinnylegs.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.2800000000000002,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "likes",
+      "case": "success",
+      "end": 2.47,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 6,
+      "word": "likes"
+    },
+    {
+      "alignedWord": "mr",
+      "case": "success",
+      "end": 2.52,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.47,
+      "startOffset": 12,
+      "word": "Mr"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 16,
+      "word": "Skinnylegs"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E36 - Mister Skinnylegs.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_47.json",
+  "episode_title": "Mister Skinnylegs",
+  "clipStart": 278,
+  "clipEnd": 282,
+  "partIndex": 13,
+  "clipIndex": 0
+}

@@ -1,0 +1,244 @@
+{
+  "transcript": "He isn't wearing his hat and scarf and gloves.",
+  "words": [
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 0.82,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 0,
+      "word": "He"
+    },
+    {
+      "alignedWord": "isn't",
+      "case": "success",
+      "end": 1.1099999999999999,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 3,
+      "word": "isn't"
+    },
+    {
+      "alignedWord": "wearing",
+      "case": "success",
+      "end": 1.4700000000000002,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.12,
+      "startOffset": 9,
+      "word": "wearing"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 1.66,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 17,
+      "word": "his"
+    },
+    {
+      "alignedWord": "hat",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 21,
+      "word": "hat"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 25,
+      "word": "and"
+    },
+    {
+      "alignedWord": "scarf",
+      "case": "success",
+      "end": 2.62,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "f_E"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 29,
+      "word": "scarf"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.7800000000000002,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 35,
+      "word": "and"
+    },
+    {
+      "alignedWord": "gloves",
+      "case": "success",
+      "end": 3.34,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.8,
+      "startOffset": 39,
+      "word": "gloves"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E12 - Snow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_26.json",
+  "episode_title": "Snow",
+  "clipStart": 247,
+  "clipEnd": 252,
+  "partIndex": 15,
+  "clipIndex": 1
+}

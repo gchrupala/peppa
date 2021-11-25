@@ -1,0 +1,162 @@
+{
+  "transcript": "And here is Peppa with her letter.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.95,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 0,
+      "word": "And"
+    },
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 1.33,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 4,
+      "word": "here"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.49,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.33,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.54,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.49,
+      "startOffset": 12,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 2.2600000000000002,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "th_E"
+        }
+      ],
+      "start": 2.04,
+      "startOffset": 18,
+      "word": "with"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 2.54,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.52,
+      "startOffset": 23,
+      "word": "her"
+    },
+    {
+      "alignedWord": "letter",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.54,
+      "startOffset": 27,
+      "word": "letter"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E19 - Zoe Zebra the Postmans Daughter.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_80.json",
+  "episode_title": "Zoe Zebra the Postman's Daughter",
+  "clipStart": 147,
+  "clipEnd": 151,
+  "partIndex": 5,
+  "clipIndex": 4
+}

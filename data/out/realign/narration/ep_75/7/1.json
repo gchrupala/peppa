@@ -1,0 +1,159 @@
+{
+  "transcript": "are making up big sand castle.",
+  "words": [
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 0.54,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 0.53,
+      "startOffset": 0,
+      "word": "are"
+    },
+    {
+      "alignedWord": "making",
+      "case": "success",
+      "end": 0.8800000000000001,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 4,
+      "word": "making"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 0.9,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 0.88,
+      "startOffset": 11,
+      "word": "up"
+    },
+    {
+      "alignedWord": "big",
+      "case": "success",
+      "end": 1.4300000000000002,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.1600000000000001,
+      "startOffset": 14,
+      "word": "big"
+    },
+    {
+      "alignedWord": "sand",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.4300000000000002,
+      "startOffset": 18,
+      "word": "sand"
+    },
+    {
+      "alignedWord": "castle",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.8399999999999999,
+      "startOffset": 23,
+      "word": "castle"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E14 - Pirate Island.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_75.json",
+  "episode_title": "Pirate Island",
+  "clipStart": 161,
+  "clipEnd": 164,
+  "partIndex": 7,
+  "clipIndex": 1
+}

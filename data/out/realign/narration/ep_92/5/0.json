@@ -1,0 +1,195 @@
+{
+  "transcript": "The binoculars make everything look bigger.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.36,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.24,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "binoculars",
+      "case": "success",
+      "end": 0.88,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "y_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.36,
+      "startOffset": 4,
+      "word": "binoculars"
+    },
+    {
+      "alignedWord": "make",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 0.88,
+      "startOffset": 15,
+      "word": "make"
+    },
+    {
+      "alignedWord": "everything",
+      "case": "success",
+      "end": 1.52,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "th_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 20,
+      "word": "everything"
+    },
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 1.7,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 31,
+      "word": "look"
+    },
+    {
+      "alignedWord": "bigger",
+      "case": "success",
+      "end": 2.13,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 36,
+      "word": "bigger"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E20 - Nature Trail.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_92.json",
+  "episode_title": "Nature Trail",
+  "clipStart": 125,
+  "clipEnd": 128,
+  "partIndex": 5,
+  "clipIndex": 0
+}

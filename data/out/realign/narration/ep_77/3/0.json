@@ -1,0 +1,201 @@
+{
+  "transcript": "The balloon is rising high into the sky.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "balloon",
+      "case": "success",
+      "end": 1.5999999999999999,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 4,
+      "word": "balloon"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 12,
+      "word": "is"
+    },
+    {
+      "alignedWord": "rising",
+      "case": "success",
+      "end": 2.2800000000000002,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 15,
+      "word": "rising"
+    },
+    {
+      "alignedWord": "high",
+      "case": "success",
+      "end": 2.78,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 22,
+      "word": "high"
+    },
+    {
+      "alignedWord": "into",
+      "case": "success",
+      "end": 2.98,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 27,
+      "word": "into"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.1,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.98,
+      "startOffset": 32,
+      "word": "the"
+    },
+    {
+      "alignedWord": "sky",
+      "case": "success",
+      "end": 3.63,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.34,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 3.1,
+      "startOffset": 36,
+      "word": "sky"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E36 - The Balloon Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_77.json",
+  "episode_title": "The Balloon Ride",
+  "clipStart": 122,
+  "clipEnd": 127,
+  "partIndex": 3,
+  "clipIndex": 0
+}

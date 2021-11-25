@@ -1,0 +1,163 @@
+{
+  "transcript": "- No, we haven't gone anywhere yet.",
+  "words": [
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 1.8199999999999998,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.85,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.85,
+      "startOffset": 2,
+      "word": "No"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 2.03,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 6,
+      "word": "we"
+    },
+    {
+      "alignedWord": "haven't",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 9,
+      "word": "haven't"
+    },
+    {
+      "alignedWord": "gone",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.23,
+      "startOffset": 17,
+      "word": "gone"
+    },
+    {
+      "alignedWord": "anywhere",
+      "case": "success",
+      "end": 2.6999999999999997,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.53,
+      "startOffset": 22,
+      "word": "anywhere"
+    },
+    {
+      "alignedWord": "yet",
+      "case": "success",
+      "end": 2.73,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 31,
+      "word": "yet"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 128,
+  "clipEnd": 131,
+  "partIndex": 4,
+  "clipIndex": 4
+}

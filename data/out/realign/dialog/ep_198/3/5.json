@@ -1,0 +1,162 @@
+{
+  "transcript": "- Oh. - Come on, let's catch them up!",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.24,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 1.52,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "come",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 8,
+      "word": "Come"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 1.9100000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 13,
+      "word": "on"
+    },
+    {
+      "alignedWord": "let's",
+      "case": "success",
+      "end": 3.1500000000000004,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.97,
+      "startOffset": 17,
+      "word": "let's"
+    },
+    {
+      "alignedWord": "catch",
+      "case": "success",
+      "end": 3.4899999999999998,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ch_E"
+        }
+      ],
+      "start": 3.15,
+      "startOffset": 23,
+      "word": "catch"
+    },
+    {
+      "alignedWord": "them",
+      "case": "success",
+      "end": 3.6700000000000004,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_E"
+        }
+      ],
+      "start": 3.49,
+      "startOffset": 29,
+      "word": "them"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 3.69,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 3.67,
+      "startOffset": 34,
+      "word": "up"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 70,
+  "clipEnd": 74,
+  "partIndex": 3,
+  "clipIndex": 5
+}

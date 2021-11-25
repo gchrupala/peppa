@@ -1,0 +1,79 @@
+{
+  "transcript": " - Welcome to Fruit Day,",
+  "words": [
+    {
+      "alignedWord": "welcome",
+      "case": "success",
+      "end": 3.35,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.97,
+      "startOffset": 3,
+      "word": "Welcome"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.5,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.35,
+      "startOffset": 11,
+      "word": "to"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 19,
+      "startOffset": 14,
+      "word": "Fruit"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 20,
+      "word": "Day"
+    }
+  ],
+  "speaker": "Mr Potato",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 38,
+  "clipEnd": 42,
+  "partIndex": 1,
+  "clipIndex": 7
+}

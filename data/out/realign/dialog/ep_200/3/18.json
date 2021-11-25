@@ -1,0 +1,144 @@
+{
+  "transcript": " - Here's some bread, Mrs. Duck.",
+  "words": [
+    {
+      "alignedWord": "here's",
+      "case": "success",
+      "end": 1.16,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 3,
+      "word": "Here's"
+    },
+    {
+      "alignedWord": "some",
+      "case": "success",
+      "end": 2.85,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.54,
+      "startOffset": 10,
+      "word": "some"
+    },
+    {
+      "alignedWord": "bread",
+      "case": "success",
+      "end": 3.42,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.38,
+      "startOffset": 15,
+      "word": "bread"
+    },
+    {
+      "alignedWord": "mrs",
+      "case": "success",
+      "end": 3.54,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.42,
+      "startOffset": 22,
+      "word": "Mrs"
+    },
+    {
+      "alignedWord": "duck",
+      "case": "success",
+      "end": 3.85,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.79,
+      "startOffset": 27,
+      "word": "Duck"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 164,
+  "clipEnd": 168,
+  "partIndex": 3,
+  "clipIndex": 18
+}

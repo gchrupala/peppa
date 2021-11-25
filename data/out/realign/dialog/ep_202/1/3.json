@@ -1,0 +1,98 @@
+{
+  "transcript": "\u266a Apple and banana ",
+  "words": [
+    {
+      "alignedWord": "apple",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.56,
+      "startOffset": 2,
+      "word": "Apple"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 2.73,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.7,
+      "startOffset": 8,
+      "word": "and"
+    },
+    {
+      "alignedWord": "banana",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.73,
+      "startOffset": 12,
+      "word": "banana"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 28,
+  "clipEnd": 31,
+  "partIndex": 1,
+  "clipIndex": 3
+}

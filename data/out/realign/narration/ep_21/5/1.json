@@ -1,0 +1,127 @@
+{
+  "transcript": "are decorating the sitting room.",
+  "words": [
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.21,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 0,
+      "word": "are"
+    },
+    {
+      "alignedWord": "decorating",
+      "case": "success",
+      "end": 1.73,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.64,
+      "startOffset": 4,
+      "word": "decorating"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 15,
+      "word": "the"
+    },
+    {
+      "alignedWord": "sitting",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 19,
+      "word": "sitting"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 31,
+      "startOffset": 27,
+      "word": "room"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E18 - Mummy Pig's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_21.json",
+  "episode_title": "Mummy Pig's Birthday",
+  "clipStart": 167,
+  "clipEnd": 169,
+  "partIndex": 5,
+  "clipIndex": 1
+}

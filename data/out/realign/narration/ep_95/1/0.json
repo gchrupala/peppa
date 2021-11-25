@@ -1,0 +1,142 @@
+{
+  "transcript": "Peppa and Suzy are best friends.",
+  "words": [
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 5,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.97,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 6,
+      "word": "and"
+    },
+    {
+      "alignedWord": "suzy",
+      "case": "success",
+      "end": 1.43,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.97,
+      "startOffset": 10,
+      "word": "Suzy"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.89,
+      "startOffset": 15,
+      "word": "are"
+    },
+    {
+      "alignedWord": "best",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 19,
+      "word": "best"
+    },
+    {
+      "alignedWord": "friends",
+      "case": "success",
+      "end": 2.4400000000000004,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.22,
+      "startOffset": 24,
+      "word": "friends"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E44 - The Quarrel.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_95.json",
+  "episode_title": "The Quarrel",
+  "clipStart": 30,
+  "clipEnd": 33,
+  "partIndex": 1,
+  "clipIndex": 0
+}

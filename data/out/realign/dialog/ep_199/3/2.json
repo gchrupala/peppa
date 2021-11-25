@@ -1,0 +1,91 @@
+{
+  "transcript": "- Now it's George's turn. - Because George is little,",
+  "words": [
+    {
+      "alignedWord": "now",
+      "case": "success",
+      "end": 3.56,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 3.54,
+      "startOffset": 2,
+      "word": "Now"
+    },
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 4.2299999999999995,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.09,
+      "startOffset": 6,
+      "word": "it's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 19,
+      "startOffset": 11,
+      "word": "George's"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 24,
+      "startOffset": 20,
+      "word": "turn"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 35,
+      "startOffset": 28,
+      "word": "Because"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 42,
+      "startOffset": 36,
+      "word": "George"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 45,
+      "startOffset": 43,
+      "word": "is"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 52,
+      "startOffset": 46,
+      "word": "little"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 109,
+  "clipEnd": 114,
+  "partIndex": 3,
+  "clipIndex": 2
+}

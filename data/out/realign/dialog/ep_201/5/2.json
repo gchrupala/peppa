@@ -1,0 +1,179 @@
+{
+  "transcript": "- Because china can break very easily.",
+  "words": [
+    {
+      "alignedWord": "because",
+      "case": "success",
+      "end": 3.65,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.27,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.34,
+      "startOffset": 2,
+      "word": "Because"
+    },
+    {
+      "alignedWord": "china",
+      "case": "success",
+      "end": 4.4399999999999995,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.21,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.25,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.69,
+      "startOffset": 10,
+      "word": "china"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 4.779999999999999,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 4.56,
+      "startOffset": 16,
+      "word": "can"
+    },
+    {
+      "alignedWord": "break",
+      "case": "success",
+      "end": 5.33,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "k_E"
+        }
+      ],
+      "start": 4.79,
+      "startOffset": 20,
+      "word": "break"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 5.73,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 5.54,
+      "startOffset": 26,
+      "word": "very"
+    },
+    {
+      "alignedWord": "easily",
+      "case": "success",
+      "end": 5.78,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "iy_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 5.73,
+      "startOffset": 31,
+      "word": "easily"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 98,
+  "clipEnd": 104,
+  "partIndex": 5,
+  "clipIndex": 2
+}

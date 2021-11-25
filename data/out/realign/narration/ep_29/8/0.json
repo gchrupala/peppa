@@ -1,0 +1,59 @@
+{
+  "transcript": "It worked!",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.33,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.14,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "worked",
+      "case": "success",
+      "end": 0.9299999999999999,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.33,
+      "startOffset": 3,
+      "word": "worked"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E29 - Pancakes.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_29.json",
+  "episode_title": "Pancakes",
+  "clipStart": 252,
+  "clipEnd": 254,
+  "partIndex": 8,
+  "clipIndex": 0
+}

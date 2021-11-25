@@ -1,0 +1,127 @@
+{
+  "transcript": "- Come on, Pedro. You'll miss the bus.",
+  "words": [
+    {
+      "alignedWord": "come",
+      "case": "success",
+      "end": 1.9400000000000002,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 2,
+      "word": "Come"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 7,
+      "word": "on"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 2.6799999999999997,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.42,
+      "startOffset": 11,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "you'll",
+      "case": "success",
+      "end": 3.39,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 3.24,
+      "startOffset": 18,
+      "word": "You'll"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 29,
+      "startOffset": 25,
+      "word": "miss"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 33,
+      "startOffset": 30,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 37,
+      "startOffset": 34,
+      "word": "bus"
+    }
+  ],
+  "speaker": "Madame Gazelle",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 212,
+  "clipEnd": 216,
+  "partIndex": 5,
+  "clipIndex": 18
+}

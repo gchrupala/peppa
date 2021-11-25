@@ -1,0 +1,251 @@
+{
+  "transcript": "while Mummy Pig, Peppa, and George make a secret movie.",
+  "words": [
+    {
+      "alignedWord": "while",
+      "case": "success",
+      "end": 0.6,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 0,
+      "word": "while"
+    },
+    {
+      "alignedWord": "mummy",
+      "case": "success",
+      "end": 0.9199999999999999,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.61,
+      "startOffset": 6,
+      "word": "Mummy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.23,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.92,
+      "startOffset": 12,
+      "word": "Pig"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.28,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.28,
+      "startOffset": 17,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 24,
+      "word": "and"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 2.12,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 28,
+      "word": "George"
+    },
+    {
+      "alignedWord": "make",
+      "case": "success",
+      "end": 2.4400000000000004,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.2,
+      "startOffset": 35,
+      "word": "make"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.53,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 40,
+      "word": "a"
+    },
+    {
+      "alignedWord": "secret",
+      "case": "success",
+      "end": 3.03,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.2,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.55,
+      "startOffset": 42,
+      "word": "secret"
+    },
+    {
+      "alignedWord": "movie",
+      "case": "success",
+      "end": 3.28,
+      "endOffset": 54,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.03,
+      "startOffset": 49,
+      "word": "movie"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E51 - Daddy's Movie Camera.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_51.json",
+  "episode_title": "Daddy's Movie Camera",
+  "clipStart": 171,
+  "clipEnd": 177,
+  "partIndex": 1,
+  "clipIndex": 1
+}

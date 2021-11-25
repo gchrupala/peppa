@@ -1,0 +1,167 @@
+{
+  "transcript": "The ground is getting quite steep.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.4,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "ground",
+      "case": "success",
+      "end": 0.77,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.4,
+      "startOffset": 4,
+      "word": "ground"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.89,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "getting",
+      "case": "success",
+      "end": 1.31,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.0,
+      "startOffset": 14,
+      "word": "getting"
+    },
+    {
+      "alignedWord": "quite",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 22,
+      "word": "quite"
+    },
+    {
+      "alignedWord": "steep",
+      "case": "success",
+      "end": 2.0700000000000003,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 28,
+      "word": "steep"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E40 - The Cycle Ride.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_85.json",
+  "episode_title": "The Cycle Ride",
+  "clipStart": 137,
+  "clipEnd": 140,
+  "partIndex": 4,
+  "clipIndex": 0
+}

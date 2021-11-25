@@ -1,0 +1,193 @@
+{
+  "transcript": "It is the end of another lovely day.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.2799999999999998,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.13,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.3900000000000001,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.5399999999999998,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 6,
+      "word": "the"
+    },
+    {
+      "alignedWord": "end",
+      "case": "success",
+      "end": 1.85,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 10,
+      "word": "end"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 1.9600000000000002,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 14,
+      "word": "of"
+    },
+    {
+      "alignedWord": "another",
+      "case": "success",
+      "end": 2.34,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "dh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.96,
+      "startOffset": 17,
+      "word": "another"
+    },
+    {
+      "alignedWord": "lovely",
+      "case": "success",
+      "end": 2.78,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.34,
+      "startOffset": 25,
+      "word": "lovely"
+    },
+    {
+      "alignedWord": "day",
+      "case": "success",
+      "end": 3.07,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.2,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.78,
+      "startOffset": 32,
+      "word": "day"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E43 - Rebecca Rabbit.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_91.json",
+  "episode_title": "Rebecca Rabbit",
+  "clipStart": 17,
+  "clipEnd": 21,
+  "partIndex": 0,
+  "clipIndex": 0
+}

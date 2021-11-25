@@ -1,0 +1,108 @@
+{
+  "transcript": "What are they up to?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.22999999999999998,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 0.24000000000000002,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 0.23,
+      "startOffset": 5,
+      "word": "are"
+    },
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 0.9099999999999999,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.72,
+      "startOffset": 9,
+      "word": "they"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 1.09,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "p_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 14,
+      "word": "up"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.34,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 17,
+      "word": "to"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E51 - Daddy Pig's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_102.json",
+  "episode_title": "Daddy Pig's Birthday",
+  "clipStart": 256,
+  "clipEnd": 260,
+  "partIndex": 10,
+  "clipIndex": 0
+}

@@ -1,0 +1,197 @@
+{
+  "transcript": "- We can have our picnic in the boats.",
+  "words": [
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 2,
+      "word": "We"
+    },
+    {
+      "alignedWord": "can",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 5,
+      "word": "can"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 2.26,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.99,
+      "startOffset": 9,
+      "word": "have"
+    },
+    {
+      "alignedWord": "our",
+      "case": "success",
+      "end": 2.51,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 14,
+      "word": "our"
+    },
+    {
+      "alignedWord": "picnic",
+      "case": "success",
+      "end": 3.09,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.51,
+      "startOffset": 18,
+      "word": "picnic"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 3.2199999999999998,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.09,
+      "startOffset": 25,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.37,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.22,
+      "startOffset": 28,
+      "word": "the"
+    },
+    {
+      "alignedWord": "boats",
+      "case": "success",
+      "end": 3.56,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.38,
+      "startOffset": 32,
+      "word": "boats"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 158,
+  "clipEnd": 162,
+  "partIndex": 3,
+  "clipIndex": 16
+}

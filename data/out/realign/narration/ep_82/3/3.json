@@ -1,0 +1,255 @@
+{
+  "transcript": "George has been waiting for cuckoo for almost an hour.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 0.71,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.34,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.82,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.71,
+      "startOffset": 7,
+      "word": "has"
+    },
+    {
+      "alignedWord": "been",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 11,
+      "word": "been"
+    },
+    {
+      "alignedWord": "waiting",
+      "case": "success",
+      "end": 1.3599999999999999,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.01,
+      "startOffset": 16,
+      "word": "waiting"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 24,
+      "word": "for"
+    },
+    {
+      "alignedWord": "cuckoo",
+      "case": "success",
+      "end": 1.88,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 28,
+      "word": "cuckoo"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 35,
+      "word": "for"
+    },
+    {
+      "alignedWord": "almost",
+      "case": "success",
+      "end": 2.6100000000000003,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.18,
+      "startOffset": 39,
+      "word": "almost"
+    },
+    {
+      "alignedWord": "an",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 46,
+      "word": "an"
+    },
+    {
+      "alignedWord": "hour",
+      "case": "success",
+      "end": 3.11,
+      "endOffset": 53,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "aw_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 49,
+      "word": "hour"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E15 - Cuckoo Clock.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_82.json",
+  "episode_title": "Cuckoo Clock",
+  "clipStart": 157,
+  "clipEnd": 161,
+  "partIndex": 3,
+  "clipIndex": 3
+}

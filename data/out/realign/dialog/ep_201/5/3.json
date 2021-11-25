@@ -1,0 +1,71 @@
+{
+  "transcript": " That's why I always...",
+  "words": [
+    {
+      "alignedWord": "that's",
+      "case": "success",
+      "end": 3.63,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.16,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.19,
+      "startOffset": 1,
+      "word": "That's"
+    },
+    {
+      "alignedWord": "why",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 3.63,
+      "startOffset": 8,
+      "word": "why"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 13,
+      "startOffset": 12,
+      "word": "I"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 14,
+      "word": "always"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 103,
+  "clipEnd": 107,
+  "partIndex": 5,
+  "clipIndex": 3
+}

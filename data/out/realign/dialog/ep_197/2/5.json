@@ -1,0 +1,213 @@
+{
+  "transcript": "Come on, George, let's find more shiny things.",
+  "words": [
+    {
+      "alignedWord": "come",
+      "case": "success",
+      "end": 2.79,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.6,
+      "startOffset": 0,
+      "word": "Come"
+    },
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 3.2,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.98,
+      "startOffset": 5,
+      "word": "on"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 3.67,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 3.2,
+      "startOffset": 9,
+      "word": "George"
+    },
+    {
+      "alignedWord": "let's",
+      "case": "success",
+      "end": 4.3500000000000005,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.11,
+      "startOffset": 17,
+      "word": "let's"
+    },
+    {
+      "alignedWord": "find",
+      "case": "success",
+      "end": 4.42,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 4.38,
+      "startOffset": 23,
+      "word": "find"
+    },
+    {
+      "alignedWord": "more",
+      "case": "success",
+      "end": 4.45,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 4.42,
+      "startOffset": 28,
+      "word": "more"
+    },
+    {
+      "alignedWord": "shiny",
+      "case": "success",
+      "end": 4.64,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 4.6,
+      "startOffset": 33,
+      "word": "shiny"
+    },
+    {
+      "alignedWord": "things",
+      "case": "success",
+      "end": 4.739999999999999,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "th_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 4.64,
+      "startOffset": 39,
+      "word": "things"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 46,
+  "clipEnd": 51,
+  "partIndex": 2,
+  "clipIndex": 5
+}

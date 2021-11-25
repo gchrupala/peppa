@@ -1,0 +1,170 @@
+{
+  "transcript": "What a cheeky little one Peppa is.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.65,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.39,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.77,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.65,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "cheeky",
+      "case": "success",
+      "end": 1.26,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.84,
+      "startOffset": 7,
+      "word": "cheeky"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 14,
+      "word": "little"
+    },
+    {
+      "alignedWord": "one",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 21,
+      "word": "one"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 25,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 3.99,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.95,
+      "startOffset": 31,
+      "word": "is"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E33 - Piggy in the Middle.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_8.json",
+  "episode_title": "Piggy in the Middle",
+  "clipStart": 65,
+  "clipEnd": 70,
+  "partIndex": 2,
+  "clipIndex": 0
+}

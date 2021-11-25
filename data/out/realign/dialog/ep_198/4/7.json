@@ -1,0 +1,63 @@
+{
+  "transcript": "- Oh, where is Pedro?",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 1.57,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 1.56,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "where",
+      "case": "success",
+      "end": 2.45,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.37,
+      "startOffset": 6,
+      "word": "where"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 14,
+      "startOffset": 12,
+      "word": "is"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 20,
+      "startOffset": 15,
+      "word": "Pedro"
+    }
+  ],
+  "speaker": "Suzy",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 137,
+  "clipEnd": 140,
+  "partIndex": 4,
+  "clipIndex": 7
+}

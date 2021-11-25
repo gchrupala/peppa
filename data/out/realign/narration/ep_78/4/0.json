@@ -1,0 +1,128 @@
+{
+  "transcript": "The family are setting off",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.6700000000000002,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "family",
+      "case": "success",
+      "end": 1.72,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 4,
+      "word": "family"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.73,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.72,
+      "startOffset": 11,
+      "word": "are"
+    },
+    {
+      "alignedWord": "setting",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 15,
+      "word": "setting"
+    },
+    {
+      "alignedWord": "off",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "f_E"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 23,
+      "word": "off"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E31 - George's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_78.json",
+  "episode_title": "George's Birthday",
+  "clipStart": 121,
+  "clipEnd": 123,
+  "partIndex": 4,
+  "clipIndex": 0
+}

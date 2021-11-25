@@ -1,0 +1,86 @@
+{
+  "transcript": "It is morning.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.3699999999999999,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 3,
+      "word": "is"
+    },
+    {
+      "alignedWord": "morning",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 6,
+      "word": "morning"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E08 - Camping.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_35.json",
+  "episode_title": "Camping",
+  "clipStart": 238,
+  "clipEnd": 241,
+  "partIndex": 4,
+  "clipIndex": 0
+}

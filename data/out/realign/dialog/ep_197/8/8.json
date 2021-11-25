@@ -1,0 +1,178 @@
+{
+  "transcript": "- So it's magic. - Uh, yes, it's magic.",
+  "words": [
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 3.0100000000000002,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.99,
+      "startOffset": 2,
+      "word": "So"
+    },
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 3.07,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.04,
+      "startOffset": 5,
+      "word": "it's"
+    },
+    {
+      "alignedWord": "magic",
+      "case": "success",
+      "end": 3.2199999999999998,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.07,
+      "startOffset": 10,
+      "word": "magic"
+    },
+    {
+      "alignedWord": "uh",
+      "case": "success",
+      "end": 3.9499999999999997,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.42,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.53,
+      "startOffset": 19,
+      "word": "Uh"
+    },
+    {
+      "alignedWord": "yes",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.31,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.16,
+      "startOffset": 23,
+      "word": "yes"
+    },
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 5.4799999999999995,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 5.18,
+      "startOffset": 28,
+      "word": "it's"
+    },
+    {
+      "alignedWord": "magic",
+      "case": "success",
+      "end": 5.76,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 5.49,
+      "startOffset": 33,
+      "word": "magic"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 215,
+  "clipEnd": 221,
+  "partIndex": 8,
+  "clipIndex": 8
+}

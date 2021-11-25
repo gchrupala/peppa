@@ -1,0 +1,147 @@
+{
+  "transcript": "The life is taking Peppa, George,",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.30000000000000004,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.14,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "life",
+      "case": "success",
+      "end": 0.51,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "f_E"
+        }
+      ],
+      "start": 0.3,
+      "startOffset": 4,
+      "word": "life"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 0.7300000000000001,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "taking",
+      "case": "success",
+      "end": 1.13,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 12,
+      "word": "taking"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.36,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 19,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.63,
+      "startOffset": 26,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E30 - Daddy Pigs Office.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_74.json",
+  "episode_title": "Daddy Pig's Office",
+  "clipStart": 75,
+  "clipEnd": 78,
+  "partIndex": 2,
+  "clipIndex": 0
+}

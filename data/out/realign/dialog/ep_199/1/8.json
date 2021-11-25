@@ -1,0 +1,59 @@
+{
+  "transcript": "We're bored.",
+  "words": [
+    {
+      "alignedWord": "we're",
+      "case": "success",
+      "end": 1.82,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 0,
+      "word": "We're"
+    },
+    {
+      "alignedWord": "bored",
+      "case": "success",
+      "end": 1.86,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 6,
+      "word": "bored"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 43,
+  "clipEnd": 46,
+  "partIndex": 1,
+  "clipIndex": 8
+}

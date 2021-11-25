@@ -1,0 +1,74 @@
+{
+  "transcript": "- Like what? - Uh...",
+  "words": [
+    {
+      "alignedWord": "like",
+      "case": "success",
+      "end": 2.3,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.21,
+      "startOffset": 2,
+      "word": "Like"
+    },
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 2.3899999999999997,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 7,
+      "word": "what"
+    },
+    {
+      "alignedWord": "uh",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.28,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.52,
+      "startOffset": 15,
+      "word": "Uh"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 27,
+  "clipEnd": 31,
+  "partIndex": 1,
+  "clipIndex": 2
+}

@@ -1,0 +1,186 @@
+{
+  "transcript": "George likes putting the dolls to bed.",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.07,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 0,
+      "word": "George"
+    },
+    {
+      "alignedWord": "likes",
+      "case": "success",
+      "end": 1.35,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 7,
+      "word": "likes"
+    },
+    {
+      "alignedWord": "putting",
+      "case": "success",
+      "end": 1.58,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 13,
+      "word": "putting"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.6600000000000001,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 21,
+      "word": "the"
+    },
+    {
+      "alignedWord": "dolls",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 30,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 25,
+      "word": "dolls"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 2.0,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 31,
+      "word": "to"
+    },
+    {
+      "alignedWord": "bed",
+      "case": "success",
+      "end": 2.32,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.0,
+      "startOffset": 34,
+      "word": "bed"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E36 - Mister Skinnylegs.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_47.json",
+  "episode_title": "Mister Skinnylegs",
+  "clipStart": 54,
+  "clipEnd": 57,
+  "partIndex": 2,
+  "clipIndex": 0
+}

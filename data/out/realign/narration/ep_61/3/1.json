@@ -1,0 +1,125 @@
+{
+  "transcript": "and finding them is even better.",
+  "words": [
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 0.33999999999999997,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.22,
+      "startOffset": 0,
+      "word": "and"
+    },
+    {
+      "alignedWord": "finding",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 4,
+      "word": "finding"
+    },
+    {
+      "alignedWord": "them",
+      "case": "success",
+      "end": 1.96,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.8,
+      "startOffset": 12,
+      "word": "them"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.2600000000000002,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.16,
+      "startOffset": 17,
+      "word": "is"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 24,
+      "startOffset": 20,
+      "word": "even"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 31,
+      "startOffset": 25,
+      "word": "better"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E09 - The Time Capsule.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_61.json",
+  "episode_title": "The Time Capsule",
+  "clipStart": 281,
+  "clipEnd": 284,
+  "partIndex": 3,
+  "clipIndex": 1
+}

@@ -1,0 +1,36 @@
+{
+  "transcript": " Okay.",
+  "words": [
+    {
+      "alignedWord": "okay",
+      "case": "success",
+      "end": 2.32,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ow_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 2.29,
+      "startOffset": 1,
+      "word": "Okay"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 225,
+  "clipEnd": 228,
+  "partIndex": 7,
+  "clipIndex": 2
+}

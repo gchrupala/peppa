@@ -1,0 +1,61 @@
+{
+  "transcript": "- Here we are.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 0.86,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 2,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 2.8000000000000003,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.62,
+      "startOffset": 7,
+      "word": "we"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 13,
+      "startOffset": 10,
+      "word": "are"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 62,
+  "clipEnd": 65,
+  "partIndex": 1,
+  "clipIndex": 14
+}

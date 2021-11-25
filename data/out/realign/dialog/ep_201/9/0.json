@@ -1,0 +1,86 @@
+{
+  "transcript": "- Well done, George! ",
+  "words": [
+    {
+      "alignedWord": "well",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 2,
+      "word": "Well"
+    },
+    {
+      "alignedWord": "done",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.21,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 7,
+      "word": "done"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 13,
+      "word": "George"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 202,
+  "clipEnd": 204,
+  "partIndex": 9,
+  "clipIndex": 0
+}

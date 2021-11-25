@@ -1,0 +1,70 @@
+{
+  "transcript": " - There we are!",
+  "words": [
+    {
+      "alignedWord": "there",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 3,
+      "word": "There"
+    },
+    {
+      "alignedWord": "we",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 9,
+      "word": "we"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.84,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 12,
+      "word": "are"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 151,
+  "clipEnd": 154,
+  "partIndex": 7,
+  "clipIndex": 0
+}

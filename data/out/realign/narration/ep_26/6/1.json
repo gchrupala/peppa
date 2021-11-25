@@ -1,0 +1,224 @@
+{
+  "transcript": "Maybe this game is getting a little too rough.",
+  "words": [
+    {
+      "alignedWord": "maybe",
+      "case": "success",
+      "end": 0.91,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.87,
+      "startOffset": 0,
+      "word": "Maybe"
+    },
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 1.03,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.91,
+      "startOffset": 6,
+      "word": "this"
+    },
+    {
+      "alignedWord": "game",
+      "case": "success",
+      "end": 1.38,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 11,
+      "word": "game"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 16,
+      "word": "is"
+    },
+    {
+      "alignedWord": "getting",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 19,
+      "word": "getting"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.9000000000000001,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 27,
+      "word": "a"
+    },
+    {
+      "alignedWord": "little",
+      "case": "success",
+      "end": 2.4,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.01,
+      "startOffset": 29,
+      "word": "little"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 2.75,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 36,
+      "word": "too"
+    },
+    {
+      "alignedWord": "rough",
+      "case": "success",
+      "end": 3.1999999999999997,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "f_E"
+        }
+      ],
+      "start": 2.76,
+      "startOffset": 40,
+      "word": "rough"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E12 - Snow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_26.json",
+  "episode_title": "Snow",
+  "clipStart": 144,
+  "clipEnd": 148,
+  "partIndex": 6,
+  "clipIndex": 1
+}

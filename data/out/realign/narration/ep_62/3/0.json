@@ -1,0 +1,206 @@
+{
+  "transcript": "The crab is pinching Grandpa Pig's finger.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.86,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "crab",
+      "case": "success",
+      "end": 1.26,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "b_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 4,
+      "word": "crab"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.4,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.26,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "pinching",
+      "case": "success",
+      "end": 1.89,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ch_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.46,
+      "startOffset": 12,
+      "word": "pinching"
+    },
+    {
+      "alignedWord": "grandpa",
+      "case": "success",
+      "end": 2.3,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aa_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 21,
+      "word": "Grandpa"
+    },
+    {
+      "alignedWord": "pig's",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 29,
+      "word": "Pig's"
+    },
+    {
+      "alignedWord": "finger",
+      "case": "success",
+      "end": 2.87,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 35,
+      "word": "finger"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E07 - Rock Pools.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_62.json",
+  "episode_title": "Rock Pools",
+  "clipStart": 117,
+  "clipEnd": 121,
+  "partIndex": 3,
+  "clipIndex": 0
+}

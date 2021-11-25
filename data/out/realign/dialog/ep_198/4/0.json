@@ -1,0 +1,97 @@
+{
+  "transcript": " - What will it be?",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.91,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.88,
+      "startOffset": 3,
+      "word": "What"
+    },
+    {
+      "alignedWord": "will",
+      "case": "success",
+      "end": 0.9600000000000001,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.91,
+      "startOffset": 8,
+      "word": "will"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 0.9800000000000001,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.9600000000000001,
+      "startOffset": 13,
+      "word": "it"
+    },
+    {
+      "alignedWord": "be",
+      "case": "success",
+      "end": 1.1500000000000001,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.1300000000000001,
+      "startOffset": 16,
+      "word": "be"
+    }
+  ],
+  "speaker": "Granddad Dog",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 118,
+  "clipEnd": 121,
+  "partIndex": 4,
+  "clipIndex": 0
+}

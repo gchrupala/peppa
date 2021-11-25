@@ -1,0 +1,34 @@
+{
+  "transcript": "- A mollusc.",
+  "words": [
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.19,
+      "startOffset": 2,
+      "word": "A"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 11,
+      "startOffset": 4,
+      "word": "mollusc"
+    }
+  ],
+  "speaker": "Pedro",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 208,
+  "clipEnd": 211,
+  "partIndex": 5,
+  "clipIndex": 16
+}

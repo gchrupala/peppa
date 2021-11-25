@@ -1,0 +1,204 @@
+{
+  "transcript": "A smoothie must have lots of fruit in it.",
+  "words": [
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.6,
+      "endOffset": 1,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 0,
+      "word": "A"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.85,
+      "startOffset": 2,
+      "word": "smoothie"
+    },
+    {
+      "alignedWord": "must",
+      "case": "success",
+      "end": 3.59,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.26,
+      "startOffset": 11,
+      "word": "must"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 3.65,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 3.59,
+      "startOffset": 16,
+      "word": "have"
+    },
+    {
+      "alignedWord": "lots",
+      "case": "success",
+      "end": 4.49,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "s_E"
+        }
+      ],
+      "start": 4.24,
+      "startOffset": 21,
+      "word": "lots"
+    },
+    {
+      "alignedWord": "of",
+      "case": "success",
+      "end": 4.73,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "v_E"
+        }
+      ],
+      "start": 4.49,
+      "startOffset": 26,
+      "word": "of"
+    },
+    {
+      "alignedWord": "fruit",
+      "case": "success",
+      "end": 5.3500000000000005,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 5.3100000000000005,
+      "startOffset": 29,
+      "word": "fruit"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 5.390000000000001,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_E"
+        }
+      ],
+      "start": 5.3500000000000005,
+      "startOffset": 35,
+      "word": "in"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 5.510000000000001,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 5.390000000000001,
+      "startOffset": 38,
+      "word": "it"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 174,
+  "clipEnd": 180,
+  "partIndex": 3,
+  "clipIndex": 26
+}

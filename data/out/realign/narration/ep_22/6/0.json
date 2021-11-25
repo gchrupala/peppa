@@ -1,0 +1,73 @@
+{
+  "transcript": "The tooth fairy has arrived.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.4000000000000001,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.35,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "tooth",
+      "case": "success",
+      "end": 1.7,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "th_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 4,
+      "word": "tooth"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 15,
+      "startOffset": 10,
+      "word": "fairy"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 19,
+      "startOffset": 16,
+      "word": "has"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 27,
+      "startOffset": 20,
+      "word": "arrived"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E25 - The Tooth Fairy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_22.json",
+  "episode_title": "The Tooth Fairy",
+  "clipStart": 219,
+  "clipEnd": 221,
+  "partIndex": 6,
+  "clipIndex": 0
+}

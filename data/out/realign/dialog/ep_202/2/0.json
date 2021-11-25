@@ -1,0 +1,81 @@
+{
+  "transcript": "- What's your favourite fruit, George?",
+  "words": [
+    {
+      "alignedWord": "what's",
+      "case": "success",
+      "end": 2.77,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.73,
+      "startOffset": 2,
+      "word": "What's"
+    },
+    {
+      "alignedWord": "your",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.77,
+      "startOffset": 9,
+      "word": "your"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 14,
+      "word": "favourite"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 29,
+      "startOffset": 24,
+      "word": "fruit"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 37,
+      "startOffset": 31,
+      "word": "George"
+    }
+  ],
+  "speaker": "Emily",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 75,
+  "clipEnd": 78,
+  "partIndex": 2,
+  "clipIndex": 0
+}

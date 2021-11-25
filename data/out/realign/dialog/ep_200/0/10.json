@@ -1,0 +1,199 @@
+{
+  "transcript": "- I've got canoes! - Oooh! Let's have a canoe! - Hmm.",
+  "words": [
+    {
+      "alignedWord": "i've",
+      "case": "success",
+      "end": 1.34,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 2,
+      "word": "I've"
+    },
+    {
+      "alignedWord": "got",
+      "case": "success",
+      "end": 1.56,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.34,
+      "startOffset": 7,
+      "word": "got"
+    },
+    {
+      "alignedWord": "canoes",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 11,
+      "word": "canoes"
+    },
+    {
+      "alignedWord": "oooh",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.37,
+          "phone": "uw_S"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 21,
+      "word": "Oooh"
+    },
+    {
+      "alignedWord": "let's",
+      "case": "success",
+      "end": 3.57,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.46,
+      "startOffset": 27,
+      "word": "Let's"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 3.83,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 3.6599999999999997,
+      "startOffset": 33,
+      "word": "have"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 3.84,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.83,
+      "startOffset": 38,
+      "word": "a"
+    },
+    {
+      "alignedWord": "canoe",
+      "case": "success",
+      "end": 4.14,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 4.07,
+      "startOffset": 40,
+      "word": "canoe"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 52,
+      "startOffset": 49,
+      "word": "Hmm"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 28,
+  "clipEnd": 33,
+  "partIndex": 0,
+  "clipIndex": 10
+}

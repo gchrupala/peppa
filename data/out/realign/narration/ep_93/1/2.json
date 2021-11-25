@@ -1,0 +1,112 @@
+{
+  "transcript": "a letter to Peppa's house.",
+  "words": [
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.0,
+      "endOffset": 1,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 0,
+      "word": "a"
+    },
+    {
+      "alignedWord": "letter",
+      "case": "success",
+      "end": 1.37,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.0,
+      "startOffset": 2,
+      "word": "letter"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.5799999999999998,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.43,
+      "startOffset": 9,
+      "word": "to"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.9000000000000001,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.58,
+      "startOffset": 12,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "house",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.92,
+      "startOffset": 20,
+      "word": "house"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E21 - Pen Pal.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_93.json",
+  "episode_title": "Pen Pal",
+  "clipStart": 52,
+  "clipEnd": 56,
+  "partIndex": 1,
+  "clipIndex": 2
+}

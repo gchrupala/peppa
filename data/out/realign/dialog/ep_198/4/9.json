@@ -1,0 +1,109 @@
+{
+  "transcript": "- Oh! Come along, Pedro!",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 2.37,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 2.31,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "come",
+      "case": "success",
+      "end": 2.95,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.71,
+      "startOffset": 6,
+      "word": "Come"
+    },
+    {
+      "alignedWord": "along",
+      "case": "success",
+      "end": 3.4099999999999997,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 3.36,
+      "startOffset": 11,
+      "word": "along"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 3.6900000000000004,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.41,
+      "startOffset": 18,
+      "word": "Pedro"
+    }
+  ],
+  "speaker": "Madame Gazelle",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 142,
+  "clipEnd": 146,
+  "partIndex": 4,
+  "clipIndex": 9
+}

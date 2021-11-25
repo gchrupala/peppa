@@ -1,0 +1,32 @@
+{
+  "transcript": "- No.",
+  "words": [
+    {
+      "alignedWord": "no",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.77,
+      "startOffset": 2,
+      "word": "No"
+    }
+  ],
+  "speaker": "George",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 181,
+  "clipEnd": 184,
+  "partIndex": 3,
+  "clipIndex": 28
+}

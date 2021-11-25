@@ -1,0 +1,128 @@
+{
+  "transcript": "- Uh, it's not my road. - Mr. Bull?",
+  "words": [
+    {
+      "alignedWord": "uh",
+      "case": "success",
+      "end": 3.54,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 3.29,
+      "startOffset": 2,
+      "word": "Uh"
+    },
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 3.74,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.54,
+      "startOffset": 6,
+      "word": "it's"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 3.89,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.03,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.74,
+      "startOffset": 11,
+      "word": "not"
+    },
+    {
+      "alignedWord": "my",
+      "case": "success",
+      "end": 4.12,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 3.92,
+      "startOffset": 15,
+      "word": "my"
+    },
+    {
+      "alignedWord": "road",
+      "case": "success",
+      "end": 4.79,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.36,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 4.26,
+      "startOffset": 18,
+      "word": "road"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 26,
+      "word": "Mr"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 34,
+      "startOffset": 30,
+      "word": "Bull"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 261,
+  "clipEnd": 266,
+  "partIndex": 10,
+  "clipIndex": 4
+}

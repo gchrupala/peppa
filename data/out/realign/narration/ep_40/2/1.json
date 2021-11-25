@@ -1,0 +1,262 @@
+{
+  "transcript": "The sun is so hot that the puddles have dried up.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.73,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "sun",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 4,
+      "word": "sun"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.14,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.99,
+      "startOffset": 8,
+      "word": "is"
+    },
+    {
+      "alignedWord": "so",
+      "case": "success",
+      "end": 1.4,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 11,
+      "word": "so"
+    },
+    {
+      "alignedWord": "hot",
+      "case": "success",
+      "end": 1.78,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 14,
+      "word": "hot"
+    },
+    {
+      "alignedWord": "that",
+      "case": "success",
+      "end": 2.0100000000000002,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.87,
+      "startOffset": 18,
+      "word": "that"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 2.1399999999999997,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 2.01,
+      "startOffset": 23,
+      "word": "the"
+    },
+    {
+      "alignedWord": "puddles",
+      "case": "success",
+      "end": 2.5500000000000003,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.16,
+      "startOffset": 27,
+      "word": "puddles"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 39,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "v_E"
+        }
+      ],
+      "start": 2.55,
+      "startOffset": 35,
+      "word": "have"
+    },
+    {
+      "alignedWord": "dried",
+      "case": "success",
+      "end": 3.05,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.71,
+      "startOffset": 40,
+      "word": "dried"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 3.3699999999999997,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.23,
+          "phone": "p_E"
+        }
+      ],
+      "start": 3.05,
+      "startOffset": 46,
+      "word": "up"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E35 - Very Hot Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_40.json",
+  "episode_title": "Very Hot Day",
+  "clipStart": 37,
+  "clipEnd": 42,
+  "partIndex": 2,
+  "clipIndex": 1
+}

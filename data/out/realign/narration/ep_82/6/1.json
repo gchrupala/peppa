@@ -1,0 +1,155 @@
+{
+  "transcript": "than he has ever run before.",
+  "words": [
+    {
+      "alignedWord": "than",
+      "case": "success",
+      "end": 0.77,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 0,
+      "word": "than"
+    },
+    {
+      "alignedWord": "he",
+      "case": "success",
+      "end": 0.98,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.77,
+      "startOffset": 5,
+      "word": "he"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.15,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 8,
+      "word": "has"
+    },
+    {
+      "alignedWord": "ever",
+      "case": "success",
+      "end": 1.45,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 12,
+      "word": "ever"
+    },
+    {
+      "alignedWord": "run",
+      "case": "success",
+      "end": 1.66,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.45,
+      "startOffset": 17,
+      "word": "run"
+    },
+    {
+      "alignedWord": "before",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.66,
+      "startOffset": 21,
+      "word": "before"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E15 - Cuckoo Clock.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_82.json",
+  "episode_title": "Cuckoo Clock",
+  "clipStart": 205,
+  "clipEnd": 207,
+  "partIndex": 6,
+  "clipIndex": 1
+}

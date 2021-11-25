@@ -1,0 +1,155 @@
+{
+  "transcript": "Here are Candy Cat, Susie Sheep,",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 2.98,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "r_E"
+        }
+      ],
+      "start": 2.64,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 3.08,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "er_S"
+        }
+      ],
+      "start": 2.98,
+      "startOffset": 5,
+      "word": "are"
+    },
+    {
+      "alignedWord": "candy",
+      "case": "success",
+      "end": 3.38,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.08,
+      "startOffset": 9,
+      "word": "Candy"
+    },
+    {
+      "alignedWord": "cat",
+      "case": "success",
+      "end": 3.72,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.49,
+      "startOffset": 15,
+      "word": "Cat"
+    },
+    {
+      "alignedWord": "susie",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.73,
+      "startOffset": 20,
+      "word": "Susie"
+    },
+    {
+      "alignedWord": "sheep",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_E"
+        }
+      ],
+      "start": 3.77,
+      "startOffset": 26,
+      "word": "Sheep"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E39 The Baby Piggy.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_83.json",
+  "episode_title": "The Baby Piggy",
+  "clipStart": 181,
+  "clipEnd": 185,
+  "partIndex": 10,
+  "clipIndex": 0
+}

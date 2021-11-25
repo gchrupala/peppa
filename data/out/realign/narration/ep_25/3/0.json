@@ -1,0 +1,155 @@
+{
+  "transcript": "Suzy Sheep is Peppa's best friend.",
+  "words": [
+    {
+      "alignedWord": "suzy",
+      "case": "success",
+      "end": 1.08,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.68,
+      "startOffset": 0,
+      "word": "Suzy"
+    },
+    {
+      "alignedWord": "sheep",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.09,
+      "startOffset": 5,
+      "word": "Sheep"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.71,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.35,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 14,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "best",
+      "case": "success",
+      "end": 2.42,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.12,
+      "startOffset": 22,
+      "word": "best"
+    },
+    {
+      "alignedWord": "friend",
+      "case": "success",
+      "end": 2.87,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 27,
+      "word": "friend"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E27 - Not Very Well.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_25.json",
+  "episode_title": "Not Very Well",
+  "clipStart": 132,
+  "clipEnd": 136,
+  "partIndex": 3,
+  "clipIndex": 0
+}

@@ -1,0 +1,163 @@
+{
+  "transcript": "Peppa has forgotten her Teddy again.",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.55,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.29,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.26,
+      "startOffset": 0,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 0.77,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 6,
+      "word": "has"
+    },
+    {
+      "alignedWord": "forgotten",
+      "case": "success",
+      "end": 1.3599999999999999,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.13,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.78,
+      "startOffset": 10,
+      "word": "forgotten"
+    },
+    {
+      "alignedWord": "her",
+      "case": "success",
+      "end": 1.5499999999999998,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.39,
+      "startOffset": 20,
+      "word": "her"
+    },
+    {
+      "alignedWord": "teddy",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 24,
+      "word": "Teddy"
+    },
+    {
+      "alignedWord": "again",
+      "case": "success",
+      "end": 2.95,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.16,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.21,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 30,
+      "word": "again"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E02 - Teddys day out.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_56.json",
+  "episode_title": "Teddy's Day Out",
+  "clipStart": 213,
+  "clipEnd": 218,
+  "partIndex": 6,
+  "clipIndex": 0
+}

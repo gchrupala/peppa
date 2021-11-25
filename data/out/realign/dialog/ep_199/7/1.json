@@ -1,0 +1,144 @@
+{
+  "transcript": "But now we'll put the pole a bit lower.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 2.6,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.41,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "now",
+      "case": "success",
+      "end": 2.9899999999999998,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.18,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 2.63,
+      "startOffset": 4,
+      "word": "now"
+    },
+    {
+      "alignedWord": "we'll",
+      "case": "success",
+      "end": 3.24,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.99,
+      "startOffset": 8,
+      "word": "we'll"
+    },
+    {
+      "alignedWord": "put",
+      "case": "success",
+      "end": 3.4200000000000004,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.24,
+      "startOffset": 14,
+      "word": "put"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.44,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.42,
+      "startOffset": 18,
+      "word": "the"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 26,
+      "startOffset": 22,
+      "word": "pole"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 27,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 29,
+      "word": "bit"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 38,
+      "startOffset": 33,
+      "word": "lower"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 222,
+  "clipEnd": 226,
+  "partIndex": 7,
+  "clipIndex": 1
+}

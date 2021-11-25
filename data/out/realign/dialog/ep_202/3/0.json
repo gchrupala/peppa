@@ -1,0 +1,118 @@
+{
+  "transcript": "- Smoothies! Get your fruit smoothies here!",
+  "words": [
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.4,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 1.25,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 2,
+      "word": "Smoothies"
+    },
+    {
+      "alignedWord": "get",
+      "case": "success",
+      "end": 3.5,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.28,
+      "startOffset": 13,
+      "word": "Get"
+    },
+    {
+      "alignedWord": "your",
+      "case": "success",
+      "end": 3.7800000000000002,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.56,
+      "startOffset": 17,
+      "word": "your"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 27,
+      "startOffset": 22,
+      "word": "fruit"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.79,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 3.7800000000000002,
+      "startOffset": 28,
+      "word": "smoothies"
+    },
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 4.76,
+      "endOffset": 42,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 4.73,
+      "startOffset": 38,
+      "word": "here"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 88,
+  "clipEnd": 93,
+  "partIndex": 3,
+  "clipIndex": 0
+}

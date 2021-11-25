@@ -1,0 +1,101 @@
+{
+  "transcript": "What a tidy room.",
+  "words": [
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 0.44000000000000006,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.16,
+      "startOffset": 0,
+      "word": "What"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 0.55,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 0.44,
+      "startOffset": 5,
+      "word": "a"
+    },
+    {
+      "alignedWord": "tidy",
+      "case": "success",
+      "end": 1.06,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.64,
+      "startOffset": 7,
+      "word": "tidy"
+    },
+    {
+      "alignedWord": "room",
+      "case": "success",
+      "end": 1.51,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.06,
+      "startOffset": 12,
+      "word": "room"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E45 - Tidying Up.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_43.json",
+  "episode_title": "Tidying Up",
+  "clipStart": 240,
+  "clipEnd": 242,
+  "partIndex": 4,
+  "clipIndex": 0
+}

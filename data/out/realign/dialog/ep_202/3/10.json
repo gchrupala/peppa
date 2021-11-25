@@ -1,0 +1,67 @@
+{
+  "transcript": "- Mm! Delicious!",
+  "words": [
+    {
+      "alignedWord": "mm",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "m_S"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 2,
+      "word": "Mm"
+    },
+    {
+      "alignedWord": "delicious",
+      "case": "success",
+      "end": 2.71,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "sh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 6,
+      "word": "Delicious"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Fruit.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_202.yaml",
+  "episode_title": "Fruit",
+  "clipStart": 126,
+  "clipEnd": 129,
+  "partIndex": 3,
+  "clipIndex": 10
+}

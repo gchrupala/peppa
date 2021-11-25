@@ -1,0 +1,208 @@
+{
+  "transcript": "- I didn't sail the world and make my fortune",
+  "words": [
+    {
+      "alignedWord": "i",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.25,
+          "phone": "ay_S"
+        }
+      ],
+      "start": 1.79,
+      "startOffset": 2,
+      "word": "I"
+    },
+    {
+      "alignedWord": "didn't",
+      "case": "success",
+      "end": 2.92,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.68,
+      "startOffset": 4,
+      "word": "didn't"
+    },
+    {
+      "alignedWord": "sail",
+      "case": "success",
+      "end": 3.31,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.92,
+      "startOffset": 11,
+      "word": "sail"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.37,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.31,
+      "startOffset": 16,
+      "word": "the"
+    },
+    {
+      "alignedWord": "world",
+      "case": "success",
+      "end": 3.95,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.29,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.37,
+      "startOffset": 20,
+      "word": "world"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 4.13,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "d_E"
+        }
+      ],
+      "start": 3.95,
+      "startOffset": 26,
+      "word": "and"
+    },
+    {
+      "alignedWord": "make",
+      "case": "success",
+      "end": 4.33,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_E"
+        }
+      ],
+      "start": 4.13,
+      "startOffset": 30,
+      "word": "make"
+    },
+    {
+      "alignedWord": "my",
+      "case": "success",
+      "end": 4.6499999999999995,
+      "endOffset": 37,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 4.35,
+      "startOffset": 35,
+      "word": "my"
+    },
+    {
+      "alignedWord": "fortune",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ao_I"
+        }
+      ],
+      "start": 4.66,
+      "startOffset": 38,
+      "word": "fortune"
+    }
+  ],
+  "speaker": "Captain Dog",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 113,
+  "clipEnd": 118,
+  "partIndex": 3,
+  "clipIndex": 2
+}

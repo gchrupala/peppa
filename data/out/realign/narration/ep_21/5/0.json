@@ -1,0 +1,81 @@
+{
+  "transcript": "Daddy Pig, Peppa, and George",
+  "words": [
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.91,
+      "startOffset": 0,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "pig",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "g_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 6,
+      "word": "Pig"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 16,
+      "startOffset": 11,
+      "word": "Peppa"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 21,
+      "startOffset": 18,
+      "word": "and"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 28,
+      "startOffset": 22,
+      "word": "George"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E18 - Mummy Pig's Birthday.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_21.json",
+  "episode_title": "Mummy Pig's Birthday",
+  "clipStart": 166,
+  "clipEnd": 168,
+  "partIndex": 5,
+  "clipIndex": 0
+}

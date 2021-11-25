@@ -1,0 +1,113 @@
+{
+  "transcript": "playing with their toys.",
+  "words": [
+    {
+      "alignedWord": "playing",
+      "case": "success",
+      "end": 1.16,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 0,
+      "word": "playing"
+    },
+    {
+      "alignedWord": "with",
+      "case": "success",
+      "end": 1.29,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "th_E"
+        }
+      ],
+      "start": 1.16,
+      "startOffset": 8,
+      "word": "with"
+    },
+    {
+      "alignedWord": "their",
+      "case": "success",
+      "end": 1.44,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.29,
+      "startOffset": 13,
+      "word": "their"
+    },
+    {
+      "alignedWord": "toys",
+      "case": "success",
+      "end": 1.79,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "oy_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.44,
+      "startOffset": 19,
+      "word": "toys"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E45 - Tidying Up.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_43.json",
+  "episode_title": "Tidying Up",
+  "clipStart": 24,
+  "clipEnd": 26,
+  "partIndex": 0,
+  "clipIndex": 1
+}

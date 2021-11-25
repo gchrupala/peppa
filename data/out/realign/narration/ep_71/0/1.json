@@ -1,0 +1,135 @@
+{
+  "transcript": "roof has a hole in it.",
+  "words": [
+    {
+      "alignedWord": "roof",
+      "case": "success",
+      "end": 1.3199999999999998,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "f_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 0,
+      "word": "roof"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.5999999999999999,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.38,
+      "startOffset": 5,
+      "word": "has"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.75,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.6,
+      "startOffset": 9,
+      "word": "a"
+    },
+    {
+      "alignedWord": "hole",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 11,
+      "word": "hole"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.2,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.08,
+      "startOffset": 16,
+      "word": "in"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 2.45,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.2,
+      "startOffset": 19,
+      "word": "it"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E35 - Jumble Sale.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_71.json",
+  "episode_title": "Jumble Sale",
+  "clipStart": 22,
+  "clipEnd": 27,
+  "partIndex": 0,
+  "clipIndex": 1
+}

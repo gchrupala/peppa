@@ -1,0 +1,132 @@
+{
+  "transcript": "Here are Pedro and Danny.",
+  "words": [
+    {
+      "alignedWord": "here",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_E"
+        }
+      ],
+      "start": 0.83,
+      "startOffset": 0,
+      "word": "Here"
+    },
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 1.1900000000000002,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "er_S"
+        }
+      ],
+      "start": 1.1,
+      "startOffset": 5,
+      "word": "are"
+    },
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 1.5899999999999999,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 9,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.03,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 15,
+      "word": "and"
+    },
+    {
+      "alignedWord": "danny",
+      "case": "success",
+      "end": 1.95,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 19,
+      "word": "Danny"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E41 - Dens.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_88.json",
+  "episode_title": "Dens",
+  "clipStart": 47,
+  "clipEnd": 51,
+  "partIndex": 3,
+  "clipIndex": 0
+}

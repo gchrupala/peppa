@@ -1,0 +1,28 @@
+{
+  "transcript": ": Oooh!",
+  "words": [
+    {
+      "alignedWord": "oooh",
+      "case": "success",
+      "end": 1.34,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "uw_S"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 2,
+      "word": "Oooh"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 172,
+  "clipEnd": 174,
+  "partIndex": 5,
+  "clipIndex": 3
+}

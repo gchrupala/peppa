@@ -1,0 +1,86 @@
+{
+  "transcript": "- It's as good as new!",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 3.75,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.72,
+      "startOffset": 2,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "as",
+      "case": "success",
+      "end": 3.78,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.75,
+      "startOffset": 7,
+      "word": "as"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 14,
+      "startOffset": 10,
+      "word": "good"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 17,
+      "startOffset": 15,
+      "word": "as"
+    },
+    {
+      "alignedWord": "new",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 18,
+      "word": "new"
+    }
+  ],
+  "speaker": "Mr Bull",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 220,
+  "clipEnd": 224,
+  "partIndex": 9,
+  "clipIndex": 6
+}

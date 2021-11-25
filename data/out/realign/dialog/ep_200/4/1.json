@@ -1,0 +1,136 @@
+{
+  "transcript": "- Come in, boats one, two and three!",
+  "words": [
+    {
+      "alignedWord": "come",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.88,
+      "startOffset": 2,
+      "word": "Come"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.99,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.97,
+      "startOffset": 7,
+      "word": "in"
+    },
+    {
+      "alignedWord": "boats",
+      "case": "success",
+      "end": 3.13,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.02,
+      "startOffset": 11,
+      "word": "boats"
+    },
+    {
+      "alignedWord": "one",
+      "case": "success",
+      "end": 3.21,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.13,
+      "startOffset": 17,
+      "word": "one"
+    },
+    {
+      "alignedWord": "two",
+      "case": "success",
+      "end": 3.73,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.6,
+      "startOffset": 22,
+      "word": "two"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 29,
+      "startOffset": 26,
+      "word": "and"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 35,
+      "startOffset": 30,
+      "word": "three"
+    }
+  ],
+  "speaker": "Miss Rabbit",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 175,
+  "clipEnd": 179,
+  "partIndex": 4,
+  "clipIndex": 1
+}

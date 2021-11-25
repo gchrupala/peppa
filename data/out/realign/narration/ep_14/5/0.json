@@ -1,0 +1,155 @@
+{
+  "transcript": "But the kite still won't fly.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 0.15,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.0,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.28,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.04,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.15,
+      "startOffset": 4,
+      "word": "the"
+    },
+    {
+      "alignedWord": "kite",
+      "case": "success",
+      "end": 0.6000000000000001,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.28,
+      "startOffset": 8,
+      "word": "kite"
+    },
+    {
+      "alignedWord": "still",
+      "case": "success",
+      "end": 1.17,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.26,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.63,
+      "startOffset": 13,
+      "word": "still"
+    },
+    {
+      "alignedWord": "won't",
+      "case": "success",
+      "end": 1.41,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.17,
+      "startOffset": 19,
+      "word": "won't"
+    },
+    {
+      "alignedWord": "fly",
+      "case": "success",
+      "end": 1.7999999999999998,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ay_E"
+        }
+      ],
+      "start": 1.41,
+      "startOffset": 25,
+      "word": "fly"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E13 - Flying a Kite.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_14.json",
+  "episode_title": "Flying a Kite",
+  "clipStart": 66,
+  "clipEnd": 69,
+  "partIndex": 5,
+  "clipIndex": 0
+}

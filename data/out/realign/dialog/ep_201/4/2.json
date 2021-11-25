@@ -1,0 +1,170 @@
+{
+  "transcript": "- Oh, dear. Now we'll have to wait even longer.",
+  "words": [
+    {
+      "alignedWord": "oh",
+      "case": "success",
+      "end": 3.83,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.38,
+          "phone": "ow_S"
+        }
+      ],
+      "start": 3.45,
+      "startOffset": 2,
+      "word": "Oh"
+    },
+    {
+      "alignedWord": "dear",
+      "case": "success",
+      "end": 4.63,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.15,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.2,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.26,
+          "phone": "r_E"
+        }
+      ],
+      "start": 4.02,
+      "startOffset": 6,
+      "word": "dear"
+    },
+    {
+      "alignedWord": "now",
+      "case": "success",
+      "end": 5.16,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "aw_E"
+        }
+      ],
+      "start": 4.71,
+      "startOffset": 12,
+      "word": "Now"
+    },
+    {
+      "alignedWord": "we'll",
+      "case": "success",
+      "end": 5.34,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "l_E"
+        }
+      ],
+      "start": 5.17,
+      "startOffset": 16,
+      "word": "we'll"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 5.529999999999999,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_E"
+        }
+      ],
+      "start": 5.35,
+      "startOffset": 22,
+      "word": "have"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 5.67,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 5.53,
+      "startOffset": 27,
+      "word": "to"
+    },
+    {
+      "alignedWord": "wait",
+      "case": "success",
+      "end": 5.8,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 5.67,
+      "startOffset": 30,
+      "word": "wait"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 39,
+      "startOffset": 35,
+      "word": "even"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 46,
+      "startOffset": 40,
+      "word": "longer"
+    }
+  ],
+  "speaker": "Mummy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Mr Bull in a China Shop.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_201.yaml",
+  "episode_title": "Mr. Bull in a China Shop",
+  "clipStart": 65,
+  "clipEnd": 71,
+  "partIndex": 4,
+  "clipIndex": 2
+}

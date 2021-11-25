@@ -1,0 +1,59 @@
+{
+  "transcript": "It worked.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.74,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "worked",
+      "case": "success",
+      "end": 1.8,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 3,
+      "word": "worked"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E10 - Mr Scarecrow.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_59.json",
+  "episode_title": "Mr. Scarecrow",
+  "clipStart": 232,
+  "clipEnd": 234,
+  "partIndex": 13,
+  "clipIndex": 0
+}

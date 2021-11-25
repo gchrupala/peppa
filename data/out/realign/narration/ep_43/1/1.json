@@ -1,0 +1,129 @@
+{
+  "transcript": "room, reading his newspaper.",
+  "words": [
+    {
+      "alignedWord": "room",
+      "case": "success",
+      "end": 1.29,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_E"
+        }
+      ],
+      "start": 1.08,
+      "startOffset": 0,
+      "word": "room"
+    },
+    {
+      "alignedWord": "reading",
+      "case": "success",
+      "end": 1.61,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 6,
+      "word": "reading"
+    },
+    {
+      "alignedWord": "his",
+      "case": "success",
+      "end": 1.77,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.61,
+      "startOffset": 14,
+      "word": "his"
+    },
+    {
+      "alignedWord": "newspaper",
+      "case": "success",
+      "end": 2.31,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 1.77,
+      "startOffset": 18,
+      "word": "newspaper"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E45 - Tidying Up.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_43.json",
+  "episode_title": "Tidying Up",
+  "clipStart": 51,
+  "clipEnd": 54,
+  "partIndex": 1,
+  "clipIndex": 1
+}

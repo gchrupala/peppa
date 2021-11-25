@@ -1,0 +1,163 @@
+{
+  "transcript": "-Getting fit is quite hard work.",
+  "words": [
+    {
+      "alignedWord": "getting",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.61,
+      "startOffset": 1,
+      "word": "Getting"
+    },
+    {
+      "alignedWord": "fit",
+      "case": "success",
+      "end": 1.28,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 9,
+      "word": "fit"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.51,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.34,
+      "startOffset": 13,
+      "word": "is"
+    },
+    {
+      "alignedWord": "quite",
+      "case": "success",
+      "end": 1.87,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.54,
+      "startOffset": 16,
+      "word": "quite"
+    },
+    {
+      "alignedWord": "hard",
+      "case": "success",
+      "end": 2.16,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.8800000000000001,
+      "startOffset": 22,
+      "word": "hard"
+    },
+    {
+      "alignedWord": "work",
+      "case": "success",
+      "end": 2.48,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.16,
+      "startOffset": 27,
+      "word": "work"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E40 - Daddy Gets Fit.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_42.json",
+  "episode_title": "Daddy Gets Fit",
+  "clipStart": 200,
+  "clipEnd": 203,
+  "partIndex": 4,
+  "clipIndex": 0
+}

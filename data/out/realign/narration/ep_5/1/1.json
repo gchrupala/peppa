@@ -1,0 +1,175 @@
+{
+  "transcript": "to hide before Peppa finishes counting.",
+  "words": [
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 0.66,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.55,
+      "startOffset": 0,
+      "word": "to"
+    },
+    {
+      "alignedWord": "hide",
+      "case": "success",
+      "end": 1.01,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.67,
+      "startOffset": 3,
+      "word": "hide"
+    },
+    {
+      "alignedWord": "before",
+      "case": "success",
+      "end": 1.21,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.01,
+      "startOffset": 8,
+      "word": "before"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.3399999999999999,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.21,
+      "startOffset": 15,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "finishes",
+      "case": "success",
+      "end": 2.26,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "sh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.75,
+      "startOffset": 21,
+      "word": "finishes"
+    },
+    {
+      "alignedWord": "counting",
+      "case": "success",
+      "end": 2.7299999999999995,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 30,
+      "word": "counting"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E05 - Hide & Seek.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_5.json",
+  "episode_title": "Hide and Seek",
+  "clipStart": 35,
+  "clipEnd": 38,
+  "partIndex": 1,
+  "clipIndex": 1
+}

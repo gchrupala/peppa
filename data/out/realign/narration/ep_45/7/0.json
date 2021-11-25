@@ -1,0 +1,109 @@
+{
+  "transcript": "The wall is mended.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.5800000000000001,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.56,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "wall",
+      "case": "success",
+      "end": 0.9299999999999999,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.15,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.59,
+      "startOffset": 4,
+      "word": "wall"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.14,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "alignedWord": "mended",
+      "case": "success",
+      "end": 1.5999999999999999,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.14,
+      "startOffset": 12,
+      "word": "mended"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E47 - Daddy Puts up a Picture.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_45.json",
+  "episode_title": "Daddy Puts up a Picture",
+  "clipStart": 207,
+  "clipEnd": 209,
+  "partIndex": 7,
+  "clipIndex": 0
+}

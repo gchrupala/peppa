@@ -1,0 +1,175 @@
+{
+  "transcript": "It's George's pop-up dinosaur book.",
+  "words": [
+    {
+      "alignedWord": "it's",
+      "case": "success",
+      "end": 0.29,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.0,
+      "startOffset": 0,
+      "word": "It's"
+    },
+    {
+      "alignedWord": "george's",
+      "case": "success",
+      "end": 0.79,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "jh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 5,
+      "word": "George's"
+    },
+    {
+      "alignedWord": "pop",
+      "case": "success",
+      "end": 1.03,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_E"
+        }
+      ],
+      "start": 0.79,
+      "startOffset": 14,
+      "word": "pop"
+    },
+    {
+      "alignedWord": "up",
+      "case": "success",
+      "end": 1.18,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "p_E"
+        }
+      ],
+      "start": 1.03,
+      "startOffset": 18,
+      "word": "up"
+    },
+    {
+      "alignedWord": "dinosaur",
+      "case": "success",
+      "end": 1.73,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.18,
+      "startOffset": 21,
+      "word": "dinosaur"
+    },
+    {
+      "alignedWord": "book",
+      "case": "success",
+      "end": 2.08,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 30,
+      "word": "book"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E45 - Tidying Up.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_43.json",
+  "episode_title": "Tidying Up",
+  "clipStart": 171,
+  "clipEnd": 174,
+  "partIndex": 2,
+  "clipIndex": 0
+}

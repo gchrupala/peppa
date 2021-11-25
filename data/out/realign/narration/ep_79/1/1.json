@@ -1,0 +1,132 @@
+{
+  "transcript": "It has grown very long.",
+  "words": [
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 1.48,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.36,
+      "startOffset": 0,
+      "word": "It"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.64,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 3,
+      "word": "has"
+    },
+    {
+      "alignedWord": "grown",
+      "case": "success",
+      "end": 2.01,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.64,
+      "startOffset": 7,
+      "word": "grown"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 2.2800000000000002,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 13,
+      "word": "very"
+    },
+    {
+      "alignedWord": "long",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.17,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 2.28,
+      "startOffset": 18,
+      "word": "long"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E17 - The Long Grass.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_79.json",
+  "episode_title": "The Long Grass",
+  "clipStart": 26,
+  "clipEnd": 29,
+  "partIndex": 1,
+  "clipIndex": 1
+}

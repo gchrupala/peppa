@@ -1,0 +1,229 @@
+{
+  "transcript": "Mommy Pig's shortcut has not worked very well.",
+  "words": [
+    {
+      "alignedWord": "mommy",
+      "case": "success",
+      "end": 0.53,
+      "endOffset": 5,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.22,
+      "startOffset": 0,
+      "word": "Mommy"
+    },
+    {
+      "alignedWord": "pig's",
+      "case": "success",
+      "end": 0.8,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.53,
+      "startOffset": 6,
+      "word": "Pig's"
+    },
+    {
+      "alignedWord": "shortcut",
+      "case": "success",
+      "end": 1.42,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.8,
+      "startOffset": 12,
+      "word": "shortcut"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.64,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 21,
+      "word": "has"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 25,
+      "word": "not"
+    },
+    {
+      "alignedWord": "worked",
+      "case": "success",
+      "end": 2.28,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.91,
+      "startOffset": 29,
+      "word": "worked"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 2.5199999999999996,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.28,
+      "startOffset": 36,
+      "word": "very"
+    },
+    {
+      "alignedWord": "well",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 45,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.1,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.52,
+      "startOffset": 41,
+      "word": "well"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E33 - Traffic Jam.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_65.json",
+  "episode_title": "Traffic Jam",
+  "clipStart": 185,
+  "clipEnd": 188,
+  "partIndex": 5,
+  "clipIndex": 1
+}

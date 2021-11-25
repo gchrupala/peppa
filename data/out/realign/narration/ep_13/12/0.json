@@ -1,0 +1,124 @@
+{
+  "transcript": "But Peppa's box is empty.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 0.65,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.45,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 1.05,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.32,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.73,
+      "startOffset": 4,
+      "word": "Peppa's"
+    },
+    {
+      "alignedWord": "box",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.2,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.07,
+      "startOffset": 12,
+      "word": "box"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.95,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.73,
+      "startOffset": 16,
+      "word": "is"
+    },
+    {
+      "alignedWord": "empty",
+      "case": "success",
+      "end": 2.4299999999999997,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.95,
+      "startOffset": 19,
+      "word": "empty"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E31 - Secrets.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_13.json",
+  "episode_title": "Secrets",
+  "clipStart": 242,
+  "clipEnd": 245,
+  "partIndex": 12,
+  "clipIndex": 0
+}

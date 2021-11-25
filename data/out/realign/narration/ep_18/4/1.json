@@ -1,0 +1,178 @@
+{
+  "transcript": "but George is getting a bit bored.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 1.1,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.9,
+      "startOffset": 0,
+      "word": "but"
+    },
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 1.55,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.14,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 1.11,
+      "startOffset": 4,
+      "word": "George"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.69,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.55,
+      "startOffset": 11,
+      "word": "is"
+    },
+    {
+      "alignedWord": "getting",
+      "case": "success",
+      "end": 2.02,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.71,
+      "startOffset": 14,
+      "word": "getting"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.1,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 22,
+      "word": "a"
+    },
+    {
+      "alignedWord": "bit",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 24,
+      "word": "bit"
+    },
+    {
+      "alignedWord": "bored",
+      "case": "success",
+      "end": 2.9,
+      "endOffset": 33,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.18,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.38,
+      "startOffset": 28,
+      "word": "bored"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E19 - Dressing Up.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_18.json",
+  "episode_title": "Dressing Up",
+  "clipStart": 174,
+  "clipEnd": 178,
+  "partIndex": 4,
+  "clipIndex": 1
+}

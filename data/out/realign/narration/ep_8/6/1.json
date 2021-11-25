@@ -1,0 +1,197 @@
+{
+  "transcript": "But she's too big and has got stuck.",
+  "words": [
+    {
+      "alignedWord": "but",
+      "case": "success",
+      "end": 0.37,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.33,
+      "startOffset": 0,
+      "word": "But"
+    },
+    {
+      "alignedWord": "she's",
+      "case": "success",
+      "end": 0.66,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.45,
+      "startOffset": 4,
+      "word": "she's"
+    },
+    {
+      "alignedWord": "too",
+      "case": "success",
+      "end": 0.85,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 0.72,
+      "startOffset": 10,
+      "word": "too"
+    },
+    {
+      "alignedWord": "big",
+      "case": "success",
+      "end": 1.19,
+      "endOffset": 17,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.96,
+      "startOffset": 14,
+      "word": "big"
+    },
+    {
+      "alignedWord": "and",
+      "case": "success",
+      "end": 1.51,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ae_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 18,
+      "word": "and"
+    },
+    {
+      "alignedWord": "has",
+      "case": "success",
+      "end": 1.65,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.02,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.51,
+      "startOffset": 22,
+      "word": "has"
+    },
+    {
+      "alignedWord": "got",
+      "case": "success",
+      "end": 1.8199999999999998,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.65,
+      "startOffset": 26,
+      "word": "got"
+    },
+    {
+      "alignedWord": "stuck",
+      "case": "success",
+      "end": 1.86,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.82,
+      "startOffset": 30,
+      "word": "stuck"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E33 - Piggy in the Middle.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_8.json",
+  "episode_title": "Piggy in the Middle",
+  "clipStart": 171,
+  "clipEnd": 174,
+  "partIndex": 6,
+  "clipIndex": 1
+}

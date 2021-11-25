@@ -1,0 +1,115 @@
+{
+  "transcript": "- Ho-ho! They're not for juggling, Suzy.",
+  "words": [
+    {
+      "alignedWord": "ho",
+      "case": "success",
+      "end": 0.28,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 0.08,
+      "startOffset": 2,
+      "word": "Ho"
+    },
+    {
+      "alignedWord": "ho",
+      "case": "success",
+      "end": 1.9,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 1.78,
+      "startOffset": 5,
+      "word": "ho"
+    },
+    {
+      "alignedWord": "they're",
+      "case": "success",
+      "end": 3.55,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_E"
+        }
+      ],
+      "start": 3.38,
+      "startOffset": 9,
+      "word": "They're"
+    },
+    {
+      "alignedWord": "not",
+      "case": "success",
+      "end": 3.8000000000000003,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.58,
+      "startOffset": 17,
+      "word": "not"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 24,
+      "startOffset": 21,
+      "word": "for"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 33,
+      "startOffset": 25,
+      "word": "juggling"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 39,
+      "startOffset": 35,
+      "word": "Suzy"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 73,
+  "clipEnd": 77,
+  "partIndex": 1,
+  "clipIndex": 18
+}

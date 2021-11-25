@@ -1,0 +1,178 @@
+{
+  "transcript": "- This is quite hard work, isn't it?",
+  "words": [
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 2.11,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 2,
+      "word": "This"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 2.26,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.11,
+      "startOffset": 7,
+      "word": "is"
+    },
+    {
+      "alignedWord": "quite",
+      "case": "success",
+      "end": 2.36,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 2.26,
+      "startOffset": 10,
+      "word": "quite"
+    },
+    {
+      "alignedWord": "hard",
+      "case": "success",
+      "end": 2.4099999999999997,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_E"
+        }
+      ],
+      "start": 2.36,
+      "startOffset": 16,
+      "word": "hard"
+    },
+    {
+      "alignedWord": "work",
+      "case": "success",
+      "end": 3.34,
+      "endOffset": 25,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "k_E"
+        }
+      ],
+      "start": 3.31,
+      "startOffset": 21,
+      "word": "work"
+    },
+    {
+      "alignedWord": "isn't",
+      "case": "success",
+      "end": 3.51,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 3.34,
+      "startOffset": 27,
+      "word": "isn't"
+    },
+    {
+      "alignedWord": "it",
+      "case": "success",
+      "end": 3.53,
+      "endOffset": 35,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 3.51,
+      "startOffset": 33,
+      "word": "it"
+    }
+  ],
+  "speaker": "Mummy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 201,
+  "clipEnd": 205,
+  "partIndex": 4,
+  "clipIndex": 10
+}

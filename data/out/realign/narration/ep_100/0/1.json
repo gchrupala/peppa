@@ -1,0 +1,65 @@
+{
+  "transcript": "when they're bored.",
+  "words": [
+    {
+      "alignedWord": "when",
+      "case": "success",
+      "end": 1.62,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.59,
+      "startOffset": 0,
+      "word": "when"
+    },
+    {
+      "alignedWord": "they're",
+      "case": "success",
+      "end": 1.6500000000000001,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_E"
+        }
+      ],
+      "start": 1.62,
+      "startOffset": 5,
+      "word": "they're"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 18,
+      "startOffset": 13,
+      "word": "bored"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E49 - Bouncy Ball.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_100.json",
+  "episode_title": "Bouncy Ball",
+  "clipStart": 25,
+  "clipEnd": 27,
+  "partIndex": 0,
+  "clipIndex": 1
+}

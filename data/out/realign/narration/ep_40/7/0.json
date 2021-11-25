@@ -1,0 +1,232 @@
+{
+  "transcript": "On very hot days, Ms. Rabbit sells ice cream.",
+  "words": [
+    {
+      "alignedWord": "on",
+      "case": "success",
+      "end": 0.07,
+      "endOffset": 2,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.05,
+      "startOffset": 0,
+      "word": "On"
+    },
+    {
+      "alignedWord": "very",
+      "case": "success",
+      "end": 0.24000000000000002,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 0.07,
+      "startOffset": 3,
+      "word": "very"
+    },
+    {
+      "alignedWord": "hot",
+      "case": "success",
+      "end": 0.44,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.25,
+      "startOffset": 8,
+      "word": "hot"
+    },
+    {
+      "alignedWord": "days",
+      "case": "success",
+      "end": 0.8200000000000001,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.15,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.49,
+      "startOffset": 12,
+      "word": "days"
+    },
+    {
+      "alignedWord": "ms",
+      "case": "success",
+      "end": 1.04,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 18,
+      "word": "Ms"
+    },
+    {
+      "alignedWord": "rabbit",
+      "case": "success",
+      "end": 1.35,
+      "endOffset": 28,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "t_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 22,
+      "word": "Rabbit"
+    },
+    {
+      "alignedWord": "sells",
+      "case": "success",
+      "end": 1.98,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.7,
+      "startOffset": 29,
+      "word": "sells"
+    },
+    {
+      "alignedWord": "ice",
+      "case": "success",
+      "end": 2.27,
+      "endOffset": 38,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "ay_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.02,
+      "startOffset": 35,
+      "word": "ice"
+    },
+    {
+      "alignedWord": "cream",
+      "case": "success",
+      "end": 2.57,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "m_E"
+        }
+      ],
+      "start": 2.27,
+      "startOffset": 39,
+      "word": "cream"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E35 - Very Hot Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_40.json",
+  "episode_title": "Very Hot Day",
+  "clipStart": 154,
+  "clipEnd": 158,
+  "partIndex": 7,
+  "clipIndex": 0
+}

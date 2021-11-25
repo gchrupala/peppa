@@ -1,0 +1,75 @@
+{
+  "transcript": "- Let's have a pedalo! ",
+  "words": [
+    {
+      "alignedWord": "let's",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.02,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "s_E"
+        }
+      ],
+      "start": 3.72,
+      "startOffset": 2,
+      "word": "Let's"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 3.77,
+      "startOffset": 8,
+      "word": "have"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 14,
+      "startOffset": 13,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 21,
+      "startOffset": 15,
+      "word": "pedalo"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Going Boating.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_200.yaml",
+  "episode_title": "Going Boating",
+  "clipStart": 48,
+  "clipEnd": 52,
+  "partIndex": 0,
+  "clipIndex": 16
+}

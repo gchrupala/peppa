@@ -1,0 +1,150 @@
+{
+  "transcript": "- This mirror looks normal to me.",
+  "words": [
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 2.27,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.98,
+      "startOffset": 2,
+      "word": "This"
+    },
+    {
+      "alignedWord": "mirror",
+      "case": "success",
+      "end": 2.4699999999999998,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 7,
+      "word": "mirror"
+    },
+    {
+      "alignedWord": "looks",
+      "case": "success",
+      "end": 2.9699999999999998,
+      "endOffset": 19,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.69,
+      "startOffset": 14,
+      "word": "looks"
+    },
+    {
+      "alignedWord": "normal",
+      "case": "success",
+      "end": 3.47,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.22,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "l_E"
+        }
+      ],
+      "start": 2.97,
+      "startOffset": 20,
+      "word": "normal"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.77,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 3.64,
+      "startOffset": 27,
+      "word": "to"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 32,
+      "startOffset": 30,
+      "word": "me"
+    }
+  ],
+  "speaker": "Daddy Pig",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 231,
+  "clipEnd": 235,
+  "partIndex": 8,
+  "clipIndex": 14
+}

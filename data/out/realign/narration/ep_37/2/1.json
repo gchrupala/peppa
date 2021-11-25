@@ -1,0 +1,100 @@
+{
+  "transcript": "are all in the treehouse.",
+  "words": [
+    {
+      "alignedWord": "are",
+      "case": "success",
+      "end": 0.53,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.22,
+          "phone": "er_S"
+        }
+      ],
+      "start": 0.31,
+      "startOffset": 0,
+      "word": "are"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 0.99,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.27,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.58,
+      "startOffset": 4,
+      "word": "all"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 1.1600000000000001,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.02,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.04,
+      "startOffset": 8,
+      "word": "in"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.37,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.23,
+      "startOffset": 11,
+      "word": "the"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.0700000000000003,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.7,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.37,
+      "startOffset": 15,
+      "word": "treehouse"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S01/S01E39 - The Tree House.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_37.json",
+  "episode_title": "The Tree House",
+  "clipStart": 233,
+  "clipEnd": 236,
+  "partIndex": 2,
+  "clipIndex": 1
+}

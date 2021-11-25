@@ -1,0 +1,166 @@
+{
+  "transcript": "When Peppa goes to bed, she always",
+  "words": [
+    {
+      "alignedWord": "when",
+      "case": "success",
+      "end": 0.33999999999999997,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.14,
+          "phone": "n_E"
+        }
+      ],
+      "start": 0.1,
+      "startOffset": 0,
+      "word": "When"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 0.6000000000000001,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.26,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 0.34,
+      "startOffset": 5,
+      "word": "Peppa"
+    },
+    {
+      "alignedWord": "goes",
+      "case": "success",
+      "end": 0.82,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 0.61,
+      "startOffset": 11,
+      "word": "goes"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 0.94,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.82,
+      "startOffset": 16,
+      "word": "to"
+    },
+    {
+      "alignedWord": "bed",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 22,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "d_E"
+        }
+      ],
+      "start": 0.94,
+      "startOffset": 19,
+      "word": "bed"
+    },
+    {
+      "alignedWord": "she",
+      "case": "success",
+      "end": 1.39,
+      "endOffset": 27,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "sh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.22,
+      "startOffset": 24,
+      "word": "she"
+    },
+    {
+      "alignedWord": "always",
+      "case": "success",
+      "end": 1.74,
+      "endOffset": 34,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.42,
+      "startOffset": 28,
+      "word": "always"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E34 - Bedtime.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_66.json",
+  "episode_title": "Bedtime",
+  "clipStart": 186,
+  "clipEnd": 188,
+  "partIndex": 6,
+  "clipIndex": 1
+}

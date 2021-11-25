@@ -1,0 +1,77 @@
+{
+  "transcript": " - Daddy, we're a bit bored.",
+  "words": [
+    {
+      "alignedWord": "daddy",
+      "case": "success",
+      "end": 1.94,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 3,
+      "word": "Daddy"
+    },
+    {
+      "alignedWord": "we're",
+      "case": "success",
+      "end": 3.8,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 10,
+      "word": "we're"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 17,
+      "startOffset": 16,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 21,
+      "startOffset": 18,
+      "word": "bit"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 27,
+      "startOffset": 22,
+      "word": "bored"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Garden Games.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_199.yaml",
+  "episode_title": "Garden Games",
+  "clipStart": 21,
+  "clipEnd": 25,
+  "partIndex": 1,
+  "clipIndex": 0
+}

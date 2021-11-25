@@ -1,0 +1,124 @@
+{
+  "transcript": "The fog is going away.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.91,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.18,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.64,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "fog",
+      "case": "success",
+      "end": 1.27,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.16,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "aa_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "g_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 4,
+      "word": "fog"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.4500000000000002,
+      "endOffset": 10,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.31,
+      "startOffset": 8,
+      "word": "is"
+    },
+    {
+      "alignedWord": "going",
+      "case": "success",
+      "end": 1.76,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "g_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ow_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 1.47,
+      "startOffset": 11,
+      "word": "going"
+    },
+    {
+      "alignedWord": "away",
+      "case": "success",
+      "end": 2.21,
+      "endOffset": 21,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ah_B"
+        },
+        {
+          "duration": 0.13,
+          "phone": "w_I"
+        },
+        {
+          "duration": 0.26,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 17,
+      "word": "away"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E27 - Foggy Day.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_70.json",
+  "episode_title": "Foggy Day",
+  "clipStart": 249,
+  "clipEnd": 253,
+  "partIndex": 7,
+  "clipIndex": 0
+}

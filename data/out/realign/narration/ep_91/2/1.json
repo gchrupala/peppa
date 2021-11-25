@@ -1,0 +1,220 @@
+{
+  "transcript": "They have never been to Rebecca Rabbit's house before.",
+  "words": [
+    {
+      "alignedWord": "they",
+      "case": "success",
+      "end": 0.81,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.23,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_E"
+        }
+      ],
+      "start": 0.5,
+      "startOffset": 0,
+      "word": "They"
+    },
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 0.8400000000000001,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "v_E"
+        }
+      ],
+      "start": 0.81,
+      "startOffset": 5,
+      "word": "have"
+    },
+    {
+      "alignedWord": "never",
+      "case": "success",
+      "end": 1.22,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "v_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "er_E"
+        }
+      ],
+      "start": 0.98,
+      "startOffset": 10,
+      "word": "never"
+    },
+    {
+      "alignedWord": "been",
+      "case": "success",
+      "end": 1.53,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.11,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "n_E"
+        }
+      ],
+      "start": 1.24,
+      "startOffset": 16,
+      "word": "been"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 23,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 21,
+      "word": "to"
+    },
+    {
+      "alignedWord": "rebecca",
+      "case": "success",
+      "end": 2.05,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "r_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "b_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 24,
+      "word": "Rebecca"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 2.15,
+      "endOffset": 40,
+      "phones": [
+        {
+          "duration": 0.1,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 2.05,
+      "startOffset": 32,
+      "word": "Rabbit's"
+    },
+    {
+      "alignedWord": "house",
+      "case": "success",
+      "end": 2.61,
+      "endOffset": 46,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "aw_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 2.3,
+      "startOffset": 41,
+      "word": "house"
+    },
+    {
+      "alignedWord": "before",
+      "case": "success",
+      "end": 2.8,
+      "endOffset": 53,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "b_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "f_I"
+        }
+      ],
+      "start": 2.61,
+      "startOffset": 47,
+      "word": "before"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E43 - Rebecca Rabbit.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_91.json",
+  "episode_title": "Rebecca Rabbit",
+  "clipStart": 86,
+  "clipEnd": 89,
+  "partIndex": 2,
+  "clipIndex": 1
+}

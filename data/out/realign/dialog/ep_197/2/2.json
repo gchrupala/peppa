@@ -1,0 +1,81 @@
+{
+  "transcript": " - George, what are you doing?",
+  "words": [
+    {
+      "alignedWord": "george",
+      "case": "success",
+      "end": 4.0,
+      "endOffset": 9,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "jh_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ao_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.25,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 3.65,
+      "startOffset": 3,
+      "word": "George"
+    },
+    {
+      "alignedWord": "what",
+      "case": "success",
+      "end": 4.8,
+      "endOffset": 15,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "w_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "t_E"
+        }
+      ],
+      "start": 4.77,
+      "startOffset": 11,
+      "word": "what"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 19,
+      "startOffset": 16,
+      "word": "are"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 20,
+      "word": "you"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 29,
+      "startOffset": 24,
+      "word": "doing"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 35,
+  "clipEnd": 40,
+  "partIndex": 2,
+  "clipIndex": 2
+}

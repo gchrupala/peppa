@@ -1,0 +1,75 @@
+{
+  "transcript": " - Pedro is always late.",
+  "words": [
+    {
+      "alignedWord": "pedro",
+      "case": "success",
+      "end": 2.38,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "p_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.31,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 2.03,
+      "startOffset": 3,
+      "word": "Pedro"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 3.4099999999999997,
+      "endOffset": 11,
+      "phones": [
+        {
+          "duration": 0.01,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "z_E"
+        }
+      ],
+      "start": 3.36,
+      "startOffset": 9,
+      "word": "is"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 18,
+      "startOffset": 12,
+      "word": "always"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 23,
+      "startOffset": 19,
+      "word": "late"
+    }
+  ],
+  "speaker": "Peppa",
+  "episode_filepath": "data/in/peppa/videos/S05/Pedro is Late.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_198.yaml",
+  "episode_title": "Pedro is Late",
+  "clipStart": 78,
+  "clipEnd": 82,
+  "partIndex": 3,
+  "clipIndex": 7
+}

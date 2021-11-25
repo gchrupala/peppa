@@ -1,0 +1,240 @@
+{
+  "transcript": "The magnifying makes the cake crumbs easy to see.",
+  "words": [
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 0.53,
+      "endOffset": 3,
+      "phones": [
+        {
+          "duration": 0.17,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 0.27,
+      "startOffset": 0,
+      "word": "The"
+    },
+    {
+      "alignedWord": "magnifying",
+      "case": "success",
+      "end": 1.2000000000000002,
+      "endOffset": 14,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "g_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "f_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ng_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 4,
+      "word": "magnifying"
+    },
+    {
+      "alignedWord": "makes",
+      "case": "success",
+      "end": 1.83,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "k_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.53,
+      "startOffset": 15,
+      "word": "makes"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 1.9400000000000002,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.03,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 1.83,
+      "startOffset": 21,
+      "word": "the"
+    },
+    {
+      "alignedWord": "cake",
+      "case": "success",
+      "end": 2.23,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ey_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 1.94,
+      "startOffset": 25,
+      "word": "cake"
+    },
+    {
+      "alignedWord": "crumbs",
+      "case": "success",
+      "end": 2.63,
+      "endOffset": 36,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "k_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "z_E"
+        }
+      ],
+      "start": 2.25,
+      "startOffset": 30,
+      "word": "crumbs"
+    },
+    {
+      "alignedWord": "easy",
+      "case": "success",
+      "end": 3.05,
+      "endOffset": 41,
+      "phones": [
+        {
+          "duration": 0.22,
+          "phone": "iy_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_I"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 2.67,
+      "startOffset": 37,
+      "word": "easy"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 3.19,
+      "endOffset": 44,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 3.05,
+      "startOffset": 42,
+      "word": "to"
+    },
+    {
+      "alignedWord": "see",
+      "case": "success",
+      "end": 3.56,
+      "endOffset": 48,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.25,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 3.19,
+      "startOffset": 45,
+      "word": "see"
+    }
+  ],
+  "speaker": "Narrator",
+  "episode_filepath": "data/in/peppa/videos/S02/S02E06 - Mysteries.avi",
+  "episode_metadata_path": "data/in/peppa/episodes/ep_57.json",
+  "episode_title": "Mysteries",
+  "clipStart": 222,
+  "clipEnd": 227,
+  "partIndex": 7,
+  "clipIndex": 0
+}

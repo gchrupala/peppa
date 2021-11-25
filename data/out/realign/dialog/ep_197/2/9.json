@@ -1,0 +1,150 @@
+{
+  "transcript": "- Have a look in a spoon. : Oooh!",
+  "words": [
+    {
+      "alignedWord": "have",
+      "case": "success",
+      "end": 1.97,
+      "endOffset": 6,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "hh_B"
+        },
+        {
+          "duration": 0.05,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "v_E"
+        }
+      ],
+      "start": 1.76,
+      "startOffset": 2,
+      "word": "Have"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.04,
+      "endOffset": 8,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.97,
+      "startOffset": 7,
+      "word": "a"
+    },
+    {
+      "alignedWord": "look",
+      "case": "success",
+      "end": 2.33,
+      "endOffset": 13,
+      "phones": [
+        {
+          "duration": 0.13,
+          "phone": "l_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "uh_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "k_E"
+        }
+      ],
+      "start": 2.04,
+      "startOffset": 9,
+      "word": "look"
+    },
+    {
+      "alignedWord": "in",
+      "case": "success",
+      "end": 2.44,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.33,
+      "startOffset": 14,
+      "word": "in"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 2.56,
+      "endOffset": 18,
+      "phones": [
+        {
+          "duration": 0.12,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 2.44,
+      "startOffset": 17,
+      "word": "a"
+    },
+    {
+      "alignedWord": "spoon",
+      "case": "success",
+      "end": 2.81,
+      "endOffset": 24,
+      "phones": [
+        {
+          "duration": 0.22,
+          "phone": "s_B"
+        },
+        {
+          "duration": 0.01,
+          "phone": "p_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "uw_I"
+        },
+        {
+          "duration": 0.01,
+          "phone": "n_E"
+        }
+      ],
+      "start": 2.56,
+      "startOffset": 19,
+      "word": "spoon"
+    },
+    {
+      "alignedWord": "oooh",
+      "case": "success",
+      "end": 3.6900000000000004,
+      "endOffset": 32,
+      "phones": [
+        {
+          "duration": 0.76,
+          "phone": "uw_S"
+        }
+      ],
+      "start": 2.93,
+      "startOffset": 28,
+      "word": "Oooh"
+    }
+  ],
+  "speaker": null,
+  "episode_filepath": "data/in/peppa/videos/S05/Mirrors.mp4",
+  "episode_metadata_path": "data/out/speaker_id/ep_197.yaml",
+  "episode_title": "Mirrors",
+  "clipStart": 58,
+  "clipEnd": 63,
+  "partIndex": 2,
+  "clipIndex": 9
+}
