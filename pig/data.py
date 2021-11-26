@@ -138,7 +138,7 @@ class PeppaPigDataset(Dataset):
             os.makedirs(self.cache_dir, exist_ok=True)
             pickle.dump(kwargs, open(f"{self.cache_dir}/settings.pkl", "wb"))
             for i, item in enumerate(dataset):
-                logging.info(f"Caching item {i}")
+                logging.info(f"Caching item {self.cache_dir}/{i}.pt")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
         if not os.path.isdir(self.cache_dir):
             raise FileNotFoundError(f"No such directory: {self.cache_dir}")
