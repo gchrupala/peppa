@@ -77,10 +77,13 @@ class Wav2LetterEncoder(nn.Module):
 
 
 class Wav2VecEncoder(nn.Module):
-    def __init__(self, path, freeze_feature_extractor=False, freeze_encoder_layers=None, pooling='average'):
+    def __init__(self, path, pretrained=True, freeze_feature_extractor=False, freeze_encoder_layers=None, pooling='average'):
         super().__init__()
-        model, _, _ = fairseq.checkpoint_utils.load_model_ensemble_and_task([path])
-        self.audio = import_fairseq_model(model[0], num_out=28)
+        if pretrained:
+            model, _, _ = fairseq.checkpoint_utils.load_model_ensemble_and_task([path])
+            self.audio = import_fairseq_model(model[0], num_out=28)
+        else:
+            self.audio = A.wav2vec2_base(num_out=28)
         if freeze_feature_extractor:
             for param in self.audio.feature_extractor.parameters():
                 param.requires_grad = False
