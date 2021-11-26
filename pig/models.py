@@ -38,7 +38,7 @@ class Attention(nn.Module):
 class AveragePool(nn.Module):
     def __init__(self, size=512):
         super().__init__()
-        self.pool = torch.nn.AdaptiveAvgPool2d((512,1))
+        self.pool = torch.nn.AdaptiveAvgPool2d((size, 1))
 
     def forward(self, x):
         return self.pool(x).squeeze(dim=2)
@@ -113,7 +113,7 @@ class Wav2VecEncoder(nn.Module):
 ## Video encoders
 class R3DEncoder(nn.Module):
     
-    def __init__(self, pretrained=True, project=True, version='r3d_18'):
+    def __init__(self, pretrained=True, project=True, version='r3d_18', pooling='average'):
         super().__init__()
         self.pretrained = pretrained
         if version == 'r3d_18':
@@ -122,23 +122,48 @@ class R3DEncoder(nn.Module):
             self.video = V.mc3_18(pretrained=pretrained, progress=False)
         elif version == 'r2plus1d_18':
             self.video = V.r2plus1d_18(pretrained=pretrained, progress=False)
+        else:
+            raise ValueError(f"Invalid version {version}")
         if project:
             self.project = nn.Linear(512, 512)
         else:
             self.project = identity
-
-        
+        if pooling == 'attention':
+            self.videopool = VideoAttention(512, 128)
+        elif pooling == 'average':
+            self.videopool = VideoAveragePool()
+        else:
+            raise ValueError(f"Invalid pooling {pooling}")
+            
     def forward(self, x):
         return Compose([self.video.stem,
                         self.video.layer1,
                         self.video.layer2,
                         self.video.layer3,
                         self.video.layer4,
-                        self.video.avgpool,
-                        lambda x: x.flatten(1),
+                        self.videopool,
                         self.project,
                         lambda x: nn.functional.normalize(x, p=2, dim=1)
         ])(x)
+
+class VideoAveragePool(nn.Module):
+
+    def __init__(self):
+        super().__init__()
+        self.pool = torch.nn.AdaptiveAvgPool3d(output_size=(1, 1, 1))
+
+    def forward(self, x):
+        return self.pool(x).flatten(1)
+
+class VideoAttention(nn.Module):
+
+    def __init__(self, in_size=512, hidden_size=128):
+        super().__init__()
+        self.spatial_avg = torch.nn.AdaptiveAvgPool2d(output_size=(1, 1))
+        self.attn = Attention(in_size, hidden_size)
+
+    def forward(self, x):
+        return self.attn(self.spatial_avg(x).flatten(2).permute(0, 2, 1))
     
 class PeppaPig(pl.LightningModule):
     def __init__(self, config):
