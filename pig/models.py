@@ -113,10 +113,15 @@ class Wav2VecEncoder(nn.Module):
 ## Video encoders
 class R3DEncoder(nn.Module):
     
-    def __init__(self, pretrained=False, project=False):
+    def __init__(self, pretrained=True, project=True, version='r3d_18'):
         super().__init__()
         self.pretrained = pretrained
-        self.video = V.r3d_18(pretrained=pretrained, progress=False)
+        if version == 'r3d_18':
+            self.video = V.r3d_18(pretrained=pretrained, progress=False)
+        elif version == 'mc3_18':
+            self.video = V.mc3_18(pretrained=pretrained, progress=False)
+        elif version == 'r2plus1d_18':
+            self.video = V.r2plus1d_18(pretrained=pretrained, progress=False)
         if project:
             self.project = nn.Linear(512, 512)
         else:
@@ -134,7 +139,6 @@ class R3DEncoder(nn.Module):
                         self.project,
                         lambda x: nn.functional.normalize(x, p=2, dim=1)
         ])(x)
-    
     
 class PeppaPig(pl.LightningModule):
     def __init__(self, config):
