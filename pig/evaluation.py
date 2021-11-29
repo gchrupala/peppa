@@ -21,7 +21,7 @@ def load_best_model(dirname, higher_better=True):
 def score(model, gpus):
     """Compute all standard scores for the given model. """
     transform = pig.data.build_transform(model.config['data']['normalization'])
-    trainer = pl.Trainer(gpus=gpus)
+    trainer = pl.Trainer(gpus=gpus, logger=False)
     scores = []
     for fragment_type in ['dialog', 'narration']: 
         ds = pig.data.PeppaPigIterableDataset(
