@@ -298,18 +298,7 @@ class PigData(pl.LightningDataModule):
             torch.save(stats, "data/out/stats.pt")
 
     def setup(self, **kwargs):
-        if self.config['normalization'] == 'peppa':
-            self.stats = torch.load("data/out/stats.pt")
-        elif self.config['normalization'] == 'kinetics':
-            self.stats = torch.load("data/out/kinetics-stats.pt")
-        else:
-            raise ValueError(f"Unsupported normalization type {self.normalization}")
-        self.transform = Compose([
-            pig.transforms.SwapCT(),
-            Normalize(mean=self.stats.video_mean, std=self.stats.video_std),    
-            pig.transforms.SwapCT(),
-            ])
-
+        self.transform = build_transform(self.config['normalization'])
         logging.info("Creating train/val/test datasets")
         self.train = self.Dataset(target_size=self.config['target_size'],
                                   transform=self.transform,
@@ -321,37 +310,35 @@ class PigData(pl.LightningDataModule):
                                          transform=self.transform,
                                          target_size=self.config['target_size'],
                                          split=['val'], fragment_type='dialog',
-                                         duration=3.2,
-                                         **{k:v for k,v in self.config['val'].items()
-                                            if k not in self.loader_args})
+                                         duration=3.2)
 
         if self.config['fixed_triplet']:
             self.val_dia3 = PeppaTripletDataset.load("data/out/val_dialog_triplets_v2")
+            self.val_dia3.transform = self.transform
         else:
             self.val_dia3 = PeppaTripletDataset.from_dataset(
                 PeppaPigIterableDataset(transform=self.transform,
                                         target_size=self.config['target_size'],
-                                        split=['val'], fragment_type='dialog', duration=None,
-                                        **{k:v for k,v in self.config['val'].items()
-                                           if k not in self.loader_args}),
+                                        split=['val'],
+                                        fragment_type='dialog',
+                                        duration=None),
                 "data/out/val_dialog_triplets_v2")
         self.val_narr = PeppaPigDataset(cache=self.config['cache'],
                                         transform=self.transform,
                                         target_size=self.config['target_size'],
                                         split=['val'], fragment_type='narration',
-                                        duration=3.2,
-                                        **{k:v for k,v in self.config['val'].items()
-                                           if k not in self.loader_args})
+                                        duration=3.2)
         if self.config['fixed_triplet']:
             self.val_narr3 = PeppaTripletDataset.load("data/out/val_narration_triplets_v2")
+            self.val_narr3.transform = self.transform
         else:
             self.val_narr3 = PeppaTripletDataset(
                 PeppaPigIterableDataset(
                     transform=self.transform,
                     target_size=self.config['target_size'],
-                    split=['val'], fragment_type='narration', duration=None,
-                    **{k:v for k,v in self.config['val'].items()
-                       if k not in self.loader_args}),
+                    split=['val'],
+                    fragment_type='narration',
+                    duration=None),
                 "data/out/val_narration_triplets_v2")
             
 
@@ -381,3 +368,15 @@ class PigData(pl.LightningDataModule):
         #return DataLoader(self.test, collate_fn=collate, num_workers=self.config['num_workers'],
         #                  batch_size=self.config['test']['batch_size'])
 
+def build_transform(normalization):
+    if normalization == 'peppa':
+        stats = torch.load("data/out/stats.pt")
+    elif normalization == 'kinetics':
+        stats = torch.load("data/out/kinetics-stats.pt")
+    else:
+        raise ValueError(f"Unsupported normalization type {self.normalization}")
+    return Compose([
+        pig.transforms.SwapCT(),
+        Normalize(mean=stats.video_mean, std=stats.video_std),    
+        pig.transforms.SwapCT(),
+    ])
