@@ -117,7 +117,7 @@ class R3DEncoder(nn.Module):
                  project=True,
                  version='r3d_18',
                  pooling='average',
-                 normalizaton="kinetics"):
+                 normalization="kinetics"):
         super().__init__()
         self.pretrained = pretrained
         if version == 'r3d_18':
