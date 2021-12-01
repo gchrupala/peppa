@@ -2,7 +2,7 @@ import torch
 import torch.utils
 from torch.utils.data import Dataset, IterableDataset, DataLoader
 from torchvision.transforms import Normalize, Compose
-import pig.transforms 
+
 from dataclasses import dataclass
 import glob
 import os.path
@@ -68,12 +68,12 @@ def collate(data):
     video, audio = zip(*[(x.video, x.audio) for x in data])
     return ClipBatch(video=pig.util.pad_video_batch(video), audio=pig.util.pad_audio_batch(audio))
 
-def featurize(clip, transformer):
+def featurize(clip):
     frames = [ torch.tensor(frame/255).float()
                for frame in clip.iter_frames() ]
     if len(frames) > 0:
         v = torch.stack(frames)
-        return Clip(video = transformer(v.permute(3, 0, 1, 2)),
+        return Clip(video = v.permute(3, 0, 1, 2),
                     audio = featurize_audio(clip.audio),
                     duration = clip.duration,
                     filename = clip.filename)
@@ -108,16 +108,11 @@ class VideoFileDataset(IterableDataset):
     def __init__(self, stats, paths):
         self.stats = stats
         self.paths = paths
-        self.transform = Compose([
-            pig.transforms.SwapCT(),
-            Normalize(mean=self.stats.video_mean, std=self.stats.video_std),    
-            pig.transforms.SwapCT(),
-        ])
 
     def __iter__(self):
         for path in self.paths:
             with m.VideoFileClip(path) as clip:
-                yield featurize(clip, self.transform)
+                yield featurize(clip)
 
 def audiofile_loader(paths, batch_size=32):
     dataset = AudioFileDataset(paths)
@@ -161,7 +156,6 @@ class PeppaPigIterableDataset(IterableDataset):
     def __init__(self,
                  split=['val'],
                  target_size=(180, 100),
-                 transform=None,
                  fragment_type='dialog',
                  duration=3.2,
                  jitter=False,
@@ -173,11 +167,10 @@ class PeppaPigIterableDataset(IterableDataset):
         self.fragment_type = fragment_type
         self.duration = duration
         self.jitter = jitter
-        self.transform = pig.util.identity if transform is None else transform 
         self.split_spec = SPLIT_SPEC
 
     def featurize(self, clip):
-        return featurize(clip, self.transform)
+        return featurize(clip)
         
     def _clips(self):
         for clip in self._raw_clips():
@@ -298,43 +291,36 @@ class PigData(pl.LightningDataModule):
             torch.save(stats, "data/out/stats.pt")
 
     def setup(self, **kwargs):
-        self.transform = build_transform(self.config['normalization'])
         logging.info("Creating train/val/test datasets")
         self.train = self.Dataset(target_size=self.config['target_size'],
-                                  transform=self.transform,
                                   split=['train'], fragment_type='dialog', 
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
 
         self.val_dia   = PeppaPigDataset(cache=self.config['cache'],
-                                         transform=self.transform,
                                          target_size=self.config['target_size'],
                                          split=['val'], fragment_type='dialog',
                                          duration=3.2)
 
         if self.config['fixed_triplet']:
             self.val_dia3 = PeppaTripletDataset.load("data/out/val_dialog_triplets_v2")
-            self.val_dia3.transform = self.transform
         else:
             self.val_dia3 = PeppaTripletDataset.from_dataset(
-                PeppaPigIterableDataset(transform=self.transform,
-                                        target_size=self.config['target_size'],
+                PeppaPigIterableDataset(target_size=self.config['target_size'],
                                         split=['val'],
                                         fragment_type='dialog',
                                         duration=None),
                 "data/out/val_dialog_triplets_v2")
         self.val_narr = PeppaPigDataset(cache=self.config['cache'],
-                                        transform=self.transform,
                                         target_size=self.config['target_size'],
-                                        split=['val'], fragment_type='narration',
+                                        split=['val'],
+                                        fragment_type='narration',
                                         duration=3.2)
         if self.config['fixed_triplet']:
             self.val_narr3 = PeppaTripletDataset.load("data/out/val_narration_triplets_v2")
-            self.val_narr3.transform = self.transform
         else:
             self.val_narr3 = PeppaTripletDataset(
                 PeppaPigIterableDataset(
-                    transform=self.transform,
                     target_size=self.config['target_size'],
                     split=['val'],
                     fragment_type='narration',
@@ -368,15 +354,3 @@ class PigData(pl.LightningDataModule):
         #return DataLoader(self.test, collate_fn=collate, num_workers=self.config['num_workers'],
         #                  batch_size=self.config['test']['batch_size'])
 
-def build_transform(normalization):
-    if normalization == 'peppa':
-        stats = torch.load("data/out/stats.pt")
-    elif normalization == 'kinetics':
-        stats = torch.load("data/out/kinetics-stats.pt")
-    else:
-        raise ValueError(f"Unsupported normalization type {self.normalization}")
-    return Compose([
-        pig.transforms.SwapCT(),
-        Normalize(mean=stats.video_mean, std=stats.video_std),    
-        pig.transforms.SwapCT(),
-    ])
