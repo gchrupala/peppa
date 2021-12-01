@@ -19,6 +19,7 @@ import pig.metrics
 from pytorch_lightning.callbacks import ModelCheckpoint
 import pig.optimization as opt
 import pig.transforms
+from torchvision.transforms import Normalize, Compose
 
 class Attention(nn.Module):
     def __init__(self, in_size, hidden_size):
