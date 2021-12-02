@@ -294,7 +294,9 @@ class PigData(pl.LightningDataModule):
     def setup(self, **kwargs):
         logging.info("Creating train/val/test datasets")
         self.train = self.Dataset(target_size=self.config['target_size'],
-                                  split=['train'], fragment_type='dialog', 
+                                  split=['train'],
+                                  fragment_type='dialog',
+                                  duration=3.2,
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
 
@@ -303,30 +305,11 @@ class PigData(pl.LightningDataModule):
                                          split=['val'], fragment_type='dialog',
                                          duration=3.2)
 
-        if self.config['fixed_triplet']:
-            self.val_dia3 = PeppaTripletDataset.load("data/out/val_dialog_triplets_v2")
-        else:
-            self.val_dia3 = PeppaTripletDataset.from_dataset(
-                PeppaPigIterableDataset(target_size=self.config['target_size'],
-                                        split=['val'],
-                                        fragment_type='dialog',
-                                        duration=None),
-                "data/out/val_dialog_triplets_v2")
         self.val_narr = PeppaPigDataset(force_cache=self.config['force_cache'],
                                         target_size=self.config['target_size'],
                                         split=['val'],
                                         fragment_type='narration',
                                         duration=3.2)
-        if self.config['fixed_triplet']:
-            self.val_narr3 = PeppaTripletDataset.load("data/out/val_narration_triplets_v2")
-        else:
-            self.val_narr3 = PeppaTripletDataset(
-                PeppaPigIterableDataset(
-                    target_size=self.config['target_size'],
-                    split=['val'],
-                    fragment_type='narration',
-                    duration=None),
-                "data/out/val_narration_triplets_v2")
             
 
     def train_dataloader(self):
@@ -341,14 +324,8 @@ class PigData(pl.LightningDataModule):
         narr = DataLoader(self.val_narr, collate_fn=collate,
                                num_workers=self.config['num_workers'],
                           batch_size=self.config['val']['batch_size'])
-        dia3 = DataLoader(self.val_dia3, collate_fn=collate_triplets,
-                             num_workers=self.config['num_workers'],
-                             batch_size=self.config['val']['batch_size'])
-        narr3 = DataLoader(self.val_narr3, collate_fn=collate_triplets,
-                             num_workers=self.config['num_workers'],
-                             batch_size=self.config['val']['batch_size'])
         
-        return [ dia, dia3, narr, narr3 ]
+        return [ dia, narr ]
     
     def test_dataloader(self):
         raise NotImplementedError

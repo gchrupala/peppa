@@ -20,12 +20,14 @@ def load_best_model(dirname, higher_better=True):
 
 def score(model, gpus):
     """Compute all standard scores for the given model. """
-    transform = pig.data.build_transform(model.config['data']['normalization'])
     trainer = pl.Trainer(gpus=gpus, logger=False)
-    scores = []
-    for fragment_type in ['dialog', 'narration']: 
+    for fragment_type in ['dialog', 'narration']:
+        yield dict(fragment_type=fragment_type,
+                   triplet_acc=triplet_score(fragment_type, model, trainer),
+                   recall_at_10=retrieval_score(fragment_type, model, trainer))
+        
+def retrieval_score(fragment_type, model, trainer):
         ds = pig.data.PeppaPigIterableDataset(
-            transform=transform,
             target_size=(180, 100),
             split=['val'],
             fragment_type=fragment_type,
@@ -38,11 +40,17 @@ def score(model, gpus):
         A = torch.cat(A, dim=0)
         correct = torch.eye(V.shape[0], device=A.device)
         rec10 = pig.metrics.recall_at_n(V, A, correct=correct, n=10).mean().item()
-        yield dict(fragment_type=fragment_type,
-                   task='retrieval',
-                   metric='recall_at_10',
-                   score=rec10)
-                      
+        return rec10
+        
+def triplet_score(fragment_type, model, trainer):
+    ds = pig.data.PeppaTripletDataset.load(f"data/out/val_{fragment_type}_triplets_v2")
+    loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=8)
+    acc = torch.cat([ pig.metrics.batch_triplet_accuracy(batch)
+                      for  batch in trainer.predict(model, loader) ]).mean().item()
+    return acc
+
+
+
 def main(gpu):
     logging.getLogger().setLevel(logging.INFO)
     rows = []

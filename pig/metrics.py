@@ -1,6 +1,7 @@
 import torch
 from pig.util import cosine_matrix
 import torch.nn.functional as F
+import logging
 
 def recall_at_n(candidates, references, correct, n=1):
     distances = 1-cosine_matrix(references, candidates)
@@ -17,6 +18,9 @@ def recall_at_n(candidates, references, correct, n=1):
         # proportion of correctly retrieved to target
         recall.append(overlap/len(target))
     return torch.tensor(recall)
+
+def batch_triplet_accuracy(batch):
+    return triplet_accuracy(batch.anchor, batch.positive, batch.negative)
 
 def triplet_accuracy(anchor, positive, negative):
     sim_pos = F.cosine_similarity(anchor, positive)
