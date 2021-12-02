@@ -18,7 +18,8 @@ import pig.util
 import pig.metrics
 from pytorch_lightning.callbacks import ModelCheckpoint
 import pig.optimization as opt
-
+import pig.transforms
+from torchvision.transforms import Normalize, Compose
 
 class Attention(nn.Module):
     def __init__(self, in_size, hidden_size):
@@ -113,7 +114,11 @@ class Wav2VecEncoder(nn.Module):
 ## Video encoders
 class R3DEncoder(nn.Module):
     
-    def __init__(self, pretrained=True, project=True, version='r3d_18', pooling='average'):
+    def __init__(self,
+                 pretrained=True,
+                 project=True,
+                 version='r3d_18',
+                 pooling='average'):
         super().__init__()
         self.pretrained = pretrained
         if version == 'r3d_18':
@@ -134,9 +139,11 @@ class R3DEncoder(nn.Module):
             self.videopool = VideoAveragePool()
         else:
             raise ValueError(f"Invalid pooling {pooling}")
-            
+        self.transform = build_transform("kinetics" if self.pretrained else "peppa")
+        
     def forward(self, x):
-        return Compose([self.video.stem,
+        return Compose([self.transform,
+                        self.video.stem,
                         self.video.layer1,
                         self.video.layer2,
                         self.video.layer3,
@@ -263,3 +270,15 @@ class PeppaPig(pl.LightningModule):
 def get_class(name):
     return getattr(sys.modules[__name__], name)
 
+def build_transform(normalization):
+    if normalization == 'peppa':
+        stats = torch.load("data/out/stats.pt")
+    elif normalization == 'kinetics':
+        stats = torch.load("data/out/kinetics-stats.pt")
+    else:
+        raise ValueError(f"Unsupported normalization type {self.normalization}")
+    return Compose([
+        pig.transforms.SwapCT(),
+        Normalize(mean=stats.video_mean, std=stats.video_std),    
+        pig.transforms.SwapCT()
+    ])
