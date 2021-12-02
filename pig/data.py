@@ -126,20 +126,18 @@ def audioclip_loader(clips, batch_size=32):
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
     
 class PeppaPigDataset(Dataset):
-    def __init__(self, cache=True, cache_dir=None, **kwargs):
+    def __init__(self, force_cache=False, cache_dir=None, **kwargs):
         dataset = PeppaPigIterableDataset(**kwargs)
         if cache_dir is None:
             self.cache_dir = f"data/out/items-{config_id(kwargs)}/"
         else:
             self.cache_dir = cache_dir
-        if cache:
+        if force_cache or not os.path.isdir(self.cache_dir):
             os.makedirs(self.cache_dir, exist_ok=True)
             pickle.dump(kwargs, open(f"{self.cache_dir}/settings.pkl", "wb"))
             for i, item in enumerate(dataset):
                 logging.info(f"Caching item {self.cache_dir}/{i}.pt")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
-        if not os.path.isdir(self.cache_dir):
-            raise FileNotFoundError(f"No such directory: {self.cache_dir}")
         self.length = len(glob.glob(f"{self.cache_dir}/*.pt"))
         
     def __len__(self):
@@ -153,7 +151,7 @@ class PeppaPigDataset(Dataset):
 
     @classmethod
     def load(cls, directory):
-        return PeppaPigDataset(cache=False, cache_dir=directory)
+        return PeppaPigDataset(force_cache=False, cache_dir=directory)
     
 class PeppaPigIterableDataset(IterableDataset):
     def __init__(self,
@@ -276,7 +274,7 @@ class PigData(pl.LightningDataModule):
         if self.config['iterable']:
             self.Dataset = lambda *args, **kwargs: PeppaPigIterableDataset(*args, **kwargs)
         else:
-            self.Dataset = lambda *args, **kwargs: PeppaPigDataset(cache=self.config['cache'], *args, **kwargs)
+            self.Dataset = lambda *args, **kwargs: PeppaPigDataset(force_cache=self.config['force_cache'], *args, **kwargs)
     
     def prepare_data(self):
         if self.config['extract']:
@@ -300,7 +298,7 @@ class PigData(pl.LightningDataModule):
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
 
-        self.val_dia   = PeppaPigDataset(cache=self.config['cache'],
+        self.val_dia   = PeppaPigDataset(force_cache=self.config['force_cache'],
                                          target_size=self.config['target_size'],
                                          split=['val'], fragment_type='dialog',
                                          duration=3.2)
@@ -314,7 +312,7 @@ class PigData(pl.LightningDataModule):
                                         fragment_type='dialog',
                                         duration=None),
                 "data/out/val_dialog_triplets_v2")
-        self.val_narr = PeppaPigDataset(cache=self.config['cache'],
+        self.val_narr = PeppaPigDataset(force_cache=self.config['force_cache'],
                                         target_size=self.config['target_size'],
                                         split=['val'],
                                         fragment_type='narration',
