@@ -81,9 +81,12 @@ def featurize(clip, transformer):
         raise ValueError("Clip has zero frames.")
 
 def featurize_audio(clip):
-    a = torch.tensor(clip.to_soundarray()).float()
+    # .to_soundarray extracts corrupted audio from small clips, 
+    # but setting buffersize to a smaller value seems to
+    # fix the issue 
+    a = torch.tensor(clip.to_soundarray(fps=44100, buffersize=5000)).float()
     return a.mean(dim=1, keepdim=True).permute(1,0)
-        
+  
 class AudioFileDataset(IterableDataset):
 
     def __init__(self, paths):
