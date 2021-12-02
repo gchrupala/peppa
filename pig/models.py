@@ -114,11 +114,11 @@ class Wav2VecEncoder(nn.Module):
 ## Video encoders
 class R3DEncoder(nn.Module):
     
-    def __init__(self, pretrained=True,
+    def __init__(self,
+                 pretrained=True,
                  project=True,
                  version='r3d_18',
-                 pooling='average',
-                 normalization="kinetics"):
+                 pooling='average'):
         super().__init__()
         self.pretrained = pretrained
         if version == 'r3d_18':
@@ -139,7 +139,7 @@ class R3DEncoder(nn.Module):
             self.videopool = VideoAveragePool()
         else:
             raise ValueError(f"Invalid pooling {pooling}")
-        self.transform = build_transform(normalization)
+        self.transform = build_transform("kinetics" if self.pretrained else "peppa")
         
     def forward(self, x):
         return Compose([self.transform,
