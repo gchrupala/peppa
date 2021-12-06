@@ -1,7 +1,7 @@
-fragment_type,triplet_acc,recall_at_10,version,path
-dialog,0.8316831588745117,0.23466666042804718,43,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_43/checkpoints/epoch=62-step=10898.ckpt
-narration,0.8663911819458008,0.23857301473617554,43,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_43/checkpoints/epoch=62-step=10898.ckpt
-dialog,0.6930692791938782,0.09600000083446503,44,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_44/checkpoints/epoch=31-step=5535.ckpt
-narration,0.8223140835762024,0.16610924899578094,44,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_44/checkpoints/epoch=31-step=5535.ckpt
-dialog,0.5891088843345642,0.0533333346247673,45,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_45/checkpoints/epoch=51-step=12011.ckpt
-narration,0.7410468459129333,0.08695652335882187,45,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_45/checkpoints/epoch=51-step=12011.ckpt
+fragment_type,triplet_acc,recall_at_10,version,path,audio_pretrained,video_pretrained,audio_pooling,video_pooling
+dialog,0.8316831588745117,0.23466666042804718,43,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_43/checkpoints/epoch=62-step=10898.ckpt,True,True,attention,attention
+narration,0.8663911819458008,0.23857301473617554,43,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_43/checkpoints/epoch=62-step=10898.ckpt,True,True,attention,attention
+dialog,0.6930692791938782,0.09600000083446503,44,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_44/checkpoints/epoch=31-step=5535.ckpt,True,False,attention,attention
+narration,0.8223140835762024,0.16610924899578094,44,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_44/checkpoints/epoch=31-step=5535.ckpt,True,False,attention,attention
+dialog,0.5891088843345642,0.0533333346247673,45,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_45/checkpoints/epoch=51-step=12011.ckpt,False,False,attention,attention
+narration,0.7410468459129333,0.08695652335882187,45,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_45/checkpoints/epoch=51-step=12011.ckpt,False,False,attention,attention

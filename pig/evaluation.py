@@ -72,7 +72,7 @@ def format():
                                  recall_at_10='Recall@10',
                                  triplet_acc='Triplet Acc'))\
             .to_latex(buf=f"results/scores_{fragment_type}.tex",
-                      index_names=False,
+                      index=False,
                       float_format="%.3f")
                                 
 

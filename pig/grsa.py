@@ -11,6 +11,8 @@ import os.path
 import torch
 import torch.nn
 
+CHECKPOINT_PATH = "lightning_logs/version_43/checkpoints/epoch=62-step=10898.ckpt"
+
 def speakerize(data):
     for part in data['narrator_splits']:
         for sub in part['context']['subtitles']:
@@ -112,7 +114,9 @@ class WordData():
 def normalized_distance(a, b):
     from Levenshtein import distance
     return distance(a, b) / max(len(a), len(b))
-                    
+
+
+
 def pairwise(fragment_type='dialog'):
     from pig.models import PeppaPig
     from pig.data import audioclip_loader
@@ -124,7 +128,7 @@ def pairwise(fragment_type='dialog'):
 
     word_data = WordData(audio_paths, anno_paths, min_duration=0.1)
     
-    net = PeppaPig.load_from_checkpoint("lightning_logs/version_31/checkpoints/epoch=101-step=17645-v1.ckpt")
+    net = PeppaPig.load_from_checkpoint(CHECKPOINT_PATH)
     net_init = PeppaPig(net.config)
     net.eval()
     net.cuda()
@@ -170,7 +174,7 @@ def pairwise(fragment_type='dialog'):
                            similarity=sim[i, j].item(),
                            similarity_init=sim_init[i, j].item())
                     
-def dump_data():
+def main():
     for fragment_type in ['dialog', 'narration']:
         import pandas
         logging.getLogger().setLevel(level=logging.INFO)
