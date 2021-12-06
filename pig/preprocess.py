@@ -5,7 +5,7 @@ import moviepy.editor as m
 import logging
 import pandas as pd
 import random
-
+import os.path
 
 def extract(target_size=(180, 100)):
     logging.basicConfig(level=logging.INFO)
@@ -73,7 +73,22 @@ def lines(clip, metadata):
         else:
             logging.warning(f"Line {line} starts past end of clip {clip.filename}")
             
-                           
+def extract_realines(target_size=(180, 100)):
+    from pig.triplet import grouped
+    for fragment_type in ['dialog', 'narration']:
+        items = [ {**json.load(open(path)), **{'path': path }}
+                  for path in glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.json")]
+        for path, metas in grouped(items, key=lambda x: x['episode_filepath']):
+            with m.VideoFileClip(path) as clip:
+                for meta in metas:
+                    fully = [ word for word in meta['words'] if word['case'] == 'success' ]
+                    if len(fully) > 0:
+                        start = fully[0]['start'] + meta['clipStart']
+                        end = fully[-1]['end'] + meta['clipStart']
+                        filename = os.path.splitext(meta['path'])[0]
+                        clip.subclip(start, end).resize(target_size).write_videofile(f"{filename}.mp4",
+                                                                                     fps=10,
+                                                                                     codec="mpeg4")                           
     
     
 def segment(clip, duration=3.2, jitter=False):
