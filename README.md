@@ -31,13 +31,13 @@ See [example.py](example.py) for an example of how to load a model and use it to
 
 ### Analyze
 
-Generate tables [results/scores.csv], [results/scores_dialog.tex] and [results/scores_narration.tex]
+Generate tables [results/scores.csv](), [results/scores_dialog.tex]() and [results/scores_narration.tex]()
 ```
 python -c 'import pig.evaluation as m; m.main(0)'
 python -c 'import pig.evaluation as m; m.format()'
 ```
 
-Generate tables [results/ceof_d.csv], [results/coef_n.csv] and figures [results/grsa_dialog_coef.pdf] and [results/grsa_narration_coef.pdf]
+Generate tables [results/ceof_d.csv](), [results/coef_n.csv]() and figures [results/grsa_dialog_coef.pdf]() and [results/grsa_narration_coef.pdf]()
 ```
 python -c  'import pig.grsa as m; m.main()'
 python -c  'import pig.stats as m; m.main()'
