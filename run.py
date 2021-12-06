@@ -60,6 +60,7 @@ def main(args):
     trainer = pl.Trainer(callbacks=[ModelCheckpoint(monitor='valnarr_rec10',
                                                     mode='max',
                                                     every_n_epochs=1,
+                                                    save_top_k=5,
                                                     auto_insert_metric_name=True)],
                          max_time="02:00:00:00",
                          **config['training']['trainer_args'])
