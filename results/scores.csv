@@ -1,9 +1,7 @@
-fragment_type,task,metric,score,version,path
-dialog,retrieval,recall_at_10,0.06133333221077919,38,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_38/checkpoints/epoch=37-step=6573-v1.ckpt
-narration,retrieval,recall_at_10,0.06020066887140274,38,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_38/checkpoints/epoch=37-step=6573-v1.ckpt
-dialog,retrieval,recall_at_10,0.2293333262205124,39,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_39/checkpoints/epoch=31-step=5535.ckpt
-narration,retrieval,recall_at_10,0.2107023447751999,39,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_39/checkpoints/epoch=31-step=5535.ckpt
-dialog,retrieval,recall_at_10,0.20266667008399963,41,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_41/checkpoints/epoch=89-step=15569-v1.ckpt
-narration,retrieval,recall_at_10,0.2028985470533371,41,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_41/checkpoints/epoch=89-step=15569-v1.ckpt
-dialog,retrieval,recall_at_10,0.19466666877269745,42,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_42/checkpoints/epoch=32-step=5708.ckpt
-narration,retrieval,recall_at_10,0.20958751440048218,42,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_42/checkpoints/epoch=32-step=5708.ckpt
+fragment_type,triplet_acc,recall_at_10,version,path
+dialog,0.8316831588745117,0.23466666042804718,43,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_43/checkpoints/epoch=62-step=10898.ckpt
+narration,0.8663911819458008,0.23857301473617554,43,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_43/checkpoints/epoch=62-step=10898.ckpt
+dialog,0.6930692791938782,0.09600000083446503,44,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_44/checkpoints/epoch=31-step=5535.ckpt
+narration,0.8223140835762024,0.16610924899578094,44,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_44/checkpoints/epoch=31-step=5535.ckpt
+dialog,0.5891088843345642,0.0533333346247673,45,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_45/checkpoints/epoch=51-step=12011.ckpt
+narration,0.7410468459129333,0.08695652335882187,45,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_45/checkpoints/epoch=51-step=12011.ckpt

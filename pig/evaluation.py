@@ -43,23 +43,53 @@ def retrieval_score(fragment_type, model, trainer):
         return rec10
         
 def triplet_score(fragment_type, model, trainer):
-    ds = pig.data.PeppaTripletDataset.load(f"data/out/val_{fragment_type}_triplets_v2")
+    ds = pig.data.PeppaTripletDataset.load(f"data/out/val_{fragment_type}_triplets_v3")
     loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=8)
     acc = torch.cat([ pig.metrics.batch_triplet_accuracy(batch)
                       for  batch in trainer.predict(model, loader) ]).mean().item()
     return acc
 
 
+def pretraining(row):
+    return { (True, True): "AV",
+             (True, False): "A",
+             (True, False): "V",
+             (False, False): "None"}[row['audio_pretrained'],
+                                     row['video_pretrained']]
 
-def main(gpu):
+def format():
+    data = pd.read_csv("results/scores.csv")
+    for fragment_type in ['dialog', 'narration']:
+        table = data.query(f"fragment_type=='{fragment_type}'")
+        table['pretraining'] = table.apply(pretraining, axis=1)
+
+
+
+        table[['version', 'pretraining',
+               'recall_at_10', 'triplet_acc']]\
+            .rename(columns=dict(version='ID',
+                                 pretraining='Pretraining',
+                                 recall_at_10='Recall@10',
+                                 triplet_acc='Triplet Acc'))\
+            .to_latex(buf=f"results/scores_{fragment_type}.tex",
+                      index_names=False,
+                      float_format="%.3f")
+                                
+
+def main(gpu=0):
     logging.getLogger().setLevel(logging.INFO)
     rows = []
-    for version in [38, 39, 41, 42]:
+    for version in [43, 44, 45]:
         logging.info(f"Evaluating version {version}")
         net, path = load_best_model(f"lightning_logs/version_{version}/")
+        
         for row in score(net, gpus=[gpu]):
             row['version'] = version
             row['path']    = path
+            row['audio_pretrained'] = net.config['audio']['pretrained']
+            row['video_pretrained'] = net.config['video']['pretrained']
+            row['audio_pooling'] = net.config['audio']['pooling']
+            row['video_pooling'] = net.config['video']['pooling']
             print(row)
             rows.append(row)
     scores = pd.DataFrame.from_records(rows)
