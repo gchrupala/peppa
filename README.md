@@ -37,7 +37,7 @@ python -c 'import pig.evaluation as m; m.main(0)'
 python -c 'import pig.evaluation as m; m.format()'
 ```
 
-Generate tables [results/ceof_d.csv](results/ceof_d.csv), [results/coef_n.csv](results/coef_n.csv) and figures [results/grsa_dialog_coef.pdf](results/grsa_dialog_coef.pdf) and [results/grsa_narration_coef.pdf](results/grsa_narration_coef.pdf)
+Generate tables [results/coef_d.csv](results/coef_d.csv), [results/coef_n.csv](results/coef_n.csv) and figures [results/grsa_dialog_coef.pdf](results/grsa_dialog_coef.pdf) and [results/grsa_narration_coef.pdf](results/grsa_narration_coef.pdf)
 ```
 python -c  'import pig.grsa as m; m.main()'
 python -c  'import pig.stats as m; m.main()'
