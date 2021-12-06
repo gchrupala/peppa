@@ -6,13 +6,13 @@ from plotnine import *
 def sumcode(col):
     return (col * 2 - 1).astype(int)
 
-def massage(dat):
+def massage(dat, scaleall=False):
     keep = ['samespeaker', 'sameepisode', 'sametype', 'glovesim', 'distance',
             'durationdiff', 'similarity', 'similarity_init']
     return dat[keep].dropna().query("glovesim != 0.0").assign(
-        samespeaker  = lambda x: sumcode(x.samespeaker),
-        sameepisode = lambda x: sumcode(x.sameepisode),
-        sametype     = lambda x: sumcode(x.sametype),
+        samespeaker  = lambda x: scale(x.samespeaker) if scaleall else sumcode(x.samespeaker),
+        sameepisode = lambda x: scale(x.sameepisode) if scaleall else sumcode(x.sameepisode),
+        sametype     = lambda x: scale(x.sametype) if scaleall else sumcode(x.sametype),
         glovesim     = lambda x: scale(x.glovesim),
         distance     = lambda x: scale(x.distance),
         durationdiff = lambda x: scale(x.durationdiff),
@@ -58,9 +58,9 @@ def main():
     # Load and process data
     
     rawdata_d = pd.read_csv('pairwise_similarities_dialog.csv')
-    data_d = massage(rawdata_d)
+    data_d = massage(rawdata_d, scaleall=True)
     rawdata_n = pd.read_csv('pairwise_similarities_narration.csv')
-    data_n = massage(rawdata_n)
+    data_n = massage(rawdata_n, scaleall=True)
     
 
     m_d = api.ols(formula = 'similarity ~ glovesim + distance + durationdiff + sametype + samespeaker + sameepisode', data=data_d)
