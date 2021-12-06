@@ -69,7 +69,7 @@ def main():
     table['Trained'] = True
     table_init = m_d_init.fit().summary2().tables[1]
     table_init['Trained'] = False
-    table_d = pd.concat([table, table_init]).reset_index()
+    table_d = pd.concat([table, table_init])
     table_d.to_csv("results/coef_d.csv", index=True, header=True)
     
     plot_coef(table_d, "dialog")
