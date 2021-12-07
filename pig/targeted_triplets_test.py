@@ -1,26 +1,24 @@
+import time
+
 import numpy as np
 from moviepy.audio.AudioClip import AudioArrayClip
 from moviepy.video.io.ImageSequenceClip import ImageSequenceClip
 from torch.utils.data import DataLoader
 
-import pig.data
+from pig.targeted_triplets import PeppaTargetedTripletDataset, FPS
 import pygame
 
-from pig.triplet import PeppaTripletDataset
-from pig.util import identity
+from pig.triplet import collate_triplets
 
-FPS = 10
 AUDIO_SAMPLE_RATE = 44100  # Sampling rate in samples per second.
+
 
 if __name__ == "__main__":
     fragment_type = "narration"
+    pos = "ADJ"
 
-    ds = PeppaTripletDataset.load("data/out/val_narration_triplets_v2")
-
-    # Do not normalize image data to keep it readable
-    ds.transform = identity
-
-    loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=1)
+    eval_dataset = PeppaTargetedTripletDataset.load(f"data/out/val_{fragment_type}_targeted_triplets_{pos}")
+    loader = DataLoader(eval_dataset, collate_fn=collate_triplets, batch_size=1)
 
     for batch in loader:
         video_data_pos = batch.positive
@@ -28,15 +26,21 @@ if __name__ == "__main__":
         video_data_pos = list(video_data_pos.numpy())
         video_clip_pos = ImageSequenceClip(video_data_pos, fps=FPS)
 
+        video_data_neg = batch.negative
+        video_data_neg = video_data_neg.squeeze(0).permute(1, 2, 3, 0) * 255
+        video_data_neg = list(video_data_neg.numpy())
+        video_clip_neg = ImageSequenceClip(video_data_neg, fps=FPS)
+
         audio_data = batch.anchor
         audio_data = audio_data.squeeze(0).permute(1, 0).numpy()
 
-        # Playing mono doesn't work for some reason, convert data to stereo instead:
-        audio_data = np.tile(audio_data, 2)
+        audio_data = np.tile(audio_data, 2)     # Playing mono doesn't work
 
         audio_clip = AudioArrayClip(audio_data, fps=AUDIO_SAMPLE_RATE)
 
         video_clip_pos = video_clip_pos.set_audio(audio_clip)
+        pygame.display.set_caption('Positive Sample')
 
         video_clip_pos.preview(fps=FPS)
-        pygame.quit()
+
+        time.sleep(1)
