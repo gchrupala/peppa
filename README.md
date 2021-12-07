@@ -34,7 +34,6 @@ See [example.py](example.py) for an example of how to load a model and use it to
 Generate tables [results/scores.csv](results/scores.csv), [results/scores_dialog.tex](results/scores_dialog.tex) and [results/scores_narration.tex](results/scores_narration.tex)
 ```
 python -c 'import pig.evaluation as m; m.main(0)'
-python -c 'import pig.evaluation as m; m.format()'
 ```
 
 Generate tables [results/coef_d.csv](results/coef_d.csv), [results/coef_n.csv](results/coef_n.csv) and figures [results/grsa_dialog_coef.pdf](results/grsa_dialog_coef.pdf) and [results/grsa_narration_coef.pdf](results/grsa_narration_coef.pdf)
