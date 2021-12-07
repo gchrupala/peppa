@@ -94,3 +94,5 @@ def main(gpu=0):
             rows.append(row)
     scores = pd.DataFrame.from_records(rows)
     scores.to_csv("results/scores.csv", index=False, header=True)
+    format()
+    

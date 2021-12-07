@@ -179,4 +179,5 @@ def main():
         import pandas
         logging.getLogger().setLevel(level=logging.INFO)
         data = pandas.DataFrame.from_records(pairwise(fragment_type))
-        data.to_csv(f"pairwise_similarities_{fragment_type}.csv", index=False, header=True, na_rep="NA")
+        data.to_csv(f"data/out/pairwise_similarities_{fragment_type}.csv",
+                    index=False, header=True, na_rep="NA")

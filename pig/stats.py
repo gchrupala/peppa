@@ -57,12 +57,17 @@ def load(path):
 def main():
     # Load and process data
     
-    rawdata_d = pd.read_csv('pairwise_similarities_dialog.csv')
+    rawdata_d = pd.read_csv('data/out/pairwise_similarities_dialog.csv')
     data_d = massage(rawdata_d, scaleall=True)
-    rawdata_n = pd.read_csv('pairwise_similarities_narration.csv')
-    data_n = massage(rawdata_n, scaleall=True)
+    data_d.corr().to_csv("results/rsa_dialog_correlations.csv", index=True, header=True)
+    data_d.corr().to_latex(float_format="%.2f", buf="results/rsa_dialog_correlations.tex")
     
-
+    rawdata_n = pd.read_csv('data/out/pairwise_similarities_narration.csv')
+    data_n = massage(rawdata_n, scaleall=True)
+    data_ncor = data_n.drop("samespeaker", axis=1).corr()
+    data_ncor.to_csv("results/rsa_narration_correlations.csv", index=True, header=True)
+    data_ncor.to_latex(float_format="%.2f", buf="results/rsa_narration_correlations.tex")
+    
     m_d = api.ols(formula = 'similarity ~ glovesim + distance + durationdiff + sametype + samespeaker + sameepisode', data=data_d)
     m_d_init = api.ols(formula = 'similarity_init ~ glovesim + distance + durationdiff + sametype + samespeaker + sameepisode', data=data_d)
     table = m_d.fit().summary2().tables[1]
