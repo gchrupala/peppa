@@ -42,7 +42,8 @@ MIN_PHRASE_LENGTH = 2
 TOKEN_MASK = "<MASK>"
 
 nltk.download("universal_tagset")
-
+nltk.download("averaged_perceptron_tagger")
+nltk.download("wordnet")
 
 def load_data():
     data_sentences = []
