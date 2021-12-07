@@ -1,17 +1,18 @@
 import pandas as pd
 import statsmodels.formula.api as api
 from sklearn.preprocessing import scale
+from plotnine import *
 
 def sumcode(col):
     return (col * 2 - 1).astype(int)
 
-def massage(dat):
+def massage(dat, scaleall=False):
     keep = ['samespeaker', 'sameepisode', 'sametype', 'glovesim', 'distance',
             'durationdiff', 'similarity', 'similarity_init']
     return dat[keep].dropna().query("glovesim != 0.0").assign(
-        samespeaker  = lambda x: sumcode(x.samespeaker),
-        sameepisode = lambda x: sumcode(x.sameepisode),
-        sametype     = lambda x: sumcode(x.sametype),
+        samespeaker  = lambda x: scale(x.samespeaker) if scaleall else sumcode(x.samespeaker),
+        sameepisode = lambda x: scale(x.sameepisode) if scaleall else sumcode(x.sameepisode),
+        sametype     = lambda x: scale(x.sametype) if scaleall else sumcode(x.sametype),
         glovesim     = lambda x: scale(x.glovesim),
         distance     = lambda x: scale(x.distance),
         durationdiff = lambda x: scale(x.durationdiff),
@@ -36,32 +37,59 @@ def partial_r2(model, data):
         r2.append((mse_red - mse_full) / mse_red)
     return pd.DataFrame(index=['Intercept']+predictors, data=dict(partial_r2=r2))
         
-        
+
+def plot_coef(fit, fragment_type):
+    data = fit.reset_index().rename(
+        columns={'index': 'Variable', 'Coef.': 'Coefficient', '[0.025': 'Lower', '0.975]': 'Upper'})
+    g = ggplot(data, aes('Variable', 'Coefficient')) + \
+        geom_hline(yintercept=0, color='gray', linetype='dashed') + \
+        geom_errorbar(aes(color='Trained', ymin='Lower', ymax='Upper', lwd=1, width=0.25)) + \
+        geom_point(aes(color='Trained')) + \
+        coord_flip() 
+    ggsave(g, f"results/grsa_{fragment_type}_coef.pdf")
+
+def load(path):
+    rawdata = pd.read_csv(path)
+    return massage(rawdata_d)
+
+
+
 def main():
     # Load and process data
     
-    rawdata_d = pd.read_csv('pairwise_similarities_dialog.csv')
-    data_d = massage(rawdata_d)
-    rawdata_n = pd.read_csv('pairwise_similarities_narration.csv')
-    data_n = massage(rawdata_n)
+    rawdata_d = pd.read_csv('data/out/pairwise_similarities_dialog.csv')
+    data_d = massage(rawdata_d, scaleall=True)
+    data_d.corr().to_csv("results/rsa_dialog_correlations.csv", index=True, header=True)
+    data_d.corr().to_latex(float_format="%.2f", buf="results/rsa_dialog_correlations.tex")
     
-
-    # Print variable correlations
-    print(data_d[['glovesim', 'distance', 'durationdiff', 'similarity', 'similarity_init']].corr().to_latex(float_format="%.2f"), file=open("results/cor_dialog.tex", "w"))
-    print(data_n[['glovesim', 'distance', 'durationdiff', 'similarity', 'similarity_init']].corr().to_latex(float_format="%.2f"), file=open("results/cor_narration.tex", "w"))
+    rawdata_n = pd.read_csv('data/out/pairwise_similarities_narration.csv')
+    data_n = massage(rawdata_n, scaleall=True)
+    data_ncor = data_n.drop("samespeaker", axis=1).corr()
+    data_ncor.to_csv("results/rsa_narration_correlations.csv", index=True, header=True)
+    data_ncor.to_latex(float_format="%.2f", buf="results/rsa_narration_correlations.tex")
     
-    # Fit models
     m_d = api.ols(formula = 'similarity ~ glovesim + distance + durationdiff + sametype + samespeaker + sameepisode', data=data_d)
     m_d_init = api.ols(formula = 'similarity_init ~ glovesim + distance + durationdiff + sametype + samespeaker + sameepisode', data=data_d)
+    table = m_d.fit().summary2().tables[1]
+    table['Trained'] = True
+    table_init = m_d_init.fit().summary2().tables[1]
+    table_init['Trained'] = False
+    table_d = pd.concat([table, table_init])
+    table_d.to_csv("results/coef_d.csv", index=True, header=True)
     
-    print(m_d.fit().summary2().tables[1].join(partial_r2(m_d, data_d)).to_latex(float_format="%.3f"), file=open("results/lm_dialog.tex", "w"))
-    print(m_d_init.fit().summary2().tables[1].join(partial_r2(m_d_init, data_d)).to_latex(float_format="%.3f"), file=open("results/lm_init_dialog.tex", "w"))
-    
+    plot_coef(table_d, "dialog")
     
     m_n = api.ols(formula = 'similarity ~ glovesim + distance + durationdiff + sametype + sameepisode', data=data_n)
     m_n_init = api.ols(formula = 'similarity_init ~ glovesim + distance + durationdiff + sametype + sameepisode', data=data_n)
+    table = m_n.fit().summary2().tables[1]
+    table['Trained'] = True
+    table_init = m_n_init.fit().summary2().tables[1]
+    table_init['Trained'] = False
+    table_n = pd.concat([table, table_init])
+    table_n.to_csv("results/coef_n.csv", index=True, header=True)
+    plot_coef(table_n, "narration")
     
-    print(m_n.fit().summary2().tables[1].join(partial_r2(m_n, data_n)).to_latex(float_format="%.3f"), file=open("results/lm_narration.tex", "w"))
-    print(m_n_init.fit().summary2().tables[1].join(partial_r2(m_n_init, data_n)).to_latex(float_format="%.3f"), file=open("results/lm_init_narration.tex", "w"))
+    
+
 
 

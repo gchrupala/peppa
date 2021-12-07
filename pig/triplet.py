@@ -107,7 +107,7 @@ def collate_triplets(data):
     return TripletBatch(anchor=U.pad_audio_batch(anchor),
                         positive=U.pad_video_batch(pos),
                         negative=U.pad_video_batch(neg))
-    
+
 
 def pairs(xs):
     if len(xs) < 2:

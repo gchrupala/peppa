@@ -4,39 +4,38 @@ data:
   extract: false
   prepare: false
   iterable: false
-  cache: true
-  normalization: peppa
+  force_cache: false
   target_size:
   - 180
   - 100
-  transform: null
   train:
     batch_size: 8
-    randomize: false
+    jitter: false
     shuffle: true
   val:
     batch_size: 8
   test:
     batch_size: 8
 video:
-  pretrained: false
+  pretrained: true
   project: true
-audio_class: Wav2VecEncoder
+  version: r2plus1d_18
+  pooling: attention
 audio:
   path: data/in/wav2vec/wav2vec_small.pt
+  pretrained: true
   freeze_feature_extractor: true
   freeze_encoder_layers: 3
   pooling: attention
 training:
   trainer_args:
     gpus:
-    - 2
+    - 0
     auto_select_gpus: false
     accumulate_grad_batches: 8
-  monitor: val_loss/dataloader_idx_0
 optimizer:
   lr: 0.0001
   warmup: 0.1
   schedule: warmup_linear
   t_total: 32640
-git_commit: c04cf57b201c9bd27530650a6cec214bff00a0f3
+git_commit: a95eef598658d2ef72dad9e9d53436ffb2515eee

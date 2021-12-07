@@ -12,13 +12,15 @@ import fairseq
 from torchvision.transforms import Compose
 from pig.loss import TripletLoss
 import pig.data
+import pig.triplet
 import logging
 import sys
 import pig.util
 import pig.metrics
 from pytorch_lightning.callbacks import ModelCheckpoint
 import pig.optimization as opt
-
+import pig.transforms
+from torchvision.transforms import Normalize, Compose
 
 class Attention(nn.Module):
     def __init__(self, in_size, hidden_size):
@@ -55,26 +57,6 @@ class LastStep(nn.Module):
         
     
 ## Audio encoders
-
-class Wav2LetterEncoder(nn.Module):
-    
-    def __init__(self, project=False):
-        super().__init__()
-        self.audio = A.Wav2Letter(input_type='waveform', num_features=1, num_classes=512)
-        self.audiopool = torch.nn.AdaptiveAvgPool2d((512,1))
-        if project:
-            self.project = nn.Linear(512, 512)
-        else:
-            self.project = pig.util.identity
-
-    def forward(self, x):
-        return Compose([self.audio.acoustic_model,
-                        self.audiopool,
-                        lambda x: x.squeeze(dim=2),
-                        self.project,
-                        lambda x: nn.functional.normalize(x, p=2, dim=1)
-        ])(x)
-
 
 class Wav2VecEncoder(nn.Module):
     def __init__(self, path, pretrained=True, freeze_feature_extractor=False, freeze_encoder_layers=None, pooling='average'):
@@ -113,7 +95,11 @@ class Wav2VecEncoder(nn.Module):
 ## Video encoders
 class R3DEncoder(nn.Module):
     
-    def __init__(self, pretrained=True, project=True, version='r3d_18', pooling='average'):
+    def __init__(self,
+                 pretrained=True,
+                 project=True,
+                 version='r3d_18',
+                 pooling='average'):
         super().__init__()
         self.pretrained = pretrained
         if version == 'r3d_18':
@@ -134,9 +120,11 @@ class R3DEncoder(nn.Module):
             self.videopool = VideoAveragePool()
         else:
             raise ValueError(f"Invalid pooling {pooling}")
-            
+        self.transform = build_transform("kinetics" if self.pretrained else "peppa")
+        
     def forward(self, x):
-        return Compose([self.video.stem,
+        return Compose([self.transform,
+                        self.video.stem,
                         self.video.layer1,
                         self.video.layer2,
                         self.video.layer3,
@@ -172,7 +160,7 @@ class PeppaPig(pl.LightningModule):
         self.save_hyperparameters(config)
         self.loss = TripletLoss(margin=self.config['margin'])
         self.video_encoder = R3DEncoder(**self.config['video'])
-        self.audio_encoder = get_class(config['audio_class'])(**config['audio'])
+        self.audio_encoder = Wav2VecEncoder(**config['audio'])
         
     def forward(self, batch):
         # in lightning, forward defines the prediction/inference actions
@@ -180,7 +168,7 @@ class PeppaPig(pl.LightningModule):
             a = self.encode_audio(batch.anchor)
             p = self.encode_video(batch.positive)
             n = self.encode_video(batch.negative)
-            return pig.data.TripletBatch(anchor=a, positive=p, negative=n)
+            return pig.triplet.TripletBatch(anchor=a, positive=p, negative=n)
         except AttributeError:
             V = self.encode_video(batch.video)
             A = self.encode_audio(batch.audio)
@@ -212,32 +200,18 @@ class PeppaPig(pl.LightningModule):
             self.log("val_loss", loss, prog_bar=True)
             return (V, A)
         elif dataloader_idx == 1:
-            a = self.encode_audio(batch.anchor)
-            p = self.encode_video(batch.positive)
-            n = self.encode_video(batch.negative)
-            acc3 = pig.metrics.triplet_accuracy(a, p, n)
-            self.log("val_acc3", acc3, prog_bar=False)
-            return None
-        elif dataloader_idx == 2:
             V = self.encode_video(batch.video)
             A = self.encode_audio(batch.audio)
             loss = self.loss(V, A)
             # Logging to TensorBoard by default
             self.log("valnarr_loss", loss, prog_bar=False)
             return (V, A)
-        elif dataloader_idx == 3:
-            a = self.encode_audio(batch.anchor)
-            p = self.encode_video(batch.positive)
-            n = self.encode_video(batch.negative)
-            acc3 = pig.metrics.triplet_accuracy(a, p, n)
-            self.log("valnarr_acc3", acc3, prog_bar=True)
-            return None
         else:
             raise ValueError(f"Invalid dataloader index {dataloader_idx}")
         
         
     def validation_epoch_end(self, outputs):
-        out_main, _, out_narr, _ = outputs
+        out_main, out_narr = outputs
         V, A = zip(*out_main)
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)
@@ -260,6 +234,15 @@ class PeppaPig(pl.LightningModule):
         optimizer = opt.BertAdam(self.parameters(), **self.config['optimizer'])
         return optimizer
 
-def get_class(name):
-    return getattr(sys.modules[__name__], name)
-
+def build_transform(normalization):
+    if normalization == 'peppa':
+        stats = torch.load("data/out/stats.pt")
+    elif normalization == 'kinetics':
+        stats = torch.load("data/out/kinetics-stats.pt")
+    else:
+        raise ValueError(f"Unsupported normalization type {self.normalization}")
+    return Compose([
+        pig.transforms.SwapCT(),
+        Normalize(mean=stats.video_mean, std=stats.video_std),    
+        pig.transforms.SwapCT()
+    ])
