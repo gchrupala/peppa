@@ -76,6 +76,7 @@ class Word:
     embedding_init: torch.tensor = None
     glove: torch.Tensor = None
 
+    
 class WordData():
 
     def __init__(self, audio_paths, alignment_paths, min_duration=0.1):
@@ -149,7 +150,7 @@ def pairwise(fragment_type='dialog'):
     for i,word in enumerate(words):
         word.embedding = emb[i]
         word.embedding_init = emb_init[i]
-    torch.save(dict(model_config=net.config, words=words), f"words_{fragment_type}.pt")
+    torch.save(dict(model_config=net.config, words=words), f"data/out/words_trained_{fragment_type}.pt")
     for i, word1 in enumerate(words):
         logging.info(f"Processing word {i}")
         for j, word2 in enumerate(words):
@@ -173,7 +174,32 @@ def pairwise(fragment_type='dialog'):
                            durationdiff=abs(word1.duration-word2.duration),
                            similarity=sim[i, j].item(),
                            similarity_init=sim_init[i, j].item())
-                    
+
+
+def word_type():
+    from pig.util import grouped, triu, pearson_r, cosine_matrix
+    rows = []
+    for fragment_type in ['dialog', 'narration']:
+        data = torch.load(f"data/out/words_{fragment_type}.pt")
+        model_version = CHECKPOINT_PATH
+        embedding = []
+        glove = []
+        for typ, toks in grouped(data['words'], key=lambda w: w.spelling):
+            toks = list(toks)
+            if toks[0].glove.sum() != 0.0:
+                embedding.append(torch.stack([ tok.embedding for tok in toks]).mean(dim=0))
+                glove.append(toks[0].glove)
+        embedding = torch.stack(embedding)
+        glove = torch.stack(glove)
+        sim_emb = triu(cosine_matrix(embedding, embedding).cpu())
+        sim_glove = triu(cosine_matrix(glove.double(), glove.double()).cpu())
+        rows.append(dict(fragment_type=fragment_type,
+                         pearson_r=pearson_r(sim_emb, sim_glove).item(),
+                         N=sim_emb.shape[0],
+                         model_version=model_version))
+    pd.DataFrame.from_records(rows).to_csv("results/word_type_rsa.csv", index=False, header=True)
+        
+        
 def main():
     for fragment_type in ['dialog', 'narration']:
         import pandas
