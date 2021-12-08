@@ -7,6 +7,30 @@ import logging
 from torch.utils.data import DataLoader
 from dataclasses import dataclass
 import pandas as pd
+import numpy as np
+
+def data_statistics():
+    rows = []
+    for split in ['train', 'val', 'test']:
+        for fragment_type in ['dialog', 'narration']:
+            if pig.data.SPLIT_SPEC[fragment_type][split] is not None:
+                ds = pig.data.PeppaPigIterableDataset(
+                    target_size=(180, 100),
+                    split=[split],
+                    fragment_type=fragment_type,
+                    duration=3.2)
+                duration = np.array([clip.duration for clip in ds._raw_clips() ])
+                rows.append({'Split': split, 'Type': fragment_type, 'Triplet': 'No',
+                             'Size (h)': duration.sum() / 60 / 60, 'Mean length (s)': duration.mean() })
+                if split != 'train':
+                    ds = pig.data.PeppaTripletDataset.load(f"data/out/{split}_{fragment_type}_triplets_v4")
+                    duration = np.array([ val['duration'] for key, val in ds._clip_info.items() ])
+                    rows.append({'Split': split, 'Type': fragment_type, 'Triplet': 'Yes',
+                             'Size (h)': duration.sum() / 60 / 60, 'Mean length (s)': duration.mean() })
+    data = pd.DataFrame.from_records(rows).sort_values(by="Triplet")
+    data.to_csv("results/data_statistics.csv", index=False, header=True)
+    data.to_latex("results/data_statistics.tex", index=False, header=True, float_format="%.2f")
+    
 
 def load_best_model(dirname, higher_better=True):
     info = []

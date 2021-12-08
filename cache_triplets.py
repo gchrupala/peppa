@@ -14,3 +14,5 @@ ds = D.PeppaPigIterableDataset(split=['val'], fragment_type='dialog',    duratio
 PeppaTripletDataset.from_dataset(ds, "data/out/val_dialog_triplets_v4")
 ds = D.PeppaPigIterableDataset(split=['val'], fragment_type='narration', duration=None, jitter=False)
 PeppaTripletDataset.from_dataset(ds, "data/out/val_narration_triplets_v4")
+ds = D.PeppaPigIterableDataset(split=['test'], fragment_type='narration', duration=None, jitter=False)
+PeppaTripletDataset.from_dataset(ds, "data/out/test_narration_triplets_v4")
