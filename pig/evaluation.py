@@ -43,7 +43,7 @@ def retrieval_score(fragment_type, model, trainer):
         return rec10
         
 def triplet_score(fragment_type, model, trainer):
-    ds = pig.data.PeppaTripletDataset.load(f"data/out/val_{fragment_type}_triplets_v3")
+    ds = pig.data.PeppaTripletDataset.load(f"data/out/val_{fragment_type}_triplets_v4")
     loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=8)
     acc = torch.cat([ pig.metrics.batch_triplet_accuracy(batch)
                       for  batch in trainer.predict(model, loader) ]).mean().item()
@@ -76,10 +76,12 @@ def format():
                       float_format="%.3f")
                                 
 
+VERSIONS = [43, 44, 45]
+
 def main(gpu=0):
     logging.getLogger().setLevel(logging.INFO)
     rows = []
-    for version in [43, 44, 45]:
+    for version in VERSIONS:
         logging.info(f"Evaluating version {version}")
         net, path = load_best_model(f"lightning_logs/version_{version}/")
         
