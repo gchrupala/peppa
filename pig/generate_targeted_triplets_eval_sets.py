@@ -235,9 +235,6 @@ def find_minimal_pairs(tuples, data, lemmatizer):
                             example_candidate.copy(), start, end, lemma_1, lemma_2,
                         )
 
-                        example["id"] = id
-                        id += 1
-
                         counterexample = crop_and_create_example(
                             counterexample_candidate.copy(),
                             counterex_start,
@@ -246,18 +243,19 @@ def find_minimal_pairs(tuples, data, lemmatizer):
                             lemma_1,
                         )
 
-                        counterexample["id"] = id
-                        id += 1
-
-                        example["id_counterexample"] = counterexample["id"]
-                        counterexample["id_counterexample"] = example["id"]
-
                         len_longest_intersection = len(intersection)
                         best_example = example
                         best_counterexample = counterexample
                         best_counterex_row = row_counterexample
 
             if best_example is not None:
+                best_example["id"] = id
+                id += 1
+                best_counterexample["id"] = id
+                id += 1
+                best_example["id_counterexample"] = best_counterexample["id"]
+                best_counterexample["id_counterexample"] = best_example["id"]
+
                 eval_set.append(best_example)
                 eval_set.append(best_counterexample)
                 print(best_example["tokenized"])
