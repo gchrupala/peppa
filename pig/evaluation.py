@@ -21,12 +21,12 @@ def data_statistics():
                     duration=3.2)
                 duration = np.array([clip.duration for clip in ds._raw_clips() ])
                 rows.append({'Split': split, 'Type': fragment_type, 'Triplet': 'No',
-                             'Size (h)': duration.sum() / 60 / 60, 'Mean length (s)': duration.mean() })
+                             'Size (h)': duration.sum() / 60 / 60, 'Items': len(duration), 'Mean length (s)': duration.mean() })
                 if split != 'train':
                     ds = pig.data.PeppaTripletDataset.load(f"data/out/{split}_{fragment_type}_triplets_v4")
                     duration = np.array([ val['duration'] for key, val in ds._clip_info.items() ])
                     rows.append({'Split': split, 'Type': fragment_type, 'Triplet': 'Yes',
-                             'Size (h)': duration.sum() / 60 / 60, 'Mean length (s)': duration.mean() })
+                                 'Size (h)': duration.sum() / 60 / 60, 'Items': len(duration), 'Mean length (s)': duration.mean() })
     data = pd.DataFrame.from_records(rows).sort_values(by="Triplet")
     data.to_csv("results/data_statistics.csv", index=False, header=True)
     data.to_latex("results/data_statistics.tex", index=False, header=True, float_format="%.2f")
