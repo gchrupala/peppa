@@ -17,7 +17,7 @@ def score(model):
     """Compute all standard scores for the given model. """
     gpus = None
     if torch.cuda.is_available():
-        gpus = 0
+        gpus = 1
     trainer = pl.Trainer(logger=False, gpus=gpus)
     for fragment_type in ['dialog', 'narration']:
         for pos in ["ADJ", "VERB", "NOUN"]:
