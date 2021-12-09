@@ -7,6 +7,30 @@ import logging
 from torch.utils.data import DataLoader
 from dataclasses import dataclass
 import pandas as pd
+import numpy as np
+
+def data_statistics():
+    rows = []
+    for split in ['train', 'val', 'test']:
+        for fragment_type in ['dialog', 'narration']:
+            if pig.data.SPLIT_SPEC[fragment_type][split] is not None:
+                ds = pig.data.PeppaPigIterableDataset(
+                    target_size=(180, 100),
+                    split=[split],
+                    fragment_type=fragment_type,
+                    duration=3.2)
+                duration = np.array([clip.duration for clip in ds._raw_clips() ])
+                rows.append({'Split': split, 'Type': fragment_type, 'Triplet': 'No',
+                             'Size (h)': duration.sum() / 60 / 60, 'Items': len(duration), 'Mean length (s)': duration.mean() })
+                if split != 'train':
+                    ds = pig.data.PeppaTripletDataset.load(f"data/out/{split}_{fragment_type}_triplets_v4")
+                    duration = np.array([ val['duration'] for key, val in ds._clip_info.items() ])
+                    rows.append({'Split': split, 'Type': fragment_type, 'Triplet': 'Yes',
+                                 'Size (h)': duration.sum() / 60 / 60, 'Items': len(duration), 'Mean length (s)': duration.mean() })
+    data = pd.DataFrame.from_records(rows).sort_values(by="Triplet")
+    data.to_csv("results/data_statistics.csv", index=False, header=True)
+    data.to_latex("results/data_statistics.tex", index=False, header=True, float_format="%.2f")
+    
 
 def load_best_model(dirname, higher_better=True):
     info = []
@@ -44,7 +68,7 @@ def retrieval_score(fragment_type, model, trainer):
         return rec10
         
 def triplet_score(fragment_type, model, trainer):
-    ds = pig.data.PeppaTripletDataset.load(f"data/out/val_{fragment_type}_triplets_v3")
+    ds = pig.data.PeppaTripletDataset.load(f"data/out/val_{fragment_type}_triplets_v4")
     loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=8)
     acc = torch.cat([ pig.metrics.batch_triplet_accuracy(batch)
                       for  batch in trainer.predict(model, loader) ]).mean().item()
@@ -77,10 +101,12 @@ def format():
                       float_format="%.3f")
                                 
 
+VERSIONS = [43, 44, 45]
+
 def main(gpu=0):
     logging.getLogger().setLevel(logging.INFO)
     rows = []
-    for version in [43, 44, 45]:
+    for version in VERSIONS:
         logging.info(f"Evaluating version {version}")
         net, path = load_best_model(f"lightning_logs/version_{version}/")
         

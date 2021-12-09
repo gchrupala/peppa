@@ -21,9 +21,11 @@ import os.path
 import math
 
 SPLIT_SPEC = {'dialog': {'train': range(1, 197),
-                         'val': range(197, 203),
-                         'test': range(203, 210)},
-              'narration': {'val': range(1, 105), 'test': range(105, 210)}}
+                         'val': range(197, 210),
+                         'test': None},
+              'narration': {'val': range(1, 105),
+                            'test': range(105, 210),
+                            'train': None}}
 
 
 @dataclass

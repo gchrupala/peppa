@@ -5,8 +5,8 @@ import moviepy.editor as m
 import pig.util as U
 from dataclasses import dataclass
 import os
-from itertools import groupby
 import random
+from pig.util import grouped, shuffled
 
 @dataclass
 class Triplet:
@@ -117,8 +117,3 @@ def pairs(xs):
 
 
 
-def shuffled(xs):
-    return sorted(xs, key=lambda _: random.random())
-
-def grouped(xs, key=lambda x: x):
-    return groupby(sorted(xs, key=key), key=key)
