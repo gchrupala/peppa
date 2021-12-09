@@ -77,7 +77,7 @@ def triplet_score(fragment_type, model, trainer):
 def pretraining(row):
     return { (True, True): "AV",
              (True, False): "A",
-             (True, False): "V",
+             (False, True): "V",
              (False, False): "None"}[row['audio_pretrained'],
                                      row['video_pretrained']]
 
