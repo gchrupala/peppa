@@ -10,14 +10,15 @@ import pandas as pd
 from pig.targeted_triplets import PeppaTargetedTripletDataset
 
 BATCH_SIZE = 8
+NUM_WORKERS = 8
 
 
 def score(model):
     """Compute all standard scores for the given model. """
-    auto_select_gpus = False
+    gpus = None
     if torch.cuda.is_available():
-        auto_select_gpus = True
-    trainer = pl.Trainer(logger=False, auto_select_gpus=auto_select_gpus)
+        gpus = 0
+    trainer = pl.Trainer(logger=False, gpus=gpus)
     for fragment_type in ['dialog', 'narration']:
         for pos in ["ADJ", "VERB", "NOUN"]:
             yield dict(fragment_type=fragment_type,
@@ -28,7 +29,7 @@ def score(model):
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
     ds = PeppaTargetedTripletDataset.load(f"data/out/val_{fragment_type}_targeted_triplets_{pos}")
-    loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=BATCH_SIZE)
+    loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS)
     acc = torch.cat([pig.metrics.batch_triplet_accuracy(batch)
                       for batch in trainer.predict(model, loader)]).mean().item()
     return acc
