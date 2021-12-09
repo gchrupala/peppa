@@ -1,7 +1,10 @@
 import pandas as pd
 import statsmodels.formula.api as api
-from sklearn.preprocessing import scale
+from sklearn.preprocessing import scale, StandardScaler
+from sklearn.linear_model import RidgeCV
 from plotnine import *
+import torch
+import numpy as np
 
 def sumcode(col):
     return (col * 2 - 1).astype(int)
@@ -19,6 +22,10 @@ def massage(dat, scaleall=False):
         similarity   = lambda x: scale(x.similarity),
         similarity_init = lambda x: scale(x.similarity_init))
 
+
+def rer(red, full):
+    return (red - full) / red
+
 def partial_r2(model, data):
     r2 = []
     mse_full = model.fit().mse_resid
@@ -29,12 +36,12 @@ def partial_r2(model, data):
     mse_red = model.from_formula(f"{model.endog_names} ~ {' + '.join(predictors)}",
                                  drop_cols=['Intercept'],
                                  data=data).fit().mse_resid
-    r2.append((mse_red - mse_full) / mse_red)
+    r2.append(rer(mse_red, mse_full))
     for predictor in predictors:
         exog = ' + '.join([ name for name in predictors if name != predictor ])
         formula = f"{model.endog_names} ~ {exog}"
         mse_red = model.from_formula(formula, data).fit().mse_resid
-        r2.append((mse_red - mse_full) / mse_red)
+        r2.append(rer(mse_red, mse_full))
     return pd.DataFrame(index=['Intercept']+predictors, data=dict(partial_r2=r2))
         
 
@@ -53,7 +60,69 @@ def load(path):
     return massage(rawdata_d)
 
 
+def frameit(matrix, prefix="dim"):
+    return pd.DataFrame(matrix, columns=[f"{prefix}{i}" for i in range(matrix.shape[1])])
 
+
+def backprobes():
+    for fragment_type in ['dialog', 'narration']:
+        data = torch.load(f"data/out/words_{fragment_type}.pt")
+        backprobe(data['words']).to_csv(f"results/backprobe_{fragment_type}.csv",
+                                        index=False,
+                                        header=True)
+        
+def backprobe(words):
+    rows = []
+    embedding = frameit(scale(torch.stack([word.embedding for word in words]).cpu().numpy()),
+                        prefix="emb")
+    embedding_init = frameit(scale(torch.stack([word.embedding_init for word in words]).cpu().numpy()),
+                             prefix="emb_init")
+    glove = frameit(torch.stack([word.glove for word in words]).cpu().numpy(),
+                    prefix="glove")
+    speaker = pd.get_dummies([word.speaker for word in words], prefix="speaker")
+    episode = pd.get_dummies([word.episode for word in words], prefix="episode")
+    duration = pd.DataFrame(dict(duration=[word.duration for word in words]))
+
+    train_ix = np.random.choice(embedding.index, int(len(embedding.index)/2), replace=False)
+    val_ix   = embedding.index[~embedding.index.isin(train_ix)]
+
+    predictors = dict(glove=glove, speaker=speaker, episode=episode, duration=duration)
+    for outname, y in [('embedding', embedding), ('embedding_init', embedding_init)]:
+        X = pd.concat(list(predictors.values()), axis=1)
+        full = ridge(X.loc[train_ix], y.loc[train_ix], X.loc[val_ix], y.loc[val_ix])
+        rows.append(dict(var='NONE', outcome=outname, **full, rer=rer(full['mse'], full['mse'])))
+        for name, X in ablate(predictors):
+            red = ridge(X.loc[train_ix], y.loc[train_ix], X.loc[val_ix], y.loc[val_ix])
+            rows.append(dict(var=name,
+                             outcome=outname,
+                             **red,
+                             rer=rer(red['mse'], full['mse'])))
+    return pd.DataFrame.from_records(rows)
+        
+def ridge(X, y, X_val, y_val):
+    from sklearn.pipeline import make_pipeline
+    from sklearn.metrics import mean_squared_error, r2_score
+    model = make_pipeline(StandardScaler(),
+                          RidgeCV(alphas=[ 10**n for n in range(-3, 11) ],
+                                  fit_intercept=True, cv=None, scoring='r2',
+                                  alpha_per_target=False
+                          ))
+    model.fit(X, y)
+    pred = model.predict(X_val)
+    return dict(mse=mean_squared_error(y_val, pred),
+                r2=r2_score(y_val, pred),
+                alpha=model.steps[-1][1].alpha_,
+                best_cv=model.steps[-1][1].best_score_)
+                                    
+    
+        
+
+def ablate(variables):
+    """Yield dataframe concatenating all variables, except for one each time."""
+    for this in variables:
+        yield this, pd.concat([ var for name, var in variables.items() if name != this ], axis=1) 
+
+        
 def main():
     # Load and process data
     
