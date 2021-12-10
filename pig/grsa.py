@@ -10,8 +10,10 @@ import os
 import os.path
 import torch
 import torch.nn
+import pig.evaluation
 
-CHECKPOINT_PATH = "lightning_logs/version_43/checkpoints/epoch=62-step=10898.ckpt"
+VERSION=43
+CHECKPOINT_PATH = f"lightning_logs/version_{VERSION}/"
 
 def speakerize(data):
     for part in data['narrator_splits']:
@@ -72,8 +74,9 @@ class Word:
     speaker: str
     episode: int = None
     audio: m.AudioFileClip = None
-    embedding: torch.tensor = None
-    embedding_init: torch.tensor = None
+    embedding_0: torch.tensor = None
+    embedding_1: torch.tensor = None
+    embedding_2: torch.tensor = None
     glove: torch.Tensor = None
 
     
@@ -123,34 +126,42 @@ def pairwise(fragment_type='dialog'):
     from pig.data import audioclip_loader
     from pig.util import cosine_matrix
     from torchtext.vocab import GloVe
+    from copy import deepcopy
     cos = torch.nn.CosineSimilarity(dim=0, eps=1e-6)
     audio_paths = glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.wav")
     anno_paths  = [ meta(path) for path in audio_paths ]
 
     word_data = WordData(audio_paths, anno_paths, min_duration=0.1)
     
-    net = PeppaPig.load_from_checkpoint(CHECKPOINT_PATH)
-    net_init = PeppaPig(net.config)
-    net.eval()
-    net.cuda()
-    net_init.eval()
-    net_init.cuda()
+    net_2, net_path = pig.evaluation.load_best_model(CHECKPOINT_PATH)
+    net_1 = PeppaPig(net_2.config)
+    config_0 = deepcopy(net_2.config)
+    config_0['video']['pretrained'] = False
+    config_0['audio']['pretrained'] = False
+    net_0 = PeppaPig(config_0)
+    net_2.eval(); net_2.cuda()
+    net_1.eval(); net_1.cuda()
+    net_0.eval(); net_0.cuda()
     with torch.no_grad():
         loader = audioclip_loader(word.audio for word in word_data.words(read_audio=True))
-        emb, emb_init = zip(*[ (net.encode_audio(batch.to(net.device)).squeeze(dim=1),
-                                net_init.encode_audio(batch.to(net_init.device)).squeeze(dim=1))
+        emb_0, emb_1, emb_2 = zip(*[ (net_0.encode_audio(batch.to(net_0.device)).squeeze(dim=1),
+                                      net_1.encode_audio(batch.to(net_1.device)).squeeze(dim=1),
+                                      net_2.encode_audio(batch.to(net_1.device)).squeeze(dim=1))
                                for batch in loader ])
-    emb = torch.cat(emb)
-    emb_init = torch.cat(emb_init)
-    sim = cosine_matrix(emb, emb).cpu()
-    sim_init = cosine_matrix(emb_init, emb_init).cpu()
-    logging.info(f"Computed similarities: {sim.shape}")
+    emb_0 = torch.cat(emb_0)
+    emb_1 = torch.cat(emb_1)
+    emb_2 = torch.cat(emb_2)
+    sim_0 = cosine_matrix(emb_0, emb_0).cpu()
+    sim_1 = cosine_matrix(emb_1, emb_1).cpu()
+    sim_2 = cosine_matrix(emb_2, emb_2).cpu()
+    logging.info(f"Computed similarities: {sim_2.shape}")
     words = [ word for word in word_data.words(read_audio=False,
                                                glove=GloVe(name='840B', dim=300)  ) ]
     for i,word in enumerate(words):
-        word.embedding = emb[i]
-        word.embedding_init = emb_init[i]
-    torch.save(dict(model_config=net.config, words=words), f"data/out/words_trained_{fragment_type}.pt")
+        word.embedding_0 = emb_0[i]
+        word.embedding_1 = emb_1[i]
+        word.embedding_2 = emb_2[i]
+    torch.save(dict(path=net_path, version=VERSION, words=words), f"data/out/words_{VERSION}_{fragment_type}.pt")
     for i, word1 in enumerate(words):
         logging.info(f"Processing word {i}")
         for j, word2 in enumerate(words):
@@ -172,8 +183,9 @@ def pairwise(fragment_type='dialog'):
                            sameepisode=word1.episode==word2.episode,
                            dialog=fragment_type=='dialog',
                            durationdiff=abs(word1.duration-word2.duration),
-                           similarity=sim[i, j].item(),
-                           similarity_init=sim_init[i, j].item())
+                           sim_0=sim_0[i, j].item(),
+                           sim_1=sim_1[i, j].item(),
+                           sim_2=sim_2[i, j].item())
 
 
 def word_type():
@@ -187,7 +199,7 @@ def word_type():
         for typ, toks in grouped(data['words'], key=lambda w: w.spelling):
             toks = list(toks)
             if toks[0].glove.sum() != 0.0:
-                embedding.append(torch.stack([ tok.embedding for tok in toks]).mean(dim=0))
+                embedding.append(torch.stack([ tok.embedding_2 for tok in toks]).mean(dim=0))
                 glove.append(toks[0].glove)
         embedding = torch.stack(embedding)
         glove = torch.stack(glove)

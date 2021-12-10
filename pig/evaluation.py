@@ -100,7 +100,7 @@ def format():
                       float_format="%.3f")
                                 
 
-VERSIONS = [43, 44, 45]
+VERSIONS = [48]
 
 def main(gpu=0):
     logging.getLogger().setLevel(logging.INFO)
