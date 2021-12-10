@@ -121,14 +121,14 @@ def ridge(X, y, X_val, y_val):
     from sklearn.metrics import mean_squared_error, r2_score
     model = make_pipeline(StandardScaler(),
                           RidgeCV(alphas=[ 10**n for n in range(-3, 11) ],
-                                  fit_intercept=True, cv=None, scoring='r2',
+                                  fit_intercept=True, cv=None, scoring='neg_mean_squared_error',
                                   alpha_per_target=False
                           ))
     model.fit(X, y)
     pred = model.predict(X_val)
     return dict(mse=mean_squared_error(y_val, pred),
                 alpha=model.steps[-1][1].alpha_,
-                best_cv=model.steps[-1][1].best_score_)
+                best_cv=-model.steps[-1][1].best_score_)
 
 def ablate(variables):
     """Yield dataframe concatenating all variables, except for one each time."""
