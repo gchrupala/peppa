@@ -81,6 +81,13 @@ def create_result_plots(args):
 
         words_enough_data = [w for w, occ in results_data_words.groupby("word").size().items() if occ > args.min_samples]
         results_data_words = results_data_words[results_data_words.word.isin(words_enough_data)]
+
+        plt.figure()
+        results_data_words.groupby("word").size().plot.bar()
+        plt.title(f"Number of samples: {pos}")
+        plt.xticks(rotation=75)
+        plt.savefig(os.path.join(results_plots_dir, f"num_samples_{pos}_word"), dpi=300)
+
         plt.figure()
         sns.barplot(data=results_data_words, x="word", y="result")
         plt.title(f"{pos}")
@@ -93,10 +100,31 @@ def create_result_plots(args):
     results_data_all["clipDuration"] = results_data_all["clipDuration"].round(1)
 
     plt.figure()
+    results_data_all.groupby("clipDuration").size().plot.bar()
+    plt.title(f"Number of samples: per duration")
+    plt.xticks(rotation=75)
+    plt.savefig(os.path.join(results_plots_dir, f"num_samples_vs_duration"), dpi=300)
+
+    plt.figure()
+    results_data_all["num_tokens"] = results_data_all.tokenized.apply(len)
+    results_data_all.groupby("num_tokens").size().plot.bar()
+    plt.title(f"Number of samples: per number of tokens")
+    plt.xticks(rotation=75)
+    plt.savefig(os.path.join(results_plots_dir, f"num_samples_vs_num_tokens"), dpi=300)
+
+    plt.figure()
     sns.barplot(data=results_data_all, x="clipDuration", y="result")
     plt.axhline(y=0.5, color="black", linestyle='--')
+    plt.title(f"Accuracy: per duration")
     plt.xticks(rotation=75)
     plt.savefig(os.path.join(results_plots_dir, f"results_clip_duration"), dpi=300)
+
+    plt.figure()
+    sns.barplot(data=results_data_all, x="num_tokens", y="result")
+    plt.axhline(y=0.5, color="black", linestyle='--')
+    plt.title(f"Accuracy: per number of tokens")
+    plt.xticks(rotation=75)
+    plt.savefig(os.path.join(results_plots_dir, f"results_num_tokens"), dpi=300)
 
     plt.show()
 
