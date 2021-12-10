@@ -76,20 +76,22 @@ def backprobes():
 def backprobe(words):
     rows = []
     embedding_2 = frameit(scale(torch.stack([word.embedding_2 for word in words]).cpu().numpy()),
-                        prefix="emb")
+                          prefix="emb_2")
     embedding_1 = frameit(scale(torch.stack([word.embedding_1 for word in words]).cpu().numpy()),
-                             prefix="emb_init")
+                          prefix="emb_1")
+    embedding_0 = frameit(scale(torch.stack([word.embedding_0 for word in words]).cpu().numpy()),
+                          prefix="emb_0")
     glove = frameit(torch.stack([word.glove for word in words]).cpu().numpy(),
                     prefix="glove")
     speaker = pd.get_dummies([word.speaker for word in words], prefix="speaker")
     episode = pd.get_dummies([word.episode for word in words], prefix="episode")
     duration = pd.DataFrame(dict(duration=[word.duration for word in words]))
 
-    train_ix = np.random.choice(embedding.index, int(len(embedding.index)/2), replace=False)
-    val_ix   = embedding.index[~embedding.index.isin(train_ix)]
-
+    train_ix = np.random.choice(embedding_2.index, int(len(embedding_2.index)/2), replace=False)
+    val_ix   = embedding_2.index[~embedding_2.index.isin(train_ix)]
+    
     predictors = dict(glove=glove, speaker=speaker, episode=episode, duration=duration)
-    for outname, y in [('embedding_2', embedding), ('embedding_1', embedding_1)]:
+    for outname, y in [('embedding_2', embedding_2), ('embedding_1', embedding_1), ('embedding_0', embedding_0)]:
         X = pd.concat(list(predictors.values()), axis=1)
         full = ridge(X.loc[train_ix], y.loc[train_ix], X.loc[val_ix], y.loc[val_ix])
         rows.append(dict(var='NONE', outcome=outname, **full, rer=rer(full['mse'], full['mse'])))
@@ -101,6 +103,19 @@ def backprobe(words):
                              rer=rer(red['mse'], full['mse'])))
     return pd.DataFrame.from_records(rows)
         
+def ridge_cv(X, y):
+    from sklearn.pipeline import make_pipeline
+    from sklearn.metrics import mean_squared_error, r2_score
+    model = make_pipeline(StandardScaler(),
+                          RidgeCV(alphas=[ 10**n for n in range(-3, 11) ],
+                                  fit_intercept=True, cv=None, scoring='neg_mean_squared_error',
+                                  alpha_per_target=False
+                          ))
+    model.fit(X, y)
+    return dict(mse= -model.steps[-1][1].best_score_,
+                alpha=model.steps[-1][1].alpha_)
+
+
 def ridge(X, y, X_val, y_val):
     from sklearn.pipeline import make_pipeline
     from sklearn.metrics import mean_squared_error, r2_score
@@ -112,12 +127,8 @@ def ridge(X, y, X_val, y_val):
     model.fit(X, y)
     pred = model.predict(X_val)
     return dict(mse=mean_squared_error(y_val, pred),
-                r2=r2_score(y_val, pred),
                 alpha=model.steps[-1][1].alpha_,
                 best_cv=model.steps[-1][1].best_score_)
-                                    
-    
-        
 
 def ablate(variables):
     """Yield dataframe concatenating all variables, except for one each time."""
