@@ -78,7 +78,7 @@ def triplet_score(fragment_type, model, trainer):
 def pretraining(row):
     return { (True, True): "AV",
              (True, False): "A",
-             (True, False): "V",
+             (False, True): "V",
              (False, False): "None"}[row['audio_pretrained'],
                                      row['video_pretrained']]
 
@@ -101,7 +101,7 @@ def format():
                       float_format="%.3f")
                                 
 
-VERSIONS = [43, 44, 45]
+VERSIONS = [48]
 
 def main(gpu=0):
     logging.getLogger().setLevel(logging.INFO)
