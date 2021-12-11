@@ -12,6 +12,8 @@ from torch.utils.data import DataLoader
 import pandas as pd
 import numpy as np
 import seaborn as sns
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 from pig.targeted_triplets import PeppaTargetedTripletDataset
