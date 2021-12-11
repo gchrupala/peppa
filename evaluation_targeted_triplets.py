@@ -143,7 +143,7 @@ if __name__ == "__main__":
     args = get_args()
 
     rows = []
-    for version in [args.versions]:
+    for version in args.versions:
         logging.info(f"Evaluating version {version}")
         net, path = load_best_model(f"lightning_logs/version_{version}/")
 
