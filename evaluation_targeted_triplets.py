@@ -31,7 +31,7 @@ def score(model):
             per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
             yield dict(fragment_type=fragment_type,
                        pos=pos,
-                       targeted_triplet_accs=np.mean(per_sample_results)
+                       targeted_triplet_acc=np.mean(per_sample_results)
                        ), per_sample_results
         
 
