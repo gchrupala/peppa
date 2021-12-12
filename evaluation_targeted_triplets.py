@@ -78,18 +78,24 @@ def create_result_plots(results_dir, version, args):
         results_data_words_2["word"] = results_data_words_2["distractor_word"]
         results_data_words = pd.concat([results_data_words_1, results_data_words_2], ignore_index=True)
 
-        words_enough_data = [w for w, occ in results_data_words.groupby("word").size().items() if occ > args.min_samples]
-        results_data_words = results_data_words[results_data_words.word.isin(words_enough_data)]
-
-        plt.figure()
+        plt.figure(figsize=(15, 8))
         results_data_words.groupby("word").size().plot.bar()
-        plt.title(f"Version: | {version} Number of samples: {pos}")
+        plt.title(f"Version: {version} | Number of samples: {pos}")
         plt.xticks(rotation=75)
+        plt.axhline(y=args.min_samples, color="black", linestyle='--')
         plt.savefig(os.path.join(results_dir, f"num_samples_{pos}_word"), dpi=300)
 
-        plt.figure()
+        words_enough_data = [w for w, occ in results_data_words.groupby("word").size().items() if
+                             occ > args.min_samples]
+        if len(words_enough_data) == 0:
+            print(f"No words with enough samples (>{args.min_samples}) found for POS: {pos}")
+            continue
+
+        results_data_words = results_data_words[results_data_words.word.isin(words_enough_data)]
+
+        plt.figure(figsize=(15, 8))
         sns.barplot(data=results_data_words, x="word", y="result")
-        plt.title(f"Version: | {version} {pos}")
+        plt.title(f"Version: {version} | {pos}")
         plt.xticks(rotation=75)
         plt.axhline(y=0.5, color="black", linestyle='--')
         plt.savefig(os.path.join(results_dir, f"results_{pos}_word"), dpi=300)
@@ -130,7 +136,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--versions", type=str, nargs="+")
 
-    parser.add_argument("--min-samples", type=int, default=10)
+    parser.add_argument("--min-samples", type=int, default=100)
 
     return parser.parse_args()
 
@@ -172,5 +178,3 @@ if __name__ == "__main__":
     scores.to_csv("results/scores_targeted_triplets.csv", index=False, header=True)
 
     format_results_to_tex()
-
-    plt.show()
