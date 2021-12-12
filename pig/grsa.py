@@ -15,6 +15,12 @@ import pig.evaluation
 VERSION=43
 CHECKPOINT_PATH = f"lightning_logs/version_{VERSION}/"
 
+def as_yaml(episodes):
+    for episode in episodes:
+        data = json.load(open(f"data/in/peppa/episodes/ep_{episode}.json"))
+        speakerize(data)
+        yaml.dump(data, open(f"data/out/speaker_id/ep_{episode}.yaml", "w"))
+
 def speakerize(data):
     for part in data['narrator_splits']:
         for sub in part['context']['subtitles']:
