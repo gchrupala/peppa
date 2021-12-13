@@ -10,19 +10,26 @@ from pig.grsa import VERSION
 def sumcode(col):
     return (col * 2 - 1).astype(int)
 
-def massage(dat, scaleall=False):
-    keep = ['samespeaker', 'sameepisode', 'sametype', 'glovesim', 'distance',
+def massage(dat, scaleall=False, keep_distance=True):
+    keep = ['samespeaker', 'sameepisode', 'sametype', 'semsim',
             'durationdiff', 'sim_0', 'sim_1', 'sim_2']
-    return dat[keep].dropna().query("glovesim != 0.0").assign(
+    if keep_distance:
+        keep += ['distance']
+
+        
+    data = dat[keep].dropna().query("semsim != 0.0").assign(
         samespeaker  = lambda x: scale(x.samespeaker) if scaleall else sumcode(x.samespeaker),
         sameepisode = lambda x: scale(x.sameepisode) if scaleall else sumcode(x.sameepisode),
         sametype     = lambda x: scale(x.sametype) if scaleall else sumcode(x.sametype),
-        glovesim     = lambda x: scale(x.glovesim),
-        distance     = lambda x: scale(x.distance),
+        semsim     = lambda x: scale(x.semsim),
         durationdiff = lambda x: scale(x.durationdiff),
         sim_0 = lambda x: scale(x.sim_0),
         sim_1 = lambda x: scale(x.sim_1),
         sim_2 = lambda x: scale(x.sim_2))
+    if keep_distance:
+        data = data.assign(distance     = lambda x: scale(x.distance))
+    return data
+
 
 
 def rer(red, full):
@@ -47,7 +54,7 @@ def partial_r2(model, data):
     return pd.DataFrame(index=['Intercept']+predictors, data=dict(partial_r2=r2))
         
 
-def plot_coef(fit, fragment_type):
+def plot_coef(fit, fragment_type, multiword):
     data = fit.reset_index().rename(
         columns={'index': 'Variable', 'Coef.': 'Coefficient', '[0.025': 'Lower', '0.975]': 'Upper'})
     g = ggplot(data, aes('Variable', 'Coefficient')) + \
@@ -55,11 +62,7 @@ def plot_coef(fit, fragment_type):
         geom_errorbar(aes(color='Training', ymin='Lower', ymax='Upper', lwd=1, width=0.25)) + \
         geom_point(aes(color='Training')) + \
         coord_flip() 
-    ggsave(g, f"results/grsa_{fragment_type}_coef.pdf")
-
-def load(path):
-    rawdata = pd.read_csv(path)
-    return massage(rawdata_d)
+    ggsave(g, f"results/grsa_{fragment_type}_{multiword}_coef.pdf")
 
 
 def frameit(matrix, prefix="dim"):
@@ -81,8 +84,8 @@ def backprobe(words):
                           prefix="emb_1")
     embedding_0 = frameit(scale(torch.stack([word.embedding_0 for word in words]).cpu().numpy()),
                           prefix="emb_0")
-    glove = frameit(torch.stack([word.glove for word in words]).cpu().numpy(),
-                    prefix="glove")
+    semsim = frameit(torch.stack([word.semsim for word in words]).cpu().numpy(),
+                    prefix="semsim")
     speaker = pd.get_dummies([word.speaker for word in words], prefix="speaker")
     episode = pd.get_dummies([word.episode for word in words], prefix="episode")
     duration = pd.DataFrame(dict(duration=[word.duration for word in words]))
@@ -90,7 +93,7 @@ def backprobe(words):
     train_ix = np.random.choice(embedding_2.index, int(len(embedding_2.index)/2), replace=False)
     val_ix   = embedding_2.index[~embedding_2.index.isin(train_ix)]
     
-    predictors = dict(glove=glove, speaker=speaker, episode=episode, duration=duration)
+    predictors = dict(semsim=semsim, speaker=speaker, episode=episode, duration=duration)
     for outname, y in [('embedding_2', embedding_2), ('embedding_1', embedding_1), ('embedding_0', embedding_0)]:
         X = pd.concat(list(predictors.values()), axis=1)
         full = ridge(X.loc[train_ix], y.loc[train_ix], X.loc[val_ix], y.loc[val_ix])
@@ -140,39 +143,42 @@ def main():
     # Load and process data
 
     training_mode = {0: "Untrained", 1: "Pre-trained", 2: "Fully-trained"}
+
+    for multiword in ['multiword', 'word']:
+        keep_distance = multiword == 'word'
+        rawdata_d = pd.read_csv(f'data/out/pairwise_similarities_{multiword}_dialog.csv')
+        data_d = massage(rawdata_d, scaleall=True, keep_distance=keep_distance)
+        data_d.corr().to_csv(f"results/rsa_dialog_{multiword}_correlations.csv", index=True, header=True)
+        data_d.corr().to_latex(float_format="%.2f", buf=f"results/rsa_dialog_{multiword}_correlations.tex")
     
-    rawdata_d = pd.read_csv('data/out/pairwise_similarities_dialog.csv')
-    data_d = massage(rawdata_d, scaleall=True)
-    data_d.corr().to_csv("results/rsa_dialog_correlations.csv", index=True, header=True)
-    data_d.corr().to_latex(float_format="%.2f", buf="results/rsa_dialog_correlations.tex")
+        rawdata_n = pd.read_csv(f'data/out/pairwise_similarities_{multiword}_narration.csv')
+        data_n = massage(rawdata_n, scaleall=True, keep_distance=keep_distance)
+        data_ncor = data_n.drop("samespeaker", axis=1).corr()
+        data_ncor.to_csv(f"results/rsa_narration_{multiword}_correlations.csv", index=True, header=True)
+        data_ncor.to_latex(float_format="%.2f", buf=f"results/rsa_narration_{multiword}_correlations.tex")
+        
+        table_d = []
+        distance = "+ distance" if keep_distance else ""
+        for training in [0, 1, 2]:
+            m_d = api.ols(formula = f'sim_{training} ~ semsim {distance} + durationdiff + sametype + samespeaker + sameepisode', data=data_d)
+            table = m_d.fit().summary2().tables[1]
+            table['Training'] = training_mode[training]
+            table_d.append(table)
+        table_d = pd.concat(table_d, axis=0)
+        table_d.to_csv(f"results/{multiword}_coef_d.csv", index=True, header=True)
     
-    rawdata_n = pd.read_csv('data/out/pairwise_similarities_narration.csv')
-    data_n = massage(rawdata_n, scaleall=True)
-    data_ncor = data_n.drop("samespeaker", axis=1).corr()
-    data_ncor.to_csv("results/rsa_narration_correlations.csv", index=True, header=True)
-    data_ncor.to_latex(float_format="%.2f", buf="results/rsa_narration_correlations.tex")
-    
-    table_d = []
-    for training in [0, 1, 2]:
-        m_d = api.ols(formula = f'sim_{training} ~ glovesim + distance + durationdiff + sametype + samespeaker + sameepisode', data=data_d)
-        table = m_d.fit().summary2().tables[1]
-        table['Training'] = training_mode[training]
-        table_d.append(table)
-    table_d = pd.concat(table_d, axis=0)
-    table_d.to_csv("results/coef_d.csv", index=True, header=True)
-    
-    plot_coef(table_d, "dialog")
+        plot_coef(table_d, "dialog", multiword)
 
 
-    table_n = []
-    for training in [0, 1, 2]:
-        m_n = api.ols(formula = f'sim_{training} ~ glovesim + distance + durationdiff + sametype + sameepisode', data=data_n)
-        table = m_n.fit().summary2().tables[1]
-        table['Training'] = training_mode[training]
-        table_n.append(table)
-    table_n = pd.concat(table_n, axis=0)
-    table_n.to_csv("results/coef_n.csv", index=True, header=True)
-    plot_coef(table_n, "narration")
+        table_n = []
+        for training in [0, 1, 2]:
+            m_n = api.ols(formula = f'sim_{training} ~ semsim {distance} + durationdiff + sametype + sameepisode', data=data_n)
+            table = m_n.fit().summary2().tables[1]
+            table['Training'] = training_mode[training]
+            table_n.append(table)
+        table_n = pd.concat(table_n, axis=0)
+        table_n.to_csv(f"results/{multiword}_coef_n.csv", index=True, header=True)
+        plot_coef(table_n, "narration", multiword)
     
     
 
