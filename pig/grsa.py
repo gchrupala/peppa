@@ -194,13 +194,18 @@ def pairwise(fragment_type='dialog', multiword=False):
     sim_1 = cosine_matrix(emb_1, emb_1).cpu()
     sim_2 = cosine_matrix(emb_2, emb_2).cpu()
     logging.info(f"Computed similarities: {sim_2.shape}")
+    glove_model = GloVe(name='840B', dim=300)
     if multiword:
         encoder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-        utts = [ utt for utt in data.utterances(read_audio=False,
-                                                embed=lambda u: encoder.encode([u], convert_to_tensor=True)[0]) ]
+        def avg_glove(s):
+            return torch.stack([ glove_model[word] for word in s.split() ]).mean(dim=0)
+        
+        #utts = [ utt for utt in data.utterances(read_audio=False,
+        #                                        embed=lambda u: encoder.encode([u], convert_to_tensor=True)[0]) ]
+        utts = [ utt for utt in data.utterances(read_audio=False, embed=avg_glove) ]
     else:
         utts = [ utt for utt in data.utterances(read_audio=False,
-                                                embed=GloVe(name='840B', dim=300)  ) ]
+                                                embed=glove_model ) ]
     for i, utt in enumerate(utts):
         utt.embedding_0 = emb_0[i]
         utt.embedding_1 = emb_1[i]
