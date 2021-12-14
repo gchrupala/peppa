@@ -1,3 +1,9 @@
 fragment_type,triplet_acc,recall_at_10,version,path,audio_pretrained,video_pretrained,audio_pooling,video_pooling
 dialog,0.8564356565475464,0.17283950746059418,48,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_48/checkpoints/epoch=36-step=6400.ckpt,True,True,attention,attention
 narration,0.8705234527587891,0.25529542565345764,48,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_48/checkpoints/epoch=36-step=6400.ckpt,True,True,attention,attention
+dialog,0.7376237511634827,0.11659807711839676,50,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_50/checkpoints/epoch=56-step=9860.ckpt,True,False,attention,attention
+narration,0.8402203917503357,0.18506132066249847,50,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_50/checkpoints/epoch=56-step=9860.ckpt,True,False,attention,attention
+dialog,0.7277227640151978,0.07681755721569061,51,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_51/checkpoints/epoch=61-step=11469.ckpt,False,True,attention,attention
+narration,0.7878788113594055,0.10925306379795074,51,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_51/checkpoints/epoch=61-step=11469.ckpt,False,True,attention,attention
+dialog,0.660891056060791,0.02743484266102314,52,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_52/checkpoints/epoch=60-step=11284.ckpt,False,False,attention,attention
+narration,0.7300275564193726,0.07469341903924942,52,/roaming/gchrupal/verdigris/peppa/lightning_logs/version_52/checkpoints/epoch=60-step=11284.ckpt,False,False,attention,attention
