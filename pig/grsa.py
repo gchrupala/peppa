@@ -81,11 +81,10 @@ class Utt:
     phonemes: str = None
     episode: int = None
     audio: m.AudioFileClip = None
-    embedding_0: torch.tensor = None
     embedding_1: torch.tensor = None
     embedding_2: torch.tensor = None
     embedding_t: torch.tensor = None
-    multiword: bool = False
+
 
 
 
@@ -95,19 +94,15 @@ class UttData():
     def __init__(self, audio_paths, alignment_paths, multiword=False):
         self.items = list(zip(audio_paths, alignment_paths))
         self.multiword = multiword
-        if multiword:
-            self.min_duration = 0.5
-        else:
-            self.min_duration = 0.1
+        self.min_duration = 0.0
 
     def valid_word_alignment(self, word):
         return  word['case'] == 'success' \
-            and word['alignedWord'] != '<unk>' \
-            and word['end']-word['start'] >= self.min_duration \
-            and 'sil' not in [ p['phone'] for p in word['phones'] ]
+            and word['end']-word['start'] >= self.min_duration 
 
     def valid_multiword_alignment(self, words):
-        return np.all([ word['case'] == 'success' for word in words]) and words[-1]['end']-words[0]['start'] >= self.min_duration
+        return np.all([ word['case'] == 'success' for word in words]) \
+              and words[-1]['end']-words[0]['start'] >= self.min_duration
     
     def words(self, read_audio=True,  embed=None):
         for audio_path, alignment_path in self.items:
@@ -117,17 +112,16 @@ class UttData():
             for word in meta['words']:
                 if self.valid_word_alignment(word):
                     if read_audio:
-                        logging.info(f"Extracting <{word['alignedWord']}> from {audio_path}")
+                        logging.info(f"Extracting <{word['word']}> from {audio_path}")
                         sub = audio.subclip(word['start'], word['end'])
                     else:
                         sub = None
-                    yield Utt(spelling= word['alignedWord'],
-                               phonemes= phonemes(word['phones']),
-                               duration= word['end']-word['start'],
-                               speaker= meta['speaker'],
-                               episode= episode_id(audio_path),
-                               audio= sub,
-                               embedding_t= embed[word['alignedWord']] \
+                    yield Utt(spelling= word['word'],
+                              duration= word['end']-word['start'],
+                              speaker= meta['speaker'],
+                              episode= episode_id(audio_path),
+                              audio= sub,
+                              embedding_t= embed[word['word']] \
                                  if embed is not None else None)
                                        
     def multiwords(self, read_audio=True,  embed=None):
@@ -174,23 +168,15 @@ def pairwise(fragment_type='dialog', multiword=False):
         
     net_2, net_path = pig.evaluation.load_best_model(CHECKPOINT_PATH)
     net_1 = PeppaPig(net_2.config)
-    config_0 = deepcopy(net_2.config)
-    config_0['video']['pretrained'] = False
-    config_0['audio']['pretrained'] = False
-    net_0 = PeppaPig(config_0)
     net_2.eval(); net_2.cuda()
     net_1.eval(); net_1.cuda()
-    net_0.eval(); net_0.cuda()
     with torch.no_grad():
         loader = audioclip_loader(utt.audio for utt in data.utterances(read_audio=True))
-        emb_0, emb_1, emb_2 = zip(*[ (net_0.encode_audio(batch.to(net_0.device)).squeeze(dim=1),
-                                      net_1.encode_audio(batch.to(net_1.device)).squeeze(dim=1),
-                                      net_2.encode_audio(batch.to(net_1.device)).squeeze(dim=1))
-                               for batch in loader ])
-    emb_0 = torch.cat(emb_0)
+        emb_1, emb_2 = zip(*[ (net_1.encode_audio(batch.to(net_1.device)).squeeze(dim=1),
+                               net_2.encode_audio(batch.to(net_1.device)).squeeze(dim=1))
+                              for batch in loader ])
     emb_1 = torch.cat(emb_1)
     emb_2 = torch.cat(emb_2)
-    sim_0 = cosine_matrix(emb_0, emb_0).cpu()
     sim_1 = cosine_matrix(emb_1, emb_1).cpu()
     sim_2 = cosine_matrix(emb_2, emb_2).cpu()
     logging.info(f"Computed similarities: {sim_2.shape}")
@@ -198,7 +184,7 @@ def pairwise(fragment_type='dialog', multiword=False):
     if multiword:
         encoder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
         def avg_glove(s):
-            return torch.stack([ glove_model[word] for word in s.split() ]).mean(dim=0)
+            return torch.stack([ glove_model[word] for word in s.split() ]).sum(dim=0)
         
         #utts = [ utt for utt in data.utterances(read_audio=False,
         #                                        embed=lambda u: encoder.encode([u], convert_to_tensor=True)[0]) ]
@@ -207,7 +193,6 @@ def pairwise(fragment_type='dialog', multiword=False):
         utts = [ utt for utt in data.utterances(read_audio=False,
                                                 embed=glove_model ) ]
     for i, utt in enumerate(utts):
-        utt.embedding_0 = emb_0[i]
         utt.embedding_1 = emb_1[i]
         utt.embedding_2 = emb_2[i]
     torch.save(dict(path=net_path, version=VERSION, utt=utts), f"data/out/utt_{'multi' if multiword else ''}word_{VERSION}_{fragment_type}.pt")
@@ -233,7 +218,6 @@ def pairwise(fragment_type='dialog', multiword=False):
                            sameepisode=utt1.episode==utt2.episode,
                            dialog=fragment_type=='dialog',
                            durationdiff=abs(utt1.duration-utt2.duration),
-                           sim_0=sim_0[i, j].item(),
                            sim_1=sim_1[i, j].item(),
                            sim_2=sim_2[i, j].item())
 

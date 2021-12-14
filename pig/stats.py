@@ -10,24 +10,20 @@ from pig.grsa import VERSION
 def sumcode(col):
     return (col * 2 - 1).astype(int)
 
-def massage(dat, scaleall=False, keep_distance=True):
+def massage(dat, scaleall=False):
+    dat['durationsum'] = dat['duration1'] + dat['duration2']
     keep = ['samespeaker', 'sameepisode', 'sametype', 'semsim',
-            'durationdiff', 'sim_0', 'sim_1', 'sim_2']
-    if keep_distance:
-        keep += ['distance']
-
-        
+            'durationdiff', 'durationsum', 'sim_1', 'sim_2']
+    
     data = dat[keep].dropna().query("semsim != 0.0").assign(
         samespeaker  = lambda x: scale(x.samespeaker) if scaleall else sumcode(x.samespeaker),
         sameepisode = lambda x: scale(x.sameepisode) if scaleall else sumcode(x.sameepisode),
         sametype     = lambda x: scale(x.sametype) if scaleall else sumcode(x.sametype),
         semsim     = lambda x: scale(x.semsim),
         durationdiff = lambda x: scale(x.durationdiff),
-        sim_0 = lambda x: scale(x.sim_0),
+        durationsum  = lambda x: scale(x.durationsum),
         sim_1 = lambda x: scale(x.sim_1),
         sim_2 = lambda x: scale(x.sim_2))
-    if keep_distance:
-        data = data.assign(distance     = lambda x: scale(x.distance))
     return data
 
 
@@ -145,22 +141,20 @@ def main():
     training_mode = {0: "Untrained", 1: "Pre-trained", 2: "Fully-trained"}
 
     for multiword in ['multiword', 'word']:
-        keep_distance = multiword == 'word'
         rawdata_d = pd.read_csv(f'data/out/pairwise_similarities_{multiword}_dialog.csv')
-        data_d = massage(rawdata_d, scaleall=True, keep_distance=keep_distance)
+        data_d = massage(rawdata_d, scaleall=True)
         data_d.corr().to_csv(f"results/rsa_dialog_{multiword}_correlations.csv", index=True, header=True)
         data_d.corr().to_latex(float_format="%.2f", buf=f"results/rsa_dialog_{multiword}_correlations.tex")
     
         rawdata_n = pd.read_csv(f'data/out/pairwise_similarities_{multiword}_narration.csv')
-        data_n = massage(rawdata_n, scaleall=True, keep_distance=keep_distance)
+        data_n = massage(rawdata_n, scaleall=True)
         data_ncor = data_n.drop("samespeaker", axis=1).corr()
         data_ncor.to_csv(f"results/rsa_narration_{multiword}_correlations.csv", index=True, header=True)
         data_ncor.to_latex(float_format="%.2f", buf=f"results/rsa_narration_{multiword}_correlations.tex")
         
         table_d = []
-        distance = "+ distance" if keep_distance else ""
-        for training in [0, 1, 2]:
-            m_d = api.ols(formula = f'sim_{training} ~ semsim {distance} + durationdiff + sametype + samespeaker + sameepisode', data=data_d)
+        for training in [1, 2]: 
+            m_d = api.ols(formula = f'sim_{training} ~ semsim + durationdiff + durationsum + sametype + samespeaker + sameepisode', data=data_d)
             table = m_d.fit().summary2().tables[1]
             table['Training'] = training_mode[training]
             table_d.append(table)
@@ -171,8 +165,8 @@ def main():
 
 
         table_n = []
-        for training in [0, 1, 2]:
-            m_n = api.ols(formula = f'sim_{training} ~ semsim {distance} + durationdiff + sametype + sameepisode', data=data_n)
+        for training in [1, 2]: 
+            m_n = api.ols(formula = f'sim_{training} ~ semsim + durationdiff + durationsum + sametype + sameepisode', data=data_n)
             table = m_n.fit().summary2().tables[1]
             table['Training'] = training_mode[training]
             table_n.append(table)
