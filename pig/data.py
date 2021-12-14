@@ -305,13 +305,15 @@ class PigData(pl.LightningDataModule):
         self.val_dia   = PeppaPigDataset(force_cache=self.config['force_cache'],
                                          target_size=self.config['target_size'],
                                          split=['val'], fragment_type='dialog',
-                                         duration=3.2)
+                                         duration=3.2,
+                                         jitter=self.config['val']['jitter'])
 
         self.val_narr = PeppaPigDataset(force_cache=self.config['force_cache'],
                                         target_size=self.config['target_size'],
                                         split=['val'],
                                         fragment_type='narration',
-                                        duration=3.2)
+                                        duration=3.2,
+                                        jitter=self.config['val']['jitter'])
             
 
     def train_dataloader(self):

@@ -93,18 +93,34 @@ def extract_realines(target_size=(180, 100)):
     
 def segment(clip, duration=3.2, jitter=False):
     if jitter:
-        length = max(0.2, duration + random.lognormvariate(0.0, 0.5) - 1)
+        yield from segment_jitter(clip, duration=duration)
     else:
-        length = duration
+        start = 0
+        end = start + duration
+        while end <= clip.duration:
+            sub = clip.subclip(start, end)
+            sub.offset = start
+            start = end
+            end   = end + duration
+            yield sub
+
+def segment_jitter(clip, duration=3.2):
+    logging.info(f"Jittering around duration {duration}") 
     start = 0
-    end = start + length
+    end = start + duration
     while end <= clip.duration:
-        if jitter:
-            length = max(0.5, duration + random.lognormvariate(0, 0.5) - 1)
-        else:
-            length = duration
-        sub = clip.subclip(start, end)
-        sub.offset = start
-        start = end
-        end   = end + length
+        size_a = max(0.05, duration + random.normalvariate(0.0, 1.0))
+        size_v = max(0.05, duration + random.normalvariate(0.0, 1.0)) 
+        mid = end - (end - start) / 2
+        start_a = max(0, mid - (size_a/2))
+        end_a   = min(clip.duration, mid + (size_a/2))
+        start_v = max(0, mid - (size_v/2))
+        end_v   = min(clip.duration, mid + (size_v/2))
+        sub_a = clip.audio.subclip(start_a, end_a)
+        sub = clip.subclip(start_v, end_v)
+        sub.audio = sub_a
         yield sub
+        start = end
+        end = end + duration
+
+        
