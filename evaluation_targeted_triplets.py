@@ -94,7 +94,8 @@ def create_result_plots(results_dir, version, args):
         results_data_words = results_data_words[results_data_words.word.isin(words_enough_data)]
 
         plt.figure(figsize=(15, 8))
-        sns.barplot(data=results_data_words, x="word", y="result")
+        order = results_data_words.groupby("word")["result"].agg("mean").sort_values()
+        sns.barplot(data=results_data_words, x="word", y="result", order=order.index)
         plt.title(f"Version: {version} | {pos}")
         plt.xticks(rotation=75)
         plt.axhline(y=0.5, color="black", linestyle='--')
