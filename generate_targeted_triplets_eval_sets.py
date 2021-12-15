@@ -14,25 +14,15 @@ from pig.data import SPLIT_SPEC
 DATA_DIR = "data/out/realign/"
 DATA_EVAL_DIR = "data/eval/"
 
+# Ignore some words that have been mistagged by the POS-tagger:
 WORDS_IGNORE = {
-    "VERB": ["be", "will", "can"],
+    "VERB": [],
     "NOUN": [
-        "mr",
-        "bit",
         "cannot",
-        "time",
-        "dear",
-        "muddy",
         "it's",
-        "oh",
-        "look",
-        "lot",
-        "miss",
-        "hello",
     ],
     "ADJ": [],
 }
-TUPLES_IGNORE = {"VERB": [("love", "like")], "NOUN": [], "ADJ": []}
 
 POS_LEMMATIZER = {"VERB": "v", "NOUN": "n", "ADJ": "a"}
 
@@ -44,6 +34,7 @@ TOKEN_MASK = "<MASK>"
 nltk.download("universal_tagset")
 nltk.download("averaged_perceptron_tagger")
 nltk.download("wordnet")
+
 
 def load_data():
     data_sentences = []
@@ -308,8 +299,6 @@ if __name__ == "__main__":
         ]
         print("Considered words: ", words)
         tuples = list(itertools.combinations(words, 2))
-
-        tuples = [t for t in tuples if t not in TUPLES_IGNORE[pos_name]]
 
         eval_sets = []
         for fragment in ["narration", "dialog"]:
