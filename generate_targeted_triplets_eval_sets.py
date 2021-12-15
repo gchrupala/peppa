@@ -261,7 +261,7 @@ def find_minimal_pairs(tuples, data, lemmatizer, args):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--min-occurences", type=int, default=10, help="Minimum number of occurrences in val data of"
+    parser.add_argument("--min-occurrences", type=int, default=10, help="Minimum number of occurrences in val data of"
                                                                        " a word to be included")
     parser.add_argument("--min-phrase-length", type=int, default=2, help="Minimum number of tokens in a phrase")
     return parser.parse_args()
