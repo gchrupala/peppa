@@ -1,3 +1,4 @@
+import argparse
 import itertools
 import json
 import os
@@ -25,9 +26,6 @@ WORDS_IGNORE = {
 }
 
 POS_LEMMATIZER = {"VERB": "v", "NOUN": "n", "ADJ": "a"}
-
-MIN_OCC = 10
-MIN_PHRASE_LENGTH = 2
 
 TOKEN_MASK = "<MASK>"
 
@@ -100,15 +98,15 @@ def is_sublist(list_1, list_2):
     return True
 
 
-def longest_intersection(tokens_1, tokens_2):
+def longest_intersection(tokens_1, tokens_2, min_phrase_length):
     longest_sublist = []
     mask_index = tokens_1.index(TOKEN_MASK)
     for i in range(len(tokens_1)):
-        for j in range(i + MIN_PHRASE_LENGTH - 1, len(tokens_1)):
+        for j in range(i + min_phrase_length - 1, len(tokens_1)):
             if i - 1 < mask_index < j + 1:
                 sublist = tokens_1[i : j + 1]
                 for k in range(len(tokens_2)):
-                    for l in range(k + MIN_PHRASE_LENGTH - 1, len(tokens_2)):
+                    for l in range(k + min_phrase_length - 1, len(tokens_2)):
                         sublist_2 = tokens_2[k : l + 1]
                         if sublist == sublist_2:
                             if len(sublist) > len(longest_sublist):
@@ -151,7 +149,7 @@ def crop_and_create_example(example, start, end, target_word, distractor_word):
     return example
 
 
-def find_minimal_pairs(tuples, data, lemmatizer):
+def find_minimal_pairs(tuples, data, lemmatizer, args):
     eval_set = []
     id = 0
     for lemma_1, lemma_2 in tqdm(tuples):
@@ -197,7 +195,7 @@ def find_minimal_pairs(tuples, data, lemmatizer):
                         )
                     ]
 
-                    intersection = longest_intersection(s1_masked, s2_masked)
+                    intersection = longest_intersection(s1_masked, s2_masked, args.min_phrase_length)
                     if not intersection:
                         continue
 
@@ -261,7 +259,16 @@ def find_minimal_pairs(tuples, data, lemmatizer):
     return eval_set
 
 
+def get_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--min-occurences", type=int, default=10, help="Minimum number of occurrences in val data of"
+                                                                       " a word to be included")
+    parser.add_argument("--min-phrase-length", type=int, default=2, help="Minimum number of tokens in a phrase")
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
+    args = get_args()
     os.makedirs(DATA_EVAL_DIR, exist_ok=True)
 
     lemmatizer = WordNetLemmatizer()
@@ -295,7 +302,7 @@ if __name__ == "__main__":
         words = [
             w
             for w, occ in counter.items()
-            if occ > MIN_OCC and w not in WORDS_IGNORE[pos_name]
+            if occ > args.min_occurrences and w not in WORDS_IGNORE[pos_name]
         ]
         print("Considered words: ", words)
         tuples = list(itertools.combinations(words, 2))
@@ -307,9 +314,9 @@ if __name__ == "__main__":
                 data_fragment.episode.isin(SPLIT_SPEC[fragment]["val"])
             ]
 
-            eval_set = find_minimal_pairs(tuples, data_fragment_val, lemmatizer)
+            eval_set = find_minimal_pairs(tuples, data_fragment_val, lemmatizer, args)
             eval_set["fragment"] = fragment
             eval_sets.append(eval_set)
 
-            file_name = f"eval_set_{fragment}_{pos_name}.csv"
+            file_name = f"eval_set_{fragment}_{pos_name}_min_phrase_length_{args.min_phrase_length}.csv"
             eval_set.to_csv(os.path.join(DATA_EVAL_DIR, file_name))
