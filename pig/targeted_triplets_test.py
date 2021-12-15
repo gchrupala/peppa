@@ -26,9 +26,9 @@ if __name__ == "__main__":
 
     for i, info in eval_info.iterrows():
         if info["target_word"] == target_word:
-            print(eval_info.iloc[i]["transcript"], end=" | ")
-            print("Target: ", eval_info.iloc[i]["target_word"], end=" | ")
-            print("Distractor: ", eval_info.iloc[i]["distractor_word"])
+            print(info["transcript"], end=" | ")
+            print("Target: ", info["target_word"], end=" | ")
+            print("Distractor: ", info["distractor_word"])
 
             sample = eval_dataset.__getitem__(i)
 
