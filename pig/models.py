@@ -243,6 +243,6 @@ def build_transform(normalization):
         raise ValueError(f"Unsupported normalization type {self.normalization}")
     return Compose([
         pig.transforms.SwapCT(),
-        Normalize(mean=stats.video_mean, std=stats.video_std),    
+        Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True),
         pig.transforms.SwapCT()
     ])
