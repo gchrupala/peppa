@@ -167,7 +167,7 @@ if __name__ == "__main__":
             results_data = pd.read_csv(eval_info_file, index_col="id")
 
             assert len(results_data) == len(per_sample_results), \
-                f"Number of samples in eval set {len(per_sample_results)} doesn't match CSV info from {eval_info_file} ({len(results_data)})"
+                f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from {eval_info_file} ({len(results_data)})"
 
             results_data["result"] = per_sample_results
             os.makedirs(results_dir, exist_ok=True)
