@@ -188,7 +188,7 @@ class PeppaPig(pl.LightningModule):
         A = self.encode_audio(batch.audio)
         loss = self.loss(V, A)
         # Logging to TensorBoard by default
-        self.log("train_loss", loss, prog_bar=True)
+        self.log("train_loss", loss.item(), prog_bar=True)
         return loss
 
     def validation_step(self, batch, batch_idx, dataloader_idx=None):
@@ -197,14 +197,14 @@ class PeppaPig(pl.LightningModule):
             A = self.encode_audio(batch.audio)
             loss = self.loss(V, A)
             # Logging to TensorBoard by default
-            self.log("val_loss", loss, prog_bar=True)
+            self.log("val_loss", loss.item(), prog_bar=True)
             return (V, A)
         elif dataloader_idx == 1:
             V = self.encode_video(batch.video)
             A = self.encode_audio(batch.audio)
             loss = self.loss(V, A)
             # Logging to TensorBoard by default
-            self.log("valnarr_loss", loss, prog_bar=False)
+            self.log("valnarr_loss", loss.item(), prog_bar=False)
             return (V, A)
         else:
             raise ValueError(f"Invalid dataloader index {dataloader_idx}")
@@ -243,6 +243,6 @@ def build_transform(normalization):
         raise ValueError(f"Unsupported normalization type {self.normalization}")
     return Compose([
         pig.transforms.SwapCT(),
-        Normalize(mean=stats.video_mean, std=stats.video_std),    
+        Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True),
         pig.transforms.SwapCT()
     ])
