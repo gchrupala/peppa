@@ -202,11 +202,12 @@ def find_minimal_pairs(tuples, data, lemmatizer, args):
                     start, end = get_start_and_end_of_sublist(s1_masked, intersection)
                     first_word = example_candidate["words"][start]
                     last_word = example_candidate["words"][end]
-                    duration = last_word["end"] - first_word["start"]
                     if (
                         first_word["case"] != "success"
                         or last_word["case"] != "success"
-                        or duration < args.min_phrase_duration
+                        or "end" not in last_word
+                        or "start" not in first_word
+                        or last_word["end"] - first_word["start"] < args.min_phrase_duration
                     ):
                         continue
 
@@ -215,11 +216,12 @@ def find_minimal_pairs(tuples, data, lemmatizer, args):
                     )
                     first_word = counterexample_candidate["words"][counterex_start]
                     last_word = counterexample_candidate["words"][counterex_end]
-                    duration = last_word["end"] - first_word["start"]
                     if (
                         first_word["case"] != "success"
                         or last_word["case"] != "success"
-                        or duration < args.min_phrase_duration
+                        or "end" not in last_word
+                        or "start" not in first_word
+                        or last_word["end"] - first_word["start"] < args.min_phrase_duration
                     ):
                         continue
 
