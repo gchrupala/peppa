@@ -57,12 +57,55 @@ def format_results_to_tex():
                                  pretraining='Pretraining',
                                  targeted_triplet_acc='Targeted Triplet Acc',
                                  pos='POS'))\
-            .to_latex(buf=f"results/scores_{fragment_type}.tex",
+            .to_latex(buf=f"results/scores_targeted_triplets_{fragment_type}.tex",
                       index=False,
                       float_format="%.3f")
 
 
-def create_result_plots(results_dir, version, args):
+def get_all_results_df(results_dir):
+    results_data_all = []
+    for pos in ["ADJ", "VERB", "NOUN"]:
+        for fragment_type in ['dialog', 'narration']:
+            results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv",
+                                                converters={"tokenized": ast.literal_eval})
+            results_data_all.append(results_data_fragment)
+
+    return pd.concat(results_data_all, ignore_index=True)
+
+
+def create_duration_results_plots(results_data_all, results_dir, version):
+    results_data_all["clipDuration"] = results_data_all["clipEnd"] - results_data_all["clipStart"]
+    results_data_all["clipDuration"] = results_data_all["clipDuration"].round(1)
+
+    plt.figure()
+    results_data_all.groupby("clipDuration").size().plot.bar()
+    plt.title(f"Version: {version} | Number of samples: per duration")
+    plt.xticks(rotation=75)
+    plt.savefig(os.path.join(results_dir, f"num_samples_vs_duration"), dpi=300)
+
+    plt.figure()
+    results_data_all["num_tokens"] = results_data_all.tokenized.apply(len)
+    results_data_all.groupby("num_tokens").size().plot.bar()
+    plt.title(f"Version: {version} | Number of samples: per number of tokens")
+    plt.xticks(rotation=75)
+    plt.savefig(os.path.join(results_dir, f"num_samples_vs_num_tokens"), dpi=300)
+
+    plt.figure()
+    sns.barplot(data=results_data_all, x="clipDuration", y="result")
+    plt.axhline(y=0.5, color="black", linestyle='--')
+    plt.title(f"Version: {version} | Accuracy: per duration")
+    plt.xticks(rotation=75)
+    plt.savefig(os.path.join(results_dir, f"results_clip_duration"), dpi=300)
+
+    plt.figure()
+    sns.barplot(data=results_data_all, x="num_tokens", y="result")
+    plt.axhline(y=0.5, color="black", linestyle='--')
+    plt.title(f"Version: {version} | Accuracy: per number of tokens")
+    plt.xticks(rotation=75)
+    plt.savefig(os.path.join(results_dir, f"results_num_tokens"), dpi=300)
+
+
+def create_per_word_result_plots(results_dir, version, args):
     results_data_all = []
     for pos in ["ADJ", "VERB", "NOUN"]:
         results_data = []
@@ -101,37 +144,6 @@ def create_result_plots(results_dir, version, args):
         plt.axhline(y=0.5, color="black", linestyle='--')
         plt.savefig(os.path.join(results_dir, f"results_{pos}_word"), dpi=300)
 
-    results_data_all = pd.concat(results_data_all, ignore_index=True)
-    results_data_all["clipDuration"] = results_data_all["clipEnd"] - results_data_all["clipStart"]
-    results_data_all["clipDuration"] = results_data_all["clipDuration"].round(1)
-
-    plt.figure()
-    results_data_all.groupby("clipDuration").size().plot.bar()
-    plt.title(f"Version: {version} | Number of samples: per duration")
-    plt.xticks(rotation=75)
-    plt.savefig(os.path.join(results_dir, f"num_samples_vs_duration"), dpi=300)
-
-    plt.figure()
-    results_data_all["num_tokens"] = results_data_all.tokenized.apply(len)
-    results_data_all.groupby("num_tokens").size().plot.bar()
-    plt.title(f"Version: {version} | Number of samples: per number of tokens")
-    plt.xticks(rotation=75)
-    plt.savefig(os.path.join(results_dir, f"num_samples_vs_num_tokens"), dpi=300)
-
-    plt.figure()
-    sns.barplot(data=results_data_all, x="clipDuration", y="result")
-    plt.axhline(y=0.5, color="black", linestyle='--')
-    plt.title(f"Version: {version} | Accuracy: per duration")
-    plt.xticks(rotation=75)
-    plt.savefig(os.path.join(results_dir, f"results_clip_duration"), dpi=300)
-
-    plt.figure()
-    sns.barplot(data=results_data_all, x="num_tokens", y="result")
-    plt.axhline(y=0.5, color="black", linestyle='--')
-    plt.title(f"Version: {version} | Accuracy: per number of tokens")
-    plt.xticks(rotation=75)
-    plt.savefig(os.path.join(results_dir, f"results_num_tokens"), dpi=300)
-
 
 def get_args():
     parser = argparse.ArgumentParser()
@@ -167,13 +179,18 @@ if __name__ == "__main__":
             results_data = pd.read_csv(eval_info_file, index_col="id")
 
             assert len(results_data) == len(per_sample_results), \
-                f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from {eval_info_file} ({len(results_data)})"
+                f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from " \
+                f"{eval_info_file} ({len(results_data)})"
 
             results_data["result"] = per_sample_results
             os.makedirs(results_dir, exist_ok=True)
             results_data.to_csv(f"{results_dir}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv")
 
-        create_result_plots(results_dir, version, args)
+        create_per_word_result_plots(results_dir, version, args)
+        all_results = get_all_results_df(results_dir)
+        create_duration_results_plots(all_results, results_dir, version)
+
+        print("Average accuracy: ", all_results["result"].mean())
 
     scores = pd.DataFrame.from_records(rows)
     scores.to_csv("results/scores_targeted_triplets.csv", index=False, header=True)
