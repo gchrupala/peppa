@@ -139,9 +139,13 @@ def create_per_word_result_plots(results_dir, version, args):
         plt.figure(figsize=(15, 8))
         order = results_data_words.groupby("word")["result"].agg("mean").sort_values()
         sns.barplot(data=results_data_words, x="word", y="result", order=order.index)
-        plt.title(f"Version: {version} | {pos}")
+        plt.title(f"Per-word targeted triplets accuracy for model ID: {version} | POS: {pos}")
         plt.xticks(rotation=75)
+        plt.ylabel("Accuracy")
+        plt.ylim((0, 1))
+        plt.subplots_adjust(bottom=0.1)
         plt.axhline(y=0.5, color="black", linestyle='--')
+        plt.tight_layout()
         plt.savefig(os.path.join(results_dir, f"results_{pos}_word"), dpi=300)
 
 
