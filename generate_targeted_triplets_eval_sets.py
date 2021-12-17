@@ -98,15 +98,15 @@ def is_sublist(list_1, list_2):
     return True
 
 
-def longest_intersection(tokens_1, tokens_2, min_phrase_length):
+def longest_intersection(tokens_1, tokens_2):
     longest_sublist = []
     mask_index = tokens_1.index(TOKEN_MASK)
     for i in range(len(tokens_1)):
-        for j in range(i + min_phrase_length - 1, len(tokens_1)):
+        for j in range(i, len(tokens_1)):
             if i - 1 < mask_index < j + 1:
                 sublist = tokens_1[i : j + 1]
                 for k in range(len(tokens_2)):
-                    for l in range(k + min_phrase_length - 1, len(tokens_2)):
+                    for l in range(k, len(tokens_2)):
                         sublist_2 = tokens_2[k : l + 1]
                         if sublist == sublist_2:
                             if len(sublist) > len(longest_sublist):
@@ -195,16 +195,18 @@ def find_minimal_pairs(tuples, data, lemmatizer, args):
                         )
                     ]
 
-                    intersection = longest_intersection(s1_masked, s2_masked, args.min_phrase_length)
+                    intersection = longest_intersection(s1_masked, s2_masked)
                     if not intersection:
                         continue
 
                     start, end = get_start_and_end_of_sublist(s1_masked, intersection)
                     first_word = example_candidate["words"][start]
                     last_word = example_candidate["words"][end]
+                    duration = last_word["end"] - first_word["start"]
                     if (
                         first_word["case"] != "success"
                         or last_word["case"] != "success"
+                        or duration < args.min_phrase_duration
                     ):
                         continue
 
@@ -213,9 +215,11 @@ def find_minimal_pairs(tuples, data, lemmatizer, args):
                     )
                     first_word = counterexample_candidate["words"][counterex_start]
                     last_word = counterexample_candidate["words"][counterex_end]
+                    duration = last_word["end"] - first_word["start"]
                     if (
                         first_word["case"] != "success"
                         or last_word["case"] != "success"
+                        or duration < args.min_phrase_duration
                     ):
                         continue
 
@@ -263,7 +267,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--min-occurrences", type=int, default=10, help="Minimum number of occurrences in val data of"
                                                                        " a word to be included")
-    parser.add_argument("--min-phrase-length", type=int, default=2, help="Minimum number of tokens in a phrase")
+    parser.add_argument("--min-phrase-duration", type=int, default=0.1, help="Minimum duration of a phrase (in seconds)")
     return parser.parse_args()
 
 
@@ -318,5 +322,5 @@ if __name__ == "__main__":
             eval_set["fragment"] = fragment
             eval_sets.append(eval_set)
 
-            file_name = f"eval_set_{fragment}_{pos_name}_min_phrase_length_{args.min_phrase_length}.csv"
+            file_name = f"eval_set_{fragment}_{pos_name}_min_phrase_duration_{args.min_phrase_duration}.csv"
             eval_set.to_csv(os.path.join(DATA_EVAL_DIR, file_name))
