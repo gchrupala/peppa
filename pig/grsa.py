@@ -13,8 +13,10 @@ import torch
 import torch.nn
 import pig.evaluation
 
-VERSION=43
-CHECKPOINT_PATH = f"lightning_logs/version_{VERSION}/"
+VERSIONS=[48, 61]
+
+def checkpoint_path(version):
+    return f"lightning_logs/version_{version}/"
 
 def as_yaml(episodes):
     for episode in episodes:
@@ -130,16 +132,19 @@ class UttData():
             if self.valid_multiword_alignment(meta['words']):
                 if read_audio:
                     logging.info(f"Extracting utterance from {audio_path}")
-                    audio = m.AudioFileClip(audio_path).subclip(meta['words'][0]['start'], meta['words'][-1]['end'])
+                    audio = m.AudioFileClip(audio_path).subclip(meta['words'][0]['start'],
+                                                                meta['words'][-1]['end'])
                 else:
                     audio = None
                 text = " ".join((word['word'] for word in meta['words']))
+                logging.info(f"Embedding extracted utterance")
+                embedding_t  = embed(text) if embed is not None else None
                 yield Utt(spelling= text,
                           duration= meta['words'][-1]['end']-meta['words'][0]['start'],
                           speaker = meta['speaker'],
                           episode = episode_id(audio_path),
                           audio   = audio,
-                          embedding_t = embed(text) if embed is not None else None)
+                          embedding_t = embedding_t)
 
 
     def utterances(self, **kwargs):
@@ -152,7 +157,7 @@ def normalized_distance(a, b):
     from Levenshtein import distance
     return distance(a, b) / max(len(a), len(b))
 
-def pairwise(fragment_type='dialog', multiword=False):
+def pairwise(version, fragment_type='dialog', multiword=False):
     from pig.models import PeppaPig
     from pig.data import audioclip_loader
     from pig.util import cosine_matrix
@@ -166,7 +171,7 @@ def pairwise(fragment_type='dialog', multiword=False):
     data = UttData(audio_paths, anno_paths, multiword=multiword)
 
         
-    net_2, net_path = pig.evaluation.load_best_model(CHECKPOINT_PATH)
+    net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(version))
     net_1 = PeppaPig(net_2.config)
     net_2.eval(); net_2.cuda()
     net_1.eval(); net_1.cuda()
@@ -195,7 +200,7 @@ def pairwise(fragment_type='dialog', multiword=False):
     for i, utt in enumerate(utts):
         utt.embedding_1 = emb_1[i]
         utt.embedding_2 = emb_2[i]
-    torch.save(dict(path=net_path, version=VERSION, utt=utts), f"data/out/utt_{'multi' if multiword else ''}word_{VERSION}_{fragment_type}.pt")
+    torch.save(dict(path=net_path, version=version, utt=utts), f"data/out/utt_{'multi' if multiword else ''}word_{version}_{fragment_type}.pt")
     for i, utt1 in enumerate(utts):
         logging.info(f"Processing word {i}")
         for j, utt2 in enumerate(utts):
@@ -246,12 +251,21 @@ def word_type():
     pd.DataFrame.from_records(rows).to_csv("results/word_type_rsa.csv", index=False, header=True)
         
         
-def main():
+def main(versions=VERSIONS):
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     import pandas
     logging.getLogger().setLevel(level=logging.INFO)
-    for fragment_type in ['dialog', 'narration']:
-        for multiword in [True, False]:
-            data = pandas.DataFrame.from_records(pairwise(fragment_type=fragment_type, multiword=multiword))
-            data.to_csv(f"data/out/pairwise_similarities_{'multi' if multiword else ''}word_{fragment_type}.csv",
-                        index=False, header=True, na_rep="NA")
+    tables = []
+    for version in versions:
+        for fragment_type in ['dialog', 'narration']:
+            for multiword in [True, False]:
+                data = pandas.DataFrame.from_records(pairwise(version,
+                                                              fragment_type=fragment_type,
+                                                              multiword=multiword))
+                data['version'] = version
+                data['fragment_type'] = fragment_type
+                data['multiword'] = multiword
+                tables.append(data)
+
+    table = pd.concat(tables)
+    table.to_csv(f"data/out/pairwise_similarities.csv", index=False, header=True, na_rep="NA")
