@@ -269,7 +269,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--min-occurrences", type=int, default=10, help="Minimum number of occurrences in val data of"
                                                                        " a word to be included")
-    parser.add_argument("--min-phrase-duration", type=int, default=0.1, help="Minimum duration of a phrase (in seconds)")
+    parser.add_argument("--min-phrase-duration", type=float, default=0.1, help="Minimum duration of a phrase (in seconds)")
     return parser.parse_args()
 
 
