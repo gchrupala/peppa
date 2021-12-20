@@ -12,8 +12,11 @@ from tqdm import tqdm
 
 from pig.data import SPLIT_SPEC
 
-DATA_DIR = "data/out/realign/"
+DATA_DIR = "data/out/180x100/"
+REALIGNED_DATA_DIR = "data/out/realign/"
 DATA_EVAL_DIR = "data/eval/"
+
+WORDS_NAMES = ["chloe", "danny", "george", "pedro", "peppa", "rebecca", "richard", "susie", "suzy"]
 
 # Ignore some words that have been mistagged by the POS-tagger:
 WORDS_IGNORE = {
@@ -34,16 +37,16 @@ nltk.download("averaged_perceptron_tagger")
 nltk.download("wordnet")
 
 
-def load_data():
+def load_realigned_data():
     data_sentences = []
     data_tokens = []
 
-    for root, dirs, files in os.walk(DATA_DIR):
+    for root, dirs, files in os.walk(REALIGNED_DATA_DIR):
         for file in files:
             if file.endswith(".json"):
                 path = os.path.join(root, file)
                 item = json.load(open(path, "r"))
-                type = "narration" if "narration" in root else "dialog"
+                fragment = "narration" if "narration" in root else "dialog"
                 episode = int(path.split("/")[-3].split("_")[1])
 
                 # Remove punctuation
@@ -68,7 +71,7 @@ def load_data():
                 item["pos"] = pos
 
                 for i in range(len(item["words"])):
-                    item["words"][i]["type"] = type
+                    item["words"][i]["fragment"] = fragment
                     item["words"][i]["path"] = path
                     item["words"][i]["episode"] = episode
                     item["words"][i]["pos"] = pos[i]
@@ -76,9 +79,60 @@ def load_data():
                 data_tokens.extend(item["words"])
 
                 item_sentence = item.copy()
-                item_sentence["type"] = type
+                item_sentence["fragment"] = fragment
                 item_sentence["episode"] = episode
                 data_sentences.append(item_sentence)
+
+    data_tokens = pd.DataFrame(data_tokens)
+    data_sentences = pd.DataFrame(data_sentences)
+    return data_sentences, data_tokens
+
+
+def load_data():
+    data_sentences = []
+    data_tokens = []
+
+    for root, dirs, files in os.walk(DATA_DIR):
+        for file in files:
+            if file.endswith(".json"):
+                path = os.path.join(root, file)
+                data_file = json.load(open(path, "r"))
+                fragment = "narration" if "narration" in root else "dialog"
+                episode = int(path.split("/")[-2])
+
+                for subtitle in data_file["subtitles"]:
+                    item = {"transcript": subtitle["text"]}
+
+                    # Remove punctuation
+                    item["transcript"] = re.sub(r"\s*[\.!]+\s*$", "", item["transcript"])
+                    item["transcript"] = re.sub(r"\s*[-:\.♪]+\s*", " ", item["transcript"])
+
+                    # Remove whitespace
+                    item["transcript"] = re.sub(r"\s+$", "", item["transcript"])
+                    item["transcript"] = re.sub(r"^\s+", "", item["transcript"])
+                    item["transcript"] = re.sub(r"\s\s", " ", item["transcript"])
+
+                    tokenized = re.split(" ", item["transcript"])
+
+                    item["tokenized"] = [w.lower() for w in tokenized]
+
+                    pos = nltk.pos_tag(tokenized, tagset="universal")
+                    pos = [p[1] for p in pos]
+                    item["pos"] = pos
+
+                    item["words"] = [{"word": w} for w in item["tokenized"]]
+                    for i in range(len(item["words"])):
+                        item["words"][i]["fragment"] = fragment
+                        item["words"][i]["path"] = path
+                        item["words"][i]["episode"] = episode
+                        item["words"][i]["pos"] = pos[i]
+
+                    data_tokens.extend(item["words"])
+
+                    item_sentence = item.copy()
+                    item_sentence["fragment"] = fragment
+                    item_sentence["episode"] = episode
+                    data_sentences.append(item_sentence)
 
     data_tokens = pd.DataFrame(data_tokens)
     data_sentences = pd.DataFrame(data_sentences)
@@ -149,7 +203,9 @@ def crop_and_create_example(example, start, end, target_word, distractor_word):
     return example
 
 
-def find_minimal_pairs(tuples, data, lemmatizer, args):
+def find_minimal_pairs(tuples, data, args):
+    lemmatizer = WordNetLemmatizer()
+
     eval_set = []
     id = 0
     for lemma_1, lemma_2 in tqdm(tuples):
@@ -265,6 +321,29 @@ def find_minimal_pairs(tuples, data, lemmatizer, args):
     return eval_set
 
 
+def get_lemmatized_words(data_tokens, data_split, pos=None):
+    lemmatizer = WordNetLemmatizer()
+
+    all_words = []
+    fragments = ["narration", "dialog"]
+    if data_split == "train":
+        fragments = ["dialog"]
+    for fragment in fragments:
+        words = data_tokens[
+            (data_tokens.fragment == fragment)
+            & data_tokens.episode.isin(SPLIT_SPEC[fragment][data_split])
+            ]
+        if pos:
+            words = words[words.pos == pos]
+        words = [
+            lemmatizer.lemmatize(w.word.lower(), POS_LEMMATIZER.get(w.pos, "n"))
+            for _, w in words.iterrows()
+        ]
+        all_words.extend(words)
+
+    return all_words
+
+
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--min-occurrences", type=int, default=10, help="Minimum number of occurrences in val data of"
@@ -277,33 +356,14 @@ if __name__ == "__main__":
     args = get_args()
     os.makedirs(DATA_EVAL_DIR, exist_ok=True)
 
-    lemmatizer = WordNetLemmatizer()
-
-    data_sentences, data_tokens = load_data()
+    data_sentences, data_tokens = load_realigned_data()
 
     for pos_name in ["NOUN", "VERB", "ADJ"]:
         print(f"Looking for {pos_name}s:")
         # Find most common words
-        words_dialog = data_tokens[
-            (data_tokens.type == "dialog")
-            & data_tokens.episode.isin(SPLIT_SPEC["dialog"]["val"])
-            & (data_tokens.pos == pos_name)
-        ].word.values
-        words_dialog = [
-            lemmatizer.lemmatize(w.lower(), POS_LEMMATIZER[pos_name])
-            for w in words_dialog
-        ]
-        words_narration = data_tokens[
-            (data_tokens.type == "narration")
-            & data_tokens.episode.isin(SPLIT_SPEC["narration"]["val"])
-            & (data_tokens.pos == pos_name)
-        ].word.values
-        words_narration = [
-            lemmatizer.lemmatize(w.lower(), POS_LEMMATIZER[pos_name])
-            for w in words_narration
-        ]
+        words = get_lemmatized_words(data_tokens, "val", pos_name)
 
-        counter = Counter(words_narration + words_dialog)
+        counter = Counter(words)
 
         words = [
             w
@@ -315,12 +375,12 @@ if __name__ == "__main__":
 
         eval_sets = []
         for fragment in ["narration", "dialog"]:
-            data_fragment = data_sentences[data_sentences.type == fragment]
+            data_fragment = data_sentences[data_sentences.fragment == fragment]
             data_fragment_val = data_fragment[
                 data_fragment.episode.isin(SPLIT_SPEC[fragment]["val"])
             ]
 
-            eval_set = find_minimal_pairs(tuples, data_fragment_val, lemmatizer, args)
+            eval_set = find_minimal_pairs(tuples, data_fragment_val, args)
             eval_set["fragment"] = fragment
             eval_sets.append(eval_set)
 

@@ -1,11 +1,14 @@
 import argparse
 import ast
 import os
+from collections import Counter
 
 import torch
+from scipy.stats import pearsonr
 
+from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES
 from pig.evaluation import load_best_model, pretraining
-import pig.data
+
 import pytorch_lightning as pl
 import logging
 from torch.utils.data import DataLoader
@@ -106,6 +109,10 @@ def create_duration_results_plots(results_data_all, results_dir, version):
 
 
 def create_per_word_result_plots(results_dir, version, args):
+    if args.correlate_predictors:
+        word_concreteness_ratings = get_word_concreteness_ratings()
+        dataset_word_frequencies = get_dataset_word_frequencies()
+
     results_data_all = []
     for pos in ["ADJ", "VERB", "NOUN"]:
         results_data = []
@@ -137,7 +144,8 @@ def create_per_word_result_plots(results_dir, version, args):
         results_data_words = results_data_words[results_data_words.word.isin(words_enough_data)]
 
         plt.figure(figsize=(15, 8))
-        order = results_data_words.groupby("word")["result"].agg("mean").sort_values()
+        mean_acc = results_data_words.groupby("word")["result"].agg("mean")
+        order = mean_acc.sort_values()
         sns.barplot(data=results_data_words, x="word", y="result", order=order.index)
         plt.title(f"Per-word targeted triplets accuracy for model ID: {version} | POS: {pos}")
         plt.xticks(rotation=75)
@@ -148,12 +156,65 @@ def create_per_word_result_plots(results_dir, version, args):
         plt.tight_layout()
         plt.savefig(os.path.join(results_dir, f"results_{pos}_word"), dpi=300)
 
+        if args.correlate_predictors:
+            # Correlate performance with word frequency in train split
+            word_frequencies = [dataset_word_frequencies[w] for w in mean_acc.keys()]
+            word_accuracies = mean_acc.values
+            plt.figure()
+            sns.scatterplot(word_frequencies, word_accuracies)
+            plt.xlabel("Frequency")
+            plt.ylabel("Accuracy")
+            plt.savefig(os.path.join(results_dir, f"results_{pos}_correlation_frequency_acc"), dpi=300)
+            print(f"{pos} Pearson correlation frequency-acc: ", pearsonr(word_frequencies, word_accuracies))
+
+            # Correlate performance with word concreteness
+            word_concretenesses = [get_word_concreteness(w, word_concreteness_ratings) for w in mean_acc.keys()]
+            plt.figure()
+            sns.scatterplot(word_concretenesses, word_accuracies)
+            plt.xlabel("Concreteness")
+            plt.ylabel("Accuracy")
+            plt.savefig(os.path.join(results_dir, f"results_{pos}_correlation_concreteness_acc"), dpi=300)
+            print(f"{pos} Pearson correlation concreteness-acc: ", pearsonr(word_concretenesses, word_accuracies))
+
+
+def get_dataset_word_frequencies():
+    _, data_tokens = load_data()
+
+    all_words = get_lemmatized_words(data_tokens, "train")
+
+    return Counter(all_words)
+
+
+def get_word_concreteness_ratings():
+    # Use concreteness ratings from Brysbaert, Warriner, & Kuperman, 2014
+    # https://link.springer.com/article/10.3758/s13428-013-0403-5
+    data = pd.read_csv("data/eval/13428_2013_403_MOESM1_ESM.csv")
+    data.set_index("Word", inplace=True)
+    return data["Conc.M"].to_dict()
+
+
+def get_word_concreteness(word, word_concreteness_ratings):
+    if word in word_concreteness_ratings:
+        return word_concreteness_ratings[word]
+    else:
+        if word.endswith("'s"):
+            # Concreteness for possisive pronouns his/her is around 3
+            return 3
+        else:
+            if word in WORDS_NAMES:
+                # Assume that persons are maximally concrete
+                return 5
+            else:
+                print(f"Warning: concreteness rating not found for '{word}'. Setting to 3/5.")
+                return 3
+
 
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--versions", type=str, nargs="+")
-
     parser.add_argument("--min-samples", type=int, default=100)
+
+    parser.add_argument("--correlate-predictors", action="store_true", default=False)
 
     return parser.parse_args()
 
