@@ -26,6 +26,13 @@ def massage(dat, scaleall=False):
         sim_2 = lambda x: scale(x.sim_2))
     return data
 
+def standardize(data):
+    keep = ['samespeaker', 'sameepisode', 'sametype', 'semsim',
+            'distance', 'durationdiff', 'durationsum', 'sim_1', 'sim_2']
+    scaler = StandardScaler()
+    data = data[keep].astype(float)
+    return pd.DataFrame(scaler.fit_transform(data.values), columns=data.columns, index=data.index)
+
 
 
 def rer(red, full):
@@ -134,7 +141,12 @@ def ablate(variables):
     for this in variables:
         yield this, pd.concat([ var for name, var in variables.items() if name != this ], axis=1) 
 
-        
+def unpairwise_ols(version = 61):
+    rawdata = pd.read_csv(f"data/out/unpairwise_similarities_{version}.csv")
+    data  = standardize(rawdata)
+    m = api.ols(formula = f"sim_2 ~ semsim + sim_1 + distance + durationdiff + durationsum + sametype + samespeaker + sameepisode", data=data)
+    m.fit().summary2().tables[1].reset_index().rename(columns={'index':'Variable'}).to_csv(f"results/unpairwise_coef_{version}.csv", index=False, header=True)
+    
 def main():
     # Load and process data
 

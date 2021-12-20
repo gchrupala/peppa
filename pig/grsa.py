@@ -226,6 +226,44 @@ def pairwise(version, fragment_type='dialog', multiword=False):
                            sim_1=sim_1[i, j].item(),
                            sim_2=sim_2[i, j].item())
 
+def unpairwise(version):
+    dialog = torch.load(f"data/out/utt_multiword_{version}_dialog.pt")
+    narration = torch.load(f"data/out/utt_multiword_{version}_narration.pt")
+    utt = [utt for utt in dialog['utt'] + narration['utt'] if utt.speaker is not None]
+    data = pd.DataFrame.from_records(unpairwise_data(utt))
+    data.to_csv(f"data/out/unpairwise_similarities_{version}.csv", index=False, header=True)
+    
+def unpairwise_data(utt):
+    import random
+    from pig.triplet import pairs
+    cosine = torch.nn.CosineSimilarity(dim=1)
+    random.shuffle(utt)
+    p1, p2 = zip(*pairs(utt))
+    sim_2 = cosine(torch.stack([ x.embedding_2 for x in p1]),
+                   torch.stack([ x.embedding_2 for x in p2]))
+    sim_1 = cosine(torch.stack([ x.embedding_1 for x in p1]),
+                   torch.stack([ x.embedding_1 for x in p2]))
+    semsim = cosine(torch.stack([ x.embedding_t for x in p1]),
+                    torch.stack([ x.embedding_t for x in p2]))
+    for i in range(len(p1)):
+        yield dict(spelling1 =p1[i].spelling,
+                   duration1 =p1[i].duration,
+                   speaker1  =p1[i].speaker,
+                   episode1  =p1[i].episode,
+                   spelling2 =p2[i].spelling,
+                   duration2 =p2[i].duration,
+                   speaker2  =p2[i].speaker,
+                   episode2  =p2[i].episode,
+                   sametype  =p1[i].spelling==p2[i].spelling,
+                   samespeaker  =None if p1[i].speaker is None or p2[i].speaker is None else p1[i].speaker==p2[i].speaker,
+                   sameepisode  =p1[i].episode==p2[i].episode,
+                   durationdiff =abs(p1[i].duration - p2[i].duration),
+                   durationsum  =p1[i].duration + p2[i].duration,
+                   distance     =normalized_distance(p1[i].spelling, p2[i].spelling),
+                   semsim       = semsim[i].item(),
+                   sim_1        = sim_1[i].item(),
+                   sim_2        = sim_2[i].item())
+                   
 
 def word_type():
     from pig.util import grouped, triu, pearson_r, cosine_matrix
