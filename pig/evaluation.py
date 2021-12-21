@@ -49,14 +49,25 @@ def score(model, gpus):
     for fragment_type in ['dialog', 'narration']:
         yield dict(fragment_type=fragment_type,
                    triplet_acc=triplet_score(fragment_type, model, trainer),
-                   recall_at_10=retrieval_score(fragment_type, model, trainer))
+                   recall_at_10_fixed=retrieval_score(fragment_type,
+                                                      model,
+                                                      trainer,
+                                                      duration=3.2,
+                                                      jitter=False),
+                   recall_at_10_jitter=retrieval_score(fragment_type,
+                                                      model,
+                                                      trainer,
+                                                      duration=2.3,
+                                                       jitter=True))
         
-def retrieval_score(fragment_type, model, trainer):
+def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
         ds = pig.data.PeppaPigIterableDataset(
             target_size=(180, 100),
             split=['val'],
             fragment_type=fragment_type,
-            duration=3.2)
+            duration=duration,
+            jitter=jitter
+            )
         loader = DataLoader(ds, collate_fn=pig.data.collate, batch_size=8)
 
         V, A = zip(* [(batch.video, batch.audio) for batch
@@ -101,12 +112,12 @@ def format():
                       float_format="%.3f")
                                 
 
-VERSIONS = [48, 50, 51, 52]
+VERSIONS = (48, 50, 51, 52)
 
-def main(gpu=0):
+def run(gpu=0, versions=VERSIONS):
     logging.getLogger().setLevel(logging.INFO)
     rows = []
-    for version in VERSIONS:
+    for version in versions:
         logging.info(f"Evaluating version {version}")
         net, path = load_best_model(f"lightning_logs/version_{version}/")
         
@@ -120,6 +131,10 @@ def main(gpu=0):
             print(row)
             rows.append(row)
     scores = pd.DataFrame.from_records(rows)
+    return scores
+
+def main(gpu=0):
+    scores = run(gpu=gpu, versions=VERSIONS)
     scores.to_csv("results/scores.csv", index=False, header=True)
-    format()
+    
     
