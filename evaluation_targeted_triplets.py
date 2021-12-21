@@ -109,17 +109,12 @@ def create_duration_results_plots(results_data_all, results_dir, version):
 
 
 def create_per_word_result_plots(results_dir, version, args):
-    if args.correlate_predictors:
-        word_concreteness_ratings = get_word_concreteness_ratings()
-        dataset_word_frequencies = get_dataset_word_frequencies()
-
-    results_data_all = []
+    results_data_words_all = []
     for pos in ["ADJ", "VERB", "NOUN"]:
         results_data = []
         for fragment_type in ['dialog', 'narration']:
             results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv", converters={"tokenized":ast.literal_eval})
             results_data.append(results_data_fragment)
-            results_data_all.append(results_data_fragment)
         results_data = pd.concat(results_data, ignore_index=True)
 
         results_data_words_1 = results_data.copy()
@@ -142,6 +137,7 @@ def create_per_word_result_plots(results_dir, version, args):
             continue
 
         results_data_words = results_data_words[results_data_words.word.isin(words_enough_data)]
+        results_data_words_all.append(results_data_words)
 
         plt.figure(figsize=(15, 8))
         mean_acc = results_data_words.groupby("word")["result"].agg("mean")
@@ -156,25 +152,42 @@ def create_per_word_result_plots(results_dir, version, args):
         plt.tight_layout()
         plt.savefig(os.path.join(results_dir, f"results_{pos}_word"), dpi=300)
 
-        if args.correlate_predictors:
-            # Correlate performance with word frequency in train split
-            word_frequencies = [dataset_word_frequencies[w] for w in mean_acc.keys()]
-            word_accuracies = mean_acc.values
-            plt.figure()
-            sns.scatterplot(word_frequencies, word_accuracies)
-            plt.xlabel("Frequency")
-            plt.ylabel("Accuracy")
-            plt.savefig(os.path.join(results_dir, f"results_{pos}_correlation_frequency_acc"), dpi=300)
-            print(f"{pos} Pearson correlation frequency-acc: ", pearsonr(word_frequencies, word_accuracies))
+    if args.correlate_predictors:
+        word_concreteness_ratings = get_word_concreteness_ratings()
+        dataset_word_frequencies = get_dataset_word_frequencies()
 
-            # Correlate performance with word concreteness
-            word_concretenesses = [get_word_concreteness(w, word_concreteness_ratings) for w in mean_acc.keys()]
-            plt.figure()
-            sns.scatterplot(word_concretenesses, word_accuracies)
-            plt.xlabel("Concreteness")
-            plt.ylabel("Accuracy")
-            plt.savefig(os.path.join(results_dir, f"results_{pos}_correlation_concreteness_acc"), dpi=300)
-            print(f"{pos} Pearson correlation concreteness-acc: ", pearsonr(word_concretenesses, word_accuracies))
+        results_data_words_all = pd.concat(results_data_words_all, ignore_index=True)
+        mean_acc = results_data_words_all.groupby("word")["result"].agg("mean")
+
+        # Correlate performance with word frequency in train split
+        word_frequencies = [dataset_word_frequencies[w] for w in mean_acc.keys()]
+        word_frequencies = [np.log(f) for f in word_frequencies]
+        word_accuracies = mean_acc.values
+        plt.figure()
+        s1 = sns.scatterplot(word_frequencies, word_accuracies, marker="x")
+        plt.xlabel("Log Frequency")
+        plt.ylabel("Accuracy")
+        # Named labels in scatterplot:
+        for i in range(len(word_frequencies)):
+            s1.text(word_frequencies[i] + 0.01, word_accuracies[i],
+                    mean_acc.keys()[i], horizontalalignment='left',
+                    size='small', color='black')
+        plt.savefig(os.path.join(results_dir, f"results_correlation_frequency_acc"), dpi=300)
+        print(f"Pearson correlation frequency-acc: ", pearsonr(word_frequencies, word_accuracies))
+
+        # Correlate performance with word concreteness
+        word_concretenesses = [get_word_concreteness(w, word_concreteness_ratings) for w in mean_acc.keys()]
+        plt.figure()
+        s2 = sns.scatterplot(word_concretenesses, word_accuracies, marker="x")
+        plt.xlabel("Concreteness")
+        plt.ylabel("Accuracy")
+        # Named labels in scatterplot:
+        for i in range(len(word_frequencies)):
+            s2.text(word_concretenesses[i] + 0.01, word_accuracies[i],
+                    mean_acc.keys()[i], horizontalalignment='left',
+                    size='small', color='black')
+        plt.savefig(os.path.join(results_dir, f"results_correlation_concreteness_acc"), dpi=300)
+        print(f"Pearson correlation concreteness-acc: ", pearsonr(word_concretenesses, word_accuracies))
 
 
 def get_dataset_word_frequencies():
@@ -229,27 +242,27 @@ if __name__ == "__main__":
         net, path = load_best_model(f"lightning_logs/version_{version}/")
         results_dir = f"results/version_{version}"
 
-        for row, per_sample_results in score(net):
-            row['version'] = version
-            row['path']    = path
-            row['audio_pretrained'] = net.config['audio']['pretrained']
-            row['video_pretrained'] = net.config['video']['pretrained']
-            row['audio_pooling'] = net.config['audio']['pooling']
-            row['video_pooling'] = net.config['video']['pooling']
-            print(row)
-            rows.append(row)
-
-            # Save per-sample results for detailed analysis
-            eval_info_file = f"data/eval/eval_set_{row['fragment_type']}_{row['pos']}.csv"
-            results_data = pd.read_csv(eval_info_file, index_col="id")
-
-            assert len(results_data) == len(per_sample_results), \
-                f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from " \
-                f"{eval_info_file} ({len(results_data)})"
-
-            results_data["result"] = per_sample_results
-            os.makedirs(results_dir, exist_ok=True)
-            results_data.to_csv(f"{results_dir}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv")
+        # for row, per_sample_results in score(net):
+        #     row['version'] = version
+        #     row['path']    = path
+        #     row['audio_pretrained'] = net.config['audio']['pretrained']
+        #     row['video_pretrained'] = net.config['video']['pretrained']
+        #     row['audio_pooling'] = net.config['audio']['pooling']
+        #     row['video_pooling'] = net.config['video']['pooling']
+        #     print(row)
+        #     rows.append(row)
+        #
+        #     # Save per-sample results for detailed analysis
+        #     eval_info_file = f"data/eval/eval_set_{row['fragment_type']}_{row['pos']}.csv"
+        #     results_data = pd.read_csv(eval_info_file, index_col="id")
+        #
+        #     assert len(results_data) == len(per_sample_results), \
+        #         f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from " \
+        #         f"{eval_info_file} ({len(results_data)})"
+        #
+        #     results_data["result"] = per_sample_results
+        #     os.makedirs(results_dir, exist_ok=True)
+        #     results_data.to_csv(f"{results_dir}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv")
 
         create_per_word_result_plots(results_dir, version, args)
         all_results = get_all_results_df(results_dir)
@@ -257,7 +270,7 @@ if __name__ == "__main__":
 
         print("Average accuracy: ", all_results["result"].mean())
 
-    scores = pd.DataFrame.from_records(rows)
-    scores.to_csv("results/scores_targeted_triplets.csv", index=False, header=True)
-
-    format_results_to_tex()
+    # scores = pd.DataFrame.from_records(rows)
+    # scores.to_csv("results/scores_targeted_triplets.csv", index=False, header=True)
+    #
+    # format_results_to_tex()
