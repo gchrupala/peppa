@@ -16,6 +16,10 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib
+
+from pig.metrics import batch_triplet_accuracy
+from pig.triplet import collate_triplets
+
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
@@ -32,7 +36,7 @@ def score(model):
         gpus = 1
     trainer = pl.Trainer(logger=False, gpus=gpus)
     for fragment_type in ['dialog', 'narration']:
-        for pos in ["ADJ", "VERB", "NOUN"]:
+        for pos in ["ADJ", "NOUN", "VERB"]:
             per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
             yield dict(fragment_type=fragment_type,
                        pos=pos,
@@ -42,8 +46,8 @@ def score(model):
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
     ds = PeppaTargetedTripletDataset.load(f"data/out/val_{fragment_type}_targeted_triplets_{pos}")
-    loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
-    results = [pig.metrics.batch_triplet_accuracy(batch).item() for batch in trainer.predict(model, loader)]
+    loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
+    results = [batch_triplet_accuracy(batch).item() for batch in trainer.predict(model, loader)]
 
     return results
 
@@ -242,27 +246,27 @@ if __name__ == "__main__":
         net, path = load_best_model(f"lightning_logs/version_{version}/")
         results_dir = f"results/version_{version}"
 
-        # for row, per_sample_results in score(net):
-        #     row['version'] = version
-        #     row['path']    = path
-        #     row['audio_pretrained'] = net.config['audio']['pretrained']
-        #     row['video_pretrained'] = net.config['video']['pretrained']
-        #     row['audio_pooling'] = net.config['audio']['pooling']
-        #     row['video_pooling'] = net.config['video']['pooling']
-        #     print(row)
-        #     rows.append(row)
-        #
-        #     # Save per-sample results for detailed analysis
-        #     eval_info_file = f"data/eval/eval_set_{row['fragment_type']}_{row['pos']}.csv"
-        #     results_data = pd.read_csv(eval_info_file, index_col="id")
-        #
-        #     assert len(results_data) == len(per_sample_results), \
-        #         f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from " \
-        #         f"{eval_info_file} ({len(results_data)})"
-        #
-        #     results_data["result"] = per_sample_results
-        #     os.makedirs(results_dir, exist_ok=True)
-        #     results_data.to_csv(f"{results_dir}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv")
+        for row, per_sample_results in score(net):
+            row['version'] = version
+            row['path']    = path
+            row['audio_pretrained'] = net.config['audio']['pretrained']
+            row['video_pretrained'] = net.config['video']['pretrained']
+            row['audio_pooling'] = net.config['audio']['pooling']
+            row['video_pooling'] = net.config['video']['pooling']
+            print(row)
+            rows.append(row)
+
+            # Save per-sample results for detailed analysis
+            eval_info_file = f"data/eval/eval_set_{row['fragment_type']}_{row['pos']}.csv"
+            results_data = pd.read_csv(eval_info_file, index_col="id")
+
+            assert len(results_data) == len(per_sample_results), \
+                f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from " \
+                f"{eval_info_file} ({len(results_data)})"
+
+            results_data["result"] = per_sample_results
+            os.makedirs(results_dir, exist_ok=True)
+            results_data.to_csv(f"{results_dir}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv")
 
         create_per_word_result_plots(results_dir, version, args)
         all_results = get_all_results_df(results_dir)
@@ -270,7 +274,7 @@ if __name__ == "__main__":
 
         print("Average accuracy: ", all_results["result"].mean())
 
-    # scores = pd.DataFrame.from_records(rows)
-    # scores.to_csv("results/scores_targeted_triplets.csv", index=False, header=True)
-    #
-    # format_results_to_tex()
+    scores = pd.DataFrame.from_records(rows)
+    scores.to_csv("results/scores_targeted_triplets.csv", index=False, header=True)
+
+    format_results_to_tex()
