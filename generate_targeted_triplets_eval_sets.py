@@ -401,5 +401,6 @@ if __name__ == "__main__":
             eval_set["fragment"] = fragment
             eval_sets.append(eval_set)
 
-            file_name = f"eval_set_{fragment}_{pos_name}_min_phrase_duration_{args.min_phrase_duration}.csv"
-            eval_set.to_csv(os.path.join(DATA_EVAL_DIR, file_name))
+            file_name = f"eval_set_{fragment}_{pos_name}.csv"
+            eval_set.to_csv(os.path.join(DATA_EVAL_DIR,
+                                         os.path.join(f"min_phrase_duration_{args.min_phrase_duration}", file_name)))
