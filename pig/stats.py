@@ -5,7 +5,7 @@ from sklearn.linear_model import RidgeCV
 from plotnine import *
 import torch
 import numpy as np
-from pig.grsa import VERSION
+
 
 def sumcode(col):
     return (col * 2 - 1).astype(int)
@@ -25,6 +25,13 @@ def massage(dat, scaleall=False):
         sim_1 = lambda x: scale(x.sim_1),
         sim_2 = lambda x: scale(x.sim_2))
     return data
+
+def standardize(data):
+    keep = ['samespeaker', 'sameepisode', 'sametype', 'semsim',
+            'distance', 'durationdiff', 'durationsum', 'sim_1', 'sim_2']
+    scaler = StandardScaler()
+    data = data[keep].astype(float)
+    return pd.DataFrame(scaler.fit_transform(data.values), columns=data.columns, index=data.index)
 
 
 
@@ -50,25 +57,25 @@ def partial_r2(model, data):
     return pd.DataFrame(index=['Intercept']+predictors, data=dict(partial_r2=r2))
         
 
-def plot_coef(fit, fragment_type, multiword):
-    data = fit.reset_index().rename(
-        columns={'index': 'Variable', 'Coef.': 'Coefficient', '[0.025': 'Lower', '0.975]': 'Upper'})
+def plot_coef(table, fragment_type, multiword):
+    data = table.query(f"multiword == {multiword} & fragment_type == '{fragment_type}'")
+    data['version'] = data['version'].map(str)
     g = ggplot(data, aes('Variable', 'Coefficient')) + \
         geom_hline(yintercept=0, color='gray', linetype='dashed') + \
-        geom_errorbar(aes(color='Training', ymin='Lower', ymax='Upper', lwd=1, width=0.25)) + \
-        geom_point(aes(color='Training')) + \
+        geom_errorbar(aes(color='version', ymin='Lower', ymax='Upper', lwd=1, width=0.25)) + \
+        geom_point(aes(color='version')) + \
         coord_flip() 
-    ggsave(g, f"results/grsa_{fragment_type}_{multiword}_coef.pdf")
+    ggsave(g, f"results/grsa_{fragment_type}_{'multi' if multiword else ''}word_coef.pdf")
 
 
 def frameit(matrix, prefix="dim"):
     return pd.DataFrame(matrix, columns=[f"{prefix}{i}" for i in range(matrix.shape[1])])
 
 
-def backprobes():
+def backprobes(version):
     for fragment_type in ['dialog', 'narration']:
-        data = torch.load(f"data/out/words_{VERSION}_{fragment_type}.pt")
-        backprobe(data['words']).to_csv(f"results/backprobe_{VERSION}_{fragment_type}.csv",
+        data = torch.load(f"data/out/words_{version}_{fragment_type}.pt")
+        backprobe(data['words']).to_csv(f"results/backprobe_{version}_{fragment_type}.csv",
                                         index=False,
                                         header=True)
         
@@ -134,45 +141,41 @@ def ablate(variables):
     for this in variables:
         yield this, pd.concat([ var for name, var in variables.items() if name != this ], axis=1) 
 
-        
+def unpairwise_ols(version = 61):
+    rawdata = pd.read_csv(f"data/out/unpairwise_similarities_{version}.csv")
+    data  = standardize(rawdata)
+    m = api.ols(formula = f"sim_2 ~ semsim + sim_1 + distance + durationdiff + durationsum + sametype + samespeaker + sameepisode", data=data)
+    m.fit().summary2().tables[1].reset_index().rename(columns={'index':'Variable'}).to_csv(f"results/unpairwise_coef_{version}.csv", index=False, header=True)
+    
 def main():
     # Load and process data
 
-    training_mode = {0: "Untrained", 1: "Pre-trained", 2: "Fully-trained"}
-
-    for multiword in ['multiword', 'word']:
-        rawdata_d = pd.read_csv(f'data/out/pairwise_similarities_{multiword}_dialog.csv')
-        data_d = massage(rawdata_d, scaleall=True)
-        data_d.corr().to_csv(f"results/rsa_dialog_{multiword}_correlations.csv", index=True, header=True)
-        data_d.corr().to_latex(float_format="%.2f", buf=f"results/rsa_dialog_{multiword}_correlations.tex")
+    rawdata = pd.read_csv("data/out/pairwise_similarities.csv")
     
-        rawdata_n = pd.read_csv(f'data/out/pairwise_similarities_{multiword}_narration.csv')
-        data_n = massage(rawdata_n, scaleall=True)
-        data_ncor = data_n.drop("samespeaker", axis=1).corr()
-        data_ncor.to_csv(f"results/rsa_narration_{multiword}_correlations.csv", index=True, header=True)
-        data_ncor.to_latex(float_format="%.2f", buf=f"results/rsa_narration_{multiword}_correlations.tex")
-        
-        table_d = []
-        for training in [1, 2]: 
-            m_d = api.ols(formula = f'sim_{training} ~ semsim + durationdiff + durationsum + sametype + samespeaker + sameepisode', data=data_d)
-            table = m_d.fit().summary2().tables[1]
-            table['Training'] = training_mode[training]
-            table_d.append(table)
-        table_d = pd.concat(table_d, axis=0)
-        table_d.to_csv(f"results/{multiword}_coef_d.csv", index=True, header=True)
-    
-        plot_coef(table_d, "dialog", multiword)
-
-
-        table_n = []
-        for training in [1, 2]: 
-            m_n = api.ols(formula = f'sim_{training} ~ semsim + durationdiff + durationsum + sametype + sameepisode', data=data_n)
-            table = m_n.fit().summary2().tables[1]
-            table['Training'] = training_mode[training]
-            table_n.append(table)
-        table_n = pd.concat(table_n, axis=0)
-        table_n.to_csv(f"results/{multiword}_coef_n.csv", index=True, header=True)
-        plot_coef(table_n, "narration", multiword)
+    tables = []
+    for multiword in [False, True]:
+        for fragment_type in ['dialog', 'narration']:
+            for version in rawdata['version'].unique():
+                subset = rawdata.query(f"multiword == {multiword}  & fragment_type == '{fragment_type}' & version == {version}")
+                if fragment_type == 'narration':
+                    samespeaker = ''
+                else:
+                    samespeaker = " + samespeaker "
+                data = massage(subset, scaleall=True)
+                m = api.ols(formula = f"sim_2 ~ semsim + durationdiff + durationsum + sametype {samespeaker} + sameepisode", data=data)
+                table = m.fit().summary2().tables[1].reset_index()
+                table['multiword'] = multiword
+                table['fragment_type'] = fragment_type
+                table['version'] = version
+                tables.append(table)
+    tables = pd.concat(tables, axis=0).rename(columns={'index': 'Variable',
+                                                       'Coef.': 'Coefficient',
+                                                       '[0.025': 'Lower',
+                                                       '0.975]': 'Upper'})
+    tables.to_csv(f"results/coef.csv", index=True, header=True)    
+    for multiword in [False, True]:
+        for fragment_type in ['dialog', 'narration']:
+            plot_coef(tables, fragment_type, multiword)
     
     
 

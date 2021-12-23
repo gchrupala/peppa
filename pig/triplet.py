@@ -110,10 +110,9 @@ def collate_triplets(data):
 
 
 def pairs(xs):
-    if len(xs) < 2:
-        return []
-    else:
-        return [(xs[0], xs[1])] + pairs(xs[2:])
-
-
-
+    p = []
+    for i in range(0, len(xs), 2):
+        x = xs[i:i+2]
+        if len(x) == 2:
+            p.append(x)
+    return p

@@ -58,7 +58,7 @@ def score(model, gpus):
                                                       trainer,
                                                       duration=2.3,
                                                        jitter=True))
-        
+BATCH_SIZE=16        
 def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
         ds = pig.data.PeppaPigIterableDataset(
             target_size=(180, 100),
@@ -67,7 +67,7 @@ def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
             duration=duration,
             jitter=jitter
             )
-        loader = DataLoader(ds, collate_fn=pig.data.collate, batch_size=8)
+        loader = DataLoader(ds, collate_fn=pig.data.collate, batch_size=BATCH_SIZE)
 
         V, A = zip(* [(batch.video, batch.audio) for batch
                   in trainer.predict(model, loader) ])
@@ -79,7 +79,7 @@ def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
         
 def triplet_score(fragment_type, model, trainer):
     ds = pig.data.PeppaTripletDataset.load(f"data/out/val_{fragment_type}_triplets_v4")
-    loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=8)
+    loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=BATCH_SIZE)
     acc = torch.cat([ pig.metrics.batch_triplet_accuracy(batch)
                       for  batch in trainer.predict(model, loader) ]).mean().item()
     return acc
