@@ -49,26 +49,11 @@ def score(model):
 def targeted_triplet_score(fragment_type, pos, model, trainer):
     ds = PeppaTargetedTripletDataset.load(f"data/out/val_{fragment_type}_targeted_triplets_{pos}")
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
-    results = [batch_triplet_accuracy(batch).item() for batch in trainer.predict(model, loader)]
+    results = []
+    for batch in trainer.predict(model, loader):
+        results.extend(r.item() for r in batch_triplet_accuracy(batch))
 
     return results
-
-
-def format_results_to_tex():
-    data = pd.read_csv("results/scores_targeted_triplets.csv")
-    for fragment_type in ['dialog', 'narration']:
-        table = data.query(f"fragment_type=='{fragment_type}'")
-        table['pretraining'] = table.apply(pretraining, axis=1)
-
-        table[['version', 'pretraining',
-               'pos', 'targeted_triplet_acc']]\
-            .rename(columns=dict(version='ID',
-                                 pretraining='Pretraining',
-                                 targeted_triplet_acc='Targeted Triplet Acc',
-                                 pos='POS'))\
-            .to_latex(buf=f"results/scores_targeted_triplets_{fragment_type}.tex",
-                      index=False,
-                      float_format="%.3f")
 
 
 def get_all_results_df(results_dir):
@@ -283,5 +268,3 @@ if __name__ == "__main__":
 
     scores = pd.DataFrame.from_records(rows)
     scores.to_csv("results/scores_targeted_triplets.csv", index=False, header=True)
-
-    format_results_to_tex()
