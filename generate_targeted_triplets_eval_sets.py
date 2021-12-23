@@ -363,7 +363,7 @@ def get_args():
     parser.add_argument(
         "--min-phrase-duration",
         type=float,
-        default=0.2,
+        default=0.3,
         help="Minimum duration of a phrase (in seconds)",
     )
     return parser.parse_args()
