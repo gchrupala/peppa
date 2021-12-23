@@ -28,6 +28,8 @@ from pig.targeted_triplets import PeppaTargetedTripletDataset
 BATCH_SIZE = 1
 NUM_WORKERS = 1
 
+MIN_DURATION = 0.3
+
 
 def score(model):
     """Compute all standard scores for the given model. """
@@ -77,7 +79,10 @@ def get_all_results_df(results_dir):
                                                 converters={"tokenized": ast.literal_eval})
             results_data_all.append(results_data_fragment)
 
-    return pd.concat(results_data_all, ignore_index=True)
+    results_data_all = pd.concat(results_data_all, ignore_index=True)
+    results_data_all["duration"] = results_data_all["clipEnd"] - results_data_all["clipStart"]
+    results_data_all = results_data_all[results_data_all["duration"] > MIN_DURATION]
+    return results_data_all
 
 
 def create_duration_results_plots(results_data_all, results_dir, version):
@@ -118,6 +123,8 @@ def create_per_word_result_plots(results_dir, version, args):
         results_data = []
         for fragment_type in ['dialog', 'narration']:
             results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv", converters={"tokenized":ast.literal_eval})
+            results_data_fragment["duration"] = results_data_fragment["clipEnd"] - results_data_fragment["clipStart"]
+            results_data_fragment = results_data_fragment[results_data_fragment["duration"] > MIN_DURATION]
             results_data.append(results_data_fragment)
         results_data = pd.concat(results_data, ignore_index=True)
 
