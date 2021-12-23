@@ -5,10 +5,11 @@ import os
 import re
 from collections import Counter
 
-import nltk as nltk
-from nltk.stem import WordNetLemmatizer
 import pandas as pd
+from spacy.tokens import Doc
 from tqdm import tqdm
+
+import spacy
 
 from pig.data import SPLIT_SPEC
 
@@ -16,15 +17,24 @@ DATA_DIR = "data/out/180x100/"
 REALIGNED_DATA_DIR = "data/out/realign/"
 DATA_EVAL_DIR = "data/eval/"
 
-WORDS_NAMES = ["chloe", "danny", "george", "pedro", "peppa", "rebecca", "richard", "susie", "suzy"]
+WORDS_NAMES = [
+    "chloe",
+    "danny",
+    "george",
+    "pedro",
+    "peppa",
+    "rebecca",
+    "richard",
+    "susie",
+    "suzy",
+]
 
-# Ignore some words that have been mistagged by the POS-tagger:
+SYNONYMS = {"granddad": "grandpa",}
+
+# Ignore some words that have been mistagged by the POS-tagger (partly because of poor pre-tokenization):
 WORDS_IGNORE = {
-    "VERB": [],
-    "NOUN": [
-        "cannot",
-        "it's",
-    ],
+    "VERB": ["it'"],
+    "NOUN": ["peppa's", "george's", "let's", "pig's", "pig,", "george'"],
     "ADJ": [],
 }
 
@@ -32,12 +42,10 @@ POS_LEMMATIZER = {"VERB": "v", "NOUN": "n", "ADJ": "a"}
 
 TOKEN_MASK = "<MASK>"
 
-nltk.download("universal_tagset")
-nltk.download("averaged_perceptron_tagger")
-nltk.download("wordnet")
-
 
 def load_realigned_data():
+    nlp = spacy.load("en_core_web_sm")
+
     data_sentences = []
     data_tokens = []
 
@@ -66,15 +74,21 @@ def load_realigned_data():
 
                 item["tokenized"] = [w.lower() for w in tokenized]
 
-                pos = nltk.pos_tag(tokenized, tagset="universal")
-                pos = [p[1] for p in pos]
-                item["pos"] = pos
+                doc = Doc(nlp.vocab, words=tokenized)
+                for name, proc in nlp.pipeline:
+                    doc = proc(doc)
+
+                # Treat proper nouns the same way as nouns
+                item["pos"] = [t.pos_ if t.pos_ != "PROPN" else "NOUN" for t in doc]
+
+                item["lemmatized"] = [t.lemma_.lower() for t in doc]
 
                 for i in range(len(item["words"])):
                     item["words"][i]["fragment"] = fragment
                     item["words"][i]["path"] = path
                     item["words"][i]["episode"] = episode
-                    item["words"][i]["pos"] = pos[i]
+                    item["words"][i]["pos"] = item["pos"][i]
+                    item["words"][i]["lemma"] = item["lemmatized"][i]
 
                 data_tokens.extend(item["words"])
 
@@ -89,6 +103,8 @@ def load_realigned_data():
 
 
 def load_data():
+    nlp = spacy.load("en_core_web_sm")
+
     data_sentences = []
     data_tokens = []
 
@@ -104,8 +120,12 @@ def load_data():
                     item = {"transcript": subtitle["text"]}
 
                     # Remove punctuation
-                    item["transcript"] = re.sub(r"\s*[\.!]+\s*$", "", item["transcript"])
-                    item["transcript"] = re.sub(r"\s*[-:\.♪]+\s*", " ", item["transcript"])
+                    item["transcript"] = re.sub(
+                        r"\s*[\.!]+\s*$", "", item["transcript"]
+                    )
+                    item["transcript"] = re.sub(
+                        r"\s*[-:\.♪]+\s*", " ", item["transcript"]
+                    )
 
                     # Remove whitespace
                     item["transcript"] = re.sub(r"\s+$", "", item["transcript"])
@@ -116,16 +136,21 @@ def load_data():
 
                     item["tokenized"] = [w.lower() for w in tokenized]
 
-                    pos = nltk.pos_tag(tokenized, tagset="universal")
-                    pos = [p[1] for p in pos]
-                    item["pos"] = pos
+                    doc = Doc(nlp.vocab, words=tokenized)
+                    for name, proc in nlp.pipeline:
+                        doc = proc(doc)
+
+                    # Treat proper nouns the same way as nouns
+                    item["pos"] = [t.pos_ if t.pos_ != "PROPN" else "NOUN" for t in doc]
+                    item["lemmatized"] = [t.lemma_.lower() for t in doc]
 
                     item["words"] = [{"word": w} for w in item["tokenized"]]
                     for i in range(len(item["words"])):
                         item["words"][i]["fragment"] = fragment
                         item["words"][i]["path"] = path
                         item["words"][i]["episode"] = episode
-                        item["words"][i]["pos"] = pos[i]
+                        item["words"][i]["pos"] = item["pos"][i]
+                        item["words"][i]["lemma"] = item["lemmatized"][i]
 
                     data_tokens.extend(item["words"])
 
@@ -204,8 +229,6 @@ def crop_and_create_example(example, start, end, target_word, distractor_word):
 
 
 def find_minimal_pairs(tuples, data, args):
-    lemmatizer = WordNetLemmatizer()
-
     eval_set = []
     id = 0
     for lemma_1, lemma_2 in tqdm(tuples):
@@ -214,40 +237,28 @@ def find_minimal_pairs(tuples, data, args):
         for _, s1 in data.iterrows():
             best_example, best_counterexample, best_counterex_row = None, None, None
             len_longest_intersection = 0
-            s1_lemmatized = [
-                lemmatizer.lemmatize(w, POS_LEMMATIZER.get(pos, "n"))
-                for w, pos in zip(s1["tokenized"], s1["pos"])
-            ]
-            if lemma_1 in s1_lemmatized:
+
+            if lemma_1 in s1["lemmatized"]:
                 example_candidate = s1.copy()
                 s1_masked = [
-                    w
-                    if lemmatizer.lemmatize(w, POS_LEMMATIZER.get(pos, "n")) != lemma_1
-                    else TOKEN_MASK
-                    for w, pos in zip(
-                        example_candidate["tokenized"], example_candidate["pos"]
+                    w if lemma != lemma_1 else TOKEN_MASK
+                    for w, lemma in zip(
+                        example_candidate["tokenized"], example_candidate["lemmatized"]
                     )
                 ]
                 for row_counterexample, s2 in data.iterrows():
                     if row_counterexample in used_counterexamples:
                         continue
 
-                    s2_lemmatized = [
-                        lemmatizer.lemmatize(w, POS_LEMMATIZER.get(pos, "n"))
-                        for w, pos in zip(s2["tokenized"], s2["pos"])
-                    ]
-                    if lemma_2 not in s2_lemmatized:
+                    if lemma_2 not in s2["lemmatized"]:
                         continue
 
                     counterexample_candidate = s2.copy()
                     s2_masked = [
-                        w
-                        if lemmatizer.lemmatize(w, POS_LEMMATIZER.get(pos, "n"))
-                        != lemma_2
-                        else TOKEN_MASK
-                        for w, pos in zip(
+                        w if lemma != lemma_2 else TOKEN_MASK
+                        for w, lemma in zip(
                             counterexample_candidate["tokenized"],
-                            counterexample_candidate["pos"],
+                            counterexample_candidate["lemmatized"],
                         )
                     ]
 
@@ -263,7 +274,8 @@ def find_minimal_pairs(tuples, data, args):
                         or last_word["case"] != "success"
                         or "end" not in last_word
                         or "start" not in first_word
-                        or last_word["end"] - first_word["start"] < args.min_phrase_duration
+                        or last_word["end"] - first_word["start"]
+                        < args.min_phrase_duration
                     ):
                         continue
 
@@ -277,7 +289,8 @@ def find_minimal_pairs(tuples, data, args):
                         or last_word["case"] != "success"
                         or "end" not in last_word
                         or "start" not in first_word
-                        or last_word["end"] - first_word["start"] < args.min_phrase_duration
+                        or last_word["end"] - first_word["start"]
+                        < args.min_phrase_duration
                     ):
                         continue
 
@@ -322,8 +335,6 @@ def find_minimal_pairs(tuples, data, args):
 
 
 def get_lemmatized_words(data_tokens, data_split, pos=None):
-    lemmatizer = WordNetLemmatizer()
-
     all_words = []
     fragments = ["narration", "dialog"]
     if data_split == "train":
@@ -332,23 +343,29 @@ def get_lemmatized_words(data_tokens, data_split, pos=None):
         words = data_tokens[
             (data_tokens.fragment == fragment)
             & data_tokens.episode.isin(SPLIT_SPEC[fragment][data_split])
-            ]
+        ]
         if pos:
             words = words[words.pos == pos]
-        words = [
-            lemmatizer.lemmatize(w.word.lower(), POS_LEMMATIZER.get(w.pos, "n"))
-            for _, w in words.iterrows()
-        ]
-        all_words.extend(words)
+        lemmas = [w.lemma for _, w in words.iterrows()]
+        all_words.extend(lemmas)
 
     return all_words
 
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--min-occurrences", type=int, default=10, help="Minimum number of occurrences in val data of"
-                                                                       " a word to be included")
-    parser.add_argument("--min-phrase-duration", type=float, default=0.1, help="Minimum duration of a phrase (in seconds)")
+    parser.add_argument(
+        "--min-occurrences",
+        type=int,
+        default=10,
+        help="Minimum number of occurrences in val data of a word to be included",
+    )
+    parser.add_argument(
+        "--min-phrase-duration",
+        type=float,
+        default=0.2,
+        help="Minimum duration of a phrase (in seconds)",
+    )
     return parser.parse_args()
 
 
