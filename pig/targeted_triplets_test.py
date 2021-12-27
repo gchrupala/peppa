@@ -15,7 +15,7 @@ if __name__ == "__main__":
     fragment_type = "narration"
     pos = "NOUN"
 
-    target_word = "glass"
+    target_word = "cake"
 
     eval_info_file = f"data/eval/eval_set_{fragment_type}_{pos}.csv"
     eval_info = pd.read_csv(eval_info_file, index_col="id")

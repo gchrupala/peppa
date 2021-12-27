@@ -28,8 +28,9 @@ from pig.targeted_triplets import PeppaTargetedTripletDataset
 BATCH_SIZE = 1
 NUM_WORKERS = 1
 
-MIN_DURATION = 0.3
+MIN_DURATION = 0.29
 
+FRAGMENTS = ['narration']
 
 def score(model):
     """Compute all standard scores for the given model. """
@@ -37,7 +38,7 @@ def score(model):
     if torch.cuda.is_available():
         gpus = 1
     trainer = pl.Trainer(logger=False, gpus=gpus)
-    for fragment_type in ['dialog', 'narration']:
+    for fragment_type in FRAGMENTS:
         for pos in ["ADJ", "NOUN", "VERB"]:
             per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
             yield dict(fragment_type=fragment_type,
@@ -59,7 +60,7 @@ def targeted_triplet_score(fragment_type, pos, model, trainer):
 def get_all_results_df(results_dir):
     results_data_all = []
     for pos in ["ADJ", "VERB", "NOUN"]:
-        for fragment_type in ['dialog', 'narration']:
+        for fragment_type in FRAGMENTS:
             results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv",
                                                 converters={"tokenized": ast.literal_eval})
             results_data_all.append(results_data_fragment)
@@ -106,7 +107,7 @@ def create_per_word_result_plots(results_dir, version, args):
     results_data_words_all = []
     for pos in ["ADJ", "VERB", "NOUN"]:
         results_data = []
-        for fragment_type in ['dialog', 'narration']:
+        for fragment_type in FRAGMENTS:
             results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv", converters={"tokenized":ast.literal_eval})
             results_data_fragment["duration"] = results_data_fragment["clipEnd"] - results_data_fragment["clipStart"]
             results_data_fragment = results_data_fragment[results_data_fragment["duration"] > MIN_DURATION]
