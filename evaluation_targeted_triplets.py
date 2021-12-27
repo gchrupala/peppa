@@ -25,8 +25,8 @@ import matplotlib.pyplot as plt
 
 from pig.targeted_triplets import PeppaTargetedTripletDataset
 
-BATCH_SIZE = 1
-NUM_WORKERS = 1
+BATCH_SIZE = 8
+NUM_WORKERS = 8
 
 MIN_DURATION = 0.29
 
