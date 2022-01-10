@@ -265,7 +265,7 @@ if __name__ == "__main__":
         all_results = get_all_results_df(results_dir)
         create_duration_results_plots(all_results, results_dir, version)
 
-        print("Average accuracy: ", all_results["result"].mean())
+        print(f"Average accuracy for version {version}: {all_results['result'].mean()}")
 
     scores = pd.DataFrame.from_records(rows)
     scores.to_csv("results/scores_targeted_triplets.csv", index=False, header=True)
