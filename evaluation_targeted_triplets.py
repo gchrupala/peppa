@@ -160,8 +160,10 @@ def create_per_word_result_plots(results_dir, version, args):
         word_frequencies = [dataset_word_frequencies[w] for w in mean_acc.keys()]
         word_frequencies = [np.log(f) for f in word_frequencies]
         word_accuracies = mean_acc.values
+        pearson_corr = pearsonr(word_frequencies, word_accuracies)
         plt.figure()
         s1 = sns.scatterplot(word_frequencies, word_accuracies, marker="x")
+        plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.2f})")
         plt.xlabel("Log Frequency")
         plt.ylabel("Accuracy")
         # Named labels in scatterplot:
@@ -170,12 +172,14 @@ def create_per_word_result_plots(results_dir, version, args):
                     mean_acc.keys()[i], horizontalalignment='left',
                     size='small', color='black')
         plt.savefig(os.path.join(results_dir, f"results_correlation_frequency_acc"), dpi=300)
-        print(f"Pearson correlation frequency-acc: ", pearsonr(word_frequencies, word_accuracies))
+        print(f"Pearson correlation frequency-acc: ", pearson_corr)
 
         # Correlate performance with word concreteness
         word_concretenesses = [get_word_concreteness(w, word_concreteness_ratings) for w in mean_acc.keys()]
+        pearson_corr = pearsonr(word_concretenesses, word_accuracies)
         plt.figure()
         s2 = sns.scatterplot(word_concretenesses, word_accuracies, marker="x")
+        plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.2f})")
         plt.xlabel("Concreteness")
         plt.ylabel("Accuracy")
         # Named labels in scatterplot:
@@ -184,7 +188,7 @@ def create_per_word_result_plots(results_dir, version, args):
                     mean_acc.keys()[i], horizontalalignment='left',
                     size='small', color='black')
         plt.savefig(os.path.join(results_dir, f"results_correlation_concreteness_acc"), dpi=300)
-        print(f"Pearson correlation concreteness-acc: ", pearsonr(word_concretenesses, word_accuracies))
+        print(f"Pearson correlation concreteness-acc: ", pearson_corr)
 
 
 def get_dataset_word_frequencies():
