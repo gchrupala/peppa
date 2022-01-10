@@ -7,7 +7,7 @@ import torch
 from scipy.stats import pearsonr
 
 from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES
-from pig.evaluation import load_best_model, pretraining
+from pig.evaluation import load_best_model
 
 import pytorch_lightning as pl
 import logging
@@ -77,14 +77,14 @@ def create_duration_results_plots(results_data_all, results_dir, version):
 
     plt.figure()
     results_data_all.groupby("clipDuration").size().plot.bar()
-    plt.title(f"Version: {version} | Number of samples: per duration")
+    plt.title(f"Number of samples: per duration")
     plt.xticks(rotation=75)
     plt.savefig(os.path.join(results_dir, f"num_samples_vs_duration"), dpi=300)
 
     plt.figure()
     results_data_all["num_tokens"] = results_data_all.tokenized.apply(len)
     results_data_all.groupby("num_tokens").size().plot.bar()
-    plt.title(f"Version: {version} | Number of samples: per number of tokens")
+    plt.title(f"Number of samples: per number of tokens")
     plt.xticks(rotation=75)
     plt.savefig(os.path.join(results_dir, f"num_samples_vs_num_tokens"), dpi=300)
 
@@ -122,7 +122,7 @@ def create_per_word_result_plots(results_dir, version, args):
 
         plt.figure(figsize=(15, 8))
         results_data_words.groupby("word").size().plot.bar()
-        plt.title(f"Version: {version} | Number of samples: {pos}")
+        plt.title(f"Number of samples: {pos}")
         plt.xticks(rotation=75)
         plt.axhline(y=args.min_samples, color="black", linestyle='--')
         plt.savefig(os.path.join(results_dir, f"num_samples_{pos}_word"), dpi=300)
