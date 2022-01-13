@@ -1,4 +1,5 @@
-from torch.utils.data import Dataset
+import torch
+from torch.utils.data import Dataset, DataLoader
 import pickle
 import json
 import moviepy.editor as m
@@ -7,6 +8,8 @@ from dataclasses import dataclass
 import os
 import random
 from pig.util import grouped, shuffled
+import pig.data
+
 
 @dataclass
 class Triplet:
@@ -22,7 +25,48 @@ class TripletBatch:
     positive: ...
     negative: ...
 
+class TripletScorer:
 
+    def __init__(self, fragment_type, split=['val']):
+        self.dataset = pig.data.PeppaPigIterableDataset(
+            target_size=(180, 100),
+            split=split,
+            fragment_type=fragment_type,
+            duration=None,
+            jitter=False
+            )
+
+
+
+    def _encode(self, model, trainer, batch_size=8):
+        loader = DataLoader(self.dataset, collate_fn=pig.data.collate, batch_size=batch_size)
+        self._duration = torch.tensor([ clip.duration for clip in self.dataset._raw_clips() ])
+        audio, video =  zip(*[ (batch.audio, batch.video) for batch
+                               in trainer.predict(model, loader) ])
+        self._audio = torch.cat(audio)
+        self._video = torch.cat(video)
+        
+
+    def _score(self, n_samples=1):
+        from pig.metrics import triplet_accuracy
+        accuracy = []
+        for i in range(n_samples):
+            pos_idx, neg_idx = zip(*_triplets(range(len(self._duration)),
+                                              lambda idx: self._duration[idx]))
+            pos_idx = torch.tensor(pos_idx)
+            neg_idx = torch.tensor(neg_idx)
+            acc = triplet_accuracy(anchor=self._audio[pos_idx],
+                                   positive=self._video[pos_idx],
+                                   negative=self._video[neg_idx]).mean().item()
+            accuracy.append(acc)
+        return torch.tensor(accuracy)
+
+    def evaluate(self, model, batch_size=8, n_samples=1, trainer=None):
+        if trainer is None:
+            trainer = pl.Trainer(gpus=[0], logger=False)
+        self._encode(model, trainer)
+        return self._score(n_samples=n_samples)
+    
 class PeppaTripletDataset(Dataset):
 
     def __init__(self, raw=False):
