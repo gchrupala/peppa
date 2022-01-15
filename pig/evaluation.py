@@ -63,7 +63,7 @@ def score(model, gpus):
                                                        jitter=True))
 BATCH_SIZE=8
 def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
-        ds = pig.data.PeppaPigIterableDataset(
+        ds = pig.data.PeppaPigDataset(
             target_size=(180, 100),
             split=['val'],
             fragment_type=fragment_type,
