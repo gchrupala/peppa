@@ -12,7 +12,6 @@ import pytorch_lightning as pl
 import logging
 from itertools import groupby
 import pig.util
-from pig.triplet import PeppaTripletDataset, collate_triplets
 import json
 import pickle
 import random
@@ -45,7 +44,8 @@ class Pair:
     audio: torch.tensor
     video_idx: int
     audio_idx: int
-
+    video_duration: float
+    audio_duration: float
 
 @dataclass
 class RawPair:
@@ -61,14 +61,18 @@ class ClipBatch:
     """Batch of video clips with associated audio."""
     video: torch.tensor
     audio: torch.tensor
-
+    video_duration: torch.tensor
+    audio_duration: torch.tensor
 
 def collate_audio(data):
     return pig.util.pad_audio_batch(data)
 
 def collate(data):
-    video, audio = zip(*[(x.video, x.audio) for x in data])
-    return ClipBatch(video=pig.util.pad_video_batch(video), audio=pig.util.pad_audio_batch(audio))
+    video, audio, vlen, alen = zip(*[(x.video, x.audio, x.video_duration, x.audio_duration) for x in data])
+    return ClipBatch(video=pig.util.pad_video_batch(video),
+                     audio=pig.util.pad_audio_batch(audio),
+                     video_duration = torch.tensor(vlen),
+                     audio_duration = torch.tensor(alen))
 
 def featurize(clip):
     frames = [ torch.tensor(frame/255).float()
@@ -110,8 +114,7 @@ class AudioClipDataset(IterableDataset):
                 
 class VideoFileDataset(IterableDataset):
 
-    def __init__(self, stats, paths):
-        self.stats = stats
+    def __init__(self, paths):
         self.paths = paths
 
     def __iter__(self):
@@ -217,7 +220,9 @@ class PeppaPigIterableDataset(IterableDataset):
             for j, b in clips:
                 if j == i:
                 #if abs(j - i) <= self.window:
-                    yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)
+                    yield Pair(video = a.video, audio = b.audio,
+                               video_idx = i, audio_idx = j,
+                               video_duration = a.duration, audio_duration = b.duration)
                     
 
     def __iter__(self):
