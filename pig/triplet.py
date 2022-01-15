@@ -34,12 +34,12 @@ class TripletScorer:
             target_size=(180, 100),
             split=split,
             fragment_type=fragment_type,
+            sorted_by_duration=True,
             duration=None,
-            jitter=False
-            )
+        )
 
-    def _encode(self, model, trainer):
-        loader = DataLoader(self.dataset, collate_fn=pig.data.collate, batch_size=1)
+    def _encode(self, model, trainer, batch_size):
+        loader = DataLoader(self.dataset, collate_fn=pig.data.collate, batch_size=batch_size)
         audio, video, duration =  zip(*[ (batch.audio, batch.video, batch.audio_duration) for batch
                                          in trainer.predict(model, loader) ])
         self._duration = torch.cat(duration)
@@ -62,10 +62,10 @@ class TripletScorer:
             accuracy.append(acc)
         return torch.tensor(accuracy)
 
-    def evaluate(self, model, n_samples=100, trainer=None):
+    def evaluate(self, model, batch_size, n_samples=100, trainer=None):
         if trainer is None:
             trainer = pl.Trainer(gpus=1, logger=False)
-        self._encode(model, trainer)
+        self._encode(model, trainer, batch_size)
         return self._score(n_samples=n_samples)
 
 

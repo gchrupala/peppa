@@ -84,7 +84,7 @@ def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
 def triplet_score(fragment_type, model, trainer):
     from pig.triplet import TripletScorer
     scorer = TripletScorer(fragment_type=fragment_type, split=['val'])
-    acc = scorer.evaluate(model, trainer=trainer, n_samples=500)
+    acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=BATCH_SIZE)
     return acc
 
 
