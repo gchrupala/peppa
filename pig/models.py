@@ -163,16 +163,11 @@ class PeppaPig(pl.LightningModule):
         self.audio_encoder = Wav2VecEncoder(**config['audio'])
         
     def forward(self, batch):
-        # in lightning, forward defines the prediction/inference actions
-        try:
-            a = self.encode_audio(batch.anchor)
-            p = self.encode_video(batch.positive)
-            n = self.encode_video(batch.negative)
-            return pig.triplet.TripletBatch(anchor=a, positive=p, negative=n)
-        except AttributeError:
-            V = self.encode_video(batch.video)
-            A = self.encode_audio(batch.audio)
-            return pig.data.ClipBatch(video=V, audio=A)
+        V = self.encode_video(batch.video)
+        A = self.encode_audio(batch.audio)
+        return pig.data.ClipBatch(video=V, audio=A,
+                                  video_duration=batch.video_duration,
+                                  audio_duration=batch.audio_duration)
         
     def encode_video(self, x):
         return self.video_encoder(x)

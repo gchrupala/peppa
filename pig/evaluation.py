@@ -47,8 +47,10 @@ def score(model, gpus):
     """Compute all standard scores for the given model. """
     trainer = pl.Trainer(gpus=gpus, logger=False)
     for fragment_type in ['dialog', 'narration']:
+        acc = triplet_score(fragment_type, model, trainer)
         yield dict(fragment_type=fragment_type,
-                   triplet_acc=triplet_score(fragment_type, model, trainer),
+                   triplet_acc=acc.mean().item(),
+                   triplet_acc_std=acc.std().item(),
                    recall_at_10_fixed=retrieval_score(fragment_type,
                                                       model,
                                                       trainer,
@@ -59,9 +61,9 @@ def score(model, gpus):
                                                       trainer,
                                                       duration=2.3,
                                                        jitter=True))
-BATCH_SIZE=16        
+BATCH_SIZE=8
 def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
-        ds = pig.data.PeppaPigIterableDataset(
+        ds = pig.data.PeppaPigDataset(
             target_size=(180, 100),
             split=['val'],
             fragment_type=fragment_type,
@@ -77,12 +79,12 @@ def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
         correct = torch.eye(V.shape[0], device=A.device)
         rec10 = pig.metrics.recall_at_n(V, A, correct=correct, n=10).mean().item()
         return rec10
-        
+
+
 def triplet_score(fragment_type, model, trainer):
-    ds = pig.data.PeppaTripletDataset.load(f"data/out/val_{fragment_type}_triplets_v4")
-    loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=BATCH_SIZE)
-    acc = torch.cat([ pig.metrics.batch_triplet_accuracy(batch)
-                      for  batch in trainer.predict(model, loader) ]).mean().item()
+    from pig.triplet import TripletScorer
+    scorer = TripletScorer(fragment_type=fragment_type, split=['val'])
+    acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=BATCH_SIZE)
     return acc
 
 
