@@ -39,13 +39,6 @@ class TripletScorer:
             duration=None,
         )
 
-    def __encode(self, model, trainer, batch_size):
-        loader = DataLoader(self.dataset, collate_fn=pig.data.collate, batch_size=batch_size)
-        audio, video, duration =  zip(*[ (batch.audio, batch.video, batch.audio_duration) for batch
-                                         in trainer.predict(model, loader) ])
-        self._duration = torch.cat(duration)
-        self._audio = torch.cat(audio)
-        self._video = torch.cat(video)
 
     def _encode(self, model, trainer, batch_size):
         key = lambda x: x.audio_duration
