@@ -35,7 +35,6 @@ class TripletScorer:
             target_size=(180, 100),
             split=split,
             fragment_type=fragment_type,
-            sorted_by_duration=True,
             duration=None,
         )
 

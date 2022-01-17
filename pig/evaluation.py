@@ -14,6 +14,9 @@ import random
 random.seed(666)
 torch.manual_seed(666)
 
+BATCH_SIZE=8
+VERSIONS = (48, 50, 51, 52)
+
 def data_statistics():
     rows = []
     for split in ['train', 'val', 'test']:
@@ -66,17 +69,18 @@ def score(model, gpus):
                                                       trainer,
                                                       duration=2.3,
                                                        jitter=True))
-BATCH_SIZE=8
-def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
-        ds = pig.data.PeppaPigDataset(
+
+def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False, batch_size=BATCH_SIZE):
+        base_ds = pig.data.PeppaPigDataset(
             target_size=(180, 100),
             split=['val'],
             fragment_type=fragment_type,
             duration=duration,
             jitter=jitter
             )
-        loader = DataLoader(ds, collate_fn=pig.data.collate, batch_size=BATCH_SIZE)
-
+        key = lambda x: x.audio_duration
+        dataset = pig.data.GroupedDataset(base_ds, key, pig.data.collate, batch_size)
+        loader = DataLoader(dataset, batch_size=None, batch_sampler=None) 
         V, A = zip(* [(batch.video, batch.audio) for batch
                   in trainer.predict(model, loader) ])
         V = torch.cat(V, dim=0)
@@ -86,10 +90,10 @@ def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
         return rec10
 
 
-def triplet_score(fragment_type, model, trainer):
+def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE):
     from pig.triplet import TripletScorer
     scorer = TripletScorer(fragment_type=fragment_type, split=['val'])
-    acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=BATCH_SIZE)
+    acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 
 
@@ -119,7 +123,7 @@ def format():
                       float_format="%.3f")
                                 
 
-VERSIONS = (48, 50, 51, 52)
+
 
 def run(gpu=0, versions=VERSIONS):
     logging.getLogger().setLevel(logging.INFO)
@@ -145,3 +149,4 @@ def main(gpu=0):
     scores.to_csv("results/scores.csv", index=False, header=True)
     
     
+
