@@ -115,6 +115,23 @@ class VideoFileDataset(IterableDataset):
             with m.VideoFileClip(path) as clip:
                 yield featurize(clip)
 
+
+class VideoClipDataset(IterableDataset):
+
+    def __init__(self, clips):
+        self.clips = clips
+
+    def __iter__(self):
+        for clip in self.clips:
+            yield featurize(clip)
+        
+class GenericIterableDataset(IterableDataset):
+    def __init__(self, items):
+        self.items = items
+
+    def __iter__(self):
+        yield from self.items
+
 def audiofile_loader(paths, batch_size=32):
     dataset = AudioFileDataset(paths)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
@@ -122,7 +139,20 @@ def audiofile_loader(paths, batch_size=32):
 def audioclip_loader(clips, batch_size=32):
     dataset = AudioClipDataset(clips)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
-    
+
+
+class GroupedDataset(IterableDataset):
+    """Returns batches of within groups."""
+    def __init__(self, dataset, key, collate_fn, batch_size):
+        self.dataset = dataset
+        self.key = key
+        self.collate_fn = collate_fn
+        self.batch_size = batch_size
+
+    def __iter__(self):
+        for _, items in pig.util.grouped(sorted(self.dataset, key=self.key), key=self.key):
+            yield from DataLoader(GenericIterableDataset(items), collate_fn=self.collate_fn, batch_size=self.batch_size)
+
 class PeppaPigDataset(Dataset):
     def __init__(self, force_cache=False, cache_dir=None, **kwargs):
         dataset = PeppaPigIterableDataset(**kwargs)

@@ -8,6 +8,11 @@ from torch.utils.data import DataLoader
 from dataclasses import dataclass
 import pandas as pd
 import numpy as np
+import torch
+import random
+
+random.seed(666)
+torch.manual_seed(666)
 
 def data_statistics():
     rows = []

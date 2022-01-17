@@ -13,6 +13,7 @@ import glob
 import pytorch_lightning as pl
 
 
+
 @dataclass
 class Triplet:
     anchor: ...
@@ -38,7 +39,7 @@ class TripletScorer:
             duration=None,
         )
 
-    def _encode(self, model, trainer, batch_size):
+    def __encode(self, model, trainer, batch_size):
         loader = DataLoader(self.dataset, collate_fn=pig.data.collate, batch_size=batch_size)
         audio, video, duration =  zip(*[ (batch.audio, batch.video, batch.audio_duration) for batch
                                          in trainer.predict(model, loader) ])
@@ -46,7 +47,16 @@ class TripletScorer:
         self._audio = torch.cat(audio)
         self._video = torch.cat(video)
 
-        
+    def _encode(self, model, trainer, batch_size):
+        key = lambda x: x.audio_duration
+        dataset = pig.data.GroupedDataset(self.dataset, key, pig.data.collate, batch_size)
+        loader = DataLoader(dataset, batch_size=None, batch_sampler=None) 
+        audio, video, duration =  zip(*[ (batch.audio, batch.video, batch.audio_duration) for batch
+                                         in trainer.predict(model, loader) ])
+        self._duration = torch.cat(duration)
+        self._audio = torch.cat(audio)
+        self._video = torch.cat(video)
+ 
         
     def _score(self, n_samples=100):
         from pig.metrics import triplet_accuracy
