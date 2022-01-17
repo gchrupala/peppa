@@ -188,7 +188,6 @@ class PeppaPigIterableDataset(IterableDataset):
                  fragment_type='dialog',
                  duration=3.2,
                  jitter=False,
-                 sorted_by_duration=False,
                  ):
         if type(split) is str:
             raise ValueError("`split` should be a list of strings")
@@ -198,7 +197,6 @@ class PeppaPigIterableDataset(IterableDataset):
         self.duration = duration
         self.jitter = jitter
         self.split_spec = SPLIT_SPEC
-        self.sorted_by_duration = sorted_by_duration
 
     def featurize(self, clip):
         return featurize(clip)
@@ -238,13 +236,8 @@ class PeppaPigIterableDataset(IterableDataset):
                 for clip in clips:
                     yield clip
 
-
     def __iter__(self):
-        if self.sorted_by_duration:
-            clips = [clip for clip in self._clips()]
-            yield from sorted(clips, key=lambda clip: clip.audio_duration)
-        else:
-            yield from self._clips()
+        yield from self._clips()
 
 @dataclass
 class Stats:
