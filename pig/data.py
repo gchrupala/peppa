@@ -32,7 +32,7 @@ class Clip:
     """Video clip with associated audio."""
     video: torch.tensor
     audio: torch.tensor
-    duration: float
+    video_duration: float
     audio_duration: float
     filename: str
     offset: Union[float, None] = None
@@ -60,7 +60,7 @@ def collate_audio(data):
     return pig.util.pad_audio_batch(data)
 
 def collate(data):
-    video, audio, vlen, alen = zip(*[(x.video, x.audio, x.duration, x.audio_duration) for x in data])
+    video, audio, vlen, alen = zip(*[(x.video, x.audio, x.video_duration, x.audio_duration) for x in data])
     return ClipBatch(video=pig.util.pad_video_batch(video),
                      audio=pig.util.pad_audio_batch(audio),
                      video_duration = torch.tensor(vlen),
@@ -73,7 +73,7 @@ def featurize(clip):
         v = torch.stack(frames)
         return Clip(video = v.permute(3, 0, 1, 2),
                     audio = featurize_audio(clip.audio),
-                    duration = clip.duration,
+                    video_duration = clip.duration,
                     audio_duration = clip.audio.duration,
                     filename = clip.filename)
     else:
@@ -212,7 +212,7 @@ class PeppaPigIterableDataset(IterableDataset):
     def __iter__(self):
         if self.sorted_by_duration:
             clips = [clip for clip in self._clips()]
-            yield from sorted(clips, key=lambda clip: clip.duration)
+            yield from sorted(clips, key=lambda clip: clip.audio_duration)
         else:
             yield from self._clips()
 
