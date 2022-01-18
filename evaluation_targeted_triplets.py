@@ -6,7 +6,7 @@ from collections import Counter
 import torch
 from scipy.stats import pearsonr
 
-from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES
+from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS
 from pig.evaluation import load_best_model
 
 import pytorch_lightning as pl
@@ -29,8 +29,6 @@ BATCH_SIZE = 8
 NUM_WORKERS = 8
 
 MIN_DURATION = 0.29
-
-FRAGMENTS = ['narration']
 
 def score(model):
     """Compute all standard scores for the given model. """

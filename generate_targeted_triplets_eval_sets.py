@@ -17,6 +17,8 @@ DATA_DIR = "data/out/180x100/"
 REALIGNED_DATA_DIR = "data/out/realign/"
 DATA_EVAL_DIR = "data/eval/"
 
+FRAGMENTS = ["narration"]
+
 WORDS_NAMES = [
     "chloe",
     "danny",
@@ -340,10 +342,9 @@ def find_minimal_pairs(tuples, data, args):
 
 def get_lemmatized_words(data_tokens, data_split, pos=None):
     all_words = []
-    fragments = ["narration", "dialog"]
     if data_split == "train":
-        fragments = ["dialog"]
-    for fragment in fragments:
+        raise NotImplementedError()
+    for fragment in FRAGMENTS:
         words = data_tokens[
             (data_tokens.fragment == fragment)
             & data_tokens.episode.isin(SPLIT_SPEC[fragment][data_split])
@@ -361,7 +362,7 @@ def get_args():
     parser.add_argument(
         "--min-occurrences",
         type=int,
-        default=10,
+        default=1,
         help="Minimum number of occurrences in val data of a word to be included",
     )
     parser.add_argument(
@@ -395,7 +396,7 @@ if __name__ == "__main__":
         tuples = list(itertools.combinations(words, 2))
 
         eval_sets = []
-        for fragment in ["narration", "dialog"]:
+        for fragment in FRAGMENTS:
             data_fragment = data_sentences[data_sentences.fragment == fragment]
             data_fragment_val = data_fragment[
                 data_fragment.episode.isin(SPLIT_SPEC[fragment]["val"])
