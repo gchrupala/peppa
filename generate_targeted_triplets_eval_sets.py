@@ -33,9 +33,13 @@ SYNONYMS = {"granddad": "grandpa",}
 
 # Ignore some words that have been mistagged by the POS-tagger (partly because of poor pre-tokenization):
 WORDS_IGNORE = {
-    "VERB": ["it'"],
-    "NOUN": ["peppa's", "george's", "let's", "pig's", "pig,", "george'"],
-    "ADJ": [],
+    "VERB": ["it'", "choose'", "dog,", "they're", "first,", "we're", "what's", "can't", "friends,"],
+    "NOUN": ["peppa's", "george's", "let's", "pig's", "pig,", "george'", "i'll", "rabbit's", "daddy's", "chloe's",
+             "can't", "doesn't", "suzy's", "zebra's", "zoe's", "it's", "dog's", "dinosaur's", "they're", "grandpa's",
+             "rebecca's", "we've", "there's", "on,", "yes,", "there'", "you'll", "i'm", "we'll", "ho!", "i've", "me!",
+             "what's", "too?", "i'll", "daddy?", "that's", "oooh!", "work?", "you're", "us,", "teapot,", "it?", "look!",
+             "smoothie,", "george?", "juice,", "rabbit?", "we'd", "we're", "boats!", "faster,"],
+    "ADJ": ["hard,", "friend,", "glasses,", "peppa,", "cold,", "it's", "pedro?", "that's"],
 }
 
 POS_LEMMATIZER = {"VERB": "v", "NOUN": "n", "ADJ": "a"}
