@@ -213,6 +213,9 @@ class PeppaPigIterableDataset(IterableDataset):
         paths = [ path for split in self.split \
                        for episode_id in self.split_spec[self.fragment_type][split] \
                        for path in glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi") ]
+        if len(paths) == 0:
+            raise RuntimeError(f"No clips found in data/out/{width}x{height}/{self.fragment_type}/ . Extract the data first.")
+
         # Split data between workers
         worker_info = torch.utils.data.get_worker_info()
         if worker_info is None:  # single-process data loading, return the full iterator
@@ -295,8 +298,8 @@ class PigData(pl.LightningDataModule):
     
     def prepare_data(self):
         if self.config['extract']:
-            logging.info("Extracting data")
-            pig.preprocess.extract()
+            logging.info(f"Extracting data for target size {self.config['target_size']}")
+            pig.preprocess.extract(self.config['target_size'])
         if self.config['prepare']:    
             logging.info("Collecting stats on training data.")
             
