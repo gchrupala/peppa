@@ -300,7 +300,7 @@ class PigData(pl.LightningDataModule):
         if self.config['iterable']:
             self.Dataset = lambda *args, **kwargs: PeppaPigIterableDataset(*args, **kwargs)
         else:
-            self.Dataset = lambda *args, **kwargs: PeppaPigDataset(force_cache=self.config['force_cache'], *args, **kwargs)
+            self.Dataset = lambda *args, **kwargs: PeppaPigDataset(*args, **kwargs)
     
     def prepare_data(self):
         if self.config['extract']:
@@ -325,27 +325,27 @@ class PigData(pl.LightningDataModule):
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
 
-        self.val_dia   = PeppaPigDataset(force_cache=self.config['force_cache'],
+        self.val_dia   = PeppaPigDataset(force_cache=self.config['val']['force_cache'],
                                          target_size=self.config['target_size'],
                                          split=['val'], fragment_type='dialog',
                                          duration=self.config['val']['duration'],
                                          jitter=self.config['val']['jitter'])
 
-        self.val_narr = PeppaPigDataset(force_cache=self.config['force_cache'],
+        self.val_narr = PeppaPigDataset(force_cache=self.config['val']['force_cache'],
                                         target_size=self.config['target_size'],
                                         split=['val'],
                                         fragment_type='narration',
                                         duration=self.config['val']['duration'],
                                         jitter=self.config['val']['jitter'])
         self.val_dia3 = pig.data.PeppaPigDataset(
-            force_cache=self.config['force_cache'],
+            force_cache=self.config['val']['force_cache'],
             target_size=self.config['target_size'],
             split=['val'], fragment_type='dialog',
             duration=None,
             jitter=None)
         
         self.val_narr3 = pig.data.PeppaPigDataset(
-            force_cache=self.config['force_cache'],
+            force_cache=self.config['val']['force_cache'],
             target_size=self.config['target_size'],
             split=['val'], fragment_type='narration',
             duration=None,
