@@ -194,7 +194,6 @@ class PeppaPigIterableDataset(IterableDataset):
                  fragment_type='dialog',
                  duration=3.2,
                  jitter=False,
-                 sorted_by_duration=False,
                  ):
         if type(split) is str:
             raise ValueError("`split` should be a list of strings")
@@ -204,7 +203,6 @@ class PeppaPigIterableDataset(IterableDataset):
         self.duration = duration
         self.jitter = jitter
         self.split_spec = SPLIT_SPEC
-        self.sorted_by_duration = sorted_by_duration
 
     def featurize(self, clip):
         return featurize(clip)
@@ -221,6 +219,9 @@ class PeppaPigIterableDataset(IterableDataset):
         paths = [ path for split in self.split \
                        for episode_id in self.split_spec[self.fragment_type][split] \
                        for path in glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi") ]
+        if len(paths) == 0:
+            raise RuntimeError(f"No clips found in data/out/{width}x{height}/{self.fragment_type}/ . Extract the data first.")
+
         # Split data between workers
         worker_info = torch.utils.data.get_worker_info()
         if worker_info is None:  # single-process data loading, return the full iterator
@@ -244,13 +245,8 @@ class PeppaPigIterableDataset(IterableDataset):
                 for clip in clips:
                     yield clip
 
-
     def __iter__(self):
-        if self.sorted_by_duration:
-            clips = [clip for clip in self._clips()]
-            yield from sorted(clips, key=lambda clip: clip.audio_duration)
-        else:
-            yield from self._clips()
+        yield from self._clips()
 
 @dataclass
 class Stats:
@@ -308,8 +304,8 @@ class PigData(pl.LightningDataModule):
     
     def prepare_data(self):
         if self.config['extract']:
-            logging.info("Extracting data")
-            pig.preprocess.extract()
+            logging.info(f"Extracting data for target size {self.config['target_size']}")
+            pig.preprocess.extract(self.config['target_size'])
         if self.config['prepare']:    
             logging.info("Collecting stats on training data.")
             
