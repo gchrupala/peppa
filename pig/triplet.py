@@ -11,7 +11,7 @@ from pig.util import grouped, shuffled
 import pig.data
 import glob
 import pytorch_lightning as pl
-
+from pig.metrics import triplet_accuracy
 
 
 @dataclass
@@ -41,8 +41,7 @@ class TripletScorer:
 
     def _encode(self, model, trainer, batch_size):
         key = lambda x: x.audio_duration
-        dataset = pig.data.GroupedDataset(self.dataset, key, pig.data.collate, batch_size)
-        loader = DataLoader(dataset, batch_size=None, batch_sampler=None) 
+        loader = pig.data.grouped_loader(self.dataset, key, pig.data.collate, batch_size=batch_size)
         audio, video, duration =  zip(*[ (batch.audio, batch.video, batch.audio_duration) for batch
                                          in trainer.predict(model, loader) ])
         self._duration = torch.cat(duration)
@@ -51,26 +50,27 @@ class TripletScorer:
  
         
     def _score(self, n_samples=100):
-        from pig.metrics import triplet_accuracy
-        accuracy = []
-        for i in range(n_samples):
-            pos_idx, neg_idx = zip(*_triplets(range(len(self._duration)),
-                                              lambda idx: self._duration[idx]))
-            pos_idx = torch.tensor(pos_idx)
-            neg_idx = torch.tensor(neg_idx)
-            acc = triplet_accuracy(anchor=self._audio[pos_idx],
-                                   positive=self._video[pos_idx],
-                                   negative=self._video[neg_idx]).mean().item()
-            accuracy.append(acc)
-        return torch.tensor(accuracy)
-
+        return score_triplets(self._video, self._audio, self._duration, n_samples=n_samples)
+    
     def evaluate(self, model, batch_size, n_samples=100, trainer=None):
         if trainer is None:
             trainer = pl.Trainer(gpus=1, logger=False)
         self._encode(model, trainer, batch_size)
         return self._score(n_samples=n_samples)
 
-
+def score_triplets(video, audio, duration, n_samples=100):
+    accuracy = []
+    for i in range(n_samples):
+        pos_idx, neg_idx = zip(*_triplets(range(len(duration)),
+                                          lambda idx: duration[idx]))
+        pos_idx = torch.tensor(pos_idx)
+        neg_idx = torch.tensor(neg_idx)
+        acc = triplet_accuracy(anchor=audio[pos_idx],
+                                   positive=video[pos_idx],
+                                   negative=video[neg_idx]).mean().item()
+        accuracy.append(acc)
+    return torch.tensor(accuracy)
+    
 
 def _triplets(clips, criterion): 
     for size, items in grouped(clips, key=criterion):
