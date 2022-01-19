@@ -21,6 +21,7 @@ from pytorch_lightning.callbacks import ModelCheckpoint
 import pig.optimization as opt
 import pig.transforms
 from torchvision.transforms import Normalize, Compose
+from pig.triplet import score_triplets
 
 class Attention(nn.Module):
     def __init__(self, in_size, hidden_size):
@@ -201,12 +202,18 @@ class PeppaPig(pl.LightningModule):
             # Logging to TensorBoard by default
             self.log("valnarr_loss", loss.item(), prog_bar=False)
             return (V, A)
+        elif dataloader_idx in [2, 3]:
+            V = self.encode_video(batch.video)
+            A = self.encode_audio(batch.audio)
+            D = batch.audio_duration
+            return (V, A, D)
         else:
             raise ValueError(f"Invalid dataloader index {dataloader_idx}")
         
         
     def validation_epoch_end(self, outputs):
-        out_main, out_narr = outputs
+        # rec10
+        out_main, out_narr, out_dia3, out_narr3 = outputs
         V, A = zip(*out_main)
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)
@@ -219,8 +226,19 @@ class PeppaPig(pl.LightningModule):
         correct = torch.eye(V.shape[0], device=A.device)
         rec10 = pig.metrics.recall_at_n(V, A, correct=correct, n=10)
         self.log("valnarr_rec10", rec10, prog_bar=True)
-
-        
+        # triplet
+        V, A, D = zip(*out_dia3)
+        V = torch.cat(V, dim=0)
+        A = torch.cat(A, dim=0)
+        D = torch.cat(D, dim=0)
+        tri_d = score_triplets(V, A, D, n_samples=100)
+        self.log("val_triplet", tri_d, prog_bar=True)
+        V, A, D = zip(*out_narr3)
+        V = torch.cat(V, dim=0)
+        A = torch.cat(A, dim=0)
+        D = torch.cat(D, dim=0)
+        tri_n = score_triplets(V, A, D, n_samples=100)
+        self.log("valnarr_triplet", tri_n, prog_bar=True)
         
     #def test_step(self, batch, batch_idx):    
     
