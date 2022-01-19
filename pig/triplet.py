@@ -61,8 +61,7 @@ class TripletScorer:
 def score_triplets(video, audio, duration, n_samples=100):
     accuracy = []
     for i in range(n_samples):
-        pos_idx, neg_idx = zip(*_triplets(range(len(duration)),
-                                          lambda idx: duration[idx]))
+        pos_idx, neg_idx = zip(*_triplets(range(len(duration)), lambda idx: duration[idx]))
         pos_idx = torch.tensor(pos_idx)
         neg_idx = torch.tensor(neg_idx)
         acc = triplet_accuracy(anchor=audio[pos_idx],
