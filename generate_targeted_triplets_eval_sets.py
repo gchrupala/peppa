@@ -416,8 +416,11 @@ if __name__ == "__main__":
             words_enough_samples = counts[counts > args.min_samples].keys().to_list()
             if len(words_enough_samples) == 0:
                 print(f"No words with enough samples (>{args.min_samples}) found for POS {pos_name} and fragment {fragment}.")
-
             eval_set = eval_set[eval_set.target_word.isin(words_enough_samples) | eval_set.distractor_word.isin(words_enough_samples)]
+
+            # Sort by duration
+            eval_set["clipDuration"] = eval_set["clipEnd"] - eval_set["clipStart"]
+            eval_set = eval_set.sort_values(by=['clipDuration'])
 
             file_name = f"eval_set_{fragment}_{pos_name}.csv"
             file_dir = os.path.join(DATA_EVAL_DIR, f"min_phrase_duration_{args.min_phrase_duration}")
