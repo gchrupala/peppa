@@ -12,4 +12,4 @@ logging.getLogger().setLevel(logging.INFO)
 
 for pos in ["ADJ", "NOUN", "VERB"]:
     for fragment in FRAGMENTS:
-        PeppaTargetedTripletDataset.from_csv(f"data/out/val_{fragment}_targeted_triplets_{pos}", f"data/eval/eval_set_{fragment}_{pos}.csv")
+        PeppaTargetedTripletDataset.from_csv(f"data/out/val_{fragment}_targeted_triplets_{pos}", f"data/eval/eval_set_{fragment}_{pos}.csv", target_size=(180, 100))

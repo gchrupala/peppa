@@ -12,32 +12,37 @@ FPS = 10
 
 class PeppaTargetedTripletDataset(PeppaTripletDataset):
 
-    def __init__(self, long_videos=False, raw=False):
+    def __init__(self, directory, min_samples=100, target_size=(180, 100), raw=False):
         super().__init__(raw)
 
-        self.long_videos = long_videos
+        self.directory = directory
+        self.target_size = target_size
+        self.min_samples = min_samples
 
     @classmethod
     def load(cls, directory, raw=False):
-        self = cls(raw=raw)
-        self.directory = directory
+        self = cls(directory, raw=raw)
         self._clip_info = json.load(open(f"{self.directory}/clip_info.json"))
         self._sample = json.load(open(f"{self.directory}/sample.json"))
         return self
 
     @classmethod
-    def from_csv(cls, directory, targeted_eval_set_csv, raw=False):
-        self = cls(raw=raw)
+    def from_csv(cls, directory, targeted_eval_set_csv, min_samples=100, target_size=(180, 100), raw=False):
+        self = cls(directory, raw=raw, target_size=target_size, min_samples=min_samples)
         eval_set_info = pd.read_csv(targeted_eval_set_csv)
 
-        self.directory = directory
         self._load_eval_set_and_save_clip_info(eval_set_info)
         self._sample = list(self.sample())
         self._save_sample()
         return self
 
-    def _load_eval_set_and_save_clip_info(self, eval_set_info, target_size=(180, 100)):
+    def _load_eval_set_and_save_clip_info(self, eval_set_info):
         os.makedirs(self.directory, exist_ok=True)
+
+        # Filter examples by num samples
+        counts = eval_set_info.target_word.value_counts()
+        words_enough_samples = counts[counts > self.min_samples].keys().to_list()
+        eval_set_info = eval_set_info[eval_set_info.target_word.isin(words_enough_samples) | eval_set_info.distractor_word.isin(words_enough_samples)]
 
         self._clip_info = {}
         for _, sample in eval_set_info.iterrows():
@@ -52,21 +57,9 @@ class PeppaTargetedTripletDataset(PeppaTripletDataset):
             sample["audio_start"] = sample["clipStart"]
             sample["audio_end"] = sample["clipEnd"]
 
-            if self.long_videos:
-                clip_duration = sample["clipEnd"] - sample["clipStart"]
-                clip_time_center = sample["clipStart"] + clip_duration / 2
-                sample["video_start"] = clip_time_center - VIDEO_DURATION / 2
-                sample["video_end"] = clip_time_center + VIDEO_DURATION / 2
+            clip_trimmed = clip.subclip(sample["clipStart"], sample["clipEnd"])
 
-                sample["audio_start"] = sample["clipStart"] - sample["video_start"]
-                sample["audio_end"] = sample["clipEnd"] - sample["video_start"]
-
-                clip_trimmed = clip.subclip(sample["video_start"], sample["video_end"])
-
-            else:
-                clip_trimmed = clip.subclip(sample["clipStart"], sample["clipEnd"])
-
-            clip_trimmed = clip_trimmed.resize(target_size)
+            clip_trimmed = clip_trimmed.resize(self.target_size)
 
             clip_trimmed.write_videofile(path_example, fps=FPS, codec='mpeg4')
 
@@ -86,22 +79,6 @@ class PeppaTargetedTripletDataset(PeppaTripletDataset):
     def sample(self):
         for info in _targeted_triplets(self._clip_info):
             yield info
-
-    def __getitem__(self, idx):
-        target_info, distractor_info = self._sample[idx]
-        with m.VideoFileClip(target_info['path']) as target:
-            with m.VideoFileClip(distractor_info['path']) as distractor:
-                if self.long_videos:
-                    # Clip audio data to correct size
-                    target.audio = target.audio.subclip(target_info["audio_start"], target_info["audio_end"]).copy()
-                    distractor.audio = distractor.audio.subclip(distractor_info["audio_start"], distractor_info["audio_end"]).copy()
-
-                if self.raw:
-                    return Triplet(anchor=target.audio, positive=target, negative=distractor)
-                else:
-                    positive = featurize(target)
-                    negative = featurize(distractor)
-                    return Triplet(anchor=positive.audio, positive=positive.video, negative=negative.video)
 
 
 def _targeted_triplets(clips_dict):
