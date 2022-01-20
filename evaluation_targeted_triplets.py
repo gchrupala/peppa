@@ -122,16 +122,8 @@ def create_per_word_result_plots(results_dir, version, args):
         results_data_words.groupby("word").size().plot.bar()
         plt.title(f"Number of samples: {pos}")
         plt.xticks(rotation=75)
-        plt.axhline(y=args.min_samples, color="black", linestyle='--')
         plt.savefig(os.path.join(results_dir, f"num_samples_{pos}_word"), dpi=300)
 
-        words_enough_data = [w for w, occ in results_data_words.groupby("word").size().items() if
-                             occ > args.min_samples]
-        if len(words_enough_data) == 0:
-            print(f"No words with enough samples (>{args.min_samples}) found for POS: {pos}")
-            continue
-
-        results_data_words = results_data_words[results_data_words.word.isin(words_enough_data)]
         results_data_words_all.append(results_data_words)
 
         plt.figure(figsize=(15, 8))
@@ -224,7 +216,6 @@ def get_word_concreteness(word, word_concreteness_ratings):
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--versions", type=str, nargs="+")
-    parser.add_argument("--min-samples", type=int, default=100)
 
     parser.add_argument("--correlate-predictors", action="store_true", default=False)
 
