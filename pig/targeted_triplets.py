@@ -98,7 +98,6 @@ class PeppaTargetedTripletDataset(Dataset):
         words_enough_samples = counts[counts > self.min_samples].keys().to_list()
         if len(words_enough_samples) == 0:
             print(f"No words with enough samples (>{self.min_samples}) found.")
-            return
 
         eval_set_info = eval_set_info[eval_set_info.target_word.isin(words_enough_samples) | eval_set_info.distractor_word.isin(words_enough_samples)]
 
