@@ -18,6 +18,7 @@ REALIGNED_DATA_DIR = "data/out/realign/"
 DATA_EVAL_DIR = "data/eval/"
 
 FRAGMENTS = ["narration"]
+POS_TAGS = ["ADJ", "VERB", "NOUN"]
 
 WORDS_NAMES = [
     "chloe",
@@ -386,7 +387,7 @@ if __name__ == "__main__":
 
     data_sentences, data_tokens = load_realigned_data()
 
-    for pos_name in ["NOUN", "VERB", "ADJ"]:
+    for pos_name in POS_TAGS:
         print(f"Looking for {pos_name}s:")
         # Find most common words
         words = get_lemmatized_words(data_tokens, "val", pos_name)

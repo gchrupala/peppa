@@ -6,7 +6,7 @@ from collections import Counter
 import torch
 from scipy.stats import pearsonr
 
-from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS
+from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS, POS_TAGS
 from pig.data import GroupedDataset, collate
 from pig.evaluation import load_best_model
 
@@ -36,7 +36,7 @@ def score(model):
         gpus = 1
     trainer = pl.Trainer(logger=False, gpus=gpus)
     for fragment_type in FRAGMENTS:
-        for pos in ["ADJ", "NOUN", "VERB"]:
+        for pos in POS_TAGS:
             per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
             yield dict(fragment_type=fragment_type,
                        pos=pos,
@@ -58,7 +58,7 @@ def targeted_triplet_score(fragment_type, pos, model, trainer):
 
 def get_all_results_df(results_dir):
     results_data_all = []
-    for pos in ["ADJ", "VERB", "NOUN"]:
+    for pos in POS_TAGS:
         for fragment_type in FRAGMENTS:
             results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv",
                                                 converters={"tokenized": ast.literal_eval})
@@ -103,7 +103,7 @@ def create_duration_results_plots(results_data_all, results_dir, version):
 
 def create_per_word_result_plots(results_dir, version, args):
     results_data_words_all = []
-    for pos in ["ADJ", "VERB", "NOUN"]:
+    for pos in POS_TAGS:
         results_data = []
         for fragment_type in FRAGMENTS:
             results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv", converters={"tokenized":ast.literal_eval})
