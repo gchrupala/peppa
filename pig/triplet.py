@@ -30,9 +30,9 @@ class TripletBatch:
 
 class TripletScorer:
 
-    def __init__(self, fragment_type, split=['val']):
+    def __init__(self, fragment_type, split=['val'], target_size=(180, 100)):
         self.dataset = pig.data.PeppaPigDataset(
-            target_size=(180, 100),
+            target_size=target_size,
             split=split,
             fragment_type=fragment_type,
             duration=None,
