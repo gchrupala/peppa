@@ -91,6 +91,7 @@ class PeppaTargetedTripletDataset(Dataset):
 
     def _load_eval_set_and_save_clip_info(self, eval_set_info):
         os.makedirs(self.directory, exist_ok=True)
+        self._clip_info = {}
 
         # Filter examples by num samples
         counts = eval_set_info.target_word.value_counts()
@@ -101,7 +102,6 @@ class PeppaTargetedTripletDataset(Dataset):
 
         eval_set_info = eval_set_info[eval_set_info.target_word.isin(words_enough_samples) | eval_set_info.distractor_word.isin(words_enough_samples)]
 
-        self._clip_info = {}
         for _, sample in eval_set_info.iterrows():
             id = sample.id
             id_counterexample = sample.id_counterexample
