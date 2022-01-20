@@ -12,7 +12,8 @@ import os.path
 import torch
 import torch.nn
 import pig.evaluation
-
+import random
+    
 VERSIONS=[48, 61]
 
 def checkpoint_path(version):
@@ -157,6 +158,46 @@ def normalized_distance(a, b):
     from Levenshtein import distance
     return distance(a, b) / max(len(a), len(b))
 
+def embed_utterances(version, fragment_type='dialog', grouped=True, embedder='st'):
+    from pig.models import PeppaPig
+    from pig.data import audioclip_loader, grouped_audioclip_loader
+    from pig.util import cosine_matrix
+    from sentence_transformers import SentenceTransformer
+    from torchtext.vocab import GloVe
+    from copy import deepcopy
+    audio_paths = glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.wav")
+    anno_paths  = [ meta(path) for path in audio_paths ]
+
+    data = UttData(audio_paths, anno_paths, multiword=True)
+
+        
+    net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(version))
+    net_1 = PeppaPig(net_2.config)
+    net_2.eval(); net_2.cuda()
+    net_1.eval(); net_1.cuda()
+    with torch.no_grad():
+        if grouped:
+            loader = grouped_audioclip_loader(utt.audio for utt in data.utterances(read_audio=True))
+        else:
+            loader = audioclip_loader(utt.audio for utt in data.utterances(read_audio=True))
+
+        emb_1, emb_2 = zip(*[ (net_1.encode_audio(batch.to(net_1.device)).squeeze(dim=1),
+                               net_2.encode_audio(batch.to(net_1.device)).squeeze(dim=1))
+                              for batch in loader ])
+    emb_1 = torch.cat(emb_1)
+    emb_2 = torch.cat(emb_2)
+    if embedder == 'st':
+        encoder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+        embed = lambda u: encoder.encode([u], convert_to_tensor=True)[0]
+    elif embedder == 'glove':
+        glove_model = GloVe(name='840B', dim=300)
+        embed = lambda s: torch.stack([ glove_model[word] for word in s.split() ]).sum(dim=0)
+    utts = [ utt for utt in data.utterances(read_audio=False,  embed=embed) ]
+    for i, utt in enumerate(utts):
+        utt.embedding_1 = emb_1[i]
+        utt.embedding_2 = emb_2[i]
+    return utts
+
 def pairwise(version, fragment_type='dialog', multiword=False):
     from pig.models import PeppaPig
     from pig.data import audioclip_loader
@@ -226,15 +267,20 @@ def pairwise(version, fragment_type='dialog', multiword=False):
                            sim_1=sim_1[i, j].item(),
                            sim_2=sim_2[i, j].item())
 
-def unpairwise(version):
-    dialog = torch.load(f"data/out/utt_multiword_{version}_dialog.pt")
-    narration = torch.load(f"data/out/utt_multiword_{version}_narration.pt")
-    utt = [utt for utt in dialog['utt'] + narration['utt'] if utt.speaker is not None]
-    data = pd.DataFrame.from_records(unpairwise_data(utt))
-    data.to_csv(f"data/out/unpairwise_similarities_{version}.csv", index=False, header=True)
-    
+def unpairwise(version, grouped=True, embedder='st', n_samples=100):
+    from pig.stats import unpairwise_ols 
+    dialog = embed_utterances(version, "dialog", grouped=grouped, embedder=embedder)
+    narration = embed_utterances(version, "narration", grouped=grouped, embedder=embedder)
+    utt = [utt for utt in dialog + narration if utt.speaker is not None]
+    results = []
+    for n in range(n_samples):
+        data = pd.DataFrame.from_records(unpairwise_data(utt))
+        result = unpairwise_ols(data)
+        result['sample'] = n
+        results.append(result)
+    pd.concat(results).to_csv("results/unpairwise_coef.csv", index=False, header=True)
+
 def unpairwise_data(utt):
-    import random
     from pig.triplet import pairs
     cosine = torch.nn.CosineSimilarity(dim=1)
     random.shuffle(utt)

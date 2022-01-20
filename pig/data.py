@@ -136,10 +136,26 @@ def audiofile_loader(paths, batch_size=32):
     dataset = AudioFileDataset(paths)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
+def grouped_audiofile_loader(paths, batch_size=32):
+    dataset = AudioFileDataset(paths)
+    loader = grouped_loader(dataset,
+                            lambda x: x.shape[1],
+                            collate_audio,
+                            batch_size)
+    return loader
+    
+    
 def audioclip_loader(clips, batch_size=32):
     dataset = AudioClipDataset(clips)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
+def grouped_audioclip_loader(paths, batch_size=32):
+    dataset = AudioClipDataset(paths)
+    loader = grouped_loader(dataset,
+                            lambda x: x.shape[1],
+                            collate_audio,
+                            batch_size)
+    return loader
 
 class GroupedDataset(IterableDataset):
     """Returns batches of within groups."""
