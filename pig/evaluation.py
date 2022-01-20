@@ -8,6 +8,14 @@ from torch.utils.data import DataLoader
 from dataclasses import dataclass
 import pandas as pd
 import numpy as np
+import torch
+import random
+
+random.seed(666)
+torch.manual_seed(666)
+
+BATCH_SIZE=8
+VERSIONS = (48, 50, 51, 52)
 
 def data_statistics():
     rows = []
@@ -47,8 +55,10 @@ def score(model, gpus):
     """Compute all standard scores for the given model. """
     trainer = pl.Trainer(gpus=gpus, logger=False)
     for fragment_type in ['dialog', 'narration']:
+        acc = triplet_score(fragment_type, model, trainer)
         yield dict(fragment_type=fragment_type,
-                   triplet_acc=triplet_score(fragment_type, model, trainer),
+                   triplet_acc=acc.mean().item(),
+                   triplet_acc_std=acc.std().item(),
                    recall_at_10_fixed=retrieval_score(fragment_type,
                                                       model,
                                                       trainer,
@@ -59,17 +69,18 @@ def score(model, gpus):
                                                       trainer,
                                                       duration=2.3,
                                                        jitter=True))
-        
-def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
-        ds = pig.data.PeppaPigIterableDataset(
+
+def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False, batch_size=BATCH_SIZE):
+        base_ds = pig.data.PeppaPigDataset(
             target_size=(180, 100),
             split=['val'],
             fragment_type=fragment_type,
             duration=duration,
             jitter=jitter
             )
-        loader = DataLoader(ds, collate_fn=pig.data.collate, batch_size=8)
-
+        key = lambda x: x.audio_duration
+        dataset = pig.data.GroupedDataset(base_ds, key, pig.data.collate, batch_size)
+        loader = DataLoader(dataset, batch_size=None, batch_sampler=None) 
         V, A = zip(* [(batch.video, batch.audio) for batch
                   in trainer.predict(model, loader) ])
         V = torch.cat(V, dim=0)
@@ -77,12 +88,12 @@ def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False):
         correct = torch.eye(V.shape[0], device=A.device)
         rec10 = pig.metrics.recall_at_n(V, A, correct=correct, n=10).mean().item()
         return rec10
-        
-def triplet_score(fragment_type, model, trainer):
-    ds = pig.data.PeppaTripletDataset.load(f"data/out/val_{fragment_type}_triplets_v4")
-    loader = DataLoader(ds, collate_fn=pig.data.collate_triplets, batch_size=8)
-    acc = torch.cat([ pig.metrics.batch_triplet_accuracy(batch)
-                      for  batch in trainer.predict(model, loader) ]).mean().item()
+
+
+def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE):
+    from pig.triplet import TripletScorer
+    scorer = TripletScorer(fragment_type=fragment_type, split=['val'])
+    acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 
 
@@ -112,7 +123,7 @@ def format():
                       float_format="%.3f")
                                 
 
-VERSIONS = (48, 50, 51, 52)
+
 
 def run(gpu=0, versions=VERSIONS):
     logging.getLogger().setLevel(logging.INFO)
@@ -138,3 +149,4 @@ def main(gpu=0):
     scores.to_csv("results/scores.csv", index=False, header=True)
     
     
+

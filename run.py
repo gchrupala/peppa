@@ -12,10 +12,10 @@ default_config = {'margin': 0.2,
                             'extract': False,
                             'prepare': False,
                             'iterable': False,
-                            'force_cache': True,
+                            'force_cache': False,
                             'target_size': [180, 100],
-                            'train': {'batch_size': 8, 'jitter': False, 'shuffle': True},
-                            'val': {'batch_size': 8},
+                            'train': {'batch_size': 8, 'duration': 3.2, 'jitter': False, 'shuffle': True},
+                            'val': {'batch_size': 8, 'duration': 3.2, 'jitter': False},
                             'test': {'batch_size': 8}},
                    'video': {'pretrained': True,
                              'project': True,
@@ -28,11 +28,12 @@ default_config = {'margin': 0.2,
                              'pooling': 'attention'},
                    'training': {'trainer_args': {'gpus': [0],
                                                  'auto_select_gpus': False,
+                                                 'precision': 16,
                                                  'accumulate_grad_batches': 8}},
                    'optimizer': {'lr': 0.0001,
                                  'warmup': 0.1,
                                  'schedule': 'warmup_linear',
-                                 't_total': 32640}}
+                                 't_total': 12000}}
                   
 def get_git_commit():
     import git

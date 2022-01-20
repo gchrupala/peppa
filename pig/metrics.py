@@ -22,7 +22,7 @@ def recall_at_n(candidates, references, correct, n=1):
 def batch_triplet_accuracy(batch):
     return triplet_accuracy(batch.anchor, batch.positive, batch.negative)
 
-def triplet_accuracy(anchor, positive, negative):
-    sim_pos = F.cosine_similarity(anchor, positive)
-    sim_neg = F.cosine_similarity(anchor, negative)
+def triplet_accuracy(anchor, positive, negative, dim=1):
+    sim_pos = F.cosine_similarity(anchor, positive, dim=dim)
+    sim_neg = F.cosine_similarity(anchor, negative, dim=dim)
     return (torch.sign(sim_pos - sim_neg)+1) / 2

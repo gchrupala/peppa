@@ -12,7 +12,6 @@ import pytorch_lightning as pl
 import logging
 from itertools import groupby
 import pig.util
-from pig.triplet import PeppaTripletDataset, collate_triplets
 import json
 import pickle
 import random
@@ -33,19 +32,12 @@ class Clip:
     """Video clip with associated audio."""
     video: torch.tensor
     audio: torch.tensor
-    duration: float
+    video_duration: float
+    audio_duration: float
     filename: str
     offset: Union[float, None] = None
     index: Union[int, None] = None
     
-@dataclass
-class Pair:
-    """Positive video-audio example."""
-    video: torch.tensor
-    audio: torch.tensor
-    video_idx: int
-    audio_idx: int
-
 
 @dataclass
 class RawPair:
@@ -61,14 +53,18 @@ class ClipBatch:
     """Batch of video clips with associated audio."""
     video: torch.tensor
     audio: torch.tensor
-
+    video_duration: torch.tensor
+    audio_duration: torch.tensor
 
 def collate_audio(data):
     return pig.util.pad_audio_batch(data)
 
 def collate(data):
-    video, audio = zip(*[(x.video, x.audio) for x in data])
-    return ClipBatch(video=pig.util.pad_video_batch(video), audio=pig.util.pad_audio_batch(audio))
+    video, audio, vlen, alen = zip(*[(x.video, x.audio, x.video_duration, x.audio_duration) for x in data])
+    return ClipBatch(video=pig.util.pad_video_batch(video),
+                     audio=pig.util.pad_audio_batch(audio),
+                     video_duration = torch.tensor(vlen),
+                     audio_duration = torch.tensor(alen))
 
 def featurize(clip):
     frames = [ torch.tensor(frame/255).float()
@@ -77,7 +73,8 @@ def featurize(clip):
         v = torch.stack(frames)
         return Clip(video = v.permute(3, 0, 1, 2),
                     audio = featurize_audio(clip.audio),
-                    duration = clip.duration,
+                    video_duration = clip.duration,
+                    audio_duration = clip.audio.duration,
                     filename = clip.filename)
     else:
         raise ValueError("Clip has zero frames.")
@@ -110,14 +107,30 @@ class AudioClipDataset(IterableDataset):
                 
 class VideoFileDataset(IterableDataset):
 
-    def __init__(self, stats, paths):
-        self.stats = stats
+    def __init__(self, paths):
         self.paths = paths
 
     def __iter__(self):
         for path in self.paths:
             with m.VideoFileClip(path) as clip:
                 yield featurize(clip)
+
+
+class VideoClipDataset(IterableDataset):
+
+    def __init__(self, clips):
+        self.clips = clips
+
+    def __iter__(self):
+        for clip in self.clips:
+            yield featurize(clip)
+        
+class GenericIterableDataset(IterableDataset):
+    def __init__(self, items):
+        self.items = items
+
+    def __iter__(self):
+        yield from self.items
 
 def audiofile_loader(paths, batch_size=32):
     dataset = AudioFileDataset(paths)
@@ -126,7 +139,20 @@ def audiofile_loader(paths, batch_size=32):
 def audioclip_loader(clips, batch_size=32):
     dataset = AudioClipDataset(clips)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
-    
+
+
+class GroupedDataset(IterableDataset):
+    """Returns batches of within groups."""
+    def __init__(self, dataset, key, collate_fn, batch_size):
+        self.dataset = dataset
+        self.key = key
+        self.collate_fn = collate_fn
+        self.batch_size = batch_size
+
+    def __iter__(self):
+        for _, items in pig.util.grouped(sorted(self.dataset, key=self.key), key=self.key):
+            yield from DataLoader(GenericIterableDataset(items), collate_fn=self.collate_fn, batch_size=self.batch_size)
+
 class PeppaPigDataset(Dataset):
     def __init__(self, force_cache=False, cache_dir=None, **kwargs):
         dataset = PeppaPigIterableDataset(**kwargs)
@@ -187,6 +213,9 @@ class PeppaPigIterableDataset(IterableDataset):
         paths = [ path for split in self.split \
                        for episode_id in self.split_spec[self.fragment_type][split] \
                        for path in glob.glob(f"data/out/{width}x{height}/{self.fragment_type}/{episode_id}/*.avi") ]
+        if len(paths) == 0:
+            raise RuntimeError(f"No clips found in data/out/{width}x{height}/{self.fragment_type}/ . Extract the data first.")
+
         # Split data between workers
         worker_info = torch.utils.data.get_worker_info()
         if worker_info is None:  # single-process data loading, return the full iterator
@@ -209,20 +238,9 @@ class PeppaPigIterableDataset(IterableDataset):
                     clips = pig.preprocess.segment(video, duration=self.duration, jitter=self.jitter)
                 for clip in clips:
                     yield clip
-                                       
-
-    def _positives(self, items):
-        clips  = list(enumerate(items))
-        for i, a in clips:
-            for j, b in clips:
-                if j == i:
-                #if abs(j - i) <= self.window:
-                    yield Pair(video = a.video, audio = b.audio, video_idx = i, audio_idx = j)
-                    
 
     def __iter__(self):
-        for _path, items in groupby(self._clips(), key=lambda x: x.filename):
-            yield from self._positives(items)                    
+        yield from self._clips()
 
 @dataclass
 class Stats:
@@ -280,8 +298,8 @@ class PigData(pl.LightningDataModule):
     
     def prepare_data(self):
         if self.config['extract']:
-            logging.info("Extracting data")
-            pig.preprocess.extract()
+            logging.info(f"Extracting data for target size {self.config['target_size']}")
+            pig.preprocess.extract(self.config['target_size'])
         if self.config['prepare']:    
             logging.info("Collecting stats on training data.")
             
