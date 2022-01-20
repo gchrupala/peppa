@@ -362,7 +362,7 @@ def get_args():
     parser.add_argument(
         "--min-occurrences",
         type=int,
-        default=1,
+        default=10,
         help="Minimum number of occurrences in val data of a word to be included",
     )
     parser.add_argument(
