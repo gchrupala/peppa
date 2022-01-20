@@ -366,6 +366,12 @@ def get_args():
         help="Minimum number of occurrences in val data of a word to be included",
     )
     parser.add_argument(
+        "--min-samples",
+        type=int,
+        default=100,
+        help="Minimum number of test samples for a word to be included",
+    )
+    parser.add_argument(
         "--min-phrase-duration",
         type=float,
         default=0.3,
@@ -395,7 +401,6 @@ if __name__ == "__main__":
         print("Considered words: ", words)
         tuples = list(itertools.combinations(words, 2))
 
-        eval_sets = []
         for fragment in FRAGMENTS:
             data_fragment = data_sentences[data_sentences.fragment == fragment]
             data_fragment_val = data_fragment[
@@ -404,7 +409,14 @@ if __name__ == "__main__":
 
             eval_set = find_minimal_pairs(tuples, data_fragment_val, args)
             eval_set["fragment"] = fragment
-            eval_sets.append(eval_set)
+
+            # Filter examples by min num samples
+            counts = eval_set.target_word.value_counts()
+            words_enough_samples = counts[counts > args.min_samples].keys().to_list()
+            if len(words_enough_samples) == 0:
+                print(f"No words with enough samples (>{args.min_samples}) found for POS {pos_name} and fragment {fragment}.")
+
+            eval_set = eval_set[eval_set.target_word.isin(words_enough_samples) | eval_set.distractor_word.isin(words_enough_samples)]
 
             file_name = f"eval_set_{fragment}_{pos_name}.csv"
             file_dir = os.path.join(DATA_EVAL_DIR, f"min_phrase_duration_{args.min_phrase_duration}")

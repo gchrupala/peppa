@@ -30,13 +30,12 @@ class TripletBatch:
 
 class PeppaTargetedTripletDataset(Dataset):
 
-    def __init__(self, directory, min_samples=100, target_size=(180, 100), raw=False):
+    def __init__(self, directory, target_size=(180, 100), raw=False):
         super().__init__()
 
         self.raw = raw
         self.directory = directory
         self.target_size = target_size
-        self.min_samples = min_samples
 
     @classmethod
     def load(cls, directory, raw=False):
@@ -46,8 +45,8 @@ class PeppaTargetedTripletDataset(Dataset):
         return self
 
     @classmethod
-    def from_csv(cls, directory, targeted_eval_set_csv, min_samples=100, target_size=(180, 100), raw=False):
-        self = cls(directory, raw=raw, target_size=target_size, min_samples=min_samples)
+    def from_csv(cls, directory, targeted_eval_set_csv, target_size=(180, 100), raw=False):
+        self = cls(directory, raw=raw, target_size=target_size)
         eval_set_info = pd.read_csv(targeted_eval_set_csv)
 
         self._load_eval_set_and_save_clip_info(eval_set_info)
@@ -92,14 +91,6 @@ class PeppaTargetedTripletDataset(Dataset):
     def _load_eval_set_and_save_clip_info(self, eval_set_info):
         os.makedirs(self.directory, exist_ok=True)
         self._clip_info = {}
-
-        # Filter examples by num samples
-        counts = eval_set_info.target_word.value_counts()
-        words_enough_samples = counts[counts > self.min_samples].keys().to_list()
-        if len(words_enough_samples) == 0:
-            print(f"No words with enough samples (>{self.min_samples}) found.")
-
-        eval_set_info = eval_set_info[eval_set_info.target_word.isin(words_enough_samples) | eval_set_info.distractor_word.isin(words_enough_samples)]
 
         for _, sample in eval_set_info.iterrows():
             id = sample.id
