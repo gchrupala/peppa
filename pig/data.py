@@ -151,8 +151,14 @@ class GroupedDataset(IterableDataset):
 
     def __iter__(self):
         for _, items in pig.util.grouped(sorted(self.dataset, key=self.key), key=self.key):
-            yield from DataLoader(GenericIterableDataset(items), collate_fn=self.collate_fn, batch_size=self.batch_size)
+            yield from DataLoader(GenericIterableDataset(items),
+                                  collate_fn=self.collate_fn,
+                                  batch_size=self.batch_size)
 
+def grouped_loader(dataset, key, collate_fn, batch_size=8):
+    gds = GroupedDataset(dataset, key, collate_fn, batch_size=batch_size)
+    return DataLoader(gds, batch_size=None, batch_sampler=None) 
+            
 class PeppaPigDataset(Dataset):
     def __init__(self, force_cache=False, cache_dir=None, **kwargs):
         dataset = PeppaPigIterableDataset(**kwargs)
@@ -331,8 +337,21 @@ class PigData(pl.LightningDataModule):
                                         fragment_type='narration',
                                         duration=self.config['val']['duration'],
                                         jitter=self.config['val']['jitter'])
-            
-
+        self.val_dia3 = pig.data.PeppaPigDataset(
+            force_cache=self.config['force_cache'],
+            target_size=self.config['target_size'],
+            split=['val'], fragment_type='dialog',
+            duration=None,
+            jitter=None)
+        
+        self.val_narr3 = pig.data.PeppaPigDataset(
+            force_cache=self.config['force_cache'],
+            target_size=self.config['target_size'],
+            split=['val'], fragment_type='narration',
+            duration=None,
+            jitter=None)
+        
+        
     def train_dataloader(self):
         return DataLoader(self.train, collate_fn=collate, num_workers=self.config['num_workers'],
                           batch_size=self.config['train']['batch_size'],
@@ -345,8 +364,13 @@ class PigData(pl.LightningDataModule):
         narr = DataLoader(self.val_narr, collate_fn=collate,
                                num_workers=self.config['num_workers'],
                           batch_size=self.config['val']['batch_size'])
+        key = lambda x: x.audio_duration
+        dia3 = grouped_loader(self.val_dia3,   key, collate,
+                              batch_size=self.config['val']['batch_size'])
+        narr3 = grouped_loader(self.val_narr3, key, collate,
+                              batch_size=self.config['val']['batch_size'])
         
-        return [ dia, narr ]
+        return [ dia, narr, dia3, narr3 ]
     
     def test_dataloader(self):
         raise NotImplementedError

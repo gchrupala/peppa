@@ -44,7 +44,9 @@ def load_best_model(dirname, higher_better=True):
     info = []
     for path in glob.glob(f"{dirname}/checkpoints/*.ckpt"):
        cp = torch.load(path, map_location='cpu')
-       info.append(cp['callbacks'][pl.callbacks.model_checkpoint.ModelCheckpoint])
+       item = cp['callbacks'][pl.callbacks.model_checkpoint.ModelCheckpoint]
+       if item['best_model_score'] is not None:
+           info.append(item)
     best = sorted(info, key=lambda x: x['best_model_score'], reverse=higher_better)[0]
     logging.info(f"Best {best['monitor']}: {best['best_model_score']} at {best['best_model_path']}")
     local_model_path = best['best_model_path'].split("/peppa/")[1]
@@ -79,8 +81,7 @@ def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False, b
             jitter=jitter
             )
         key = lambda x: x.audio_duration
-        dataset = pig.data.GroupedDataset(base_ds, key, pig.data.collate, batch_size)
-        loader = DataLoader(dataset, batch_size=None, batch_sampler=None) 
+        loader = pig.data.grouped_loader(base_ds, key, pig.data.collate, batch_size=batch_size)
         V, A = zip(* [(batch.video, batch.audio) for batch
                   in trainer.predict(model, loader) ])
         V = torch.cat(V, dim=0)
