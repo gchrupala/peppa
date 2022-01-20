@@ -7,6 +7,7 @@ import torch
 from scipy.stats import pearsonr
 
 from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS
+from pig.data import GroupedDataset, collate
 from pig.evaluation import load_best_model
 
 import pytorch_lightning as pl
@@ -18,12 +19,11 @@ import seaborn as sns
 import matplotlib
 
 from pig.metrics import batch_triplet_accuracy
-from pig.triplet import collate_triplets
 
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-from pig.targeted_triplets import PeppaTargetedTripletDataset
+from pig.targeted_triplets import PeppaTargetedTripletDataset, collate_triplets
 
 BATCH_SIZE = 8
 NUM_WORKERS = 8
@@ -45,7 +45,9 @@ def score(model):
         
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
-    ds = PeppaTargetedTripletDataset.load(f"data/out/val_{fragment_type}_targeted_triplets_{pos}")
+    base_ds = PeppaTargetedTripletDataset.load(f"data/out/val_{fragment_type}_targeted_triplets_{pos}")
+    key = lambda x: x.audio_duration
+    ds = GroupedDataset(base_ds, key, collate, BATCH_SIZE)
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
     results = []
     for batch in trainer.predict(model, loader):
