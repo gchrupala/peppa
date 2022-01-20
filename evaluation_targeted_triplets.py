@@ -45,10 +45,11 @@ def score(model):
         
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
-    base_ds = PeppaTargetedTripletDataset.load(f"data/out/val_{fragment_type}_targeted_triplets_{pos}")
-    key = lambda x: x.audio_duration
-    ds = GroupedDataset(base_ds, key, collate, BATCH_SIZE)
+    ds = PeppaTargetedTripletDataset.load(f"data/out/val_{fragment_type}_targeted_triplets_{pos}")
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
+    if len(ds) == 0:
+        return []
+
     results = []
     for batch in trainer.predict(model, loader):
         results.extend(r.item() for r in batch_triplet_accuracy(batch))
@@ -111,32 +112,33 @@ def create_per_word_result_plots(results_dir, version, args):
             results_data.append(results_data_fragment)
         results_data = pd.concat(results_data, ignore_index=True)
 
-        results_data_words_1 = results_data.copy()
-        results_data_words_1["word"] = results_data_words_1["target_word"]
-        results_data_words_2 = results_data.copy()
-        results_data_words_2["word"] = results_data_words_2["distractor_word"]
-        results_data_words = pd.concat([results_data_words_1, results_data_words_2], ignore_index=True)
+        if len(results_data) > 0:
+            results_data_words_1 = results_data.copy()
+            results_data_words_1["word"] = results_data_words_1["target_word"]
+            results_data_words_2 = results_data.copy()
+            results_data_words_2["word"] = results_data_words_2["distractor_word"]
+            results_data_words = pd.concat([results_data_words_1, results_data_words_2], ignore_index=True)
 
-        plt.figure(figsize=(15, 8))
-        results_data_words.groupby("word").size().plot.bar()
-        plt.title(f"Number of samples: {pos}")
-        plt.xticks(rotation=75)
-        plt.savefig(os.path.join(results_dir, f"num_samples_{pos}_word"), dpi=300)
+            plt.figure(figsize=(15, 8))
+            results_data_words.groupby("word").size().plot.bar()
+            plt.title(f"Number of samples: {pos}")
+            plt.xticks(rotation=75)
+            plt.savefig(os.path.join(results_dir, f"num_samples_{pos}_word"), dpi=300)
 
-        results_data_words_all.append(results_data_words)
+            results_data_words_all.append(results_data_words)
 
-        plt.figure(figsize=(15, 8))
-        mean_acc = results_data_words.groupby("word")["result"].agg("mean")
-        order = mean_acc.sort_values()
-        sns.barplot(data=results_data_words, x="word", y="result", order=order.index)
-        plt.title(f"Per-word targeted triplets accuracy for model ID: {version} | POS: {pos}")
-        plt.xticks(rotation=75)
-        plt.ylabel("Accuracy")
-        plt.ylim((0, 1))
-        plt.subplots_adjust(bottom=0.1)
-        plt.axhline(y=0.5, color="black", linestyle='--')
-        plt.tight_layout()
-        plt.savefig(os.path.join(results_dir, f"results_{pos}_word"), dpi=300)
+            plt.figure(figsize=(15, 8))
+            mean_acc = results_data_words.groupby("word")["result"].agg("mean")
+            order = mean_acc.sort_values()
+            sns.barplot(data=results_data_words, x="word", y="result", order=order.index)
+            plt.title(f"Per-word targeted triplets accuracy for model ID: {version} | POS: {pos}")
+            plt.xticks(rotation=75)
+            plt.ylabel("Accuracy")
+            plt.ylim((0, 1))
+            plt.subplots_adjust(bottom=0.1)
+            plt.axhline(y=0.5, color="black", linestyle='--')
+            plt.tight_layout()
+            plt.savefig(os.path.join(results_dir, f"results_{pos}_word"), dpi=300)
 
     if args.correlate_predictors:
         word_concreteness_ratings = get_word_concreteness_ratings()
@@ -183,7 +185,7 @@ def create_per_word_result_plots(results_dir, version, args):
 def get_dataset_word_frequencies():
     _, data_tokens = load_data()
 
-    all_words = get_lemmatized_words(data_tokens, "train")
+    all_words = get_lemmatized_words(data_tokens, "train", fragments=["dialog"])
 
     return Counter(all_words)
 

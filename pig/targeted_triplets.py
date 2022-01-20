@@ -5,6 +5,7 @@ from dataclasses import dataclass
 import moviepy.editor as m
 import os
 import pandas as pd
+import torch
 from torch.utils.data import Dataset
 
 from pig.data import featurize
@@ -16,16 +17,18 @@ FPS = 10
 
 @dataclass
 class Triplet:
-    anchor: ...
-    positive: ...
-    negative: ...
+    anchor: torch.tensor
+    positive: torch.tensor
+    negative: torch.tensor
+    video_duration: float
+    audio_duration: float
 
 
 @dataclass
 class TripletBatch:
-    anchor: ...
-    positive: ...
-    negative: ...
+    anchor: torch.tensor
+    positive: torch.tensor
+    negative: torch.tensor
 
 
 class PeppaTargetedTripletDataset(Dataset):
@@ -79,11 +82,13 @@ class PeppaTargetedTripletDataset(Dataset):
         with m.VideoFileClip(target_info['path']) as target:
             with m.VideoFileClip(distractor_info['path']) as distractor:
                 if self.raw:
-                    return Triplet(anchor=target.audio, positive=target, negative=distractor)
+                    return Triplet(anchor=target.audio, positive=target, negative=distractor,
+                                   audio_duration=target.audio.duration, video_duration=target.duration)
                 else:
                     positive = featurize(target)
                     negative = featurize(distractor)
-                    return Triplet(anchor=positive.audio, positive=positive.video, negative=negative.video)
+                    return Triplet(anchor=positive.audio, positive=positive.video, negative=negative.video,
+                                   audio_duration=target.audio.duration, video_duration=target.duration)
 
     def __len__(self):
         return len(self._sample)

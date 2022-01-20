@@ -341,11 +341,9 @@ def find_minimal_pairs(tuples, data, args):
     return eval_set
 
 
-def get_lemmatized_words(data_tokens, data_split, pos=None):
+def get_lemmatized_words(data_tokens, data_split, fragments=FRAGMENTS, pos=None):
     all_words = []
-    if data_split == "train":
-        raise NotImplementedError()
-    for fragment in FRAGMENTS:
+    for fragment in fragments:
         words = data_tokens[
             (data_tokens.fragment == fragment)
             & data_tokens.episode.isin(SPLIT_SPEC[fragment][data_split])
