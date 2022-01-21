@@ -55,7 +55,7 @@ def load_best_model(dirname, higher_better=True):
 
 def score(model, gpus):
     """Compute all standard scores for the given model. """
-    trainer = pl.Trainer(gpus=gpus, logger=False)
+    trainer = pl.Trainer(gpus=gpus, logger=False, precision=16)
     for fragment_type in ['dialog', 'narration']:
         acc = triplet_score(fragment_type, model, trainer)
         yield dict(fragment_type=fragment_type,
