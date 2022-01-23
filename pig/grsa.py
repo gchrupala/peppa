@@ -13,7 +13,8 @@ import torch
 import torch.nn
 import pig.evaluation
 import random
-    
+from plotnine import *
+
 VERSIONS=[48, 61]
 
 def checkpoint_path(version):
@@ -158,7 +159,7 @@ def normalized_distance(a, b):
     from Levenshtein import distance
     return distance(a, b) / max(len(a), len(b))
 
-def embed_utterances(version, fragment_type='dialog', grouped=True, embedder='st'):
+def embed_utterances(version, fragment_type='dialog', grouped=True, embedder='st', projection=False):
     from pig.models import PeppaPig
     from pig.data import audioclip_loader, grouped_audioclip_loader
     from pig.util import cosine_matrix
@@ -172,7 +173,10 @@ def embed_utterances(version, fragment_type='dialog', grouped=True, embedder='st
 
         
     net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(version))
-    net_1 = PeppaPig(net_2.config)
+    config_1 = deepcopy(net_2.config)
+    config_1['audio']['pooling'] = 'average'
+    config_1['audio']['project'] = projection
+    net_1 = PeppaPig(config_1)
     net_2.eval(); net_2.cuda()
     net_1.eval(); net_1.cuda()
     with torch.no_grad():
@@ -182,7 +186,7 @@ def embed_utterances(version, fragment_type='dialog', grouped=True, embedder='st
             loader = audioclip_loader(utt.audio for utt in data.utterances(read_audio=True))
 
         emb_1, emb_2 = zip(*[ (net_1.encode_audio(batch.to(net_1.device)).squeeze(dim=1),
-                               net_2.encode_audio(batch.to(net_1.device)).squeeze(dim=1))
+                               net_2.encode_audio(batch.to(net_2.device)).squeeze(dim=1))
                               for batch in loader ])
     emb_1 = torch.cat(emb_1)
     emb_2 = torch.cat(emb_2)
@@ -269,8 +273,10 @@ def pairwise(version, fragment_type='dialog', multiword=False):
 
 def unpairwise(version, grouped=True, embedder='st', n_samples=100):
     from pig.stats import unpairwise_ols 
-    dialog = embed_utterances(version, "dialog", grouped=grouped, embedder=embedder)
-    narration = embed_utterances(version, "narration", grouped=grouped, embedder=embedder)
+    dialog = embed_utterances(version, "dialog", grouped=grouped, embedder=embedder,
+                              projection=True)
+    narration = embed_utterances(version, "narration", grouped=grouped, embedder=embedder,
+                                 projection=True)
     utt = [utt for utt in dialog + narration if utt.speaker is not None]
     results = []
     for n in range(n_samples):
@@ -279,7 +285,13 @@ def unpairwise(version, grouped=True, embedder='st', n_samples=100):
         result['sample'] = n
         results.append(result)
     pd.concat(results).to_csv("results/unpairwise_coef.csv", index=False, header=True)
+    g = ggplot(results, aes(x='Variable', y='Value', color='Dependent Var.')) + \
+        geom_boxplot() + \
+        coord_flip()
+    ggsave(g, "results/unpairwise_boxplots.pdf")
 
+
+    
 def unpairwise_data(utt):
     from pig.triplet import pairs
     cosine = torch.nn.CosineSimilarity(dim=1)

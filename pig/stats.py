@@ -143,9 +143,14 @@ def ablate(variables):
 
 def unpairwise_ols(rawdata):
     data  = standardize(rawdata)
-    m = api.ols(formula = f"sim_2 ~ semsim + sim_1 + distance + durationdiff + durationsum + samespeaker + sameepisode", data=data)
-    return m.fit().summary2().tables[1].reset_index().rename(columns={'index':'Variable'})
-
+    m1 = api.ols(formula = f"sim_1 ~ semsim + distance + durationdiff + durationsum + samespeaker + sameepisode", data=data)
+    m2 = api.ols(formula = f"sim_2 ~ semsim + distance + durationdiff + durationsum + samespeaker + sameepisode", data=data)
+    result1 = m1.fit().summary2().tables[1].reset_index().rename(columns={'index':'Variable', 'Coef.': 'Value'})
+    result2 = m2.fit().summary2().tables[1].reset_index().rename(columns={'index':'Variable', 'Coef.': 'Value'})
+    result1['Dependent Var.'] = 'sim_1'
+    result2['Dependent Var.'] = 'sim_2'
+    return pd.concat([result1, result2])
+    
 def main():
     # Load and process data
 
