@@ -55,7 +55,7 @@ def load_best_model(dirname, higher_better=True):
 
 def score(model, gpus):
     """Compute all standard scores for the given model. """
-    trainer = pl.Trainer(gpus=gpus, logger=False)
+    trainer = pl.Trainer(gpus=gpus, logger=False, precision=16)
     for fragment_type in ['dialog', 'narration']:
         acc = triplet_score(fragment_type, model, trainer)
         yield dict(fragment_type=fragment_type,
@@ -74,7 +74,7 @@ def score(model, gpus):
 
 def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False, batch_size=BATCH_SIZE):
         base_ds = pig.data.PeppaPigDataset(
-            target_size=(180, 100),
+            target_size=model.config["data"]["target_size"],
             split=['val'],
             fragment_type=fragment_type,
             duration=duration,
@@ -93,7 +93,7 @@ def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False, b
 
 def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE):
     from pig.triplet import TripletScorer
-    scorer = TripletScorer(fragment_type=fragment_type, split=['val'])
+    scorer = TripletScorer(fragment_type=fragment_type, split=['val'], target_size=model.config["data"]["target_size"])
     acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 
