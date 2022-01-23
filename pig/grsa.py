@@ -13,8 +13,14 @@ import torch
 import torch.nn
 import pig.evaluation
 import random
-from plotnine import *
-
+import plotnine as pn
+from pig.models import PeppaPig
+from pig.data import audioclip_loader, grouped_audioclip_loader
+from pig.util import cosine_matrix
+from sentence_transformers import SentenceTransformer
+from torchtext.vocab import GloVe
+from copy import deepcopy
+    
 VERSIONS=[48, 61]
 
 def checkpoint_path(version):
@@ -160,12 +166,6 @@ def normalized_distance(a, b):
     return distance(a, b) / max(len(a), len(b))
 
 def embed_utterances(version, fragment_type='dialog', grouped=True, embedder='st', projection=False):
-    from pig.models import PeppaPig
-    from pig.data import audioclip_loader, grouped_audioclip_loader
-    from pig.util import cosine_matrix
-    from sentence_transformers import SentenceTransformer
-    from torchtext.vocab import GloVe
-    from copy import deepcopy
     audio_paths = glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.wav")
     anno_paths  = [ meta(path) for path in audio_paths ]
 
@@ -285,10 +285,10 @@ def unpairwise(version, grouped=True, embedder='st', n_samples=100):
         result['sample'] = n
         results.append(result)
     pd.concat(results).to_csv("results/unpairwise_coef.csv", index=False, header=True)
-    g = ggplot(results, aes(x='Variable', y='Value', color='Dependent Var.')) + \
-        geom_boxplot() + \
-        coord_flip()
-    ggsave(g, "results/unpairwise_boxplots.pdf")
+    g = pn.ggplot(results, pn.aes(x='Variable', y='Value', color='Dependent Var.')) + \
+        pn.geom_boxplot() + \
+        pn.coord_flip()
+    pn.ggsave(g, "results/unpairwise_boxplots.pdf")
 
 
     
@@ -345,8 +345,38 @@ def word_type():
                          N=sim_emb.shape[0],
                          model_version=model_version))
     pd.DataFrame.from_records(rows).to_csv("results/word_type_rsa.csv", index=False, header=True)
-        
-        
+
+def probe(version):
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.model_selection import cross_val_score
+    X_d, Y_d = feat_speak(version, 'dialog')
+    X_n, Y_n = feat_speak(version, 'narration')
+    N = len(Y_d)
+    ixs = random.sample(range(len(Y_n)), N)
+    X = np.concatenate([X_d, X_n[ixs]])
+    Y = np.concatenate([Y_d, Y_n[ixs]])
+    _, cnt = np.unique(Y, return_counts=True)
+    maj = cnt.max()/cnt.sum()
+    acc = cross_val_score(LogisticRegression(), X, Y).mean()
+    return rer(acc, maj)
+
+def rer(hi_acc, low_acc):
+    return ((1-low_acc)-(1-hi_acc))/(1-low_acc)
+    
+def feat_speak(version, fragment_type):
+    audio_paths = glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.wav")
+    anno_paths  = [ meta(path) for path in audio_paths ]
+    data = UttData(audio_paths, anno_paths, multiword=False)
+    net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(version))
+    net_2.eval(); net_2.cuda()
+    loader = audioclip_loader(utt.audio for utt in data.utterances(read_audio=True))
+    with torch.no_grad():
+        emb_2 = torch.cat([net_2.encode_audio(batch.to(net_2.device)).squeeze(dim=1)
+                           for batch in loader ])
+    Y = [x.speaker for x in data.utterances(read_audio=False)]
+    X, Y = zip(*[(x,y) for x,y in zip(emb_2, Y) if y is not None])
+    return torch.cat(X).cpu().numpy(), np.array(Y)
+    
 def main(versions=VERSIONS):
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     import pandas
