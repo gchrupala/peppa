@@ -40,7 +40,8 @@ WORDS_IGNORE = {
     "NOUN": ["peppa's", "george's", "let's", "pig's", "i'll", "rabbit's", "daddy's", "chloe's",
              "can't", "doesn't", "suzy's", "zebra's", "zoe's", "it's", "dog's", "dinosaur's", "they're", "grandpa's",
              "rebecca's", "we've", "there's", "you'll", "i'm", "we'll", "i've", "what's", "i'll", "that's", "you're",
-             "we'd", "we're", "bit", "be", "dear", "love"], # ("love" and "dear" are not used as nouns in the dataset)
+             "we'd", "we're", "bit", "lot", "be",
+             "dear", "love"],   # ("love" and "dear" are not used as nouns in the dataset)
     "ADJ": ["it's", "that's"],
 }
 
