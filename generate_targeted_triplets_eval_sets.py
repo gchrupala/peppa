@@ -4,13 +4,12 @@ import json
 import os
 import re
 from collections import Counter
-from multiprocessing import Pool
 
 import pandas as pd
 from spacy.tokens import Doc
-from tqdm import tqdm
 
 import spacy
+from tqdm import tqdm
 
 from pig.data import SPLIT_SPEC
 
@@ -61,6 +60,9 @@ def clean_lemma(lemma):
 
 def load_realigned_data():
     nlp = spacy.load("en_core_web_sm")
+    # Use lookup-based lemmatizer
+    nlp.remove_pipe("lemmatizer")
+    nlp.add_pipe("lemmatizer", config={"mode": "lookup"}).initialize()
 
     data_sentences = []
     data_tokens = []
@@ -109,6 +111,8 @@ def load_realigned_data():
                 data_tokens.extend(item["words"])
 
                 item_sentence = item.copy()
+                keep_keys = ["case", "start", "end", "word"]
+                item_sentence["words"] = [{k: w[k] for k in w.keys() if k in keep_keys} for w in item_sentence["words"]]
                 item_sentence["fragment"] = fragment
                 item_sentence["episode"] = episode
                 data_sentences.append(item_sentence)
@@ -120,6 +124,8 @@ def load_realigned_data():
 
 def load_data():
     nlp = spacy.load("en_core_web_sm")
+    nlp.remove_pipe("lemmatizer")
+    nlp.add_pipe("lemmatizer", config={"mode": "lookup"}).initialize()
 
     data_sentences = []
     data_tokens = []
@@ -158,7 +164,8 @@ def load_data():
 
                     # Treat proper nouns the same way as nouns
                     item["pos"] = [t.pos_ if t.pos_ != "PROPN" else "NOUN" for t in doc]
-                    item["lemmatized"] = [t.lemma_.lower() for t in doc]
+
+                    item["lemmatized"] = [clean_lemma(t.lemma_) for t in doc]
 
                     item["words"] = [{"word": w} for w in item["tokenized"]]
                     for i in range(len(item["words"])):
@@ -171,6 +178,9 @@ def load_data():
                     data_tokens.extend(item["words"])
 
                     item_sentence = item.copy()
+                    keep_keys = ["case", "start", "end", "word"]
+                    item_sentence["words"] = [{k: w[k] for k in w.keys() if k in keep_keys} for w in
+                                              item_sentence["words"]]
                     item_sentence["fragment"] = fragment
                     item_sentence["episode"] = episode
                     data_sentences.append(item_sentence)
@@ -249,89 +259,93 @@ def find_minimal_pairs_for_tuple(tuple, data, args):
     lemma_1, lemma_2 = tuple
     used_counterexamples = []
     print(f"\nLooking for: {(lemma_1, lemma_2)}")
-    for _, s1 in data.iterrows():
+    for _, s1 in tqdm(data.iterrows(), total=len(data)):
         best_example, best_counterexample, best_counterex_row = None, None, None
         len_longest_intersection = 0
 
-        if lemma_1 in s1["lemmatized"]:
-            example_candidate = s1.copy()
-            s1_masked = [
-                w if lemma != lemma_1 else TOKEN_MASK
+        # Only continue if the target lemma (lemma_1) is in the sentence, and the distractor is not there.
+        if lemma_1 not in s1["lemmatized"] or lemma_2 in s1["lemmatized"]:
+            continue
+
+        example_candidate = s1.copy()
+        s1_masked = [
+            w if lemma != lemma_1 else TOKEN_MASK
+            for w, lemma in zip(
+                example_candidate["tokenized"], example_candidate["lemmatized"]
+            )
+        ]
+        for row_counterexample, s2 in data.iterrows():
+            if row_counterexample in used_counterexamples:
+                continue
+
+            # Only continue if the target lemma (lemma_2) is in the sentence, and the distractor is not there.
+            if lemma_2 not in s2["lemmatized"] or lemma_1 in s2["lemmatized"]:
+                continue
+
+            counterexample_candidate = s2.copy()
+            s2_masked = [
+                w if lemma != lemma_2 else TOKEN_MASK
                 for w, lemma in zip(
-                    example_candidate["tokenized"], example_candidate["lemmatized"]
+                    counterexample_candidate["tokenized"],
+                    counterexample_candidate["lemmatized"],
                 )
             ]
-            for row_counterexample, s2 in data.iterrows():
-                if row_counterexample in used_counterexamples:
-                    continue
 
-                if lemma_2 not in s2["lemmatized"]:
-                    continue
+            intersection = longest_intersection(s1_masked, s2_masked)
+            if not intersection:
+                continue
 
-                counterexample_candidate = s2.copy()
-                s2_masked = [
-                    w if lemma != lemma_2 else TOKEN_MASK
-                    for w, lemma in zip(
-                        counterexample_candidate["tokenized"],
-                        counterexample_candidate["lemmatized"],
-                    )
-                ]
+            start, end = get_start_and_end_of_sublist(s1_masked, intersection)
+            first_word = example_candidate["words"][start]
+            last_word = example_candidate["words"][end]
+            if (
+                    first_word["case"] != "success"
+                    or last_word["case"] != "success"
+                    or "end" not in last_word
+                    or "start" not in first_word
+                    or last_word["end"] - first_word["start"]
+                    < args.min_phrase_duration
+            ):
+                continue
 
-                intersection = longest_intersection(s1_masked, s2_masked)
-                if not intersection:
-                    continue
+            (counterex_start, counterex_end,) = get_start_and_end_of_sublist(
+                s2_masked, intersection
+            )
+            first_word = counterexample_candidate["words"][counterex_start]
+            last_word = counterexample_candidate["words"][counterex_end]
+            if (
+                    first_word["case"] != "success"
+                    or last_word["case"] != "success"
+                    or "end" not in last_word
+                    or "start" not in first_word
+                    or last_word["end"] - first_word["start"]
+                    < args.min_phrase_duration
+            ):
+                continue
 
-                start, end = get_start_and_end_of_sublist(s1_masked, intersection)
-                first_word = example_candidate["words"][start]
-                last_word = example_candidate["words"][end]
-                if (
-                        first_word["case"] != "success"
-                        or last_word["case"] != "success"
-                        or "end" not in last_word
-                        or "start" not in first_word
-                        or last_word["end"] - first_word["start"]
-                        < args.min_phrase_duration
-                ):
-                    continue
-
-                (counterex_start, counterex_end,) = get_start_and_end_of_sublist(
-                    s2_masked, intersection
+            if len(intersection) > len_longest_intersection:
+                example = crop_and_create_example(
+                    example_candidate.copy(), start, end, lemma_1, lemma_2,
                 )
-                first_word = counterexample_candidate["words"][counterex_start]
-                last_word = counterexample_candidate["words"][counterex_end]
-                if (
-                        first_word["case"] != "success"
-                        or last_word["case"] != "success"
-                        or "end" not in last_word
-                        or "start" not in first_word
-                        or last_word["end"] - first_word["start"]
-                        < args.min_phrase_duration
-                ):
-                    continue
 
-                if len(intersection) > len_longest_intersection:
-                    example = crop_and_create_example(
-                        example_candidate.copy(), start, end, lemma_1, lemma_2,
-                    )
+                counterexample = crop_and_create_example(
+                    counterexample_candidate.copy(),
+                    counterex_start,
+                    counterex_end,
+                    lemma_2,
+                    lemma_1,
+                )
 
-                    counterexample = crop_and_create_example(
-                        counterexample_candidate.copy(),
-                        counterex_start,
-                        counterex_end,
-                        lemma_2,
-                        lemma_1,
-                    )
-
-                    len_longest_intersection = len(intersection)
-                    best_example = example
-                    best_counterexample = counterexample
-                    best_counterex_row = row_counterexample
+                len_longest_intersection = len(intersection)
+                best_example = example
+                best_counterexample = counterexample
+                best_counterex_row = row_counterexample
 
         if best_example is not None:
             results.append(best_example)
             results.append(best_counterexample)
-            print(best_example["tokenized"])
-            print(best_counterexample["tokenized"], end="\n\n")
+            # print(best_example["tokenized"])
+            # print(best_counterexample["tokenized"], end="\n\n")
 
             used_counterexamples.append(best_counterex_row)
 
@@ -340,17 +354,10 @@ def find_minimal_pairs_for_tuple(tuple, data, args):
 
 def find_minimal_pairs(tuples, data, args):
     process_args = [
-        (tuple, data.copy(), args)
+        (tuple, data, args)
         for tuple in tuples
     ]
-
-    # results = [find_minimal_pairs_for_tuple(*args) for args in process_args]
-    with Pool(processes=8) as pool:
-        results = pool.starmap(
-            find_minimal_pairs_for_tuple,
-            tqdm(process_args, total=len(process_args)),
-        )
-
+    results = [find_minimal_pairs_for_tuple(*args) for args in process_args]
     eval_set = pd.DataFrame(list(itertools.chain(*results)))
 
     if len(eval_set) > 0:
