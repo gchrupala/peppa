@@ -45,8 +45,6 @@ WORDS_IGNORE = {
     "ADJ": ["it's", "that's"],
 }
 
-POS_LEMMATIZER = {"VERB": "v", "NOUN": "n", "ADJ": "a"}
-
 TOKEN_MASK = "<MASK>"
 
 
