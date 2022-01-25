@@ -32,22 +32,31 @@ WORDS_NAMES = [
     "suzy",
 ]
 
-SYNONYMS = {"granddad": "grandpa",}
+SYNONYMS_REPLACE = {"granddad": "grandpa", "mommy": "mummy", "grandma": "granny"}
 
 # Ignore some words that have been mistagged by the POS-tagger (partly because of poor pre-tokenization):
 WORDS_IGNORE = {
-    "VERB": ["it'", "choose'", "dog,", "they're", "first,", "we're", "what's", "can't", "friends,"],
-    "NOUN": ["peppa's", "george's", "let's", "pig's", "pig,", "george'", "i'll", "rabbit's", "daddy's", "chloe's",
+    "VERB": ["they're", "we're", "what's", "can't"],
+    "NOUN": ["peppa's", "george's", "let's", "pig's", "i'll", "rabbit's", "daddy's", "chloe's",
              "can't", "doesn't", "suzy's", "zebra's", "zoe's", "it's", "dog's", "dinosaur's", "they're", "grandpa's",
-             "rebecca's", "we've", "there's", "on,", "yes,", "there'", "you'll", "i'm", "we'll", "ho!", "i've", "me!",
-             "what's", "too?", "i'll", "daddy?", "that's", "oooh!", "work?", "you're", "us,", "teapot,", "it?", "look!",
-             "smoothie,", "george?", "juice,", "rabbit?", "we'd", "we're", "boats!", "faster,"],
-    "ADJ": ["hard,", "friend,", "glasses,", "peppa,", "cold,", "it's", "pedro?", "that's"],
+             "rebecca's", "we've", "there's", "you'll", "i'm", "we'll", "i've", "what's", "i'll", "that's", "you're",
+             "we'd", "we're", "bit", "be", "dear", "love"], # ("love" and "dear" are not used as nouns in the dataset)
+    "ADJ": ["it's", "that's"],
 }
 
 POS_LEMMATIZER = {"VERB": "v", "NOUN": "n", "ADJ": "a"}
 
 TOKEN_MASK = "<MASK>"
+
+
+def clean_lemma(lemma):
+    lemma = lemma.lower()
+    # Remove punctuation
+    if lemma[-1] in [".", ",", "'", "?", "!"]:
+        lemma = lemma[:-1]
+    if lemma in SYNONYMS_REPLACE:
+        lemma = SYNONYMS_REPLACE[lemma]
+    return lemma
 
 
 def load_realigned_data():
@@ -88,7 +97,7 @@ def load_realigned_data():
                 # Treat proper nouns the same way as nouns
                 item["pos"] = [t.pos_ if t.pos_ != "PROPN" else "NOUN" for t in doc]
 
-                item["lemmatized"] = [t.lemma_.lower() for t in doc]
+                item["lemmatized"] = [clean_lemma(t.lemma_) for t in doc]
 
                 for i in range(len(item["words"])):
                     item["words"][i]["fragment"] = fragment
@@ -388,7 +397,7 @@ if __name__ == "__main__":
     for pos_name in POS_TAGS:
         print(f"Looking for {pos_name}s:")
         # Find most common words
-        words = get_lemmatized_words(data_tokens, "val", pos_name)
+        words = get_lemmatized_words(data_tokens, "val", fragments=FRAGMENTS, pos=pos_name)
 
         counter = Counter(words)
 
