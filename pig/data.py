@@ -104,7 +104,16 @@ class AudioClipDataset(IterableDataset):
     def __iter__(self):
         for clip in self.clips:
             yield featurize_audio(clip)
-                
+
+
+class ArrayDataset(IterableDataset):
+
+    def __init__(self, arrays):
+        self.arrays = arrays
+
+    def __iter__(self):
+        yield from self.arrays
+        
 class VideoFileDataset(IterableDataset):
 
     def __init__(self, paths):
@@ -144,13 +153,25 @@ def grouped_audiofile_loader(paths, batch_size=32):
                             batch_size)
     return loader
     
-    
+
+def audioarray_loader(arrays, batch_size=32):
+    dataset = ArrayDataset(arrays)
+    return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
+
 def audioclip_loader(clips, batch_size=32):
     dataset = AudioClipDataset(clips)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
 def grouped_audioclip_loader(paths, batch_size=32):
     dataset = AudioClipDataset(paths)
+    loader = grouped_loader(dataset,
+                            lambda x: x.shape[1],
+                            collate_audio,
+                            batch_size)
+    return loader
+
+def grouped_audioarray_loader(arrays, batch_size=32):
+    dataset = ArrayDataset(arrays)
     loader = grouped_loader(dataset,
                             lambda x: x.shape[1],
                             collate_audio,
