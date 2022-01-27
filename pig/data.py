@@ -194,6 +194,7 @@ class PeppaPigIterableDataset(IterableDataset):
                  fragment_type='dialog',
                  duration=3.2,
                  jitter=False,
+                 jitter_sd=None,
                  ):
         if type(split) is str:
             raise ValueError("`split` should be a list of strings")
@@ -202,6 +203,7 @@ class PeppaPigIterableDataset(IterableDataset):
         self.fragment_type = fragment_type
         self.duration = duration
         self.jitter = jitter
+        self.jitter_sd = jitter_sd
         self.split_spec = SPLIT_SPEC
 
     def featurize(self, clip):
@@ -241,7 +243,7 @@ class PeppaPigIterableDataset(IterableDataset):
                     meta = json.load(open(f"{os.path.dirname(path)}/{i}.json"))
                     clips = pig.preprocess.lines(video, meta)
                 else:
-                    clips = pig.preprocess.segment(video, duration=self.duration, jitter=self.jitter)
+                    clips = pig.preprocess.segment(video, duration=self.duration, jitter=self.jitter, jitter_sd=self.jitter_sd)
                 for clip in clips:
                     yield clip
 
@@ -329,14 +331,16 @@ class PigData(pl.LightningDataModule):
                                          target_size=self.config['target_size'],
                                          split=['val'], fragment_type='dialog',
                                          duration=self.config['val']['duration'],
-                                         jitter=self.config['val']['jitter'])
+                                         jitter=self.config['val']['jitter'],
+                                         jitter_sd=self.config['val'].get('jitter_sd'))
 
         self.val_narr = PeppaPigDataset(force_cache=self.config['val']['force_cache'],
                                         target_size=self.config['target_size'],
                                         split=['val'],
                                         fragment_type='narration',
                                         duration=self.config['val']['duration'],
-                                        jitter=self.config['val']['jitter'])
+                                        jitter=self.config['val']['jitter'],
+                                        jitter_sd=self.config['val'].get('jitter_sd'))
         self.val_dia3 = pig.data.PeppaPigDataset(
             force_cache=self.config['val']['force_cache'],
             target_size=self.config['target_size'],
