@@ -12,7 +12,16 @@ import os.path
 import torch
 import torch.nn
 import pig.evaluation
-
+import random
+import plotnine as pn
+from pig.models import PeppaPig
+from pig.data import audioclip_loader, audioarray_loader, \
+    grouped_audioclip_loader, grouped_audioarray_loader
+from pig.util import cosine_matrix
+from sentence_transformers import SentenceTransformer
+from torchtext.vocab import GloVe
+from copy import deepcopy
+    
 VERSIONS=[48, 61]
 
 def checkpoint_path(version):
@@ -157,6 +166,43 @@ def normalized_distance(a, b):
     from Levenshtein import distance
     return distance(a, b) / max(len(a), len(b))
 
+def embed_utterances(version, fragment_type='dialog', grouped=True, embedder='st', projection=False):
+    audio_paths = glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.wav")
+    anno_paths  = [ meta(path) for path in audio_paths ]
+
+    data = UttData(audio_paths, anno_paths, multiword=True)
+
+        
+    net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(version))
+    config_1 = deepcopy(net_2.config)
+    config_1['audio']['pooling'] = 'average'
+    config_1['audio']['project'] = projection
+    net_1 = PeppaPig(config_1)
+    net_2.eval(); net_2.cuda()
+    net_1.eval(); net_1.cuda()
+    with torch.no_grad():
+        if grouped:
+            loader = grouped_audioclip_loader(utt.audio for utt in data.utterances(read_audio=True))
+        else:
+            loader = audioclip_loader(utt.audio for utt in data.utterances(read_audio=True))
+
+        emb_1, emb_2 = zip(*[ (net_1.encode_audio(batch.to(net_1.device)).squeeze(dim=1),
+                               net_2.encode_audio(batch.to(net_2.device)).squeeze(dim=1))
+                              for batch in loader ])
+    emb_1 = torch.cat(emb_1)
+    emb_2 = torch.cat(emb_2)
+    if embedder == 'st':
+        encoder = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+        embed = lambda u: encoder.encode([u], convert_to_tensor=True)[0]
+    elif embedder == 'glove':
+        glove_model = GloVe(name='840B', dim=300)
+        embed = lambda s: torch.stack([ glove_model[word] for word in s.split() ]).sum(dim=0)
+    utts = [ utt for utt in data.utterances(read_audio=False,  embed=embed) ]
+    for i, utt in enumerate(utts):
+        utt.embedding_1 = emb_1[i]
+        utt.embedding_2 = emb_2[i]
+    return utts
+
 def pairwise(version, fragment_type='dialog', multiword=False):
     from pig.models import PeppaPig
     from pig.data import audioclip_loader
@@ -226,15 +272,28 @@ def pairwise(version, fragment_type='dialog', multiword=False):
                            sim_1=sim_1[i, j].item(),
                            sim_2=sim_2[i, j].item())
 
-def unpairwise(version):
-    dialog = torch.load(f"data/out/utt_multiword_{version}_dialog.pt")
-    narration = torch.load(f"data/out/utt_multiword_{version}_narration.pt")
-    utt = [utt for utt in dialog['utt'] + narration['utt'] if utt.speaker is not None]
-    data = pd.DataFrame.from_records(unpairwise_data(utt))
-    data.to_csv(f"data/out/unpairwise_similarities_{version}.csv", index=False, header=True)
+def unpairwise(version, grouped=True, embedder='st', n_samples=100):
+    from pig.stats import unpairwise_ols 
+    dialog = embed_utterances(version, "dialog", grouped=grouped, embedder=embedder,
+                              projection=True)
+    narration = embed_utterances(version, "narration", grouped=grouped, embedder=embedder,
+                                 projection=True)
+    utt = [utt for utt in dialog + narration if utt.speaker is not None]
+    results = []
+    for n in range(n_samples):
+        data = pd.DataFrame.from_records(unpairwise_data(utt))
+        result = unpairwise_ols(data)
+        result['sample'] = n
+        results.append(result)
+    pd.concat(results).to_csv("results/unpairwise_coef.csv", index=False, header=True)
+    g = pn.ggplot(results, pn.aes(x='Variable', y='Value', color='Dependent Var.')) + \
+        pn.geom_boxplot() + \
+        pn.coord_flip()
+    pn.ggsave(g, "results/unpairwise_boxplots.pdf")
+
+
     
 def unpairwise_data(utt):
-    import random
     from pig.triplet import pairs
     cosine = torch.nn.CosineSimilarity(dim=1)
     random.shuffle(utt)
@@ -287,8 +346,156 @@ def word_type():
                          N=sim_emb.shape[0],
                          model_version=model_version))
     pd.DataFrame.from_records(rows).to_csv("results/word_type_rsa.csv", index=False, header=True)
+
+def prepare_probe(embedder, feature, label, balanced=True):
+    X_d, Y_d = embedder.feature_label('dialog', feature, label)
+    X_n, Y_n = embedder.feature_label('narration', feature, label)
+    if balanced:
+        N = len(Y_d)
+        ixs = random.sample(range(len(Y_n)), N)
+        X = np.concatenate([X_d, X_n[ixs]])
+        Y = np.concatenate([Y_d, Y_n[ixs]])
+    else:
+        X = np.concatenate([X_d, X_n])
+        Y = np.concatenate([Y_d, Y_n])
+    return X, Y
+
+def probe(embedder, labels=['speaker']):
+    from sklearn.linear_model import LogisticRegression, Ridge
+    from sklearn.neural_network import MLPClassifier, MLPRegressor
+    from sklearn.model_selection import GridSearchCV
+    from sklearn.pipeline import make_pipeline
+    from sklearn.preprocessing import StandardScaler, scale
+    from collections import Counter
+    records = []
+    for label in labels:
+        for feature in embedder.embedding['dialog'].keys():
+            if label == 'speaker':
+                X, Y = prepare_probe(embedder, feature, label, balanced=True)
+            else:
+                X, Y = prepare_probe(embedder, feature, label, balanced=False)
+            if label == 'duration':
+                model = GridSearchCV(make_pipeline(StandardScaler(),
+                                                   MLPRegressor(max_iter=1000)),
+                                     param_grid={'mlpregressor__alpha':
+                                                 [10**n for n in range(-4, 5) ]},
+                                     n_jobs=12)
+                model.fit(X, scale(Y))
+                score = model.best_score_
+                records.append(dict(model='ridge', label=label, feature=feature,
+                                    maj=None, score=score))
+            else:
+                count = Counter(Y)
+                maj = max(count.values())/sum(count.values())
+                Y = np.array([ z if count[z]>4 else 'other' for z in Y])
+                model = GridSearchCV(make_pipeline(StandardScaler(),
+                                                   MLPClassifier(max_iter=1000)),
+                                     param_grid={'mlpclassifier__alpha': [0.1, 1.0, 10],
+                                                 'mlpclassifier__hidden_layer_sizes':
+                                                 [(50,), (100,), (200,)]},
+                                     n_jobs=12)
+                model.fit(X, Y)
+                score = rer(model.best_score_, maj)
+                records.append(dict(model='lr', label=label, feature=feature, maj=maj, score=score))
+    return pd.DataFrame.from_records(records)
+
+def vanilla_rsa(embedder, labels=['speaker']):
+    from pig.util import pearson_r, triu, cosine_matrix
+    records = []
+    for label in labels:
+        for feature in embedder.embedding['dialog'].keys():
+            X, Y = prepare_probe(embedder, feature, label)
+            X = torch.tensor(X)
+            X_sim = cosine_matrix(X, X)
+            Y_sim = torch.tensor([[y1 == y2 for y1 in Y] for y2 in Y]).float()
+            r = pearson_r(triu(X_sim), triu(Y_sim)).item()
+            records.append(dict(label=label, feature=feature, r=r))
+    return pd.DataFrame.from_records(records)
+
+def rer(hi_acc, low_acc):
+    return ((1-low_acc)-(1-hi_acc))/(1-low_acc)
+
+
+class Embedder:
+    def __init__(self, version):
+        self.version = version
+        self.data = {}
+        self.audio    = dict(dialog=[], narration=[])
+        self.duration  = dict(dialog=[], narration=[])
+        self.speaker  = dict(dialog=[], narration=[])
+        self.spelling = dict(dialog=[], narration=[])
+        self.embedding = dict(dialog={}, narration={})
+        for fragment_type in ['dialog', 'narration']:
+            audio_paths = glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.wav")
+            anno_paths  = [ meta(path) for path in audio_paths ]
+            self.data[fragment_type] = UttData(audio_paths, anno_paths, multiword=False)
+            
+    def load_audio(self):
+        for fragment_type in self.audio:
+            for utt in self.data[fragment_type].utterances(read_audio=True):
+                self.audio[fragment_type].append(pig.data.featurize_audio(utt.audio))
+                self.speaker[fragment_type].append(utt.speaker)
+                self.spelling[fragment_type].append(utt.spelling)
+                self.duration[fragment_type].append(utt.duration)
         
-        
+    def embed(self, grouped=True):
+        net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(self.version))
+        net_2.eval().cuda()
+        net_1 = PeppaPig(net_2.config).eval().cuda()
+        config_0 = deepcopy(net_2.config)
+        config_0['audio']['pretrained'] = False
+        net_0 = PeppaPig(config_0).eval().cuda()
+        embed_untrained = lambda batch: net_0.encode_audio(batch.to(net_0.device)).squeeze(dim=1)
+        embed_trained = lambda batch: net_2.encode_audio(batch.to(net_2.device)).squeeze(dim=1)
+        embed_project     = lambda batch: net_1.encode_audio(batch.to(net_1.device)).squeeze(dim=1)
+        def embed_wav2vec(batch):
+            feat, _ = net_2.audio_encoder.audio.extract_features(batch.to(net_2.device).squeeze(dim=1))
+            return feat.mean(dim=1)
+        def embed_conv(batch):
+            feat, _ = net_2.audio_encoder.audio.feature_extractor(batch.to(net_2.device).squeeze(dim=1),
+                                                                  None)
+            return feat.mean(dim=1)
+        for fragment_type in self.embedding:
+            with torch.no_grad():
+                if grouped:
+                    loader = grouped_audioarray_loader
+                else:
+                    loader = audioarray_loader
+                self.embedding[fragment_type]['untrained'] = \
+                    torch.cat([embed_untrained(batch) for batch
+                               in loader(self.audio[fragment_type])]).cpu().numpy()
+                self.embedding[fragment_type]['trained'] = \
+                    torch.cat([embed_trained(batch) for batch
+                               in loader(self.audio[fragment_type])]).cpu().numpy()
+                self.embedding[fragment_type]['project'] = \
+                    torch.cat([embed_project(batch) for batch
+                               in loader(self.audio[fragment_type])]).cpu().numpy()
+                self.embedding[fragment_type]['wav2vec'] = \
+                    torch.cat([embed_wav2vec(batch) for batch
+                               in loader(self.audio[fragment_type])]).cpu().numpy()
+                self.embedding[fragment_type]['conv'] = \
+                    torch.cat([embed_conv(batch) for batch
+                               in loader(self.audio[fragment_type])]).cpu().numpy()
+
+    def feature_label(self, fragment_type, feature, label):
+        X = self.embedding[fragment_type][feature]
+        Y = getattr(self, label)[fragment_type]
+        X, Y = zip(*[(x,y) for x,y in zip(X, Y) if y is not None])
+        return np.array(list(X)), np.array(list(Y))
+    
+def feat_speak(fragment_type, embed=None, version=None):
+    """Either embed or version must be specified."""
+    if embed is None:
+        net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(version))
+        net_2.eval(); net_2.cuda()
+        embed = lambda batch: net_2.encode_audio(batch.to(net_2.device)).squeeze(dim=1)
+    loader = audioclip_loader(utt.audio for utt in data.utterances(read_audio=True))
+    with torch.no_grad():
+        emb_2 = torch.cat([embed(batch) for batch in loader ])
+    Y = [x.speaker for x in data.utterances(read_audio=False)]
+    X, Y = zip(*[(x,y) for x,y in zip(emb_2, Y) if y is not None])
+    return torch.stack(X).cpu().numpy(), np.array(Y)
+    
 def main(versions=VERSIONS):
     os.environ["TOKENIZERS_PARALLELISM"] = "false"
     import pandas

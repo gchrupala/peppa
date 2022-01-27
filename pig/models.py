@@ -60,7 +60,7 @@ class LastStep(nn.Module):
 ## Audio encoders
 
 class Wav2VecEncoder(nn.Module):
-    def __init__(self, path, pretrained=True, freeze_feature_extractor=False, freeze_encoder_layers=None, pooling='average'):
+    def __init__(self, path, pretrained=True, freeze_feature_extractor=False, freeze_encoder_layers=None, pooling='average', project=True):
         super().__init__()
         if pretrained:
             model, _, _ = fairseq.checkpoint_utils.load_model_ensemble_and_task([path])
@@ -82,8 +82,10 @@ class Wav2VecEncoder(nn.Module):
             self.audiopool = LastStep()
         else:
             raise ValueError(f"Invalid pooling: {pooling}")
-        self.project = nn.Linear(512, 512)
-
+        if project:
+            self.project = nn.Linear(512, 512)
+        else:
+            self.project = nn.Identity()
         
     def forward(self, x):
         features, _ = self.audio.extract_features(x.squeeze(dim=1))
@@ -114,7 +116,7 @@ class R3DEncoder(nn.Module):
         if project:
             self.project = nn.Linear(512, 512)
         else:
-            self.project = identity
+            self.project = nn.Identity()
         if pooling == 'attention':
             self.videopool = VideoAttention(512, 128)
         elif pooling == 'average':
