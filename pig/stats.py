@@ -141,11 +141,15 @@ def ablate(variables):
     for this in variables:
         yield this, pd.concat([ var for name, var in variables.items() if name != this ], axis=1) 
 
-def unpairwise_ols(version = 61):
-    rawdata = pd.read_csv(f"data/out/unpairwise_similarities_{version}.csv")
+def unpairwise_ols(rawdata):
     data  = standardize(rawdata)
-    m = api.ols(formula = f"sim_2 ~ semsim + sim_1 + distance + durationdiff + durationsum + sametype + samespeaker + sameepisode", data=data)
-    m.fit().summary2().tables[1].reset_index().rename(columns={'index':'Variable'}).to_csv(f"results/unpairwise_coef_{version}.csv", index=False, header=True)
+    m1 = api.ols(formula = f"sim_1 ~ semsim + distance + durationdiff + durationsum + samespeaker + sameepisode", data=data)
+    m2 = api.ols(formula = f"sim_2 ~ semsim + distance + durationdiff + durationsum + samespeaker + sameepisode", data=data)
+    result1 = m1.fit().summary2().tables[1].reset_index().rename(columns={'index':'Variable', 'Coef.': 'Value'})
+    result2 = m2.fit().summary2().tables[1].reset_index().rename(columns={'index':'Variable', 'Coef.': 'Value'})
+    result1['Dependent Var.'] = 'sim_1'
+    result2['Dependent Var.'] = 'sim_2'
+    return pd.concat([result1, result2])
     
 def main():
     # Load and process data
