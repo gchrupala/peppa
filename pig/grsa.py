@@ -390,8 +390,9 @@ def probe(embedder, labels=['speaker']):
                 Y = np.array([ z if count[z]>4 else 'other' for z in Y])
                 model = GridSearchCV(make_pipeline(StandardScaler(),
                                                    MLPClassifier(max_iter=1000)),
-                                     param_grid={'mlpclassifier__alpha':
-                                                 [10**n for n in range(-4, 5) ]},
+                                     param_grid={'mlpclassifier__alpha': [0.1, 1.0, 10],
+                                                 'mlpclassifier__hidden_layer_sizes':
+                                                 [(50,), (100,), (200,)]},
                                      n_jobs=12)
                 model.fit(X, Y)
                 score = rer(model.best_score_, maj)
@@ -441,7 +442,10 @@ class Embedder:
         net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(self.version))
         net_2.eval().cuda()
         net_1 = PeppaPig(net_2.config).eval().cuda()
-        
+        config_0 = deepcopy(net_2.config)
+        config_0['audio']['pretrained'] = False
+        net_0 = PeppaPig(config_0).eval().cuda()
+        embed_untrained = lambda batch: net_0.encode_audio(batch.to(net_0.device)).squeeze(dim=1)
         embed_trained = lambda batch: net_2.encode_audio(batch.to(net_2.device)).squeeze(dim=1)
         embed_project     = lambda batch: net_1.encode_audio(batch.to(net_1.device)).squeeze(dim=1)
         def embed_wav2vec(batch):
@@ -457,6 +461,9 @@ class Embedder:
                     loader = grouped_audioarray_loader
                 else:
                     loader = audioarray_loader
+                self.embedding[fragment_type]['untrained'] = \
+                    torch.cat([embed_untrained(batch) for batch
+                               in loader(self.audio[fragment_type])]).cpu().numpy()
                 self.embedding[fragment_type]['trained'] = \
                     torch.cat([embed_trained(batch) for batch
                                in loader(self.audio[fragment_type])]).cpu().numpy()
