@@ -6,6 +6,7 @@ from torchvision import transforms
 from torch.utils.data import DataLoader, random_split
 import pytorch_lightning as pl
 import torchvision.models.video as V
+from torchvision.models import resnet18
 import torchaudio.models as A
 from torchaudio.models.wav2vec2.utils import import_fairseq_model
 import fairseq
@@ -114,7 +115,7 @@ class R3DEncoder(nn.Module):
         if project:
             self.project = nn.Linear(512, 512)
         else:
-            self.project = identity
+            self.project = nn.Identity()
         if pooling == 'attention':
             self.videopool = VideoAttention(512, 128)
         elif pooling == 'average':
@@ -135,6 +136,46 @@ class R3DEncoder(nn.Module):
                         lambda x: nn.functional.normalize(x, p=2, dim=1)
         ])(x)
 
+class ImageEncoder(nn.Module):
+
+    def __init__(self,
+                 pretrained=True,
+                 project=True):
+        super().__init__()
+        self.pretrained = pretrained
+        self.image = resnet18(pretrained=self.pretrained)
+        for param in self.image.fc.parameters():
+            param.requires_grad = False
+        if project:
+            self.project = nn.Linear(512, 512)
+        else:
+            self.project = nn.Identity()
+        self.transform = build_transform("imagenet")
+
+    def forward(self, x):
+        embed_img = Compose([
+            self.image.conv1,
+            self.image.bn1,
+            self.image.relu,
+            self.image.maxpool,
+            self.image.layer1,
+            self.image.layer2,
+            self.image.layer3,
+            self.image.layer4,
+            self.image.avgpool,
+            lambda x: torch.flatten(x, 1)])
+
+        x = self.transform(x)
+        x = x.permute(0, 2, 1, 3, 4)
+        batch, time, channel, height, width = x.shape
+        x = x.reshape(batch * time, channel, height, width)
+        x = embed_img(x).reshape(batch, time, -1).mean(dim=1)
+        x = self.project(x)
+        x = nn.functional.normalize(x, p=2, dim=1)
+        return x
+    
+                 
+    
 class VideoAveragePool(nn.Module):
 
     def __init__(self):
@@ -250,12 +291,16 @@ class PeppaPig(pl.LightningModule):
 def build_transform(normalization):
     if normalization == 'peppa':
         stats = torch.load("data/out/stats.pt")
+        normalize = Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True) 
     elif normalization == 'kinetics':
         stats = torch.load("data/out/kinetics-stats.pt")
+        Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True),
+    elif normalization == "imagenet":
+        normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                         std=[0.229, 0.224, 0.225])
     else:
         raise ValueError(f"Unsupported normalization type {self.normalization}")
-    return Compose([
-        pig.transforms.SwapCT(),
-        Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True),
-        pig.transforms.SwapCT()
+    return Compose([ pig.transforms.SwapCT(),
+                     normalize, 
+                     pig.transforms.SwapCT()
     ])
