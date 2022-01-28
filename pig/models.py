@@ -152,7 +152,7 @@ class ImageEncoder(nn.Module):
             self.project = nn.Linear(512, 512)
         else:
             self.project = nn.Identity()
-        self.transform = build_transform("imagenet")
+        self.transform = build_transform("imagenet" if self.pretrained else "peppa")
 
     def forward(self, x):
         embed_img = Compose([
