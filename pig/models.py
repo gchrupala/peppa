@@ -300,7 +300,7 @@ def build_transform(normalization):
         normalize = Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True) 
     elif normalization == 'kinetics':
         stats = torch.load("data/out/kinetics-stats.pt")
-        normalize = Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True),
+        normalize = Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True)
     elif normalization == "imagenet":
         normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                          std=[0.229, 0.224, 0.225])
