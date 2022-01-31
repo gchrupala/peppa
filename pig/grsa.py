@@ -360,7 +360,7 @@ def prepare_probe(embedder, feature, label, balanced=True):
         Y = np.concatenate([Y_d, Y_n])
     return X, Y
 
-def probe(embedder, labels=['speaker']):
+def probe(embedder, labels=['speaker'], fragment_type=None):
     from sklearn.linear_model import LogisticRegression, Ridge
     from sklearn.neural_network import MLPClassifier, MLPRegressor
     from sklearn.model_selection import GridSearchCV
@@ -370,29 +370,36 @@ def probe(embedder, labels=['speaker']):
     records = []
     for label in labels:
         for feature in embedder.embedding['dialog'].keys():
-            if label == 'speaker':
-                X, Y = prepare_probe(embedder, feature, label, balanced=True)
+            if fragment_type is None:
+                if label == 'speaker':
+                    X, Y = prepare_probe(embedder, feature, label, balanced=True)
+                else:
+                    X, Y = prepare_probe(embedder, feature, label, balanced=False)
             else:
-                X, Y = prepare_probe(embedder, feature, label, balanced=False)
+                X, Y = embedder.feature_label(fragment_type, feature, label)
             if label == 'duration':
                 model = GridSearchCV(make_pipeline(StandardScaler(),
-                                                   MLPRegressor(max_iter=1000)),
-                                     param_grid={'mlpregressor__alpha':
-                                                 [10**n for n in range(-4, 5) ]},
+                                                   MLPRegressor(max_iter=500)),
+                                     param_grid={'mlpclassifier__alpha': [0.1, 1.0, 10],
+                                                 'mlpclassifier__hidden_layer_sizes':
+                                                 [(100,), (500,)]},
                                      n_jobs=12)
                 model.fit(X, scale(Y))
                 score = model.best_score_
                 records.append(dict(model='ridge', label=label, feature=feature,
                                     maj=None, score=score))
             else:
+                #count = Counter(Y)
+                #Y = np.array([ z if count[z]>4 else None for z in Y])
+                #X = X[Y!=None]
+                #Y = Y[Y!=None]
                 count = Counter(Y)
                 maj = max(count.values())/sum(count.values())
-                Y = np.array([ z if count[z]>4 else 'other' for z in Y])
                 model = GridSearchCV(make_pipeline(StandardScaler(),
-                                                   MLPClassifier(max_iter=1000)),
+                                                   MLPClassifier(max_iter=500)),
                                      param_grid={'mlpclassifier__alpha': [0.1, 1.0, 10],
                                                  'mlpclassifier__hidden_layer_sizes':
-                                                 [(50,), (100,), (200,)]},
+                                                 [(100,), (500,)]},
                                      n_jobs=12)
                 model.fit(X, Y)
                 score = rer(model.best_score_, maj)
@@ -435,7 +442,7 @@ class Embedder:
             for utt in self.data[fragment_type].utterances(read_audio=True):
                 self.audio[fragment_type].append(pig.data.featurize_audio(utt.audio))
                 self.speaker[fragment_type].append(utt.speaker)
-                self.spelling[fragment_type].append(utt.spelling)
+                self.spelling[fragment_type].append(utt.spelling.lower())
                 self.duration[fragment_type].append(utt.duration)
         
     def embed(self, grouped=True):
