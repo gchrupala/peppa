@@ -203,11 +203,12 @@ class PeppaPig(pl.LightningModule):
         self.config = config
         self.save_hyperparameters(config)
         self.loss = TripletLoss(margin=self.config['margin'])
-        if self.config['video'].get('static', False):
-            del self.config['video']['static']
-            self.video_encoder = ImageEncoder(**self.config['video'])
+        static =  self.config['video'].get('static', False)
+        video_config = {key: value for key, value in self.config['video'].items() if key != 'static'}
+        if static:
+            self.video_encoder = ImageEncoder(**video_config)
         else:
-            self.video_encoder = R3DEncoder(**self.config['video'])
+            self.video_encoder = R3DEncoder(**video_config)
         self.audio_encoder = Wav2VecEncoder(**config['audio'])
         
     def forward(self, batch):
