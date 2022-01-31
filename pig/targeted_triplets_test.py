@@ -4,7 +4,7 @@ import numpy as np
 from moviepy.audio.AudioClip import AudioArrayClip
 from moviepy.video.io.ImageSequenceClip import ImageSequenceClip
 
-from pig.targeted_triplets import PeppaTargetedTripletDataset, FPS
+from pig.targeted_triplets import FPS, PeppaTargetedTripletCachedDataset
 import pygame
 import pandas as pd
 
@@ -20,7 +20,7 @@ if __name__ == "__main__":
     eval_info_file = f"data/eval/eval_set_{fragment_type}_{pos}.csv"
     eval_info = pd.read_csv(eval_info_file, index_col="id")
 
-    eval_dataset = PeppaTargetedTripletDataset.load(f"data/out/val_{fragment_type}_targeted_triplets_{pos}")
+    eval_dataset = PeppaTargetedTripletCachedDataset(fragment_type, pos)
 
     assert len(eval_info) == len(eval_dataset)
 
