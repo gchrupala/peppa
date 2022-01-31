@@ -18,6 +18,8 @@ import seaborn as sns
 import matplotlib
 
 from pig.metrics import batch_triplet_accuracy
+from pig.models import PeppaPig
+from run import default_config
 
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -229,7 +231,13 @@ if __name__ == "__main__":
     rows = []
     for version in args.versions:
         logging.info(f"Evaluating version {version}")
-        net, path = load_best_model(f"lightning_logs/version_{version}/")
+
+        if version == "BASELINE":
+            net = PeppaPig(default_config)
+            path = ""
+        else:
+            net, path = load_best_model(f"lightning_logs/version_{version}/")
+
         results_dir = f"results/version_{version}"
 
         for row, per_sample_results in score(net):
