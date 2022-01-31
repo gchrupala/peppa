@@ -7,7 +7,6 @@ import torch
 from scipy.stats import pearsonr
 
 from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS, POS_TAGS
-from pig.data import GroupedDataset, collate
 from pig.evaluation import load_best_model
 
 import pytorch_lightning as pl
@@ -23,7 +22,7 @@ from pig.metrics import batch_triplet_accuracy
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-from pig.targeted_triplets import PeppaTargetedTripletDataset, collate_triplets
+from pig.targeted_triplets import collate_triplets, PeppaTargetedTripletCachedDataset
 
 BATCH_SIZE = 8
 NUM_WORKERS = 8
@@ -45,7 +44,7 @@ def score(model):
         
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
-    ds = PeppaTargetedTripletDataset.load(f"data/out/val_{fragment_type}_targeted_triplets_{pos}")
+    ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False)
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
     if len(ds) == 0:
         return []

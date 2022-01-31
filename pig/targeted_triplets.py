@@ -1,4 +1,6 @@
+import glob
 import json
+import logging
 import pickle
 from dataclasses import dataclass
 
@@ -31,12 +33,32 @@ class TripletBatch:
     negative: torch.tensor
 
 
+class PeppaTargetedTripletCachedDataset(Dataset):
+
+    def __init__(self, fragment, pos, target_size=(180, 100), force_cache=False):
+        self.cache_dir = f"data/out/items-targeted-triplets-{target_size[0]}-{target_size[1]}-{fragment}-{pos}/"
+        if force_cache or not os.path.isdir(self.cache_dir):
+            os.makedirs(self.cache_dir, exist_ok=True)
+            ds = PeppaTargetedTripletDataset.from_csv(fragment, pos, target_size)
+
+            for i, item in enumerate(ds):
+                logging.info(f"Caching item {self.cache_dir}/{i}.pt")
+                torch.save(item, f"{self.cache_dir}/{i}.pt")
+
+        self.length = len(glob.glob(f"{self.cache_dir}/*.pt"))
+
+    def __len__(self):
+        return self.length
+
+    def __getitem__(self, idx):
+        return torch.load(f"{self.cache_dir}/{idx}.pt")
+
+
 class PeppaTargetedTripletDataset(Dataset):
 
-    def __init__(self, directory, target_size=(180, 100), raw=False):
+    def __init__(self, directory, target_size=(180, 100)):
         super().__init__()
 
-        self.raw = raw
         self.directory = directory
         self.target_size = target_size
 
@@ -48,9 +70,10 @@ class PeppaTargetedTripletDataset(Dataset):
         return self
 
     @classmethod
-    def from_csv(cls, directory, targeted_eval_set_csv, target_size=(180, 100), raw=False):
-        self = cls(directory, raw=raw, target_size=target_size)
-        eval_set_info = pd.read_csv(targeted_eval_set_csv)
+    def from_csv(cls, fragment, pos, target_size=(180, 100)):
+        directory = f"data/out/val_{fragment}_targeted_triplets_{pos}"
+        self = cls(directory=directory, target_size=target_size)
+        eval_set_info = pd.read_csv(f"data/eval/eval_set_{fragment}_{pos}.csv")
 
         self._load_eval_set_and_save_clip_info(eval_set_info)
         self._sample = list(self.sample())
@@ -81,14 +104,10 @@ class PeppaTargetedTripletDataset(Dataset):
         target_info, distractor_info = self._sample[idx]
         with m.VideoFileClip(target_info['path']) as target:
             with m.VideoFileClip(distractor_info['path']) as distractor:
-                if self.raw:
-                    return Triplet(anchor=target.audio, positive=target, negative=distractor,
-                                   audio_duration=target.audio.duration, video_duration=target.duration)
-                else:
-                    positive = featurize(target)
-                    negative = featurize(distractor)
-                    return Triplet(anchor=positive.audio, positive=positive.video, negative=negative.video,
-                                   audio_duration=target.audio.duration, video_duration=target.duration)
+                positive = featurize(target)
+                negative = featurize(distractor)
+                return Triplet(anchor=positive.audio, positive=positive.video, negative=negative.video,
+                               audio_duration=target.audio.duration, video_duration=target.duration)
 
     def __len__(self):
         return len(self._sample)
