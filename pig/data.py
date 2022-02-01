@@ -205,7 +205,7 @@ class PeppaPigDataset(Dataset):
             self.cache_dir = cache_dir
         if force_cache or not os.path.isdir(self.cache_dir):
             os.makedirs(self.cache_dir, exist_ok=True)
-            pickle.dump(kwargs, open(f"{self.cache_dir}/settings.pkl", "wb"))
+            json.dump(kwargs, open(f"{self.cache_dir}/settings.json", "w"), indent=2)
             for i, item in enumerate(dataset):
                 logging.info(f"Caching item {self.cache_dir}/{i}.pt")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")

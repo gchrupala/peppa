@@ -125,18 +125,20 @@ class R3DEncoder(nn.Module):
         else:
             raise ValueError(f"Invalid pooling {pooling}")
         self.transform = build_transform("kinetics" if self.pretrained else "peppa")
+        self.encode = Compose([self.transform,
+                               self.video.stem,
+                               self.video.layer1,
+                               self.video.layer2,
+                               self.video.layer3,
+                               self.video.layer4,
+                               self.videopool,
+                               self.project,
+                               lambda x: nn.functional.normalize(x, p=2, dim=1)
+        ])
+
         
     def forward(self, x):
-        return Compose([self.transform,
-                        self.video.stem,
-                        self.video.layer1,
-                        self.video.layer2,
-                        self.video.layer3,
-                        self.video.layer4,
-                        self.videopool,
-                        self.project,
-                        lambda x: nn.functional.normalize(x, p=2, dim=1)
-        ])(x)
+        return self.encode(x)
 
 class ImageEncoder(nn.Module):
 
@@ -153,9 +155,7 @@ class ImageEncoder(nn.Module):
         else:
             self.project = nn.Identity()
         self.transform = build_transform("imagenet" if self.pretrained else "peppa")
-
-    def forward(self, x):
-        embed_img = Compose([
+        self.embed_image = Compose([
             self.image.conv1,
             self.image.bn1,
             self.image.relu,
@@ -166,12 +166,14 @@ class ImageEncoder(nn.Module):
             self.image.layer4,
             self.image.avgpool,
             lambda x: torch.flatten(x, 1)])
-
+        
+        
+    def forward(self, x):
         x = self.transform(x)
         x = x.permute(0, 2, 1, 3, 4)
         batch, time, channel, height, width = x.shape
         x = x.reshape(batch * time, channel, height, width)
-        x = embed_img(x).reshape(batch, time, -1).mean(dim=1)
+        x = self.embed_image(x).reshape(batch, time, -1).mean(dim=1)
         x = self.project(x)
         x = nn.functional.normalize(x, p=2, dim=1)
         return x
