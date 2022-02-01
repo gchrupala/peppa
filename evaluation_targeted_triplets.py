@@ -203,16 +203,15 @@ def get_word_concreteness(word, word_concreteness_ratings):
     if word in word_concreteness_ratings:
         return word_concreteness_ratings[word]
     else:
-        if word.endswith("'s"):
-            # Concreteness for possisive pronouns his/her is around 3
-            return 3
+        if word == "mr":
+            # Correct spelling of "mister"
+            return word_concreteness_ratings["mister"]
+        elif word in WORDS_NAMES:
+            # Assume that persons are maximally concrete
+            return 5
         else:
-            if word in WORDS_NAMES:
-                # Assume that persons are maximally concrete
-                return 5
-            else:
-                print(f"Warning: concreteness rating not found for '{word}'. Setting to 3/5.")
-                return 3
+            print(f"Warning: concreteness rating not found for '{word}'. Setting to 3/5.")
+            return 3
 
 
 def get_args():
