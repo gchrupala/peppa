@@ -21,8 +21,33 @@ from pig.util import cosine_matrix
 from sentence_transformers import SentenceTransformer
 from torchtext.vocab import GloVe
 from copy import deepcopy
-    
+import timit_utils as tu
+
 VERSIONS=[48, 61]
+
+
+def timit_word_audio(split='train'):
+    corpus = tu.Corpus('data/in/timit/data')
+    X = []
+    Y = []
+    if split == 'train':
+        subset = corpus.train
+    elif split == 'test':
+        subset = corpus.test
+    upsample = torch.nn.Upsample(scale_factor=44100/16000)
+    for speaker_name, speaker in subset.people.items():
+        for sentence_id, sentence in speaker.sentences.items():
+            logging.info(f"S: {' '.join(sentence.words_df.index)}")
+            for word, row in sentence.words_df.iterrows():
+                start = row["start"]
+                end   = row["end"]
+                x = torch.tensor(sentence.raw_audio[start:end]).reshape(1,1,-1)
+                if x.shape[2] > 0:
+                    x = upsample(x).squeeze(0)
+                    X.append(x)
+                    Y.append(word)
+    return X, Y
+
 
 def checkpoint_path(version):
     return f"lightning_logs/version_{version}/"
