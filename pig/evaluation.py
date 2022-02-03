@@ -50,7 +50,7 @@ def load_best_model(dirname, higher_better=True):
     best = sorted(info, key=lambda x: x['best_model_score'], reverse=higher_better)[0]
     logging.info(f"Best {best['monitor']}: {best['best_model_score']} at {best['best_model_path']}")
     local_model_path = best['best_model_path'].split("/peppa/")[1]
-    net = PeppaPig.load_from_checkpoint(local_model_path)
+    net = PeppaPig.load_from_checkpoint(local_model_path, hparams_file=f"{dirname}/hparams.yaml")
     return net, best['best_model_path']
 
 def score(model, gpus):
