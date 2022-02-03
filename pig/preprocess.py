@@ -91,9 +91,9 @@ def extract_realines(target_size=(180, 100)):
                                                                                      codec="mpeg4")                           
     
     
-def segment(clip, duration=3.2, jitter=False):
+def segment(clip, duration=3.2, jitter=False, jitter_sd=1.0):
     if jitter:
-        yield from segment_jitter(clip, duration=duration)
+        yield from segment_jitter(clip, duration=duration, sd=jitter_sd)
     else:
         start = 0
         end = start + duration
@@ -104,13 +104,15 @@ def segment(clip, duration=3.2, jitter=False):
             end   = end + duration
             yield sub
 
-def segment_jitter(clip, duration=3.2):
+def segment_jitter(clip, duration=3.2, sd=1.0):
+    if sd is None:
+        sd = 1.0
     logging.info(f"Jittering around duration {duration}") 
     start = 0
     end = start + duration
     while end <= clip.duration:
-        size_a = min(6.0, max(0.05, duration + random.normalvariate(0.0, 1.0)))
-        size_v = min(6.0, max(0.05, duration + random.normalvariate(0.0, 1.0)))
+        size_a = min(6.0, max(0.05, duration + random.normalvariate(0.0, sd)))
+        size_v = min(6.0, max(0.05, duration + random.normalvariate(0.0, sd)))
         mid = end - (end - start) / 2
         start_a = max(0, mid - (size_a/2))
         end_a   = min(clip.duration, mid + (size_a/2))

@@ -55,7 +55,7 @@ def load_best_model(dirname, higher_better=True):
 
 def score(model, gpus):
     """Compute all standard scores for the given model. """
-    trainer = pl.Trainer(gpus=gpus, logger=False)
+    trainer = pl.Trainer(gpus=gpus, logger=False, precision=16)
     for fragment_type in ['dialog', 'narration']:
         acc = triplet_score(fragment_type, model, trainer)
         yield dict(fragment_type=fragment_type,
@@ -64,21 +64,25 @@ def score(model, gpus):
                    recall_at_10_fixed=retrieval_score(fragment_type,
                                                       model,
                                                       trainer,
-                                                      duration=3.2,
-                                                      jitter=False),
-                   recall_at_10_jitter=retrieval_score(fragment_type,
-                                                      model,
-                                                      trainer,
                                                       duration=2.3,
-                                                       jitter=True))
+                                                      jitter=False,
+                                                      jitter_sd=None
+                   ),
+                   recall_at_10_jitter=retrieval_score(fragment_type,
+                                                       model,
+                                                       trainer,
+                                                       duration=2.3,
+                                                       jitter=True,
+                                                       jitter_sd=0.5))
 
-def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False, batch_size=BATCH_SIZE):
+def retrieval_score(fragment_type, model, trainer, duration=2.3, jitter=False, jitter_sd=None, batch_size=BATCH_SIZE):
         base_ds = pig.data.PeppaPigDataset(
-            target_size=(180, 100),
+            target_size=model.config["data"]["target_size"],
             split=['val'],
             fragment_type=fragment_type,
             duration=duration,
-            jitter=jitter
+            jitter=jitter,
+            jitter_sd=jitter_sd
             )
         key = lambda x: x.audio_duration
         loader = pig.data.grouped_loader(base_ds, key, pig.data.collate, batch_size=batch_size)
@@ -93,7 +97,7 @@ def retrieval_score(fragment_type, model, trainer, duration=3.2, jitter=False, b
 
 def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE):
     from pig.triplet import TripletScorer
-    scorer = TripletScorer(fragment_type=fragment_type, split=['val'])
+    scorer = TripletScorer(fragment_type=fragment_type, split=['val'], target_size=model.config["data"]["target_size"])
     acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 
@@ -132,21 +136,16 @@ def run(gpu=0, versions=VERSIONS):
     for version in versions:
         logging.info(f"Evaluating version {version}")
         net, path = load_best_model(f"lightning_logs/version_{version}/")
-        
         for row in score(net, gpus=[gpu]):
-            row['version'] = version
-            row['path']    = path
-            row['audio_pretrained'] = net.config['audio']['pretrained']
-            row['video_pretrained'] = net.config['video']['pretrained']
-            row['audio_pooling'] = net.config['audio']['pooling']
-            row['video_pooling'] = net.config['video']['pooling']
-            print(row)
+            row['version']         = version
+            row['checkpoint_path'] = path
+            row['hparams_path']    = f"lightning_logs/version_{version}/hparams.yaml"
             rows.append(row)
     scores = pd.DataFrame.from_records(rows)
     return scores
 
-def main(gpu=0):
-    scores = run(gpu=gpu, versions=VERSIONS)
+def main(gpu=0, versions=VERSIONS):
+    scores = run(gpu=gpu, versions=versions)
     scores.to_csv("results/scores.csv", index=False, header=True)
     
     

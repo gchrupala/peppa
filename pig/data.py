@@ -104,7 +104,16 @@ class AudioClipDataset(IterableDataset):
     def __iter__(self):
         for clip in self.clips:
             yield featurize_audio(clip)
-                
+
+
+class ArrayDataset(IterableDataset):
+
+    def __init__(self, arrays):
+        self.arrays = arrays
+
+    def __iter__(self):
+        yield from self.arrays
+        
 class VideoFileDataset(IterableDataset):
 
     def __init__(self, paths):
@@ -136,10 +145,38 @@ def audiofile_loader(paths, batch_size=32):
     dataset = AudioFileDataset(paths)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
+def grouped_audiofile_loader(paths, batch_size=32):
+    dataset = AudioFileDataset(paths)
+    loader = grouped_loader(dataset,
+                            lambda x: x.shape[1],
+                            collate_audio,
+                            batch_size)
+    return loader
+    
+
+def audioarray_loader(arrays, batch_size=32):
+    dataset = ArrayDataset(arrays)
+    return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
+
 def audioclip_loader(clips, batch_size=32):
     dataset = AudioClipDataset(clips)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
+def grouped_audioclip_loader(paths, batch_size=32):
+    dataset = AudioClipDataset(paths)
+    loader = grouped_loader(dataset,
+                            lambda x: x.shape[1],
+                            collate_audio,
+                            batch_size)
+    return loader
+
+def grouped_audioarray_loader(arrays, batch_size=32):
+    dataset = ArrayDataset(arrays)
+    loader = grouped_loader(dataset,
+                            lambda x: x.shape[1],
+                            collate_audio,
+                            batch_size)
+    return loader
 
 class GroupedDataset(IterableDataset):
     """Returns batches of within groups."""
@@ -168,7 +205,7 @@ class PeppaPigDataset(Dataset):
             self.cache_dir = cache_dir
         if force_cache or not os.path.isdir(self.cache_dir):
             os.makedirs(self.cache_dir, exist_ok=True)
-            pickle.dump(kwargs, open(f"{self.cache_dir}/settings.pkl", "wb"))
+            json.dump(kwargs, open(f"{self.cache_dir}/settings.json", "w"), indent=2)
             for i, item in enumerate(dataset):
                 logging.info(f"Caching item {self.cache_dir}/{i}.pt")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
@@ -194,6 +231,7 @@ class PeppaPigIterableDataset(IterableDataset):
                  fragment_type='dialog',
                  duration=3.2,
                  jitter=False,
+                 jitter_sd=None,
                  ):
         if type(split) is str:
             raise ValueError("`split` should be a list of strings")
@@ -202,6 +240,7 @@ class PeppaPigIterableDataset(IterableDataset):
         self.fragment_type = fragment_type
         self.duration = duration
         self.jitter = jitter
+        self.jitter_sd = jitter_sd
         self.split_spec = SPLIT_SPEC
 
     def featurize(self, clip):
@@ -241,7 +280,7 @@ class PeppaPigIterableDataset(IterableDataset):
                     meta = json.load(open(f"{os.path.dirname(path)}/{i}.json"))
                     clips = pig.preprocess.lines(video, meta)
                 else:
-                    clips = pig.preprocess.segment(video, duration=self.duration, jitter=self.jitter)
+                    clips = pig.preprocess.segment(video, duration=self.duration, jitter=self.jitter, jitter_sd=self.jitter_sd)
                 for clip in clips:
                     yield clip
 
@@ -300,7 +339,7 @@ class PigData(pl.LightningDataModule):
         if self.config['iterable']:
             self.Dataset = lambda *args, **kwargs: PeppaPigIterableDataset(*args, **kwargs)
         else:
-            self.Dataset = lambda *args, **kwargs: PeppaPigDataset(force_cache=self.config['force_cache'], *args, **kwargs)
+            self.Dataset = lambda *args, **kwargs: PeppaPigDataset(*args, **kwargs)
     
     def prepare_data(self):
         if self.config['extract']:
@@ -325,27 +364,29 @@ class PigData(pl.LightningDataModule):
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
 
-        self.val_dia   = PeppaPigDataset(force_cache=self.config['force_cache'],
+        self.val_dia   = PeppaPigDataset(force_cache=self.config['val']['force_cache'],
                                          target_size=self.config['target_size'],
                                          split=['val'], fragment_type='dialog',
                                          duration=self.config['val']['duration'],
-                                         jitter=self.config['val']['jitter'])
+                                         jitter=self.config['val']['jitter'],
+                                         jitter_sd=self.config['val'].get('jitter_sd'))
 
-        self.val_narr = PeppaPigDataset(force_cache=self.config['force_cache'],
+        self.val_narr = PeppaPigDataset(force_cache=self.config['val']['force_cache'],
                                         target_size=self.config['target_size'],
                                         split=['val'],
                                         fragment_type='narration',
                                         duration=self.config['val']['duration'],
-                                        jitter=self.config['val']['jitter'])
+                                        jitter=self.config['val']['jitter'],
+                                        jitter_sd=self.config['val'].get('jitter_sd'))
         self.val_dia3 = pig.data.PeppaPigDataset(
-            force_cache=self.config['force_cache'],
+            force_cache=self.config['val']['force_cache'],
             target_size=self.config['target_size'],
             split=['val'], fragment_type='dialog',
             duration=None,
             jitter=None)
         
         self.val_narr3 = pig.data.PeppaPigDataset(
-            force_cache=self.config['force_cache'],
+            force_cache=self.config['val']['force_cache'],
             target_size=self.config['target_size'],
             split=['val'], fragment_type='narration',
             duration=None,
