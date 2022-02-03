@@ -42,8 +42,7 @@ def evaluate(model, version):
             row = dict(
                 fragment_type=fragment_type,
                 pos=pos,
-                targeted_triplet_acc_mean=np.mean(per_sample_results),
-                targeted_triplet_acc_std=np.std(per_sample_results),
+                targeted_triplet_acc=np.mean(per_sample_results),
                 version=version,
                 hparams_path=f"lightning_logs/version_{version}/hparams.yaml"
             )
