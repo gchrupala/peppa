@@ -1,0 +1,1 @@
+id,transcript,words,speaker,episode_filepath,episode_metadata_path,episode_title,clipStart,clipEnd,partIndex,clipIndex,tokenized,pos,lemmatized,fragment,episode,start_token_idx,end_token_idx,clipOffset,target_word,distractor_word,id_counterexample,clipDuration
