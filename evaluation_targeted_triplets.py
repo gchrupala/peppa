@@ -30,8 +30,8 @@ BATCH_SIZE = 8
 NUM_WORKERS = 8
 
 
-def score(model):
-    """Compute all standard scores for the given model. """
+def evaluate(model, version):
+    """Compute the targeted triplets score for the given model. """
     gpus = None
     if torch.cuda.is_available():
         gpus = 1
@@ -39,11 +39,31 @@ def score(model):
     for fragment_type in FRAGMENTS:
         for pos in POS_TAGS:
             per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
-            yield dict(fragment_type=fragment_type,
-                       pos=pos,
-                       targeted_triplet_acc=np.mean(per_sample_results)
-                       ), per_sample_results
-        
+            row = dict(
+                fragment_type=fragment_type,
+                pos=pos,
+                targeted_triplet_acc_mean=np.mean(per_sample_results),
+                targeted_triplet_acc_std=np.std(per_sample_results),
+                version=version,
+                hparams_path=f"lightning_logs/version_{version}/hparams.yaml"
+            )
+            print(row)
+
+            # Save per-sample results for detailed analysis
+            eval_info_file = f"data/eval/eval_set_{row['fragment_type']}_{row['pos']}.csv"
+            results_data = pd.read_csv(eval_info_file, index_col="id")
+
+            assert len(results_data) == len(per_sample_results), \
+                f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from " \
+                f"{eval_info_file} ({len(results_data)})"
+
+            results_data["result"] = per_sample_results
+            os.makedirs(results_dir, exist_ok=True)
+            results_data.to_csv(f"{results_dir}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv")
+
+            yield row
+
+
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
     ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False)
@@ -71,7 +91,9 @@ def get_all_results_df(results_dir):
     return results_data_all
 
 
-def create_duration_results_plots(results_data_all, results_dir, version):
+def create_duration_results_plots(results_dir, version):
+    results_data_all = get_all_results_df(results_dir)
+
     results_data_all["clipDuration"] = results_data_all["clipEnd"] - results_data_all["clipStart"]
     results_data_all["clipDuration"] = results_data_all["clipDuration"].round(1)
 
@@ -101,6 +123,8 @@ def create_duration_results_plots(results_data_all, results_dir, version):
     plt.title(f"Version: {version} | Accuracy: per number of tokens")
     plt.xticks(rotation=75)
     plt.savefig(os.path.join(results_dir, f"results_num_tokens"), dpi=300)
+
+    print(f"Average accuracy for version {version}: {results_data_all['result'].mean()}")
 
 
 def create_per_word_result_plots(results_dir, version, args):
@@ -239,29 +263,12 @@ if __name__ == "__main__":
 
         results_dir = f"results/version_{version}"
 
-        for row, per_sample_results in score(net):
-            row['version'] = version
-            row['hparams_path'] = f"lightning_logs/version_{version}/hparams.yaml"
-            print(row)
-            rows.append(row)
-
-            # Save per-sample results for detailed analysis
-            eval_info_file = f"data/eval/eval_set_{row['fragment_type']}_{row['pos']}.csv"
-            results_data = pd.read_csv(eval_info_file, index_col="id")
-
-            assert len(results_data) == len(per_sample_results), \
-                f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from " \
-                f"{eval_info_file} ({len(results_data)})"
-
-            results_data["result"] = per_sample_results
-            os.makedirs(results_dir, exist_ok=True)
-            results_data.to_csv(f"{results_dir}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv")
+        result_rows = evaluate(net, version)
+        rows.extend(result_rows)
 
         create_per_word_result_plots(results_dir, version, args)
-        all_results = get_all_results_df(results_dir)
-        create_duration_results_plots(all_results, results_dir, version)
 
-        print(f"Average accuracy for version {version}: {all_results['result'].mean()}")
+        create_duration_results_plots(results_dir, version)
 
     scores = pd.DataFrame.from_records(rows)
     scores.to_csv("results/scores_targeted_triplets.csv", index=False, header=True)
