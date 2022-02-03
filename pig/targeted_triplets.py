@@ -13,7 +13,6 @@ from torch.utils.data import Dataset
 from pig.data import featurize
 from pig.util import pad_audio_batch, pad_video_batch
 
-VIDEO_DURATION = 3.2
 FPS = 10
 
 
@@ -61,13 +60,6 @@ class PeppaTargetedTripletDataset(Dataset):
 
         self.directory = directory
         self.target_size = target_size
-
-    @classmethod
-    def load(cls, directory, raw=False):
-        self = cls(directory, raw=raw)
-        self._clip_info = json.load(open(f"{self.directory}/clip_info.json"))
-        self._sample = json.load(open(f"{self.directory}/sample.json"))
-        return self
 
     @classmethod
     def from_csv(cls, fragment, pos, target_size=(180, 100)):
@@ -148,15 +140,10 @@ class PeppaTargetedTripletDataset(Dataset):
         json.dump(self._clip_info, open(f"{self.directory}/clip_info.json", "w"), indent=2)
 
     def sample(self):
-        for info in _targeted_triplets(self._clip_info):
-            yield info
-
-
-def _targeted_triplets(clips_dict):
-    clips = clips_dict.values()
-    for item in clips:
-        target, distractor = item, clips_dict[item["id_counterexample"]]
-        yield (target, distractor)
+        clips = self._clip_info.values()
+        for item in clips:
+            target, distractor = item, self._clip_info[item["id_counterexample"]]
+            yield (target, distractor)
 
 
 def collate_triplets(data):
