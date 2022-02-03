@@ -155,7 +155,7 @@ def create_per_word_result_plots(results_dir, version, args):
         pearson_corr = pearsonr(word_frequencies, word_accuracies)
         plt.figure()
         s1 = sns.scatterplot(word_frequencies, word_accuracies, marker="x")
-        plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.2f})")
+        plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.3f})")
         plt.xlabel("Log Frequency")
         plt.ylabel("Accuracy")
         # Named labels in scatterplot:
@@ -171,7 +171,7 @@ def create_per_word_result_plots(results_dir, version, args):
         pearson_corr = pearsonr(word_concretenesses, word_accuracies)
         plt.figure()
         s2 = sns.scatterplot(word_concretenesses, word_accuracies, marker="x")
-        plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.2f})")
+        plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.3f})")
         plt.xlabel("Concreteness")
         plt.ylabel("Accuracy")
         # Named labels in scatterplot:
