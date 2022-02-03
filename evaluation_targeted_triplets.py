@@ -241,11 +241,7 @@ if __name__ == "__main__":
 
         for row, per_sample_results in score(net):
             row['version'] = version
-            row['path']    = path
-            row['audio_pretrained'] = net.config['audio']['pretrained']
-            row['video_pretrained'] = net.config['video']['pretrained']
-            row['audio_pooling'] = net.config['audio']['pooling']
-            row['video_pooling'] = net.config['video']['pooling']
+            row['hparams_path'] = f"lightning_logs/version_{version}/hparams.yaml"
             print(row)
             rows.append(row)
 
