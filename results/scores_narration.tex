@@ -1,10 +1,11 @@
-\begin{tabular}{rlrr}
+\begin{tabular}{rllllrrr}
 \toprule
- ID & Pretraining &  Recall@10 &  Triplet Acc \\
+    ID & Static & Jitter & Pretraining & Resolution &  R@10 (fixed) &  R@10 (jitter) &  Triplet Acc \\
 \midrule
- 48 &          AV &      0.255 &        0.871 \\
- 50 &           A &      0.185 &        0.840 \\
- 51 &           V &      0.109 &        0.788 \\
- 52 &        None &      0.075 &        0.730 \\
+    68 &        &        &          AV &    180x100 &         0.638 &          0.622 &        0.882 \\
+206974 &        &    Yes &          AV &    180x100 &         0.654 &          0.623 &        0.881 \\
+206975 &        &    Yes &           A &    180x100 &         0.586 &          0.568 &        0.870 \\
+206976 &        &    Yes &           V &    180x100 &         0.317 &          0.310 &        0.775 \\
+206972 &    Yes &        &          AV &    180x100 &         0.572 &          0.573 &        0.853 \\
 \bottomrule
 \end{tabular}
