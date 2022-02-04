@@ -81,9 +81,9 @@ def featurize(clip):
 
 def featurize_audio(clip):
     # .to_soundarray extracts corrupted audio from small clips, 
-    # but setting buffersize to a smaller value seems to
-    # fix the issue 
-    a = torch.tensor(clip.to_soundarray(fps=44100, buffersize=5000)).float()
+    # but calling the function twice seems to fix the issue.
+    clip.to_soundarray(fps=44100)
+    a = torch.tensor(clip.to_soundarray(fps=44100)).float()
     return a.mean(dim=1, keepdim=True).permute(1,0)
   
 class AudioFileDataset(IterableDataset):
