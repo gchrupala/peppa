@@ -22,11 +22,13 @@ def slide_plots():
     data = torch.load("results/full_scores.pt")
     data = ev.add_condition(data)
     data = score_points(data)
-    data['pretraining'] = data.apply(ev.pretraining, axis=1)
+    data['pretraining'] = pd.Categorical(data.apply(ev.pretraining, axis=1),
+                                         categories=['None', 'V', 'A', 'AV'])
     
     conditions = dict(jitter=[68, 206974],
                       static=[206974, 206978],
-                      pretraining=[206974, 206975, 206976, 206977])
+                      pretraining=[206974, 206975, 206976, 206977],
+                      resolution=[206974, 206964])
     for condition, versions in conditions.items():
         for fragment_type in ['dialog', 'narration']:
             g = ggplot(data.query(f'fragment_type=="{fragment_type}" & version in {versions}'),

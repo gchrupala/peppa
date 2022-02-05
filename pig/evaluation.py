@@ -57,34 +57,6 @@ def load_best_model(dirname, higher_better=True):
     net = PeppaPig.load_from_checkpoint(local_model_path)
     return net, best['best_model_path']
 
-def score(model, gpus):
-    """Compute all standard scores for the given model. """
-    trainer = pl.Trainer(gpus=gpus, logger=False, precision=16)
-    for fragment_type in ['dialog', 'narration']:
-        logging.info(f"Evaluating: {fragment_type}, triplet")
-        acc = triplet_score(fragment_type, model, trainer)
-        logging.info(f"Evaluating: {fragment_type}, recall_fixed")
-        rec_fixed = resampled_retrieval_score(fragment_type,
-                                    model,
-                                    trainer,
-                                    duration=2.3,
-                                    jitter=False,
-                                    jitter_sd=None)
-        logging.info(f"Evaluating: {fragment_type}, recall_jitter")
-        rec_jitter = resampled_retrieval_score(fragment_type,
-                                     model,
-                                     trainer,
-                                     duration=2.3,
-                                     jitter=True,
-                                     jitter_sd=0.5)
-        yield dict(fragment_type=fragment_type,
-                   triplet_acc=acc.mean().item(),
-                   triplet_acc_std=acc.std().item(),
-                   recall_at_10_fixed=rec_fixed.mean(dim=1).mean().item(),
-                   recall_at_10_fixed_std=rec_fixed.mean(dim=1).std().item(),
-                   recall_at_10_jitter=rec_jitter.mean(dim=1).mean().item(),
-                   recall_at_10_jitter_std=rec_jitter.mean(dim=1).std().item())
-
 def score_means(data):
     rows = []
     for item in data:
@@ -182,16 +154,19 @@ def pretraining(row):
              (False, False): "None"}[row['audio_pretrained'],
                                      row['video_pretrained']]
 
-def format():#FIXME derive scores from full_scores
-    data = add_condition(pd.read_csv("results/scores.csv"))
+def format():
+    data = torch.load("results/full_scores.pt")
+    data = add_condition(data)
+    data = score_means(data)
     for fragment_type in ['dialog', 'narration']:
         table = data.query(f"fragment_type=='{fragment_type}'")
-        table['pretraining'] = table.apply(pretraining, axis=1)
-        
+        table['pretraining'] = pd.Categorical(table.apply(pretraining, axis=1),
+                                              categories=['AV', 'A', 'V', 'None'])
 
 
         table[['version', 'static', 'jitter', 'pretraining', 'resolution',
                'recall_at_10_fixed', 'recall_at_10_jitter', 'triplet_acc']]\
+            .sort_values(by=['resolution', 'static', 'jitter', 'pretraining'])\
             .replace(True, "Yes").replace(False, "")\
             .rename(columns=dict(version='ID',
                                  static='Static',
