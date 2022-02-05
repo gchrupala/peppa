@@ -10,12 +10,14 @@ import pandas as pd
 import numpy as np
 import torch
 import random
+import yaml
+from copy import deepcopy
 
 random.seed(666)
 torch.manual_seed(666)
 
 BATCH_SIZE=8
-VERSIONS = (48, 50, 51, 52)
+VERSIONS = (206964, 68, 206974, 206975, 206976, 206977, 206978)
 
 def data_statistics():
     rows = []
@@ -26,7 +28,7 @@ def data_statistics():
                     target_size=(180, 100),
                     split=[split],
                     fragment_type=fragment_type,
-                    duration=3.2)
+                    duration=2.3)
                 duration = np.array([clip.duration for clip in ds._raw_clips() ])
                 rows.append({'Split': split, 'Type': fragment_type, 'Triplet': 'No',
                              'Size (h)': duration.sum() / 60 / 60, 'Items': len(duration),
@@ -82,6 +84,19 @@ def score(model, gpus):
                    recall_at_10_fixed_std=rec_fixed.mean(dim=1).std().item(),
                    recall_at_10_jitter=rec_jitter.mean(dim=1).mean().item(),
                    recall_at_10_jitter_std=rec_jitter.mean(dim=1).std().item())
+
+def score_means(data):
+    rows = []
+    for item in data:
+        row = deepcopy(item)
+        row['triplet_acc_std'] = row['triplet_acc'].std().item()
+        row['triplet_acc'] = row['triplet_acc'].mean().item()
+        row['recall_at_10_fixed_std'] = row['recall_at_10_fixed'].mean(dim=1).std().item()
+        row['recall_at_10_fixed'] = row['recall_at_10_fixed'].mean(dim=1).mean().item()
+        row['recall_at_10_jitter_std'] = row['recall_at_10_jitter'].mean(dim=1).std().item()
+        row['recall_at_10_jitter'] = row['recall_at_10_jitter'].mean(dim=1).mean().item()
+        rows.append(row)
+    return pd.DataFrame.from_records(rows)
 
 def full_score(model, gpus):
     """Compute all standard scores for the given model. """
@@ -150,7 +165,7 @@ def resampled_retrieval_score(fragment_type,
                   in trainer.predict(model, loader) ])
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)
-        rec10 = pig.metrics.resampled_recall(V, A, size=100, n_samples=100, n=10)
+        rec10 = pig.metrics.resampled_recall(V, A, size=100, n_samples=500, n=10)
         return rec10
 
 def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE):
@@ -167,7 +182,7 @@ def pretraining(row):
              (False, False): "None"}[row['audio_pretrained'],
                                      row['video_pretrained']]
 
-def format():
+def format():#FIXME derive scores from full_scores
     data = add_condition(pd.read_csv("results/scores.csv"))
     for fragment_type in ['dialog', 'narration']:
         table = data.query(f"fragment_type=='{fragment_type}'")
@@ -192,15 +207,17 @@ def format():
                                 
 
 def add_condition(data):
-    records = data.to_dict(orient='records')
-    for row in records:
+    rows = []
+    for row in data:
+        record = {k:v for k,v in row.items()}
         config = yaml.safe_load(open(row['hparams_path']))
-        row['jitter'] = config['data']['train']['jitter']
-        row['static'] = config['video'].get('static', False)
-        row['audio_pretrained'] = config['audio']['pretrained']
-        row['video_pretrained'] = config['video']['pretrained']
-        row['resolution'] = 'x'.join(map(str, config['data']['target_size']))
-    return pd.DataFrame.from_records(records)
+        record['jitter'] = config['data']['train']['jitter']
+        record['static'] = config['video'].get('static', False)
+        record['audio_pretrained'] = config['audio']['pretrained']
+        record['video_pretrained'] = config['video']['pretrained']
+        record['resolution'] = 'x'.join(map(str, config['data']['target_size']))
+        rows.append(record)
+    return rows
     
 def run(gpu=0, versions=VERSIONS):
     logging.getLogger().setLevel(logging.INFO)
@@ -227,7 +244,7 @@ def full_run(gpu=0, versions=VERSIONS):
             row['checkpoint_path'] = path
             row['hparams_path']    = f"lightning_logs/version_{version}/hparams.yaml"
             rows.append(row)
-    torch.save(rows, "results/full_scores.pt")
+    torch.save(add_condition(rows), "results/full_scores.pt")
     
 def main(gpu=0, versions=VERSIONS):
     scores = run(gpu=gpu, versions=versions)
