@@ -24,6 +24,9 @@ import pig.transforms
 from torchvision.transforms import Normalize, Compose
 from pig.triplet import score_triplets
 
+from pig.targeted_triplets import TripletBatch
+
+
 class Attention(nn.Module):
     def __init__(self, in_size, hidden_size):
         super().__init__()
@@ -125,18 +128,20 @@ class R3DEncoder(nn.Module):
         else:
             raise ValueError(f"Invalid pooling {pooling}")
         self.transform = build_transform("kinetics" if self.pretrained else "peppa")
+        self.encode = Compose([self.transform,
+                               self.video.stem,
+                               self.video.layer1,
+                               self.video.layer2,
+                               self.video.layer3,
+                               self.video.layer4,
+                               self.videopool,
+                               self.project,
+                               lambda x: nn.functional.normalize(x, p=2, dim=1)
+        ])
+
         
     def forward(self, x):
-        return Compose([self.transform,
-                        self.video.stem,
-                        self.video.layer1,
-                        self.video.layer2,
-                        self.video.layer3,
-                        self.video.layer4,
-                        self.videopool,
-                        self.project,
-                        lambda x: nn.functional.normalize(x, p=2, dim=1)
-        ])(x)
+        return self.encode(x)
 
 class ImageEncoder(nn.Module):
 
@@ -153,9 +158,7 @@ class ImageEncoder(nn.Module):
         else:
             self.project = nn.Identity()
         self.transform = build_transform("imagenet" if self.pretrained else "peppa")
-
-    def forward(self, x):
-        embed_img = Compose([
+        self.embed_image = Compose([
             self.image.conv1,
             self.image.bn1,
             self.image.relu,
@@ -166,12 +169,14 @@ class ImageEncoder(nn.Module):
             self.image.layer4,
             self.image.avgpool,
             lambda x: torch.flatten(x, 1)])
-
+        
+        
+    def forward(self, x):
         x = self.transform(x)
         x = x.permute(0, 2, 1, 3, 4)
         batch, time, channel, height, width = x.shape
         x = x.reshape(batch * time, channel, height, width)
-        x = embed_img(x).reshape(batch, time, -1).mean(dim=1)
+        x = self.embed_image(x).reshape(batch, time, -1).mean(dim=1)
         x = self.project(x)
         x = nn.functional.normalize(x, p=2, dim=1)
         return x
@@ -203,19 +208,26 @@ class PeppaPig(pl.LightningModule):
         self.config = config
         self.save_hyperparameters(config)
         self.loss = TripletLoss(margin=self.config['margin'])
-        if self.config['video'].get('static', False):
-            del self.config['video']['static']
-            self.video_encoder = ImageEncoder(**self.config['video'])
+        static =  self.config['video'].get('static', False)
+        video_config = {key: value for key, value in self.config['video'].items() if key != 'static'}
+        if static:
+            self.video_encoder = ImageEncoder(**video_config)
         else:
-            self.video_encoder = R3DEncoder(**self.config['video'])
+            self.video_encoder = R3DEncoder(**video_config)
         self.audio_encoder = Wav2VecEncoder(**config['audio'])
         
     def forward(self, batch):
-        V = self.encode_video(batch.video)
-        A = self.encode_audio(batch.audio)
-        return pig.data.ClipBatch(video=V, audio=A,
-                                  video_duration=batch.video_duration,
-                                  audio_duration=batch.audio_duration)
+        if isinstance(batch, TripletBatch):
+            a = self.encode_audio(batch.anchor)
+            p = self.encode_video(batch.positive)
+            n = self.encode_video(batch.negative)
+            return pig.triplet.TripletBatch(anchor=a, positive=p, negative=n)
+        else:
+            V = self.encode_video(batch.video)
+            A = self.encode_audio(batch.audio)
+            return pig.data.ClipBatch(video=V, audio=A,
+                                      video_duration=batch.video_duration,
+                                      audio_duration=batch.audio_duration)
         
     def encode_video(self, x):
         return self.video_encoder(x)
@@ -300,7 +312,7 @@ def build_transform(normalization):
         normalize = Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True) 
     elif normalization == 'kinetics':
         stats = torch.load("data/out/kinetics-stats.pt")
-        normalize = Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True),
+        normalize = Normalize(mean=stats.video_mean, std=stats.video_std, inplace=True)
     elif normalization == "imagenet":
         normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                          std=[0.229, 0.224, 0.225])

@@ -43,6 +43,10 @@ Generate tables and figures in [results/](results/).
 python -c  'import pig.grsa as m; m.main()'
 python -c  'import pig.stats as m; m.main()'
 ```
+#### Targeted triplets evaluation
 
-
+Run the targeted triplets evaluation for the model checkpoints as specified in the `--versions` argument:
+```
+python evaluation_targeted_triplets.py --versions 48
+```
 

@@ -81,9 +81,9 @@ def featurize(clip):
 
 def featurize_audio(clip):
     # .to_soundarray extracts corrupted audio from small clips, 
-    # but setting buffersize to a smaller value seems to
-    # fix the issue 
-    a = torch.tensor(clip.to_soundarray(fps=44100, buffersize=5000)).float()
+    # but calling the function twice seems to fix the issue.
+    clip.to_soundarray(fps=44100)
+    a = torch.tensor(clip.to_soundarray(fps=44100)).float()
     return a.mean(dim=1, keepdim=True).permute(1,0)
   
 class AudioFileDataset(IterableDataset):
@@ -205,7 +205,7 @@ class PeppaPigDataset(Dataset):
             self.cache_dir = cache_dir
         if force_cache or not os.path.isdir(self.cache_dir):
             os.makedirs(self.cache_dir, exist_ok=True)
-            pickle.dump(kwargs, open(f"{self.cache_dir}/settings.pkl", "wb"))
+            json.dump(kwargs, open(f"{self.cache_dir}/settings.json", "w"), indent=2)
             for i, item in enumerate(dataset):
                 logging.info(f"Caching item {self.cache_dir}/{i}.pt")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
