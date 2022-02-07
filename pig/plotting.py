@@ -38,4 +38,15 @@ def slide_plots():
                        ggtitle(fragment_type)
             ggsave(g, f"results/slides/{condition}_{fragment_type}.pdf")
     
-    
+
+# OLD            
+#dict(jitter=[68, 206974],
+#                      static=[206974, 206978],
+#                      pretraining=[206974, 206975, 206976, 206977],
+#                      resolution=[206974, 206964])
+
+# NEW
+#dict(jitter=[206979,206980],
+#     static=[],
+#     pretraining=[206980, 206981,  206985, 206986],
+#     resolution=[])
