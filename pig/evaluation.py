@@ -166,7 +166,7 @@ def format():
 
         table[['version', 'static', 'jitter', 'pretraining', 'resolution',
                'recall_at_10_fixed', 'recall_at_10_jitter', 'triplet_acc']]\
-            .sort_values(by=['resolution', 'static', 'jitter', 'pretraining'])\
+            .sort_values(by=['static', 'jitter', 'pretraining', 'resolution'])\
             .replace(True, "Yes").replace(False, "")\
             .rename(columns=dict(version='ID',
                                  static='Static',
