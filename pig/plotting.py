@@ -24,11 +24,13 @@ def slide_plots():
     data = score_points(data)
     data['pretraining'] = pd.Categorical(data.apply(ev.pretraining, axis=1),
                                          categories=['None', 'V', 'A', 'AV'])
-    
-    conditions = dict(jitter=[68, 206974],
-                      static=[206974, 206978],
-                      pretraining=[206974, 206975, 206976, 206977],
-                      resolution=[206974, 206964])
+    conditions = dict(jitter=[206979,206980],
+                      pretraining=[206980, 206981,  206985])
+
+#    conditions = dict(jitter=[68, 206974],
+#                      static=[206974, 206978],
+#                      pretraining=[206974, 206975, 206976, 206977],
+#                      resolution=[206974, 206964])
     for condition, versions in conditions.items():
         for fragment_type in ['dialog', 'narration']:
             g = ggplot(data.query(f'fragment_type=="{fragment_type}" & version in {versions}'),
@@ -46,7 +48,3 @@ def slide_plots():
 #                      resolution=[206974, 206964])
 
 # NEW
-#dict(jitter=[206979,206980],
-#     static=[],
-#     pretraining=[206980, 206981,  206985, 206986],
-#     resolution=[])

@@ -17,7 +17,7 @@ random.seed(666)
 torch.manual_seed(666)
 
 BATCH_SIZE=8
-VERSIONS = (206964, 68, 206974, 206975, 206976, 206977, 206978)
+VERSIONS = (206979, 206980, 206981,  206985)
 
 def data_statistics():
     rows = []
