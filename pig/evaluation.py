@@ -17,7 +17,7 @@ random.seed(666)
 torch.manual_seed(666)
 
 BATCH_SIZE=8
-VERSIONS = (206964, 68, 206974, 206975, 206976, 206977, 206978)
+VERSIONS = (206979, 206980, 206981,  206985)
 
 def data_statistics():
     rows = []
@@ -166,7 +166,7 @@ def format():
 
         table[['version', 'static', 'jitter', 'pretraining', 'resolution',
                'recall_at_10_fixed', 'recall_at_10_jitter', 'triplet_acc']]\
-            .sort_values(by=['resolution', 'static', 'jitter', 'pretraining'])\
+            .sort_values(by=['static', 'jitter', 'pretraining', 'resolution'])\
             .replace(True, "Yes").replace(False, "")\
             .rename(columns=dict(version='ID',
                                  static='Static',

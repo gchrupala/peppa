@@ -64,7 +64,8 @@ class LastStep(nn.Module):
 ## Audio encoders
 
 class Wav2VecEncoder(nn.Module):
-    def __init__(self, path, pretrained=True, freeze_feature_extractor=False, freeze_encoder_layers=None, pooling='average', project=True):
+    def __init__(self, path, pretrained=True, freeze_feature_extractor=False, freeze_encoder_layers=None, pooling='average',
+                 project=True, full=False):
         super().__init__()
         if pretrained:
             model, _, _ = fairseq.checkpoint_utils.load_model_ensemble_and_task([path])
@@ -78,21 +79,30 @@ class Wav2VecEncoder(nn.Module):
             for index in range(0, freeze_encoder_layers):
                 for param in self.audio.encoder.transformer.layers[index].parameters():
                     param.requires_grad = False
+        self.full = full
+        if self.full:
+            self.n_features = 28
+        else:
+            self.n_features = 512
+        
         if pooling == 'average':
-            self.audiopool = AveragePool(size=512)
+            self.audiopool = AveragePool(size=self.n_features)
         elif pooling == 'attention':
-            self.audiopool = Attention(512, 128)
+            self.audiopool = Attention(self.n_features, 128)
         elif pooling == 'last':
             self.audiopool = LastStep()
         else:
             raise ValueError(f"Invalid pooling: {pooling}")
         if project:
-            self.project = nn.Linear(512, 512)
+            self.project = nn.Linear(self.n_features, 512)
         else:
             self.project = nn.Identity()
         
     def forward(self, x):
-        features, _ = self.audio.extract_features(x.squeeze(dim=1))
+        if self.full:
+            features, _ = self.audio(x.squeeze(dim=1))
+        else:
+            features, _ = self.audio.extract_features(x.squeeze(dim=1))
         return Compose([self.audiopool,
                         self.project,
                         lambda x: nn.functional.normalize(x, p=2, dim=1)
