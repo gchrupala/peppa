@@ -199,14 +199,14 @@ def grouped_loader(dataset, key, collate_fn, batch_size=8):
 class PeppaPigDataset(Dataset):
     def __init__(self, force_cache=False, cache_dir=None, **kwargs):
         dataset = PeppaPigIterableDataset(**kwargs)
+        
         if cache_dir is None:
-            self.cache_dir = f"data/out/items-{config_id(kwargs)}/"
+            self.cache_dir = f"data/out/items-{dataset.config_id()}/"
         else:
             self.cache_dir = cache_dir
         if force_cache or not os.path.isdir(self.cache_dir):
             os.makedirs(self.cache_dir, exist_ok=True)
             pickle.dump(kwargs, open(f"{self.cache_dir}/settings.pkl", "wb"))
-            #json.dump(kwargs, open(f"{self.cache_dir}/settings.json", "w"), indent=2)
             for i, item in enumerate(dataset):
                 logging.info(f"Caching item {self.cache_dir}/{i}.pt")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
@@ -232,7 +232,7 @@ class PeppaPigIterableDataset(IterableDataset):
                  fragment_type='dialog',
                  duration=3.2,
                  jitter=False,
-                 jitter_sd=None,
+                 jitter_sd=None
                  ):
         if type(split) is str:
             raise ValueError("`split` should be a list of strings")
@@ -244,6 +244,15 @@ class PeppaPigIterableDataset(IterableDataset):
         self.jitter_sd = jitter_sd
         self.split_spec = SPLIT_SPEC
 
+    def config_id(self):
+        return "-".join([','.join(self.split),
+                         f"{self.target_size[0]}x{self.target_size[1]}",
+                         self.fragment_type,
+                         f"{self.duration}",
+                         f"{self.jitter}",
+                         f"{self.jitter_sd}"])
+
+        
     def featurize(self, clip):
         return featurize(clip)
         
@@ -325,11 +334,6 @@ def get_stats(loader):
 def worker_init_fn(worker_id):
     raise NotImplemented
 
-def config_id(config):
-    import hashlib
-    sha = hashlib.sha256()
-    sha.update(pickle.dumps(config))
-    return sha.hexdigest()
     
 class PigData(pl.LightningDataModule):
 
