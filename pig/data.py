@@ -249,8 +249,7 @@ class PeppaPigIterableDataset(IterableDataset):
                          f"{self.target_size[0]}x{self.target_size[1]}",
                          self.fragment_type,
                          f"{self.duration}",
-                         f"{self.jitter}",
-                         f"{self.jitter_sd}"])
+                         f"{self.jitter},{self.jitter_sd}" if self.jitter else ""])
 
         
     def featurize(self, clip):
