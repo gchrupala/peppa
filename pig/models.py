@@ -157,7 +157,8 @@ class ImageEncoder(nn.Module):
 
     def __init__(self,
                  pretrained=True,
-                 project=True):
+                 project=True,
+                 pooling='average'):
         super().__init__()
         self.pretrained = pretrained
         self.image = resnet18(pretrained=self.pretrained)
@@ -168,6 +169,12 @@ class ImageEncoder(nn.Module):
         else:
             self.project = nn.Identity()
         self.transform = build_transform("imagenet" if self.pretrained else "peppa")
+        if pooling == 'attention':
+            self.pool = Attention(512, 128)
+        elif pooling == 'average':
+            self.pool = lambda x: x.mean(dim=1)
+        else:
+            raise ValueError(f"Invalid pooling {pooling}")
         self.embed_image = Compose([
             self.image.conv1,
             self.image.bn1,
@@ -186,7 +193,8 @@ class ImageEncoder(nn.Module):
         x = x.permute(0, 2, 1, 3, 4)
         batch, time, channel, height, width = x.shape
         x = x.reshape(batch * time, channel, height, width)
-        x = self.embed_image(x).reshape(batch, time, -1).mean(dim=1)
+        x = self.embed_image(x).reshape(batch, time, -1)
+        x = self.pool(x)
         x = self.project(x)
         x = nn.functional.normalize(x, p=2, dim=1)
         return x
