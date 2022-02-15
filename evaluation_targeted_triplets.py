@@ -63,7 +63,6 @@ def evaluate(model, version):
             yield row
 
 
-
 def targeted_triplet_score(fragment_type, pos, model, trainer):
     ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False)
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
@@ -77,9 +76,9 @@ def targeted_triplet_score(fragment_type, pos, model, trainer):
     return results
 
 
-def get_all_results_df(results_dir):
+def get_all_results_df(results_dir, pos_tags):
     results_data_all = []
-    for pos in POS_TAGS:
+    for pos in pos_tags:
         for fragment_type in FRAGMENTS:
             results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv",
                                                 converters={"tokenized": ast.literal_eval})
@@ -91,7 +90,7 @@ def get_all_results_df(results_dir):
 
 
 def create_duration_results_plots(results_dir, version):
-    results_data_all = get_all_results_df(results_dir)
+    results_data_all = get_all_results_df(results_dir, POS_TAGS)
 
     results_data_all["clipDuration"] = results_data_all["clipEnd"] - results_data_all["clipStart"]
     results_data_all["clipDuration"] = results_data_all["clipDuration"].round(1)
@@ -129,12 +128,7 @@ def create_duration_results_plots(results_dir, version):
 def create_per_word_result_plots(results_dir, version, args):
     results_data_words_all = []
     for pos in POS_TAGS:
-        results_data = []
-        for fragment_type in FRAGMENTS:
-            results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv", converters={"tokenized":ast.literal_eval})
-            results_data_fragment["duration"] = results_data_fragment["clipEnd"] - results_data_fragment["clipStart"]
-            results_data.append(results_data_fragment)
-        results_data = pd.concat(results_data, ignore_index=True)
+        results_data = get_all_results_df(results_dir, [pos])
 
         if len(results_data) > 0:
             results_data_words_1 = results_data.copy()
