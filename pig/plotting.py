@@ -24,27 +24,18 @@ def slide_plots():
     data = score_points(data)
     data['pretraining'] = pd.Categorical(data.apply(ev.pretraining, axis=1),
                                          categories=['None', 'V', 'A', 'AV'])
-    conditions = dict(jitter=[206979,206980],
-                      pretraining=[206980, 206981,  206985])
-
-#    conditions = dict(jitter=[68, 206974],
-#                      static=[206974, 206978],
-#                      pretraining=[206974, 206975, 206976, 206977],
-#                      resolution=[206974, 206964])
+    conditions = dict(#jitter=[68, 206974],
+                      static=[322, 326],
+                      pretraining=[322, 323, 324, 325],
+                      #resolution=[206974, 206964]
+    )
     for condition, versions in conditions.items():
-        for fragment_type in ['dialog', 'narration']:
-            g = ggplot(data.query(f'fragment_type=="{fragment_type}" & version in {versions}'),
-                       aes(x=condition, y='score')) + \
-                       geom_boxplot() + \
-                       facet_wrap('~metric') +\
-                       ggtitle(fragment_type)
-            ggsave(g, f"results/slides/{condition}_{fragment_type}.pdf")
+        g = ggplot(data.query(f'version in {versions}'),
+                   aes(x=condition, y='score')) + \
+                   geom_boxplot() + \
+                   facet_wrap('~fragment_type + metric') 
+        
+        ggsave(g, f"results/slides/{condition}.pdf")
+
     
 
-# OLD            
-#dict(jitter=[68, 206974],
-#                      static=[206974, 206978],
-#                      pretraining=[206974, 206975, 206976, 206977],
-#                      resolution=[206974, 206964])
-
-# NEW
