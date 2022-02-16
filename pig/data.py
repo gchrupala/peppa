@@ -19,6 +19,8 @@ from typing import Union
 import os.path
 import math
 
+AUDIO_SAMPLERATE = 16000
+
 SPLIT_SPEC = {'dialog': {'train': range(1, 197),
                          'val': range(197, 210),
                          'test': None},
@@ -82,8 +84,8 @@ def featurize(clip):
 def featurize_audio(clip):
     # .to_soundarray extracts corrupted audio from small clips, 
     # but calling the function twice seems to fix the issue.
-    clip.to_soundarray(fps=44100)
-    a = torch.tensor(clip.to_soundarray(fps=44100)).float()
+    clip.to_soundarray(fps=AUDIO_SAMPLERATE)
+    a = torch.tensor(clip.to_soundarray(fps=AUDIO_SAMPLERATE)).float()
     return a.mean(dim=1, keepdim=True).permute(1,0)
   
 class AudioFileDataset(IterableDataset):
