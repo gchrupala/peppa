@@ -4,6 +4,7 @@ import os
 from collections import Counter
 
 import torch
+from plotnine import ggplot, aes, geom_boxplot, ggtitle, ggsave, theme, element_text, xlab, geom_bar, ylab
 from scipy.stats import pearsonr
 
 from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS, POS_TAGS
@@ -28,6 +29,8 @@ from pig.targeted_triplets import collate_triplets, PeppaTargetedTripletCachedDa
 
 BATCH_SIZE = 8
 NUM_WORKERS = 8
+
+RESULT_DIR = "results/targeted_triplets"
 
 
 def evaluate(model, version):
@@ -57,11 +60,11 @@ def evaluate(model, version):
                 f"{eval_info_file} ({len(results_data)})"
 
             results_data["result"] = per_sample_results
-            os.makedirs(results_dir, exist_ok=True)
-            results_data.to_csv(f"{results_dir}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv")
+            path = f"{RESULT_DIR}/version_{version}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv"
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            results_data.to_csv(path)
 
             yield row
-
 
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
@@ -77,133 +80,139 @@ def targeted_triplet_score(fragment_type, pos, model, trainer):
     return results
 
 
-def get_all_results_df(results_dir):
+def get_all_results_df(version, pos_tags, per_word_results=False):
     results_data_all = []
-    for pos in POS_TAGS:
+    for pos in pos_tags:
         for fragment_type in FRAGMENTS:
-            results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv",
+            results_data_fragment = pd.read_csv(f"{RESULT_DIR}/version_{version}/targeted_triplets_{fragment_type}_{pos}.csv",
                                                 converters={"tokenized": ast.literal_eval})
             results_data_all.append(results_data_fragment)
 
     results_data_all = pd.concat(results_data_all, ignore_index=True)
+
+    if per_word_results:
+        # Duplicate results and introduce "word" (either target or distractor word) column
+        results_data_words_1 = results_data_all.copy()
+        results_data_words_1["word"] = results_data_words_1["target_word"]
+        results_data_words_2 = results_data_all.copy()
+        results_data_words_2["word"] = results_data_words_2["distractor_word"]
+        results_data_all = pd.concat([results_data_words_1, results_data_words_2], ignore_index=True)
+
     results_data_all["duration"] = results_data_all["clipEnd"] - results_data_all["clipStart"]
     return results_data_all
 
 
-def create_duration_results_plots(results_dir, version):
-    results_data_all = get_all_results_df(results_dir)
+def create_duration_results_plots(version):
+    results_data_all = get_all_results_df(version, POS_TAGS)
 
     results_data_all["clipDuration"] = results_data_all["clipEnd"] - results_data_all["clipStart"]
-    results_data_all["clipDuration"] = results_data_all["clipDuration"].round(1)
+    results_data_all["clipDuration"] = pd.qcut(results_data_all["clipDuration"], 5)
 
-    plt.figure()
-    results_data_all.groupby("clipDuration").size().plot.bar()
-    plt.title(f"Number of samples: per duration")
-    plt.xticks(rotation=75)
-    plt.savefig(os.path.join(results_dir, f"num_samples_vs_duration"), dpi=300)
-
-    plt.figure()
     results_data_all["num_tokens"] = results_data_all.tokenized.apply(len)
-    results_data_all.groupby("num_tokens").size().plot.bar()
-    plt.title(f"Number of samples: per number of tokens")
-    plt.xticks(rotation=75)
-    plt.savefig(os.path.join(results_dir, f"num_samples_vs_num_tokens"), dpi=300)
+    results_data_all["num_tokens"] = pd.cut(results_data_all["num_tokens"], 3)
 
-    plt.figure()
-    sns.barplot(data=results_data_all, x="clipDuration", y="result")
-    plt.axhline(y=0.5, color="black", linestyle='--')
-    plt.title(f"Version: {version} | Accuracy: per duration")
-    plt.xticks(rotation=75)
-    plt.savefig(os.path.join(results_dir, f"results_clip_duration"), dpi=300)
+    g = ggplot(results_data_all) + geom_bar(aes(x='clipDuration')) + xlab("") + ylab("# samples") + theme(
+        axis_text_x=element_text(angle=85)) + ggtitle(
+        f"Number of samples per duration")
+    ggsave(g, f"{RESULT_DIR}/num_samples_per_duration.pdf")
 
-    plt.figure()
-    sns.barplot(data=results_data_all, x="num_tokens", y="result")
-    plt.axhline(y=0.5, color="black", linestyle='--')
-    plt.title(f"Version: {version} | Accuracy: per number of tokens")
-    plt.xticks(rotation=75)
-    plt.savefig(os.path.join(results_dir, f"results_num_tokens"), dpi=300)
+    g = ggplot(results_data_all) + geom_bar(aes(x='num_tokens')) + xlab("") + ylab("# samples") + theme(
+        axis_text_x=element_text(angle=85)) + ggtitle(
+        f"Number of samples per number of tokens")
+    ggsave(g, f"{RESULT_DIR}/num_samples_per_num_tokens.pdf")
 
-    print(f"Average accuracy for version {version}: {results_data_all['result'].mean()}")
+    results_boot = bootstrap_scores_for_column(results_data_all, "clipDuration")
+
+    g = ggplot(results_boot, aes(x="clipDuration", y="score")) + geom_boxplot() + xlab("") + theme(
+        axis_text_x=element_text(angle=85)) + ggtitle(
+        f"Accuracy per test clip duration for model ID: {version}")
+    ggsave(g, f"{RESULT_DIR}/results_per_duration_version_{version}.pdf")
+
+    results_boot = bootstrap_scores_for_column(results_data_all, "num_tokens")
+
+    g = ggplot(results_boot, aes(x="num_tokens", y="score")) + geom_boxplot() + xlab("") + theme(
+        axis_text_x=element_text(angle=85)) + ggtitle(
+        f"Accuracy per number of tokens for model ID: {version}")
+    ggsave(g, f"{RESULT_DIR}/results_per_num_tokens_version_{version}.pdf")
 
 
-def create_per_word_result_plots(results_dir, version, args):
-    results_data_words_all = []
+def get_bootstrapped_scores(values, n_resamples=100):
+    for n in range(n_resamples):
+        result = values.sample(len(values), replace=True).mean()
+        yield result
+
+
+def bootstrap_scores_for_column(results, column_name):
+    results_boot = []
+    for value in results[column_name].unique():
+        results_data_word = results[results[column_name] == value].result
+        result_bootstrapped = get_bootstrapped_scores(results_data_word)
+        items = [{"score": res, column_name: value} for res in result_bootstrapped]
+        results_boot.extend(items)
+
+    return pd.DataFrame.from_records(results_boot)
+
+
+def create_per_word_result_plots(version):
     for pos in POS_TAGS:
-        results_data = []
-        for fragment_type in FRAGMENTS:
-            results_data_fragment = pd.read_csv(f"{results_dir}/targeted_triplets_{fragment_type}_{pos}.csv", converters={"tokenized":ast.literal_eval})
-            results_data_fragment["duration"] = results_data_fragment["clipEnd"] - results_data_fragment["clipStart"]
-            results_data.append(results_data_fragment)
-        results_data = pd.concat(results_data, ignore_index=True)
+        results_data_words = get_all_results_df(version, [pos], per_word_results=True)
+        if len(results_data_words) > 0:
+            results_boot = bootstrap_scores_for_column(results_data_words, "word")
 
-        if len(results_data) > 0:
-            results_data_words_1 = results_data.copy()
-            results_data_words_1["word"] = results_data_words_1["target_word"]
-            results_data_words_2 = results_data.copy()
-            results_data_words_2["word"] = results_data_words_2["distractor_word"]
-            results_data_words = pd.concat([results_data_words_1, results_data_words_2], ignore_index=True)
+            g = ggplot(results_boot, aes(x='reorder(word, score)', y="score")) + geom_boxplot() + xlab("") \
+                + theme(axis_text_x=element_text(angle=85)) \
+                + ggtitle(f"Per-word targeted triplets accuracy for model ID: {version} | POS: {pos}")
+            ggsave(g, f"{RESULT_DIR}/results_per_word_version_{version}_{pos}.pdf")
 
-            plt.figure(figsize=(15, 8))
-            results_data_words.groupby("word").size().plot.bar()
-            plt.title(f"Number of samples: {pos}")
-            plt.xticks(rotation=75)
-            plt.savefig(os.path.join(results_dir, f"num_samples_{pos}_word"), dpi=300)
+            num_samples_per_word = results_data_words["word"].value_counts(ascending=True).index.tolist()
+            word_cat = pd.Categorical(results_data_words['word'], categories=num_samples_per_word)
+            results_data_words = results_data_words.assign(word_cat=word_cat)
+            g = ggplot(results_data_words) + geom_bar(aes(x='word_cat')) + xlab("") + ylab("# samples") + theme(
+                axis_text_x=element_text(angle=85)) + ggtitle(
+                f"Number of samples: {pos}")
+            ggsave(g, f"{RESULT_DIR}/num_samples_per_word_{pos}.pdf")
 
-            results_data_words_all.append(results_data_words)
 
-            plt.figure(figsize=(15, 8))
-            mean_acc = results_data_words.groupby("word")["result"].agg("mean")
-            order = mean_acc.sort_values()
-            sns.barplot(data=results_data_words, x="word", y="result", order=order.index)
-            plt.title(f"Per-word targeted triplets accuracy for model ID: {version} | POS: {pos}")
-            plt.xticks(rotation=75)
-            plt.ylabel("Accuracy")
-            plt.ylim((0, 1))
-            plt.subplots_adjust(bottom=0.1)
-            plt.axhline(y=0.5, color="black", linestyle='--')
-            plt.tight_layout()
-            plt.savefig(os.path.join(results_dir, f"results_{pos}_word"), dpi=300)
+def create_correlation_results_plots(version):
+    word_concreteness_ratings = get_word_concreteness_ratings()
+    dataset_word_frequencies = get_dataset_word_frequencies()
 
-    if args.correlate_predictors:
-        word_concreteness_ratings = get_word_concreteness_ratings()
-        dataset_word_frequencies = get_dataset_word_frequencies()
+    results_data_words_all = get_all_results_df(version, POS_TAGS, per_word_results=True)
+    mean_acc = results_data_words_all.groupby("word")["result"].agg("mean")
 
-        results_data_words_all = pd.concat(results_data_words_all, ignore_index=True)
-        mean_acc = results_data_words_all.groupby("word")["result"].agg("mean")
+    # Correlate performance with word frequency in train split
+    word_frequencies = [dataset_word_frequencies[w] for w in mean_acc.keys()]
+    word_frequencies = [np.log(f) for f in word_frequencies]
+    word_accuracies = mean_acc.values
+    pearson_corr = pearsonr(word_frequencies, word_accuracies)
+    plt.figure()
+    s1 = sns.scatterplot(word_frequencies, word_accuracies, marker="x")
+    plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.3f})")
+    plt.xlabel("Log Frequency")
+    plt.ylabel("Accuracy")
+    # Named labels in scatterplot:
+    for i in range(len(word_frequencies)):
+        s1.text(word_frequencies[i] + 0.01, word_accuracies[i],
+                mean_acc.keys()[i], horizontalalignment='left',
+                size='small', color='black')
+    plt.savefig(f"{RESULT_DIR}/correlation_frequency_acc", dpi=300)
+    print(f"Pearson correlation frequency-acc: ", pearson_corr)
 
-        # Correlate performance with word frequency in train split
-        word_frequencies = [dataset_word_frequencies[w] for w in mean_acc.keys()]
-        word_frequencies = [np.log(f) for f in word_frequencies]
-        word_accuracies = mean_acc.values
-        pearson_corr = pearsonr(word_frequencies, word_accuracies)
-        plt.figure()
-        s1 = sns.scatterplot(word_frequencies, word_accuracies, marker="x")
-        plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.3f})")
-        plt.xlabel("Log Frequency")
-        plt.ylabel("Accuracy")
-        # Named labels in scatterplot:
-        for i in range(len(word_frequencies)):
-            s1.text(word_frequencies[i] + 0.01, word_accuracies[i],
-                    mean_acc.keys()[i], horizontalalignment='left',
-                    size='small', color='black')
-        plt.savefig(os.path.join(results_dir, f"results_correlation_frequency_acc"), dpi=300)
-        print(f"Pearson correlation frequency-acc: ", pearson_corr)
-
-        # Correlate performance with word concreteness
-        word_concretenesses = [get_word_concreteness(w, word_concreteness_ratings) for w in mean_acc.keys()]
-        pearson_corr = pearsonr(word_concretenesses, word_accuracies)
-        plt.figure()
-        s2 = sns.scatterplot(word_concretenesses, word_accuracies, marker="x")
-        plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.3f})")
-        plt.xlabel("Concreteness")
-        plt.ylabel("Accuracy")
-        # Named labels in scatterplot:
-        for i in range(len(word_frequencies)):
-            s2.text(word_concretenesses[i] + 0.01, word_accuracies[i],
-                    mean_acc.keys()[i], horizontalalignment='left',
-                    size='small', color='black')
-        plt.savefig(os.path.join(results_dir, f"results_correlation_concreteness_acc"), dpi=300)
-        print(f"Pearson correlation concreteness-acc: ", pearson_corr)
+    # Correlate performance with word concreteness
+    word_concretenesses = [get_word_concreteness(w, word_concreteness_ratings) for w in mean_acc.keys()]
+    pearson_corr = pearsonr(word_concretenesses, word_accuracies)
+    plt.figure()
+    s2 = sns.scatterplot(word_concretenesses, word_accuracies, marker="x")
+    plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.3f})")
+    plt.xlabel("Concreteness")
+    plt.ylabel("Accuracy")
+    # Named labels in scatterplot:
+    for i in range(len(word_frequencies)):
+        s2.text(word_concretenesses[i] + 0.01, word_accuracies[i],
+                mean_acc.keys()[i], horizontalalignment='left',
+                size='small', color='black')
+    plt.savefig(f"{RESULT_DIR}/correlation_concreteness_acc", dpi=300)
+    print(f"Pearson correlation concreteness-acc: ", pearson_corr)
 
 
 def get_dataset_word_frequencies():
@@ -240,6 +249,8 @@ def get_word_concreteness(word, word_concreteness_ratings):
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--versions", type=str, nargs="+")
+    parser.add_argument("--plot-only", action="store_true", default=False,
+                        help="Only plot results, do not re-run evaluation")
 
     parser.add_argument("--correlate-predictors", action="store_true", default=False)
 
@@ -250,24 +261,26 @@ if __name__ == "__main__":
     logging.getLogger().setLevel(logging.INFO)
     args = get_args()
 
+    os.makedirs(RESULT_DIR, exist_ok=True)
     rows = []
     for version in args.versions:
         logging.info(f"Evaluating version {version}")
 
-        if version == "BASELINE":
-            net = PeppaPig(default_config)
-            path = ""
-        else:
-            net, path = load_best_model(f"lightning_logs/version_{version}/")
+        if not args.plot_only:
+            if version == "BASELINE":
+                net = PeppaPig(default_config)
+                path = ""
+            else:
+                net, path = load_best_model(f"lightning_logs/version_{version}/")
 
-        results_dir = f"results/version_{version}"
+            result_rows = evaluate(net, version)
+            rows.extend(result_rows)
 
-        result_rows = evaluate(net, version)
-        rows.extend(result_rows)
+        create_per_word_result_plots(version)
+        create_duration_results_plots(version)
+        if args.correlate_predictors:
+            create_correlation_results_plots(version)
 
-        create_per_word_result_plots(results_dir, version, args)
-
-        create_duration_results_plots(results_dir, version)
-
-    scores = pd.DataFrame.from_records(rows)
-    scores.to_csv("results/scores_targeted_triplets.csv", index=False, header=True)
+    if len(rows) > 0:
+        scores = pd.DataFrame.from_records(rows)
+        scores.to_csv("{RESULT_DIR}/scores_targeted_triplets.csv", index=False, header=True)
