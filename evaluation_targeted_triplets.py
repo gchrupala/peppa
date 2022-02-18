@@ -16,13 +16,11 @@ from torch.utils.data import DataLoader
 import pandas as pd
 import numpy as np
 import seaborn as sns
-import matplotlib
 
 from pig.metrics import batch_triplet_accuracy
 from pig.models import PeppaPig
 from run import default_config
 
-matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 from pig.targeted_triplets import collate_triplets, PeppaTargetedTripletCachedDataset
@@ -68,7 +66,9 @@ def evaluate(model, version):
 
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
-    ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False)
+    ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False,
+                                           target_size=model.config["data"]["target_size"],
+                                           audio_sample_rate=model.config["data"]["audio_sample_rate"])
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
     if len(ds) == 0:
         return []

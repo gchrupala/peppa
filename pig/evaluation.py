@@ -128,6 +128,7 @@ def resampled_retrieval_score(fragment_type,
             split=['val'],
             fragment_type=fragment_type,
             duration=duration,
+            audio_sample_rate=model.config["data"]['audio_sample_rate'],
             jitter=jitter,
             jitter_sd=jitter_sd
             )
@@ -142,7 +143,8 @@ def resampled_retrieval_score(fragment_type,
 
 def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE):
     from pig.triplet import TripletScorer
-    scorer = TripletScorer(fragment_type=fragment_type, split=['val'], target_size=model.config["data"]["target_size"])
+    scorer = TripletScorer(fragment_type=fragment_type, split=['val'], target_size=model.config["data"]["target_size"],
+                           audio_sample_rate=model.config["data"]['audio_sample_rate'])
     acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 

@@ -10,16 +10,12 @@ import pig.preprocess
 import moviepy.editor as m
 import pytorch_lightning as pl
 import logging
-from itertools import groupby
 import pig.util
 import json
 import pickle
-import random
 from typing import Union
 import os.path
 import math
-
-AUDIO_SAMPLERATE = 16000
 
 SPLIT_SPEC = {'dialog': {'train': range(1, 197),
                          'val': range(197, 210),
@@ -68,44 +64,46 @@ def collate(data):
                      video_duration = torch.tensor(vlen),
                      audio_duration = torch.tensor(alen))
 
-def featurize(clip):
+def featurize(clip, audio_sample_rate):
     frames = [ torch.tensor(frame/255).float()
                for frame in clip.iter_frames() ]
     if len(frames) > 0:
         v = torch.stack(frames)
         return Clip(video = v.permute(3, 0, 1, 2),
-                    audio = featurize_audio(clip.audio),
+                    audio = featurize_audio(clip.audio, audio_sample_rate),
                     video_duration = clip.duration,
                     audio_duration = clip.audio.duration,
                     filename = clip.filename)
     else:
         raise ValueError("Clip has zero frames.")
 
-def featurize_audio(clip):
+def featurize_audio(clip, samplerate):
     # .to_soundarray extracts corrupted audio from small clips, 
     # but calling the function twice seems to fix the issue.
-    clip.to_soundarray(fps=AUDIO_SAMPLERATE)
-    a = torch.tensor(clip.to_soundarray(fps=AUDIO_SAMPLERATE)).float()
+    clip.to_soundarray(fps=samplerate, buffersize=5000)
+    a = torch.tensor(clip.to_soundarray(fps=samplerate, buffersize=5000)).float()
     return a.mean(dim=1, keepdim=True).permute(1,0)
   
 class AudioFileDataset(IterableDataset):
 
-    def __init__(self, paths):
+    def __init__(self, paths, audio_sample_rate):
         self.paths = paths
+        self.audio_sample_rate = audio_sample_rate
 
     def __iter__(self):
         for path in self.paths:
             with m.AudioFileClip(path) as clip:
-                yield featurize_audio(clip)
+                yield featurize_audio(clip, self.audio_sample_rate)
 
 class AudioClipDataset(IterableDataset):
 
-    def __init__(self, clips):
+    def __init__(self, clips, audio_sample_rate):
         self.clips = clips
+        self.audio_sample_rate = audio_sample_rate
 
     def __iter__(self):
         for clip in self.clips:
-            yield featurize_audio(clip)
+            yield featurize_audio(clip, self.audio_sample_rate)
 
 
 class ArrayDataset(IterableDataset):
@@ -118,23 +116,25 @@ class ArrayDataset(IterableDataset):
         
 class VideoFileDataset(IterableDataset):
 
-    def __init__(self, paths):
+    def __init__(self, paths, audio_sample_rate):
         self.paths = paths
+        self.audio_sample_rate = audio_sample_rate
 
     def __iter__(self):
         for path in self.paths:
             with m.VideoFileClip(path) as clip:
-                yield featurize(clip)
+                yield featurize(clip, self.audio_sample_rate)
 
 
 class VideoClipDataset(IterableDataset):
 
-    def __init__(self, clips):
+    def __init__(self, clips, audio_sample_rate):
         self.clips = clips
+        self.audio_sample_rate = audio_sample_rate
 
     def __iter__(self):
         for clip in self.clips:
-            yield featurize(clip)
+            yield featurize(clip, self.audio_sample_rate)
         
 class GenericIterableDataset(IterableDataset):
     def __init__(self, items):
@@ -143,12 +143,12 @@ class GenericIterableDataset(IterableDataset):
     def __iter__(self):
         yield from self.items
 
-def audiofile_loader(paths, batch_size=32):
-    dataset = AudioFileDataset(paths)
+def audiofile_loader(paths, batch_size=32, audio_sample_rate=44100):
+    dataset = AudioFileDataset(paths, audio_sample_rate)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
-def grouped_audiofile_loader(paths, batch_size=32):
-    dataset = AudioFileDataset(paths)
+def grouped_audiofile_loader(paths, batch_size=32, audio_sample_rate=44100):
+    dataset = AudioFileDataset(paths, audio_sample_rate)
     loader = grouped_loader(dataset,
                             lambda x: x.shape[1],
                             collate_audio,
@@ -160,12 +160,12 @@ def audioarray_loader(arrays, batch_size=32):
     dataset = ArrayDataset(arrays)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
-def audioclip_loader(clips, batch_size=32):
-    dataset = AudioClipDataset(clips)
+def audioclip_loader(clips, batch_size=32, audio_sample_rate=44100):
+    dataset = AudioClipDataset(clips, audio_sample_rate)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
-def grouped_audioclip_loader(paths, batch_size=32):
-    dataset = AudioClipDataset(paths)
+def grouped_audioclip_loader(paths, batch_size=32, audio_sample_rate=44100):
+    dataset = AudioClipDataset(paths, audio_sample_rate)
     loader = grouped_loader(dataset,
                             lambda x: x.shape[1],
                             collate_audio,
@@ -233,6 +233,7 @@ class PeppaPigIterableDataset(IterableDataset):
                  target_size=(180, 100),
                  fragment_type='dialog',
                  duration=3.2,
+                 audio_sample_rate=44100,
                  jitter=False,
                  jitter_sd=None
                  ):
@@ -242,6 +243,7 @@ class PeppaPigIterableDataset(IterableDataset):
         self.target_size = target_size
         self.fragment_type = fragment_type
         self.duration = duration
+        self.audio_sample_rate = audio_sample_rate
         self.jitter = jitter
         self.jitter_sd = jitter_sd
         self.split_spec = SPLIT_SPEC
@@ -251,11 +253,12 @@ class PeppaPigIterableDataset(IterableDataset):
                          f"{self.target_size[0]}x{self.target_size[1]}",
                          self.fragment_type,
                          f"{self.duration}",
+                         f"{self.audio_sample_rate}",
                          f"{self.jitter},{self.jitter_sd}" if self.jitter else ""])
 
         
     def featurize(self, clip):
-        return featurize(clip)
+        return featurize(clip, self.audio_sample_rate)
         
     def _clips(self):
         for clip in self._raw_clips():
@@ -374,6 +377,7 @@ class PigData(pl.LightningDataModule):
                                          target_size=self.config['target_size'],
                                          split=['val'], fragment_type='dialog',
                                          duration=self.config['val']['duration'],
+                                         audio_sample_rate=self.config['audio_sample_rate'],
                                          jitter=self.config['val']['jitter'],
                                          jitter_sd=self.config['val'].get('jitter_sd'))
 
@@ -382,6 +386,7 @@ class PigData(pl.LightningDataModule):
                                         split=['val'],
                                         fragment_type='narration',
                                         duration=self.config['val']['duration'],
+                                        audio_sample_rate=self.config['audio_sample_rate'],
                                         jitter=self.config['val']['jitter'],
                                         jitter_sd=self.config['val'].get('jitter_sd'))
         self.val_dia3 = pig.data.PeppaPigDataset(
@@ -389,12 +394,14 @@ class PigData(pl.LightningDataModule):
             target_size=self.config['target_size'],
             split=['val'], fragment_type='dialog',
             duration=None,
+            audio_sample_rate=self.config['audio_sample_rate'],
             jitter=None)
         
         self.val_narr3 = pig.data.PeppaPigDataset(
             force_cache=self.config['val']['force_cache'],
             target_size=self.config['target_size'],
             split=['val'], fragment_type='narration',
+            audio_sample_rate=self.config['audio_sample_rate'],
             duration=None,
             jitter=None)
         

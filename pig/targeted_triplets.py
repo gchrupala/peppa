@@ -34,11 +34,11 @@ class TripletBatch:
 
 class PeppaTargetedTripletCachedDataset(Dataset):
 
-    def __init__(self, fragment, pos, target_size=(180, 100), force_cache=False):
-        self.cache_dir = f"data/out/items-targeted-triplets-{target_size[0]}-{target_size[1]}-{fragment}-{pos}/"
+    def __init__(self, fragment, pos, target_size=(180, 100), audio_sample_rate=44100, force_cache=False):
+        self.cache_dir = f"data/out/items-targeted-triplets-{target_size[0]}-{target_size[1]}-{fragment}-{audio_sample_rate}-{pos}/"
         if force_cache or not os.path.isdir(self.cache_dir):
             os.makedirs(self.cache_dir, exist_ok=True)
-            ds = PeppaTargetedTripletDataset.from_csv(fragment, pos, target_size)
+            ds = PeppaTargetedTripletDataset.from_csv(fragment, pos, target_size, audio_sample_rate)
 
             for i, item in enumerate(ds):
                 logging.info(f"Caching item {self.cache_dir}/{i}.pt")
@@ -55,16 +55,17 @@ class PeppaTargetedTripletCachedDataset(Dataset):
 
 class PeppaTargetedTripletDataset(Dataset):
 
-    def __init__(self, directory, target_size=(180, 100)):
+    def __init__(self, directory, target_size=(180, 100), audio_sample_rate=44100):
         super().__init__()
 
         self.directory = directory
         self.target_size = target_size
+        self.audio_sample_rate = audio_sample_rate
 
     @classmethod
-    def from_csv(cls, fragment, pos, target_size=(180, 100)):
+    def from_csv(cls, fragment, pos, target_size=(180, 100), audio_sample_rate=44100):
         directory = f"data/out/val_{fragment}_targeted_triplets_{pos}"
-        self = cls(directory=directory, target_size=target_size)
+        self = cls(directory=directory, target_size=target_size, audio_sample_rate=audio_sample_rate)
         eval_set_info = pd.read_csv(f"data/eval/eval_set_{fragment}_{pos}.csv")
 
         self._load_eval_set_and_save_clip_info(eval_set_info)
@@ -96,8 +97,8 @@ class PeppaTargetedTripletDataset(Dataset):
         target_info, distractor_info = self._sample[idx]
         with m.VideoFileClip(target_info['path']) as target:
             with m.VideoFileClip(distractor_info['path']) as distractor:
-                positive = featurize(target)
-                negative = featurize(distractor)
+                positive = featurize(target, self.audio_sample_rate)
+                negative = featurize(distractor, self.audio_sample_rate)
                 return Triplet(anchor=positive.audio, positive=positive.video, negative=negative.video,
                                audio_duration=target.audio.duration, video_duration=target.duration)
 
