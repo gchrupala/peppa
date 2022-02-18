@@ -57,7 +57,7 @@ def main(args):
     data = pig.data.PigData(config['data'])
     net = pig.models.PeppaPig(config)
     
-    checkpoint_rec10 = ModelCheckpoint(monitor='valnarr_rec10',
+    checkpoint_rec10 = ModelCheckpoint(monitor='valnarr_rec_fixed',
                                        mode='max',
                                        every_n_epochs=1,
                                        auto_insert_metric_name=True,
@@ -67,7 +67,7 @@ def main(args):
                                        save_weights_only=False,
                                        period=1,
                                        dirpath=None,
-                                       filename="{epoch}-{valnarr_rec10:.2f}"
+                                       filename="{epoch}-{valnarr_rec_fixed:.2f}"
     )
     checkpoint_triplet = ModelCheckpoint(monitor='valnarr_triplet',
                                        mode='max',
