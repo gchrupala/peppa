@@ -294,13 +294,13 @@ class PeppaPig(pl.LightningModule):
         V, A = zip(*out_main)
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)
-        rec_fixed = pig.metrics.resampled_recall(V, A, size=min(100,len(V)), n_samples=500, n=10)
+        rec_fixed = pig.metrics.resampled_recall(V, A, size=100, n_samples=500, n=10)
         self.log("val_rec_fixed", rec_fixed, prog_bar=True)
 
         V, A = zip(*out_narr)
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)
-        rec_narr_fixed = pig.metrics.resampled_recall(V, A, size=min(100,len(V)), n_samples=500, n=10)
+        rec_narr_fixed = pig.metrics.resampled_recall(V, A, size=100, n_samples=500, n=10)
         self.log("valnarr_rec_fixed", rec_narr_fixed, prog_bar=True)
 
         # triplet

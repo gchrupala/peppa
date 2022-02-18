@@ -83,7 +83,7 @@ def main(args):
     )
     trainer = pl.Trainer(callbacks=[checkpoint_rec10, checkpoint_triplet],
                          max_time="02:00:00:00",
-                         num_sanity_val_steps=10,
+                         num_sanity_val_steps=15,
                          limit_train_batches=args.limit_train_batches,
                          limit_val_batches=args.limit_val_batches,
                          **config['training']['trainer_args'])
