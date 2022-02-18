@@ -30,7 +30,7 @@ def triplet_accuracy(anchor, positive, negative, dim=1):
 
 def resampled_recall(candidates, references, size=100, n_samples=100, n=1):
     assert len(candidates) == len(references)
-    assert len(candidates) > size
+    assert len(candidates) >= size
     result = []
     for i in range(n_samples):
         ix = sample_indices(candidates, size)
