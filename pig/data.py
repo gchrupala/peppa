@@ -358,6 +358,7 @@ class PigData(pl.LightningDataModule):
             logging.info("Collecting stats on training data.")
             
             train = self.Dataset(target_size=self.config['target_size'],
+                                 audio_sample_rate=self.config['audio_sample_rate'],
                                  split=['train'], fragment_type='dialog', 
                                   **{k:v for k,v in self.config['train'].items()
                                      if k not in self.loader_args})
@@ -368,6 +369,7 @@ class PigData(pl.LightningDataModule):
     def setup(self, **kwargs):
         logging.info("Creating train/val/test datasets")
         self.train = self.Dataset(target_size=self.config['target_size'],
+                                  audio_sample_rate=self.config['audio_sample_rate'],
                                   split=['train'],
                                   fragment_type='dialog',
                                   **{k:v for k,v in self.config['train'].items()
