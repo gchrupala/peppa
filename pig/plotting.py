@@ -18,24 +18,24 @@ def score_points(data):
                 rows.append(point)
     return pd.DataFrame.from_records(rows)
 
-def slide_plots():
+def plots():
     data = torch.load("results/full_scores.pt")
     data = ev.add_condition(data)
     data = score_points(data)
     data['pretraining'] = pd.Categorical(data.apply(ev.pretraining, axis=1),
                                          categories=['None', 'V', 'A', 'AV'])
-    conditions = dict(#jitter=[68, 206974],
+    conditions = dict(jitter=[333, 322],
                       static=[322, 326],
                       pretraining=[322, 323, 324, 325],
-                      #resolution=[206974, 206964]
-    )
+                      freeze_wav2vec=[322, 336])
+    
     for condition, versions in conditions.items():
         g = ggplot(data.query(f'version in {versions}'),
                    aes(x=condition, y='score')) + \
                    geom_boxplot() + \
                    facet_wrap('~fragment_type + metric') 
         
-        ggsave(g, f"results/slides/{condition}.pdf")
+        ggsave(g, f"results/ablations/{condition}.pdf")
 
     
 

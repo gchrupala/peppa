@@ -186,6 +186,8 @@ def add_condition(data):
         record['audio_pretrained'] = config['audio']['pretrained']
         record['video_pretrained'] = config['video']['pretrained']
         record['resolution'] = 'x'.join(map(str, config['data']['target_size']))
+        record['freeze_wav2vec'] = config['audio']['freeze_feature_extractor'] \
+            and config['audio']['freeze_encoder_layers'] == 12
         rows.append(record)
     return rows
     
