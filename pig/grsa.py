@@ -433,7 +433,7 @@ class Embedder:
     def load_audio(self):
         for fragment_type in self.audio:
             for utt in self.data[fragment_type].utterances(read_audio=True):
-                self.audio[fragment_type].append(pig.data.featurize_audio(utt.audio))
+                self.audio[fragment_type].append(pig.data.featurize_audio(utt.audio, samplerate=44100))
                 self.speaker[fragment_type].append(utt.speaker)
                 self.spelling[fragment_type].append(utt.spelling)
                 self.duration[fragment_type].append(utt.duration)

@@ -16,13 +16,11 @@ from torch.utils.data import DataLoader
 import pandas as pd
 import numpy as np
 import seaborn as sns
-import matplotlib
 
 from pig.metrics import batch_triplet_accuracy
 from pig.models import PeppaPig
 from run import default_config
 
-matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 from pig.targeted_triplets import collate_triplets, PeppaTargetedTripletCachedDataset
@@ -68,7 +66,9 @@ def evaluate(model, version):
 
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
-    ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False)
+    ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False,
+                                           target_size=model.config["data"]["target_size"],
+                                           audio_sample_rate=model.config["data"]["audio_sample_rate"])
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
     if len(ds) == 0:
         return []
@@ -160,7 +160,7 @@ def create_per_word_result_plots(version):
             results_boot = bootstrap_scores_for_column(results_data_words, "word")
 
             g = ggplot(results_boot, aes(x='reorder(word, score)', y="score")) + geom_boxplot() + xlab("") \
-                + theme(axis_text_x=element_text(angle=85)) \
+                + theme(axis_text_x=element_text(angle=85), figure_size=(15, 6)) \
                 + ggtitle(f"Per-word targeted triplets accuracy for model ID: {version} | POS: {pos}")
             ggsave(g, f"{RESULT_DIR}/results_per_word_version_{version}_{pos}.pdf")
 
@@ -168,7 +168,7 @@ def create_per_word_result_plots(version):
             word_cat = pd.Categorical(results_data_words['word'], categories=num_samples_per_word)
             results_data_words = results_data_words.assign(word_cat=word_cat)
             g = ggplot(results_data_words) + geom_bar(aes(x='word_cat')) + xlab("") + ylab("# samples") + theme(
-                axis_text_x=element_text(angle=85)) + ggtitle(
+                axis_text_x=element_text(angle=85), figure_size=(15, 6)) + ggtitle(
                 f"Number of samples: {pos}")
             ggsave(g, f"{RESULT_DIR}/num_samples_per_word_{pos}.pdf")
 
@@ -195,7 +195,7 @@ def create_correlation_results_plots(version):
         s1.text(word_frequencies[i] + 0.01, word_accuracies[i],
                 mean_acc.keys()[i], horizontalalignment='left',
                 size='small', color='black')
-    plt.savefig(f"{RESULT_DIR}/correlation_frequency_acc", dpi=300)
+    plt.savefig(f"{RESULT_DIR}/correlation_frequency_acc_version_{version}", dpi=300)
     print(f"Pearson correlation frequency-acc: ", pearson_corr)
 
     # Correlate performance with word concreteness
@@ -211,7 +211,7 @@ def create_correlation_results_plots(version):
         s2.text(word_concretenesses[i] + 0.01, word_accuracies[i],
                 mean_acc.keys()[i], horizontalalignment='left',
                 size='small', color='black')
-    plt.savefig(f"{RESULT_DIR}/correlation_concreteness_acc", dpi=300)
+    plt.savefig(f"{RESULT_DIR}/correlation_concreteness_acc_version_{version}", dpi=300)
     print(f"Pearson correlation concreteness-acc: ", pearson_corr)
 
 

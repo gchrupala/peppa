@@ -14,8 +14,9 @@ default_config = {'margin': 0.2,
                             'iterable': False,
                             'force_cache': False,
                             'target_size': [180, 100],
-                            'train': {'batch_size': 8, 'duration': 3.2, 'jitter': False, 'shuffle': True},
-                            'val': {'batch_size': 8, 'duration': 3.2, 'jitter': False},
+                            'audio_sample_rate': 44100,
+                            'train': {'batch_size': 8, 'duration': 2.3, 'jitter': False, 'shuffle': True},
+                            'val': {'batch_size': 8, 'duration': 2.3, 'jitter': False},
                             'test': {'batch_size': 8}},
                    'video': {'pretrained': True,
                              'project': True,
@@ -57,7 +58,7 @@ def main(args):
     data = pig.data.PigData(config['data'])
     net = pig.models.PeppaPig(config)
     
-    checkpoint_rec10 = ModelCheckpoint(monitor='valnarr_rec10',
+    checkpoint_rec10 = ModelCheckpoint(monitor='valnarr_rec_fixed',
                                        mode='max',
                                        every_n_epochs=1,
                                        auto_insert_metric_name=True,
@@ -67,7 +68,7 @@ def main(args):
                                        save_weights_only=False,
                                        period=1,
                                        dirpath=None,
-                                       filename="{epoch}-{valnarr_rec10:.2f}"
+                                       filename="{epoch}-{valnarr_rec_fixed:.2f}"
     )
     checkpoint_triplet = ModelCheckpoint(monitor='valnarr_triplet',
                                        mode='max',
@@ -83,7 +84,7 @@ def main(args):
     )
     trainer = pl.Trainer(callbacks=[checkpoint_rec10, checkpoint_triplet],
                          max_time="02:00:00:00",
-                         num_sanity_val_steps=10,
+                         num_sanity_val_steps=15,
                          limit_train_batches=args.limit_train_batches,
                          limit_val_batches=args.limit_val_batches,
                          **config['training']['trainer_args'])

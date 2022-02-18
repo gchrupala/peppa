@@ -9,8 +9,6 @@ import os.path
 
 def extract(target_size=(180, 100)):
     logging.basicConfig(level=logging.INFO)
-    os.makedirs("data/out/dialog", exist_ok=True)
-    os.makedirs("data/out/narration", exist_ok=True)
     data = pd.read_csv("data/in/peppa_pig_dataset-video_list.csv", sep=';', quotechar="'", names=["id", "title", "path"], index_col=0)
     
     titles = dict(zip(data['title'], data['path'].map(lambda x: f'data/in/peppa/{x[4:]}')))
