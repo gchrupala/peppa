@@ -105,7 +105,7 @@ def get_all_results_df(version, pos_tags, per_word_results=False):
 def create_duration_results_plots(version):
     results_data_all = get_all_results_df(version, POS_TAGS)
 
-    results_data_all["clipDuration"] = results_data_all["clipEnd"] - results_data_all["clipStart"]
+    results_data_all["clipDuration"] = results_data_all["clipEnd"].astype(float) - results_data_all["clipStart"].astype(float)
     results_data_all["clipDuration"] = pd.qcut(results_data_all["clipDuration"], 5)
 
     results_data_all["num_tokens"] = results_data_all.tokenized.apply(len)
