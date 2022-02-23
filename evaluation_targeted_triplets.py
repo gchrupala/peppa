@@ -153,6 +153,14 @@ def bootstrap_scores_for_column(results, column_name):
     return pd.DataFrame.from_records(results_boot)
 
 
+def get_average_result_bootstrapping(version):
+    results_data_words_all = get_all_results_df(version, POS_TAGS)
+    result_bootstrapped = list(get_bootstrapped_scores(results_data_words_all.result))
+    mean_results, std_results = np.mean(result_bootstrapped), np.std(result_bootstrapped)
+    print(f"Average result: {mean_results} +/-{std_results}")
+    return mean_results, std_results
+
+
 def create_per_word_result_plots(version):
     for pos in POS_TAGS:
         results_data_words = get_all_results_df(version, [pos], per_word_results=True)
@@ -276,6 +284,7 @@ if __name__ == "__main__":
             result_rows = evaluate(net, version)
             rows.extend(result_rows)
 
+        get_average_result_bootstrapping(version)
         create_per_word_result_plots(version)
         create_duration_results_plots(version)
         if args.correlate_predictors:
