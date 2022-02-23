@@ -23,7 +23,7 @@ SPLIT_SPEC = {'dialog': {'train': range(1, 197),
               'narration': {'val': range(1, 105),
                             'test': range(105, 210),
                             'train': None}}
-
+DEFAULT_SAMPLE_RATE=44100
 
 @dataclass
 class Clip:
@@ -143,11 +143,11 @@ class GenericIterableDataset(IterableDataset):
     def __iter__(self):
         yield from self.items
 
-def audiofile_loader(paths, batch_size=32, audio_sample_rate=44100):
+def audiofile_loader(paths, batch_size=32, audio_sample_rate=DEFAULT_SAMPLE_RATE):
     dataset = AudioFileDataset(paths, audio_sample_rate)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
-def grouped_audiofile_loader(paths, batch_size=32, audio_sample_rate=44100):
+def grouped_audiofile_loader(paths, batch_size=32, audio_sample_rate=DEFAULT_SAMPLE_RATE):
     dataset = AudioFileDataset(paths, audio_sample_rate)
     loader = grouped_loader(dataset,
                             lambda x: x.shape[1],
@@ -160,11 +160,11 @@ def audioarray_loader(arrays, batch_size=32):
     dataset = ArrayDataset(arrays)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
-def audioclip_loader(clips, batch_size=32, audio_sample_rate=44100):
+def audioclip_loader(clips, batch_size=32, audio_sample_rate=DEFAULT_SAMPLE_RATE):
     dataset = AudioClipDataset(clips, audio_sample_rate)
     return DataLoader(dataset, collate_fn=collate_audio, batch_size=batch_size)
 
-def grouped_audioclip_loader(paths, batch_size=32, audio_sample_rate=44100):
+def grouped_audioclip_loader(paths, batch_size=32, audio_sample_rate=DEFAULT_SAMPLE_RATE):
     dataset = AudioClipDataset(paths, audio_sample_rate)
     loader = grouped_loader(dataset,
                             lambda x: x.shape[1],
@@ -233,7 +233,7 @@ class PeppaPigIterableDataset(IterableDataset):
                  target_size=(180, 100),
                  fragment_type='dialog',
                  duration=3.2,
-                 audio_sample_rate=44100,
+                 audio_sample_rate=DEFAULT_SAMPLE_RATE,
                  jitter=False,
                  jitter_sd=None
                  ):

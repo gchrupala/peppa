@@ -19,6 +19,7 @@ torch.manual_seed(666)
 BATCH_SIZE=8
 VERSIONS = (206979, 206980, 206981,  206985)
 
+
 def data_statistics():
     rows = []
     for split in ['train', 'val', 'test']:
@@ -121,7 +122,8 @@ def resampled_retrieval_score(fragment_type,
             split=['val'],
             fragment_type=fragment_type,
             duration=duration,
-            audio_sample_rate=model.config["data"]['audio_sample_rate'],
+            audio_sample_rate=model.config["data"].get('audio_sample_rate',
+                                                       pig.data.DEFAULT_SAMPLE_RATE),
             jitter=jitter,
             jitter_sd=jitter_sd
             )
@@ -137,7 +139,8 @@ def resampled_retrieval_score(fragment_type,
 def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE):
     from pig.triplet import TripletScorer
     scorer = TripletScorer(fragment_type=fragment_type, split=['val'], target_size=model.config["data"]["target_size"],
-                           audio_sample_rate=model.config["data"]['audio_sample_rate'])
+                           audio_sample_rate=model.config["data"].get('audio_sample_rate',
+                                                                      pig.data.DEFAULT_SAMPLE_RATE))
     acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 
@@ -188,6 +191,8 @@ def add_condition(data):
         record['resolution'] = 'x'.join(map(str, config['data']['target_size']))
         record['freeze_wav2vec'] = config['audio']['freeze_feature_extractor'] \
             and config['audio']['freeze_encoder_layers'] == 12
+        record['sample_rate'] = str(config['data'].get('audio_sample_rate',
+                                                       pig.data.DEFAULT_SAMPLE_RATE))
         rows.append(record)
     return rows
     
@@ -207,8 +212,8 @@ def run(gpu=0, versions=VERSIONS):
 
 def full_run(gpu=0, versions=VERSIONS):
     logging.getLogger().setLevel(logging.INFO)
-    rows = []
     for version in versions:
+        rows = []
         logging.info(f"Evaluating version {version}")
         net, path = load_best_model(f"lightning_logs/version_{version}/")
         for row in full_score(net, gpus=[gpu]):
@@ -216,7 +221,7 @@ def full_run(gpu=0, versions=VERSIONS):
             row['checkpoint_path'] = path
             row['hparams_path']    = f"lightning_logs/version_{version}/hparams.yaml"
             rows.append(row)
-    torch.save(add_condition(rows), "results/full_scores.pt")
+        torch.save(add_condition(rows), f"results/full_scores_v{version}.pt")
     
 def main(gpu=0, versions=VERSIONS):
     scores = run(gpu=gpu, versions=versions)
