@@ -66,9 +66,10 @@ def evaluate(model, version):
 
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
+    audio_sample_rate = model.config["data"].get("audio_sample_rate", 44100)
     ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False,
                                            target_size=model.config["data"]["target_size"],
-                                           audio_sample_rate=model.config["data"]["audio_sample_rate"])
+                                           audio_sample_rate=audio_sample_rate)
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
     if len(ds) == 0:
         return []
@@ -292,4 +293,4 @@ if __name__ == "__main__":
 
     if len(rows) > 0:
         scores = pd.DataFrame.from_records(rows)
-        scores.to_csv("{RESULT_DIR}/scores_targeted_triplets.csv", index=False, header=True)
+        scores.to_csv(f"{RESULT_DIR}/scores_targeted_triplets.csv", index=False, header=True)
