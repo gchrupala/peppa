@@ -70,6 +70,8 @@ def full_score(model, gpus):
     for fragment_type in ['dialog', 'narration']:
         logging.info(f"Evaluating: {fragment_type}, triplet")
         acc = triplet_score(fragment_type, model, trainer)
+        logging.info(f"Evaluating: {fragment_type}, triplet (scrambled_video)")
+        acc_scrambled_video = triplet_score(fragment_type, model, trainer, scrambled_video=True)
         logging.info(f"Evaluating: {fragment_type}, recall_fixed")
         rec_fixed = resampled_retrieval_score(fragment_type,
                                     model,
@@ -77,6 +79,14 @@ def full_score(model, gpus):
                                     duration=2.3,
                                     jitter=False,
                                     jitter_sd=None)
+        logging.info(f"Evaluating: {fragment_type}, recall_fixed (scrambled_video)")
+        rec_fixed_scrambled_video = resampled_retrieval_score(fragment_type,
+                                              model,
+                                              trainer,
+                                              duration=2.3,
+                                              jitter=False,
+                                              jitter_sd=None,
+                                              scrambled_video=True)
         logging.info(f"Evaluating: {fragment_type}, recall_jitter")
         rec_jitter = resampled_retrieval_score(fragment_type,
                                      model,
@@ -84,10 +94,21 @@ def full_score(model, gpus):
                                      duration=2.3,
                                      jitter=True,
                                      jitter_sd=0.5)
+        logging.info(f"Evaluating: {fragment_type}, recall_jitter (scrambled_video")
+        rec_jitter_scrambled_video = resampled_retrieval_score(fragment_type,
+                                               model,
+                                               trainer,
+                                               duration=2.3,
+                                               jitter=True,
+                                               jitter_sd=0.5,
+                                               scrambled_video=True)
         data.append(dict(fragment_type=fragment_type,
                          triplet_acc=acc,
+                         triplet_acc_scrambled_video=acc_scrambled_video,
                          recall_at_10_fixed=rec_fixed,
-                         recall_at_10_jitter=rec_jitter))
+                         recall_at_10_fixed_scrambled_video=rec_fixed_scrambled_video,
+                         recall_at_10_jitter=rec_jitter,
+                         recall_at_10_jitter_scrambled_video=rec_jitter_scrambled_video))
     return data
         
 def retrieval_score(fragment_type, model, trainer, duration=2.3, jitter=False, jitter_sd=None, batch_size=BATCH_SIZE):
@@ -115,7 +136,8 @@ def resampled_retrieval_score(fragment_type,
                               duration=2.3,
                               jitter=False,
                               jitter_sd=None,
-                              batch_size=BATCH_SIZE):
+                              batch_size=BATCH_SIZE,
+                              scrambled_video=False):
         base_ds = pig.data.PeppaPigDataset(
             target_size=model.config["data"]["target_size"],
             split=['val'],
@@ -123,7 +145,8 @@ def resampled_retrieval_score(fragment_type,
             duration=duration,
             audio_sample_rate=model.config["data"]['audio_sample_rate'],
             jitter=jitter,
-            jitter_sd=jitter_sd
+            jitter_sd=jitter_sd,
+            scrambled_video=scrambled_video,
             )
         key = lambda x: x.audio_duration
         loader = pig.data.grouped_loader(base_ds, key, pig.data.collate, batch_size=batch_size)
@@ -134,10 +157,11 @@ def resampled_retrieval_score(fragment_type,
         rec10 = pig.metrics.resampled_recall(V, A, size=100, n_samples=500, n=10)
         return rec10
 
-def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE):
+
+def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE, scrambled_video=False):
     from pig.triplet import TripletScorer
     scorer = TripletScorer(fragment_type=fragment_type, split=['val'], target_size=model.config["data"]["target_size"],
-                           audio_sample_rate=model.config["data"]['audio_sample_rate'])
+                           audio_sample_rate=model.config["data"]['audio_sample_rate'], scrambled_video=scrambled_video)
     acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 
@@ -190,22 +214,9 @@ def add_condition(data):
             and config['audio']['freeze_encoder_layers'] == 12
         rows.append(record)
     return rows
-    
-def run(gpu=0, versions=VERSIONS):
-    logging.getLogger().setLevel(logging.INFO)
-    rows = []
-    for version in versions:
-        logging.info(f"Evaluating version {version}")
-        net, path = load_best_model(f"lightning_logs/version_{version}/")
-        for row in score(net, gpus=[gpu]):
-            row['version']         = version
-            row['checkpoint_path'] = path
-            row['hparams_path']    = f"lightning_logs/version_{version}/hparams.yaml"
-            rows.append(row)
-    scores = pd.DataFrame.from_records(rows)
-    return scores
 
-def full_run(gpu=0, versions=VERSIONS):
+
+def main(gpu=0, versions=VERSIONS):
     logging.getLogger().setLevel(logging.INFO)
     rows = []
     for version in versions:
@@ -217,10 +228,4 @@ def full_run(gpu=0, versions=VERSIONS):
             row['hparams_path']    = f"lightning_logs/version_{version}/hparams.yaml"
             rows.append(row)
     torch.save(add_condition(rows), "results/full_scores.pt")
-    
-def main(gpu=0, versions=VERSIONS):
-    scores = run(gpu=gpu, versions=versions)
-    scores.to_csv("results/scores.csv", index=False, header=True)
-    
-    
 
