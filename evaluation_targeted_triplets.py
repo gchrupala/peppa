@@ -66,9 +66,10 @@ def evaluate(model, version):
 
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
+    audio_sample_rate = model.config["data"].get("audio_sample_rate", 44100)
     ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False,
                                            target_size=model.config["data"]["target_size"],
-                                           audio_sample_rate=model.config["data"]["audio_sample_rate"])
+                                           audio_sample_rate=audio_sample_rate)
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
     if len(ds) == 0:
         return []
@@ -105,7 +106,7 @@ def get_all_results_df(version, pos_tags, per_word_results=False):
 def create_duration_results_plots(version):
     results_data_all = get_all_results_df(version, POS_TAGS)
 
-    results_data_all["clipDuration"] = results_data_all["clipEnd"] - results_data_all["clipStart"]
+    results_data_all["clipDuration"] = results_data_all["clipEnd"].astype(float) - results_data_all["clipStart"].astype(float)
     results_data_all["clipDuration"] = pd.qcut(results_data_all["clipDuration"], 5)
 
     results_data_all["num_tokens"] = results_data_all.tokenized.apply(len)
@@ -151,6 +152,14 @@ def bootstrap_scores_for_column(results, column_name):
         results_boot.extend(items)
 
     return pd.DataFrame.from_records(results_boot)
+
+
+def get_average_result_bootstrapping(version):
+    results_data_words_all = get_all_results_df(version, POS_TAGS)
+    result_bootstrapped = list(get_bootstrapped_scores(results_data_words_all.result))
+    mean_results, std_results = np.mean(result_bootstrapped), np.std(result_bootstrapped)
+    print(f"Average result: {mean_results} +/-{std_results}")
+    return mean_results, std_results
 
 
 def create_per_word_result_plots(version):
@@ -276,6 +285,7 @@ if __name__ == "__main__":
             result_rows = evaluate(net, version)
             rows.extend(result_rows)
 
+        get_average_result_bootstrapping(version)
         create_per_word_result_plots(version)
         create_duration_results_plots(version)
         if args.correlate_predictors:
@@ -283,4 +293,4 @@ if __name__ == "__main__":
 
     if len(rows) > 0:
         scores = pd.DataFrame.from_records(rows)
-        scores.to_csv("{RESULT_DIR}/scores_targeted_triplets.csv", index=False, header=True)
+        scores.to_csv(f"{RESULT_DIR}/scores_targeted_triplets.csv", index=False, header=True)

@@ -199,7 +199,7 @@ def grouped_loader(dataset, key, collate_fn, batch_size=8):
     return DataLoader(gds, batch_size=None, batch_sampler=None) 
             
 class PeppaPigDataset(Dataset):
-    def __init__(self, force_cache=False, cache_dir=None, **kwargs):
+    def __init__(self, force_cache=False, cache_dir=None, scrambled_video=False, **kwargs):
         dataset = PeppaPigIterableDataset(**kwargs)
         
         if cache_dir is None:
@@ -213,6 +213,7 @@ class PeppaPigDataset(Dataset):
                 logging.info(f"Caching item {self.cache_dir}/{i}.pt")
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
         self.length = len(glob.glob(f"{self.cache_dir}/*.pt"))
+        self.scrambled_video = scrambled_video
         
     def __len__(self):
         return self.length
@@ -221,7 +222,12 @@ class PeppaPigDataset(Dataset):
         if idx >= self.length:
             raise IndexError("Index out of range")
         else:
-            return torch.load(f"{self.cache_dir}/{idx}.pt")
+            item = torch.load(f"{self.cache_dir}/{idx}.pt")
+            if self.scrambled_video:
+                # Shuffle along temporal dimension
+                idx = torch.randperm(item.video.shape[1])
+                item.video = item.video[:, idx]
+            return item
 
     @classmethod
     def load(cls, directory):
