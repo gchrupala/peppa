@@ -226,7 +226,7 @@ class PeppaPigDataset(Dataset):
             if self.scrambled_video:
                 # Shuffle along temporal dimension
                 idx = torch.randperm(item.video.shape[1])
-                item = item.video[:, idx]
+                item.video = item.video[:, idx]
             return item
 
     @classmethod
