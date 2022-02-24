@@ -164,7 +164,8 @@ def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE, scramble
     from pig.triplet import TripletScorer
     scorer = TripletScorer(fragment_type=fragment_type, split=['val'], target_size=model.config["data"]["target_size"],
                            audio_sample_rate=model.config["data"].get('audio_sample_rate',
-                                                                      pig.data.DEFAULT_SAMPLE_RATE))
+                                                                      pig.data.DEFAULT_SAMPLE_RATE),
+                           scrambled_video=scrambled_video)
     acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 
