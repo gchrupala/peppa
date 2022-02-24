@@ -293,4 +293,4 @@ if __name__ == "__main__":
 
     if len(rows) > 0:
         scores = pd.DataFrame.from_records(rows)
-        scores.to_csv("{RESULT_DIR}/scores_targeted_triplets.csv", index=False, header=True)
+        scores.to_csv(f"{RESULT_DIR}/scores_targeted_triplets.csv", index=False, header=True)
