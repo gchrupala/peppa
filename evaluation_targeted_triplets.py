@@ -42,7 +42,7 @@ def evaluate(model, version):
         for pos in POS_TAGS:
             per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
             acc_mean = np.mean(per_sample_results)
-            acc_std = get_bootstrapped_scores(per_sample_results)
+            acc_std = np.std(list(get_bootstrapped_scores(per_sample_results)))
             row = dict(
                 fragment_type=fragment_type,
                 pos=pos,
