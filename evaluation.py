@@ -1,3 +1,5 @@
+import argparse
+
 import torch
 import glob
 from pig.models import PeppaPig
@@ -17,7 +19,6 @@ random.seed(666)
 torch.manual_seed(666)
 
 BATCH_SIZE=8
-VERSIONS = (206979, 206980, 206981,  206985)
 
 
 def data_statistics():
@@ -205,13 +206,13 @@ def add_condition(data):
     return rows
 
 
-def full_run(gpu=0, versions=VERSIONS):
+def full_run(gpus, versions):
     logging.getLogger().setLevel(logging.INFO)
     for version in versions:
         rows = []
         logging.info(f"Evaluating version {version}")
         net, path = load_best_model(f"lightning_logs/version_{version}/")
-        for row in full_score(net, gpus=[gpu]):
+        for row in full_score(net, gpus=gpus):
             row['version']         = version
             row['checkpoint_path'] = path
             row['hparams_path']    = f"lightning_logs/version_{version}/hparams.yaml"
@@ -219,3 +220,14 @@ def full_run(gpu=0, versions=VERSIONS):
         torch.save(add_condition(rows), f"results/full_scores_v{version}.pt")
     
 
+def get_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--versions", type=str, nargs="+")
+    parser.add_argument("--gpus", type=int, nargs="+", default=[0])
+
+    return parser.parse_args()
+
+
+if __name__ == "__main__":
+    args = get_args()
+    full_run(args.gpus, args.versions)

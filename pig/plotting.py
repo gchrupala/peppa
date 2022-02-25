@@ -1,7 +1,7 @@
 from plotnine import *
 import torch
 import pandas as pd
-import pig.evaluation as ev
+import evaluation as ev
 import yaml
 
 def score_points(data):

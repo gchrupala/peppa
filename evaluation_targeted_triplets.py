@@ -4,11 +4,12 @@ import os
 from collections import Counter
 
 import torch
-from plotnine import ggplot, aes, geom_boxplot, ggtitle, ggsave, theme, element_text, xlab, geom_bar, ylab
+from plotnine import ggplot, aes, geom_boxplot, ggsave, theme, element_text, xlab, geom_bar, ylab
 from scipy.stats import pearsonr
 
 from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS, POS_TAGS
-from pig.evaluation import load_best_model
+from pig.data import DEFAULT_SAMPLE_RATE
+from evaluation import load_best_model
 
 import pytorch_lightning as pl
 import logging
@@ -40,10 +41,13 @@ def evaluate(model, version):
     for fragment_type in FRAGMENTS:
         for pos in POS_TAGS:
             per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
+            acc_mean = np.mean(per_sample_results)
+            acc_std = np.std(list(get_bootstrapped_scores(per_sample_results)))
             row = dict(
                 fragment_type=fragment_type,
                 pos=pos,
-                targeted_triplet_acc=np.mean(per_sample_results),
+                targeted_triplet_acc=acc_mean,
+                targeted_tiplet_acc_std=acc_std,
                 version=version,
                 hparams_path=f"lightning_logs/version_{version}/hparams.yaml"
             )
@@ -66,7 +70,7 @@ def evaluate(model, version):
 
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
-    audio_sample_rate = model.config["data"].get("audio_sample_rate", 44100)
+    audio_sample_rate = model.config["data"].get("audio_sample_rate", DEFAULT_SAMPLE_RATE)
     ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False,
                                            target_size=model.config["data"]["target_size"],
                                            audio_sample_rate=audio_sample_rate)
@@ -113,33 +117,29 @@ def create_duration_results_plots(version):
     results_data_all["num_tokens"] = pd.cut(results_data_all["num_tokens"], 3)
 
     g = ggplot(results_data_all) + geom_bar(aes(x='clipDuration')) + xlab("") + ylab("# samples") + theme(
-        axis_text_x=element_text(angle=85)) + ggtitle(
-        f"Number of samples per duration")
+        axis_text_x=element_text(angle=85))
     ggsave(g, f"{RESULT_DIR}/num_samples_per_duration.pdf")
 
     g = ggplot(results_data_all) + geom_bar(aes(x='num_tokens')) + xlab("") + ylab("# samples") + theme(
-        axis_text_x=element_text(angle=85)) + ggtitle(
-        f"Number of samples per number of tokens")
+        axis_text_x=element_text(angle=85))
     ggsave(g, f"{RESULT_DIR}/num_samples_per_num_tokens.pdf")
 
     results_boot = bootstrap_scores_for_column(results_data_all, "clipDuration")
 
     g = ggplot(results_boot, aes(x="clipDuration", y="score")) + geom_boxplot() + xlab("") + theme(
-        axis_text_x=element_text(angle=85)) + ggtitle(
-        f"Accuracy per test clip duration for model ID: {version}")
+        axis_text_x=element_text(angle=85))
     ggsave(g, f"{RESULT_DIR}/results_per_duration_version_{version}.pdf")
 
     results_boot = bootstrap_scores_for_column(results_data_all, "num_tokens")
 
     g = ggplot(results_boot, aes(x="num_tokens", y="score")) + geom_boxplot() + xlab("") + theme(
-        axis_text_x=element_text(angle=85)) + ggtitle(
-        f"Accuracy per number of tokens for model ID: {version}")
+        axis_text_x=element_text(angle=85))
     ggsave(g, f"{RESULT_DIR}/results_per_num_tokens_version_{version}.pdf")
 
 
 def get_bootstrapped_scores(values, n_resamples=100):
     for n in range(n_resamples):
-        result = values.sample(len(values), replace=True).mean()
+        result = np.random.choice(values, size=len(values), replace=True).mean()
         yield result
 
 
@@ -147,7 +147,7 @@ def bootstrap_scores_for_column(results, column_name):
     results_boot = []
     for value in results[column_name].unique():
         results_data_word = results[results[column_name] == value].result
-        result_bootstrapped = get_bootstrapped_scores(results_data_word)
+        result_bootstrapped = get_bootstrapped_scores(results_data_word.values)
         items = [{"score": res, column_name: value} for res in result_bootstrapped]
         results_boot.extend(items)
 
@@ -156,7 +156,7 @@ def bootstrap_scores_for_column(results, column_name):
 
 def get_average_result_bootstrapping(version):
     results_data_words_all = get_all_results_df(version, POS_TAGS)
-    result_bootstrapped = list(get_bootstrapped_scores(results_data_words_all.result))
+    result_bootstrapped = list(get_bootstrapped_scores(results_data_words_all.result.values))
     mean_results, std_results = np.mean(result_bootstrapped), np.std(result_bootstrapped)
     print(f"Average result: {mean_results} +/-{std_results}")
     return mean_results, std_results
@@ -168,17 +168,19 @@ def create_per_word_result_plots(version):
         if len(results_data_words) > 0:
             results_boot = bootstrap_scores_for_column(results_data_words, "word")
 
+            if pos == "NOUN":
+                figsize = (15, 6)
+            else:
+                figsize  = (8, 6)
             g = ggplot(results_boot, aes(x='reorder(word, score)', y="score")) + geom_boxplot() + xlab("") \
-                + theme(axis_text_x=element_text(angle=85), figure_size=(15, 6)) \
-                + ggtitle(f"Per-word targeted triplets accuracy for model ID: {version} | POS: {pos}")
+                + theme(axis_text_x=element_text(angle=85), figure_size=figsize)
             ggsave(g, f"{RESULT_DIR}/results_per_word_version_{version}_{pos}.pdf")
 
             num_samples_per_word = results_data_words["word"].value_counts(ascending=True).index.tolist()
             word_cat = pd.Categorical(results_data_words['word'], categories=num_samples_per_word)
             results_data_words = results_data_words.assign(word_cat=word_cat)
             g = ggplot(results_data_words) + geom_bar(aes(x='word_cat')) + xlab("") + ylab("# samples") + theme(
-                axis_text_x=element_text(angle=85), figure_size=(15, 6)) + ggtitle(
-                f"Number of samples: {pos}")
+                axis_text_x=element_text(angle=85), figure_size=figsize)
             ggsave(g, f"{RESULT_DIR}/num_samples_per_word_{pos}.pdf")
 
 

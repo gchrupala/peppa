@@ -20,32 +20,26 @@ pip install -r requirements.txt
 There is a rudimentary command-line interface. You can run the training code by executing the function script `run.py`, and optionally passing 
 in a configuration file.
 ```
-python run.py --config_file config.yaml
+python run.py --config_file hparams.yaml
 ```
-Example configuration files are in [lightning_logs](lightning_logs) (named `hparams.yaml`).
+Example configuration files are in [lightning_logs](lightning_logs).
 
 
 ### Use
 You can find saved checkpoints of trained models at https://surfdrive.surf.nl/files/index.php/s/gNnZ4iSoKBDsOGK. 
 See [example.py](example.py) for an example of how to load a model and use it to encode some audio files.
 
-### Analyze
+### Evaluate
 
-Generate tables in [results/](results/).
-
+#### Performance metrics
+Evaluate trained model checkpoints as specified in the `--versions` argument:
 ```
-python -c 'import pig.evaluation as m; m.main(0)'
+python evaluation.py --versions 48
 ```
 
-Generate tables and figures in [results/](results/).
+#### Minimal pairs evaluation
 
-```
-python -c  'import pig.grsa as m; m.main()'
-python -c  'import pig.stats as m; m.main()'
-```
-#### Targeted triplets evaluation
-
-Run the targeted triplets evaluation for the model checkpoints as specified in the `--versions` argument:
+Run the minimal pairs evaluation:
 ```
 python evaluation_targeted_triplets.py --versions 48
 ```
