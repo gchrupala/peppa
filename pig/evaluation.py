@@ -69,47 +69,30 @@ def full_score(model, gpus):
     trainer = pl.Trainer(gpus=gpus, logger=False, precision=16)
     data = []
     for fragment_type in ['dialog', 'narration']:
-        logging.info(f"Evaluating: {fragment_type}, triplet")
-        acc = triplet_score(fragment_type, model, trainer)
-        logging.info(f"Evaluating: {fragment_type}, triplet (scrambled_video)")
-        acc_scrambled_video = triplet_score(fragment_type, model, trainer, scrambled_video=True)
-        logging.info(f"Evaluating: {fragment_type}, recall_fixed")
-        rec_fixed = resampled_retrieval_score(fragment_type,
-                                    model,
-                                    trainer,
-                                    duration=2.3,
-                                    jitter=False,
-                                    jitter_sd=None)
-        logging.info(f"Evaluating: {fragment_type}, recall_fixed (scrambled_video)")
-        rec_fixed_scrambled_video = resampled_retrieval_score(fragment_type,
-                                              model,
-                                              trainer,
-                                              duration=2.3,
-                                              jitter=False,
-                                              jitter_sd=None,
-                                              scrambled_video=True)
-        logging.info(f"Evaluating: {fragment_type}, recall_jitter")
-        rec_jitter = resampled_retrieval_score(fragment_type,
-                                     model,
-                                     trainer,
-                                     duration=2.3,
-                                     jitter=True,
-                                     jitter_sd=0.5)
-        logging.info(f"Evaluating: {fragment_type}, recall_jitter (scrambled_video")
-        rec_jitter_scrambled_video = resampled_retrieval_score(fragment_type,
-                                               model,
-                                               trainer,
-                                               duration=2.3,
-                                               jitter=True,
-                                               jitter_sd=0.5,
-                                               scrambled_video=True)
-        data.append(dict(fragment_type=fragment_type,
-                         triplet_acc=acc,
-                         triplet_acc_scrambled_video=acc_scrambled_video,
-                         recall_at_10_fixed=rec_fixed,
-                         recall_at_10_fixed_scrambled_video=rec_fixed_scrambled_video,
-                         recall_at_10_jitter=rec_jitter,
-                         recall_at_10_jitter_scrambled_video=rec_jitter_scrambled_video))
+        for scrambled_video in [False, True]:
+            logging.info(f"Evaluating: {fragment_type}, scramble={scrambled_video} triplet")
+            acc = triplet_score(fragment_type, model, trainer, scrambled_video=scrambled_video)
+            logging.info(f"Evaluating: {fragment_type}, scramble={scrambled_video} recall_fixed")
+            rec_fixed = resampled_retrieval_score(fragment_type,
+                                                  model,
+                                                  trainer,
+                                                  duration=2.3,
+                                                  jitter=False,
+                                                  jitter_sd=None,
+                                                  scrambled_video=scrambled_video)
+            logging.info(f"Evaluating: {fragment_type}, scramble={scrambled_video} recall_jitter")
+            rec_jitter = resampled_retrieval_score(fragment_type,
+                                                   model,
+                                                   trainer,
+                                                   duration=2.3,
+                                                   jitter=True,
+                                                   jitter_sd=0.5,
+                                                   scrambled_video=scrambled_video)
+            data.append(dict(fragment_type=fragment_type,
+                             scrambled_video=scrambled_video,
+                             triplet_acc=acc,
+                             recall_at_10_fixed=rec_fixed,
+                             recall_at_10_jitter=rec_jitter))
     return data
         
 def retrieval_score(fragment_type, model, trainer, duration=2.3, jitter=False, jitter_sd=None, batch_size=BATCH_SIZE):
