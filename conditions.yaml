@@ -1,0 +1,19 @@
+freeze_wav2vec:
+- 335
+- 336
+jitter:
+- 335
+- 351
+#resolution:
+#- 335
+pretraining:
+- 335 # AV
+- 375 # V
+- 376 # A
+- 378 # -
+sample_rate:
+- 335
+- 340
+static:
+- 376
+- 384
