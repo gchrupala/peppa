@@ -5,19 +5,17 @@ import numpy as np
 import logging
 import glob
 import moviepy.editor as m
-import time
 import json
 import os
 import os.path
 import torch
 import torch.nn
-import pig.evaluation
+import evaluation
 import random
 import plotnine as pn
 from pig.models import PeppaPig
 from pig.data import audioclip_loader, audioarray_loader, \
     grouped_audioclip_loader, grouped_audioarray_loader
-from pig.util import cosine_matrix
 from sentence_transformers import SentenceTransformer
 from torchtext.vocab import GloVe
 from copy import deepcopy
@@ -173,7 +171,7 @@ def embed_utterances(version, fragment_type='dialog', grouped=True, embedder='st
     data = UttData(audio_paths, anno_paths, multiword=True)
 
         
-    net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(version))
+    net_2, net_path = evaluation.load_best_model(checkpoint_path(version))
     config_1 = deepcopy(net_2.config)
     config_1['audio']['pooling'] = 'average'
     config_1['audio']['project'] = projection
@@ -209,7 +207,6 @@ def pairwise(version, fragment_type='dialog', multiword=False):
     from pig.util import cosine_matrix
     from torchtext.vocab import GloVe
     from sentence_transformers import SentenceTransformer
-    from copy import deepcopy
     cos = torch.nn.CosineSimilarity(dim=0, eps=1e-6)
     audio_paths = glob.glob(f"data/out/realign/{fragment_type}/ep_*/*/*.wav")
     anno_paths  = [ meta(path) for path in audio_paths ]
@@ -217,7 +214,7 @@ def pairwise(version, fragment_type='dialog', multiword=False):
     data = UttData(audio_paths, anno_paths, multiword=multiword)
 
         
-    net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(version))
+    net_2, net_path = evaluation.load_best_model(checkpoint_path(version))
     net_1 = PeppaPig(net_2.config)
     net_2.eval(); net_2.cuda()
     net_1.eval(); net_1.cuda()
@@ -361,7 +358,6 @@ def prepare_probe(embedder, feature, label, balanced=True):
     return X, Y
 
 def probe(embedder, labels=['speaker']):
-    from sklearn.linear_model import LogisticRegression, Ridge
     from sklearn.neural_network import MLPClassifier, MLPRegressor
     from sklearn.model_selection import GridSearchCV
     from sklearn.pipeline import make_pipeline
@@ -439,7 +435,7 @@ class Embedder:
                 self.duration[fragment_type].append(utt.duration)
         
     def embed(self, grouped=True):
-        net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(self.version))
+        net_2, net_path = evaluation.load_best_model(checkpoint_path(self.version))
         net_2.eval().cuda()
         net_1 = PeppaPig(net_2.config).eval().cuda()
         config_0 = deepcopy(net_2.config)
@@ -486,7 +482,7 @@ class Embedder:
 def feat_speak(fragment_type, embed=None, version=None):
     """Either embed or version must be specified."""
     if embed is None:
-        net_2, net_path = pig.evaluation.load_best_model(checkpoint_path(version))
+        net_2, net_path = evaluation.load_best_model(checkpoint_path(version))
         net_2.eval(); net_2.cuda()
         embed = lambda batch: net_2.encode_audio(batch.to(net_2.device)).squeeze(dim=1)
     loader = audioclip_loader(utt.audio for utt in data.utterances(read_audio=True))

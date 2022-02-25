@@ -1,3 +1,5 @@
+import argparse
+
 import torch
 import glob
 from pig.models import PeppaPig
@@ -17,8 +19,6 @@ random.seed(666)
 torch.manual_seed(666)
 
 BATCH_SIZE=8
-
-
 
 def data_statistics():
     rows = []
@@ -232,6 +232,7 @@ def full_run(versions = None, gpu=0):
         torch.save(add_condition(rows), f"results/full_scores_v{version}.pt")
     
 
+
 def test_run(gpu=0):
     conditions = yaml.safe_load(open("conditions.yaml"))
     version = conditions['pretraining'][0]
@@ -259,3 +260,4 @@ def test_table():
          'Triplet Acc':
           f"{data['triplet_acc'].round(3).item()} ± {data['triplet_acc_std'].round(3).item()}"}]).\
          to_latex(buf=f"results/scores_test.tex", index=False)
+
