@@ -41,6 +41,6 @@ python evaluate.py --versions 335
 
 Run the minimal pairs evaluation:
 ```
-python evaluation_targeted_triplets.py --versions 48
+python evaluation_targeted_triplets.py --versions 335
 ```
 
