@@ -4,38 +4,49 @@ data:
   extract: false
   prepare: false
   iterable: false
-  force_cache: false
+  audio_sample_rate: 44100
   target_size:
   - 180
   - 100
   train:
-    batch_size: 6
+    force_cache: false
+    batch_size: 8
     jitter: false
+    jitter_sd: null
+    duration: 2.3
     shuffle: true
   val:
-    batch_size: 6
-  test:
+    force_cache: false
     batch_size: 8
+    jitter: false
+    duration: 2.3
+  test:
+    force_cache: false
+    batch_size: 8
+    jitter: false
+    duration: 2.3
 video:
-  pretrained: false
+  pretrained: true
   project: true
   version: r2plus1d_18
   pooling: attention
 audio:
   path: data/in/wav2vec/wav2vec_small.pt
-  pretrained: false
+  pretrained: true
   freeze_feature_extractor: false
   freeze_encoder_layers: null
   pooling: attention
+  full: true
 training:
   trainer_args:
     gpus:
-    - 2
+    - 1
     auto_select_gpus: false
     accumulate_grad_batches: 8
+    precision: 16
 optimizer:
   lr: 0.0001
   warmup: 0.1
   schedule: warmup_linear
-  t_total: 32640
-git_commit: a95eef598658d2ef72dad9e9d53436ffb2515eee
+  t_total: 15000
+git_commit: 4ca65bfb872ba598098bec0e9642422d8f9345e1

@@ -10,7 +10,8 @@ data:
   train:
     force_cache: false
     batch_size: 8
-    jitter: false
+    jitter: true
+    jitter_sd: 0.5
     duration: 2.3
     shuffle: true
   val:
@@ -31,7 +32,7 @@ video:
 audio:
   path: data/in/wav2vec/wav2vec_small.pt
   pretrained: true
-  freeze_feature_extractor: true
+  freeze_feature_extractor: false
   freeze_encoder_layers: null
   pooling: attention
   full: true
@@ -46,5 +47,5 @@ optimizer:
   lr: 0.0001
   warmup: 0.1
   schedule: warmup_linear
-  t_total: 10000
-git_commit: ee149690ef6bf7f4cc44f25b468e0aea82ef983d
+  t_total: 15000
+git_commit: 9826062e7f35e345463a3cc24031b1293b22d790

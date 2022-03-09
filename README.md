@@ -34,13 +34,13 @@ See [example.py](example.py) for an example of how to load a model and use it to
 #### Performance metrics
 Evaluate trained model checkpoints as specified in the `--versions` argument:
 ```
-python evaluation.py --versions 48
+python evaluate.py --versions 335
 ```
 
 #### Minimal pairs evaluation
 
 Run the minimal pairs evaluation:
 ```
-python evaluation_targeted_triplets.py --versions 48
+python evaluation_targeted_triplets.py --versions 335
 ```
 
