@@ -18,6 +18,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 
+from pig.evaluation import add_condition
 from pig.metrics import batch_triplet_accuracy
 from pig.models import PeppaPig
 from run import default_config
@@ -41,8 +42,8 @@ def evaluate(model, version):
     for fragment_type in FRAGMENTS:
         for pos in POS_TAGS:
             per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
-            acc_mean = np.mean(per_sample_results)
-            acc_std = np.std(list(get_bootstrapped_scores(per_sample_results)))
+            result_bootstrapped = list(get_bootstrapped_scores(per_sample_results))
+            acc_mean, acc_std = np.mean(result_bootstrapped), np.std(result_bootstrapped)
             row = dict(
                 fragment_type=fragment_type,
                 pos=pos,
@@ -300,12 +301,10 @@ if __name__ == "__main__":
             result_rows = evaluate(net, version)
             rows.extend(result_rows)
 
+            torch.save(rows, f"{RESULT_DIR}/minimal_pairs_scores_v{version}.pt")
+
         get_average_result_bootstrapping(version)
         create_per_word_result_plots(version, args.min_samples)
         create_duration_results_plots(version)
         if args.correlate_predictors:
             create_correlation_results_plots(version, args.min_samples)
-
-    if len(rows) > 0:
-        scores = pd.DataFrame.from_records(rows)
-        scores.to_csv(f"{RESULT_DIR}/scores_targeted_triplets.csv", index=False, header=True)
