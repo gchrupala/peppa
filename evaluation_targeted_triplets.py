@@ -24,7 +24,7 @@ from run import default_config
 
 import matplotlib.pyplot as plt
 
-from pig.targeted_triplets import collate_triplets, PeppaTargetedTripletCachedDataset
+from pig.targeted_triplets import collate_triplets, PeppaTargetedTripletCachedDataset, get_eval_set_info
 
 BATCH_SIZE = 8
 NUM_WORKERS = 8
@@ -54,12 +54,11 @@ def evaluate(model, version):
             print(row)
 
             # Save per-sample results for detailed analysis
-            eval_info_file = f"data/eval/eval_set_{row['fragment_type']}_{row['pos']}.csv"
-            results_data = pd.read_csv(eval_info_file, index_col="id")
+            results_data = get_eval_set_info(row['fragment_type'], row['pos'])
 
             assert len(results_data) == len(per_sample_results), \
                 f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from " \
-                f"{eval_info_file} ({len(results_data)})"
+                f"eval set CSV file: ({len(results_data)})"
 
             results_data["result"] = per_sample_results
             path = f"{RESULT_DIR}/version_{version}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv"
@@ -85,7 +84,7 @@ def targeted_triplet_score(fragment_type, pos, model, trainer):
     return results
 
 
-def get_all_results_df(version, pos_tags, per_word_results=False):
+def get_all_results_df(version, pos_tags, per_word_results=False, min_samples=None):
     results_data_all = []
     for pos in pos_tags:
         for fragment_type in FRAGMENTS:
@@ -94,6 +93,14 @@ def get_all_results_df(version, pos_tags, per_word_results=False):
             results_data_all.append(results_data_fragment)
 
     results_data_all = pd.concat(results_data_all, ignore_index=True)
+
+    if min_samples:
+        counts = results_data_all.target_word.value_counts()
+        words_enough_samples = counts[counts > min_samples].keys().to_list()
+        if len(words_enough_samples) == 0:
+            print(f"No words with enough samples (>{min_samples}) for POS tags {pos_tags} found.")
+        results_data_all = results_data_all[
+            results_data_all.target_word.isin(words_enough_samples) | results_data_all.distractor_word.isin(words_enough_samples)]
 
     if per_word_results:
         # Duplicate results and introduce "word" (either target or distractor word) column
@@ -162,9 +169,9 @@ def get_average_result_bootstrapping(version):
     return mean_results, std_results
 
 
-def create_per_word_result_plots(version):
+def create_per_word_result_plots(version, min_samples):
     for pos in POS_TAGS:
-        results_data_words = get_all_results_df(version, [pos], per_word_results=True)
+        results_data_words = get_all_results_df(version, [pos], per_word_results=True, min_samples=min_samples)
         if len(results_data_words) > 0:
             results_boot = bootstrap_scores_for_column(results_data_words, "word")
 
@@ -184,11 +191,11 @@ def create_per_word_result_plots(version):
             ggsave(g, f"{RESULT_DIR}/num_samples_per_word_{pos}.pdf")
 
 
-def create_correlation_results_plots(version):
+def create_correlation_results_plots(version, min_samples):
     word_concreteness_ratings = get_word_concreteness_ratings()
     dataset_word_frequencies = get_dataset_word_frequencies()
 
-    results_data_words_all = get_all_results_df(version, POS_TAGS, per_word_results=True)
+    results_data_words_all = get_all_results_df(version, POS_TAGS, per_word_results=True, min_samples=min_samples)
     mean_acc = results_data_words_all.groupby("word")["result"].agg("mean")
 
     # Correlate performance with word frequency in train split
@@ -263,6 +270,12 @@ def get_args():
     parser.add_argument("--plot-only", action="store_true", default=False,
                         help="Only plot results, do not re-run evaluation")
 
+    parser.add_argument(
+        "--min-samples",
+        type=int,
+        default=100,
+        help="Minimum number of test samples for a word to be included",
+    )
     parser.add_argument("--correlate-predictors", action="store_true", default=False)
 
     return parser.parse_args()
@@ -288,10 +301,10 @@ if __name__ == "__main__":
             rows.extend(result_rows)
 
         get_average_result_bootstrapping(version)
-        create_per_word_result_plots(version)
+        create_per_word_result_plots(version, args.min_samples)
         create_duration_results_plots(version)
         if args.correlate_predictors:
-            create_correlation_results_plots(version)
+            create_correlation_results_plots(version, args.min_samples)
 
     if len(rows) > 0:
         scores = pd.DataFrame.from_records(rows)

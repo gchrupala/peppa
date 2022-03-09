@@ -53,6 +53,12 @@ class PeppaTargetedTripletCachedDataset(Dataset):
         return torch.load(f"{self.cache_dir}/{idx}.pt")
 
 
+def get_eval_set_info(fragment, pos):
+    eval_set = pd.read_csv(f"data/eval/eval_set_{fragment}_{pos}.csv", index_col="id")
+
+    return eval_set
+
+
 class PeppaTargetedTripletDataset(Dataset):
 
     def __init__(self, directory, target_size=(180, 100), audio_sample_rate=44100):
@@ -66,8 +72,7 @@ class PeppaTargetedTripletDataset(Dataset):
     def from_csv(cls, fragment, pos, target_size=(180, 100), audio_sample_rate=44100):
         directory = f"data/out/val_{fragment}_targeted_triplets_{pos}"
         self = cls(directory=directory, target_size=target_size, audio_sample_rate=audio_sample_rate)
-        eval_set_info = pd.read_csv(f"data/eval/eval_set_{fragment}_{pos}.csv")
-
+        eval_set_info = get_eval_set_info(fragment, pos)
         self._load_eval_set_and_save_clip_info(eval_set_info)
         self._sample = list(self.sample())
         self._save_sample()
@@ -109,8 +114,7 @@ class PeppaTargetedTripletDataset(Dataset):
         os.makedirs(self.directory, exist_ok=True)
         self._clip_info = {}
 
-        for _, sample in eval_set_info.iterrows():
-            id = sample.id
+        for id, sample in eval_set_info.iterrows():
             id_counterexample = sample.id_counterexample
 
             clip = m.VideoFileClip(sample.episode_filepath)
