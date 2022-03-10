@@ -9,7 +9,7 @@ from scipy.stats import pearsonr
 
 from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS, POS_TAGS
 from pig.data import DEFAULT_SAMPLE_RATE
-from evaluation import load_best_model
+from pig.evaluation import load_best_model
 
 import pytorch_lightning as pl
 import logging
