@@ -9,7 +9,7 @@ from scipy.stats import pearsonr
 
 from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS, POS_TAGS
 from pig.data import DEFAULT_SAMPLE_RATE
-from pig.evaluation import load_best_model
+from pig.evaluation import load_best_model, pretraining
 
 import pytorch_lightning as pl
 import logging
@@ -20,8 +20,6 @@ import seaborn as sns
 
 from pig.evaluation import add_condition
 from pig.metrics import batch_triplet_accuracy
-from pig.models import PeppaPig
-from run import default_config
 
 import matplotlib.pyplot as plt
 
@@ -40,33 +38,34 @@ def evaluate(model, version):
         gpus = 1
     trainer = pl.Trainer(logger=False, gpus=gpus)
     for fragment_type in FRAGMENTS:
+        row = dict(
+                fragment_type=fragment_type,
+                version=version,
+                hparams_path=f"lightning_logs/version_{version}/hparams.yaml"
+        )
         for pos in POS_TAGS:
             per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
             result_bootstrapped = list(get_bootstrapped_scores(per_sample_results))
             acc_mean, acc_std = np.mean(result_bootstrapped), np.std(result_bootstrapped)
-            row = dict(
-                fragment_type=fragment_type,
-                pos=pos,
-                targeted_triplet_acc=acc_mean,
-                targeted_tiplet_acc_std=acc_std,
-                version=version,
-                hparams_path=f"lightning_logs/version_{version}/hparams.yaml"
-            )
-            print(row)
+            row.update({
+                f"targeted_triplet_{pos}_acc": acc_mean,
+                f"targeted_triplet_{pos}_acc_std": acc_std,
+            })
 
             # Save per-sample results for detailed analysis
-            results_data = get_eval_set_info(row['fragment_type'], row['pos'])
+            results_data = get_eval_set_info(fragment_type, pos)
 
             assert len(results_data) == len(per_sample_results), \
                 f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from " \
                 f"eval set CSV file: ({len(results_data)})"
 
             results_data["result"] = per_sample_results
-            path = f"{RESULT_DIR}/version_{version}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv"
+            path = f"{RESULT_DIR}/version_{version}/targeted_triplets_{fragment_type}_{pos}.csv"
             os.makedirs(os.path.dirname(path), exist_ok=True)
             results_data.to_csv(path)
 
-            yield row
+        print(row)
+        yield row
 
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
@@ -282,6 +281,33 @@ def get_args():
     return parser.parse_args()
 
 
+def create_results_table():
+    data = torch.load(f"{RESULT_DIR}/minimal_pairs_scores.pt")
+    data = add_condition(data)
+    data = pd.DataFrame.from_records(data)
+    data['pretraining'] = pd.Categorical(data.apply(pretraining, axis=1),
+                                         categories=['None', 'V', 'A', 'AV'])
+    data = data.fillna(dict(scrambled_video=False))
+
+    for pos in POS_TAGS:
+        data[f"targeted_triplet_{pos}_result"] = data[f"targeted_triplet_{pos}_acc"].round(3).astype(str) + "±" + data[f"targeted_triplet_{pos}_acc_std"].round(3).astype(str)
+
+    data["finetune_wav2vec"] = ~data["freeze_wav2vec"]
+    data["temporal"] = ~data["static"]
+    data[['jitter', 'temporal', 'finetune_wav2vec', #'pretraining'
+          'targeted_triplet_NOUN_result', 'targeted_triplet_VERB_result']] \
+        .replace(True, "Yes").replace(False, "") \
+        .rename(columns=dict(jitter='Jitter',
+                             temporal='Temporal',
+                             finetune_wav2vec="Finetune",
+                             # pretraining='Pretraining',
+                             targeted_triplet_NOUN_result='Nouns',
+                             targeted_triplet_VERB_result='Verbs', )) \
+        .to_latex(buf=f"{RESULT_DIR}/minimal_pairs.tex",
+                  index=False,
+                  float_format="%.3f")
+
+
 if __name__ == "__main__":
     logging.getLogger().setLevel(logging.INFO)
     args = get_args()
@@ -292,19 +318,16 @@ if __name__ == "__main__":
         logging.info(f"Evaluating version {version}")
 
         if not args.plot_only:
-            if version == "BASELINE":
-                net = PeppaPig(default_config)
-                path = ""
-            else:
-                net, path = load_best_model(f"lightning_logs/version_{version}/")
+            net, path = load_best_model(f"lightning_logs/version_{version}/")
 
             result_rows = evaluate(net, version)
             rows.extend(result_rows)
-
-            torch.save(rows, f"{RESULT_DIR}/minimal_pairs_scores_v{version}.pt")
 
         get_average_result_bootstrapping(version)
         create_per_word_result_plots(version, args.min_samples)
         create_duration_results_plots(version)
         if args.correlate_predictors:
             create_correlation_results_plots(version, args.min_samples)
+
+    torch.save(rows, f"{RESULT_DIR}/minimal_pairs_scores.pt")
+    create_results_table()
