@@ -135,13 +135,13 @@ def create_duration_results_plots(version):
 
     g = ggplot(results_boot, aes(x="clipDuration", y="score")) + geom_boxplot() + xlab("") + theme(
         axis_text_x=element_text(angle=85))
-    ggsave(g, f"{RESULT_DIR}/results_per_duration_version_{version}.pdf")
+    ggsave(g, f"{RESULT_DIR}/version_{version}/acc_per_duration.pdf")
 
     results_boot = bootstrap_scores_for_column(results_data_all, "num_tokens")
 
     g = ggplot(results_boot, aes(x="num_tokens", y="score")) + geom_boxplot() + xlab("") + theme(
         axis_text_x=element_text(angle=85))
-    ggsave(g, f"{RESULT_DIR}/results_per_num_tokens_version_{version}.pdf")
+    ggsave(g, f"{RESULT_DIR}/version_{version}/acc_per_num_tokens.pdf")
 
 
 def get_bootstrapped_scores(values, n_resamples=100):
@@ -181,7 +181,7 @@ def create_per_word_result_plots(version, min_samples):
                 figsize  = (8, 6)
             g = ggplot(results_boot, aes(x='reorder(word, score)', y="score")) + geom_boxplot() + xlab("") \
                 + theme(axis_text_x=element_text(angle=85), figure_size=figsize)
-            ggsave(g, f"{RESULT_DIR}/results_per_word_version_{version}_{pos}.pdf")
+            ggsave(g, f"{RESULT_DIR}/version_{version}/acc_per_word_{pos}.pdf")
 
             num_samples_per_word = results_data_words["word"].value_counts(ascending=True).index.tolist()
             word_cat = pd.Categorical(results_data_words['word'], categories=num_samples_per_word)
@@ -213,7 +213,7 @@ def create_correlation_results_plots(version, min_samples):
         s1.text(word_frequencies[i] + 0.01, word_accuracies[i],
                 mean_acc.keys()[i], horizontalalignment='left',
                 size='small', color='black')
-    plt.savefig(f"{RESULT_DIR}/correlation_frequency_acc_version_{version}", dpi=300)
+    plt.savefig(f"{RESULT_DIR}/version_{version}/correlation_frequency_acc", dpi=300)
     print(f"Pearson correlation frequency-acc: ", pearson_corr)
 
     # Correlate performance with word concreteness
@@ -229,7 +229,7 @@ def create_correlation_results_plots(version, min_samples):
         s2.text(word_concretenesses[i] + 0.01, word_accuracies[i],
                 mean_acc.keys()[i], horizontalalignment='left',
                 size='small', color='black')
-    plt.savefig(f"{RESULT_DIR}/correlation_concreteness_acc_version_{version}", dpi=300)
+    plt.savefig(f"{RESULT_DIR}/version_{version}/correlation_concreteness_acc", dpi=300)
     print(f"Pearson correlation concreteness-acc: ", pearson_corr)
 
 
@@ -290,21 +290,22 @@ def create_results_table():
     data = data.fillna(dict(scrambled_video=False))
 
     for pos in POS_TAGS:
-        data[f"targeted_triplet_{pos}_result"] = data[f"targeted_triplet_{pos}_acc"].round(3).astype(str) + "±" + data[f"targeted_triplet_{pos}_acc_std"].round(3).astype(str)
+        data[f"targeted_triplet_{pos}_result"] = data[f"targeted_triplet_{pos}_acc"].round(2).astype(str) + "±" + data[f"targeted_triplet_{pos}_acc_std"].round(3).astype(str)
 
     data["finetune_wav2vec"] = ~data["freeze_wav2vec"]
     data["temporal"] = ~data["static"]
-    data[['jitter', 'temporal', 'finetune_wav2vec', #'pretraining'
+    data[['finetune_wav2vec', 'jitter', 'temporal', #'pretraining'
           'targeted_triplet_NOUN_result', 'targeted_triplet_VERB_result']] \
-        .replace(True, "Yes").replace(False, "") \
-        .rename(columns=dict(jitter='Jitter',
-                             temporal='Temporal',
-                             finetune_wav2vec="Finetune",
+        .replace(True, "\checkmark").replace(False, "") \
+        .rename(columns=dict(jitter='Jitt',
+                             temporal='Tmp',
+                             finetune_wav2vec="Finet",
                              # pretraining='Pretraining',
                              targeted_triplet_NOUN_result='Nouns',
                              targeted_triplet_VERB_result='Verbs', )) \
         .to_latex(buf=f"{RESULT_DIR}/minimal_pairs.tex",
                   index=False,
+                  escape=False,
                   float_format="%.3f")
 
 
@@ -329,5 +330,7 @@ if __name__ == "__main__":
         if args.correlate_predictors:
             create_correlation_results_plots(version, args.min_samples)
 
-    torch.save(rows, f"{RESULT_DIR}/minimal_pairs_scores.pt")
+    if not args.plot_only:
+        torch.save(rows, f"{RESULT_DIR}/minimal_pairs_scores.pt")
+
     create_results_table()
