@@ -9,7 +9,7 @@ from scipy.stats import pearsonr
 
 from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS, POS_TAGS
 from pig.data import DEFAULT_SAMPLE_RATE
-from evaluation import load_best_model
+from pig.evaluation import load_best_model, pretraining
 
 import pytorch_lightning as pl
 import logging
@@ -18,13 +18,12 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 
+from pig.evaluation import add_condition
 from pig.metrics import batch_triplet_accuracy
-from pig.models import PeppaPig
-from run import default_config
 
 import matplotlib.pyplot as plt
 
-from pig.targeted_triplets import collate_triplets, PeppaTargetedTripletCachedDataset
+from pig.targeted_triplets import collate_triplets, PeppaTargetedTripletCachedDataset, get_eval_set_info
 
 BATCH_SIZE = 8
 NUM_WORKERS = 8
@@ -39,34 +38,34 @@ def evaluate(model, version):
         gpus = 1
     trainer = pl.Trainer(logger=False, gpus=gpus)
     for fragment_type in FRAGMENTS:
-        for pos in POS_TAGS:
-            per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
-            acc_mean = np.mean(per_sample_results)
-            acc_std = np.std(list(get_bootstrapped_scores(per_sample_results)))
-            row = dict(
+        row = dict(
                 fragment_type=fragment_type,
-                pos=pos,
-                targeted_triplet_acc=acc_mean,
-                targeted_tiplet_acc_std=acc_std,
                 version=version,
                 hparams_path=f"lightning_logs/version_{version}/hparams.yaml"
-            )
-            print(row)
+        )
+        for pos in POS_TAGS:
+            per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
+            result_bootstrapped = list(get_bootstrapped_scores(per_sample_results))
+            acc_mean, acc_std = np.mean(result_bootstrapped), np.std(result_bootstrapped)
+            row.update({
+                f"targeted_triplet_{pos}_acc": acc_mean,
+                f"targeted_triplet_{pos}_acc_std": acc_std,
+            })
 
             # Save per-sample results for detailed analysis
-            eval_info_file = f"data/eval/eval_set_{row['fragment_type']}_{row['pos']}.csv"
-            results_data = pd.read_csv(eval_info_file, index_col="id")
+            results_data = get_eval_set_info(fragment_type, pos)
 
             assert len(results_data) == len(per_sample_results), \
                 f"Number of samples in eval set ({len(per_sample_results)}) doesn't match CSV info from " \
-                f"{eval_info_file} ({len(results_data)})"
+                f"eval set CSV file: ({len(results_data)})"
 
             results_data["result"] = per_sample_results
-            path = f"{RESULT_DIR}/version_{version}/targeted_triplets_{row['fragment_type']}_{row['pos']}.csv"
+            path = f"{RESULT_DIR}/version_{version}/targeted_triplets_{fragment_type}_{pos}.csv"
             os.makedirs(os.path.dirname(path), exist_ok=True)
             results_data.to_csv(path)
 
-            yield row
+        print(row)
+        yield row
 
 
 def targeted_triplet_score(fragment_type, pos, model, trainer):
@@ -85,7 +84,7 @@ def targeted_triplet_score(fragment_type, pos, model, trainer):
     return results
 
 
-def get_all_results_df(version, pos_tags, per_word_results=False):
+def get_all_results_df(version, pos_tags, per_word_results=False, min_samples=None):
     results_data_all = []
     for pos in pos_tags:
         for fragment_type in FRAGMENTS:
@@ -94,6 +93,14 @@ def get_all_results_df(version, pos_tags, per_word_results=False):
             results_data_all.append(results_data_fragment)
 
     results_data_all = pd.concat(results_data_all, ignore_index=True)
+
+    if min_samples:
+        counts = results_data_all.target_word.value_counts()
+        words_enough_samples = counts[counts > min_samples].keys().to_list()
+        if len(words_enough_samples) == 0:
+            print(f"No words with enough samples (>{min_samples}) for POS tags {pos_tags} found.")
+        results_data_all = results_data_all[
+            results_data_all.target_word.isin(words_enough_samples) | results_data_all.distractor_word.isin(words_enough_samples)]
 
     if per_word_results:
         # Duplicate results and introduce "word" (either target or distractor word) column
@@ -128,13 +135,13 @@ def create_duration_results_plots(version):
 
     g = ggplot(results_boot, aes(x="clipDuration", y="score")) + geom_boxplot() + xlab("") + theme(
         axis_text_x=element_text(angle=85))
-    ggsave(g, f"{RESULT_DIR}/results_per_duration_version_{version}.pdf")
+    ggsave(g, f"{RESULT_DIR}/version_{version}/acc_per_duration.pdf")
 
     results_boot = bootstrap_scores_for_column(results_data_all, "num_tokens")
 
     g = ggplot(results_boot, aes(x="num_tokens", y="score")) + geom_boxplot() + xlab("") + theme(
         axis_text_x=element_text(angle=85))
-    ggsave(g, f"{RESULT_DIR}/results_per_num_tokens_version_{version}.pdf")
+    ggsave(g, f"{RESULT_DIR}/version_{version}/acc_per_num_tokens.pdf")
 
 
 def get_bootstrapped_scores(values, n_resamples=100):
@@ -162,9 +169,9 @@ def get_average_result_bootstrapping(version):
     return mean_results, std_results
 
 
-def create_per_word_result_plots(version):
+def create_per_word_result_plots(version, min_samples):
     for pos in POS_TAGS:
-        results_data_words = get_all_results_df(version, [pos], per_word_results=True)
+        results_data_words = get_all_results_df(version, [pos], per_word_results=True, min_samples=min_samples)
         if len(results_data_words) > 0:
             results_boot = bootstrap_scores_for_column(results_data_words, "word")
 
@@ -174,7 +181,7 @@ def create_per_word_result_plots(version):
                 figsize  = (8, 6)
             g = ggplot(results_boot, aes(x='reorder(word, score)', y="score")) + geom_boxplot() + xlab("") \
                 + theme(axis_text_x=element_text(angle=85), figure_size=figsize)
-            ggsave(g, f"{RESULT_DIR}/results_per_word_version_{version}_{pos}.pdf")
+            ggsave(g, f"{RESULT_DIR}/version_{version}/acc_per_word_{pos}.pdf")
 
             num_samples_per_word = results_data_words["word"].value_counts(ascending=True).index.tolist()
             word_cat = pd.Categorical(results_data_words['word'], categories=num_samples_per_word)
@@ -184,11 +191,11 @@ def create_per_word_result_plots(version):
             ggsave(g, f"{RESULT_DIR}/num_samples_per_word_{pos}.pdf")
 
 
-def create_correlation_results_plots(version):
+def create_correlation_results_plots(version, min_samples):
     word_concreteness_ratings = get_word_concreteness_ratings()
     dataset_word_frequencies = get_dataset_word_frequencies()
 
-    results_data_words_all = get_all_results_df(version, POS_TAGS, per_word_results=True)
+    results_data_words_all = get_all_results_df(version, POS_TAGS, per_word_results=True, min_samples=min_samples)
     mean_acc = results_data_words_all.groupby("word")["result"].agg("mean")
 
     # Correlate performance with word frequency in train split
@@ -206,7 +213,7 @@ def create_correlation_results_plots(version):
         s1.text(word_frequencies[i] + 0.01, word_accuracies[i],
                 mean_acc.keys()[i], horizontalalignment='left',
                 size='small', color='black')
-    plt.savefig(f"{RESULT_DIR}/correlation_frequency_acc_version_{version}", dpi=300)
+    plt.savefig(f"{RESULT_DIR}/version_{version}/correlation_frequency_acc", dpi=300)
     print(f"Pearson correlation frequency-acc: ", pearson_corr)
 
     # Correlate performance with word concreteness
@@ -222,7 +229,7 @@ def create_correlation_results_plots(version):
         s2.text(word_concretenesses[i] + 0.01, word_accuracies[i],
                 mean_acc.keys()[i], horizontalalignment='left',
                 size='small', color='black')
-    plt.savefig(f"{RESULT_DIR}/correlation_concreteness_acc_version_{version}", dpi=300)
+    plt.savefig(f"{RESULT_DIR}/version_{version}/correlation_concreteness_acc", dpi=300)
     print(f"Pearson correlation concreteness-acc: ", pearson_corr)
 
 
@@ -263,9 +270,43 @@ def get_args():
     parser.add_argument("--plot-only", action="store_true", default=False,
                         help="Only plot results, do not re-run evaluation")
 
+    parser.add_argument(
+        "--min-samples",
+        type=int,
+        default=100,
+        help="Minimum number of test samples for a word to be included",
+    )
     parser.add_argument("--correlate-predictors", action="store_true", default=False)
 
     return parser.parse_args()
+
+
+def create_results_table():
+    data = torch.load(f"{RESULT_DIR}/minimal_pairs_scores.pt")
+    data = add_condition(data)
+    data = pd.DataFrame.from_records(data)
+    data['pretraining'] = pd.Categorical(data.apply(pretraining, axis=1),
+                                         categories=['None', 'V', 'A', 'AV'])
+    data = data.fillna(dict(scrambled_video=False))
+
+    for pos in POS_TAGS:
+        data[f"targeted_triplet_{pos}_result"] = data[f"targeted_triplet_{pos}_acc"].round(2).astype(str) + "±" + data[f"targeted_triplet_{pos}_acc_std"].round(3).astype(str)
+
+    data["finetune_wav2vec"] = ~data["freeze_wav2vec"]
+    data["temporal"] = ~data["static"]
+    data[['finetune_wav2vec', 'jitter', 'temporal', #'pretraining'
+          'targeted_triplet_NOUN_result', 'targeted_triplet_VERB_result']] \
+        .replace(True, "\checkmark").replace(False, "") \
+        .rename(columns=dict(jitter='Jitt',
+                             temporal='Tmp',
+                             finetune_wav2vec="Finet",
+                             # pretraining='Pretraining',
+                             targeted_triplet_NOUN_result='Nouns',
+                             targeted_triplet_VERB_result='Verbs', )) \
+        .to_latex(buf=f"{RESULT_DIR}/minimal_pairs.tex",
+                  index=False,
+                  escape=False,
+                  float_format="%.3f")
 
 
 if __name__ == "__main__":
@@ -278,21 +319,18 @@ if __name__ == "__main__":
         logging.info(f"Evaluating version {version}")
 
         if not args.plot_only:
-            if version == "BASELINE":
-                net = PeppaPig(default_config)
-                path = ""
-            else:
-                net, path = load_best_model(f"lightning_logs/version_{version}/")
+            net, path = load_best_model(f"lightning_logs/version_{version}/")
 
             result_rows = evaluate(net, version)
             rows.extend(result_rows)
 
         get_average_result_bootstrapping(version)
-        create_per_word_result_plots(version)
+        create_per_word_result_plots(version, args.min_samples)
         create_duration_results_plots(version)
         if args.correlate_predictors:
-            create_correlation_results_plots(version)
+            create_correlation_results_plots(version, args.min_samples)
 
-    if len(rows) > 0:
-        scores = pd.DataFrame.from_records(rows)
-        scores.to_csv(f"{RESULT_DIR}/scores_targeted_triplets.csv", index=False, header=True)
+    if not args.plot_only:
+        torch.save(rows, f"{RESULT_DIR}/minimal_pairs_scores.pt")
+
+    create_results_table()

@@ -394,12 +394,6 @@ def get_args():
         help="Minimum number of occurrences in val data of a word to be included",
     )
     parser.add_argument(
-        "--min-samples",
-        type=int,
-        default=100,
-        help="Minimum number of test samples for a word to be included",
-    )
-    parser.add_argument(
         "--min-phrase-duration",
         type=float,
         default=0.3,
@@ -437,13 +431,6 @@ if __name__ == "__main__":
 
             eval_set = find_minimal_pairs(tuples, data_fragment_val, args)
             eval_set["fragment"] = fragment
-
-            # Filter examples by min num samples
-            counts = eval_set.target_word.value_counts()
-            words_enough_samples = counts[counts > args.min_samples].keys().to_list()
-            if len(words_enough_samples) == 0:
-                print(f"No words with enough samples (>{args.min_samples}) found for POS {pos_name} and fragment {fragment}.")
-            eval_set = eval_set[eval_set.target_word.isin(words_enough_samples) | eval_set.distractor_word.isin(words_enough_samples)]
 
             # Sort by duration
             eval_set["clipDuration"] = eval_set["clipEnd"] - eval_set["clipStart"]
