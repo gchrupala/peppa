@@ -215,7 +215,7 @@ def add_condition(data):
     return rows
 
 
-def full_run(versions = None, gpu=0):
+def full_run(versions = None, gpus=1):
     if versions is None:
         conditions = yaml.safe_load(open("conditions.yaml"))
         versions = [ version for value in conditions.values() for version in value ]
@@ -224,7 +224,7 @@ def full_run(versions = None, gpu=0):
         rows = []
         logging.info(f"Evaluating version {version}")
         net, path = load_best_model(f"lightning_logs/version_{version}/")
-        for row in full_score(net, gpus=[gpu], split=['val']):
+        for row in full_score(net, gpus=gpus, split=['val']):
             row['version']         = version
             row['checkpoint_path'] = path
             row['hparams_path']    = f"lightning_logs/version_{version}/hparams.yaml"

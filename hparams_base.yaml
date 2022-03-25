@@ -1,0 +1,50 @@
+audio:
+  freeze_encoder_layers: null
+  freeze_feature_extractor: false
+  full: true
+  path: data/in/wav2vec/wav2vec_small.pt
+  pooling: attention
+  pretrained: true
+data:
+  audio_sample_rate: 44100
+  extract: false
+  iterable: false
+  num_workers: 12
+  prepare: false
+  target_size:
+  - 180
+  - 100
+  test:
+    batch_size: 8
+    duration: 2.3
+    force_cache: false
+    jitter: false
+  train:
+    batch_size: 8
+    duration: 2.3
+    force_cache: false
+    jitter: true
+    jitter_sd: 0.5
+    shuffle: true
+  val:
+    batch_size: 8
+    duration: 2.3
+    force_cache: false
+    jitter: false
+margin: 0.2
+optimizer:
+  lr: 0.0001
+  schedule: warmup_linear
+  t_total: 15000
+  warmup: 0.1
+training:
+  trainer_args:
+    accumulate_grad_batches: 8
+    auto_select_gpus: false
+    gpus: 1
+    precision: 16
+video:
+  pooling: attention
+  pretrained: true
+  project: true
+  version: r2plus1d_18
