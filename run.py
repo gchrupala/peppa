@@ -80,10 +80,37 @@ def conditions(base=default_config):
     del static['video']['version']
     config['static'] = static
 
+    return config
+
+def dump_conditions():
+    config = conditions()
     for name, hparams in config.items():
         yaml.dump(hparams, open(f"hparams_{name}.yaml", "w"))
 
-    
+def clean(item):
+    from copy import deepcopy
+    out = deepcopy(item)
+    out['data']['audio_sample_rate'] = out['data'].get('audio_sample_rate', 44100)
+    del out['training']['trainer_args']['gpus']
+    if 'git_commit' in out:
+        del out['git_commit']
+    return out
+
+def match_conditions():
+    configs = conditions()
+    prev = [ value for _, lst in yaml.safe_load(open("conditions.yaml")).items() for value in lst ]
+    paths = set(glob.glob("lightning_logs/version_4*/hparams.yaml") + [ f"lightning_logs/version_{j}/hparams.yaml" for j in prev ])
+    runs = {}
+    versions = [ (f, yaml.safe_load(open(f))) for f in paths ] 
+    for name, conf in configs.items():
+        runs[name] = []
+        conf = clean(conf)
+        for path, version in versions:
+            i = int(path.split('/')[1].split('_')[1])
+            if conf == clean(version):
+                runs[name].append(i)
+    return runs
+
 def get_git_commit():
     import git
     import os
