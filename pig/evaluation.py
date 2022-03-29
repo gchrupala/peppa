@@ -235,29 +235,29 @@ def full_run(versions = None, gpus=1):
 
 def test_run(gpu=0):
     conditions = yaml.safe_load(open("conditions.yaml"))
-    version = conditions['pretraining'][0]
     rows = []
-    logging.info(f"Evaluating version {version}")
-    net, path = load_best_model(f"lightning_logs/version_{version}/")
-    for row in full_score(net, gpus=[gpu], split=['test']):
-        row['version']         = version
-        row['checkpoint_path'] = path
-        row['hparams_path']    = f"lightning_logs/version_{version}/hparams.yaml"
-        rows.append(row)
-    torch.save(add_condition(rows), f"results/full_test_scores_v{version}.pt")
+    for version in conditions['base']:
+        logging.info(f"Evaluating version {version}")
+        net, path = load_best_model(f"lightning_logs/version_{version}/")
+        for row in full_score(net, gpus=[gpu], split=['test']):
+            row['version']         = version
+            row['checkpoint_path'] = path
+            row['hparams_path']    = f"lightning_logs/version_{version}/hparams.yaml"
+            rows.append(row)
+    torch.save(add_condition(rows), f"results/full_test_scores.pt")
     
 def test_table():
-    conditions = yaml.safe_load(open("conditions.yaml"))
-    version = conditions['pretraining'][0]
-    data = torch.load(f"results/full_test_scores_v{version}.pt")
-    data = score_means(data).query("scrambled_video==False")
-
+    data = torch.load(f"results/full_test_scores.pt")
+    rows = [ datum for datum in data if not datum['scrambled_video'] ]
+    recall_fixed  = torch.cat([ row['recall_at_10_fixed'].mean(dim=1) for row in rows ])
+    recall_jitter = torch.cat([ row['recall_at_10_jitter'].mean(dim=1) for row in rows ])
+    triplet_acc   = torch.cat([ row['triplet_acc']  for row in rows ])
     table = pd.DataFrame.from_records(
         [{'R@10 (fixed)':
-         f"{data['recall_at_10_fixed'].round(3).item()} ± {data['recall_at_10_fixed_std'].round(3).item()}",
-         'R@10 (jitter)':
-         f"{data['recall_at_10_jitter'].round(3).item()} ± {data['recall_at_10_jitter_std'].round(3).item()}",
-         'Triplet Acc':
-          f"{data['triplet_acc'].round(3).item()} ± {data['triplet_acc_std'].round(3).item()}"}]).\
-         to_latex(buf=f"results/scores_test.tex", index=False)
+          f"{recall_fixed.mean().item():0.2f} ± {recall_fixed.std().item():0.2f}",
+          'R@10 (jitter)':
+          f"{recall_jitter.mean().item():0.2f} ± {recall_jitter.std().item():0.2f}",
+          'Triplet Acc':
+           f"{triplet_acc.mean().item():0.2f} ± {triplet_acc.std().item():0.2f}"}]).\
+          to_latex(buf=f"results/scores_test.tex", index=False)
 
