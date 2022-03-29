@@ -3,7 +3,7 @@ import torch
 import pandas as pd
 import pig.evaluation as ev
 import yaml
-import pig.execution as ex
+
 
 def score_points(data):
     metrics = ['triplet_acc', 'recall_at_10_fixed', 'recall_at_10_jitter']
@@ -20,21 +20,8 @@ def score_points(data):
                 rows.append(point)
     return pd.DataFrame.from_records(rows)
 
-
-def select_runs(conditions):
-    # Keep 4 runs
-    for k,v in conditions.items():
-        conditions[k] = sorted(v)[:4]
-    output = dict(pretraining=conditions['base'] + conditions['pretraining_v'] + conditions['pretraining_a'] + conditions['pretraining_none'],
-                  freeze_wav2vec=conditions['base'] + conditions['freeze_wav2vec'],
-                  jitter=conditions['base'] + conditions['jitter'],
-                  static=conditions['base'] + conditions['static'])
-    return output
-        
-
 def plots():
-    configs = ex.match_conditions()
-    conditions = select_runs(configs)
+    conditions = yaml.safe_load(open("conditions.yaml"))
     versions = flatten(conditions.values())
     data = flatten([ torch.load(f"results/full_scores_v{version}.pt")
                      for version in versions ])

@@ -92,7 +92,7 @@ def clean(item):
 
 def match_conditions():
     configs = conditions()
-    prev = [ value for _, lst in yaml.safe_load(open("conditions.yaml")).items() for value in lst ]
+    prev = [ 335, 336, 351, 375, 376, 378, 376, 384 ]
     paths = set(glob.glob("lightning_logs/version_[456]*/hparams.yaml") + [ f"lightning_logs/version_{j}/hparams.yaml" for j in prev ])
     runs = {}
     versions = [ (f, yaml.safe_load(open(f))) for f in paths ] 
@@ -104,3 +104,19 @@ def match_conditions():
             if conf == clean(version):
                 runs[name].append(i)
     return runs
+
+def select_runs(conditions):
+    # Keep 4 runs
+    for k,v in conditions.items():
+        conditions[k] = sorted(v)[:4]
+    output = dict(pretraining=conditions['base'] + conditions['pretraining_v'] + \
+                  conditions['pretraining_a'] + conditions['pretraining_none'],
+                  freeze_wav2vec=conditions['base'] + conditions['freeze_wav2vec'],
+                  jitter=conditions['base'] + conditions['jitter'],
+                  static=conditions['base'] + conditions['static'])
+    return output
+
+def save_conditions():
+    configs = match_conditions()
+    conditions = select_runs(configs)
+    yaml.dump(conditions, open("conditions.yaml", "w"))
