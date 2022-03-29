@@ -105,18 +105,13 @@ def match_conditions():
                 runs[name].append(i)
     return runs
 
-def select_runs(conditions):
-    # Keep 4 runs
-    for k,v in conditions.items():
-        conditions[k] = sorted(v)[:4]
-    output = dict(pretraining=conditions['base'] + conditions['pretraining_v'] + \
-                  conditions['pretraining_a'] + conditions['pretraining_none'],
-                  freeze_wav2vec=conditions['base'] + conditions['freeze_wav2vec'],
-                  jitter=conditions['base'] + conditions['jitter'],
-                  static=conditions['base'] + conditions['static'])
-    return output
+
 
 def save_conditions():
     configs = match_conditions()
-    conditions = select_runs(configs)
-    yaml.dump(conditions, open("conditions.yaml", "w"))
+    for k,v in configs.items():
+        # Keep four runs
+        configs[k] = sorted(v)[:4]
+    yaml.dump(configs, open("conditions.yaml", "w"))    
+   
+    

@@ -20,8 +20,17 @@ def score_points(data):
                 rows.append(point)
     return pd.DataFrame.from_records(rows)
 
+def group_runs(conditions):
+    output = dict(pretraining=conditions['base'] + conditions['pretraining_v'] + \
+                  conditions['pretraining_a'] + conditions['pretraining_none'],
+                  freeze_wav2vec=conditions['base'] + conditions['freeze_wav2vec'],
+                  jitter=conditions['base'] + conditions['jitter'],
+                  static=conditions['base'] + conditions['static'])
+    return output
+
 def plots():
-    conditions = yaml.safe_load(open("conditions.yaml"))
+    configs = yaml.safe_load(open("conditions.yaml"))
+    conditions = group_runs(configs)
     versions = flatten(conditions.values())
     data = flatten([ torch.load(f"results/full_scores_v{version}.pt")
                      for version in versions ])
@@ -39,7 +48,7 @@ def plots():
             
             g = ggplot(data.query(f'version in {versions} & scrambled_video == False & metric != "triplet_acc"'),
                    aes(x=condition, y='score')) + \
-                   geom_boxplot() + \
+                   geom_boxplot(outlier_shape='') + \
                    facet_wrap('~metric + fragment_type')
         else:
             fake1 = data.query(f'version in {versions} & scrambled_video == False & metric != "recall_at_10_jitter"')
@@ -52,7 +61,7 @@ def plots():
             else:
                 mapp = aes(x=condition, y='score')
             g = ggplot(data.query(f'version in {versions} & scrambled_video == False & metric != "recall_at_10_jitter"'), mapp) + \
-                   geom_boxplot() + \
+                   geom_boxplot(outlier_shape='') + \
                    geom_blank(data=fake) + \
                    facet_wrap('~metric + fragment_type', scales='free') + \
                    theme(legend_position="none")
@@ -70,7 +79,7 @@ def plots():
     fake = pd.concat([fake1, fake2])
     g = ggplot(data.query(f'version in {unablated} & metric != "recall_at_10_jitter"'),
                aes(x='scrambled_video', y='score')) + \
-               geom_boxplot() + \
+               geom_boxplot(outlier_shape='') + \
                geom_blank(data=fake) + \
                facet_wrap('~metric + fragment_type', scales='free')
     ggsave(g, f"results/ablations/scrambled_video.pdf")
