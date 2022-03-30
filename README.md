@@ -48,7 +48,7 @@ python -c 'import pig.plotting as m; m.plots()'
 
 - generate table 2 in [results/scores_test.tex](results/scores_test.tex)
  ```
- python -c 'import pig.evaluation as m; m.test_run(); m.test_table()
+ python -c 'import pig.evaluation as m; m.test_run(); m.test_table()'
  ```
 
 
