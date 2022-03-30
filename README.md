@@ -33,8 +33,7 @@ The corresponding trained models can be found at https://surfdrive.surf.nl/files
 
 ### Evaluate
 
-#### Performance metrics
-Evaluate trained model checkpoints as specified in the `--versions` argument:
+Create evaluation data files for trained model checkpoints as specified in the `--versions` argument:
 ```
 python evaluate.py --versions 335
 ```
@@ -51,8 +50,6 @@ python -c 'import pig.plotting as m; m.plots()'
  python -c 'import pig.evaluation as m; m.test_run(); m.test_table()'
  ```
 
-
-#### Minimal pairs evaluation
 
 Run the minimal pairs evaluation:
 ```
