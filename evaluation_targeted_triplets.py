@@ -5,7 +5,7 @@ from collections import Counter
 
 import torch
 import yaml
-from plotnine import ggplot, aes, geom_boxplot, ggsave, theme, element_text, xlab, geom_bar, ylab
+from plotnine import ggplot, aes, geom_boxplot, ggsave, theme, element_text, xlab, ylab, coord_flip
 from scipy.stats import pearsonr
 
 from generate_targeted_triplets_eval_sets import load_data, get_lemmatized_words, WORDS_NAMES, FRAGMENTS, POS_TAGS
@@ -188,11 +188,11 @@ def create_per_word_result_plots(condition, versions, min_samples):
         results_data_words = pd.concat(results_pos[pos], ignore_index=True)
         if len(results_data_words) > 0:
             if pos == "NOUN":
-                figsize = (15, 6)
+                figsize = (6, 10)
             else:
-                figsize  = (8, 6)
-            g = ggplot(results_data_words, aes(x='reorder(word, score)', y="score")) + geom_boxplot(outlier_shape='') + xlab("") \
-                + theme(axis_text_x=element_text(angle=85), figure_size=figsize)
+                figsize  = (6, 4)
+            g = ggplot(results_data_words, aes(x="reorder(word, score)", y="score")) + coord_flip() + geom_boxplot(outlier_shape='') + ylab("accuracy") + xlab("") \
+                + theme(figure_size=figsize)
             path = f"{RESULT_DIR}/condition_{condition}/acc_per_word_{pos}.pdf"
             os.makedirs(os.path.dirname(path), exist_ok=True)
             ggsave(g, path)
