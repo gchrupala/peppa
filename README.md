@@ -20,27 +20,45 @@ pip install -r requirements.txt
 There is a rudimentary command-line interface. You can run the training code by executing the function script `run.py`, and optionally passing 
 in a configuration file.
 ```
-python run.py --config_file hparams.yaml
+python run.py --config_file hparams_base.yaml
 ```
-Example configuration files are in [lightning_logs](lightning_logs).
+Configuration files for the ablation experiments in the paper are in the repository, e.g.: [hparams_base.yaml](hparams_base.yaml).
+
 
 
 ### Use
-You can find saved checkpoints of trained models at https://surfdrive.surf.nl/files/index.php/s/gNnZ4iSoKBDsOGK. 
-See [example.py](example.py) for an example of how to load a model and use it to encode some audio files.
+The file [conditions.yaml](conditions.yaml) specifies the run IDs for each ablation configuration.
+
+The corresponding trained models can be found at https://surfdrive.surf.nl/files/index.php/s/gNnZ4iSoKBDsOGK. 
 
 ### Evaluate
 
-#### Performance metrics
-Evaluate trained model checkpoints as specified in the `--versions` argument:
+Create evaluation data files for trained model checkpoints as specified in the `--versions` argument:
 ```
 python evaluate.py --versions 335
 ```
 
-#### Minimal pairs evaluation
+After generating evaluation data for all the necessary runs, you can:
+
+- generate figures 3-7 in [results/ablations](results/ablations)
+```
+python -c 'import pig.plotting as m; m.plots()'
+```
+
+- generate table 2 in [results/scores_test.tex](results/scores_test.tex)
+ ```
+ python -c 'import pig.evaluation as m; m.test_run(); m.test_table()'
+ ```
+
 
 Run the minimal pairs evaluation:
+
+- First, run the evaluation for specified versions:
 ```
-python evaluation_targeted_triplets.py --versions 335
+python evaluation_targeted_triplets.py --run --versions 335
+```
+- Then, generate the results table and plot per-word results using a conditions file (see example [conditions_minimal_pairs.yaml](conditions_minimal_pairs.yaml)):
+```
+python evaluation_targeted_triplets.py --plot --conditions conditions_minimal_pairs.yaml
 ```
 

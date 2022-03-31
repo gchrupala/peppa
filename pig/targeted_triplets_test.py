@@ -16,7 +16,7 @@ if __name__ == "__main__":
     fragment_type = "narration"
     pos = "NOUN"
 
-    target_word = "pedro"
+    word = "car"
 
     eval_info_file = f"data/eval/eval_set_{fragment_type}_{pos}.csv"
     eval_info = pd.read_csv(eval_info_file, index_col="id")
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # assert len(eval_info) == len(eval_dataset)
 
     for i, info in eval_info.iterrows():
-        if info["target_word"] == target_word: #and info["distractor_word"] == "george":
+        if info["distractor_word"] == word: #and info["distractor_word"] == "george":
             # if "house" in info["transcript"]:
             print(i)
             print(info.id_counterexample)
@@ -56,7 +56,7 @@ if __name__ == "__main__":
                 #
                 # video_clip_pos = video_clip_pos.set_audio(audio_clip)
             pygame.display.set_caption('Positive Sample')
-            example.preview(fps=FPS)
+            counterexample.preview(fps=FPS)
 
             time.sleep(1)
 
