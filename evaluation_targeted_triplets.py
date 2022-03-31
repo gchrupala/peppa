@@ -99,6 +99,29 @@ def get_all_results_df(version, pos_tags, per_word_results=False, min_samples=No
     return results_data_all
 
 
+def create_duration_correlation_plots(condition, versions):
+    results_data_duration = []
+    for version in versions:
+        results_data = get_all_results_df(version, POS_TAGS)
+        if len(results_data) > 0:
+            results_data["duration"] = pd.qcut(results_data["duration"], 20)
+            results_bootstrapped_duration = bootstrap_scores_for_column(results_data, "duration")
+
+            results_data_duration.append(results_bootstrapped_duration)
+
+    results_data_duration = pd.concat(results_data_duration, ignore_index=True)
+
+    sample_durations = [np.log(interval.mid) for interval in results_data_duration.duration.values]
+    sample_accs = results_data_duration.score.values
+    pearson_corr = pearsonr(sample_durations, sample_accs)
+    plt.figure()
+    sns.scatterplot(sample_durations, sample_accs, marker="x")
+    plt.title(f"pearson r={pearson_corr[0]:.2f} (p={pearson_corr[1]:.3f})")
+    plt.xlabel("log(duration)")
+    plt.ylabel("accuracy")
+    plt.savefig(f"{RESULT_DIR}/condition_{condition}/correlation_duration_acc.pdf")
+
+
 def create_duration_results_plots(condition, versions):
     results_data_duration = []
     results_data_num_tokens = []
@@ -340,3 +363,4 @@ if __name__ == "__main__":
         for condition, versions in conditions.items():
             create_per_word_result_plots(condition, versions, args.min_samples)
             create_duration_results_plots(condition, versions)
+            create_duration_correlation_plots(condition, versions)
