@@ -64,14 +64,19 @@ class LastStep(nn.Module):
 ## Audio encoders
 
 class Wav2VecEncoder(nn.Module):
-    def __init__(self, path, pretrained=True, freeze_feature_extractor=False, freeze_encoder_layers=None, pooling='average',
-                 project=True, full=False):
+    def __init__(self, path, pretrained=True,
+                 freeze_feature_extractor=False,
+                 freeze_encoder_layers=None,
+                 num_layers=None,
+                 pooling='average',
+                 project=True):
         super().__init__()
+        self.num_layers = num_layers
         if pretrained:
             model, _, _ = fairseq.checkpoint_utils.load_model_ensemble_and_task([path])
-            self.audio = import_fairseq_model(model[0], num_out=28)
+            self.audio = import_fairseq_model(model[0])
         else:
-            self.audio = A.wav2vec2_base(num_out=28)
+            self.audio = A.wav2vec2_base()
         if freeze_feature_extractor:
             for param in self.audio.feature_extractor.parameters():
                 param.requires_grad = False
@@ -79,12 +84,7 @@ class Wav2VecEncoder(nn.Module):
             for index in range(0, freeze_encoder_layers):
                 for param in self.audio.encoder.transformer.layers[index].parameters():
                     param.requires_grad = False
-        self.full = full
-        if self.full:
-            self.n_features = 28
-        else:
-            self.n_features = 512
-        
+        self.n_features = 768
         if pooling == 'average':
             self.audiopool = AveragePool(size=self.n_features)
         elif pooling == 'attention':
@@ -99,10 +99,7 @@ class Wav2VecEncoder(nn.Module):
             self.project = nn.Identity()
         
     def forward(self, x):
-        if self.full:
-            features, _ = self.audio(x.squeeze(dim=1))
-        else:
-            features, _ = self.audio.extract_features(x.squeeze(dim=1))
+        features = self.audio.extract_features(x.squeeze(dim=1), num_layers=self.num_layers)[0][-1]
         return Compose([self.audiopool,
                         self.project,
                         lambda x: nn.functional.normalize(x, p=2, dim=1)
