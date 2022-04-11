@@ -52,7 +52,13 @@ python -c 'import pig.plotting as m; m.plots()'
 
 
 Run the minimal pairs evaluation:
+
+- First, run the evaluation for specified versions:
 ```
-python evaluation_targeted_triplets.py --versions 335
+python evaluation_targeted_triplets.py --run --versions 335
+```
+- Then, generate the results table and plot per-word results using a conditions file (see example [conditions_minimal_pairs.yaml](conditions_minimal_pairs.yaml)):
+```
+python evaluation_targeted_triplets.py --plot --conditions conditions_minimal_pairs.yaml
 ```
 
