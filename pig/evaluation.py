@@ -150,7 +150,7 @@ def resampled_retrieval_score(fragment_type,
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)
         #rec10 = pig.metrics.resampled_recall(V, A, size=100, n_samples=500, n=10)
-        rec10 = pig.metrics.resampled_recall(V, A, size=100, n_samples=500, N=10)[10]
+        rec10 = pig.metrics.resampled_recall_at_1_to_n(V, A, size=100, n_samples=500, N=10)[10]
         return rec10
 
 

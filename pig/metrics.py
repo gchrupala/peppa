@@ -34,7 +34,7 @@ def recall_at_1_to_n(candidates, references, correct, N=1):
             # overlap between top N and target
             overlap = (topn.unsqueeze(dim=0) == target.unsqueeze(dim=1)).sum().item()
             # proportion of correctly retrieved to target
-            recall[n].append(overlap/len(target))
+            recall[n-1].append(overlap/len(target))
     return torch.tensor(recall)
 
 def batch_triplet_accuracy(batch):
@@ -58,7 +58,7 @@ def resampled_recall(candidates, references, size=100, n_samples=100, n=1):
     return torch.stack(result)
 
 
-def resampled_recall_1_to_n(candidates, references, size=100, n_samples=100, N=1):
+def resampled_recall_at_1_to_n(candidates, references, size=100, n_samples=100, N=1):
     assert len(candidates) == len(references)
     assert len(candidates) >= size
     result = []
