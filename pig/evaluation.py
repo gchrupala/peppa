@@ -87,7 +87,8 @@ def full_score(model, gpus, split=['val']):
                                                   jitter=False,
                                                   jitter_sd=None,
                                                   scrambled_video=scrambled_video,
-                                                  split=split)
+                                                  split=split,
+                                                  one_to_n=True)
             logging.info(f"Evaluating: {fragment_type}, scramble={scrambled_video} recall_jitter")
             rec_jitter = resampled_retrieval_score(fragment_type,
                                                    model,
@@ -96,12 +97,15 @@ def full_score(model, gpus, split=['val']):
                                                    jitter=True,
                                                    jitter_sd=0.5,
                                                    scrambled_video=scrambled_video,
-                                                   split=split)
+                                                   split=split,
+                                                   one_to_n=True)
             data.append(dict(fragment_type=fragment_type,
                              scrambled_video=scrambled_video,
                              triplet_acc=acc,
-                             recall_at_10_fixed=rec_fixed,
-                             recall_at_10_jitter=rec_jitter))
+                             recall_fixed=rec_fixed,
+                             recall_jitter=rec_jitter,
+                             recall_at_10_fixed=rec_fixed[10],
+                             recall_at_10_jitter=rec_jitter[10]))
     return data
         
 def retrieval_score(fragment_type, model, trainer, duration=2.3, jitter=False, jitter_sd=None, batch_size=BATCH_SIZE, split=['val']):
@@ -131,7 +135,9 @@ def resampled_retrieval_score(fragment_type,
                               jitter_sd=None,
                               batch_size=BATCH_SIZE,
                               scrambled_video=False,
-                              split=['val']):
+                              split=['val'],
+                              one_to_n=False
+                              ):
         base_ds = pig.data.PeppaPigDataset(
             target_size=model.config["data"]["target_size"],
             split=split,
@@ -149,9 +155,11 @@ def resampled_retrieval_score(fragment_type,
                   in trainer.predict(model, loader) ])
         V = torch.cat(V, dim=0)
         A = torch.cat(A, dim=0)
-        #rec10 = pig.metrics.resampled_recall(V, A, size=100, n_samples=500, n=10)
-        rec10 = pig.metrics.resampled_recall_at_1_to_n(V, A, size=100, n_samples=500, N=10)[10]
-        return rec10
+        rec = pig.metrics.resampled_recall_at_1_to_n(V, A, size=100, n_samples=500, N=10)
+        if one_to_n:
+            return rec
+        else:
+            return rec[10]
 
 
 def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE, scrambled_video=False, split=['val']):
