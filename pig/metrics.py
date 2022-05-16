@@ -22,7 +22,9 @@ def recall_at_n(candidates, references, correct, n=1):
 
 def recall_at_1_to_n(candidates, references, correct, N=1):
     distances = 1-cosine_matrix(references, candidates)
-    recall = [ [] for n in range(1, N+1) ]
+    recall = [ [] for n in range(0, N+1) ]
+    # Recall at 0 is always zero
+    recall[0] = [ 0 for row in distances ]
     for j, row in enumerate(distances):
         # ids ordered by distance
         ranked = row.argsort()
@@ -34,7 +36,7 @@ def recall_at_1_to_n(candidates, references, correct, N=1):
             # overlap between top N and target
             overlap = (topn.unsqueeze(dim=0) == target.unsqueeze(dim=1)).sum().item()
             # proportion of correctly retrieved to target
-            recall[n-1].append(overlap/len(target))
+            recall[n].append(overlap/len(target))
     return torch.tensor(recall)
 
 def batch_triplet_accuracy(batch):

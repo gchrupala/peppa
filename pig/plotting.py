@@ -84,5 +84,23 @@ def plots():
                facet_wrap('~metric + fragment_type', scales='free')
     ggsave(g, f"results/ablations/scrambled_video.pdf")
 
+
+def recall_at_1_to_n_plot():
+    data = torch.load(f"results/full_test_scores.pt")
+    rows = [ datum for datum in data if not datum['scrambled_video'] ]
+    recall_fixed  = torch.cat([ row['recall_fixed'].mean(dim=2) for row in rows ])
+    recall_jitter = torch.cat([ row['recall_jitter'].mean(dim=2) for row in rows ])
+    recall_fixed = pd.DataFrame(recall_fixed.numpy()).melt(var_name='N', value_name='recall')
+    recall_fixed['segmentation'] = 'fixed'
+    recall_jitter = pd.DataFrame(recall_jitter.numpy()).melt(var_name='N', value_name='recall')
+    recall_jitter['segmentation'] = 'jitter'
+
+    recall = pd.concat([recall_fixed, recall_jitter], ignore_index=True).query('N > 0')
+    g = ggplot(recall, aes(x='factor(N)', y='recall')) + geom_boxplot(outlier_shape='') + facet_wrap('~ segmentation') + xlab('N') + ylab('recall@N')
+    ggsave(g, 'results/recall_at_1_to_n_test.pdf')
+
+
+
+    
 def flatten(X):
     return [ y for Y in X for y in Y ]
