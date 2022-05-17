@@ -1,5 +1,5 @@
-Split,Type,Size (h)
-train,dialog,10.008833333333333
-val,dialog,0.6555
-val,narration,0.9372500000000001
-test,narration,0.6427222222222223
+Split,Type,Size (h),# Clips
+train,dialog,10.008833333333333,15666
+val,dialog,0.6555,1026
+val,narration,0.9372500000000001,1467
+test,narration,0.6427222222222223,1006
