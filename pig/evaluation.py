@@ -32,7 +32,8 @@ def data_statistics():
                     duration=2.3)
                 duration = np.array([clip.duration for clip in ds._raw_clips() ])
                 rows.append({'Split': split, 'Type': fragment_type, 
-                             'Size (h)': duration.sum() / 60 / 60 })
+                             'Size (h)': duration.sum() / 60 / 60,
+                             '# Clips': len(duration)})
     data = pd.DataFrame.from_records(rows)
     data.to_csv("results/data_statistics.csv", index=False, header=True)
     data.to_latex("results/data_statistics.tex", index=False, header=True, float_format="%.2f")
