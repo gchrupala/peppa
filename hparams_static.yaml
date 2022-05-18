@@ -45,6 +45,6 @@ training:
     precision: 16
 video:
   pooling: attention
-  pretrained: true
+  pretrained: false
   project: true
   static: true
