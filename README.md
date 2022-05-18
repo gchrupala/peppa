@@ -49,7 +49,10 @@ python -c 'import pig.plotting as m; m.plots()'
  ```
  python -c 'import pig.evaluation as m; m.test_run(); m.test_table()'
  ```
-
+- generate figure [results/recall_at_1_to_n_test.pdf](results/recall_at_1_to_n_test.pdf)
+```
+python -c 'import pig.plotting as m; m.recall_at_1_to_n_plot()
+```
 
 Run the minimal pairs evaluation:
 
