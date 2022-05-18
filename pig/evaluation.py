@@ -105,8 +105,8 @@ def full_score(model, gpus, split=['val']):
                              triplet_acc=acc,
                              recall_fixed=rec_fixed,
                              recall_jitter=rec_jitter,
-                             recall_at_10_fixed=rec_fixed[10],
-                             recall_at_10_jitter=rec_jitter[10]))
+                             recall_at_10_fixed=rec_fixed[:,10,:],
+                             recall_at_10_jitter=rec_jitter[:,10,:]))
     return data
         
 def retrieval_score(fragment_type, model, trainer, duration=2.3, jitter=False, jitter_sd=None, batch_size=BATCH_SIZE, split=['val']):
@@ -160,7 +160,7 @@ def resampled_retrieval_score(fragment_type,
         if one_to_n:
             return rec
         else:
-            return rec[10]
+            return rec[:,10,:]
 
 
 def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE, scrambled_video=False, split=['val']):
