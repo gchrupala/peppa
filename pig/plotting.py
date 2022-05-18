@@ -22,10 +22,10 @@ def score_points(data):
 
 def group_runs(conditions):
     output = dict(pretraining=conditions['base'] + conditions['pretraining_v'] + \
-                  conditions['pretraining_a'] + conditions['pretraining_none'],
+                        conditions['pretraining_a'] + conditions['pretraining_none'],
                   freeze_wav2vec=conditions['base'] + conditions['freeze_wav2vec'],
                   jitter=conditions['base'] + conditions['jitter'],
-                  static=conditions['base'] + conditions['static'])
+                  static=conditions['pretraining_a'] + conditions['static'])
     return output
 
 def plots():
