@@ -172,7 +172,27 @@ def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE, scramble
     acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 
-
+def comparative_triplet_score(fragment_type, model1, model2, trainer, batch_size=BATCH_SIZE,
+                              scrambled_video=False, split=['val']):
+    from pig.triplet import TripletScorer, comparative_score_triplets
+    scorer1 = TripletScorer(fragment_type=fragment_type, split=split,
+                            target_size=model1.config["data"]["target_size"],
+                            audio_sample_rate=model1.config["data"].get('audio_sample_rate',
+                                                                pig.data.DEFAULT_SAMPLE_RATE),
+                            scrambled_video=scrambled_video)
+    scorer1._encode(model1, trainer, batch_size)
+    scorer2 = TripletScorer(fragment_type=fragment_type, split=split,
+                            target_size=model2.config["data"]["target_size"],
+                            audio_sample_rate=model2.config["data"].get('audio_sample_rate',
+                                                                pig.data.DEFAULT_SAMPLE_RATE),
+                            scrambled_video=scrambled_video)
+    scorer2._encode(model2, trainer, batch_size)
+    result = comparative_score_triplets(scorer1._video, scorer1._audio,
+                                        scorer2._video, scorer2._audio,
+                                        scorer1._duration,
+                                        n_samples=500)
+    return result
+    
 def pretraining(row):
     return { (True, True): "AV",
              (True, False): "A",
@@ -271,3 +291,25 @@ def test_table():
            f"{triplet_acc.mean().item():0.2f} ± {triplet_acc.std().item():0.2f}"}]).\
           to_latex(buf=f"results/scores_test.tex", index=False)
 
+def duration_effect(gpu=0):
+    conditions = yaml.safe_load(open("conditions.yaml"))
+    model_id1 = conditions['pretraining_a'][0]
+    model_id2 = conditions['static'][0]
+    out = []
+    logging.info(f"Loading version {model_id1}")
+    model1, _ = load_best_model(f"lightning_logs/version_{model_id1}/")
+    logging.info(f"Loading version {model_id2}")
+    model2, _ = load_best_model(f"lightning_logs/version_{model_id2}/")
+    trainer = pl.Trainer(gpus=[gpu], logger=False, precision=16)
+    for fragment_type in ['dialog', 'narration']:
+        logging.info(f"Comparing for {fragment_type}")
+        result = comparative_triplet_score(fragment_type,
+                                           model1,
+                                           model2,
+                                           trainer=trainer,
+                                           scrambled_video=False,
+                                           split=['val'])
+        result['fragment_type'] = fragment_type
+        out.append(result)
+    torch.save(out, "results/duration_effect.pt")
+        

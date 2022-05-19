@@ -60,17 +60,47 @@ class TripletScorer:
         self._encode(model, trainer, batch_size)
         return self._score(n_samples=n_samples)
 
+def comparative_score_triplets(video1, audio1, video2, audio2, duration, n_samples=100):
+    success1 = []
+    success2 = []
+    length = []
+    for i in range(n_samples):
+        pos_idx, neg_idx = zip(*_triplets(range(len(duration)), lambda idx: duration[idx]))
+        pos_idx = torch.tensor(pos_idx)
+        neg_idx = torch.tensor(neg_idx)
+        acc1 = triplet_accuracy(anchor=audio1[pos_idx],
+                                positive=video1[pos_idx],
+                                negative=video1[neg_idx],
+                                discrete=False)
+        acc2 = triplet_accuracy(anchor=audio2[pos_idx],
+                                positive=video2[pos_idx],
+                                negative=video2[neg_idx],
+                                discrete=False)
+        success1.append(acc1)
+        success2.append(acc2)
+        length.append(duration[pos_idx])
+    return {'success1': torch.cat(success1),
+            'success2':  torch.cat(success2),
+            'duration': torch.cat(length) }
+      
+    
 def score_triplets(video, audio, duration, n_samples=100):
     accuracy = []
+    success = []
+    length = []
     for i in range(n_samples):
         pos_idx, neg_idx = zip(*_triplets(range(len(duration)), lambda idx: duration[idx]))
         pos_idx = torch.tensor(pos_idx)
         neg_idx = torch.tensor(neg_idx)
         acc = triplet_accuracy(anchor=audio[pos_idx],
                                    positive=video[pos_idx],
-                                   negative=video[neg_idx]).mean().item()
-        accuracy.append(acc)
-    return torch.tensor(accuracy)
+                                   negative=video[neg_idx])
+        accuracy.append(acc.mean().item())
+        success.append(success)
+        length.append(duration[pos_idx])
+    return {'accuracy': torch.tensor(accuracy),
+            'success':  torch.cat(success),
+            'duration': torch.cat(length) }
     
 
 def _triplets(clips, criterion): 
