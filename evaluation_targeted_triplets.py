@@ -41,8 +41,11 @@ def evaluate(model):
     results_all = []
     for fragment_type in FRAGMENTS:
         for pos in POS_TAGS:
-            per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
+            per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer, scrambled_video=False)
             print(f"Mean acc: {np.mean(per_sample_results)}")
+
+            per_sample_results_scrambled = targeted_triplet_score(fragment_type, pos, model, trainer, scrambled_video=True)
+            print(f"Mean acc (scrambled video): {np.mean(per_sample_results_scrambled)}")
 
             # Save per-sample results for detailed analysis
             results_data = get_eval_set_info(fragment_type, pos)
@@ -52,6 +55,8 @@ def evaluate(model):
                 f"eval set CSV file: ({len(results_data)})"
 
             results_data["result"] = per_sample_results
+            results_data["result_scrambled_video"] = per_sample_results_scrambled
+
             results_data["target_pos"] = pos
             results_all.append(results_data)
 
@@ -59,11 +64,12 @@ def evaluate(model):
     return results_all
 
 
-def targeted_triplet_score(fragment_type, pos, model, trainer):
+def targeted_triplet_score(fragment_type, pos, model, trainer, scrambled_video):
     audio_sample_rate = model.config["data"].get("audio_sample_rate", DEFAULT_SAMPLE_RATE)
     ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False,
                                            target_size=model.config["data"]["target_size"],
-                                           audio_sample_rate=audio_sample_rate)
+                                           audio_sample_rate=audio_sample_rate,
+                                           scrambled_video=scrambled_video)
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
     if len(ds) == 0:
         return []

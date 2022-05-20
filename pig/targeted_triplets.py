@@ -34,7 +34,7 @@ class TripletBatch:
 
 class PeppaTargetedTripletCachedDataset(Dataset):
 
-    def __init__(self, fragment, pos, target_size=(180, 100), audio_sample_rate=44100, force_cache=False):
+    def __init__(self, fragment, pos, target_size=(180, 100), audio_sample_rate=44100, force_cache=False, scrambled_video=False):
         self.cache_dir = f"data/out/items-targeted-triplets-{target_size[0]}-{target_size[1]}-{fragment}-{audio_sample_rate}-{pos}/"
         if force_cache or not os.path.isdir(self.cache_dir):
             os.makedirs(self.cache_dir, exist_ok=True)
@@ -45,12 +45,18 @@ class PeppaTargetedTripletCachedDataset(Dataset):
                 torch.save(item, f"{self.cache_dir}/{i}.pt")
 
         self.length = len(glob.glob(f"{self.cache_dir}/*.pt"))
+        self.scrambled_video = scrambled_video
 
     def __len__(self):
         return self.length
 
     def __getitem__(self, idx):
-        return torch.load(f"{self.cache_dir}/{idx}.pt")
+        item = torch.load(f"{self.cache_dir}/{idx}.pt")
+        if self.scrambled_video:
+            # Shuffle along temporal dimension
+            idx = torch.randperm(item.video.shape[1])
+            item.video = item.video[:, idx]
+        return item
 
 
 def get_eval_set_info(fragment, pos):
