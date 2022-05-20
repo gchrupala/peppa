@@ -53,9 +53,11 @@ class PeppaTargetedTripletCachedDataset(Dataset):
     def __getitem__(self, idx):
         item = torch.load(f"{self.cache_dir}/{idx}.pt")
         if self.scrambled_video:
-            # Shuffle along temporal dimension
-            idx = torch.randperm(item.video.shape[1])
-            item.video = item.video[:, idx]
+            # Shuffle videos along temporal dimension
+            idx = torch.randperm(item.positive.shape[1])
+            item.positive = item.positive[:, idx]
+            idx_2 = torch.randperm(item.negative.shape[1])
+            item.negative = item.negative[:, idx_2]
         return item
 
 
