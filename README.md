@@ -53,7 +53,7 @@ python -c 'import pig.plotting as m; m.plots()'
 ```
 python -c 'import pig.plotting as m; m.recall_at_1_to_n_plot()
 ```
-- generate figure [results/duration_effect.pdf](result/duration_effect.pdf)
+- generate figure [results/duration_effect.pdf](results/duration_effect.pdf)
 ```
 python -c 'import pig.evaluation as e; import pig.plotting as p; e.duration_effect(); p.duration_effect_plot()'
 ```
