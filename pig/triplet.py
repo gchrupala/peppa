@@ -60,17 +60,40 @@ class TripletScorer:
         self._encode(model, trainer, batch_size)
         return self._score(n_samples=n_samples)
 
+def comparative_score_triplets(video_set, audio_set, duration, n_samples=100):
+    success = [[] for i in range(len(video_set)) ]
+    length = []
+    for i in range(n_samples):
+        pos_idx, neg_idx = zip(*_triplets(range(len(duration)), lambda idx: duration[idx]))
+        pos_idx = torch.tensor(pos_idx)
+        neg_idx = torch.tensor(neg_idx)
+        for i in range(len(video_set)):
+            acc = triplet_accuracy(anchor=audio_set[i][pos_idx],
+                                   positive=video_set[i][pos_idx],
+                                   negative=video_set[i][neg_idx],
+                                   discrete=False)
+
+            success[i].append(acc)
+        length.append(duration[pos_idx])
+    return {'success': [ torch.cat(success_i) for success_i in success] ,
+            'duration': torch.cat(length) }
+      
+    
 def score_triplets(video, audio, duration, n_samples=100):
     accuracy = []
+    length = []
     for i in range(n_samples):
         pos_idx, neg_idx = zip(*_triplets(range(len(duration)), lambda idx: duration[idx]))
         pos_idx = torch.tensor(pos_idx)
         neg_idx = torch.tensor(neg_idx)
         acc = triplet_accuracy(anchor=audio[pos_idx],
                                    positive=video[pos_idx],
-                                   negative=video[neg_idx]).mean().item()
-        accuracy.append(acc)
-    return torch.tensor(accuracy)
+                                   negative=video[neg_idx])
+        accuracy.append(acc.mean().item())
+        success.append(success)
+        length.append(duration[pos_idx])
+    return {'accuracy': torch.tensor(accuracy),
+            'duration': torch.cat(length) }
     
 
 def _triplets(clips, criterion): 
