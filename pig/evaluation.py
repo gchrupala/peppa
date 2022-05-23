@@ -172,24 +172,20 @@ def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE, scramble
     acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 
-def comparative_triplet_score(fragment_type, model1, model2, trainer, batch_size=BATCH_SIZE,
+def comparative_triplet_score(fragment_type, models, trainer, batch_size=BATCH_SIZE,
                               scrambled_video=False, split=['val']):
     from pig.triplet import TripletScorer, comparative_score_triplets
-    scorer1 = TripletScorer(fragment_type=fragment_type, split=split,
-                            target_size=model1.config["data"]["target_size"],
-                            audio_sample_rate=model1.config["data"].get('audio_sample_rate',
+    scorers = [ TripletScorer(fragment_type=fragment_type, split=split,
+                            target_size=model.config["data"]["target_size"],
+                            audio_sample_rate=model.config["data"].get('audio_sample_rate',
                                                                 pig.data.DEFAULT_SAMPLE_RATE),
                             scrambled_video=scrambled_video)
-    scorer1._encode(model1, trainer, batch_size)
-    scorer2 = TripletScorer(fragment_type=fragment_type, split=split,
-                            target_size=model2.config["data"]["target_size"],
-                            audio_sample_rate=model2.config["data"].get('audio_sample_rate',
-                                                                pig.data.DEFAULT_SAMPLE_RATE),
-                            scrambled_video=scrambled_video)
-    scorer2._encode(model2, trainer, batch_size)
-    result = comparative_score_triplets(scorer1._video, scorer1._audio,
-                                        scorer2._video, scorer2._audio,
-                                        scorer1._duration,
+                for model in models ]
+    for i in range(len(models)):
+        scorers[i]._encode(models[i], trainer, batch_size)
+    result = comparative_score_triplets([ scorer._video for scorer in scorers],
+                                        [ scorer._audio for scorer in scorers],
+                                        scorers[0]._duration,
                                         n_samples=500)
     return result
     
@@ -293,23 +289,24 @@ def test_table():
 
 def duration_effect(gpu=0):
     conditions = yaml.safe_load(open("conditions.yaml"))
-    model_id1 = conditions['pretraining_a'][0]
-    model_id2 = conditions['static'][0]
+    model_id1 = conditions['pretraining_a']
+    model_id2 = conditions['static']
     out = []
-    logging.info(f"Loading version {model_id1}")
-    model1, _ = load_best_model(f"lightning_logs/version_{model_id1}/")
-    logging.info(f"Loading version {model_id2}")
-    model2, _ = load_best_model(f"lightning_logs/version_{model_id2}/")
+    models = []
+    for model_id in model_id1 + model_id2:
+        logging.info(f"Loading version {model_id}")
+        model, _ = load_best_model(f"lightning_logs/version_{model_id}/")
+        models.append(model)
     trainer = pl.Trainer(gpus=[gpu], logger=False, precision=16)
     for fragment_type in ['dialog', 'narration']:
         logging.info(f"Comparing for {fragment_type}")
         result = comparative_triplet_score(fragment_type,
-                                           model1,
-                                           model2,
+                                           models,
                                            trainer=trainer,
                                            scrambled_video=False,
                                            split=['val'])
         result['fragment_type'] = fragment_type
+        result['model_ids'] = model_id1 + model_id2
         out.append(result)
     torch.save(out, "results/duration_effect.pt")
         
