@@ -48,3 +48,18 @@ def pearson_r(x, y, dim=0, eps=1e-8):
     w1 = torch.norm(x1, 2, dim)
     w2 = torch.norm(x2, 2, dim)
     return w12 / (w1 * w2).clamp(min=eps)
+
+
+def weighted_mean(x, w):
+    return (x * w).sum() / w.sum()
+
+def weighted_cov(x, y, w):
+    x_m = weighted_mean(x, w)
+    y_m = weighted_mean(y, w)
+    return (w * (x - x_m) * (y - y_m)).sum() / w.sum()
+
+def weighted_pearson_r(x, y, w):
+    """Returns the weighted Peason's correlation coefficient:
+https://en.wikipedia.org/wiki/Pearson_correlation_coefficient#Weighted_correlation_coefficient"""
+    return weighted_cov(x, y, w) / (weighted_cov(x, x, w) * weighted_cov(y, y, w))**0.5
+    
