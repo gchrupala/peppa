@@ -127,6 +127,30 @@ def duration_effect_plot():
         facet_wrap('~ fragment_type') + \
         guides(size=None)
     ggsave(g, "results/duration_effect.pdf")
+
+def duration_effect_scramble_plot():
+    duration = torch.load("results/duration_effect_scramble.pt")
+    subframes = []
+    for ft in duration:
+        for i in range(len(ft['model_ids'])):
+            df = pd.DataFrame(data=dict(fragment_type=ft['fragment_type'],
+                                        version=ft['model_ids'][i],
+                                        scrambled=ft['scrambled_video'][i],
+                                        success=ft['success'][i].cpu().numpy(),
+                                        duration=ft['duration'].cpu().numpy()))
+            subframes.append(df)
+    data = pd.concat(subframes)
+    grouped = data.groupby(['scrambled', 'duration', 'fragment_type'])['success'].\
+        agg([np.mean, len]).rename(columns={'mean': 'score', 'len': 'size'})
+    diff = grouped.xs(False, level='scrambled')[['score']] - grouped.xs(True, level='scrambled')[['score']]
+    size = grouped.xs(True, level='scrambled')[['size']]
+    wdata = pd.concat([diff, size], axis=1).rename(columns={'score': 'difference'})
+    g = ggplot(wdata.reset_index(), aes(x='duration', y='difference', size='size', weight='size')) + \
+        geom_point(alpha=0.5) + \
+        geom_smooth() + \
+        facet_wrap('~ fragment_type') + \
+        guides(size=None)
+    ggsave(g, "results/duration_effect_scramble.pdf")
     
 def flatten(X):
     return [ y for Y in X for y in Y ]

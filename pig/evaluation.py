@@ -173,14 +173,17 @@ def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE, scramble
     return acc
 
 def comparative_triplet_score(fragment_type, models, trainer, batch_size=BATCH_SIZE,
-                              scrambled_video=False, split=['val']):
+                              scrambled_video=None, split=['val']):
     from pig.triplet import TripletScorer, comparative_score_triplets
+    if not hasattr(scrambled_video, '__len__'):
+        # Use same value for all models
+        scrambled_video = [ scrambled_video for _ in models ]
     scorers = [ TripletScorer(fragment_type=fragment_type, split=split,
-                            target_size=model.config["data"]["target_size"],
-                            audio_sample_rate=model.config["data"].get('audio_sample_rate',
-                                                                pig.data.DEFAULT_SAMPLE_RATE),
-                            scrambled_video=scrambled_video)
-                for model in models ]
+                              target_size=models[i].config["data"]["target_size"],
+                              audio_sample_rate=models[i].config["data"].get('audio_sample_rate',
+                                                                             pig.data.DEFAULT_SAMPLE_RATE),
+                              scrambled_video=scrambled_video[i])
+                for i in range(len(models)) ]
     for i in range(len(models)):
         scorers[i]._encode(models[i], trainer, batch_size)
     result = comparative_score_triplets([ scorer._video for scorer in scorers],
@@ -310,3 +313,26 @@ def duration_effect(gpu=0):
         out.append(result)
     torch.save(out, "results/duration_effect.pt")
         
+def duration_effect_scramble(gpu=0):
+    conditions = yaml.safe_load(open("conditions.yaml"))
+    model_ids = conditions['base']
+    out = []
+    models = []
+    for model_id in model_ids:
+        logging.info(f"Loading version {model_id}")
+        model, _ = load_best_model(f"lightning_logs/version_{model_id}/")
+        models.append(model)
+    trainer = pl.Trainer(gpus=[gpu], logger=False, precision=16)
+    scrambled_video=[ False for _ in models ] + [True for _ in models ]
+    for fragment_type in ['dialog', 'narration']:
+        result = comparative_triplet_score(fragment_type,
+                                           models + models,
+                                           trainer=trainer,
+                                           scrambled_video=scrambled_video,
+                                           split=['val'])
+        result['fragment_type'] = fragment_type
+        result['model_ids'] = model_ids + model_ids
+        result['scrambled_video']  = scrambled_video
+        out.append(result)
+    torch.save(out, "results/duration_effect_scramble.pt")
+    
