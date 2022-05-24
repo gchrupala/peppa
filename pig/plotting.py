@@ -3,7 +3,7 @@ import torch
 import pandas as pd
 import pig.evaluation as ev
 import yaml
-
+import numpy as np
 
 def score_points(data):
     metrics = ['triplet_acc', 'recall_at_10_fixed', 'recall_at_10_jitter']
@@ -103,7 +103,30 @@ def recall_at_1_to_n_plot():
     ggsave(g, 'results/recall_at_1_to_n_test.pdf')
 
 
-
+def duration_effect_plot():
+    static = yaml.safe_load(open("conditions.yaml"))['static']
+    duration = torch.load("results/duration_effect.pt")
+    subframes = []
+    for ft in duration:
+        for i in range(len(ft['model_ids'])):
+            df = pd.DataFrame(data=dict(fragment_type=ft['fragment_type'],
+                                        version=ft['model_ids'][i],
+                                        success=ft['success'][i].cpu().numpy(),
+                                        duration=ft['duration'].cpu().numpy()))
+            subframes.append(df)
+    data = pd.concat(subframes)
+    data['static'] = data['version'].map(lambda v: v in static)
+    grouped = data.groupby(['static', 'duration', 'fragment_type'])['success'].\
+        agg([np.mean, len]).rename(columns={'mean': 'score', 'len': 'size'})
+    diff = grouped.xs(False, level='static')[['score']] - grouped.xs(True, level='static')[['score']]
+    size = grouped.xs(True, level='static')[['size']]
+    wdata = pd.concat([diff, size], axis=1).rename(columns={'score': 'difference'})
+    g = ggplot(wdata.reset_index(), aes(x='duration', y='difference', size='size', weight='size')) + \
+        geom_point(alpha=0.5) + \
+        geom_smooth() + \
+        facet_wrap('~ fragment_type') + \
+        guides(size=None)
+    ggsave(g, "results/duration_effect.pdf")
     
 def flatten(X):
     return [ y for Y in X for y in Y ]

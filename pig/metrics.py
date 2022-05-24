@@ -42,11 +42,15 @@ def recall_at_1_to_n(candidates, references, correct, N=1):
 def batch_triplet_accuracy(batch):
     return triplet_accuracy(batch.anchor, batch.positive, batch.negative)
 
-def triplet_accuracy(anchor, positive, negative, dim=1):
+def triplet_accuracy(anchor, positive, negative, dim=1, discrete=True):
     sim_pos = F.cosine_similarity(anchor, positive, dim=dim)
     sim_neg = F.cosine_similarity(anchor, negative, dim=dim)
-    return (torch.sign(sim_pos - sim_neg)+1) / 2
-
+    diff = sim_pos - sim_neg
+    if discrete:
+        return (torch.sign(diff)+1) / 2
+    else:
+        return diff
+    
 def resampled_recall(candidates, references, size=100, n_samples=100, n=1):
     assert len(candidates) == len(references)
     assert len(candidates) >= size

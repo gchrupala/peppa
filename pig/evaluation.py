@@ -105,8 +105,8 @@ def full_score(model, gpus, split=['val']):
                              triplet_acc=acc,
                              recall_fixed=rec_fixed,
                              recall_jitter=rec_jitter,
-                             recall_at_10_fixed=rec_fixed[10],
-                             recall_at_10_jitter=rec_jitter[10]))
+                             recall_at_10_fixed=rec_fixed[:,10,:],
+                             recall_at_10_jitter=rec_jitter[:,10,:]))
     return data
         
 def retrieval_score(fragment_type, model, trainer, duration=2.3, jitter=False, jitter_sd=None, batch_size=BATCH_SIZE, split=['val']):
@@ -160,7 +160,7 @@ def resampled_retrieval_score(fragment_type,
         if one_to_n:
             return rec
         else:
-            return rec[10]
+            return rec[:,10,:]
 
 
 def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE, scrambled_video=False, split=['val']):
@@ -172,7 +172,23 @@ def triplet_score(fragment_type, model, trainer, batch_size=BATCH_SIZE, scramble
     acc = scorer.evaluate(model, trainer=trainer, n_samples=500, batch_size=batch_size)
     return acc
 
-
+def comparative_triplet_score(fragment_type, models, trainer, batch_size=BATCH_SIZE,
+                              scrambled_video=False, split=['val']):
+    from pig.triplet import TripletScorer, comparative_score_triplets
+    scorers = [ TripletScorer(fragment_type=fragment_type, split=split,
+                            target_size=model.config["data"]["target_size"],
+                            audio_sample_rate=model.config["data"].get('audio_sample_rate',
+                                                                pig.data.DEFAULT_SAMPLE_RATE),
+                            scrambled_video=scrambled_video)
+                for model in models ]
+    for i in range(len(models)):
+        scorers[i]._encode(models[i], trainer, batch_size)
+    result = comparative_score_triplets([ scorer._video for scorer in scorers],
+                                        [ scorer._audio for scorer in scorers],
+                                        scorers[0]._duration,
+                                        n_samples=500)
+    return result
+    
 def pretraining(row):
     return { (True, True): "AV",
              (True, False): "A",
@@ -271,3 +287,26 @@ def test_table():
            f"{triplet_acc.mean().item():0.2f} ± {triplet_acc.std().item():0.2f}"}]).\
           to_latex(buf=f"results/scores_test.tex", index=False)
 
+def duration_effect(gpu=0):
+    conditions = yaml.safe_load(open("conditions.yaml"))
+    model_id1 = conditions['pretraining_a']
+    model_id2 = conditions['static']
+    out = []
+    models = []
+    for model_id in model_id1 + model_id2:
+        logging.info(f"Loading version {model_id}")
+        model, _ = load_best_model(f"lightning_logs/version_{model_id}/")
+        models.append(model)
+    trainer = pl.Trainer(gpus=[gpu], logger=False, precision=16)
+    for fragment_type in ['dialog', 'narration']:
+        logging.info(f"Comparing for {fragment_type}")
+        result = comparative_triplet_score(fragment_type,
+                                           models,
+                                           trainer=trainer,
+                                           scrambled_video=False,
+                                           split=['val'])
+        result['fragment_type'] = fragment_type
+        result['model_ids'] = model_id1 + model_id2
+        out.append(result)
+    torch.save(out, "results/duration_effect.pt")
+        
