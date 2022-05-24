@@ -64,8 +64,8 @@ Run the minimal pairs evaluation:
 ```
 python evaluation_targeted_triplets.py --run --versions 335
 ```
-- Then, generate the results table and plot per-word results using a conditions file (see example [conditions_minimal_pairs.yaml](conditions_minimal_pairs.yaml)):
+- Then, generate the results table and plot per-word results using a conditions file (see example [conditions.yaml](conditions.yaml)):
 ```
-python evaluation_targeted_triplets.py --plot --conditions conditions_minimal_pairs.yaml
+python evaluation_targeted_triplets.py --plot --conditions conditions.yaml
 ```
 

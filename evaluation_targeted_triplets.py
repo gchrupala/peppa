@@ -41,8 +41,11 @@ def evaluate(model):
     results_all = []
     for fragment_type in FRAGMENTS:
         for pos in POS_TAGS:
-            per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer)
+            per_sample_results = targeted_triplet_score(fragment_type, pos, model, trainer, scrambled_video=False)
             print(f"Mean acc: {np.mean(per_sample_results)}")
+
+            per_sample_results_scrambled = targeted_triplet_score(fragment_type, pos, model, trainer, scrambled_video=True)
+            print(f"Mean acc (scrambled video): {np.mean(per_sample_results_scrambled)}")
 
             # Save per-sample results for detailed analysis
             results_data = get_eval_set_info(fragment_type, pos)
@@ -52,6 +55,8 @@ def evaluate(model):
                 f"eval set CSV file: ({len(results_data)})"
 
             results_data["result"] = per_sample_results
+            results_data["result_scrambled_video"] = per_sample_results_scrambled
+
             results_data["target_pos"] = pos
             results_all.append(results_data)
 
@@ -59,11 +64,12 @@ def evaluate(model):
     return results_all
 
 
-def targeted_triplet_score(fragment_type, pos, model, trainer):
+def targeted_triplet_score(fragment_type, pos, model, trainer, scrambled_video):
     audio_sample_rate = model.config["data"].get("audio_sample_rate", DEFAULT_SAMPLE_RATE)
     ds = PeppaTargetedTripletCachedDataset(fragment_type, pos, force_cache=False,
                                            target_size=model.config["data"]["target_size"],
-                                           audio_sample_rate=audio_sample_rate)
+                                           audio_sample_rate=audio_sample_rate,
+                                           scrambled_video=scrambled_video)
     loader = DataLoader(ds, collate_fn=collate_triplets, batch_size=BATCH_SIZE, num_workers=NUM_WORKERS, shuffle=False)
     if len(ds) == 0:
         return []
@@ -279,7 +285,7 @@ def get_args():
 
     parser.add_argument("--plot", action="store_true", default=False,
                         help="Plot results")
-    parser.add_argument("--conditions", type=str, default="conditions_minimal_pairs.yaml")
+    parser.add_argument("--conditions", type=str, default="conditions.yaml")
 
     parser.add_argument(
         "--min-samples",
@@ -307,7 +313,8 @@ def add_hparams(record):
 
 def create_results_table(conditions):
     data = []
-    for condition, versions in conditions.items():
+    for condition in ["base", "freeze_wav2vec", "jitter", "pretraining_none", "pretraining_v", "pretraining_a", "static"]:
+        versions = conditions[condition]
         results_pos = {pos: [] for pos in POS_TAGS}
         for version in versions:
             for pos in POS_TAGS:
@@ -323,20 +330,44 @@ def create_results_table(conditions):
         record = add_hparams(record)
         data.append(record)
 
+    # Scrambled video condition
+    versions = conditions["base"]
+    results_pos = {pos: [] for pos in POS_TAGS}
+    for version in versions:
+        for pos in POS_TAGS:
+            results_data_words_all = get_all_results_df(version, [pos])
+            results_bootstrapped = list(get_bootstrapped_scores(results_data_words_all.result_scrambled_video.values))
+            results_pos[pos].extend(results_bootstrapped)
+
+    record = {"condition": "base", "scrambled_video": True}
+    for pos in POS_TAGS:
+        score = f"{np.mean(results_pos[pos]).round(2):.2f}" + "±" + f"{np.std(results_pos[pos]).round(2):.2f}"
+        record[f"minimal_pairs_score_{pos}"] = score
+
+    record = add_hparams(record)
+    data.append(record)
+
     data = pd.DataFrame.from_records(data)
     data = data.fillna(dict(scrambled_video=False))
 
-    data["finetune_wav2vec"] = ~data["freeze_wav2vec"]
     data["temporal"] = ~data["static"]
-    data[['finetune_wav2vec', 'jitter', 'temporal',
+    data["temporal_frames"] = ~data["scrambled_video"]
+    data["finetune_wav2vec"] = ~data["freeze_wav2vec"]
+
+    data["ID"] = data.index
+    data[['ID', 'finetune_wav2vec', 'jitter', 'video_pretrained', 'audio_pretrained', 'temporal', 'temporal_frames',
           'minimal_pairs_score_NOUN', 'minimal_pairs_score_VERB']] \
         .replace(True, "\checkmark").replace(False, "") \
-        .rename(columns=dict(jitter='Jitt',
-                             temporal='Tmp',
-                             finetune_wav2vec="Finet",
+        .rename(columns=dict(jitter='Jitter',
+                             finetune_wav2vec='W2V Finet.',
+                             temporal='Tmp Enc.',
+                             video_pretrained='V Pretr.',
+                             audio_pretrained='A Pretr.',
                              minimal_pairs_score_NOUN='Nouns',
-                             minimal_pairs_score_VERB='Verbs', )) \
+                             minimal_pairs_score_VERB='Verbs',
+                             temporal_frames='Tmp Frames')) \
         .to_latex(buf=f"{RESULT_DIR}/minimal_pairs.tex",
+                  column_format="ccccccccc",
                   index=False,
                   escape=False,
                   float_format="%.3f")
