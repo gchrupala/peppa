@@ -49,7 +49,9 @@ def plots():
             g = ggplot(data.query(f'version in {versions} & scrambled_video == False & metric != "triplet_acc"'),
                    aes(x=condition, y='score', color='fragment_type')) + \
                    geom_boxplot(outlier_shape='') + \
-                   facet_wrap('~metric')
+                   facet_wrap('~metric') + \
+                   labs(color='type')
+            ggsave(g, f"results/ablations/{condition}.pdf")
         else:
             fake1 = data.query(f'version in {versions} & scrambled_video == False & metric != "recall_at_10_jitter"')
             fake1['fragment_type'] = 'dialog'
@@ -69,7 +71,8 @@ def plots():
                 g = ggplot(data.query(f'version in {versions} & scrambled_video == False & metric != "recall_at_10_jitter"'), mapp) + \
                     geom_boxplot(outlier_shape='') + \
                     geom_blank(data=fake) + \
-                    facet_wrap('~metric', scales='free')
+                    facet_wrap('~metric', scales='free') + \
+                    labs(color="type")
                 ggsave(g, f"results/ablations/{condition}.pdf")
 
     # scrambled
@@ -83,7 +86,8 @@ def plots():
                aes(x='scrambled_video', y='score', color='fragment_type')) + \
                geom_boxplot(outlier_shape='') + \
                geom_blank(data=fake) + \
-               facet_wrap('~metric', scales='free')
+               facet_wrap('~metric', scales='free') + \
+               labs(color="type")
     ggsave(g, f"results/ablations/scrambled_video.pdf")
 
 
