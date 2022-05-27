@@ -96,8 +96,8 @@ def recall_at_1_to_n_plot():
     recall_jitter['segmentation'] = 'jitter'
 
     recall = pd.concat([recall_fixed, recall_jitter], ignore_index=True).query('N > 0')
-    g = ggplot(recall, aes(x='factor(N)', y='recall')) + geom_boxplot(outlier_shape='') + \
-        facet_wrap('~ segmentation', ncol=1) + \
+    g = ggplot(recall, aes(x='factor(N)', y='recall', color='segmentation')) + \
+        geom_boxplot(outlier_shape='') + \
         xlab('N') + \
         ylab('recall@N')
     ggsave(g, 'results/recall_at_1_to_n_test.pdf')
