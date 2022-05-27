@@ -50,7 +50,11 @@ def plots():
                    aes(color=condition, y='score', x='fragment_type')) + \
                    geom_boxplot(outlier_shape='') + \
                    facet_wrap('~metric') + \
-                   theme(legend_position="bottom", legend_title_align='center', legend_background=element_rect(alpha=0.0)) + \
+                   theme(aspect_ratio=0.6,
+                         strip_background_x=element_text(height=0.1),
+                         legend_position="bottom",
+                         legend_title_align='center',
+                         legend_background=element_rect(alpha=0.0)) + \
                    labs(x=None)
             ggsave(g, f"results/ablations/{condition}.pdf")
         else:
@@ -66,14 +70,15 @@ def plots():
                     geom_blank(data=fake) + \
                     facet_wrap('~metric + fragment_type', scales='free') + \
                     theme(legend_position="none")
-                ggsave(g, f"results/ablations/{condition}.pdf", width=10, height=5)
+                ggsave(g, f"results/ablations/{condition}.pdf", width=10, height=4)
             else:
                 mapp = aes(color=condition, y='score', x='fragment_type')
                 g = ggplot(data.query(f'version in {versions} & scrambled_video == False & metric != "recall_at_10_jitter"'), mapp) + \
                     geom_boxplot(outlier_shape='') + \
                     geom_blank(data=fake) + \
                     facet_wrap('~metric', scales='free') + \
-                    theme(legend_position="bottom", legend_title_align='center', legend_background=element_rect(alpha=0.0)) + \
+                    theme(aspect_ratio=0.6, strip_background_x=element_text(height=0.1),
+                          legend_position="bottom", legend_title_align='center', legend_background=element_rect(alpha=0.0)) + \
                     labs(x=None)
                 ggsave(g, f"results/ablations/{condition}.pdf")
 
@@ -90,7 +95,8 @@ def plots():
                geom_blank(data=fake) + \
                facet_wrap('~metric', scales='free') + \
                labs(x=None) + \
-               theme(legend_position="bottom", legend_title_align='center', legend_background=element_rect(alpha=0.0))
+               theme(aspect_ratio=0.6, strip_background_x=element_text(height=0.1),
+                     legend_position="bottom", legend_title_align='center', legend_background=element_rect(alpha=0.0))
     ggsave(g, f"results/ablations/scrambled_video.pdf")
 
 
@@ -108,7 +114,9 @@ def recall_at_1_to_n_plot():
     g = ggplot(recall, aes(x='factor(N)', y='recall', color='segmentation')) + \
         geom_boxplot(outlier_shape='') + \
         xlab('N') + \
-        ylab('recall@N')
+        ylab('recall@N') + \
+        theme(aspect_ratio=0.5, legend_position=(0.8, 0.25), legend_title_align='center', legend_margin=10,
+              legend_background=element_rect(alpha=0.0))
     ggsave(g, 'results/recall_at_1_to_n_test.pdf')
 
 
@@ -134,7 +142,8 @@ def duration_effect_plot():
         geom_point(alpha=0.5) + \
         geom_smooth() + \
         facet_wrap('~ fragment_type') + \
-        guides(size=None)
+        guides(size=None) + \
+        theme(aspect_ratio=1)
     ggsave(g, "results/duration_effect.pdf")
 
 def duration_effect_scramble_plot():
