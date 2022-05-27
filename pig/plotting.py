@@ -47,10 +47,11 @@ def plots():
         if condition == 'jitter':
             
             g = ggplot(data.query(f'version in {versions} & scrambled_video == False & metric != "triplet_acc"'),
-                   aes(x=condition, y='score', color='fragment_type')) + \
+                   aes(color=condition, y='score', x='fragment_type')) + \
                    geom_boxplot(outlier_shape='') + \
                    facet_wrap('~metric') + \
-                   labs(color='type')
+                   theme(legend_position="bottom", legend_title_align='center', legend_background=element_rect(alpha=0.0)) + \
+                   labs(x=None)
             ggsave(g, f"results/ablations/{condition}.pdf")
         else:
             fake1 = data.query(f'version in {versions} & scrambled_video == False & metric != "recall_at_10_jitter"')
@@ -67,12 +68,13 @@ def plots():
                     theme(legend_position="none")
                 ggsave(g, f"results/ablations/{condition}.pdf", width=10, height=5)
             else:
-                mapp = aes(x=condition, y='score', color='fragment_type')
+                mapp = aes(color=condition, y='score', x='fragment_type')
                 g = ggplot(data.query(f'version in {versions} & scrambled_video == False & metric != "recall_at_10_jitter"'), mapp) + \
                     geom_boxplot(outlier_shape='') + \
                     geom_blank(data=fake) + \
                     facet_wrap('~metric', scales='free') + \
-                    labs(color="type")
+                    theme(legend_position="bottom", legend_title_align='center', legend_background=element_rect(alpha=0.0)) + \
+                    labs(x=None)
                 ggsave(g, f"results/ablations/{condition}.pdf")
 
     # scrambled
@@ -83,11 +85,12 @@ def plots():
     fake2['fragment_type'] = 'narration'
     fake = pd.concat([fake1, fake2])
     g = ggplot(data.query(f'version in {unablated} & metric != "recall_at_10_jitter"'),
-               aes(x='scrambled_video', y='score', color='fragment_type')) + \
+               aes(color='scrambled_video', y='score', x='fragment_type')) + \
                geom_boxplot(outlier_shape='') + \
                geom_blank(data=fake) + \
                facet_wrap('~metric', scales='free') + \
-               labs(color="type")
+               labs(x=None) + \
+               theme(legend_position="bottom", legend_title_align='center', legend_background=element_rect(alpha=0.0))
     ggsave(g, f"results/ablations/scrambled_video.pdf")
 
 
